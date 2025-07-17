@@ -16,7 +16,7 @@ from src import md_shared
 
 
 
-def generate_html():
+def generate_htmls():
 
     @unary()
     def update_setting(
