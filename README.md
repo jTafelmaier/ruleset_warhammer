@@ -1,7 +1,7 @@
 
 
 
-### A custom ruleset for the warhammer 40.000 and Horus Heresy tabletop board games.
+# A custom ruleset for the warhammer 40.000 and Horus Heresy tabletop board games.
 
 ## Army list example
 ![Missing image](resources/screenshots/army_list.png "Army list example")
