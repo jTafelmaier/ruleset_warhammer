@@ -110,7 +110,10 @@ def get_text_html_unit(
             int_damage = dict_action \
                 ["strength"]
 
-            return "<tr><td class=\"td_weapon_characteristic range\">" \
+            return "<tr title=\"" \
+                + dict_action \
+                    ["name"] \
+                + "\"><td class=\"td_weapon_characteristic range\">" \
                 + get_text_weapon_range() \
                 + "</td><td class=\"td_keywords\">" \
                 + get_text_weapon_keywords() \
