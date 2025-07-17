@@ -88,23 +88,11 @@ def get_text_html_army_lists(
                     + key_action_token \
                     + "')\">AT</div>"
 
-            def get_text_html_action_tokens():
-
-                text_id_unit_attached_to = dict_unit_army_list \
-                    ["attached_to_id"]
-
-                if text_id_unit_attached_to is not None:
-                    return "attached"
-                else:
-                    return get_text_html_action_token("a") \
-                        + get_text_html_action_token("b") \
-
             def get_text_html_unit_health_bar():
 
                 def get_text_health_token(
                     int_index_token:int):
 
-                    # TODO refactor
                     # TODO re-implement as counter
                     # TODO make health bar size dynamic to cover area
                     key_health_token = "health_token_" \
@@ -120,10 +108,13 @@ def get_text_html_army_lists(
                         + key_health_token \
                         + "')\"></div>"
 
-                return "".join(
-                    map(
-                        get_text_health_token,
-                        range(dict_unit["health_points"])))
+                return "" \
+                    .join(
+                        map(
+                            get_text_health_token,
+                            range(
+                                dict_unit \
+                                    ["health_points"])))
 
             text_id_row = "army_list_tr_" \
                 + text_side \
@@ -133,7 +124,8 @@ def get_text_html_army_lists(
             return "<tr id=\"" \
                 + text_id_row \
                 + "\"><td>" \
-                + get_text_html_action_tokens() \
+                + get_text_html_action_token("a") \
+                + get_text_html_action_token("b") \
                 + "</td><td>" \
                 + text_teleportation \
                 + text_name_unit \

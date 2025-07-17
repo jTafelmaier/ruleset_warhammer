@@ -3,28 +3,23 @@
     "units": [
         {
             "name": "Castellan",
-            "count_models": 1,
-            "attached_to_id": null
+            "count_models": 1
         },
         {
             "name": "Castellan",
-            "count_models": 1,
-            "attached_to_id": null
+            "count_models": 1
         },
         {
             "name": "Sword brethren",
-            "count_models": 5,
-            "attached_to_id": null
+            "count_models": 5
         },
         {
             "name": "Sword brethren",
-            "count_models": 5,
-            "attached_to_id": null
+            "count_models": 5
         },
         {
             "name": "Crusader squad",
-            "count_models": 5,
-            "attached_to_id": null
+            "count_models": 5
         }
     ]
 }
