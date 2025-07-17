@@ -138,9 +138,9 @@ def get_text_html_army_lists(
                 + "</td><td>" \
                 + str(
                     get_points_cost_unit(dict_unit_army_list)) \
-                + "</td><td><button class=\"button_destroy_unit\" onclick=\"destroy_unit('" \
+                + "</td><td><div class=\"button_destroy_unit\" onclick=\"destroy_unit('" \
                 + text_id_row \
-                + "')\">x</button></td></tr>"
+                + "')\">❌</div></td></tr>"
 
         text_html_trs_units = "" \
             .join(
@@ -154,11 +154,11 @@ def get_text_html_army_lists(
                     get_points_cost_unit,
                     list_units_army_list))
 
-        text_html_army_list = "<div class=\"army_list\"><table class=\"table_default fullwidth\"><tbody><tr><th>Action tokens</th><th>Unit</th><th>#models</th><th>Health</th><th>Points</th><th/></tr>" \
-            + text_html_trs_units \
-            + "<tr class=\"tr_points_total\"><td/><td/><td/><td/><td>= " \
+        text_html_army_list = "<div class=\"army_list\"><table class=\"table_default fullwidth\"><tbody><tr><th>Action tokens</th><th>Unit</th><th>#models</th><th>Health</th><th>Points (" \
             + str(int_total_points) \
-            + " total</td><td/></tr></tbody></table></div>"
+            + " total)</th><th/></tr>" \
+            + text_html_trs_units \
+            + "</tbody></table></div>"
 
         name_faction = dict_faction \
             ["name"]
@@ -181,7 +181,7 @@ def get_text_html_army_lists(
                     name_directory_faction=name_directory_faction,
                     bool_show_inactive_information=False)
 
-        text_html_units_individual = "<br/>" \
+        text_html_units_individual = "" \
             .join(
                 map(
                     get_text_html_unit,

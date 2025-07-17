@@ -438,18 +438,10 @@ td.strength {
 }
 
 .button_destroy_unit {
-    width: 20px;
-    height: 20px;
-    padding: 0px;
-    color: red;
-    background-color: white;
-    border: 1.5px solid red;
-    border-radius: 10px;
+    text-align: center;
 }
 
 .button_destroy_unit:hover {
-    font-weight: bold;
-    color: white;
     background-color: red;
 }
 
@@ -459,7 +451,3 @@ td.strength {
     border-top: 1px solid white;
 }
 
-.tr_points_total td {
-    border: 0;
-    border-top: 2px solid #2e3544;
-}
