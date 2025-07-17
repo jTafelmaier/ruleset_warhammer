@@ -1,0 +1,788 @@
+{
+    "imperium": [
+        {
+            "name": "Space Marines",
+            "units": [
+                {
+                    "name": "Captain with jump pack",
+                    "points_per_model": 100,
+                    "health_points": 4,
+                    "armor": 4,
+                    "keywords": [
+                        "brace",
+                        "fly 25cm",
+                        "score"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Bolt pistol",
+                            "hits": 2,
+                            "strength": 5,
+                            "keywords": [],
+                            "range": 20
+                        },
+                        {
+                            "name": "Power sword",
+                            "hits": 2,
+                            "strength": 7,
+                            "keywords": [],
+                            "range": 5
+                        }
+                    ]
+                },
+                {
+                    "name": "Jump pack intercessors",
+                    "points_per_model": 50,
+                    "health_points": 4,
+                    "armor": 4,
+                    "keywords": [
+                        "brace",
+                        "fly 25cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Bolt pistol",
+                            "hits": 1,
+                            "strength": 5,
+                            "keywords": [],
+                            "range": 20
+                        },
+                        {
+                            "name": "Power sword",
+                            "hits": 1,
+                            "strength": 7,
+                            "keywords": [],
+                            "range": 5
+                        }
+                    ]
+                },
+                {
+                    "name": "Bladeguard",
+                    "points_per_model": 50,
+                    "health_points": 4,
+                    "armor": 5,
+                    "keywords": [
+                        "brace",
+                        "move 15cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Bolt pistol",
+                            "hits": 1,
+                            "strength": 5,
+                            "keywords": [],
+                            "range": 20
+                        },
+                        {
+                            "name": "Power sword",
+                            "hits": 1,
+                            "strength": 7,
+                            "keywords": [],
+                            "range": 5
+                        }
+                    ]
+                },
+                {
+                    "name": "Sternguard",
+                    "points_per_model": 50,
+                    "health_points": 4,
+                    "armor": 4,
+                    "keywords": [
+                        "brace",
+                        "move 15cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Kraken ammunition",
+                            "hits": 4,
+                            "strength": 4,
+                            "keywords": [],
+                            "range": 0
+                        },
+                        {
+                            "name": "Armor-piercing ammunition",
+                            "hits": 1,
+                            "strength": 6,
+                            "keywords": [],
+                            "range": 0
+                        }
+                    ]
+                },
+                {
+                    "name": "Captain in gravis armour",
+                    "points_per_model": 100,
+                    "health_points": 4,
+                    "armor": 4,
+                    "keywords": [
+                        "brace",
+                        "score",
+                        "move 15cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Heavy bolt rifle",
+                            "hits": 4,
+                            "strength": 5,
+                            "keywords": [],
+                            "range": 0
+                        },
+                        {
+                            "name": "Power sword",
+                            "hits": 2,
+                            "strength": 7,
+                            "keywords": [],
+                            "range": 5
+                        }
+                    ]
+                },
+                {
+                    "name": "Heavy intercessors",
+                    "points_per_model": 50,
+                    "health_points": 4,
+                    "armor": 4,
+                    "keywords": [
+                        "brace",
+                        "move 15cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Heavy bolt rifle",
+                            "hits": 2,
+                            "strength": 5,
+                            "keywords": [],
+                            "range": 0
+                        },
+                        {
+                            "name": "Krak grenade",
+                            "hits": 1,
+                            "strength": 7,
+                            "keywords": [
+                                "heavy"
+                            ],
+                            "range": 20
+                        }
+                    ]
+                },
+                {
+                    "name": "Eradicators",
+                    "points_per_model": 50,
+                    "health_points": 4,
+                    "armor": 4,
+                    "keywords": [
+                        "brace",
+                        "move 15cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Bolt pistol",
+                            "hits": 1,
+                            "strength": 5,
+                            "keywords": [],
+                            "range": 20
+                        },
+                        {
+                            "name": "Melta weapon",
+                            "hits": 1,
+                            "strength": 9,
+                            "keywords": [
+                                "heavy"
+                            ],
+                            "range": 20
+                        }
+                    ]
+                },
+                {
+                    "name": "Gladiator lancer",
+                    "points_per_model": 400,
+                    "health_points": 4,
+                    "armor": 8,
+                    "keywords": [
+                        "move 25cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Storm bolters",
+                            "hits": 2,
+                            "strength": 4,
+                            "keywords": [
+                                "separate"
+                            ],
+                            "range": 20
+                        },
+                        {
+                            "name": "Laser destroyer",
+                            "hits": 1,
+                            "strength": 11,
+                            "keywords": [
+                                "bypass",
+                                "heavy"
+                            ],
+                            "range": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Black Templars",
+            "units": [
+                {
+                    "name": "Emperor's champion",
+                    "points_per_model": 100,
+                    "health_points": 4,
+                    "armor": 4,
+                    "keywords": [
+                        "brace",
+                        "score",
+                        "move 15cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "The black sword",
+                            "hits": 2,
+                            "strength": 7,
+                            "keywords": [
+                                "precise"
+                            ],
+                            "range": 5
+                        }
+                    ]
+                },
+                {
+                    "name": "Castellan",
+                    "points_per_model": 100,
+                    "health_points": 4,
+                    "armor": 4,
+                    "keywords": [
+                        "brace",
+                        "score",
+                        "move 15cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Bolt pistol",
+                            "hits": 2,
+                            "strength": 5,
+                            "keywords": [],
+                            "range": 20
+                        },
+                        {
+                            "name": "Power sword",
+                            "hits": 2,
+                            "strength": 7,
+                            "keywords": [],
+                            "range": 5
+                        }
+                    ]
+                },
+                {
+                    "name": "Sword brethren",
+                    "points_per_model": 50,
+                    "health_points": 4,
+                    "armor": 4,
+                    "keywords": [
+                        "brace",
+                        "move 15cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Bolt pistol",
+                            "hits": 1,
+                            "strength": 5,
+                            "keywords": [],
+                            "range": 20
+                        },
+                        {
+                            "name": "Power sword",
+                            "hits": 1,
+                            "strength": 7,
+                            "keywords": [],
+                            "range": 5
+                        }
+                    ]
+                },
+                {
+                    "name": "Crusader squad",
+                    "points_per_model": 50,
+                    "health_points": 4,
+                    "armor": 4,
+                    "keywords": [
+                        "brace",
+                        "move 15cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Bolt rifle",
+                            "hits": 2,
+                            "strength": 5,
+                            "keywords": [],
+                            "range": 0
+                        },
+                        {
+                            "name": "Chainsword",
+                            "hits": 1,
+                            "strength": 6,
+                            "keywords": [],
+                            "range": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Dark Angels",
+            "units": [
+                {
+                    "name": "Belial",
+                    "points_per_model": 200,
+                    "health_points": 4,
+                    "armor": 5,
+                    "keywords": [
+                        "teleportation",
+                        "brace",
+                        "score",
+                        "move 10cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Storm bolter",
+                            "hits": 4,
+                            "strength": 4,
+                            "keywords": [],
+                            "range": 20
+                        },
+                        {
+                            "name": "The Sword of Silence",
+                            "hits": 2,
+                            "strength": 7,
+                            "keywords": [
+                                "precise"
+                            ],
+                            "range": 5
+                        }
+                    ]
+                },
+                {
+                    "name": "Deathwing strikemaster",
+                    "points_per_model": 200,
+                    "health_points": 4,
+                    "armor": 6,
+                    "keywords": [
+                        "teleportation",
+                        "brace",
+                        "score",
+                        "move 10cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Power sword",
+                            "hits": 2,
+                            "strength": 7,
+                            "keywords": [],
+                            "range": 5
+                        }
+                    ]
+                },
+                {
+                    "name": "Deathwing knights",
+                    "points_per_model": 100,
+                    "health_points": 4,
+                    "armor": 6,
+                    "keywords": [
+                        "brace",
+                        "teleportation",
+                        "move 10cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Power sword",
+                            "hits": 1,
+                            "strength": 7,
+                            "keywords": [],
+                            "range": 5
+                        }
+                    ]
+                },
+                {
+                    "name": "Inner circle companions",
+                    "points_per_model": 100,
+                    "health_points": 4,
+                    "armor": 4,
+                    "keywords": [
+                        "hidden",
+                        "brace",
+                        "move 15cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Bolt pistol",
+                            "hits": 1,
+                            "strength": 5,
+                            "keywords": [],
+                            "range": 20
+                        },
+                        {
+                            "name": "Calibanite greatsword",
+                            "hits": 1,
+                            "strength": 7,
+                            "keywords": [
+                                "precise"
+                            ],
+                            "range": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Grey Knights",
+            "units": [
+                {
+                    "name": "Castellan Crowe",
+                    "points_per_model": 200,
+                    "health_points": 4,
+                    "armor": 4,
+                    "keywords": [
+                        "teleportation",
+                        "brace",
+                        "score",
+                        "move 15cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Storm bolter",
+                            "hits": 4,
+                            "strength": 4,
+                            "keywords": [],
+                            "range": 20
+                        },
+                        {
+                            "name": "Daemon sword",
+                            "hits": 2,
+                            "strength": 7,
+                            "keywords": [
+                                "precise"
+                            ],
+                            "range": 5
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "xenos": [
+        {
+            "name": "Necrons",
+            "units": [
+                {
+                    "name": "C'tan shard of the Void dragon",
+                    "points_per_model": 1000,
+                    "health_points": 8,
+                    "armor": 9,
+                    "keywords": [
+                        "teleportation",
+                        "brace",
+                        "score",
+                        "fly 25cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Spear of the void dragon",
+                            "hits": 1,
+                            "strength": 12,
+                            "keywords": [
+                                "bypass"
+                            ],
+                            "range": 0
+                        },
+                        {
+                            "name": "Matter disintegration",
+                            "hits": 8,
+                            "strength": 5,
+                            "keywords": [
+                                "bypass",
+                                "separate"
+                            ],
+                            "range": 5
+                        }
+                    ]
+                },
+                {
+                    "name": "Warrior unit",
+                    "points_per_model": 50,
+                    "health_points": 4,
+                    "armor": 4,
+                    "keywords": [
+                        "brace",
+                        "move 15cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Gauss weapon",
+                            "hits": 1,
+                            "strength": 7,
+                            "keywords": [
+                                "heavy"
+                            ],
+                            "range": 0
+                        }
+                    ]
+                },
+                {
+                    "name": "Hexmark unit",
+                    "points_per_model": 200,
+                    "health_points": 6,
+                    "armor": 5,
+                    "keywords": [
+                        "teleportation",
+                        "hidden",
+                        "brace",
+                        "score",
+                        "move 15cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Enmitic weapons",
+                            "hits": 6,
+                            "strength": 6,
+                            "keywords": [
+                                "precise"
+                            ],
+                            "range": 20
+                        }
+                    ]
+                },
+                {
+                    "name": "Hyperphase unit",
+                    "points_per_model": 100,
+                    "health_points": 6,
+                    "armor": 5,
+                    "keywords": [
+                        "brace",
+                        "move 15cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Hyperphase blades",
+                            "hits": 1,
+                            "strength": 10,
+                            "keywords": [],
+                            "range": 5
+                        }
+                    ]
+                },
+                {
+                    "name": "Gauss unit",
+                    "points_per_model": 150,
+                    "health_points": 6,
+                    "armor": 6,
+                    "keywords": [
+                        "brace",
+                        "fly 15cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Gauss weapon",
+                            "hits": 1,
+                            "strength": 12,
+                            "keywords": [
+                                "bypass",
+                                "heavy"
+                            ],
+                            "range": 0
+                        }
+                    ]
+                },
+                {
+                    "name": "Enmitic unit",
+                    "points_per_model": 150,
+                    "health_points": 6,
+                    "armor": 6,
+                    "keywords": [
+                        "brace",
+                        "fly 15cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Enmitic weapon",
+                            "hits": 6,
+                            "strength": 7,
+                            "keywords": [
+                                "bypass",
+                                "heavy"
+                            ],
+                            "range": 20
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "chaos": [
+        {
+            "name": "World Eaters",
+            "units": [
+                {
+                    "name": "Angron",
+                    "points_per_model": 800,
+                    "health_points": 8,
+                    "armor": 8,
+                    "keywords": [
+                        "teleportation",
+                        "score",
+                        "fly 25cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Samniarius",
+                            "hits": 2,
+                            "strength": 10,
+                            "keywords": [],
+                            "range": 5
+                        },
+                        {
+                            "name": "Spinegrinder",
+                            "hits": 1,
+                            "strength": 14,
+                            "keywords": [],
+                            "range": 5
+                        }
+                    ]
+                },
+                {
+                    "name": "Lord Invocatus",
+                    "points_per_model": 200,
+                    "health_points": 8,
+                    "armor": 5,
+                    "keywords": [
+                        "score",
+                        "move 25cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Bolt pistol",
+                            "hits": 2,
+                            "strength": 5,
+                            "keywords": [],
+                            "range": 20
+                        },
+                        {
+                            "name": "Coward's Bane",
+                            "hits": 2,
+                            "strength": 7,
+                            "keywords": [],
+                            "range": 5
+                        },
+                        {
+                            "name": "Juggernaut's bladed horn",
+                            "hits": 1,
+                            "strength": 12,
+                            "keywords": [
+                                "heavy"
+                            ],
+                            "range": 5
+                        }
+                    ]
+                },
+                {
+                    "name": "Slaughterbound",
+                    "points_per_model": 150,
+                    "health_points": 6,
+                    "armor": 4,
+                    "keywords": [
+                        "teleportation",
+                        "score",
+                        "move 20cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Eviscerator",
+                            "hits": 2,
+                            "strength": 7,
+                            "keywords": [],
+                            "range": 5
+                        },
+                        {
+                            "name": "Daemonic blade",
+                            "hits": 1,
+                            "strength": 8,
+                            "keywords": [],
+                            "range": 5
+                        }
+                    ]
+                },
+                {
+                    "name": "Exalted Eightbound",
+                    "points_per_model": 100,
+                    "health_points": 6,
+                    "armor": 4,
+                    "keywords": [
+                        "teleportation",
+                        "move 20cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Eviscerator",
+                            "hits": 2,
+                            "strength": 7,
+                            "keywords": [],
+                            "range": 5
+                        },
+                        {
+                            "name": "Chainfist",
+                            "hits": 1,
+                            "strength": 9,
+                            "keywords": [
+                                "heavy"
+                            ],
+                            "range": 5
+                        }
+                    ]
+                },
+                {
+                    "name": "Eightbound",
+                    "points_per_model": 50,
+                    "health_points": 6,
+                    "armor": 4,
+                    "keywords": [
+                        "move 20cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Eviscerators",
+                            "hits": 2,
+                            "strength": 7,
+                            "keywords": [],
+                            "range": 5
+                        }
+                    ]
+                },
+                {
+                    "name": "Khorne Berzerkers",
+                    "points_per_model": 50,
+                    "health_points": 4,
+                    "armor": 4,
+                    "keywords": [
+                        "move 20cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Bolt pistol",
+                            "hits": 1,
+                            "strength": 5,
+                            "keywords": [],
+                            "range": 20
+                        },
+                        {
+                            "name": "Chain weapon",
+                            "hits": 1,
+                            "strength": 7,
+                            "keywords": [],
+                            "range": 5
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

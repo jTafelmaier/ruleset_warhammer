@@ -1,0 +1,465 @@
+
+
+body {
+    font-family: 'Nunito', Arial;
+    font-size: small;
+    color: #2e3544;
+}
+
+.fullwidth {
+    width: 100%;
+}
+
+#main {
+    width: 90%;
+    margin-top: 50px;
+    margin-bottom: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header_document {
+    background-size: cover;
+    height: 200px;
+    padding: 200px;
+    clip-path: polygon(
+        20px 0,
+        100% 0,
+        100% calc(100% - 20px),
+        calc(100% - 20px) 100%,
+        0 100%,
+        0 20px);
+}
+
+.logo_warhammer {
+    display: block;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.h2_section {
+    margin-top: 0px;
+    border-bottom: 2px solid #2e3544;
+}
+
+.h1_chapter {
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    background-color: #2e3544;
+    padding: 2px;
+    border-bottom: 4px solid #4a5266;
+    clip-path: polygon(
+        0 0,
+        calc(100% - 10px) 0,
+        100% 10px,
+        100% 100%,
+        0 100%,
+        0 0);
+}
+
+.indented {
+    border-left: 1px solid #919eba;
+    padding-left: 10px;
+}
+
+.table_default {
+    border-collapse: collapse;
+    border: 2px solid #2e3544;
+}
+
+.table_default th {
+    color: white;
+    background-color: #2e3544;
+    border: 2px solid #2e3544;
+    text-align: left;
+    padding: 2px;
+    padding-right: 20px;
+    font-weight: normal;
+    vertical-align: top;
+}
+
+.table_default td {
+    color: #2e3544;
+    background-color: rgba(255, 255, 255, 0.652);
+    border-top: 1px solid #919eba;
+    padding: 2px;
+    vertical-align: top;
+}
+
+#core_rules {
+    display: grid;
+    grid-template-columns: 600px 600px;
+    gap: 100px 50px;
+}
+
+.image_core_rules {
+    margin-top: 50px;
+    width: 600px;
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% calc(100% - 20px),
+        calc(100% - 20px) 100%,
+        0 100%);
+}
+
+.action {
+    display: flex;
+    width: 600px;
+    background-color: #c2cce0;
+    border: 2px solid #2e3544;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 100%,
+        7px 100%,
+        0 calc(100% - 7px));
+}
+
+.action .action {
+    width: 450px;
+}
+
+.action > h4 {
+    width: 75px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: normal;
+    color: white;
+    background-color: #2e3544;
+    padding: 5px;
+}
+
+.action_token {
+    font-weight: lighter;
+    font-size: x-small;
+    vertical-align: middle;
+    display: inline-block;
+    color: #ffffff71;
+    text-align: left;
+    padding-left: 2px;
+    width: 40px;
+    height: 20px;
+    border-left: 8px solid #4a5266;
+    border-radius: 2px;
+    user-select: none;
+    background: radial-gradient(ellipse at 20px 5px, #ffb1b1 0%, #ff5959 10%, #ff7c7c 12%, #ff5959 14%, #846262 80%, #846262 100%);
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% calc(100% - 2px),
+        calc(100% - 2px) 100%,
+        0 100%);
+}
+
+.action_token.used {
+    background: #2e3544;
+}
+
+.health_token {
+    vertical-align: middle;
+    display: inline-block;
+    color: #ffffff71;
+    width: 10px;
+    height: 15px;
+    border-radius: 1px;
+    user-select: none;
+    background: #8bc5ff
+}
+
+.health_token.used {
+    background: #2e3544;
+}
+
+.action > div {
+    flex: 1;
+    padding: 5px;
+}
+
+.div_buttons_factions {
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    gap: 20px 20px;
+}
+
+.div_faction_content {
+    margin-top: 40px;
+}
+
+.div_container_faction_rules  {
+    height: 200px;
+}
+
+.div_container_faction_rules.grayscale  {
+    filter: grayscale(1);
+}
+
+.div_button_faction_rules {
+    width: 280px;
+    height: 190px;
+    background-size: cover;
+    border: 2px solid #919eba;
+    border-radius: 5px;
+    box-shadow: inset 0 -50px 50px -20px #2e3544;
+    margin-right: auto;
+    clip-path: polygon(
+        0 0,
+        calc(100% - 15px) 0,
+        100% 15px,
+        100% 100%,
+        15px 100%,
+        0 calc(100% - 15px));
+}
+
+.div_button_faction_rules:hover {
+    width: 300px;
+    height: 200px;
+    border: 2px solid #9e59ff;
+    box-shadow: inset 0 -50px 50px -20px #9e59ff;
+}
+
+.div_faction_name {
+    color: white;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 280px;
+    margin-top: 160px;
+}
+
+.div_button_faction_rules:hover .div_faction_name{
+    width: 300px;
+    margin-top: 170px;
+}
+
+.container_unit {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.inactive_data {
+    flex: 1;
+    width: 200px;
+    padding: 5px;
+}
+
+.div_unit {
+    flex: 1;
+    width: 650px;
+    background-color: #2e3544;
+    border: 2px solid #2e3544;
+    border-radius: 8px;
+    clip-path: polygon(
+        10px 0,
+        100% 0,
+        100% 100%,
+        0 100%,
+        0 10px);
+}
+
+.div_header_unit {
+    display: flex;
+    gap: 20px;
+    background-color: #2e3544;
+    border-top-right-radius: 6px;
+}
+
+.keywords {
+    padding: 4px;
+}
+
+.div_content_unit {
+    display: flex;
+    background-size: cover;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    box-shadow: inset -400px 0px 400px -100px #2e3544;
+}
+
+.div_image_unit {
+    object-fit: cover;
+    flex-basis: 400px;
+    padding: 0;
+}
+
+.image_unit {
+    display: block;
+    height: 200px;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.h3_name_unit {
+    flex: 1;
+    font-weight: normal;
+    color: white;
+    margin: 0px;
+    padding: 2px;
+    padding-left: 10px;
+    border-top-right-radius: 6px;
+}
+
+.points_cost {
+    border-radius: 2px;
+    text-align: right;
+    color: #c2cce0;
+    background-color: #4a5266;
+    padding: 4px;
+    padding-left: 8px;
+    margin-right: 5px;
+    clip-path: polygon(
+        8px 0,
+        100% 0,
+        100% 100%,
+        0 100%,
+        0 8px);
+}
+
+.characteristics_model {
+    display: flex;
+    gap: 5px;
+    padding: 4px;
+}
+
+.div_model_characteristic {
+    display: flex;
+}
+
+.div_model_characteristic_value {
+    text-align: center;
+    border-radius: 2px;
+    font-weight: bold;
+    color: #2e3544;
+    width: 1.5em;
+    background-color: white;
+}
+
+.div_model_characteristic_name {
+    flex: 1;
+    color: white;
+    background-color: #2e3544;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.model_properties {
+    width: 450px;
+    padding-top: 10px;
+}
+
+.actions {
+    margin: 5px;
+    margin-top: 10px;
+}
+
+td.td_weapon_characteristic {
+    color: #2e3544;
+    text-align: right;
+    font-weight: bold;
+    padding: 4px;
+}
+
+td.range {
+    width: 3em;
+    color: #4a5266;
+    padding-right: 10px;
+}
+
+td.strength {
+    width: 5em;
+}
+
+.th_weapon_characteristic {
+    color: #2e3544;
+    padding: 4px;
+}
+
+.keyword {
+    display: inline-block;
+    text-align: left;
+    color: #4a5266;
+    background-color: white;
+    border-radius: 2px;
+    padding: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 5px;
+}
+
+.keyword span {
+    color: #9e59ff;
+    font-weight: bold;
+}
+
+/* .kw_model_defense {
+    color: #9e59ff;
+}
+
+.kw_model_action {
+    color: #4a5266;
+}
+
+.kw_attack {
+    color: #9e59ff;
+} */
+
+.td_health_bar {
+    padding: 2px;
+    width: 150px;
+    background-color: #2e3544
+}
+
+#button_restore_action_tokens {
+    margin: 4px;
+    margin-right: 10px;
+    float: right;
+    padding: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    background-color: #535f79;
+    border: 0px;
+    border-radius: 4px;
+}
+
+#button_restore_action_tokens:hover {
+    background-color: #626d84;
+}
+
+#div_army_lists {
+    display: grid;
+    grid-template-columns: 650px 650px;
+    gap: 20px 50px;
+}
+
+.button_destroy_unit {
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+    color: red;
+    background-color: white;
+    border: 1.5px solid red;
+    border-radius: 10px;
+}
+
+.button_destroy_unit:hover {
+    font-weight: bold;
+    color: white;
+    background-color: red;
+}
+
+.destroyed td {
+    color: white;
+    background-color: red;
+    border-top: 1px solid white;
+}
+
+.tr_points_total td {
+    border: 0;
+    border-top: 2px solid #2e3544;
+}

@@ -1,0 +1,10 @@
+{
+    "faction": "World Eaters",
+    "units": [
+        {
+            "name": "Slaughterbound",
+            "count_models": 1,
+            "attached_to_id": null
+        }
+    ]
+}

@@ -1,0 +1,415 @@
+{
+    "general": [
+        {
+            "name": "All Legions",
+            "units": [
+                {
+                    "name": "Kratos heavy assault tank",
+                    "points_per_model": 400,
+                    "health_points": 6,
+                    "armor": 9,
+                    "keywords": [
+                        "move 15cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Volkite culverins",
+                            "hits": 4,
+                            "strength": 6,
+                            "keywords": [
+                                "heavy",
+                                "separate"
+                            ],
+                            "range": 0
+                        },
+                        {
+                            "name": "Heavy bolters",
+                            "hits": 2,
+                            "strength": 7,
+                            "keywords": [
+                                "separate"
+                            ],
+                            "range": 0
+                        },
+                        {
+                            "name": "Battle cannon - explosive",
+                            "hits": 2,
+                            "strength": 10,
+                            "keywords": [
+                                "bypass",
+                                "heavy"
+                            ],
+                            "range": 0
+                        },
+                        {
+                            "name": "Battle cannon - ap",
+                            "hits": 1,
+                            "strength": 12,
+                            "keywords": [
+                                "bypass",
+                                "heavy"
+                            ],
+                            "range": 0
+                        }
+                    ]
+                },
+                {
+                    "name": "Leviathan siege dreadnought",
+                    "points_per_model": 200,
+                    "health_points": 4,
+                    "armor": 8,
+                    "keywords": [
+                        "move 15cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Twin Volkite calivers",
+                            "hits": 4,
+                            "strength": 5,
+                            "keywords": [
+                                "heavy",
+                                "separate"
+                            ],
+                            "range": 0
+                        },
+                        {
+                            "name": "Melta weapons",
+                            "hits": 2,
+                            "strength": 9,
+                            "keywords": [],
+                            "range": 20
+                        },
+                        {
+                            "name": "Siege claws",
+                            "hits": 2,
+                            "strength": 12,
+                            "keywords": [],
+                            "range": 5
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "imperium": [
+        {
+            "name": "Dark Angels",
+            "units": [
+                {
+                    "name": "Corswain",
+                    "points_per_model": 200,
+                    "health_points": 4,
+                    "armor": 4,
+                    "keywords": [
+                        "teleportation",
+                        "brace",
+                        "score",
+                        "move 15cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Krak grenade",
+                            "hits": 1,
+                            "strength": 7,
+                            "keywords": [
+                                "heavy"
+                            ],
+                            "range": 20
+                        },
+                        {
+                            "name": "The Blade",
+                            "hits": 2,
+                            "strength": 8,
+                            "keywords": [
+                                "precise"
+                            ],
+                            "range": 5
+                        }
+                    ]
+                },
+                {
+                    "name": "Marduk Sedras",
+                    "points_per_model": 200,
+                    "health_points": 4,
+                    "armor": 5,
+                    "keywords": [
+                        "teleportation",
+                        "brace",
+                        "score",
+                        "move 10cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Volkite pistol",
+                            "hits": 2,
+                            "strength": 4,
+                            "keywords": [
+                                "heavy"
+                            ],
+                            "range": 0
+                        },
+                        {
+                            "name": "Phosphex grenade",
+                            "hits": 1,
+                            "strength": 7,
+                            "keywords": [
+                                "heavy"
+                            ],
+                            "range": 20
+                        },
+                        {
+                            "name": "The Death of Worlds",
+                            "hits": 2,
+                            "strength": 9,
+                            "keywords": [],
+                            "range": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "White Scars",
+            "units": [
+                {
+                    "name": "Hibou Khan",
+                    "points_per_model": 150,
+                    "health_points": 4,
+                    "armor": 4,
+                    "keywords": [
+                        "hidden",
+                        "brace",
+                        "score",
+                        "move 15cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "The Breath of the Storm",
+                            "hits": 2,
+                            "strength": 7,
+                            "keywords": [
+                                "precise"
+                            ],
+                            "range": 5
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "chaos": [
+        {
+            "name": "Iron Warriors",
+            "units": [
+                {
+                    "name": "Warsmith",
+                    "points_per_model": 150,
+                    "health_points": 4,
+                    "armor": 5,
+                    "keywords": [
+                        "brace",
+                        "score",
+                        "move 10cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Bolt weapon",
+                            "hits": 2,
+                            "strength": 5,
+                            "keywords": [],
+                            "range": 0
+                        },
+                        {
+                            "name": "Grav weapon",
+                            "hits": 1,
+                            "strength": 7,
+                            "keywords": [
+                                "heavy"
+                            ],
+                            "range": 0
+                        },
+                        {
+                            "name": "Graviton crusher",
+                            "hits": 1,
+                            "strength": 10,
+                            "keywords": [
+                                "heavy"
+                            ],
+                            "range": 5
+                        }
+                    ]
+                },
+                {
+                    "name": "MkII Marines",
+                    "points_per_model": 50,
+                    "health_points": 4,
+                    "armor": 4,
+                    "keywords": [
+                        "brace",
+                        "move 15cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Bolt weapon",
+                            "hits": 2,
+                            "strength": 5,
+                            "keywords": [],
+                            "range": 0
+                        }
+                    ]
+                },
+                {
+                    "name": "MkII Marines with disintegrator weapons",
+                    "points_per_model": 50,
+                    "health_points": 4,
+                    "armor": 4,
+                    "keywords": [
+                        "brace",
+                        "move 15cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Disintegrator weapon",
+                            "hits": 1,
+                            "strength": 8,
+                            "keywords": [
+                                "heavy"
+                            ],
+                            "range": 0
+                        }
+                    ]
+                },
+                {
+                    "name": "Araknae accelerator platform",
+                    "points_per_model": 200,
+                    "health_points": 4,
+                    "armor": 9,
+                    "keywords": [],
+                    "actions": [
+                        {
+                            "name": "Quad accelerator cannon",
+                            "hits": 4,
+                            "strength": 11,
+                            "keywords": [
+                                "heavy"
+                            ],
+                            "range": 0
+                        }
+                    ]
+                },
+                {
+                    "name": "Fellblade super-heavy tank",
+                    "points_per_model": 600,
+                    "health_points": 6,
+                    "armor": 10,
+                    "keywords": [
+                        "move 25cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Sponson-mounted heavy bolters",
+                            "hits": 4,
+                            "strength": 7,
+                            "keywords": [
+                                "separate"
+                            ],
+                            "range": 0
+                        },
+                        {
+                            "name": "Demolisher cannon",
+                            "hits": 4,
+                            "strength": 10,
+                            "keywords": [
+                                "heavy"
+                            ],
+                            "range": 0
+                        },
+                        {
+                            "name": "Twin battle cannon",
+                            "hits": 2,
+                            "strength": 12,
+                            "keywords": [
+                                "bypass",
+                                "heavy"
+                            ],
+                            "range": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Thousand sons",
+            "units": [
+                {
+                    "name": "Magnus the red",
+                    "points_per_model": 800,
+                    "health_points": 8,
+                    "armor": 8,
+                    "keywords": [
+                        "teleportation",
+                        "hidden",
+                        "brace",
+                        "score",
+                        "move 15cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Elimination",
+                            "hits": 1,
+                            "strength": 10,
+                            "keywords": [
+                                "precise"
+                            ],
+                            "range": 20
+                        },
+                        {
+                            "name": "Warpfire",
+                            "hits": 2,
+                            "strength": 8,
+                            "keywords": [],
+                            "range": 20
+                        },
+                        {
+                            "name": "Blade of Ahn-Nunurta",
+                            "hits": 1,
+                            "strength": 12,
+                            "keywords": [],
+                            "range": 5
+                        }
+                    ]
+                },
+                {
+                    "name": "Librarian consul",
+                    "points_per_model": 150,
+                    "health_points": 4,
+                    "armor": 4,
+                    "keywords": [
+                        "teleportation",
+                        "brace",
+                        "score",
+                        "move 15cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Psychic conversion",
+                            "hits": 2,
+                            "strength": 6,
+                            "keywords": [
+                                "precise"
+                            ],
+                            "range": 20
+                        },
+                        {
+                            "name": "Force staff",
+                            "hits": 1,
+                            "strength": 8,
+                            "keywords": [],
+                            "range": 5
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

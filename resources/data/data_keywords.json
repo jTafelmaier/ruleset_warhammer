@@ -1,0 +1,56 @@
+{
+    "keywords_models": [
+        {
+            "name": "hidden",
+            "type": "kw_model_defense",
+            "function": "This unit can only be selected as a target unit by units within 20 cm."
+        },
+        {
+            "name": "fly",
+            "type": "kw_model_action",
+            "function": "This unit can perform the \"Fly\" action up to the given distance."
+        },
+        {
+            "name": "move",
+            "type": "kw_model_action",
+            "function": "This unit can perform the \"Move\" action up to the given distance."
+        },
+        {
+            "name": "brace",
+            "type": "kw_model_defense",
+            "function": "This unit can perform the \"Brace\" action."
+        },
+        {
+            "name": "score",
+            "type": "kw_model_action",
+            "function": "This unit can perform the \"Score objective\" action."
+        },
+        {
+            "name": "teleportation",
+            "type": "kw_model_deployment",
+            "function": "This unit can perform the \"Setup teleportation\" action."
+        }
+    ],
+    "keywords_weapons": [
+        {
+            "name": "bypass",
+            "type": "kw_attack",
+            "function": "Units near this unit cannot perform the \"Block\" action."
+        },
+        {
+            "name": "heavy",
+            "type": "kw_attack",
+            "function": "Can only use this weapon when performing the \"Critical attack\" action."
+        },
+        {
+            "name": "precise",
+            "type": "kw_attack",
+            "function": "Units near the target unit cannot perform the \"Block\" action."
+        },
+        {
+            "name": "separate",
+            "type": "kw_attack",
+            "function": "When attacking with another weapon without \"separate\": Can also attack with this weapon during the attack action."
+        }
+    ]
+}

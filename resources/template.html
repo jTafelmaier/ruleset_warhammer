@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="resources/style.css">
+        <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+        <script src="resources/scripts.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <div id="header_document">
+                <placeholder id="id_logo_warhammer"/>
+            </div>
+            <h1 class="h1_chapter">
+                Core rules
+            </h1>
+            <div id="core_rules">
+                <div>
+                    <h2 class="h2_section">
+                        Term definition
+                    </h2>
+                    <table class="table_default fullwidth">
+                        <tbody>
+                            <tr>
+                                <th>
+                                    Term
+                                </th>
+                                <th>
+                                    Meaning
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Weapon: hits
+                                </td>
+                                <td>
+                                    Number before "x"
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Weapon: strength
+                                </td>
+                                <td>
+                                    Number before "st"
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Distance between models
+                                </td>
+                                <td>
+                                    Shortest distance between any model surface points of both models.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Destroyed
+                                </td>
+                                <td>
+                                    Removed from the board space.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Near
+                                </td>
+                                <td>
+                                    Within 5cm.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Visibility
+                                </td>
+                                <td>
+                                    A model is visible when any of its surface points is visible.
+                                    <br/>
+                                    A unit is visible if any of its models are visible.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Unit
+                                </td>
+                                <td>
+                                A collection of one or more identical models that act as one entity.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Unit coherency
+                                </td>
+                                <td>
+                                When every model is within 5 cm of another model in the unit.
+                                <br/>
+                                If at the beginning of any action, unit coherency is not given for any friendly unit, destroy models in that unit until unit coherency is given.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Healing
+                                </td>
+                                <td>
+                                    If a unit's <b>health points</b> are lower than the starting unit <b>health points</b>, increase the unit's <b>health points</b> by one.
+                                    <br/>
+                                    Otherwise, if possible, return one destroyed model of the unit to the unit, and set the health points of the unit to 1.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="game_structure">
+                    <h2 class="h2_section">
+                        Preparation
+                    </h2>
+                    Agree on:
+                    <ul>
+                        <li>
+                            board space (including terrain, special zones, objective markers)
+                        </li>
+                        <li>
+                            a starting player & deployment zone allocation
+                        </li>
+                        <li>
+                            a total army cost limit (example: 1000 points)
+                        </li>
+                        <li>
+                            a game duration limit (number of turns).
+                        </li>
+                    </ul>
+                    Then, every player chooses one faction, and then any number of unit instances of that faction, with a total points cost lower than the agreed limit.
+                    <br/>
+                    <br/>
+                    <h2 class="h2_section">
+                        Turns
+                    </h2>
+                    Every unit starts the game in reserves (outside of the board space).
+                    <br/>
+                    At the beginning of every turn, every unit of both players gains 2 <div class="action_token">AT</div>.
+                    <br/>
+                    The turn ends when all <div class="action_token">AT</div> were spent.
+                    <br/>
+                    <br/>
+                    Players alternate choosing to perform actions with units, starting with the starting player.
+                    <br/>
+                    Choosing any action requires spending the specified amount of <div class="action_token">AT</div> unless otherwise stated.
+                    <br/>
+                    <br/>
+                    <h2 class="h2_section">
+                        Game end
+                    </h2>
+                    In order, a winning player is determined by:
+                    <ol>
+                        <li>
+                            victory points
+                        </li>
+                        <li>
+                            points cost of non-destroyed models
+                        </li>
+                    </ol>
+                </div>
+                <div class="turn_structure">
+                    <h2 class="h2_section">
+                        Default actions
+                    </h2>
+                    <div class="action">
+                        <h4>
+                            1<div class="action_token">AT</div>
+                            <br/>
+                            Move
+                        </h4>
+                        <div>
+                            This action can only be performed by units with
+                            <div class="keyword kw_model_action" title='This unit can perform the "Move" action up to the given distance.'>
+                                <span>move</span> x
+                            </div>
+                            .
+                            <br/>
+                            <br/>
+                            Every model in the unit may move up to x centimeters.
+                            <br/>
+                            Models cannot move over enemy models or more than 5cm vertically.
+                        </div>
+                    </div>
+                    <div class="action">
+                        <h4>
+                            1<div class="action_token">AT</div>
+                            <br/>
+                            Fly
+                        </h4>
+                        <div>
+                            This action can only be performed by units with
+                            <div class="keyword kw_model_action" title='This unit can perform the "Fly" action up to the given distance.'>
+                                <span>fly</span> x
+                            </div>
+                            .
+                            <br/>
+                            <br/>
+                            Every model in the unit may move up to x centimeters.
+                            <br/>
+                            Models can move over enemy models and vertically.
+                        </div>
+                    </div>
+                    <div class="action">
+                        <h4>
+                            1<div class="action_token">AT</div>
+                            <br/>
+                            Deploy
+                        </h4>
+                        <div>
+                            This action can only be performed when this unit is in reserves.
+                            <br/>
+                            This unit may be placed anywhere in the owner's deployment zone.
+                        </div>
+                    </div>
+                    <div class="action">
+                        <h4>
+                            1<div class="action_token">AT</div>
+                            <br/>
+                            Attack
+                        </h4>
+                        <div>
+                            For every model in the attacking unit:
+                            <br/>
+                            <div class="indented">
+                                Select one of the model's weapons, and, if possible, select one visible enemy unit as "target unit" for this weapon.
+                            </div>
+                            <br/>
+                            Every enemy unit near either the attacking unit or any target unit may perform the following action:
+                            <br/>
+                            <div class="action">
+                                <h4>
+                                    0<div class="action_token">AT</div>
+                                    <br/>
+                                    Block
+                                </h4>
+                                <div>
+                                    This unit will become the target unit of the current attack.
+                                </div>
+                            </div>
+                            Every enemy target unit with
+                            <div class="keyword kw_model_defense" title='This unit can perform the "Brace" action.'>
+                                <span>brace</span>
+                            </div>
+                            may then perform the following action:
+                            <br/>
+                            <div class="action">
+                                <h4>
+                                    1<div class="action_token">AT</div>
+                                    <br/>
+                                    Brace
+                                </h4>
+                                <div>
+                                    During this attack, increase the armor characteristic of models in this unit by 1.
+                                </div>
+                            </div>
+                            <br/>
+                            For every selected weapon:
+                            <div class="indented">
+                                Repeat for weapon: <b>hits</b>:
+                                <div class="indented">
+                                    If the target unit does not exist, end the attack sequence for this weapon.
+                                    <br/>
+                                    <br/>
+                                    Reduce unit: <b>health points</b> by max(0, weapon: <b>strength</b> - target unit: <b>armor</b>).
+                                    <br/>
+                                    <br/>
+                                    If unit: <b>health points</b> &lt= 0:
+                                    <div class="indented">
+                                        Destroy one model in the target unit. If destroying a model would break unit coherency, then that model cannot be selected.
+                                        <br/>
+                                        <br/>
+                                        If the unit still contains at least one model:
+                                        <div class="indented">
+                                            Restore unit health tokens.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="action">
+                        <h4>
+                            2<div class="action_token">AT</div>
+                            <br/>
+                            Critical attack
+                        </h4>
+                        <div>
+                            Perform one "Attack" action at no cost.
+                            <br/>
+                            During this attack, can use weapons with
+                            <div class="keyword kw_attack" title='Can only use this weapon when performing the "Critical attack" action.'>
+                                <span>heavy</span>
+                            </div>
+                            , and weapons without
+                            <div class="keyword kw_attack" title='Can only use this weapon when performing the "Critical attack" action.'>
+                                <span>heavy</span>
+                            </div>
+                            gain +1 strength.
+                        </div>
+                    </div>
+                    <div class="action">
+                        <h4>
+                            2<div class="action_token">AT</div>
+                            <br/>
+                            Score objective
+                        </h4>
+                        <div>
+                            This action can only be performed by units with
+                            <div class="keyword kw_model_action" title='This unit can perform the "Score objective" action.'>
+                                <span>score</span>
+                            </div>
+                            .
+                            <br/>
+                            <br/>
+                            If within 5 cm of an objective marker, and no enemy unit is within 5 cm of that objective marker:
+                            Gain 1 victory point and remove the objective marker.
+                        </div>
+                    </div>
+                    <div class="action">
+                        <h4>
+                            2<div class="action_token">AT</div>
+                            <br/>
+                            Setup teleportation
+                        </h4>
+                        <div>
+                            This action can only be performed by units with
+                            <div class="keyword kw_model_deployment" title='This unit can perform the "Setup teleportation" action.'>
+                                <span>teleportation</span>
+                            </div>
+                            .
+                            <br/>
+                            <br/>
+                            May set up a teleporter token on the board space, where allowed.
+                            <br/>
+                            When this unit performs the "Deploy" action: May place the unit as close as possible to the placed teleporter token, and then remove the teleporter token.
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <placeholder id="id_image_core_rules"/>
+                    </div>
+                </div>
+            </div>
+            <h1 class="h1_chapter">
+                Faction rules
+            </h1>
+            <div id="div_factions">
+                <placeholder id="id_factions" />
+            </div>
+            <h1 class="h1_chapter">
+                Army lists
+                <button id="button_restore_action_tokens" onclick="restore_action_tokens()">restore <div class="action_token">AT</div></button>
+            </h1>
+            <div id="div_army_lists">
+                <placeholder id="id_army_lists"/>
+            </div>
+        </div>
+    </body>
+</html>

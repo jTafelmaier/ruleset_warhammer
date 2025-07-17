@@ -1,0 +1,9 @@
+
+
+
+
+add victory point counter
+add counters for current health points and model number for each unit in army list
+download font
+perhaps: subfaction grouping
+

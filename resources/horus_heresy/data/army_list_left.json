@@ -1,0 +1,10 @@
+{
+    "faction": "White Scars",
+    "units": [
+        {
+            "name": "Hibou Khan",
+            "count_models": 1,
+            "attached_to_id": null
+        }
+    ]
+}
