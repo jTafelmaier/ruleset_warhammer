@@ -10,8 +10,8 @@
                     "armor": 4,
                     "keywords": [
                         "brace",
-                        "fly 25cm",
-                        "score"
+                        "score",
+                        "fly 25cm"
                     ],
                     "actions": [
                         {
