@@ -137,7 +137,7 @@ def get_text_html_army_lists(
                 + get_text_html_unit_health_bar() \
                 + "</td><td>" \
                 + str(
-                        get_points_cost_unit(dict_unit_army_list)) \
+                    get_points_cost_unit(dict_unit_army_list)) \
                 + "</td><td><button class=\"button_destroy_unit\" onclick=\"destroy_unit('" \
                 + text_id_row \
                 + "')\">x</button></td></tr>"
