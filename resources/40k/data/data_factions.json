@@ -475,39 +475,6 @@
             "name": "Necrons",
             "units": [
                 {
-                    "name": "C'tan shard of the Void dragon",
-                    "points_per_model": 1000,
-                    "health_points": 8,
-                    "armor": 9,
-                    "keywords": [
-                        "teleportation",
-                        "brace",
-                        "score",
-                        "fly 25cm"
-                    ],
-                    "actions": [
-                        {
-                            "name": "Spear of the void dragon",
-                            "hits": 1,
-                            "strength": 12,
-                            "keywords": [
-                                "bypass"
-                            ],
-                            "range": 0
-                        },
-                        {
-                            "name": "Matter disintegration",
-                            "hits": 8,
-                            "strength": 5,
-                            "keywords": [
-                                "bypass",
-                                "separate"
-                            ],
-                            "range": 5
-                        }
-                    ]
-                },
-                {
                     "name": "Warrior unit",
                     "points_per_model": 50,
                     "health_points": 4,
