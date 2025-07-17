@@ -1,9 +1,29 @@
 {
-    "faction": "Grey Knights",
+    "faction": "Black Templars",
     "units": [
         {
-            "name": "Castellan Crowe",
+            "name": "Castellan",
             "count_models": 1,
+            "attached_to_id": null
+        },
+        {
+            "name": "Castellan",
+            "count_models": 1,
+            "attached_to_id": null
+        },
+        {
+            "name": "Sword brethren",
+            "count_models": 5,
+            "attached_to_id": null
+        },
+        {
+            "name": "Sword brethren",
+            "count_models": 5,
+            "attached_to_id": null
+        },
+        {
+            "name": "Crusader squad",
+            "count_models": 5,
             "attached_to_id": null
         }
     ]
