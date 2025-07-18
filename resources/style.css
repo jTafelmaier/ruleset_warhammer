@@ -160,21 +160,6 @@ body {
     background: #2e3544;
 }
 
-.health_token {
-    vertical-align: middle;
-    display: inline-block;
-    color: #ffffff71;
-    width: 10px;
-    height: 15px;
-    border-radius: 1px;
-    user-select: none;
-    background: linear-gradient(0.5turn, #c8e2fc, #8bc5ff 25%, #8bc5ff 75%, #c8e2fc);
-}
-
-.red .health_token {
-    background: linear-gradient(0.5turn, #fcc8c8, #ff4646 25%, #ff4646 75%, #fcc8c8);
-}
-
 .action > div {
     flex: 1;
     padding: 5px;
@@ -401,14 +386,24 @@ td.strength {
     display: flex;
     padding: 2px;
     width: 105px;
+    height: 15px;
     border-radius: 2px;
     background-color: #2e3544;
 }
 
 .health_bar .health_token {
     flex: 1;
-    margin-left: 2px;
-    margin-right: 2px;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+.health_token {
+    border-radius: 1px;
+    background: linear-gradient(0.5turn, #c8e2fc, #8bc5ff 25%, #8bc5ff 75%, #c8e2fc);
+}
+
+.red .health_token {
+    background: linear-gradient(0.5turn, #fcc8c8, #ff4646 25%, #ff4646 75%, #fcc8c8);
 }
 
 #button_restore_action_tokens {
