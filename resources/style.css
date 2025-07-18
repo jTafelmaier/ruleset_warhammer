@@ -402,6 +402,10 @@ td.strength {
     background: linear-gradient(0.5turn, #c8e2fc, #8bc5ff 25%, #8bc5ff 75%, #c8e2fc);
 }
 
+.orange .health_token {
+    background: linear-gradient(0.5turn, #fce0c8, #ffaf46 25%, #ffaf46 75%, #fce0c8);
+}
+
 .red .health_token {
     background: linear-gradient(0.5turn, #fcc8c8, #ff4646 25%, #ff4646 75%, #fcc8c8);
 }
