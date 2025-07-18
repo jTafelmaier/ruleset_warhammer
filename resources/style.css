@@ -406,6 +406,10 @@ td.strength {
     background: linear-gradient(0.5turn, #fcc8c8, #ff4646 25%, #ff4646 75%, #fcc8c8);
 }
 
+.health_token.used {
+    background: none;
+}
+
 #button_restore_action_tokens {
     margin: 4px;
     margin-right: 10px;

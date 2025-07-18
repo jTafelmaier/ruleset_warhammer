@@ -101,8 +101,11 @@ def get_text_html_army_lists(
                 int_count_max = dict_unit \
                     ["health_points"]
 
-                text_health_tokens = "<div class=\"health_token\"></div>" \
-                    * int_count_max
+                text_health_tokens = "" \
+                    .join(
+                        map(
+                            lambda int_index: "<div class=\"health_token\" index=\"" + str(int_index) + "\"></div>",
+                            range(int_count_max)))
 
                 return "<div class=\"health_bar\" max=\"" \
                     + str(int_count_max)\
