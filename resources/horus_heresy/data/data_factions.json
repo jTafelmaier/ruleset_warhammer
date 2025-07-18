@@ -36,7 +36,6 @@
                             "hits": 2,
                             "strength": 10,
                             "keywords": [
-                                "bypass",
                                 "heavy"
                             ],
                             "range": 0
@@ -46,7 +45,6 @@
                             "hits": 1,
                             "strength": 12,
                             "keywords": [
-                                "bypass",
                                 "heavy"
                             ],
                             "range": 0
@@ -329,7 +327,6 @@
                             "hits": 2,
                             "strength": 12,
                             "keywords": [
-                                "bypass",
                                 "heavy"
                             ],
                             "range": 0

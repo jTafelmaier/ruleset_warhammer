@@ -33,11 +33,6 @@
     ],
     "keywords_weapons": [
         {
-            "name": "bypass",
-            "type": "kw_attack",
-            "function": "Units near this unit cannot perform the \"Block\" action."
-        },
-        {
             "name": "heavy",
             "type": "kw_attack",
             "function": "Can only use this weapon when performing the \"Critical attack\" action."
