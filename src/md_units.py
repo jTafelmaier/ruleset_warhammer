@@ -193,7 +193,7 @@ def get_text_html_unit(
         + get_text_html_model_characteristics() \
         + "</div><div class=\"div_content_unit\" style=\"background-image: url(resources/" \
         + name_setting \
-        + "/images/general/background.png)\"><div class=\"div_image_unit\"><img class=\"image_unit\" src=\"" \
+        + "/general/background.png)\"><div class=\"div_image_unit\"><img class=\"image_unit\" src=\"" \
         + path_image_unit \
         + "\"/></div><div class=\"model_properties\"><div class=\"model_property keywords\">" \
         + get_text_model_keywords() \

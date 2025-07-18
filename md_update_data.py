@@ -64,9 +64,9 @@ def main():
             return None
 
         path_data = os.path.join(
-                "resources",
-                name_setting,
+                "src",
                 "data",
+                name_setting,
                 "data_factions.json")
 
         with open(path_data, mode="r", encoding="utf-8") as file:

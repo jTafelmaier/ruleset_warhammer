@@ -26,7 +26,6 @@ def get_text_path_images_faction(
             [
                 "resources",
                 name_setting,
-                "images",
                 "factions",
                 name_directory_faction])
 

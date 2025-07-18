@@ -43,14 +43,14 @@ def generate_htmls():
 
                 return get_dict_json(
                     [
-                        "resources",
-                        name_setting,
+                        "src",
                         "data",
+                        name_setting,
                         name_file])
 
             path_images_general = "resources/" \
                 + name_setting \
-                + "/images/general"
+                + "/general"
 
             text_html_template = get_text_file(
                 [
@@ -59,7 +59,7 @@ def generate_htmls():
 
             dict_keywords = get_dict_json(
                 [
-                    "resources",
+                    "src",
                     "data",
                     "data_keywords.json"])
 
