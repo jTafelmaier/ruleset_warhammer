@@ -55,6 +55,7 @@ def generate_htmls():
             text_html_template = get_text_file(
                 [
                     "src",
+                    "data",
                     "index_template.html"])
 
             dict_keywords = get_dict_json(
