@@ -397,9 +397,9 @@ td.strength {
     font-weight: bold;
 }
 
-.td_health_bar {
+.health_bar {
     padding: 2px;
-    width: 150px;
+    width: 105px;
     background-color: #2e3544
 }
 

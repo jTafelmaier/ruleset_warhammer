@@ -96,7 +96,7 @@ def get_text_html_army_lists(
                     return get_text_html_action_token("a") \
                         + get_text_html_action_token("b")
 
-            def get_text_html_health_bar():
+            def get_text_html_health_tokens():
 
                 def get_text_health_token(
                     int_index_token:int):
@@ -140,9 +140,9 @@ def get_text_html_army_lists(
                 + str(
                         dict_unit_army_list \
                             ["count_models"]) \
-                + "</td><td class=\"td_health_bar\">" \
-                + get_text_html_health_bar() \
-                + "</td><td>" \
+                + "</td><td><div class=\"health_bar\">" \
+                + get_text_html_health_tokens() \
+                + "</div></td><td>" \
                 + str(
                     get_points_cost_unit(dict_unit_army_list)) \
                 + "</td><td><div class=\"button_destroy_unit\" onclick=\"destroy_unit('" \
