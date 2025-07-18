@@ -11,9 +11,9 @@
             "function": "This unit can perform the \"Setup teleportation\" action."
         },
         {
-            "name": "hidden",
+            "name": "stealth",
             "type": "kw_model_defense",
-            "function": "This unit can only be selected as a target unit by units within 20 cm."
+            "function": "If this unit is near cover, it can only be selected as a target unit by units within 20 cm."
         },
         {
             "name": "large_profile",

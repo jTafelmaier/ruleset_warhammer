@@ -310,7 +310,7 @@
                     "health_points": 4,
                     "armor": 4,
                     "keywords": [
-                        "hidden",
+                        "stealth",
                         "move 15cm"
                     ],
                     "actions": [
@@ -403,7 +403,7 @@
                     "armor": 5,
                     "keywords": [
                         "teleportation",
-                        "hidden",
+                        "stealth",
                         "score",
                         "move 15cm"
                     ],
