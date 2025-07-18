@@ -96,39 +96,12 @@ def get_text_html_army_lists(
                     return get_text_html_action_token("a") \
                         + get_text_html_action_token("b")
 
-            def get_text_html_health_tokens():
-
-                def get_text_health_token(
-                    int_index_token:int):
-
-                    # TODO re-implement as counter
-                    # TODO make health bar size dynamic to cover area
-                    key_health_token = "health_token_" \
-                        + text_side \
-                        + "_" \
-                        + str(int_index_unit) \
-                        + "_" \
-                        + str(int_index_token)
-
-                    return "<div id=\"" \
-                        + key_health_token \
-                        + "\" class=\"health_token toggleable\" onclick=\"toggle_token('" \
-                        + key_health_token \
-                        + "')\"></div>"
-
-                return "" \
-                    .join(
-                        map(
-                            get_text_health_token,
-                            range(
-                                dict_unit \
-                                    ["health_points"])))
-
             text_id_row = "army_list_tr_" \
                 + text_side \
                 + "_" \
                 + str(int_index_unit)
 
+            # TODO make health bar size dynamic to cover area
             return "<tr id=\"" \
                 + text_id_row \
                 + "\"><td>" \
@@ -140,8 +113,21 @@ def get_text_html_army_lists(
                 + str(
                         dict_unit_army_list \
                             ["count_models"]) \
-                + "</td><td><div class=\"health_bar\">" \
-                + get_text_html_health_tokens() \
+                + "</td><td><div class=\"health_bar\" max=\"" \
+                + str(
+                    dict_unit \
+                        ["health_points"])\
+                + "\" count=\"" \
+                + str(
+                    dict_unit \
+                        ["health_points"])\
+                + "\" onclick=\"reduce_health('" \
+                + text_id_row \
+                + "')\">" \
+                + (
+                    "<div class=\"health_token\"></div>" \
+                        * dict_unit \
+                            ["health_points"]) \
                 + "</div></td><td>" \
                 + str(
                     get_points_cost_unit(dict_unit_army_list)) \

@@ -398,9 +398,14 @@ td.strength {
 }
 
 .health_bar {
+    display: flex;
     padding: 2px;
-    width: 105px;
-    background-color: #2e3544
+}
+
+.health_bar .health_token {
+    flex: 1;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
 #button_restore_action_tokens {

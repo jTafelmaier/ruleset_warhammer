@@ -22,6 +22,27 @@ function restore_action_tokens() {
 }
 
 
+function reduce_health(text_id_element) {
+
+    element_health_bar = document.getElementById(text_id_element).getElementsByClassName("health_bar")[0];
+
+    var int_count_tokens_new = parseInt(element_health_bar.getAttribute("count")) - 1
+
+    if (int_count_tokens_new == 0) {
+        int_count_tokens_new = element_health_bar.getAttribute("max")
+    }
+
+    element_health_bar.setAttribute("count", int_count_tokens_new)
+    element_health_bar.textContent = "";
+
+    for (let i = 0; i < int_count_tokens_new; i++) {
+        var newDiv = document.createElement("div");
+        newDiv.classList.add("health_token")
+        element_health_bar.appendChild(newDiv)
+    }
+}
+
+
 function destroy_unit(text_id_element) {
 
     element = document.getElementById(text_id_element);
