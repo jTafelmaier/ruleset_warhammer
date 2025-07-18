@@ -400,18 +400,22 @@ td.strength {
 .health_token {
     border-radius: 1px;
     background: linear-gradient(0.5turn, #c8e2fc, #8bc5ff 25%, #8bc5ff 75%, #c8e2fc);
+    box-shadow: 0 0 5px 2px #48abe0;
 }
 
 .orange .health_token {
     background: linear-gradient(0.5turn, #fce0c8, #ffaf46 25%, #ffaf46 75%, #fce0c8);
+    box-shadow: 0 0 5px 2px #ffaf46;
 }
 
 .red .health_token {
     background: linear-gradient(0.5turn, #fcc8c8, #ff4646 25%, #ff4646 75%, #fcc8c8);
+    box-shadow: 0 0 5px 2px #ff4646;
 }
 
 .health_token.used {
-    background: none;
+    background: linear-gradient(0.5turn, #535f79, #2e3544 25%, #2e3544 75%, #535f79);
+    box-shadow: none;
 }
 
 #button_restore_action_tokens {
