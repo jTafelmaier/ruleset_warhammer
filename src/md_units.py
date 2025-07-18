@@ -169,9 +169,21 @@ def get_text_html_unit(
         def get_text_html_teleportation():
 
             if "teleportation" in dict_unit["keywords"]:
-                return get_text_html_keyword(
+                return "<br/>" \
+                    + get_text_html_keyword(
                         dict_keyword=dict_names_keywords_models \
                             ["teleportation"],
+                        text_parameters="")
+            else:
+                return ""
+
+        def get_text_html_attachable():
+
+            if dict_unit["attachable"]:
+                return "<br/>" \
+                    + get_text_html_keyword(
+                        dict_keyword=dict_names_keywords_models \
+                            ["attachable"],
                         text_parameters="")
             else:
                 return ""
@@ -180,8 +192,9 @@ def get_text_html_unit(
             return "<div class=\"inactive_data\"><span class=\"points_cost\">" \
                 + str(dict_unit \
                     ["points_per_model"]) \
-                + " points</span>" \
+                + " points</span><br/>" \
                 + get_text_html_teleportation() \
+                + get_text_html_attachable() \
                 + "</div>"
         else:
             return ""

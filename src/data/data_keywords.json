@@ -1,6 +1,16 @@
 {
     "keywords_models": [
         {
+            "name": "attachable",
+            "type": "kw_model_deployment",
+            "function": "This unit can be attached to another friendly unit at deployment."
+        },
+        {
+            "name": "teleportation",
+            "type": "kw_model_deployment",
+            "function": "This unit can perform the \"Setup teleportation\" action."
+        },
+        {
             "name": "hidden",
             "type": "kw_model_defense",
             "function": "This unit can only be selected as a target unit by units within 20 cm."
@@ -24,11 +34,6 @@
             "name": "score",
             "type": "kw_model_action",
             "function": "This unit can perform the \"Score objective\" action."
-        },
-        {
-            "name": "teleportation",
-            "type": "kw_model_deployment",
-            "function": "This unit can perform the \"Setup teleportation\" action."
         }
     ],
     "keywords_weapons": [
