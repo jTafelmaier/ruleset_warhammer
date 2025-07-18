@@ -168,7 +168,7 @@ body {
     height: 15px;
     border-radius: 1px;
     user-select: none;
-    background: #8bc5ff
+    background: linear-gradient(0.5turn, #c8e2fc, #8bc5ff 25%, #8bc5ff 75%, #c8e2fc);
 }
 
 .health_token.used {
@@ -401,6 +401,7 @@ td.strength {
     display: flex;
     padding: 2px;
     width: 105px;
+    border-radius: 2px;
     background-color: #2e3544;
 }
 
