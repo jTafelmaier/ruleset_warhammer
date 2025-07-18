@@ -142,9 +142,9 @@ body {
     color: #ffffff71;
     text-align: left;
     padding-left: 2px;
-    width: 40px;
+    width: 25px;
     height: 20px;
-    border-left: 8px solid #4a5266;
+    border-left: 5px solid #4a5266;
     border-radius: 2px;
     user-select: none;
     background: radial-gradient(ellipse at 20px 5px, #ffb1b1 0%, #ff5959 10%, #ff7c7c 12%, #ff5959 14%, #846262 80%, #846262 100%);
@@ -396,18 +396,6 @@ td.strength {
     color: #9e59ff;
     font-weight: bold;
 }
-
-/* .kw_model_defense {
-    color: #9e59ff;
-}
-
-.kw_model_action {
-    color: #4a5266;
-}
-
-.kw_attack {
-    color: #9e59ff;
-} */
 
 .td_health_bar {
     padding: 2px;
