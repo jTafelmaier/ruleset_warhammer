@@ -269,8 +269,9 @@ body {
     border-top-right-radius: 6px;
 }
 
-.keywords {
+div.model_property.keywords {
     padding: 4px;
+    float: right;
 }
 
 .div_content_unit {
