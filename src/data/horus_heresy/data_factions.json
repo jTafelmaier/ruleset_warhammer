@@ -282,6 +282,32 @@
                     "attachable": false
                 },
                 {
+                    "name": "MkII Assault Squad",
+                    "points_per_model": 50,
+                    "health_points": 4,
+                    "armor": 4,
+                    "keywords": [
+                        "fly 25cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Bolt pistol",
+                            "hits": 1,
+                            "strength": 5,
+                            "keywords": [],
+                            "range": 0
+                        },
+                        {
+                            "name": "Chain weapon",
+                            "hits": 1,
+                            "strength": 7,
+                            "keywords": [],
+                            "range": 5
+                        }
+                    ],
+                    "attachable": false
+                },
+                {
                     "name": "Araknae accelerator platform",
                     "points_per_model": 200,
                     "health_points": 4,
