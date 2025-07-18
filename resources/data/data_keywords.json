@@ -40,7 +40,7 @@
         {
             "name": "precise",
             "type": "kw_attack",
-            "function": "Units near the target unit cannot perform the \"Block\" action."
+            "function": "Can select attached units as target unit."
         },
         {
             "name": "separate",
