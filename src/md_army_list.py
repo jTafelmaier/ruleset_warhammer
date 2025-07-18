@@ -96,6 +96,24 @@ def get_text_html_army_lists(
                     return get_text_html_action_token("a") \
                         + get_text_html_action_token("b")
 
+            def get_text_html_health_bar():
+
+                int_count_max = dict_unit \
+                    ["health_points"]
+
+                text_health_tokens = "<div class=\"health_token\"></div>" \
+                    * int_count_max
+
+                return "<div class=\"health_bar\" max=\"" \
+                    + str(int_count_max)\
+                    + "\" count=\"" \
+                    + str(int_count_max)\
+                    + "\" onclick=\"reduce_health('" \
+                    + text_id_row \
+                    + "')\">" \
+                    + text_health_tokens \
+                    + "</div>"
+
             text_id_row = "army_list_tr_" \
                 + text_side \
                 + "_" \
@@ -113,22 +131,9 @@ def get_text_html_army_lists(
                 + str(
                         dict_unit_army_list \
                             ["count_models"]) \
-                + "</td><td><div class=\"health_bar\" max=\"" \
-                + str(
-                    dict_unit \
-                        ["health_points"])\
-                + "\" count=\"" \
-                + str(
-                    dict_unit \
-                        ["health_points"])\
-                + "\" onclick=\"reduce_health('" \
-                + text_id_row \
-                + "')\">" \
-                + (
-                    "<div class=\"health_token\"></div>" \
-                        * dict_unit \
-                            ["health_points"]) \
-                + "</div></td><td>" \
+                + "</td><td>" \
+                + get_text_html_health_bar() \
+                + "</td><td>" \
                 + str(
                     get_points_cost_unit(dict_unit_army_list)) \
                 + "</td><td><div class=\"button_destroy_unit\" onclick=\"destroy_unit('" \
