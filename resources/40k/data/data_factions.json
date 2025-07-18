@@ -9,7 +9,6 @@
                     "health_points": 4,
                     "armor": 4,
                     "keywords": [
-                        "brace",
                         "score",
                         "fly 25cm"
                     ],
@@ -36,7 +35,6 @@
                     "health_points": 4,
                     "armor": 4,
                     "keywords": [
-                        "brace",
                         "fly 25cm"
                     ],
                     "actions": [
@@ -62,7 +60,6 @@
                     "health_points": 4,
                     "armor": 5,
                     "keywords": [
-                        "brace",
                         "move 15cm"
                     ],
                     "actions": [
@@ -88,7 +85,6 @@
                     "health_points": 4,
                     "armor": 4,
                     "keywords": [
-                        "brace",
                         "move 15cm"
                     ],
                     "actions": [
@@ -114,7 +110,6 @@
                     "health_points": 4,
                     "armor": 4,
                     "keywords": [
-                        "brace",
                         "score",
                         "move 15cm"
                     ],
@@ -141,7 +136,6 @@
                     "health_points": 4,
                     "armor": 4,
                     "keywords": [
-                        "brace",
                         "move 15cm"
                     ],
                     "actions": [
@@ -169,7 +163,6 @@
                     "health_points": 4,
                     "armor": 4,
                     "keywords": [
-                        "brace",
                         "move 15cm"
                     ],
                     "actions": [
@@ -197,6 +190,7 @@
                     "health_points": 4,
                     "armor": 8,
                     "keywords": [
+                        "large_profile",
                         "move 25cm"
                     ],
                     "actions": [
@@ -231,7 +225,6 @@
                     "health_points": 4,
                     "armor": 4,
                     "keywords": [
-                        "brace",
                         "score",
                         "move 15cm"
                     ],
@@ -253,7 +246,6 @@
                     "health_points": 4,
                     "armor": 4,
                     "keywords": [
-                        "brace",
                         "score",
                         "move 15cm"
                     ],
@@ -280,7 +272,6 @@
                     "health_points": 4,
                     "armor": 4,
                     "keywords": [
-                        "brace",
                         "move 15cm"
                     ],
                     "actions": [
@@ -306,7 +297,6 @@
                     "health_points": 4,
                     "armor": 4,
                     "keywords": [
-                        "brace",
                         "move 15cm"
                     ],
                     "actions": [
@@ -338,7 +328,6 @@
                     "armor": 5,
                     "keywords": [
                         "teleportation",
-                        "brace",
                         "score",
                         "move 10cm"
                     ],
@@ -368,7 +357,6 @@
                     "armor": 6,
                     "keywords": [
                         "teleportation",
-                        "brace",
                         "score",
                         "move 10cm"
                     ],
@@ -388,7 +376,6 @@
                     "health_points": 4,
                     "armor": 6,
                     "keywords": [
-                        "brace",
                         "teleportation",
                         "move 10cm"
                     ],
@@ -409,7 +396,6 @@
                     "armor": 4,
                     "keywords": [
                         "hidden",
-                        "brace",
                         "move 15cm"
                     ],
                     "actions": [
@@ -443,7 +429,6 @@
                     "armor": 4,
                     "keywords": [
                         "teleportation",
-                        "brace",
                         "score",
                         "move 15cm"
                     ],
@@ -479,7 +464,6 @@
                     "health_points": 4,
                     "armor": 4,
                     "keywords": [
-                        "brace",
                         "move 15cm"
                     ],
                     "actions": [
@@ -502,7 +486,6 @@
                     "keywords": [
                         "teleportation",
                         "hidden",
-                        "brace",
                         "score",
                         "move 15cm"
                     ],
@@ -524,7 +507,6 @@
                     "health_points": 6,
                     "armor": 5,
                     "keywords": [
-                        "brace",
                         "move 15cm"
                     ],
                     "actions": [
@@ -543,7 +525,6 @@
                     "health_points": 6,
                     "armor": 6,
                     "keywords": [
-                        "brace",
                         "fly 15cm"
                     ],
                     "actions": [
@@ -564,7 +545,6 @@
                     "health_points": 6,
                     "armor": 6,
                     "keywords": [
-                        "brace",
                         "fly 15cm"
                     ],
                     "actions": [
@@ -593,6 +573,7 @@
                     "armor": 8,
                     "keywords": [
                         "teleportation",
+                        "large_profile",
                         "score",
                         "fly 25cm"
                     ],

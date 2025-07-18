@@ -6,6 +6,11 @@
             "function": "This unit can only be selected as a target unit by units within 20 cm."
         },
         {
+            "name": "large_profile",
+            "type": "kw_model_defense",
+            "function": "This unit cannot perform the \"Brace\" action."
+        },
+        {
             "name": "fly",
             "type": "kw_model_action",
             "function": "This unit can perform the \"Fly\" action up to the given distance."
@@ -14,11 +19,6 @@
             "name": "move",
             "type": "kw_model_action",
             "function": "This unit can perform the \"Move\" action up to the given distance."
-        },
-        {
-            "name": "brace",
-            "type": "kw_model_defense",
-            "function": "This unit can perform the \"Brace\" action."
         },
         {
             "name": "score",

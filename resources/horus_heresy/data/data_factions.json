@@ -9,7 +9,8 @@
                     "health_points": 6,
                     "armor": 9,
                     "keywords": [
-                        "move 15cm"
+                        "large_profile",
+                        "move 25cm"
                     ],
                     "actions": [
                         {
@@ -57,6 +58,7 @@
                     "health_points": 4,
                     "armor": 8,
                     "keywords": [
+                        "large_profile",
                         "move 15cm"
                     ],
                     "actions": [
@@ -100,7 +102,6 @@
                     "armor": 4,
                     "keywords": [
                         "teleportation",
-                        "brace",
                         "score",
                         "move 15cm"
                     ],
@@ -132,7 +133,6 @@
                     "armor": 5,
                     "keywords": [
                         "teleportation",
-                        "brace",
                         "score",
                         "move 10cm"
                     ],
@@ -176,7 +176,6 @@
                     "armor": 4,
                     "keywords": [
                         "hidden",
-                        "brace",
                         "score",
                         "move 15cm"
                     ],
@@ -205,7 +204,6 @@
                     "health_points": 4,
                     "armor": 5,
                     "keywords": [
-                        "brace",
                         "score",
                         "move 10cm"
                     ],
@@ -243,7 +241,6 @@
                     "health_points": 4,
                     "armor": 4,
                     "keywords": [
-                        "brace",
                         "move 15cm"
                     ],
                     "actions": [
@@ -262,7 +259,6 @@
                     "health_points": 4,
                     "armor": 4,
                     "keywords": [
-                        "brace",
                         "move 15cm"
                     ],
                     "actions": [
@@ -282,7 +278,9 @@
                     "points_per_model": 200,
                     "health_points": 4,
                     "armor": 9,
-                    "keywords": [],
+                    "keywords": [
+                        "large_profile"
+                    ],
                     "actions": [
                         {
                             "name": "Quad accelerator cannon",
@@ -301,6 +299,7 @@
                     "health_points": 6,
                     "armor": 10,
                     "keywords": [
+                        "large_profile",
                         "move 25cm"
                     ],
                     "actions": [
@@ -346,7 +345,6 @@
                     "keywords": [
                         "teleportation",
                         "hidden",
-                        "brace",
                         "score",
                         "move 15cm"
                     ],
@@ -383,7 +381,6 @@
                     "armor": 4,
                     "keywords": [
                         "teleportation",
-                        "brace",
                         "score",
                         "move 15cm"
                     ],
