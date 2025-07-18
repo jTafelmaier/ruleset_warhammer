@@ -31,7 +31,8 @@ def main():
 
                 return {
                     "name": name_unit,
-                    "count_models": 1}
+                    "count_models": 1,
+                    "attached_to_index": None}
 
             list_dicts_units = list(
                     map(

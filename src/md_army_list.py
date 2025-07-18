@@ -72,23 +72,31 @@ def get_text_html_army_lists(
 
             text_teleportation = "(t) " if "teleportation" in dict_unit["keywords"] else ""
 
-            def get_text_html_action_token(
-                key_index:str):
+            def get_text_html_action_tokens():
 
-                key_action_token = "action_token_" \
-                    + text_side \
-                    + "_" \
-                    + str(int_index_unit) \
-                    + "_" \
-                    + key_index
+                def get_text_html_action_token(
+                    key_index:str):
 
-                return "<div id=\"" \
-                    + key_action_token \
-                    + "\" class=\"action_token toggleable\" onclick=\"toggle_token('" \
-                    + key_action_token \
-                    + "')\">AT</div>"
+                    key_action_token = "action_token_" \
+                        + text_side \
+                        + "_" \
+                        + str(int_index_unit) \
+                        + "_" \
+                        + key_index
 
-            def get_text_html_unit_health_bar():
+                    return "<div id=\"" \
+                        + key_action_token \
+                        + "\" class=\"action_token toggleable\" onclick=\"toggle_token('" \
+                        + key_action_token \
+                        + "')\">AT</div>"
+
+                if dict_unit_army_list["attached_to_index"] is not None:
+                    return "attached"
+                else:
+                    return get_text_html_action_token("a") \
+                        + get_text_html_action_token("b")
+
+            def get_text_html_health_bar():
 
                 def get_text_health_token(
                     int_index_token:int):
@@ -124,8 +132,7 @@ def get_text_html_army_lists(
             return "<tr id=\"" \
                 + text_id_row \
                 + "\"><td>" \
-                + get_text_html_action_token("a") \
-                + get_text_html_action_token("b") \
+                + get_text_html_action_tokens() \
                 + "</td><td>" \
                 + text_teleportation \
                 + text_name_unit \
@@ -134,7 +141,7 @@ def get_text_html_army_lists(
                         dict_unit_army_list \
                             ["count_models"]) \
                 + "</td><td class=\"td_health_bar\">" \
-                + get_text_html_unit_health_bar() \
+                + get_text_html_health_bar() \
                 + "</td><td>" \
                 + str(
                     get_points_cost_unit(dict_unit_army_list)) \

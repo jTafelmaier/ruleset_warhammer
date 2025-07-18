@@ -3,7 +3,8 @@
     "units": [
         {
             "name": "Warsmith",
-            "count_models": 1
+            "count_models": 1,
+            "attached_to_index": null
         }
     ]
 }

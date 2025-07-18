@@ -3,7 +3,8 @@
     "units": [
         {
             "name": "Hibou Khan",
-            "count_models": 1
+            "count_models": 1,
+            "attached_to_index": null
         }
     ]
 }
