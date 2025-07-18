@@ -130,7 +130,7 @@ def get_text_html_army_lists(
                 + "</td><td>" \
                 + text_teleportation \
                 + text_name_unit \
-                + "</td><td>" \
+                + "</td><td class=\"count_models\">" \
                 + str(
                         dict_unit_army_list \
                             ["count_models"]) \
@@ -139,9 +139,7 @@ def get_text_html_army_lists(
                 + "</td><td>" \
                 + str(
                     get_points_cost_unit(dict_unit_army_list)) \
-                + "</td><td><div class=\"button_destroy_unit\" onclick=\"destroy_unit('" \
-                + text_id_row \
-                + "')\">❌</div></td></tr>"
+                + "</td></tr>"
 
         text_html_trs_units = "" \
             .join(
@@ -157,7 +155,7 @@ def get_text_html_army_lists(
 
         text_html_army_list = "<div class=\"army_list\"><table class=\"table_default fullwidth\"><tbody><tr><th>Action tokens</th><th>Unit</th><th>#models</th><th>Health</th><th>Points (" \
             + str(int_total_points) \
-            + " total)</th><th/></tr>" \
+            + " total)</th></tr>" \
             + text_html_trs_units \
             + "</tbody></table></div>"
 

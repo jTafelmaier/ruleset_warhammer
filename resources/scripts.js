@@ -24,7 +24,10 @@ function restore_action_tokens() {
 
 function reduce_health(text_id_element) {
 
-    element_health_bar = document.getElementById(text_id_element).getElementsByClassName("health_bar")[0]
+    element_tr = document.getElementById(text_id_element)
+
+    element_count_models = element_tr.getElementsByClassName("count_models")[0]
+    element_health_bar = element_tr.getElementsByClassName("health_bar")[0]
 
     var int_count_tokens_new = parseInt(element_health_bar.getAttribute("count")) - 1
     var int_count_tokens_max = parseInt(element_health_bar.getAttribute("max"))
@@ -33,6 +36,11 @@ function reduce_health(text_id_element) {
         int_count_tokens_new = int_count_tokens_max
         for (element_health_token of element_health_bar.getElementsByClassName("health_token")) {
             element_health_token.classList.remove("used")
+        }
+        int_count_models_new = parseInt(element_count_models.textContent) - 1
+        element_count_models.textContent = int_count_models_new.toString()
+        if (int_count_models_new == 0) {
+            element_tr.classList.add("destroyed")
         }
     }
 
@@ -54,14 +62,6 @@ function reduce_health(text_id_element) {
             element_health_token.classList.add("used")
         }
     }
-}
-
-
-function destroy_unit(text_id_element) {
-
-    element = document.getElementById(text_id_element)
-
-    element.classList.toggle("destroyed")
 }
 
 

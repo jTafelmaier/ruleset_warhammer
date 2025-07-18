@@ -397,6 +397,14 @@ td.strength {
     margin-right: 1px;
 }
 
+.destroyed .action_token {
+    display: none;
+}
+
+.destroyed .health_bar {
+    display: none;
+}
+
 .health_token {
     border-radius: 1px;
     background: linear-gradient(0.5turn, #c8e2fc, #8bc5ff 25%, #8bc5ff 75%, #c8e2fc);
@@ -441,17 +449,7 @@ td.strength {
     gap: 20px 50px;
 }
 
-.button_destroy_unit {
-    text-align: center;
-}
-
-.button_destroy_unit:hover {
-    background-color: red;
-}
-
 .destroyed td {
-    color: white;
-    background-color: red;
-    border-top: 1px solid white;
+    color: #919eba;
 }
 
