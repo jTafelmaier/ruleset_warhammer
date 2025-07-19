@@ -547,7 +547,7 @@
                 },
                 {
                     "name": "Hexmark unit",
-                    "points_per_model": 200,
+                    "points_per_model": 250,
                     "health_points": 6,
                     "armor": 5,
                     "keywords": [
