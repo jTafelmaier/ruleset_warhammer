@@ -426,6 +426,44 @@
             "name": "World Eaters",
             "units": [
                 {
+                    "name": "Lord Invocatus",
+                    "points_per_model": 200,
+                    "health_points": 8,
+                    "armor": 5,
+                    "keywords": [
+                        "score",
+                        "move 25cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Bolt pistol",
+                            "hits": 2,
+                            "strength": 5,
+                            "keywords": [
+                                "separate"
+                            ],
+                            "range": 20
+                        },
+                        {
+                            "name": "Coward's bane",
+                            "hits": 2,
+                            "strength": 7,
+                            "keywords": [],
+                            "range": 5
+                        },
+                        {
+                            "name": "Juggernaut's horned blade",
+                            "hits": 1,
+                            "strength": 10,
+                            "keywords": [
+                                "heavy"
+                            ],
+                            "range": 5
+                        }
+                    ],
+                    "attachable": false
+                },
+                {
                     "name": "Slaughterbound",
                     "points_per_model": 150,
                     "health_points": 6,
@@ -448,12 +486,43 @@
                         {
                             "name": "Daemonic blade",
                             "hits": 1,
-                            "strength": 7,
+                            "strength": 8,
                             "keywords": [],
                             "range": 5
                         }
                     ],
                     "attachable": true
+                },
+                {
+                    "name": "Exalted Eightbound",
+                    "points_per_model": 100,
+                    "health_points": 6,
+                    "armor": 4,
+                    "keywords": [
+                        "teleportation",
+                        "move 20cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Eviscerator",
+                            "hits": 1,
+                            "strength": 6,
+                            "keywords": [
+                                "separate"
+                            ],
+                            "range": 5
+                        },
+                        {
+                            "name": "Chainfist",
+                            "hits": 1,
+                            "strength": 9,
+                            "keywords": [
+                                "heavy"
+                            ],
+                            "range": 5
+                        }
+                    ],
+                    "attachable": false
                 },
                 {
                     "name": "Eightbound",
