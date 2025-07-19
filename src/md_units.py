@@ -206,13 +206,13 @@ def get_text_html_unit(
         + get_text_html_model_characteristics() \
         + "</div><div class=\"div_content_unit\" style=\"background-image: url(resources/" \
         + name_setting \
-        + "/general/background.png)\"><div class=\"div_image_unit\"><img class=\"image_unit\" src=\"" \
+        + "/general/background.png)\"><div class=\"div_image_unit\" style=\"background-image: url(" \
         + path_image_unit \
-        + "\"/></div><div class=\"model_properties\"><div class=\"model_property keywords\">" \
+        + ")\"><div class=\"model_properties\"><div class=\"model_property keywords\">" \
         + get_text_model_keywords() \
         + "</div><div class=\"model_property actions\"><table class=\"table_default fullwidth\"><tbody><tr><th class=\"th_weapon_characteristic range\"><th class=\"th_weapon_characteristic keywords\"></th><th class=\"th_weapon_characteristic strength\"></th></tr>" \
         + text_html_rows_actions \
-        + "</tbody></table></div></div></div></div>" \
+        + "</tbody></table></div></div></div></div></div>" \
         + get_text_html_inactive_information() \
         + "</div>"
 

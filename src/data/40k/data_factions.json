@@ -369,6 +369,75 @@
                     "attachable": true
                 }
             ]
+        },
+        {
+            "name": "White Scars",
+            "units": [
+                {
+                    "name": "Suboden Khan",
+                    "points_per_model": 200,
+                    "health_points": 4,
+                    "armor": 5,
+                    "keywords": [
+                        "score",
+                        "fly 35cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Onslaught cannon",
+                            "hits": 6,
+                            "strength": 5,
+                            "keywords": [],
+                            "range": 20
+                        },
+                        {
+                            "name": "Power lance",
+                            "hits": 1,
+                            "strength": 9,
+                            "keywords": [
+                                "precise"
+                            ],
+                            "range": 5
+                        }
+                    ],
+                    "attachable": true
+                }
+            ]
+        },
+        {
+            "name": "Raven guard",
+            "units": [
+                {
+                    "name": "Aethon Shaan",
+                    "points_per_model": 200,
+                    "health_points": 4,
+                    "armor": 4,
+                    "keywords": [
+                        "stealth",
+                        "score",
+                        "fly 25cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Bolt pistol",
+                            "hits": 2,
+                            "strength": 5,
+                            "keywords": [],
+                            "range": 20
+                        },
+                        {
+                            "name": "Power claws",
+                            "hits": 4,
+                            "strength": 6,
+                            "keywords": [
+                                "precise"
+                            ],
+                            "range": 5
+                        }
+                    ],
+                    "attachable": true
+                }
+            ]
         }
     ],
     "xenos": [
