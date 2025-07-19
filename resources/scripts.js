@@ -22,6 +22,22 @@ function restore_action_tokens() {
 }
 
 
+function increase_number_models(text_id_element) {
+
+    element_tr = document.getElementById(text_id_element)
+
+    element_count_models = element_tr.getElementsByClassName("count_models")[0]
+
+    var int_count_models_current = parseInt(element_count_models.textContent)
+    var int_count_models_initial = parseInt(element_count_models.getAttribute("initial"))
+
+    if (int_count_models_current < int_count_models_initial) {
+        element_count_models.textContent = (int_count_models_current + 1).toString()
+        element_tr.classList.remove("destroyed")
+    }
+}
+
+
 function reduce_health(text_id_element) {
 
     element_tr = document.getElementById(text_id_element)

@@ -122,7 +122,6 @@ def get_text_html_army_lists(
                 + "_" \
                 + str(int_index_unit)
 
-            # TODO make health bar size dynamic to cover area
             return "<tr id=\"" \
                 + text_id_row \
                 + "\"><td>" \
@@ -130,10 +129,16 @@ def get_text_html_army_lists(
                 + "</td><td>" \
                 + text_teleportation \
                 + text_name_unit \
-                + "</td><td class=\"count_models\">" \
+                + "</td><td class=\"count_models\" initial=\"" \
                 + str(
-                        dict_unit_army_list \
-                            ["count_models"]) \
+                    dict_unit_army_list \
+                        ["count_models"]) \
+                + "\" onclick=\"increase_number_models('" \
+                + text_id_row \
+                + "')\">" \
+                + str(
+                    dict_unit_army_list \
+                        ["count_models"]) \
                 + "</td><td>" \
                 + get_text_html_health_bar() \
                 + "</td><td>" \
