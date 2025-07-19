@@ -228,13 +228,11 @@ body {
 }
 
 .inactive_data {
-    flex: 1;
-    width: 200px;
+    width: 100px;
     padding: 5px;
 }
 
 .div_unit {
-    flex: 1;
     background-color: #2e3544;
     border: 2px solid #2e3544;
     border-radius: 8px;
@@ -259,7 +257,6 @@ div.model_property.keywords {
 }
 
 .div_content_unit {
-    display: flex;
     width: 650px;
     height: 200px;
     background-size: cover;
@@ -270,6 +267,7 @@ div.model_property.keywords {
 
 .div_image_unit {
     width: 100%;
+    height: 100%;
     background-size: contain;
     background-repeat: no-repeat;
 }
