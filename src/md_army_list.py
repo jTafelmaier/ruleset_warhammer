@@ -29,7 +29,6 @@ def get_text_html_army_lists(
         list_units_army_list = dict_army_list \
             ["units"]
 
-        # TODO catch error if not found
         dict_faction = next(
                 filter(
                     lambda dict_faction: dict_faction["name"] == name_faction,
