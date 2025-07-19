@@ -46,13 +46,8 @@ function reduce_health(text_id_element) {
 
     if (int_count_tokens_new == 1) {
         element_health_bar.classList.add("red")
-        element_health_bar.classList.remove("orange")
-    } else if (int_count_tokens_new == 2){
-        element_health_bar.classList.add("orange")
-        element_health_bar.classList.remove("red")
     } else {
         element_health_bar.classList.remove("red")
-        element_health_bar.classList.remove("orange")
     }
 
     element_health_bar.setAttribute("count", int_count_tokens_new)
