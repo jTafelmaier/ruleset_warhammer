@@ -17,7 +17,9 @@
                             "name": "Bolt pistol",
                             "hits": 2,
                             "strength": 5,
-                            "keywords": [],
+                            "keywords": [
+                                "separate"
+                            ],
                             "range": 20
                         },
                         {
@@ -258,7 +260,9 @@
                             "name": "Bolt pistol",
                             "hits": 2,
                             "strength": 5,
-                            "keywords": [],
+                            "keywords": [
+                                "separate"
+                            ],
                             "range": 20
                         },
                         {
@@ -284,7 +288,9 @@
                             "name": "Bolt pistol",
                             "hits": 1,
                             "strength": 5,
-                            "keywords": [],
+                            "keywords": [
+                                "separate"
+                            ],
                             "range": 20
                         },
                         {
@@ -433,14 +439,16 @@
                         {
                             "name": "Eviscerator",
                             "hits": 2,
-                            "strength": 7,
-                            "keywords": [],
+                            "strength": 6,
+                            "keywords": [
+                                "separate"
+                            ],
                             "range": 5
                         },
                         {
                             "name": "Daemonic blade",
                             "hits": 1,
-                            "strength": 8,
+                            "strength": 7,
                             "keywords": [],
                             "range": 5
                         }
@@ -459,7 +467,7 @@
                         {
                             "name": "Eviscerators",
                             "hits": 2,
-                            "strength": 7,
+                            "strength": 6,
                             "keywords": [],
                             "range": 5
                         }
@@ -479,7 +487,9 @@
                             "name": "Bolt pistol",
                             "hits": 1,
                             "strength": 5,
-                            "keywords": [],
+                            "keywords": [
+                                "separate"
+                            ],
                             "range": 20
                         },
                         {
