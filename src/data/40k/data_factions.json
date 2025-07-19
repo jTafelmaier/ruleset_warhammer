@@ -440,6 +440,86 @@
             ]
         }
     ],
+    "chaos": [
+        {
+            "name": "World Eaters",
+            "units": [
+                {
+                    "name": "Slaughterbound",
+                    "points_per_model": 150,
+                    "health_points": 6,
+                    "armor": 4,
+                    "keywords": [
+                        "teleportation",
+                        "score",
+                        "move 20cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Eviscerator",
+                            "hits": 2,
+                            "strength": 7,
+                            "keywords": [],
+                            "range": 5
+                        },
+                        {
+                            "name": "Daemonic blade",
+                            "hits": 1,
+                            "strength": 8,
+                            "keywords": [],
+                            "range": 5
+                        }
+                    ],
+                    "attachable": true
+                },
+                {
+                    "name": "Eightbound",
+                    "points_per_model": 50,
+                    "health_points": 6,
+                    "armor": 4,
+                    "keywords": [
+                        "move 20cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Eviscerators",
+                            "hits": 2,
+                            "strength": 7,
+                            "keywords": [],
+                            "range": 5
+                        }
+                    ],
+                    "attachable": false
+                },
+                {
+                    "name": "Khorne Berzerkers",
+                    "points_per_model": 50,
+                    "health_points": 4,
+                    "armor": 4,
+                    "keywords": [
+                        "move 20cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Bolt pistol",
+                            "hits": 1,
+                            "strength": 5,
+                            "keywords": [],
+                            "range": 20
+                        },
+                        {
+                            "name": "Chain weapon",
+                            "hits": 1,
+                            "strength": 7,
+                            "keywords": [],
+                            "range": 5
+                        }
+                    ],
+                    "attachable": false
+                }
+            ]
+        }
+    ],
     "xenos": [
         {
             "name": "Necrons",
@@ -546,86 +626,6 @@
                                 "heavy"
                             ],
                             "range": 20
-                        }
-                    ],
-                    "attachable": false
-                }
-            ]
-        }
-    ],
-    "chaos": [
-        {
-            "name": "World Eaters",
-            "units": [
-                {
-                    "name": "Slaughterbound",
-                    "points_per_model": 150,
-                    "health_points": 6,
-                    "armor": 4,
-                    "keywords": [
-                        "teleportation",
-                        "score",
-                        "move 20cm"
-                    ],
-                    "actions": [
-                        {
-                            "name": "Eviscerator",
-                            "hits": 2,
-                            "strength": 7,
-                            "keywords": [],
-                            "range": 5
-                        },
-                        {
-                            "name": "Daemonic blade",
-                            "hits": 1,
-                            "strength": 8,
-                            "keywords": [],
-                            "range": 5
-                        }
-                    ],
-                    "attachable": true
-                },
-                {
-                    "name": "Eightbound",
-                    "points_per_model": 50,
-                    "health_points": 6,
-                    "armor": 4,
-                    "keywords": [
-                        "move 20cm"
-                    ],
-                    "actions": [
-                        {
-                            "name": "Eviscerators",
-                            "hits": 2,
-                            "strength": 7,
-                            "keywords": [],
-                            "range": 5
-                        }
-                    ],
-                    "attachable": false
-                },
-                {
-                    "name": "Khorne Berzerkers",
-                    "points_per_model": 50,
-                    "health_points": 4,
-                    "armor": 4,
-                    "keywords": [
-                        "move 20cm"
-                    ],
-                    "actions": [
-                        {
-                            "name": "Bolt pistol",
-                            "hits": 1,
-                            "strength": 5,
-                            "keywords": [],
-                            "range": 20
-                        },
-                        {
-                            "name": "Chain weapon",
-                            "hits": 1,
-                            "strength": 7,
-                            "keywords": [],
-                            "range": 5
                         }
                     ],
                     "attachable": false
