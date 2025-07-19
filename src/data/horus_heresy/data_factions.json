@@ -101,7 +101,7 @@
                     "name": "Corswain",
                     "points_per_model": 200,
                     "health_points": 4,
-                    "armor": 4,
+                    "armor": 5,
                     "keywords": [
                         "teleportation",
                         "score",
@@ -133,7 +133,7 @@
                     "name": "Marduk Sedras",
                     "points_per_model": 200,
                     "health_points": 4,
-                    "armor": 5,
+                    "armor": 6,
                     "keywords": [
                         "teleportation",
                         "score",
@@ -177,7 +177,7 @@
                     "name": "Hibou Khan",
                     "points_per_model": 150,
                     "health_points": 4,
-                    "armor": 4,
+                    "armor": 5,
                     "keywords": [
                         "stealth",
                         "score",
@@ -207,7 +207,7 @@
                     "name": "Warsmith",
                     "points_per_model": 150,
                     "health_points": 4,
-                    "armor": 5,
+                    "armor": 6,
                     "keywords": [
                         "score",
                         "move 10cm"
@@ -415,7 +415,7 @@
                     "name": "Librarian consul",
                     "points_per_model": 150,
                     "health_points": 4,
-                    "armor": 4,
+                    "armor": 5,
                     "keywords": [
                         "teleportation",
                         "score",

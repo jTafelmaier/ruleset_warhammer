@@ -7,7 +7,7 @@
                     "name": "Captain with jump pack",
                     "points_per_model": 100,
                     "health_points": 4,
-                    "armor": 4,
+                    "armor": 5,
                     "keywords": [
                         "score",
                         "fly 25cm"
@@ -34,7 +34,7 @@
                     "name": "Captain in gravis armour",
                     "points_per_model": 100,
                     "health_points": 4,
-                    "armor": 4,
+                    "armor": 5,
                     "keywords": [
                         "score",
                         "move 15cm"
@@ -153,7 +153,7 @@
                     "name": "Suboden Khan",
                     "points_per_model": 200,
                     "health_points": 4,
-                    "armor": 5,
+                    "armor": 6,
                     "keywords": [
                         "score",
                         "fly 35cm"
@@ -187,7 +187,7 @@
                     "name": "Aethon Shaan",
                     "points_per_model": 200,
                     "health_points": 4,
-                    "armor": 4,
+                    "armor": 5,
                     "keywords": [
                         "stealth",
                         "score",
@@ -222,7 +222,7 @@
                     "name": "Castellan",
                     "points_per_model": 100,
                     "health_points": 4,
-                    "armor": 4,
+                    "armor": 5,
                     "keywords": [
                         "score",
                         "move 15cm"
@@ -306,7 +306,7 @@
                     "name": "Belial",
                     "points_per_model": 200,
                     "health_points": 4,
-                    "armor": 5,
+                    "armor": 6,
                     "keywords": [
                         "teleportation",
                         "score",
@@ -336,7 +336,7 @@
                     "name": "Deathwing strikemaster",
                     "points_per_model": 200,
                     "health_points": 4,
-                    "armor": 6,
+                    "armor": 7,
                     "keywords": [
                         "teleportation",
                         "score",
@@ -411,7 +411,7 @@
                     "name": "Castellan Crowe",
                     "points_per_model": 200,
                     "health_points": 4,
-                    "armor": 4,
+                    "armor": 5,
                     "keywords": [
                         "teleportation",
                         "score",
@@ -448,7 +448,7 @@
                     "name": "Slaughterbound",
                     "points_per_model": 150,
                     "health_points": 6,
-                    "armor": 4,
+                    "armor": 5,
                     "keywords": [
                         "teleportation",
                         "score",
@@ -560,7 +560,7 @@
                         {
                             "name": "Enmitic weapons",
                             "hits": 6,
-                            "strength": 5,
+                            "strength": 6,
                             "keywords": [
                                 "precise"
                             ],
@@ -621,7 +621,7 @@
                         {
                             "name": "Enmitic weapon",
                             "hits": 6,
-                            "strength": 6,
+                            "strength": 7,
                             "keywords": [
                                 "heavy"
                             ],
