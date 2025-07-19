@@ -160,9 +160,7 @@ def get_text_html_unit(
 
         return "<div class=\"characteristics_model\"><div class=\"div_model_characteristic div_armor\"><div class=\"div_model_characteristic_name\">Armor</div><div class=\"div_model_characteristic_value\">" \
             + str(dict_unit["armor"]) \
-            + "</div></div><div class=\"div_model_characteristic div_health\"><div class=\"div_model_characteristic_value\">" \
-            + str(dict_unit["health_points"]) \
-            + "</div><div class=\"div_model_characteristic_name\">HP</div></div></div>"
+            + "</div></div></div>"
 
     def get_text_html_inactive_information():
 
@@ -190,9 +188,14 @@ def get_text_html_unit(
 
         if bool_show_inactive_information:
             return "<div class=\"inactive_data\"><span class=\"points_cost\">" \
-                + str(dict_unit \
-                    ["points_per_model"]) \
-                + " points</span><br/>" \
+                + str(
+                    dict_unit \
+                        ["points_per_model"]) \
+                + " points</span><br/><br/>Max health:<span class=\"max_health\">" \
+                + str(
+                    dict_unit \
+                        ["health_points"]) \
+                + "</span><br/>" \
                 + get_text_html_teleportation() \
                 + get_text_html_attachable() \
                 + "</div>"

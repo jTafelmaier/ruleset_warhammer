@@ -298,14 +298,18 @@ div.model_property.keywords {
         0 8px);
 }
 
+.max_health {
+    font-weight: bold;
+}
+
 .characteristics_model {
     display: flex;
     gap: 5px;
-    padding: 4px;
 }
 
 .div_model_characteristic {
     display: flex;
+    padding: 4px;
 }
 
 .div_model_characteristic_value {
