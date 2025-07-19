@@ -560,7 +560,7 @@
                         {
                             "name": "Enmitic weapons",
                             "hits": 6,
-                            "strength": 6,
+                            "strength": 5,
                             "keywords": [
                                 "precise"
                             ],
@@ -621,7 +621,7 @@
                         {
                             "name": "Enmitic weapon",
                             "hits": 6,
-                            "strength": 7,
+                            "strength": 6,
                             "keywords": [
                                 "heavy"
                             ],
