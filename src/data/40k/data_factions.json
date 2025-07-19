@@ -108,7 +108,8 @@
                             "hits": 1,
                             "strength": 9,
                             "keywords": [
-                                "heavy"
+                                "heavy",
+                                "ap"
                             ],
                             "range": 20
                         }
@@ -139,7 +140,8 @@
                             "hits": 1,
                             "strength": 11,
                             "keywords": [
-                                "heavy"
+                                "heavy",
+                                "ap"
                             ],
                             "range": 0
                         }
@@ -454,9 +456,10 @@
                         {
                             "name": "Juggernaut's horned blade",
                             "hits": 1,
-                            "strength": 10,
+                            "strength": 8,
                             "keywords": [
-                                "heavy"
+                                "heavy",
+                                "ap"
                             ],
                             "range": 5
                         }
@@ -515,9 +518,10 @@
                         {
                             "name": "Chainfist",
                             "hits": 1,
-                            "strength": 9,
+                            "strength": 7,
                             "keywords": [
-                                "heavy"
+                                "heavy",
+                                "ap"
                             ],
                             "range": 5
                         }
@@ -590,9 +594,10 @@
                         {
                             "name": "Gauss weapon",
                             "hits": 1,
-                            "strength": 7,
+                            "strength": 5,
                             "keywords": [
-                                "heavy"
+                                "heavy",
+                                "ap"
                             ],
                             "range": 0
                         }
@@ -635,8 +640,10 @@
                         {
                             "name": "Hyperphase blades",
                             "hits": 1,
-                            "strength": 10,
-                            "keywords": [],
+                            "strength": 8,
+                            "keywords": [
+                                "ap"
+                            ],
                             "range": 5
                         }
                     ],
@@ -654,9 +661,10 @@
                         {
                             "name": "Gauss weapon",
                             "hits": 1,
-                            "strength": 12,
+                            "strength": 10,
                             "keywords": [
-                                "heavy"
+                                "heavy",
+                                "ap"
                             ],
                             "range": 0
                         }

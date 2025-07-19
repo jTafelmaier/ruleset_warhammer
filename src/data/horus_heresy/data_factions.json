@@ -6,7 +6,7 @@
                 {
                     "name": "Kratos heavy assault tank",
                     "points_per_model": 400,
-                    "health_points": 6,
+                    "health_points": 8,
                     "armor": 9,
                     "keywords": [
                         "large_profile",
@@ -46,7 +46,8 @@
                             "hits": 1,
                             "strength": 12,
                             "keywords": [
-                                "heavy"
+                                "heavy",
+                                "ap"
                             ],
                             "range": 0
                         }
@@ -77,7 +78,9 @@
                             "name": "Melta weapons",
                             "hits": 2,
                             "strength": 9,
-                            "keywords": [],
+                            "keywords": [
+                                "ap"
+                            ],
                             "range": 20
                         },
                         {
@@ -223,9 +226,10 @@
                         {
                             "name": "Grav weapon",
                             "hits": 1,
-                            "strength": 7,
+                            "strength": 4,
                             "keywords": [
-                                "heavy"
+                                "heavy",
+                                "ap"
                             ],
                             "range": 0
                         },
@@ -234,7 +238,8 @@
                             "hits": 1,
                             "strength": 10,
                             "keywords": [
-                                "heavy"
+                                "heavy",
+                                "ap"
                             ],
                             "range": 5
                         }
@@ -319,9 +324,10 @@
                         {
                             "name": "Quad accelerator cannon",
                             "hits": 4,
-                            "strength": 11,
+                            "strength": 9,
                             "keywords": [
-                                "heavy"
+                                "heavy",
+                                "ap"
                             ],
                             "range": 0
                         }
@@ -331,7 +337,7 @@
                 {
                     "name": "Fellblade super-heavy tank",
                     "points_per_model": 600,
-                    "health_points": 6,
+                    "health_points": 8,
                     "armor": 10,
                     "keywords": [
                         "large_profile",
@@ -358,10 +364,11 @@
                         },
                         {
                             "name": "Twin battle cannon",
-                            "hits": 2,
+                            "hits": 1,
                             "strength": 12,
                             "keywords": [
-                                "heavy"
+                                "heavy",
+                                "ap"
                             ],
                             "range": 0
                         }

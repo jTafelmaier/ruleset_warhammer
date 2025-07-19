@@ -38,6 +38,11 @@
     ],
     "keywords_weapons": [
         {
+            "name": "ap",
+            "type": "kw_attack",
+            "function": "If the target unit's armor characteristic is lower than double this weapon's strength: The minimum damage infliced by each hit is 1."
+        },
+        {
             "name": "heavy",
             "type": "kw_attack",
             "function": "Can only use this weapon when performing the \"Critical attack\" action."
