@@ -4,6 +4,95 @@
             "name": "Space Marines",
             "units": [
                 {
+                    "name": "Aethon Shaan",
+                    "points_per_model": 200,
+                    "health_points": 4,
+                    "armor": 5,
+                    "keywords": [
+                        "stealth",
+                        "score",
+                        "fly 25cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Bolt pistol",
+                            "hits": 2,
+                            "strength": 5,
+                            "keywords": [],
+                            "range": 20
+                        },
+                        {
+                            "name": "Power claws",
+                            "hits": 4,
+                            "strength": 6,
+                            "keywords": [
+                                "precise"
+                            ],
+                            "range": 5
+                        }
+                    ],
+                    "attachable": true
+                },
+                {
+                    "name": "Suboden Khan",
+                    "points_per_model": 200,
+                    "health_points": 4,
+                    "armor": 6,
+                    "keywords": [
+                        "score",
+                        "fly 35cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Onslaught cannon",
+                            "hits": 6,
+                            "strength": 5,
+                            "keywords": [],
+                            "range": 20
+                        },
+                        {
+                            "name": "Power lance",
+                            "hits": 1,
+                            "strength": 9,
+                            "keywords": [
+                                "precise"
+                            ],
+                            "range": 5
+                        }
+                    ],
+                    "attachable": true
+                },
+                {
+                    "name": "Castellan Crowe",
+                    "points_per_model": 200,
+                    "health_points": 4,
+                    "armor": 5,
+                    "keywords": [
+                        "teleportation",
+                        "score",
+                        "move 15cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Storm bolter",
+                            "hits": 4,
+                            "strength": 4,
+                            "keywords": [],
+                            "range": 20
+                        },
+                        {
+                            "name": "Daemon sword",
+                            "hits": 2,
+                            "strength": 7,
+                            "keywords": [
+                                "precise"
+                            ],
+                            "range": 5
+                        }
+                    ],
+                    "attachable": true
+                },
+                {
                     "name": "Captain with jump pack",
                     "points_per_model": 100,
                     "health_points": 4,
@@ -177,6 +266,89 @@
                     "attachable": false
                 },
                 {
+                    "name": "Castellan",
+                    "points_per_model": 100,
+                    "health_points": 4,
+                    "armor": 5,
+                    "keywords": [
+                        "score",
+                        "move 15cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Bolt pistol",
+                            "hits": 2,
+                            "strength": 5,
+                            "keywords": [
+                                "separate"
+                            ],
+                            "range": 20
+                        },
+                        {
+                            "name": "Power sword",
+                            "hits": 2,
+                            "strength": 7,
+                            "keywords": [],
+                            "range": 5
+                        }
+                    ],
+                    "attachable": true
+                },
+                {
+                    "name": "Sword brethren",
+                    "points_per_model": 50,
+                    "health_points": 4,
+                    "armor": 4,
+                    "keywords": [
+                        "move 15cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Bolt pistol",
+                            "hits": 1,
+                            "strength": 5,
+                            "keywords": [
+                                "separate"
+                            ],
+                            "range": 20
+                        },
+                        {
+                            "name": "Power sword",
+                            "hits": 1,
+                            "strength": 7,
+                            "keywords": [],
+                            "range": 5
+                        }
+                    ],
+                    "attachable": false
+                },
+                {
+                    "name": "Crusader squad",
+                    "points_per_model": 50,
+                    "health_points": 4,
+                    "armor": 4,
+                    "keywords": [
+                        "move 15cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Bolt rifle",
+                            "hits": 2,
+                            "strength": 5,
+                            "keywords": [],
+                            "range": 0
+                        },
+                        {
+                            "name": "Chainsword",
+                            "hits": 1,
+                            "strength": 6,
+                            "keywords": [],
+                            "range": 5
+                        }
+                    ],
+                    "attachable": false
+                },
+                {
                     "name": "Belial",
                     "points_per_model": 200,
                     "health_points": 4,
@@ -275,178 +447,6 @@
                         }
                     ],
                     "attachable": false
-                },
-                {
-                    "name": "Castellan",
-                    "points_per_model": 100,
-                    "health_points": 4,
-                    "armor": 5,
-                    "keywords": [
-                        "score",
-                        "move 15cm"
-                    ],
-                    "actions": [
-                        {
-                            "name": "Bolt pistol",
-                            "hits": 2,
-                            "strength": 5,
-                            "keywords": [
-                                "separate"
-                            ],
-                            "range": 20
-                        },
-                        {
-                            "name": "Power sword",
-                            "hits": 2,
-                            "strength": 7,
-                            "keywords": [],
-                            "range": 5
-                        }
-                    ],
-                    "attachable": true
-                },
-                {
-                    "name": "Sword brethren",
-                    "points_per_model": 50,
-                    "health_points": 4,
-                    "armor": 4,
-                    "keywords": [
-                        "move 15cm"
-                    ],
-                    "actions": [
-                        {
-                            "name": "Bolt pistol",
-                            "hits": 1,
-                            "strength": 5,
-                            "keywords": [
-                                "separate"
-                            ],
-                            "range": 20
-                        },
-                        {
-                            "name": "Power sword",
-                            "hits": 1,
-                            "strength": 7,
-                            "keywords": [],
-                            "range": 5
-                        }
-                    ],
-                    "attachable": false
-                },
-                {
-                    "name": "Crusader squad",
-                    "points_per_model": 50,
-                    "health_points": 4,
-                    "armor": 4,
-                    "keywords": [
-                        "move 15cm"
-                    ],
-                    "actions": [
-                        {
-                            "name": "Bolt rifle",
-                            "hits": 2,
-                            "strength": 5,
-                            "keywords": [],
-                            "range": 0
-                        },
-                        {
-                            "name": "Chainsword",
-                            "hits": 1,
-                            "strength": 6,
-                            "keywords": [],
-                            "range": 5
-                        }
-                    ],
-                    "attachable": false
-                },
-                {
-                    "name": "Aethon Shaan",
-                    "points_per_model": 200,
-                    "health_points": 4,
-                    "armor": 5,
-                    "keywords": [
-                        "stealth",
-                        "score",
-                        "fly 25cm"
-                    ],
-                    "actions": [
-                        {
-                            "name": "Bolt pistol",
-                            "hits": 2,
-                            "strength": 5,
-                            "keywords": [],
-                            "range": 20
-                        },
-                        {
-                            "name": "Power claws",
-                            "hits": 4,
-                            "strength": 6,
-                            "keywords": [
-                                "precise"
-                            ],
-                            "range": 5
-                        }
-                    ],
-                    "attachable": true
-                },
-                {
-                    "name": "Suboden Khan",
-                    "points_per_model": 200,
-                    "health_points": 4,
-                    "armor": 6,
-                    "keywords": [
-                        "score",
-                        "fly 35cm"
-                    ],
-                    "actions": [
-                        {
-                            "name": "Onslaught cannon",
-                            "hits": 6,
-                            "strength": 5,
-                            "keywords": [],
-                            "range": 20
-                        },
-                        {
-                            "name": "Power lance",
-                            "hits": 1,
-                            "strength": 9,
-                            "keywords": [
-                                "precise"
-                            ],
-                            "range": 5
-                        }
-                    ],
-                    "attachable": true
-                },
-                {
-                    "name": "Castellan Crowe",
-                    "points_per_model": 200,
-                    "health_points": 4,
-                    "armor": 5,
-                    "keywords": [
-                        "teleportation",
-                        "score",
-                        "move 15cm"
-                    ],
-                    "actions": [
-                        {
-                            "name": "Storm bolter",
-                            "hits": 4,
-                            "strength": 4,
-                            "keywords": [],
-                            "range": 20
-                        },
-                        {
-                            "name": "Daemon sword",
-                            "hits": 2,
-                            "strength": 7,
-                            "keywords": [
-                                "precise"
-                            ],
-                            "range": 5
-                        }
-                    ],
-                    "attachable": true
                 }
             ]
         }

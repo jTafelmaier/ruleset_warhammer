@@ -2,27 +2,22 @@
     "faction": "Space Marines",
     "units": [
         {
-            "name": "Castellan",
+            "name": "Aethon Shaan",
             "count_models": 1,
             "attached_to_index": 3
         },
         {
-            "name": "Castellan",
+            "name": "Captain with jump pack",
             "count_models": 1,
             "attached_to_index": 4
         },
         {
-            "name": "Sword brethren",
+            "name": "Jump pack intercessors",
             "count_models": 5,
             "attached_to_index": null
         },
         {
-            "name": "Sword brethren",
-            "count_models": 5,
-            "attached_to_index": null
-        },
-        {
-            "name": "Crusader squad",
+            "name": "Jump pack intercessors",
             "count_models": 5,
             "attached_to_index": null
         }
