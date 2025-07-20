@@ -255,7 +255,7 @@
                         {
                             "name": "Laser destroyer",
                             "hits": 1,
-                            "strength": 12,
+                            "strength": 14,
                             "keywords": [
                                 "heavy",
                                 "ap"
