@@ -46,7 +46,7 @@
                     "actions": [
                         {
                             "name": "Onslaught cannon",
-                            "hits": 6,
+                            "hits": 4,
                             "strength": 5,
                             "keywords": [],
                             "range": 20
