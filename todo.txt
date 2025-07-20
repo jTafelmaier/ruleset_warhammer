@@ -3,6 +3,4 @@
 
 
 add victory point counter
-download font
-perhaps: subfaction grouping
 
