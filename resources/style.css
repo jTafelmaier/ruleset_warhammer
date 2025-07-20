@@ -134,7 +134,7 @@ body {
     padding: 5px;
 }
 
-.action_token {
+.action_token.token {
     font-weight: lighter;
     font-size: x-small;
     vertical-align: middle;
@@ -156,7 +156,7 @@ body {
         0 100%);
 }
 
-.action_token.used {
+.action_token.token.used {
     background: #2e3544;
 }
 
@@ -385,13 +385,7 @@ td.strength {
     background-color: #2e3544;
 }
 
-.health_bar .health_token {
-    flex: 1;
-    margin-left: 1px;
-    margin-right: 1px;
-}
-
-.destroyed .action_token {
+.destroyed .action_tokens {
     display: none;
 }
 
@@ -399,18 +393,24 @@ td.strength {
     display: none;
 }
 
-.health_token {
+.health_bar .token {
+    flex: 1;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+.health_bar .token {
     border-radius: 1px;
     background: linear-gradient(0.5turn, #c8e2fc, #8bc5ff 25%, #8bc5ff 75%, #c8e2fc);
     box-shadow: 0 0 4px 1px #48abe0;
 }
 
-.red .health_token {
+.health_bar.red .token {
     background: linear-gradient(0.5turn, #fcc8c8, #ff4646 25%, #ff4646 75%, #fcc8c8);
     box-shadow: 0 0 5px 2px #ff4646;
 }
 
-.health_token.used {
+.health_bar .token.used {
     background: linear-gradient(0.5turn, #535f79, #2e3544 25%, #2e3544 75%, #535f79);
     box-shadow: none;
 }

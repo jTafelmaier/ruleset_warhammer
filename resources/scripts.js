@@ -2,23 +2,33 @@
 
 
 
-function toggle_display_state(text_id_element) {
+function display_faction(text_id_faction) {
 
-    let style_element = document.getElementById(text_id_element).style
+    let style_div_faction = document.getElementById(text_id_faction).style
 
-    if (style_element.display == "none") {
-        style_element.display = "block"
-        }
+    if (style_div_faction.display == "none") {
+
+        Array.prototype.forEach.call(
+            document.getElementsByClassName("div_container_faction_rules"),
+            (element) => element.classList.add("grayscale"))
+
+        document.getElementsByClassName(text_id_faction)
+            [0]
+            .classList
+            .remove("grayscale")
+
+        Array.prototype.forEach.call(
+            document.getElementsByClassName("div_faction"),
+            (element) => element.style.display = "none")
+
+        style_div_faction.display =  "block"}
+
     else {
-        style_element.display = "none"
-        }
-    }
+        Array.prototype.forEach.call(
+            document.getElementsByClassName("div_container_faction_rules"),
+            (element) => element.classList.remove("grayscale"))
 
-
-function restore_action_tokens() {
-    Array.prototype.forEach.call(
-        document.getElementsByClassName("action_token toggleable"),
-        (element) => element.classList.remove("used"))
+        style_div_faction.display =  "none"}
 }
 
 
@@ -45,7 +55,7 @@ function reduce_health(text_id_element) {
     element_count_models = element_tr.getElementsByClassName("count_models")[0]
     element_parent = element_tr.getElementsByClassName("health_bar")[0]
 
-    var array_tokens = element_parent.getElementsByClassName("health_token")
+    var array_tokens = element_parent.getElementsByClassName("token")
 
     var int_count_tokens_new = parseInt(element_parent.getAttribute("count")) - 1
 
@@ -82,7 +92,7 @@ function reduce_action_tokens(text_id_element) {
         .getElementById(text_id_element)
         .getElementsByClassName("action_tokens")[0]
 
-    var array_tokens = element_parent.getElementsByClassName("action_token")
+    var array_tokens = element_parent.getElementsByClassName("token")
     var int_count_tokens_current = parseInt(element_parent.getAttribute("count"))
 
     if (int_count_tokens_current > 0) {
@@ -103,32 +113,11 @@ function reduce_action_tokens(text_id_element) {
 }
 
 
-function display_faction(text_id_faction) {
+function restore_action_tokens() {
+    Array.prototype.forEach.call(
+        document 
+            .getElementById("div_army_lists")
+            .getElementsByClassName("action_token token"),
+        (element) => element.classList.remove("used"))
+}
 
-    let style_div_faction = document.getElementById(text_id_faction).style
-
-    if (style_div_faction.display == "none") {
-
-        Array.prototype.forEach.call(
-            document.getElementsByClassName("div_container_faction_rules"),
-            (element) => element.classList.add("grayscale"))
-
-        document.getElementsByClassName(text_id_faction)
-            [0]
-            .classList
-            .remove("grayscale")
-
-        Array.prototype.forEach.call(
-            document.getElementsByClassName("div_faction"),
-            (element) => element.style.display = "none")
-
-        style_div_faction.display =  "block"}
-
-    else {
-        Array.prototype.forEach.call(
-            document.getElementsByClassName("div_container_faction_rules"),
-            (element) => element.classList.remove("grayscale"))
-
-        style_div_faction.display =  "none"}
-
-    }
