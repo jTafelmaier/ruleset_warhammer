@@ -237,7 +237,7 @@
                     "name": "Gladiator lancer",
                     "points_per_model": 400,
                     "health_points": 8,
-                    "armor": 8,
+                    "armor": 9,
                     "keywords": [
                         "large_profile",
                         "move 25cm"
