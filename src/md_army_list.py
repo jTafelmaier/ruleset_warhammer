@@ -76,6 +76,16 @@ def get_text_html_army_lists(
                 + "_" \
                 + str(int_index_unit)
 
+            def get_text_html_health_bar():
+
+                return "<div class=\"health_bar\" onclick=\"reduce_health('" \
+                    + text_id_row \
+                    + "')\">" \
+                    + ("<div class=\"token\" />" \
+                        * dict_unit \
+                            ["health_points"]) \
+                    + "</div>"
+
             def get_text_html_action_tokens():
 
                 if dict_unit_army_list["attached_to_index"] is not None:
@@ -86,16 +96,6 @@ def get_text_html_army_lists(
                     + "')\">" \
                     + ("<div class=\"action_token token\">AT</div>" \
                         * 2) \
-                    + "</div>"
-
-            def get_text_html_health_bar():
-
-                return "<div class=\"health_bar\" onclick=\"reduce_health('" \
-                    + text_id_row \
-                    + "')\">" \
-                    + ("<div class=\"token\" />" \
-                        * dict_unit \
-                            ["health_points"]) \
                     + "</div>"
 
             return "<tr id=\"" \
