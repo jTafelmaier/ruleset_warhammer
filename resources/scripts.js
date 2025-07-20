@@ -43,16 +43,14 @@ function reduce_health(text_id_element) {
     element_tr = document.getElementById(text_id_element)
 
     element_count_models = element_tr.getElementsByClassName("count_models")[0]
-    element_health_bar = element_tr.getElementsByClassName("health_bar")[0]
+    element_parent = element_tr.getElementsByClassName("health_bar")[0]
 
-    var int_count_tokens_new = parseInt(element_health_bar.getAttribute("count")) - 1
-    var int_count_tokens_max = parseInt(element_health_bar.getAttribute("max"))
+    var array_tokens = element_parent.getElementsByClassName("health_token")
+
+    var int_count_tokens_new = parseInt(element_parent.getAttribute("count")) - 1
 
     if (int_count_tokens_new == 0) {
-        int_count_tokens_new = int_count_tokens_max
-        for (element_health_token of element_health_bar.getElementsByClassName("health_token")) {
-            element_health_token.classList.remove("used")
-        }
+        int_count_tokens_new = array_tokens.length
         int_count_models_new = parseInt(element_count_models.textContent) - 1
         element_count_models.textContent = int_count_models_new.toString()
         if (int_count_models_new == 0) {
@@ -61,27 +59,48 @@ function reduce_health(text_id_element) {
     }
 
     if (int_count_tokens_new == 1) {
-        element_health_bar.classList.add("red")
+        element_parent.classList.add("red")
     } else {
-        element_health_bar.classList.remove("red")
+        element_parent.classList.remove("red")
     }
 
-    element_health_bar.setAttribute("count", int_count_tokens_new)
+    element_parent.setAttribute("count", int_count_tokens_new)
 
-    for (element_health_token of element_health_bar.getElementsByClassName("health_token")) {
-        if (parseInt(element_health_token.getAttribute("index")) >= int_count_tokens_new) {
-            element_health_token.classList.add("used")
+    for (element_token of array_tokens) {
+        if (parseInt(element_token.getAttribute("index")) >= int_count_tokens_new) {
+            element_token.classList.add("used")
+        } else {
+            element_token.classList.remove("used")
         }
     }
 }
 
 
-function toggle_token(text_id_element) {
+function reduce_action_tokens(text_id_element) {
 
-    document.getElementById(text_id_element)
-        .classList
-        .toggle("used")
+    var element_parent = document
+        .getElementById(text_id_element)
+        .getElementsByClassName("action_tokens")[0]
+
+    var array_tokens = element_parent.getElementsByClassName("action_token")
+    var int_count_tokens_current = parseInt(element_parent.getAttribute("count"))
+
+    if (int_count_tokens_current > 0) {
+        int_count_tokens_new = int_count_tokens_current - 1
+    } else {
+        int_count_tokens_new = array_tokens.length
     }
+
+    element_parent.setAttribute("count", int_count_tokens_new)
+
+    for (element_token of array_tokens) {
+        if (parseInt(element_token.getAttribute("index")) >= int_count_tokens_new) {
+            element_token.classList.add("used")
+        } else {
+            element_token.classList.remove("used")
+        }
+    }
+}
 
 
 function display_faction(text_id_faction) {

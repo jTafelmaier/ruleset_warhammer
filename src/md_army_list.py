@@ -71,30 +71,31 @@ def get_text_html_army_lists(
 
             text_teleportation = "(t) " if "teleportation" in dict_unit["keywords"] else ""
 
+            text_id_row = "army_list_tr_" \
+                + text_side \
+                + "_" \
+                + str(int_index_unit)
+
             def get_text_html_action_tokens():
-
-                def get_text_html_action_token(
-                    key_index:str):
-
-                    key_action_token = "action_token_" \
-                        + text_side \
-                        + "_" \
-                        + str(int_index_unit) \
-                        + "_" \
-                        + key_index
-
-                    return "<div id=\"" \
-                        + key_action_token \
-                        + "\" class=\"action_token toggleable\" onclick=\"toggle_token('" \
-                        + key_action_token \
-                        + "')\">AT</div>"
 
                 if dict_unit_army_list["attached_to_index"] is not None:
                     return "attached"
-                else:
-                    return get_text_html_action_token("a") \
-                        + get_text_html_action_token("b")
 
+                text_action_tokens = "" \
+                    .join(
+                        map(
+                            lambda int_index: "<div class=\"action_token\" index=\"" + str(int_index) + "\">AT</div>",
+                            range(2)))
+
+                return "<div class=\"action_tokens\" count=\"" \
+                    + str(2)\
+                    + "\" onclick=\"reduce_action_tokens('" \
+                    + text_id_row \
+                    + "')\">" \
+                    + text_action_tokens \
+                    + "</div>"
+
+            # TODO refactor
             def get_text_html_health_bar():
 
                 int_count_max = dict_unit \
@@ -106,20 +107,13 @@ def get_text_html_army_lists(
                             lambda int_index: "<div class=\"health_token\" index=\"" + str(int_index) + "\"></div>",
                             range(int_count_max)))
 
-                return "<div class=\"health_bar\" max=\"" \
-                    + str(int_count_max)\
-                    + "\" count=\"" \
+                return "<div class=\"health_bar\" count=\"" \
                     + str(int_count_max)\
                     + "\" onclick=\"reduce_health('" \
                     + text_id_row \
                     + "')\">" \
                     + text_health_tokens \
                     + "</div>"
-
-            text_id_row = "army_list_tr_" \
-                + text_side \
-                + "_" \
-                + str(int_index_unit)
 
             return "<tr id=\"" \
                 + text_id_row \
