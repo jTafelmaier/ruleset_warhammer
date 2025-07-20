@@ -282,7 +282,7 @@ div.model_property.keywords {
     border-top-right-radius: 6px;
 }
 
-.points_cost {
+span.points_cost {
     border-radius: 2px;
     text-align: right;
     color: #c2cce0;
