@@ -8,32 +8,32 @@
         {
             "name": "teleportation",
             "type": "kw_model_deployment",
-            "function": "This unit can perform the \"Setup teleportation\" action."
+            "function": "This model's unit can perform the \"Setup teleportation\" action."
         },
         {
             "name": "stealth",
             "type": "kw_model_defense",
-            "function": "If this unit is near cover, it can only be selected as a target unit by units within 20 cm."
+            "function": "If this model's unit is near cover, it can only be selected as a target unit by units within 20 cm."
         },
         {
             "name": "large_profile",
             "type": "kw_model_defense",
-            "function": "This unit cannot perform the \"Brace\" action."
+            "function": "This model cannot perform the \"Brace\" action."
         },
         {
             "name": "fly",
             "type": "kw_model_action",
-            "function": "This unit can perform the \"Fly\" action up to the given distance."
+            "function": "This model can perform the \"Fly\" action up to the given distance."
         },
         {
             "name": "move",
             "type": "kw_model_action",
-            "function": "This unit can perform the \"Move\" action up to the given distance."
+            "function": "This model can perform the \"Move\" action up to the given distance."
         },
         {
             "name": "score",
             "type": "kw_model_action",
-            "function": "This unit can perform the \"Score objective\" action."
+            "function": "This model's unit can perform the \"Score objective\" action."
         }
     ],
     "keywords_weapons": [
