@@ -87,9 +87,7 @@ def get_text_html_army_lists(
                             lambda int_index: "<div class=\"action_token token\" index=\"" + str(int_index) + "\">AT</div>",
                             range(2)))
 
-                return "<div class=\"action_tokens\" count=\"" \
-                    + str(2)\
-                    + "\" onclick=\"reduce_action_tokens('" \
+                return "<div class=\"action_tokens\" onclick=\"reduce_action_tokens('" \
                     + text_id_row \
                     + "')\">" \
                     + text_action_tokens \
@@ -98,18 +96,15 @@ def get_text_html_army_lists(
             # TODO refactor
             def get_text_html_health_bar():
 
-                int_count_max = dict_unit \
-                    ["health_points"]
-
                 text_health_tokens = "" \
                     .join(
                         map(
                             lambda int_index: "<div class=\"token\" index=\"" + str(int_index) + "\"></div>",
-                            range(int_count_max)))
+                            range(
+                                dict_unit \
+                                    ["health_points"])))
 
-                return "<div class=\"health_bar\" count=\"" \
-                    + str(int_count_max)\
-                    + "\" onclick=\"reduce_health('" \
+                return "<div class=\"health_bar\" onclick=\"reduce_health('" \
                     + text_id_row \
                     + "')\">" \
                     + text_health_tokens \

@@ -50,34 +50,39 @@ function increase_number_models(text_id_element) {
 
 function reduce_health(text_id_element) {
 
-    element_tr = document.getElementById(text_id_element)
+    let element_tr = document.getElementById(text_id_element)
 
-    element_count_models = element_tr.getElementsByClassName("count_models")[0]
-    element_parent = element_tr.getElementsByClassName("health_bar")[0]
+    let element_count_models = element_tr
+        .getElementsByClassName("count_models")[0]
 
-    var array_tokens = element_parent.getElementsByClassName("token")
+    let element_parent = element_tr
+        .getElementsByClassName("health_bar")[0]
 
-    var int_count_tokens_new = parseInt(element_parent.getAttribute("count")) - 1
+    let array_tokens = element_parent
+        .getElementsByClassName("token")
 
-    if (int_count_tokens_new == 0) {
-        int_count_tokens_new = array_tokens.length
-        int_count_models_new = parseInt(element_count_models.textContent) - 1
+    let int_count_tokens_used_new = element_parent
+        .getElementsByClassName("used")
+        .length + 1
+
+    if (int_count_tokens_used_new == array_tokens.length) {
+        int_count_tokens_used_new = 0
+
+        let int_count_models_new = parseInt(element_count_models.textContent) - 1
         element_count_models.textContent = int_count_models_new.toString()
         if (int_count_models_new == 0) {
             element_tr.classList.add("destroyed")
         }
     }
 
-    if (int_count_tokens_new == 1) {
+    if (int_count_tokens_used_new == array_tokens.length - 1) {
         element_parent.classList.add("red")
     } else {
         element_parent.classList.remove("red")
     }
 
-    element_parent.setAttribute("count", int_count_tokens_new)
-
-    for (element_token of array_tokens) {
-        if (parseInt(element_token.getAttribute("index")) >= int_count_tokens_new) {
+    for (var element_token of array_tokens) {
+        if (parseInt(element_token.getAttribute("index")) < int_count_tokens_used_new) {
             element_token.classList.add("used")
         } else {
             element_token.classList.remove("used")
@@ -88,23 +93,25 @@ function reduce_health(text_id_element) {
 
 function reduce_action_tokens(text_id_element) {
 
-    var element_parent = document
+    let element_parent = document
         .getElementById(text_id_element)
         .getElementsByClassName("action_tokens")[0]
 
-    var array_tokens = element_parent.getElementsByClassName("token")
-    var int_count_tokens_current = parseInt(element_parent.getAttribute("count"))
+    let array_tokens = element_parent
+        .getElementsByClassName("token")
 
-    if (int_count_tokens_current > 0) {
-        int_count_tokens_new = int_count_tokens_current - 1
+    let int_count_tokens_used_current = element_parent
+        .getElementsByClassName("used")
+        .length
+
+    if (int_count_tokens_used_current < array_tokens.length) {
+        var int_count_tokens_used_new = int_count_tokens_used_current + 1
     } else {
-        int_count_tokens_new = array_tokens.length
+        var int_count_tokens_used_new = 0
     }
 
-    element_parent.setAttribute("count", int_count_tokens_new)
-
     for (element_token of array_tokens) {
-        if (parseInt(element_token.getAttribute("index")) >= int_count_tokens_new) {
+        if (parseInt(element_token.getAttribute("index")) < int_count_tokens_used_new) {
             element_token.classList.add("used")
         } else {
             element_token.classList.remove("used")
