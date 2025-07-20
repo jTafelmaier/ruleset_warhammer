@@ -20,6 +20,11 @@
             "name": "Jump pack intercessors",
             "count_models": 5,
             "attached_to_index": null
+        },
+        {
+            "name": "Gladiator lancer",
+            "count_models": 1,
+            "attached_to_index": null
         }
     ]
 }

@@ -7,8 +7,13 @@
             "attached_to_index": null
         },
         {
+            "name": "Hexmark unit",
+            "count_models": 1,
+            "attached_to_index": null
+        },
+        {
             "name": "Hyperphase unit",
-            "count_models": 5,
+            "count_models": 4,
             "attached_to_index": null
         },
         {
