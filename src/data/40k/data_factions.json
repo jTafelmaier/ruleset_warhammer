@@ -117,6 +117,34 @@
                     "attachable": false
                 },
                 {
+                    "name": "Jump pack intercessors",
+                    "points_per_model": 50,
+                    "health_points": 4,
+                    "armor": 4,
+                    "keywords": [
+                        "fly 25cm"
+                    ],
+                    "actions": [
+                        {
+                            "name": "Bolt pistol",
+                            "hits": 1,
+                            "strength": 5,
+                            "keywords": [
+                                "separate"
+                            ],
+                            "range": 20
+                        },
+                        {
+                            "name": "Power sword",
+                            "hits": 1,
+                            "strength": 7,
+                            "keywords": [],
+                            "range": 5
+                        }
+                    ],
+                    "attachable": false
+                },
+                {
                     "name": "Gladiator lancer",
                     "points_per_model": 400,
                     "health_points": 8,
