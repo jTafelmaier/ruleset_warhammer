@@ -62,7 +62,7 @@
                             "range": 5
                         }
                     ],
-                    "attachable": true
+                    "attachable": false
                 },
                 {
                     "name": "Castellan Crowe",
