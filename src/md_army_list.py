@@ -62,12 +62,11 @@ def get_text_html_army_lists(
             int_index_unit, \
             dict_unit_army_list = pair_dict_unit_army_list
 
-            dict_unit = dict_units \
-                [dict_unit_army_list \
-                    ["name"]]
-
             text_name_unit = dict_unit_army_list \
                 ["name"]
+
+            dict_unit = dict_units \
+                [text_name_unit]
 
             text_teleportation = "(t) " if "teleportation" in dict_unit["keywords"] else ""
 
@@ -100,6 +99,10 @@ def get_text_html_army_lists(
 
             return "<tr id=\"" \
                 + text_id_row \
+                + "\" points_per_model=\"" \
+                + str(
+                    dict_unit \
+                        ["points_per_model"]) \
                 + "\"><td>" \
                 + get_text_html_health_bar() \
                 + "</td><td>" \
@@ -117,7 +120,7 @@ def get_text_html_army_lists(
                 + str(
                     dict_unit_army_list \
                         ["count_models"]) \
-                + "</td><td>" \
+                + "</td><td class=\"points_cost\">" \
                 + str(
                     get_points_cost_unit(dict_unit_army_list)) \
                 + "</td></tr>"
