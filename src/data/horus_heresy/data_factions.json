@@ -7,7 +7,7 @@
                     "name": "Kratos heavy assault tank",
                     "points_per_model": 400,
                     "health_points": 8,
-                    "armor": 9,
+                    "armor": 10,
                     "keywords": [
                         "large_profile",
                         "move 25cm"
@@ -58,7 +58,7 @@
                     "name": "Leviathan siege dreadnought",
                     "points_per_model": 200,
                     "health_points": 4,
-                    "armor": 8,
+                    "armor": 9,
                     "keywords": [
                         "large_profile",
                         "move 15cm"
@@ -123,8 +123,9 @@
                         {
                             "name": "The Blade",
                             "hits": 2,
-                            "strength": 8,
+                            "strength": 6,
                             "keywords": [
+                                "ap",
                                 "precise"
                             ],
                             "range": 5
@@ -164,8 +165,10 @@
                         {
                             "name": "The Death of Worlds",
                             "hits": 2,
-                            "strength": 9,
-                            "keywords": [],
+                            "strength": 6,
+                            "keywords": [
+                                "ap"
+                            ],
                             "range": 5
                         }
                     ],
@@ -190,8 +193,9 @@
                         {
                             "name": "The Breath of the Storm",
                             "hits": 2,
-                            "strength": 7,
+                            "strength": 5,
                             "keywords": [
+                                "ap",
                                 "precise"
                             ],
                             "range": 5
@@ -305,7 +309,7 @@
                         {
                             "name": "Chain weapon",
                             "hits": 1,
-                            "strength": 7,
+                            "strength": 6,
                             "keywords": [],
                             "range": 5
                         }
@@ -338,7 +342,7 @@
                     "name": "Fellblade super-heavy tank",
                     "points_per_model": 600,
                     "health_points": 8,
-                    "armor": 10,
+                    "armor": 12,
                     "keywords": [
                         "large_profile",
                         "move 25cm"
@@ -404,15 +408,19 @@
                         {
                             "name": "Warpfire",
                             "hits": 2,
-                            "strength": 8,
-                            "keywords": [],
+                            "strength": 7,
+                            "keywords": [
+                                "ap"
+                            ],
                             "range": 20
                         },
                         {
                             "name": "Blade of Ahn-Nunurta",
-                            "hits": 1,
-                            "strength": 12,
-                            "keywords": [],
+                            "hits": 2,
+                            "strength": 8,
+                            "keywords": [
+                                "ap"
+                            ],
                             "range": 5
                         }
                     ],
