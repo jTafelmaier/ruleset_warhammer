@@ -148,11 +148,6 @@ def get_text_html_army_lists(
 
         name_directory_faction = md_shared.get_text_name_directory_faction(name_faction)
 
-        set_names_units_in_army_list = set(
-                map(
-                    lambda dict_unit_army_list: dict_unit_army_list["name"],
-                    list_units_army_list))
-
         def get_text_html_unit(
             dict_unit:typing.Dict):
             
@@ -163,6 +158,11 @@ def get_text_html_army_lists(
                     name_setting=name_setting,
                     name_directory_faction=name_directory_faction,
                     bool_show_inactive_information=False)
+
+        set_names_units_in_army_list = set(
+                map(
+                    lambda dict_unit_army_list: dict_unit_army_list["name"],
+                    list_units_army_list))
 
         text_html_units_individual = "" \
             .join(
