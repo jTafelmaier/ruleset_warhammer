@@ -81,12 +81,11 @@ function reduce_health(text_id_element) {
         element_parent.classList.remove("red")
     }
 
-    for (var element_token of array_tokens) {
-        if (parseInt(element_token.getAttribute("index")) < int_count_tokens_used_new) {
-            element_token.classList.add("used")
-        } else {
-            element_token.classList.remove("used")
-        }
+    for (let i = 0; i < int_count_tokens_used_new; i++) {
+        array_tokens[i].classList.add("used")
+    }
+    for (let i = int_count_tokens_used_new; i < array_tokens.length; i++) {
+        array_tokens[i].classList.remove("used")
     }
 }
 
@@ -110,12 +109,11 @@ function reduce_action_tokens(text_id_element) {
         var int_count_tokens_used_new = 0
     }
 
-    for (element_token of array_tokens) {
-        if (parseInt(element_token.getAttribute("index")) < int_count_tokens_used_new) {
-            element_token.classList.add("used")
-        } else {
-            element_token.classList.remove("used")
-        }
+    for (let i = 0; i < int_count_tokens_used_new; i++) {
+        array_tokens[i].classList.add("used")
+    }
+    for (let i = int_count_tokens_used_new; i < array_tokens.length; i++) {
+        array_tokens[i].classList.remove("used")
     }
 }
 

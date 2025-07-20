@@ -81,33 +81,21 @@ def get_text_html_army_lists(
                 if dict_unit_army_list["attached_to_index"] is not None:
                     return "attached"
 
-                text_action_tokens = "" \
-                    .join(
-                        map(
-                            lambda int_index: "<div class=\"action_token token\" index=\"" + str(int_index) + "\">AT</div>",
-                            range(2)))
-
                 return "<div class=\"action_tokens\" onclick=\"reduce_action_tokens('" \
                     + text_id_row \
                     + "')\">" \
-                    + text_action_tokens \
+                    + ("<div class=\"action_token token\">AT</div>" \
+                        * 2) \
                     + "</div>"
 
-            # TODO refactor
             def get_text_html_health_bar():
-
-                text_health_tokens = "" \
-                    .join(
-                        map(
-                            lambda int_index: "<div class=\"token\" index=\"" + str(int_index) + "\"></div>",
-                            range(
-                                dict_unit \
-                                    ["health_points"])))
 
                 return "<div class=\"health_bar\" onclick=\"reduce_health('" \
                     + text_id_row \
                     + "')\">" \
-                    + text_health_tokens \
+                    + ("<div class=\"token\" />" \
+                        * dict_unit \
+                            ["health_points"]) \
                     + "</div>"
 
             return "<tr id=\"" \
