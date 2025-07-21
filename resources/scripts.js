@@ -8,25 +8,25 @@ function display_faction(text_id_faction) {
 
     if (style_div_faction.display == "none") {
 
-        Array.prototype.forEach.call(
-            document.getElementsByClassName("div_container_faction_rules"),
-            element => element.classList.add("grayscale"))
+        Array.from(document
+            .getElementsByClassName("div_container_faction_rules"))
+            .forEach(element => element.classList.add("grayscale"))
+
+        Array.from(document
+            .getElementsByClassName("div_faction"))
+            .forEach(element => element.style.display = "none")
 
         document.getElementsByClassName(text_id_faction)
             [0]
             .classList
             .remove("grayscale")
 
-        Array.prototype.forEach.call(
-            document.getElementsByClassName("div_faction"),
-            element => element.style.display = "none")
-
         style_div_faction.display =  "block"}
 
     else {
-        Array.prototype.forEach.call(
-            document.getElementsByClassName("div_container_faction_rules"),
-            element => element.classList.remove("grayscale"))
+        Array.from(document
+            .getElementsByClassName("div_container_faction_rules"))
+            .forEach(element => element.classList.remove("grayscale"))
 
         style_div_faction.display =  "none"}
 }
@@ -37,10 +37,9 @@ function update_points_total(element_tr) {
     let element_table = element_tr
         .parentElement
 
-    let int_points_cost_total = Array.prototype.map.call(
-        element_table
-            .getElementsByClassName("points_cost"),
-        element => parseInt(element.textContent))
+    let int_points_cost_total = Array.from(element_table
+        .getElementsByClassName("points_cost"))
+        .map(element => parseInt(element.textContent))
         .reduce((a, b) => a + b)
 
     element_table
@@ -163,10 +162,10 @@ function reduce_action_tokens(text_id_element) {
 
 function restore_action_tokens() {
 
-    Array.prototype.forEach.call(
-        document
-            .getElementById("div_army_lists")
-            .getElementsByClassName("action_token token"),
-        element => element.classList.remove("used"))
+    Array.from(document
+        .getElementById("div_army_lists")
+        .getElementsByClassName("action_token token"))
+        .forEach(element => element.classList.remove("used"))
+
 }
 
