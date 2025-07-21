@@ -45,7 +45,7 @@
         {
             "name": "heavy",
             "type": "kw_attack",
-            "function": "Can only use this weapon when performing the \"Critical attack\" action."
+            "function": "Can only use this weapon when performing the \"Heavy attack\" action."
         },
         {
             "name": "precise",
