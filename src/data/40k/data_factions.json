@@ -63,6 +63,26 @@
                     "attachable": true
                 },
                 {
+                    "name": "Darnath Lysander",
+                    "points_per_model": 200,
+                    "health_points": 4,
+                    "armor": 7,
+                    "keywords": [
+                        "teleportation",
+                        "score",
+                        "move 10cm"
+                    ],
+                    "actions": [
+                        {
+                            "hits": 1,
+                            "strength": 9,
+                            "keywords": [],
+                            "range": 5
+                        }
+                    ],
+                    "attachable": true
+                },
+                {
                     "name": "Suboden Khan",
                     "points_per_model": 200,
                     "health_points": 4,
