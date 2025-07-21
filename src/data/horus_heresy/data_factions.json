@@ -79,8 +79,10 @@
                         },
                         {
                             "hits": 2,
-                            "strength": 12,
-                            "keywords": [],
+                            "strength": 10,
+                            "keywords": [
+                                "ap"
+                            ],
                             "range": 5
                         }
                     ],
@@ -114,7 +116,7 @@
                         },
                         {
                             "hits": 2,
-                            "strength": 6,
+                            "strength": 7,
                             "keywords": [
                                 "ap",
                                 "precise"
@@ -152,8 +154,8 @@
                             "range": 20
                         },
                         {
-                            "hits": 2,
-                            "strength": 6,
+                            "hits": 1,
+                            "strength": 8,
                             "keywords": [
                                 "ap"
                             ],
@@ -180,7 +182,7 @@
                     "actions": [
                         {
                             "hits": 2,
-                            "strength": 5,
+                            "strength": 6,
                             "keywords": [
                                 "ap",
                                 "precise"
@@ -289,7 +291,7 @@
                         },
                         {
                             "hits": 1,
-                            "strength": 6,
+                            "strength": 7,
                             "keywords": [],
                             "range": 5
                         }

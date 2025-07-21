@@ -22,7 +22,7 @@
                         },
                         {
                             "hits": 4,
-                            "strength": 4,
+                            "strength": 5,
                             "keywords": [
                                 "ap",
                                 "precise"
@@ -101,7 +101,7 @@
                         },
                         {
                             "hits": 2,
-                            "strength": 5,
+                            "strength": 6,
                             "keywords": [
                                 "ap",
                                 "precise"
@@ -158,7 +158,7 @@
                         },
                         {
                             "hits": 2,
-                            "strength": 6,
+                            "strength": 7,
                             "keywords": [
                                 "ap",
                                 "precise"
@@ -188,7 +188,7 @@
                         },
                         {
                             "hits": 2,
-                            "strength": 6,
+                            "strength": 7,
                             "keywords": [],
                             "range": 5
                         }
@@ -213,7 +213,7 @@
                         },
                         {
                             "hits": 2,
-                            "strength": 5,
+                            "strength": 6,
                             "keywords": [
                                 "ap"
                             ],
@@ -294,7 +294,7 @@
                         },
                         {
                             "hits": 1,
-                            "strength": 6,
+                            "strength": 7,
                             "keywords": [],
                             "range": 5
                         }
@@ -351,7 +351,7 @@
                         },
                         {
                             "hits": 2,
-                            "strength": 5,
+                            "strength": 6,
                             "keywords": [
                                 "ap"
                             ],
@@ -379,7 +379,7 @@
                         },
                         {
                             "hits": 1,
-                            "strength": 5,
+                            "strength": 6,
                             "keywords": [
                                 "ap"
                             ],
@@ -405,7 +405,7 @@
                         },
                         {
                             "hits": 1,
-                            "strength": 6,
+                            "strength": 7,
                             "keywords": [],
                             "range": 5
                         }
@@ -425,7 +425,7 @@
                     "actions": [
                         {
                             "hits": 2,
-                            "strength": 5,
+                            "strength": 6,
                             "keywords": [
                                 "ap"
                             ],
@@ -446,7 +446,7 @@
                     "actions": [
                         {
                             "hits": 1,
-                            "strength": 5,
+                            "strength": 6,
                             "keywords": [
                                 "ap"
                             ],
@@ -473,7 +473,7 @@
                         },
                         {
                             "hits": 1,
-                            "strength": 5,
+                            "strength": 6,
                             "keywords": [
                                 "ap",
                                 "precise"
@@ -539,7 +539,7 @@
                     "actions": [
                         {
                             "hits": 2,
-                            "strength": 6,
+                            "strength": 7,
                             "keywords": [
                                 "separate"
                             ],
@@ -566,7 +566,7 @@
                     "actions": [
                         {
                             "hits": 1,
-                            "strength": 6,
+                            "strength": 7,
                             "keywords": [
                                 "separate"
                             ],
@@ -574,7 +574,7 @@
                         },
                         {
                             "hits": 1,
-                            "strength": 7,
+                            "strength": 8,
                             "keywords": [
                                 "heavy",
                                 "ap"
@@ -595,7 +595,7 @@
                     "actions": [
                         {
                             "hits": 2,
-                            "strength": 6,
+                            "strength": 7,
                             "keywords": [],
                             "range": 5
                         }
