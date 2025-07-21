@@ -10,7 +10,7 @@ function display_faction(text_id_faction) {
 
         Array.prototype.forEach.call(
             document.getElementsByClassName("div_container_faction_rules"),
-            (element) => element.classList.add("grayscale"))
+            element => element.classList.add("grayscale"))
 
         document.getElementsByClassName(text_id_faction)
             [0]
@@ -19,14 +19,14 @@ function display_faction(text_id_faction) {
 
         Array.prototype.forEach.call(
             document.getElementsByClassName("div_faction"),
-            (element) => element.style.display = "none")
+            element => element.style.display = "none")
 
         style_div_faction.display =  "block"}
 
     else {
         Array.prototype.forEach.call(
             document.getElementsByClassName("div_container_faction_rules"),
-            (element) => element.classList.remove("grayscale"))
+            element => element.classList.remove("grayscale"))
 
         style_div_faction.display =  "none"}
 }
