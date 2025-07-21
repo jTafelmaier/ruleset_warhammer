@@ -1,5 +1,5 @@
 {
-    "keywords_models": [
+    "data": [
         {
             "name": "attachable",
             "type": "kw_model_deployment",
@@ -34,9 +34,7 @@
             "name": "score",
             "type": "kw_model_action",
             "function": "This model's unit can perform the \"Score objective\" action."
-        }
-    ],
-    "keywords_weapons": [
+        },
         {
             "name": "ap",
             "type": "kw_attack",

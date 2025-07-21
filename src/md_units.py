@@ -15,8 +15,15 @@ def get_text_html_unit(
     name_directory_faction:str,
     bool_show_inactive_information:bool):
 
+    dict_names_keywords = dict(
+        map(
+            lambda dict_keyword: (
+                dict_keyword["name"],
+                dict_keyword),
+            dict_keywords \
+                ["data"]))
+
     def get_text_html_keyword(
-        dict_names_keywords:typing.Dict,
         text_keyword:str):
 
         text_name_keyword, \
@@ -49,22 +56,6 @@ def get_text_html_unit(
             + text_parameters \
             + "</div>"
 
-    dict_names_keywords_models = dict(
-        map(
-            lambda dict_keyword: (
-                dict_keyword["name"],
-                dict_keyword),
-            dict_keywords \
-                ["keywords_models"]))
-
-    dict_names_keywords_weapons = dict(
-        map(
-            lambda dict_keyword: (
-                dict_keyword["name"],
-                dict_keyword),
-            dict_keywords \
-                ["keywords_weapons"]))
-
     path_image_unit = "/" \
         .join(
             [
@@ -79,20 +70,6 @@ def get_text_html_unit(
                         " ",
                         "_") \
                     + ".png"])
-
-    def get_text_html_keyword_weapon(
-        text_keyword:str):
-
-        return get_text_html_keyword(
-                dict_names_keywords=dict_names_keywords_weapons,
-                text_keyword=text_keyword)
-
-    def get_text_html_keyword_model(
-        text_keyword:str):
-
-        return get_text_html_keyword(
-                dict_names_keywords=dict_names_keywords_models,
-                text_keyword=text_keyword)
 
     def get_text_html_row_action(
         dict_action:typing.Dict):
@@ -112,7 +89,7 @@ def get_text_html_unit(
             return " " \
                 .join(
                     map(
-                        get_text_html_keyword_weapon,
+                        get_text_html_keyword,
                         dict_action \
                             ["keywords"]))
 
@@ -141,7 +118,7 @@ def get_text_html_unit(
         return " " \
             .join(
                 map(
-                    get_text_html_keyword_model,
+                    get_text_html_keyword,
                     filter(
                         lambda text_keyword: text_keyword not in {"teleportation"},
                         dict_unit \
@@ -159,9 +136,7 @@ def get_text_html_unit(
 
             if "teleportation" in dict_unit["keywords"]:
                 return "<br/>" \
-                    + get_text_html_keyword(
-                        dict_names_keywords=dict_names_keywords_models,
-                        text_keyword="teleportation")
+                    + get_text_html_keyword("teleportation")
             else:
                 return ""
 
@@ -169,9 +144,7 @@ def get_text_html_unit(
 
             if dict_unit["attachable"]:
                 return "<br/>" \
-                    + get_text_html_keyword(
-                        dict_names_keywords=dict_names_keywords_models,
-                        text_keyword="attachable")
+                    + get_text_html_keyword("attachable")
             else:
                 return ""
 
