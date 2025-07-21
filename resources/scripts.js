@@ -32,16 +32,44 @@ function display_faction(text_id_faction) {
 }
 
 
-function update_points_total(element_tr) {
+function update_count_models(element_tr, bool_increase) {
+
+    let element_count_models = element_tr
+        .getElementsByClassName("count_models")[0]
+
+    var int_count_models_current = parseInt(element_count_models.textContent)
+    let int_count_models_initial = parseInt(element_count_models.getAttribute("initial"))
+
+    if (bool_increase) {
+        if (int_count_models_current >= int_count_models_initial) {
+            return
+        }
+        var int_count_models_new = int_count_models_current + 1
+
+        element_tr
+            .classList
+            .remove("destroyed")
+    } else {
+        if (int_count_models_current <= 0) {
+            return
+        } else if (int_count_models_current == 1) {
+            element_tr
+                .classList
+                .add("destroyed")
+        }
+        var int_count_models_new = int_count_models_current - 1
+    }
 
     let element_table = element_tr
         .parentElement
 
-    let element_points_cost = element_tr
-        .getElementsByClassName("points_cost")[0]
-
-    element_points_cost.textContent = (parseInt(element_tr.getElementsByClassName("count_models")[0].textContent) * parseInt(element_tr.getAttribute("points_per_model")))
+    element_count_models.textContent = int_count_models_new
         .toString()
+
+    element_tr
+        .getElementsByClassName("points_cost")[0]
+        .textContent = (int_count_models_new * parseInt(element_tr.getAttribute("points_per_model")))
+            .toString()
 
     let int_points_cost_total = Array.from(element_table
         .getElementsByClassName("points_cost"))
@@ -59,26 +87,9 @@ function increase_number_models(text_id_element) {
     let element_tr = document
         .getElementById(text_id_element)
 
-    let element_count_models = element_tr
-        .getElementsByClassName("count_models")[0]
-
-    var int_count_models_current = parseInt(element_count_models.textContent)
-    var int_count_models_initial = parseInt(element_count_models.getAttribute("initial"))
-
-    if (int_count_models_current >= int_count_models_initial) {
-        return
-    }
-
-    let int_count_models_new = int_count_models_current + 1
-
-    element_count_models.textContent = int_count_models_new
-        .toString()
-
-    update_points_total(element_tr)
-
-    element_tr
-        .classList
-        .remove("destroyed")
+    update_count_models(
+        element_tr,
+        true)
 }
 
 
@@ -86,9 +97,6 @@ function reduce_health(text_id_element) {
 
     let element_tr = document
         .getElementById(text_id_element)
-
-    let element_count_models = element_tr
-        .getElementsByClassName("count_models")[0]
 
     let element_parent = element_tr
         .getElementsByClassName("health_bar")[0]
@@ -103,14 +111,9 @@ function reduce_health(text_id_element) {
     if (int_count_tokens_used_new == array_tokens.length) {
         int_count_tokens_used_new = 0
 
-        let int_count_models_new = parseInt(element_count_models.textContent) - 1
-        element_count_models.textContent = int_count_models_new.toString()
-
-        update_points_total(element_tr)
-
-        if (int_count_models_new == 0) {
-            element_tr.classList.add("destroyed")
-        }
+        update_count_models(
+            element_tr,
+            false)
     }
 
     if (int_count_tokens_used_new == array_tokens.length - 1) {
