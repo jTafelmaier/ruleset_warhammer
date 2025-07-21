@@ -10,7 +10,6 @@ from src import md_shared
 def get_text_html_unit(
     dict_unit:typing.Dict,
     dict_keywords:typing.Dict,
-    text_side:str,
     name_setting:str,
     name_directory_faction:str,
     bool_show_inactive_information:bool):

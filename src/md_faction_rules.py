@@ -30,7 +30,6 @@ def get_text_html_faction_rules(
             return md_units.get_text_html_unit(
                     dict_unit=dict_unit,
                     dict_keywords=dict_keywords,
-                    text_side="faction",
                     name_setting=name_setting,
                     name_directory_faction=name_directory_faction,
                     bool_show_inactive_information=True)

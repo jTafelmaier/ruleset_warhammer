@@ -160,7 +160,6 @@ def get_text_html_army_lists(
             return md_units.get_text_html_unit(
                     dict_unit=dict_unit,
                     dict_keywords=dict_keywords,
-                    text_side=text_side,
                     name_setting=name_setting,
                     name_directory_faction=name_directory_faction,
                     bool_show_inactive_information=False)
