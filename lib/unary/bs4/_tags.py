@@ -574,10 +574,10 @@ def wrap_with_new_tag(
 
         new_tag = bs4 \
             .BeautifulSoup(
-                f"<{name}></{name}>", 
+                f"<{name}></{name}>",
                 "html.parser") \
             .find(name)
-        
+
         new_tag \
             .attrs \
             .update(dict_attributes)

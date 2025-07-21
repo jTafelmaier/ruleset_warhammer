@@ -32,6 +32,32 @@ function display_faction(text_id_faction) {
 }
 
 
+function increase_victory_points(text_side) {
+
+    let element_victory_points = document
+        .getElementsByClassName("army_list " + text_side)[0]
+        .getElementsByClassName("victory_points")[0]
+
+    element_victory_points.textContent = (parseInt(element_victory_points.textContent) + 1).toString()
+}
+
+
+function decrease_victory_points(text_side) {
+
+    let element_victory_points = document
+        .getElementsByClassName("army_list " + text_side)[0]
+        .getElementsByClassName("victory_points")[0]
+
+    let int_victory_points_current = parseInt(element_victory_points.textContent)
+
+    if (int_victory_points_current <= 0) {
+        return
+    }
+
+    element_victory_points.textContent = (int_victory_points_current - 1).toString()
+}
+
+
 function update_count_models(element_tr, bool_increase) {
 
     let element_count_models = element_tr

@@ -123,7 +123,7 @@ def get_text_html_army_lists(
                 + "</td><td class=\"points_cost\">" \
                 + str(
                     get_points_cost_unit(dict_unit_army_list)) \
-                + "</td></tr>"
+                + "</td><td/></tr>"
 
         text_html_trs_units = "" \
             .join(
@@ -137,9 +137,15 @@ def get_text_html_army_lists(
                     get_points_cost_unit,
                     list_units_army_list))
 
-        text_html_army_list = "<div class=\"army_list\"><table class=\"table_default fullwidth\"><tbody><tr><th>Health</th><th>Action tokens</th><th>Unit</th><th>#models</th><th class=\"points_total\">Points (" \
+        text_html_army_list = "<div class=\"army_list " \
+            + text_side \
+            + "\"><table class=\"table_default fullwidth\"><tbody><tr><th>Health</th><th>Action tokens</th><th>Unit</th><th>#models</th><th class=\"points_total\">Points (" \
             + str(int_total_points) \
-            + " total)</th></tr>" \
+            + " total)</th><th><span class=\"victory_points\" onclick=\"increase_victory_points('" \
+            + text_side \
+            + "')\">0</span><span onclick=\"decrease_victory_points('" \
+            + text_side \
+            + "')\">VP</span></th></tr>" \
             + text_html_trs_units \
             + "</tbody></table></div>"
 
@@ -150,7 +156,7 @@ def get_text_html_army_lists(
 
         def get_text_html_unit(
             dict_unit:typing.Dict):
-            
+
             return md_units.get_text_html_unit(
                     dict_unit=dict_unit,
                     dict_keywords=dict_keywords,
