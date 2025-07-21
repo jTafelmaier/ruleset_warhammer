@@ -72,6 +72,32 @@ def get_text_html_unit(
                         "_") \
                     + ".png"])
 
+    def get_text_html_keyword_weapon(
+        text_keyword:str):
+
+        text_name_keyword, \
+        _, \
+        text_parameters = text_keyword \
+            .partition(" ")
+
+        return get_text_html_keyword(
+            dict_keyword=dict_names_keywords_weapons \
+                [text_name_keyword],
+            text_parameters=text_parameters)
+
+    def get_text_html_keyword_model(
+        text_keyword:str):
+
+        text_name_keyword, \
+        _, \
+        text_parameters = text_keyword \
+            .partition(" ")
+
+        return get_text_html_keyword(
+            dict_keyword=dict_names_keywords_models \
+                [text_name_keyword],
+            text_parameters=text_parameters)
+
     def get_text_html_row_action(
         dict_action:typing.Dict):
 
@@ -85,15 +111,7 @@ def get_text_html_unit(
                 return str(dict_action["range"]) \
                     + " cm"
 
-        def get_text_weapon_keywords():
-
-            def get_text_html_keyword_weapon(
-                text_name_keyword:str):
-
-                return get_text_html_keyword(
-                    dict_keyword=dict_names_keywords_weapons \
-                        [text_name_keyword],
-                    text_parameters="")
+        def get_text_html_keywords_weapon():
 
             return " " \
                 .join(
@@ -113,7 +131,7 @@ def get_text_html_unit(
             return "<tr><td class=\"td_weapon_characteristic range\">" \
                 + get_text_weapon_range() \
                 + "</td><td class=\"td_keywords\">" \
-                + get_text_weapon_keywords() \
+                + get_text_html_keywords_weapon() \
                 + "</td><td class=\"td_weapon_characteristic strength\">" \
                 + str(int_hits) \
                 + "x " \
@@ -122,27 +140,7 @@ def get_text_html_unit(
 
         return get_text_html_attack()
 
-    text_html_rows_actions = "\n" \
-        .join(
-            map(
-                get_text_html_row_action,
-                dict_unit
-                    ["actions"]))
-
-    def get_text_html_keyword_model(
-        text_keyword:str):
-
-        text_name_keyword, \
-        _, \
-        text_parameters = text_keyword \
-            .partition(" ")
-
-        return get_text_html_keyword(
-            dict_keyword=dict_names_keywords_models \
-                [text_name_keyword],
-            text_parameters=text_parameters)
-
-    def get_text_model_keywords():
+    def get_text_html_keywords_model():
 
         return " " \
             .join(
@@ -199,6 +197,13 @@ def get_text_html_unit(
         else:
             return ""
 
+    text_html_rows_actions = "\n" \
+        .join(
+            map(
+                get_text_html_row_action,
+                dict_unit
+                    ["actions"]))
+
     return "<div class=\"container_unit\"><div class=\"div_unit\"><div class=\"div_header_unit\"><h3 class=\"h3_name_unit\">" \
         + dict_unit \
             ["name"] \
@@ -209,7 +214,7 @@ def get_text_html_unit(
         + "/general/background.png)\"><div class=\"div_image_unit\" style=\"background-image: url(" \
         + path_image_unit \
         + ")\"><div class=\"model_properties\"><div class=\"model_property keywords\">" \
-        + get_text_model_keywords() \
+        + get_text_html_keywords_model() \
         + "</div><div class=\"model_property actions\"><table class=\"table_default fullwidth\"><tbody><tr><th class=\"th_weapon_characteristic range\"><th class=\"th_weapon_characteristic keywords\"></th><th class=\"th_weapon_characteristic strength\"></th></tr>" \
         + text_html_rows_actions \
         + "</tbody></table></div></div></div></div></div>" \

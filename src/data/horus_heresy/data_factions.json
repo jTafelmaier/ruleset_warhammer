@@ -43,7 +43,7 @@
                             "strength": 12,
                             "keywords": [
                                 "heavy",
-                                "ap"
+                                "ap 14"
                             ],
                             "range": 0
                         }
@@ -73,7 +73,7 @@
                             "hits": 2,
                             "strength": 9,
                             "keywords": [
-                                "ap"
+                                "ap 11"
                             ],
                             "range": 20
                         },
@@ -81,7 +81,7 @@
                             "hits": 2,
                             "strength": 10,
                             "keywords": [
-                                "ap"
+                                "ap 12"
                             ],
                             "range": 5
                         }
@@ -118,8 +118,8 @@
                             "hits": 2,
                             "strength": 7,
                             "keywords": [
-                                "ap",
-                                "precise"
+                                "precise",
+                                "ap 9"
                             ],
                             "range": 5
                         }
@@ -157,7 +157,7 @@
                             "hits": 1,
                             "strength": 8,
                             "keywords": [
-                                "ap"
+                                "ap 10"
                             ],
                             "range": 5
                         }
@@ -184,8 +184,8 @@
                             "hits": 2,
                             "strength": 6,
                             "keywords": [
-                                "ap",
-                                "precise"
+                                "precise",
+                                "ap 8"
                             ],
                             "range": 5
                         }
@@ -220,7 +220,7 @@
                             "strength": 4,
                             "keywords": [
                                 "heavy",
-                                "ap"
+                                "ap 6"
                             ],
                             "range": 0
                         },
@@ -229,7 +229,7 @@
                             "strength": 10,
                             "keywords": [
                                 "heavy",
-                                "ap"
+                                "ap 12"
                             ],
                             "range": 5
                         }
@@ -312,7 +312,7 @@
                             "strength": 9,
                             "keywords": [
                                 "heavy",
-                                "ap"
+                                "ap 11"
                             ],
                             "range": 0
                         }
@@ -350,7 +350,7 @@
                             "strength": 12,
                             "keywords": [
                                 "heavy",
-                                "ap"
+                                "ap 14"
                             ],
                             "range": 0
                         }
@@ -386,7 +386,7 @@
                             "hits": 2,
                             "strength": 7,
                             "keywords": [
-                                "ap"
+                                "ap 9"
                             ],
                             "range": 20
                         },
@@ -394,7 +394,7 @@
                             "hits": 2,
                             "strength": 8,
                             "keywords": [
-                                "ap"
+                                "ap 10"
                             ],
                             "range": 5
                         }

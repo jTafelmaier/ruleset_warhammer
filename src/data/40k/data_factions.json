@@ -24,8 +24,8 @@
                             "hits": 4,
                             "strength": 5,
                             "keywords": [
-                                "ap",
-                                "precise"
+                                "precise",
+                                "ap 7"
                             ],
                             "range": 5
                         }
@@ -55,7 +55,7 @@
                             "strength": 7,
                             "keywords": [
                                 "separate",
-                                "ap"
+                                "ap 9"
                             ],
                             "range": 5
                         }
@@ -103,8 +103,8 @@
                             "hits": 2,
                             "strength": 6,
                             "keywords": [
-                                "ap",
-                                "precise"
+                                "precise",
+                                "ap 8"
                             ],
                             "range": 5
                         }
@@ -131,8 +131,8 @@
                             "hits": 1,
                             "strength": 7,
                             "keywords": [
-                                "ap",
-                                "precise"
+                                "precise",
+                                "ap 9"
                             ],
                             "range": 5
                         }
@@ -160,8 +160,8 @@
                             "hits": 2,
                             "strength": 7,
                             "keywords": [
-                                "ap",
-                                "precise"
+                                "precise",
+                                "ap 9"
                             ],
                             "range": 5
                         }
@@ -215,7 +215,7 @@
                             "hits": 2,
                             "strength": 6,
                             "keywords": [
-                                "ap"
+                                "ap 8"
                             ],
                             "range": 5
                         }
@@ -268,7 +268,7 @@
                             "strength": 9,
                             "keywords": [
                                 "heavy",
-                                "ap"
+                                "ap 11"
                             ],
                             "range": 20
                         }
@@ -324,7 +324,7 @@
                             "strength": 14,
                             "keywords": [
                                 "heavy",
-                                "ap"
+                                "ap 16"
                             ],
                             "range": 0
                         }
@@ -353,7 +353,7 @@
                             "hits": 2,
                             "strength": 6,
                             "keywords": [
-                                "ap"
+                                "ap 8"
                             ],
                             "range": 5
                         }
@@ -381,7 +381,7 @@
                             "hits": 1,
                             "strength": 6,
                             "keywords": [
-                                "ap"
+                                "ap 8"
                             ],
                             "range": 5
                         }
@@ -427,7 +427,7 @@
                             "hits": 2,
                             "strength": 6,
                             "keywords": [
-                                "ap"
+                                "ap 8"
                             ],
                             "range": 5
                         }
@@ -448,7 +448,7 @@
                             "hits": 1,
                             "strength": 6,
                             "keywords": [
-                                "ap"
+                                "ap 8"
                             ],
                             "range": 5
                         }
@@ -475,8 +475,8 @@
                             "hits": 1,
                             "strength": 6,
                             "keywords": [
-                                "ap",
-                                "precise"
+                                "precise",
+                                "ap 8"
                             ],
                             "range": 5
                         }
@@ -519,7 +519,7 @@
                             "strength": 8,
                             "keywords": [
                                 "heavy",
-                                "ap"
+                                "ap 10"
                             ],
                             "range": 5
                         }
@@ -577,7 +577,7 @@
                             "strength": 8,
                             "keywords": [
                                 "heavy",
-                                "ap"
+                                "ap 10"
                             ],
                             "range": 5
                         }
@@ -649,7 +649,7 @@
                             "strength": 5,
                             "keywords": [
                                 "heavy",
-                                "ap"
+                                "ap 7"
                             ],
                             "range": 0
                         }
@@ -692,7 +692,7 @@
                             "hits": 1,
                             "strength": 8,
                             "keywords": [
-                                "ap"
+                                "ap 10"
                             ],
                             "range": 5
                         }
@@ -713,7 +713,7 @@
                             "strength": 12,
                             "keywords": [
                                 "heavy",
-                                "ap"
+                                "ap 14"
                             ],
                             "range": 0
                         }
