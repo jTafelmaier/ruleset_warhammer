@@ -14,7 +14,6 @@
                     ],
                     "actions": [
                         {
-                            "name": "Volkite culverins",
                             "hits": 4,
                             "strength": 6,
                             "keywords": [
@@ -24,7 +23,6 @@
                             "range": 0
                         },
                         {
-                            "name": "Heavy bolters",
                             "hits": 2,
                             "strength": 7,
                             "keywords": [
@@ -33,7 +31,6 @@
                             "range": 0
                         },
                         {
-                            "name": "Battle cannon - explosive",
                             "hits": 2,
                             "strength": 10,
                             "keywords": [
@@ -42,7 +39,6 @@
                             "range": 0
                         },
                         {
-                            "name": "Battle cannon - ap",
                             "hits": 1,
                             "strength": 12,
                             "keywords": [
@@ -65,7 +61,6 @@
                     ],
                     "actions": [
                         {
-                            "name": "Twin Volkite calivers",
                             "hits": 4,
                             "strength": 5,
                             "keywords": [
@@ -75,7 +70,6 @@
                             "range": 0
                         },
                         {
-                            "name": "Melta weapons",
                             "hits": 2,
                             "strength": 9,
                             "keywords": [
@@ -84,7 +78,6 @@
                             "range": 20
                         },
                         {
-                            "name": "Siege claws",
                             "hits": 2,
                             "strength": 12,
                             "keywords": [],
@@ -112,7 +105,6 @@
                     ],
                     "actions": [
                         {
-                            "name": "Krak grenade",
                             "hits": 1,
                             "strength": 7,
                             "keywords": [
@@ -121,7 +113,6 @@
                             "range": 20
                         },
                         {
-                            "name": "The Blade",
                             "hits": 2,
                             "strength": 6,
                             "keywords": [
@@ -145,7 +136,6 @@
                     ],
                     "actions": [
                         {
-                            "name": "Volkite pistol",
                             "hits": 2,
                             "strength": 4,
                             "keywords": [
@@ -154,7 +144,6 @@
                             "range": 0
                         },
                         {
-                            "name": "Phosphex grenade",
                             "hits": 1,
                             "strength": 7,
                             "keywords": [
@@ -163,7 +152,6 @@
                             "range": 20
                         },
                         {
-                            "name": "The Death of Worlds",
                             "hits": 2,
                             "strength": 6,
                             "keywords": [
@@ -191,7 +179,6 @@
                     ],
                     "actions": [
                         {
-                            "name": "The Breath of the Storm",
                             "hits": 2,
                             "strength": 5,
                             "keywords": [
@@ -221,14 +208,12 @@
                     ],
                     "actions": [
                         {
-                            "name": "Bolt weapon",
                             "hits": 2,
                             "strength": 5,
                             "keywords": [],
                             "range": 0
                         },
                         {
-                            "name": "Grav weapon",
                             "hits": 1,
                             "strength": 4,
                             "keywords": [
@@ -238,7 +223,6 @@
                             "range": 0
                         },
                         {
-                            "name": "Graviton crusher",
                             "hits": 1,
                             "strength": 10,
                             "keywords": [
@@ -260,7 +244,6 @@
                     ],
                     "actions": [
                         {
-                            "name": "Bolt weapon",
                             "hits": 2,
                             "strength": 5,
                             "keywords": [],
@@ -279,7 +262,6 @@
                     ],
                     "actions": [
                         {
-                            "name": "Disintegrator weapon",
                             "hits": 1,
                             "strength": 8,
                             "keywords": [
@@ -300,14 +282,12 @@
                     ],
                     "actions": [
                         {
-                            "name": "Bolt pistol",
                             "hits": 1,
                             "strength": 5,
                             "keywords": [],
                             "range": 0
                         },
                         {
-                            "name": "Chain weapon",
                             "hits": 1,
                             "strength": 6,
                             "keywords": [],
@@ -326,7 +306,6 @@
                     ],
                     "actions": [
                         {
-                            "name": "Quad accelerator cannon",
                             "hits": 4,
                             "strength": 9,
                             "keywords": [
@@ -349,7 +328,6 @@
                     ],
                     "actions": [
                         {
-                            "name": "Sponson-mounted heavy bolters",
                             "hits": 4,
                             "strength": 7,
                             "keywords": [
@@ -358,7 +336,6 @@
                             "range": 0
                         },
                         {
-                            "name": "Demolisher cannon",
                             "hits": 4,
                             "strength": 10,
                             "keywords": [
@@ -367,7 +344,6 @@
                             "range": 0
                         },
                         {
-                            "name": "Twin battle cannon",
                             "hits": 1,
                             "strength": 12,
                             "keywords": [
@@ -397,7 +373,6 @@
                     ],
                     "actions": [
                         {
-                            "name": "Elimination",
                             "hits": 1,
                             "strength": 10,
                             "keywords": [
@@ -406,7 +381,6 @@
                             "range": 20
                         },
                         {
-                            "name": "Warpfire",
                             "hits": 2,
                             "strength": 7,
                             "keywords": [
@@ -415,7 +389,6 @@
                             "range": 20
                         },
                         {
-                            "name": "Blade of Ahn-Nunurta",
                             "hits": 2,
                             "strength": 8,
                             "keywords": [
@@ -438,7 +411,6 @@
                     ],
                     "actions": [
                         {
-                            "name": "Psychic conversion",
                             "hits": 2,
                             "strength": 6,
                             "keywords": [
@@ -447,7 +419,6 @@
                             "range": 20
                         },
                         {
-                            "name": "Force staff",
                             "hits": 1,
                             "strength": 8,
                             "keywords": [],

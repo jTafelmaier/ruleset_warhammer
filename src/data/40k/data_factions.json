@@ -15,14 +15,12 @@
                     ],
                     "actions": [
                         {
-                            "name": "Bolt pistol",
                             "hits": 2,
                             "strength": 5,
                             "keywords": [],
                             "range": 20
                         },
                         {
-                            "name": "Power claws",
                             "hits": 4,
                             "strength": 4,
                             "keywords": [
@@ -45,14 +43,12 @@
                     ],
                     "actions": [
                         {
-                            "name": "Onslaught cannon",
                             "hits": 4,
                             "strength": 5,
                             "keywords": [],
                             "range": 20
                         },
                         {
-                            "name": "Power lance",
                             "hits": 1,
                             "strength": 7,
                             "keywords": [
@@ -76,14 +72,12 @@
                     ],
                     "actions": [
                         {
-                            "name": "Storm bolter",
                             "hits": 4,
                             "strength": 4,
                             "keywords": [],
                             "range": 20
                         },
                         {
-                            "name": "Daemon sword",
                             "hits": 2,
                             "strength": 6,
                             "keywords": [
@@ -106,7 +100,6 @@
                     ],
                     "actions": [
                         {
-                            "name": "Bolt pistol",
                             "hits": 2,
                             "strength": 5,
                             "keywords": [
@@ -115,7 +108,6 @@
                             "range": 20
                         },
                         {
-                            "name": "Chainsword",
                             "hits": 2,
                             "strength": 6,
                             "keywords": [],
@@ -135,14 +127,12 @@
                     ],
                     "actions": [
                         {
-                            "name": "Heavy bolt rifle",
                             "hits": 4,
                             "strength": 5,
                             "keywords": [],
                             "range": 0
                         },
                         {
-                            "name": "Power sword",
                             "hits": 2,
                             "strength": 5,
                             "keywords": [
@@ -163,14 +153,12 @@
                     ],
                     "actions": [
                         {
-                            "name": "Heavy bolt rifle",
                             "hits": 2,
                             "strength": 5,
                             "keywords": [],
                             "range": 0
                         },
                         {
-                            "name": "Krak grenade",
                             "hits": 1,
                             "strength": 7,
                             "keywords": [
@@ -191,14 +179,12 @@
                     ],
                     "actions": [
                         {
-                            "name": "Bolt pistol",
                             "hits": 1,
                             "strength": 5,
                             "keywords": [],
                             "range": 20
                         },
                         {
-                            "name": "Melta weapon",
                             "hits": 1,
                             "strength": 9,
                             "keywords": [
@@ -220,7 +206,6 @@
                     ],
                     "actions": [
                         {
-                            "name": "Bolt pistol",
                             "hits": 1,
                             "strength": 5,
                             "keywords": [
@@ -229,7 +214,6 @@
                             "range": 20
                         },
                         {
-                            "name": "Chainsword",
                             "hits": 1,
                             "strength": 6,
                             "keywords": [],
@@ -249,7 +233,6 @@
                     ],
                     "actions": [
                         {
-                            "name": "Storm bolters",
                             "hits": 2,
                             "strength": 4,
                             "keywords": [
@@ -258,7 +241,6 @@
                             "range": 20
                         },
                         {
-                            "name": "Laser destroyer",
                             "hits": 1,
                             "strength": 14,
                             "keywords": [
@@ -281,7 +263,6 @@
                     ],
                     "actions": [
                         {
-                            "name": "Bolt pistol",
                             "hits": 2,
                             "strength": 5,
                             "keywords": [
@@ -290,7 +271,6 @@
                             "range": 20
                         },
                         {
-                            "name": "Power sword",
                             "hits": 2,
                             "strength": 5,
                             "keywords": [
@@ -311,7 +291,6 @@
                     ],
                     "actions": [
                         {
-                            "name": "Bolt pistol",
                             "hits": 1,
                             "strength": 5,
                             "keywords": [
@@ -320,7 +299,6 @@
                             "range": 20
                         },
                         {
-                            "name": "Power sword",
                             "hits": 1,
                             "strength": 5,
                             "keywords": [
@@ -341,14 +319,12 @@
                     ],
                     "actions": [
                         {
-                            "name": "Bolt rifle",
                             "hits": 2,
                             "strength": 5,
                             "keywords": [],
                             "range": 0
                         },
                         {
-                            "name": "Chainsword",
                             "hits": 1,
                             "strength": 6,
                             "keywords": [],
@@ -369,14 +345,12 @@
                     ],
                     "actions": [
                         {
-                            "name": "Storm bolter",
                             "hits": 4,
                             "strength": 4,
                             "keywords": [],
                             "range": 20
                         },
                         {
-                            "name": "The Sword of Silence",
                             "hits": 2,
                             "strength": 5,
                             "keywords": [
@@ -400,7 +374,6 @@
                     ],
                     "actions": [
                         {
-                            "name": "Power sword",
                             "hits": 2,
                             "strength": 5,
                             "keywords": [
@@ -422,7 +395,6 @@
                     ],
                     "actions": [
                         {
-                            "name": "Power sword",
                             "hits": 1,
                             "strength": 5,
                             "keywords": [
@@ -444,14 +416,12 @@
                     ],
                     "actions": [
                         {
-                            "name": "Bolt pistol",
                             "hits": 1,
                             "strength": 5,
                             "keywords": [],
                             "range": 20
                         },
                         {
-                            "name": "Calibanite greatsword",
                             "hits": 1,
                             "strength": 5,
                             "keywords": [
@@ -481,7 +451,6 @@
                     ],
                     "actions": [
                         {
-                            "name": "Bolt pistol",
                             "hits": 2,
                             "strength": 5,
                             "keywords": [
@@ -490,14 +459,12 @@
                             "range": 20
                         },
                         {
-                            "name": "Coward's bane",
                             "hits": 2,
                             "strength": 7,
                             "keywords": [],
                             "range": 5
                         },
                         {
-                            "name": "Juggernaut's horned blade",
                             "hits": 1,
                             "strength": 8,
                             "keywords": [
@@ -521,7 +488,6 @@
                     ],
                     "actions": [
                         {
-                            "name": "Eviscerator",
                             "hits": 2,
                             "strength": 6,
                             "keywords": [
@@ -530,7 +496,6 @@
                             "range": 5
                         },
                         {
-                            "name": "Daemonic blade",
                             "hits": 1,
                             "strength": 8,
                             "keywords": [],
@@ -550,7 +515,6 @@
                     ],
                     "actions": [
                         {
-                            "name": "Eviscerator",
                             "hits": 1,
                             "strength": 6,
                             "keywords": [
@@ -559,7 +523,6 @@
                             "range": 5
                         },
                         {
-                            "name": "Chainfist",
                             "hits": 1,
                             "strength": 7,
                             "keywords": [
@@ -581,7 +544,6 @@
                     ],
                     "actions": [
                         {
-                            "name": "Eviscerators",
                             "hits": 2,
                             "strength": 6,
                             "keywords": [],
@@ -600,7 +562,6 @@
                     ],
                     "actions": [
                         {
-                            "name": "Bolt pistol",
                             "hits": 1,
                             "strength": 5,
                             "keywords": [
@@ -609,7 +570,6 @@
                             "range": 20
                         },
                         {
-                            "name": "Chain weapon",
                             "hits": 1,
                             "strength": 7,
                             "keywords": [],
@@ -635,7 +595,6 @@
                     ],
                     "actions": [
                         {
-                            "name": "Gauss weapon",
                             "hits": 1,
                             "strength": 5,
                             "keywords": [
@@ -660,7 +619,6 @@
                     ],
                     "actions": [
                         {
-                            "name": "Enmitic weapons",
                             "hits": 4,
                             "strength": 6,
                             "keywords": [
@@ -681,7 +639,6 @@
                     ],
                     "actions": [
                         {
-                            "name": "Hyperphase blades",
                             "hits": 1,
                             "strength": 8,
                             "keywords": [
@@ -702,7 +659,6 @@
                     ],
                     "actions": [
                         {
-                            "name": "Gauss weapon",
                             "hits": 1,
                             "strength": 12,
                             "keywords": [
@@ -724,7 +680,6 @@
                     ],
                     "actions": [
                         {
-                            "name": "Enmitic weapon",
                             "hits": 6,
                             "strength": 7,
                             "keywords": [
