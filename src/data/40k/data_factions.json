@@ -83,6 +83,35 @@
                     "attachable": true
                 },
                 {
+                    "name": "Belial",
+                    "points_per_model": 200,
+                    "health_points": 4,
+                    "armor": 6,
+                    "keywords": [
+                        "teleportation",
+                        "score",
+                        "move 10cm"
+                    ],
+                    "actions": [
+                        {
+                            "hits": 4,
+                            "strength": 4,
+                            "keywords": [],
+                            "range": 20
+                        },
+                        {
+                            "hits": 2,
+                            "strength": 5,
+                            "keywords": [
+                                "ap",
+                                "precise"
+                            ],
+                            "range": 5
+                        }
+                    ],
+                    "attachable": true
+                },
+                {
                     "name": "Suboden Khan",
                     "points_per_model": 200,
                     "health_points": 4,
@@ -382,35 +411,6 @@
                         }
                     ],
                     "attachable": false
-                },
-                {
-                    "name": "Belial",
-                    "points_per_model": 200,
-                    "health_points": 4,
-                    "armor": 6,
-                    "keywords": [
-                        "teleportation",
-                        "score",
-                        "move 10cm"
-                    ],
-                    "actions": [
-                        {
-                            "hits": 4,
-                            "strength": 4,
-                            "keywords": [],
-                            "range": 20
-                        },
-                        {
-                            "hits": 2,
-                            "strength": 5,
-                            "keywords": [
-                                "ap",
-                                "precise"
-                            ],
-                            "range": 5
-                        }
-                    ],
-                    "attachable": true
                 },
                 {
                     "name": "Deathwing strikemaster",
