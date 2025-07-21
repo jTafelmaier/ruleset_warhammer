@@ -16,8 +16,16 @@ def get_text_html_unit(
     bool_show_inactive_information:bool):
 
     def get_text_html_keyword(
-        dict_keyword:typing.Dict,
-        text_parameters:str):
+        dict_names_keywords:typing.Dict,
+        text_keyword:str):
+
+        text_name_keyword, \
+        _, \
+        text_parameters = text_keyword \
+            .partition(" ")
+
+        dict_keyword = dict_names_keywords \
+            [text_name_keyword]
 
         text_title = dict_keyword \
             ["function"] \
@@ -75,28 +83,16 @@ def get_text_html_unit(
     def get_text_html_keyword_weapon(
         text_keyword:str):
 
-        text_name_keyword, \
-        _, \
-        text_parameters = text_keyword \
-            .partition(" ")
-
         return get_text_html_keyword(
-            dict_keyword=dict_names_keywords_weapons \
-                [text_name_keyword],
-            text_parameters=text_parameters)
+                dict_names_keywords=dict_names_keywords_weapons,
+                text_keyword=text_keyword)
 
     def get_text_html_keyword_model(
         text_keyword:str):
 
-        text_name_keyword, \
-        _, \
-        text_parameters = text_keyword \
-            .partition(" ")
-
         return get_text_html_keyword(
-            dict_keyword=dict_names_keywords_models \
-                [text_name_keyword],
-            text_parameters=text_parameters)
+                dict_names_keywords=dict_names_keywords_models,
+                text_keyword=text_keyword)
 
     def get_text_html_row_action(
         dict_action:typing.Dict):
@@ -164,9 +160,8 @@ def get_text_html_unit(
             if "teleportation" in dict_unit["keywords"]:
                 return "<br/>" \
                     + get_text_html_keyword(
-                        dict_keyword=dict_names_keywords_models \
-                            ["teleportation"],
-                        text_parameters="")
+                        dict_names_keywords=dict_names_keywords_models,
+                        text_keyword="teleportation")
             else:
                 return ""
 
@@ -175,9 +170,8 @@ def get_text_html_unit(
             if dict_unit["attachable"]:
                 return "<br/>" \
                     + get_text_html_keyword(
-                        dict_keyword=dict_names_keywords_models \
-                            ["attachable"],
-                        text_parameters="")
+                        dict_names_keywords=dict_names_keywords_models,
+                        text_keyword="attachable")
             else:
                 return ""
 
