@@ -37,6 +37,12 @@ function update_points_total(element_tr) {
     let element_table = element_tr
         .parentElement
 
+    let element_points_cost = element_tr
+        .getElementsByClassName("points_cost")[0]
+
+    element_points_cost.textContent = (parseInt(element_tr.getElementsByClassName("count_models")[0].textContent) * parseInt(element_tr.getAttribute("points_per_model")))
+        .toString()
+
     let int_points_cost_total = Array.from(element_table
         .getElementsByClassName("points_cost"))
         .map(element => parseInt(element.textContent))
@@ -56,9 +62,6 @@ function increase_number_models(text_id_element) {
     let element_count_models = element_tr
         .getElementsByClassName("count_models")[0]
 
-    let element_points_cost = element_tr
-        .getElementsByClassName("points_cost")[0]
-
     var int_count_models_current = parseInt(element_count_models.textContent)
     var int_count_models_initial = parseInt(element_count_models.getAttribute("initial"))
 
@@ -69,9 +72,6 @@ function increase_number_models(text_id_element) {
     let int_count_models_new = int_count_models_current + 1
 
     element_count_models.textContent = int_count_models_new
-        .toString()
-
-    element_points_cost.textContent = (int_count_models_new * parseInt(element_tr.getAttribute("points_per_model")))
         .toString()
 
     update_points_total(element_tr)
@@ -90,9 +90,6 @@ function reduce_health(text_id_element) {
     let element_count_models = element_tr
         .getElementsByClassName("count_models")[0]
 
-    let element_points_cost = element_tr
-        .getElementsByClassName("points_cost")[0]
-
     let element_parent = element_tr
         .getElementsByClassName("health_bar")[0]
 
@@ -108,7 +105,6 @@ function reduce_health(text_id_element) {
 
         let int_count_models_new = parseInt(element_count_models.textContent) - 1
         element_count_models.textContent = int_count_models_new.toString()
-        element_points_cost.textContent = (int_count_models_new * parseInt(element_tr.getAttribute("points_per_model"))).toString()
 
         update_points_total(element_tr)
 
