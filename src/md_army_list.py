@@ -137,7 +137,7 @@ def get_text_html_army_lists(
                     get_points_cost_unit,
                     list_units_army_list))
 
-        text_html_army_list = "<div class=\"army_list\"><table class=\"table_default fullwidth\"><tbody><tr><th>Health</th><th>Action tokens</th><th>Unit</th><th>#models</th><th>Points (" \
+        text_html_army_list = "<div class=\"army_list\"><table class=\"table_default fullwidth\"><tbody><tr><th>Health</th><th>Action tokens</th><th>Unit</th><th>#models</th><th class=\"points_total\">Points (" \
             + str(int_total_points) \
             + " total)</th></tr>" \
             + text_html_trs_units \

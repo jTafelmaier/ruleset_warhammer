@@ -32,6 +32,23 @@ function display_faction(text_id_faction) {
 }
 
 
+function update_points_total(element_tr) {
+
+    let element_table = element_tr
+        .parentElement
+
+    let int_points_cost_total = Array.prototype.map.call(
+        element_table
+            .getElementsByClassName("points_cost"),
+        element => parseInt(element.textContent))
+        .reduce((a, b) => a + b)
+
+    element_table
+        .getElementsByClassName("points_total")[0]
+        .textContent = "Points (" + int_points_cost_total.toString() + " total)"
+}
+
+
 function increase_number_models(text_id_element) {
 
     let element_tr = document
@@ -57,6 +74,8 @@ function increase_number_models(text_id_element) {
 
     element_points_cost.textContent = (int_count_models_new * parseInt(element_tr.getAttribute("points_per_model")))
         .toString()
+
+    update_points_total(element_tr)
 
     element_tr
         .classList
@@ -91,6 +110,9 @@ function reduce_health(text_id_element) {
         let int_count_models_new = parseInt(element_count_models.textContent) - 1
         element_count_models.textContent = int_count_models_new.toString()
         element_points_cost.textContent = (int_count_models_new * parseInt(element_tr.getAttribute("points_per_model"))).toString()
+
+        update_points_total(element_tr)
+
         if (int_count_models_new == 0) {
             element_tr.classList.add("destroyed")
         }
@@ -140,10 +162,11 @@ function reduce_action_tokens(text_id_element) {
 
 
 function restore_action_tokens() {
+
     Array.prototype.forEach.call(
-        document 
+        document
             .getElementById("div_army_lists")
             .getElementsByClassName("action_token token"),
-        (element) => element.classList.remove("used"))
+        element => element.classList.remove("used"))
 }
 
