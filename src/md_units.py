@@ -14,38 +14,42 @@ def get_text_html_unit(
     name_directory_faction:str,
     bool_show_inactive_information:bool):
 
-    def get_text_html_keyword(
-        text_keyword:str):
+    def get_text_html_keywords(
+        dict_entity:typing.Dict,
+        text_category:str):
 
-        text_name_keyword, \
-        _, \
-        text_parameters = text_keyword \
-            .partition(" ")
+        def get_text_html_keyword(
+            text_keyword:str):
 
-        text_title = dict_keywords \
-            [text_name_keyword] \
-            ["function"] \
-            .replace(
-                "\"",
-                "&quot;")
+            text_name_keyword, \
+            _, \
+            text_parameters = text_keyword \
+                .partition(" ")
 
-        return "<div class=\"keyword\" title=\"" \
-            + text_title \
-            + "\"><span>" \
-            + text_name_keyword \
-            + "</span> " \
-            + text_parameters \
-            + "</div>"
+            text_title = dict_keywords \
+                [text_category] \
+                .get(text_name_keyword)
 
-    def get_iterable_texts_keywords(
-        bool_inactive:bool):
+            if text_title is None:
+                return ""
 
-        return map(
-            get_text_html_keyword,
-            filter(
-                lambda text_keyword: bool_inactive == (text_keyword in {"attachable", "teleportation"}),
-                dict_unit \
-                    ["keywords"]))
+            return "<div class=\"keyword\" title=\"" \
+                + text_title \
+                    .replace(
+                        "\"",
+                        "&quot;") \
+                + "\"><span>" \
+                + text_name_keyword \
+                + "</span> " \
+                + text_parameters \
+                + "</div>"
+
+        return "" \
+            .join(
+                map(
+                    get_text_html_keyword,
+                    dict_entity \
+                        ["keywords"]))
 
     path_image_unit = "/" \
         .join(
@@ -65,20 +69,13 @@ def get_text_html_unit(
     def get_text_html_row_action(
         dict_action:typing.Dict):
 
-        def get_text_html_keywords_weapon():
-
-            return " " \
-                .join(
-                    map(
-                        get_text_html_keyword,
-                        dict_action \
-                            ["keywords"]))
-
         return "<tr><td class=\"td_weapon_characteristic range\">" \
             + dict_action \
                 ["range"] \
             + "</td><td class=\"td_keywords\">" \
-            + get_text_html_keywords_weapon() \
+            + get_text_html_keywords(
+                dict_entity=dict_action,
+                text_category="weapons") \
             + "</td><td class=\"td_weapon_characteristic strength\">" \
             + str(
                 dict_action \
@@ -103,8 +100,9 @@ def get_text_html_unit(
                 dict_unit \
                     ["health_points"]) \
             + "</span><br/><br/>" \
-            + "<br/>" \
-                .join(get_iterable_texts_keywords(True)) \
+            + get_text_html_keywords(
+                dict_entity=dict_unit,
+                text_category="deployment") \
             + "</div>"
 
     text_html_rows_actions = "\n" \
@@ -126,8 +124,9 @@ def get_text_html_unit(
         + "/general/background.png)\"><div class=\"div_image_unit\" style=\"background-image: url(" \
         + path_image_unit \
         + ")\"><div class=\"model_properties\"><div class=\"model_property keywords\">" \
-        + " " \
-            .join(get_iterable_texts_keywords(False)) \
+        + get_text_html_keywords(
+            dict_entity=dict_unit,
+            text_category="model") \
         + "</div><div class=\"model_property actions\"><table class=\"table_default fullwidth\"><tbody><tr><th class=\"th_weapon_characteristic range\"><th class=\"th_weapon_characteristic keywords\"></th><th class=\"th_weapon_characteristic strength\"></th></tr>" \
         + text_html_rows_actions \
         + "</tbody></table></div></div></div></div></div>" \

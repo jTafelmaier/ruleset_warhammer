@@ -1,46 +1,19 @@
 {
-    "attachable": {
-        "type": "kw_model_deployment",
-        "function": "This unit can be attached to another friendly unit at deployment."
-        },
-    "teleportation": {
-        "type": "kw_model_deployment",
-        "function": "This model's unit can perform the \"Setup teleportation\" action."
-        },
-    "stealth": {
-        "type": "kw_model_defense",
-        "function": "If this model's unit is near cover, it can only be selected as a target unit by units within 20 cm."
-        },
-    "large_profile": {
-        "type": "kw_model_defense",
-        "function": "This model cannot perform the \"Brace\" action."
-        },
-    "fly": {
-        "type": "kw_model_action",
-        "function": "This model can perform the \"Fly\" action up to the given distance."
-        },
-    "move": {
-        "type": "kw_model_action",
-        "function": "This model can perform the \"Move\" action up to the given distance."
-        },
-    "score": {
-        "type": "kw_model_action",
-        "function": "This model's unit can perform the \"Score objective\" action."
-        },
-    "ap": {
-        "type": "kw_attack",
-        "function": "If the target model's armor characteristic is no more than 2 higher than this weapon's strength: The minimum damage infliced by each hit is 1."
-        },
-    "heavy": {
-        "type": "kw_attack",
-        "function": "Can only use this weapon when performing the \"Heavy attack\" action."
-        },
-    "precise": {
-        "type": "kw_attack",
-        "function": "Can select attached units as target unit."
-        },
-    "separate": {
-        "type": "kw_attack",
-        "function": "When attacking with another weapon without \"separate\": Can also attack with this weapon during the attack action."
-        }
+    "deployment": {
+        "attachable": "This unit can be attached to another friendly unit at deployment.",
+        "teleportation": "This model's unit can perform the \"Setup teleportation\" action."
+    },
+    "model": {
+        "stealth": "If this model's unit is near cover, it can only be selected as a target unit by units within 20 cm.",
+        "large_profile": "This model cannot perform the \"Brace\" action.",
+        "fly": "This model can perform the \"Fly\" action up to the given distance.",
+        "move": "This model can perform the \"Move\" action up to the given distance.",
+        "score": "This model's unit can perform the \"Score objective\" action."
+    },
+    "weapons": {
+        "ap": "If the target model's armor characteristic is no more than 2 higher than this weapon's strength: The minimum damage infliced by each hit is 1.",
+        "heavy": "Can only use this weapon when performing the \"Heavy attack\" action.",
+        "precise": "Can select attached units as target unit.",
+        "separate": "When attacking with another weapon without \"separate\": Can also attack with this weapon during the attack action."
+    }
 }
