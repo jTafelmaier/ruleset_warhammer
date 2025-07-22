@@ -121,18 +121,18 @@ def get_text_html_unit(
         + name_setting \
         + "/general/background.png')\"><div class=\"div_image_unit\" style=\"background-image: url('" \
         + path_image_unit \
-        + "')\"><div class=\"div_header_unit\"><div class=\"model_characteristic\">" \
-        + str(
-            dict_unit \
-                ["armor"]) \
-        + " AR</div><h3 class=\"h3_name_unit\">" \
+        + "')\"><div class=\"model_properties\"><div class=\"div_header_unit\"><h3 class=\"h3_name_unit\">" \
         + dict_unit \
             ["name"] \
-        + "</h3></div><div class=\"model_properties\"><div class=\"model_property keywords\">" \
+        + "</h3></div><div class=\"model_property actions\"><table class=\"table_default fullwidth\"><tbody><tr><th class=\"th_weapon_characteristic range\"><th class=\"th_weapon_characteristic keywords\"></th><th class=\"th_weapon_characteristic strength\"></th></tr>" \
+        + text_html_rows_actions \
+        + "</tbody></table></div><div class=\"model_property keywords\">" \
         + get_text_html_keywords(
             dict_entity=dict_unit,
             text_category="keywords_model") \
-        + "</div><div class=\"model_property actions\"><table class=\"table_default fullwidth\"><tbody><tr><th class=\"th_weapon_characteristic range\"><th class=\"th_weapon_characteristic keywords\"></th><th class=\"th_weapon_characteristic strength\"></th></tr>" \
-        + text_html_rows_actions \
-        + "</tbody></table></div></div></div></div></div>"
+        + "</div></div><div class=\"right\"><div class=\"armor\">A" \
+        + str(
+            dict_unit \
+                ["armor"]) \
+        + "</div></div></div></div></div>"
 
