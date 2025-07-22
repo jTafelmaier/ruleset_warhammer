@@ -103,16 +103,16 @@ def get_text_html_unit(
 
         return get_text_html_attack()
 
-    SET_TEXTS_KEYWORDS_INACTIVE = {"attachable", "teleportation"}
+    def get_text_html_collection_keywords(
+        text_join:str,
+        bool_inactive:bool):
 
-    def get_text_html_keywords_model():
-
-        return " " \
+        return text_join \
             .join(
                 map(
                     get_text_html_keyword,
                     filter(
-                        lambda text_keyword: text_keyword not in SET_TEXTS_KEYWORDS_INACTIVE,
+                        lambda text_keyword: bool_inactive == (text_keyword in {"attachable", "teleportation"}),
                         dict_unit \
                             ["keywords"])))
 
@@ -124,15 +124,6 @@ def get_text_html_unit(
 
     def get_text_html_inactive_information():
 
-        text_inactive_keywords = "<br/>" \
-            .join(
-                map(
-                    get_text_html_keyword,
-                    filter(
-                        lambda text_keyword: text_keyword in SET_TEXTS_KEYWORDS_INACTIVE,
-                        dict_unit \
-                            ["keywords"])))
-
         if bool_show_inactive_information:
             return "<div class=\"inactive_data\"><span class=\"points_cost\">" \
                 + str(
@@ -143,7 +134,9 @@ def get_text_html_unit(
                     dict_unit \
                         ["health_points"]) \
                 + "</span><br/><br/>" \
-                + text_inactive_keywords \
+                + get_text_html_collection_keywords(
+                    text_join="<br/>",
+                    bool_inactive=True) \
                 + "</div>"
         else:
             return ""
@@ -165,7 +158,9 @@ def get_text_html_unit(
         + "/general/background.png)\"><div class=\"div_image_unit\" style=\"background-image: url(" \
         + path_image_unit \
         + ")\"><div class=\"model_properties\"><div class=\"model_property keywords\">" \
-        + get_text_html_keywords_model() \
+        + get_text_html_collection_keywords(
+            text_join=" ",
+            bool_inactive=False) \
         + "</div><div class=\"model_property actions\"><table class=\"table_default fullwidth\"><tbody><tr><th class=\"th_weapon_characteristic range\"><th class=\"th_weapon_characteristic keywords\"></th><th class=\"th_weapon_characteristic strength\"></th></tr>" \
         + text_html_rows_actions \
         + "</tbody></table></div></div></div></div></div>" \
