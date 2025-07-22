@@ -28,10 +28,11 @@
                         },
                         {
                             "hits": 2,
-                            "strength": 10,
+                            "strength": 8,
                             "range": "-",
                             "keywords_weapon": [
-                                "heavy"
+                                "heavy",
+                                "blast"
                             ]
                         },
                         {
@@ -210,6 +211,7 @@
                             "range": "20 cm",
                             "keywords_weapon": [
                                 "precise",
+                                "blast",
                                 "ap"
                             ]
                         },
@@ -218,6 +220,7 @@
                             "strength": 8,
                             "range": "20 cm",
                             "keywords_weapon": [
+                                "blast",
                                 "ap"
                             ]
                         }
@@ -410,7 +413,8 @@
                             "strength": 10,
                             "range": "-",
                             "keywords_weapon": [
-                                "heavy"
+                                "heavy",
+                                "blast"
                             ]
                         },
                         {
