@@ -15,7 +15,6 @@ from src import md_units
 def get_text_html_army_lists(
     dict_factions:typing.Dict,
     dict_keywords:typing.Dict,
-    name_setting:str,
     dict_army_list_left:typing.Dict,
     dict_army_list_right:typing.Dict):
 
@@ -152,7 +151,6 @@ def get_text_html_army_lists(
             return md_units.get_text_html_unit(
                     dict_unit=dict_unit,
                     dict_keywords=dict_keywords,
-                    name_setting=name_setting,
                     name_directory_faction=name_directory_faction,
                     bool_show_inactive_information=False)
 

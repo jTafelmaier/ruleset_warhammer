@@ -25,7 +25,6 @@ def get_text_html_health_bar(
 def get_text_html_unit(
     dict_unit:typing.Dict,
     dict_keywords:typing.Dict,
-    name_setting:str,
     name_directory_faction:str,
     bool_show_inactive_information:bool):
 
@@ -63,9 +62,7 @@ def get_text_html_unit(
     path_image_unit = "/" \
         .join(
             [
-                md_shared.get_text_path_images_faction(
-                    name_setting=name_setting,
-                    name_directory_faction=name_directory_faction),
+                md_shared.get_text_path_images_faction(name_directory_faction),
                 "units",
                 dict_unit \
                     ["name"] \

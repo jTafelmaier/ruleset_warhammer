@@ -13,8 +13,7 @@ from src import md_units
 
 def get_text_html_faction_rules(
     dict_factions:typing.Dict,
-    dict_keywords:typing.Dict,
-    name_setting:str):
+    dict_keywords:typing.Dict):
 
     def get_text_html_faction_list_building(
         dict_faction:typing.Dict):
@@ -30,7 +29,6 @@ def get_text_html_faction_rules(
             return md_units.get_text_html_unit(
                     dict_unit=dict_unit,
                     dict_keywords=dict_keywords,
-                    name_setting=name_setting,
                     name_directory_faction=name_directory_faction,
                     bool_show_inactive_information=True)
 
@@ -55,9 +53,7 @@ def get_text_html_faction_rules(
         path_image_faction = "/" \
             .join(
                 [
-                    md_shared.get_text_path_images_faction(
-                        name_setting=name_setting,
-                        name_directory_faction=name_directory_faction),
+                    md_shared.get_text_path_images_faction(name_directory_faction),
                     "faction.png"])
 
         return "<div class=\"container_faction_rules " \
