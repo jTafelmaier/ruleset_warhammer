@@ -22,23 +22,14 @@ def get_text_html_unit(
         text_parameters = text_keyword \
             .partition(" ")
 
-        dict_keyword = dict_keywords \
-            [text_name_keyword]
-
-        text_title = dict_keyword \
+        text_title = dict_keywords \
+            [text_name_keyword] \
             ["function"] \
-            .replace(
-                "<br/>",
-                "\n") \
             .replace(
                 "\"",
                 "&quot;")
 
-        return "<div class=\"keyword" \
-            + " " \
-            + dict_keyword \
-                ["type"] \
-            + "\" title=\"" \
+        return "<div class=\"keyword\" title=\"" \
             + text_title \
             + "\"><span>" \
             + text_name_keyword \
