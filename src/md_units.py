@@ -103,6 +103,8 @@ def get_text_html_unit(
 
         return get_text_html_attack()
 
+    SET_TEXTS_KEYWORDS_INACTIVE = {"attachable", "teleportation"}
+
     def get_text_html_keywords_model():
 
         return " " \
@@ -110,7 +112,7 @@ def get_text_html_unit(
                 map(
                     get_text_html_keyword,
                     filter(
-                        lambda text_keyword: text_keyword not in {"attachable", "teleportation"},
+                        lambda text_keyword: text_keyword not in SET_TEXTS_KEYWORDS_INACTIVE,
                         dict_unit \
                             ["keywords"])))
 
@@ -127,8 +129,9 @@ def get_text_html_unit(
                 map(
                     get_text_html_keyword,
                     filter(
-                        lambda text_keyword: text_keyword in {"attachable", "teleportation"},
-                        dict_unit["keywords"])))
+                        lambda text_keyword: text_keyword in SET_TEXTS_KEYWORDS_INACTIVE,
+                        dict_unit \
+                            ["keywords"])))
 
         if bool_show_inactive_information:
             return "<div class=\"inactive_data\"><span class=\"points_cost\">" \
