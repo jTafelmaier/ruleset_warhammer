@@ -16,10 +16,9 @@
                     "actions": [
                         {
                             "range": "-",
-                            "hits": 4,
-                            "strength": 6,
+                            "hits": 2,
+                            "strength": 7,
                             "keywords_weapon": [
-                                "heavy",
                                 "separate"
                             ]
                         },
