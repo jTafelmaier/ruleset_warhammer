@@ -1,16 +1,16 @@
 {
-    "deployment": {
+    "keywords_deployment": {
         "attachable": "This unit can be attached to another friendly unit at deployment.",
         "teleportation": "This model's unit can perform the \"Setup teleportation\" action."
     },
-    "model": {
+    "keywords_model": {
         "stealth": "If this model's unit is near cover, it can only be selected as a target unit by units within 20 cm.",
         "large_profile": "This model cannot perform the \"Brace\" action.",
         "fly": "This model can perform the \"Fly\" action up to the given distance.",
         "move": "This model can perform the \"Move\" action up to the given distance.",
         "score": "This model's unit can perform the \"Score objective\" action."
     },
-    "weapons": {
+    "keywords_weapon": {
         "ap": "If the target model's armor characteristic is no more than 2 higher than this weapon's strength: The minimum damage infliced by each hit is 1.",
         "heavy": "Can only use this weapon when performing the \"Heavy attack\" action.",
         "precise": "Can select attached units as target unit.",

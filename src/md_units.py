@@ -28,10 +28,7 @@ def get_text_html_unit(
 
             text_title = dict_keywords \
                 [text_category] \
-                .get(text_name_keyword)
-
-            if text_title is None:
-                return ""
+                [text_name_keyword]
 
             return "<div class=\"keyword\" title=\"" \
                 + text_title \
@@ -49,7 +46,7 @@ def get_text_html_unit(
                 map(
                     get_text_html_keyword,
                     dict_entity \
-                        ["keywords"]))
+                        [text_category]))
 
     path_image_unit = "/" \
         .join(
@@ -75,7 +72,7 @@ def get_text_html_unit(
             + "</td><td class=\"td_keywords\">" \
             + get_text_html_keywords(
                 dict_entity=dict_action,
-                text_category="weapons") \
+                text_category="keywords_weapon") \
             + "</td><td class=\"td_weapon_characteristic strength\">" \
             + str(
                 dict_action \
@@ -102,7 +99,7 @@ def get_text_html_unit(
             + "</span><br/><br/>" \
             + get_text_html_keywords(
                 dict_entity=dict_unit,
-                text_category="deployment") \
+                text_category="keywords_deployment") \
             + "</div>"
 
     text_html_rows_actions = "\n" \
@@ -126,7 +123,7 @@ def get_text_html_unit(
         + ")\"><div class=\"model_properties\"><div class=\"model_property keywords\">" \
         + get_text_html_keywords(
             dict_entity=dict_unit,
-            text_category="model") \
+            text_category="keywords_model") \
         + "</div><div class=\"model_property actions\"><table class=\"table_default fullwidth\"><tbody><tr><th class=\"th_weapon_characteristic range\"><th class=\"th_weapon_characteristic keywords\"></th><th class=\"th_weapon_characteristic strength\"></th></tr>" \
         + text_html_rows_actions \
         + "</tbody></table></div></div></div></div></div>" \

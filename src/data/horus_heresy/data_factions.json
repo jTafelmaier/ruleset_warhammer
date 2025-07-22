@@ -8,83 +8,85 @@
                     "points_per_model": 400,
                     "health_points": 8,
                     "armor": 10,
-                    "keywords": [
-                        "large_profile",
-                        "move 25cm"
-                    ],
                     "actions": [
                         {
                             "hits": 4,
                             "strength": 6,
-                            "keywords": [
+                            "range": "-",
+                            "keywords_weapon": [
                                 "heavy",
                                 "separate"
-                            ],
-                            "range": "-"
+                            ]
                         },
                         {
                             "hits": 2,
                             "strength": 7,
-                            "keywords": [
+                            "range": "-",
+                            "keywords_weapon": [
                                 "separate"
-                            ],
-                            "range": "-"
+                            ]
                         },
                         {
                             "hits": 2,
                             "strength": 10,
-                            "keywords": [
+                            "range": "-",
+                            "keywords_weapon": [
                                 "heavy"
-                            ],
-                            "range": "-"
+                            ]
                         },
                         {
                             "hits": 1,
                             "strength": 12,
-                            "keywords": [
+                            "range": "-",
+                            "keywords_weapon": [
                                 "heavy",
                                 "ap 14"
-                            ],
-                            "range": "-"
+                            ]
                         }
-                    ]
+                    ],
+                    "keywords_model": [
+                        "large_profile",
+                        "move 25cm"
+                    ],
+                    "keywords_deployment": []
                 },
                 {
                     "name": "Leviathan siege dreadnought",
                     "points_per_model": 200,
                     "health_points": 4,
                     "armor": 9,
-                    "keywords": [
-                        "large_profile",
-                        "move 15cm"
-                    ],
                     "actions": [
                         {
                             "hits": 4,
                             "strength": 5,
-                            "keywords": [
+                            "range": "-",
+                            "keywords_weapon": [
                                 "heavy",
                                 "separate"
-                            ],
-                            "range": "-"
+                            ]
                         },
                         {
                             "hits": 2,
                             "strength": 9,
-                            "keywords": [
+                            "range": "20 cm",
+                            "keywords_weapon": [
                                 "ap 11"
-                            ],
-                            "range": "20 cm"
+                            ]
                         },
                         {
                             "hits": 2,
                             "strength": 10,
-                            "keywords": [
+                            "range": "melee",
+                            "keywords_weapon": [
                                 "ap 12"
-                            ],
-                            "range": "melee"
+                            ]
                         }
-                    ]
+                    ],
+                    "keywords_model": [
+                        "large_profile",
+                        "move 15cm"
+                    ],
+                    "keywords_deployment": []
                 }
             ]
         }
@@ -98,30 +100,32 @@
                     "points_per_model": 200,
                     "health_points": 4,
                     "armor": 5,
-                    "keywords": [
-                        "attachable",
-                        "teleportation",
-                        "score",
-                        "move 15cm"
-                    ],
                     "actions": [
                         {
                             "hits": 1,
                             "strength": 7,
-                            "keywords": [
+                            "range": "20 cm",
+                            "keywords_weapon": [
                                 "heavy"
-                            ],
-                            "range": "20 cm"
+                            ]
                         },
                         {
                             "hits": 2,
                             "strength": 7,
-                            "keywords": [
+                            "range": "melee",
+                            "keywords_weapon": [
                                 "precise",
                                 "ap 9"
-                            ],
-                            "range": "melee"
+                            ]
                         }
+                    ],
+                    "keywords_model": [
+                        "score",
+                        "move 15cm"
+                    ],
+                    "keywords_deployment": [
+                        "attachable",
+                        "teleportation"
                     ]
                 },
                 {
@@ -129,37 +133,39 @@
                     "points_per_model": 200,
                     "health_points": 4,
                     "armor": 6,
-                    "keywords": [
-                        "attachable",
-                        "teleportation",
-                        "score",
-                        "move 10cm"
-                    ],
                     "actions": [
                         {
                             "hits": 2,
                             "strength": 4,
-                            "keywords": [
+                            "range": "-",
+                            "keywords_weapon": [
                                 "heavy"
-                            ],
-                            "range": "-"
+                            ]
                         },
                         {
                             "hits": 1,
                             "strength": 7,
-                            "keywords": [
+                            "range": "20 cm",
+                            "keywords_weapon": [
                                 "heavy"
-                            ],
-                            "range": "20 cm"
+                            ]
                         },
                         {
                             "hits": 1,
                             "strength": 8,
-                            "keywords": [
+                            "range": "melee",
+                            "keywords_weapon": [
                                 "ap 10"
-                            ],
-                            "range": "melee"
+                            ]
                         }
+                    ],
+                    "keywords_model": [
+                        "score",
+                        "move 10cm"
+                    ],
+                    "keywords_deployment": [
+                        "attachable",
+                        "teleportation"
                     ]
                 }
             ]
@@ -172,22 +178,24 @@
                     "points_per_model": 150,
                     "health_points": 4,
                     "armor": 5,
-                    "keywords": [
-                        "attachable",
-                        "stealth",
-                        "score",
-                        "move 15cm"
-                    ],
                     "actions": [
                         {
                             "hits": 2,
                             "strength": 6,
-                            "keywords": [
+                            "range": "melee",
+                            "keywords_weapon": [
                                 "precise",
                                 "ap 8"
-                            ],
-                            "range": "melee"
+                            ]
                         }
+                    ],
+                    "keywords_model": [
+                        "stealth",
+                        "score",
+                        "move 15cm"
+                    ],
+                    "keywords_deployment": [
+                        "attachable"
                     ]
                 }
             ]
@@ -202,36 +210,38 @@
                     "points_per_model": 150,
                     "health_points": 4,
                     "armor": 6,
-                    "keywords": [
-                        "attachable",
-                        "score",
-                        "move 10cm"
-                    ],
                     "actions": [
                         {
                             "hits": 2,
                             "strength": 5,
-                            "keywords": [],
-                            "range": "-"
+                            "range": "-",
+                            "keywords_weapon": []
                         },
                         {
                             "hits": 1,
                             "strength": 4,
-                            "keywords": [
+                            "range": "-",
+                            "keywords_weapon": [
                                 "heavy",
                                 "ap 6"
-                            ],
-                            "range": "-"
+                            ]
                         },
                         {
                             "hits": 1,
                             "strength": 10,
-                            "keywords": [
+                            "range": "melee",
+                            "keywords_weapon": [
                                 "heavy",
                                 "ap 12"
-                            ],
-                            "range": "melee"
+                            ]
                         }
+                    ],
+                    "keywords_model": [
+                        "score",
+                        "move 10cm"
+                    ],
+                    "keywords_deployment": [
+                        "attachable"
                     ]
                 },
                 {
@@ -239,116 +249,121 @@
                     "points_per_model": 50,
                     "health_points": 4,
                     "armor": 4,
-                    "keywords": [
-                        "move 15cm"
-                    ],
                     "actions": [
                         {
                             "hits": 2,
                             "strength": 5,
-                            "keywords": [],
-                            "range": "-"
+                            "range": "-",
+                            "keywords_weapon": []
                         }
-                    ]
+                    ],
+                    "keywords_model": [
+                        "move 15cm"
+                    ],
+                    "keywords_deployment": []
                 },
                 {
                     "name": "MkII Marines with disintegrator weapons",
                     "points_per_model": 50,
                     "health_points": 4,
                     "armor": 4,
-                    "keywords": [
-                        "move 15cm"
-                    ],
                     "actions": [
                         {
                             "hits": 1,
                             "strength": 8,
-                            "keywords": [
+                            "range": "-",
+                            "keywords_weapon": [
                                 "heavy"
-                            ],
-                            "range": "-"
+                            ]
                         }
-                    ]
+                    ],
+                    "keywords_model": [
+                        "move 15cm"
+                    ],
+                    "keywords_deployment": []
                 },
                 {
                     "name": "MkII Assault Squad",
                     "points_per_model": 50,
                     "health_points": 4,
                     "armor": 4,
-                    "keywords": [
-                        "fly 25cm"
-                    ],
                     "actions": [
                         {
                             "hits": 1,
                             "strength": 5,
-                            "keywords": [],
-                            "range": "-"
+                            "range": "-",
+                            "keywords_weapon": []
                         },
                         {
                             "hits": 1,
                             "strength": 7,
-                            "keywords": [],
-                            "range": "melee"
+                            "range": "melee",
+                            "keywords_weapon": []
                         }
-                    ]
+                    ],
+                    "keywords_model": [
+                        "fly 25cm"
+                    ],
+                    "keywords_deployment": []
                 },
                 {
                     "name": "Araknae accelerator platform",
                     "points_per_model": 200,
                     "health_points": 4,
                     "armor": 9,
-                    "keywords": [
-                        "large_profile"
-                    ],
                     "actions": [
                         {
                             "hits": 4,
                             "strength": 9,
-                            "keywords": [
+                            "range": "-",
+                            "keywords_weapon": [
                                 "heavy",
                                 "ap 11"
-                            ],
-                            "range": "-"
+                            ]
                         }
-                    ]
+                    ],
+                    "keywords_model": [
+                        "large_profile"
+                    ],
+                    "keywords_deployment": []
                 },
                 {
                     "name": "Fellblade super-heavy tank",
                     "points_per_model": 600,
                     "health_points": 8,
                     "armor": 12,
-                    "keywords": [
-                        "large_profile",
-                        "move 25cm"
-                    ],
                     "actions": [
                         {
                             "hits": 4,
                             "strength": 7,
-                            "keywords": [
+                            "range": "-",
+                            "keywords_weapon": [
                                 "separate"
-                            ],
-                            "range": "-"
+                            ]
                         },
                         {
                             "hits": 4,
                             "strength": 10,
-                            "keywords": [
+                            "range": "-",
+                            "keywords_weapon": [
                                 "heavy"
-                            ],
-                            "range": "-"
+                            ]
                         },
                         {
                             "hits": 1,
                             "strength": 12,
-                            "keywords": [
+                            "range": "-",
+                            "keywords_weapon": [
                                 "heavy",
                                 "ap 14"
-                            ],
-                            "range": "-"
+                            ]
                         }
-                    ]
+                    ],
+                    "keywords_model": [
+                        "large_profile",
+                        "move 25cm"
+                    ],
+                    "keywords_deployment": []
                 }
             ]
         },
@@ -360,37 +375,39 @@
                     "points_per_model": 800,
                     "health_points": 8,
                     "armor": 8,
-                    "keywords": [
-                        "teleportation",
-                        "stealth",
-                        "score",
-                        "move 15cm"
-                    ],
                     "actions": [
                         {
                             "hits": 1,
                             "strength": 10,
-                            "keywords": [
+                            "range": "20 cm",
+                            "keywords_weapon": [
                                 "precise"
-                            ],
-                            "range": "20 cm"
+                            ]
                         },
                         {
                             "hits": 2,
                             "strength": 7,
-                            "keywords": [
+                            "range": "20 cm",
+                            "keywords_weapon": [
                                 "ap 9"
-                            ],
-                            "range": "20 cm"
+                            ]
                         },
                         {
                             "hits": 2,
                             "strength": 8,
-                            "keywords": [
+                            "range": "melee",
+                            "keywords_weapon": [
                                 "ap 10"
-                            ],
-                            "range": "melee"
+                            ]
                         }
+                    ],
+                    "keywords_model": [
+                        "stealth",
+                        "score",
+                        "move 15cm"
+                    ],
+                    "keywords_deployment": [
+                        "teleportation"
                     ]
                 },
                 {
@@ -398,27 +415,29 @@
                     "points_per_model": 150,
                     "health_points": 4,
                     "armor": 5,
-                    "keywords": [
-                        "attachable",
-                        "teleportation",
-                        "score",
-                        "move 15cm"
-                    ],
                     "actions": [
                         {
                             "hits": 2,
                             "strength": 6,
-                            "keywords": [
+                            "range": "20 cm",
+                            "keywords_weapon": [
                                 "precise"
-                            ],
-                            "range": "20 cm"
+                            ]
                         },
                         {
                             "hits": 1,
                             "strength": 8,
-                            "keywords": [],
-                            "range": "melee"
+                            "range": "melee",
+                            "keywords_weapon": []
                         }
+                    ],
+                    "keywords_model": [
+                        "score",
+                        "move 15cm"
+                    ],
+                    "keywords_deployment": [
+                        "attachable",
+                        "teleportation"
                     ]
                 }
             ]
