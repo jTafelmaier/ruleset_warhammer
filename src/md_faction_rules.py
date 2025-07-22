@@ -64,9 +64,9 @@ def get_text_html_faction_rules(
             + text_id_faction \
             + "\"><div class=\"div_button_faction_rules\" onclick=\"display_faction('" \
             + text_id_faction \
-            + "')\" style=\"background-image: url(" \
+            + "')\" style=\"background-image: url('" \
             + path_image_faction \
-            + ")\"><div class=\"div_faction_name\">" \
+            + "')\"><div class=\"div_faction_name\">" \
             + name_faction \
             + "</div></div></div>"
 

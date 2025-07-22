@@ -52,10 +52,6 @@ def get_text_html_unit(
                 "units",
                 dict_unit \
                     ["name"] \
-                    .lower() \
-                    .replace(
-                        " ",
-                        "_") \
                     + ".png"])
 
     def get_text_html_row_action(
@@ -111,11 +107,11 @@ def get_text_html_unit(
         + str(
             dict_unit \
                 ["armor"]) \
-        + "</div></div></div></div><div class=\"div_content_unit\" style=\"background-image: url(resources/" \
+        + "</div></div></div></div><div class=\"div_content_unit\" style=\"background-image: url('resources/" \
         + name_setting \
-        + "/general/background.png)\"><div class=\"div_image_unit\" style=\"background-image: url(" \
+        + "/general/background.png')\"><div class=\"div_image_unit\" style=\"background-image: url('" \
         + path_image_unit \
-        + ")\"><div class=\"model_properties\"><div class=\"model_property keywords\">" \
+        + "')\"><div class=\"model_properties\"><div class=\"model_property keywords\">" \
         + get_text_html_keywords(
             dict_entity=dict_unit,
             text_category="keywords_model") \
