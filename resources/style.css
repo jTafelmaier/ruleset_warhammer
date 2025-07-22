@@ -172,6 +172,7 @@ body {
 }
 
 .div_faction_content {
+    width: 800px;
     margin-top: 40px;
 }
 
@@ -225,11 +226,22 @@ body {
 .container_unit {
     display: flex;
     margin-bottom: 20px;
+    background-color: #626d84;
+    border-radius: 4px;
+    clip-path: polygon(
+        10px 0,
+        100% 0,
+        100% 100%,
+        0 100%,
+        0 10px);
 }
 
 .inactive_data {
-    width: 100px;
     padding: 5px;
+}
+
+.inactive_data .health_bar {
+    margin-bottom: 23px;
 }
 
 .div_unit {
@@ -252,7 +264,8 @@ body {
 }
 
 div.model_property.keywords {
-    padding: 4px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     float: right;
 }
 
@@ -282,24 +295,14 @@ div.model_property.keywords {
     border-top-right-radius: 6px;
 }
 
-span.points_cost {
+div.points_cost {
     border-radius: 2px;
-    text-align: right;
+    text-align: left;
     color: #c2cce0;
     background-color: #4a5266;
     padding: 4px;
-    padding-left: 8px;
-    margin-right: 5px;
-    clip-path: polygon(
-        8px 0,
-        100% 0,
-        100% 100%,
-        0 100%,
-        0 8px);
-}
-
-.max_health {
-    font-weight: bold;
+    margin-top: 10px;
+    clip-path: polygon( 0 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%);
 }
 
 .characteristics_model {
@@ -332,10 +335,6 @@ span.points_cost {
 .model_properties {
     float: right;
     width: 350px;
-    padding-top: 10px;
-}
-
-.actions {
     margin: 5px;
 }
 
@@ -369,6 +368,7 @@ td.strength {
     padding: 2px;
     padding-left: 5px;
     padding-right: 5px;
+    margin: 2px;
 }
 
 .keyword span {
@@ -399,10 +399,23 @@ td.strength {
     margin-right: 1px;
 }
 
+.count_models:hover {
+    color: #8bc5ff;
+}
+
+.victory_points:hover {
+    color: #8bc5ff;
+}
+
 .health_bar .token {
     border-radius: 1px;
     background: linear-gradient(0.5turn, #c8e2fc, #8bc5ff 25%, #8bc5ff 75%, #c8e2fc);
     box-shadow: 0 0 4px 1px #48abe0;
+}
+
+.health_bar:hover .token {
+    background: linear-gradient(0.5turn, #fcc8c8, #ff4646 25%, #ff4646 75%, #fcc8c8);
+    box-shadow: 0 0 5px 2px #ff4646;
 }
 
 .health_bar.red .token {

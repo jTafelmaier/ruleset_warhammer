@@ -11,9 +11,11 @@ def get_text_html_health_bar(
     dict_unit:typing.Dict,
     text_id:str):
 
-    return "<div class=\"health_bar\" onclick=\"reduce_health('" \
-        + text_id \
-        + "')\">" \
+    text_onclick = " onclick=\"reduce_health('" + text_id + "')\"" if text_id is not None else ""
+
+    return "<div class=\"health_bar\"" \
+        + text_onclick \
+        + ">" \
         + ("<div class=\"token\" />" \
             * dict_unit \
                 ["health_points"]) \
@@ -92,19 +94,18 @@ def get_text_html_unit(
         if not bool_show_inactive_information:
             return ""
 
-        return "<div class=\"inactive_data\"><span class=\"points_cost\">" \
-            + str(
-                dict_unit \
-                    ["points_per_model"]) \
-            + " points</span><br/><br/>Max health:<span class=\"max_health\">" \
-            + str(
-                dict_unit \
-                    ["health_points"]) \
-            + "</span><br/><br/>" \
+        return "<div class=\"inactive_data\">" \
+            + get_text_html_health_bar(
+                dict_unit=dict_unit,
+                text_id=None) \
             + get_text_html_keywords(
                 dict_entity=dict_unit,
                 text_category="keywords_deployment") \
-            + "</div>"
+            + "<div class=\"points_cost\">" \
+            + str(
+                dict_unit \
+                    ["points_per_model"]) \
+            + " points</div></div>"
 
     text_html_rows_actions = "\n" \
         .join(
