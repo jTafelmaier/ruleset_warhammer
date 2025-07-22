@@ -103,18 +103,15 @@ def get_text_html_unit(
 
         return get_text_html_attack()
 
-    def get_text_html_collection_keywords(
-        text_join:str,
+    def get_iterable_texts_keywords(
         bool_inactive:bool):
 
-        return text_join \
-            .join(
-                map(
-                    get_text_html_keyword,
-                    filter(
-                        lambda text_keyword: bool_inactive == (text_keyword in {"attachable", "teleportation"}),
-                        dict_unit \
-                            ["keywords"])))
+        return map(
+            get_text_html_keyword,
+            filter(
+                lambda text_keyword: bool_inactive == (text_keyword in {"attachable", "teleportation"}),
+                dict_unit \
+                    ["keywords"]))
 
     def get_text_html_model_characteristics():
 
@@ -134,9 +131,8 @@ def get_text_html_unit(
                     dict_unit \
                         ["health_points"]) \
                 + "</span><br/><br/>" \
-                + get_text_html_collection_keywords(
-                    text_join="<br/>",
-                    bool_inactive=True) \
+                + "<br/>" \
+                    .join(get_iterable_texts_keywords(True)) \
                 + "</div>"
         else:
             return ""
@@ -158,9 +154,8 @@ def get_text_html_unit(
         + "/general/background.png)\"><div class=\"div_image_unit\" style=\"background-image: url(" \
         + path_image_unit \
         + ")\"><div class=\"model_properties\"><div class=\"model_property keywords\">" \
-        + get_text_html_collection_keywords(
-            text_join=" ",
-            bool_inactive=False) \
+        + " " \
+            .join(get_iterable_texts_keywords(False)) \
         + "</div><div class=\"model_property actions\"><table class=\"table_default fullwidth\"><tbody><tr><th class=\"th_weapon_characteristic range\"><th class=\"th_weapon_characteristic keywords\"></th><th class=\"th_weapon_characteristic strength\"></th></tr>" \
         + text_html_rows_actions \
         + "</tbody></table></div></div></div></div></div>" \
