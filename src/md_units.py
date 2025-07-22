@@ -118,9 +118,7 @@ def get_text_html_unit(
 
     return "<div class=\"container_unit\">" \
         + get_text_html_inactive_information() \
-        + "<div class=\"unit\" style=\"background-image: url('resources/" \
-        + name_setting \
-        + "/general/background.png')\"><div class=\"image_unit\" style=\"background-image: url('" \
+        + "<div class=\"unit\" style=\"background-image: url('resources/background.png')\"><div class=\"image_unit\" style=\"background-image: url('" \
         + path_image_unit \
         + "')\"><div class=\"header_unit\"><h3 class=\"name_unit\">" \
         + dict_unit \
