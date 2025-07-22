@@ -11,7 +11,7 @@ body {
 }
 
 #main {
-    width: 90%;
+    width: 85%;
     margin-top: 50px;
     margin-bottom: 500px;
     margin-left: auto;
@@ -328,7 +328,8 @@ td.td_weapon_characteristic {
 td.range {
     width: 3em;
     color: #4a5266;
-    padding: 6px;
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
 
 td.strength {
