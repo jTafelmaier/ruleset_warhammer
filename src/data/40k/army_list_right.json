@@ -2,27 +2,27 @@
     "faction": "Necrons",
     "units": [
         {
-            "name": "Hexmark unit",
+            "name": "Hexmark destroyer",
             "count_models": 1,
             "attached_to_index": null
         },
         {
-            "name": "Hexmark unit",
+            "name": "Hexmark destroyer",
             "count_models": 1,
             "attached_to_index": null
         },
         {
-            "name": "Hyperphase unit",
+            "name": "Skorpekh destroyer",
             "count_models": 2,
             "attached_to_index": null
         },
         {
-            "name": "Gauss unit",
+            "name": "Lokhust destroyer - Gauss",
             "count_models": 1,
             "attached_to_index": null
         },
         {
-            "name": "Gauss unit",
+            "name": "Lokhust destroyer - Gauss",
             "count_models": 1,
             "attached_to_index": null
         }

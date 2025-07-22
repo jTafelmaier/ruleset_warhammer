@@ -642,7 +642,7 @@
             "name": "Necrons",
             "units": [
                 {
-                    "name": "Warrior unit",
+                    "name": "Warrior",
                     "points_per_model": 50,
                     "health_points": 4,
                     "armor": 4,
@@ -663,7 +663,7 @@
                     "keywords_deployment": []
                 },
                 {
-                    "name": "Hexmark unit",
+                    "name": "Hexmark destroyer",
                     "points_per_model": 250,
                     "health_points": 6,
                     "armor": 5,
@@ -687,7 +687,7 @@
                     ]
                 },
                 {
-                    "name": "Hyperphase unit",
+                    "name": "Skorpekh destroyer",
                     "points_per_model": 100,
                     "health_points": 6,
                     "armor": 5,
@@ -707,7 +707,7 @@
                     "keywords_deployment": []
                 },
                 {
-                    "name": "Gauss unit",
+                    "name": "Lokhust destroyer - Gauss",
                     "points_per_model": 150,
                     "health_points": 6,
                     "armor": 6,
@@ -728,7 +728,7 @@
                     "keywords_deployment": []
                 },
                 {
-                    "name": "Enmitic unit",
+                    "name": "Lokhust destroyer - Enmitic",
                     "points_per_model": 150,
                     "health_points": 6,
                     "armor": 6,
