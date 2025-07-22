@@ -85,10 +85,11 @@ def get_text_html_unit(
                 text_category="keywords_weapon") \
             + "</td><td class=\"weapon_characteristic strength\">" \
             + text_hits \
+            + "💥" \
             + str(
                 dict_action \
                     ["strength"]) \
-            + " st</td></tr>"
+            + "</td></tr>"
 
     def get_text_html_inactive_information():
 

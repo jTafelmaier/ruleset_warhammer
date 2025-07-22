@@ -171,11 +171,6 @@ body {
     gap: 20px 20px;
 }
 
-.faction_content {
-    width: 700px;
-    margin-top: 20px;
-}
-
 .container_faction_rules  {
     height: 200px;
 }
@@ -223,6 +218,11 @@ body {
     margin-top: 170px;
 }
 
+.faction_content {
+    width: 650px;
+    margin-top: 20px;
+}
+
 .container_unit {
     display: flex;
     margin-bottom: 20px;
@@ -257,7 +257,7 @@ div.points_cost {
 }
 
 .unit {
-    width: 600px;
+    width: 550px;
     height: 220px;
     background-size: cover;
     box-shadow: inset 400px 0px 400px -100px #2e3544;
@@ -310,7 +310,7 @@ div.points_cost {
 
 .model_properties {
     align-self: flex-end;
-    width: 300px;
+    width: 250px;
     padding: 5px;
 }
 
@@ -368,7 +368,7 @@ td.strength {
 
 #army_lists {
     display: grid;
-    grid-template-columns: 600px 600px;
+    grid-template-columns: 550px 550px;
     gap: 20px 50px;
 }
 
