@@ -21,7 +21,7 @@
                             "range": "melee",
                             "keywords_weapon": [
                                 "precise",
-                                "ap 7"
+                                "ap"
                             ]
                         }
                     ],
@@ -54,7 +54,7 @@
                             "range": "melee",
                             "keywords_weapon": [
                                 "separate",
-                                "ap 9"
+                                "ap"
                             ]
                         }
                     ],
@@ -106,7 +106,7 @@
                             "range": "melee",
                             "keywords_weapon": [
                                 "precise",
-                                "ap 8"
+                                "ap"
                             ]
                         }
                     ],
@@ -130,7 +130,7 @@
                             "strength": 4,
                             "range": "20 cm",
                             "keywords_weapon": [
-                                "ap 6"
+                                "ap"
                             ]
                         },
                         {
@@ -139,7 +139,7 @@
                             "range": "melee",
                             "keywords_weapon": [
                                 "precise",
-                                "ap 9"
+                                "ap"
                             ]
                         }
                     ],
@@ -167,7 +167,7 @@
                             "range": "melee",
                             "keywords_weapon": [
                                 "precise",
-                                "ap 9"
+                                "ap"
                             ]
                         }
                     ],
@@ -226,7 +226,7 @@
                             "strength": 6,
                             "range": "melee",
                             "keywords_weapon": [
-                                "ap 8"
+                                "ap"
                             ]
                         }
                     ],
@@ -282,7 +282,7 @@
                             "range": "20 cm",
                             "keywords_weapon": [
                                 "heavy",
-                                "ap 11"
+                                "ap"
                             ]
                         }
                     ],
@@ -337,7 +337,7 @@
                             "range": "-",
                             "keywords_weapon": [
                                 "heavy",
-                                "ap 16"
+                                "ap"
                             ]
                         }
                     ],
@@ -366,7 +366,7 @@
                             "strength": 6,
                             "range": "melee",
                             "keywords_weapon": [
-                                "ap 8"
+                                "ap"
                             ]
                         }
                     ],
@@ -397,7 +397,7 @@
                             "strength": 6,
                             "range": "melee",
                             "keywords_weapon": [
-                                "ap 8"
+                                "ap"
                             ]
                         }
                     ],
@@ -441,7 +441,7 @@
                             "strength": 6,
                             "range": "melee",
                             "keywords_weapon": [
-                                "ap 8"
+                                "ap"
                             ]
                         }
                     ],
@@ -465,7 +465,7 @@
                             "strength": 6,
                             "range": "melee",
                             "keywords_weapon": [
-                                "ap 8"
+                                "ap"
                             ]
                         }
                     ],
@@ -494,7 +494,7 @@
                             "range": "melee",
                             "keywords_weapon": [
                                 "precise",
-                                "ap 8"
+                                "ap"
                             ]
                         }
                     ],
@@ -529,7 +529,7 @@
                             "range": "melee",
                             "keywords_weapon": [
                                 "heavy",
-                                "ap 10"
+                                "ap"
                             ]
                         }
                     ],
@@ -581,7 +581,7 @@
                             "range": "melee",
                             "keywords_weapon": [
                                 "heavy",
-                                "ap 10"
+                                "ap"
                             ]
                         }
                     ],
@@ -655,7 +655,7 @@
                             "range": "-",
                             "keywords_weapon": [
                                 "heavy",
-                                "ap 8"
+                                "ap"
                             ]
                         }
                     ],
@@ -672,7 +672,7 @@
                     "actions": [
                         {
                             "hits": 4,
-                            "strength": 6,
+                            "strength": 7,
                             "range": "20 cm",
                             "keywords_weapon": [
                                 "precise"
@@ -699,7 +699,7 @@
                             "strength": 8,
                             "range": "melee",
                             "keywords_weapon": [
-                                "ap 10"
+                                "ap"
                             ]
                         }
                     ],
@@ -720,7 +720,7 @@
                             "range": "-",
                             "keywords_weapon": [
                                 "heavy",
-                                "ap 14"
+                                "ap"
                             ]
                         }
                     ],

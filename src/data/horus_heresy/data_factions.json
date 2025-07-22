@@ -40,7 +40,7 @@
                             "range": "-",
                             "keywords_weapon": [
                                 "heavy",
-                                "ap 14"
+                                "ap"
                             ]
                         }
                     ],
@@ -70,7 +70,7 @@
                             "strength": 9,
                             "range": "20 cm",
                             "keywords_weapon": [
-                                "ap 11"
+                                "ap"
                             ]
                         },
                         {
@@ -78,7 +78,7 @@
                             "strength": 10,
                             "range": "melee",
                             "keywords_weapon": [
-                                "ap 12"
+                                "ap"
                             ]
                         }
                     ],
@@ -113,7 +113,7 @@
                             "range": "melee",
                             "keywords_weapon": [
                                 "precise",
-                                "ap 9"
+                                "ap"
                             ]
                         }
                     ],
@@ -145,7 +145,7 @@
                             "strength": 6,
                             "range": "20 cm",
                             "keywords_weapon": [
-                                "ap 8"
+                                "ap"
                             ]
                         },
                         {
@@ -153,7 +153,7 @@
                             "strength": 8,
                             "range": "melee",
                             "keywords_weapon": [
-                                "ap 10"
+                                "ap"
                             ]
                         }
                     ],
@@ -178,7 +178,7 @@
                             "range": "melee",
                             "keywords_weapon": [
                                 "precise",
-                                "ap 8"
+                                "ap"
                             ]
                         }
                     ],
@@ -210,7 +210,7 @@
                             "range": "20 cm",
                             "keywords_weapon": [
                                 "precise",
-                                "ap 12"
+                                "ap"
                             ]
                         },
                         {
@@ -218,7 +218,7 @@
                             "strength": 8,
                             "range": "20 cm",
                             "keywords_weapon": [
-                                "ap 10"
+                                "ap"
                             ]
                         }
                     ],
@@ -279,7 +279,7 @@
                             "range": "-",
                             "keywords_weapon": [
                                 "heavy",
-                                "ap 6"
+                                "ap"
                             ]
                         },
                         {
@@ -288,7 +288,7 @@
                             "range": "melee",
                             "keywords_weapon": [
                                 "heavy",
-                                "ap 12"
+                                "ap"
                             ]
                         }
                     ],
@@ -382,7 +382,7 @@
                             "range": "-",
                             "keywords_weapon": [
                                 "heavy",
-                                "ap 12"
+                                "ap"
                             ]
                         }
                     ],
@@ -419,7 +419,7 @@
                             "range": "-",
                             "keywords_weapon": [
                                 "heavy",
-                                "ap 14"
+                                "ap"
                             ]
                         }
                     ],
