@@ -331,6 +331,7 @@ td.weapon_characteristic {
 
 td.range {
     width: 3em;
+    text-align: left;
     color: #4a5266;
     padding-top: 6px;
     padding-bottom: 6px;
