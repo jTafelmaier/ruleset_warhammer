@@ -91,14 +91,6 @@ def generate_htmls():
                         "src": path_images_general \
                             + "/logo_warhammer.png"})
 
-            soup_image_core_rules = soup_full \
-                .new_tag(
-                    name="img",
-                    attrs={
-                        "class": "image_core_rules",
-                        "src": path_images_general \
-                            + "/image_core_rules.jpg"})
-
             soup_factions = bs4.BeautifulSoup(
                     markup=md_faction_rules.get_text_html_faction_rules(
                         dict_factions=dict_factions,
@@ -117,7 +109,6 @@ def generate_htmls():
 
             dict_replacements = {
                 "id_logo_warhammer": soup_logo_warhammer,
-                "id_image_core_rules": soup_image_core_rules,
                 "id_factions": soup_factions,
                 "id_army_lists": soup_army_list}
 
