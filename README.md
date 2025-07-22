@@ -9,7 +9,8 @@ Run "md_create_documents.py" to generate HTML documents.
 ![Missing image](resources/screenshots/army_list.png "Army list example")
 
 ## Faction rules
-![Missing image](resources/screenshots/faction_rules.png "Faction rules")
+![Missing image](resources/screenshots/faction_rules_1.png "Faction rules 1")
+![Missing image](resources/screenshots/faction_rules_2.png "Faction rules 2")
 
 ## Core rules excerpt
 ![Missing image](resources/screenshots/core_rules.png "Core rules")
