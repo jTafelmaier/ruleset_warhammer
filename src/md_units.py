@@ -96,19 +96,19 @@ def get_text_html_unit(
         if not bool_show_inactive_information:
             return ""
 
-        return "<div class=\"inactive_data\">" \
+        return "<div class=\"inactive_data\"><div>" \
             + get_text_html_health_bar(
                 dict_unit=dict_unit,
                 text_id=None) \
-            + "<div class=\"list_building\">" \
-            + get_text_html_keywords(
-                dict_entity=dict_unit,
-                text_category="keywords_deployment") \
             + "<div class=\"points_cost\">" \
             + str(
                 dict_unit \
                     ["points_per_model"]) \
-            + " points</div></div></div>"
+            + " points</div></div><div class=\"list_building\">" \
+            + get_text_html_keywords(
+                dict_entity=dict_unit,
+                text_category="keywords_deployment") \
+            + "</div></div>"
 
     text_html_rows_actions = "\n" \
         .join(
