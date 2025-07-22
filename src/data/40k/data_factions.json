@@ -9,6 +9,7 @@
                     "health_points": 4,
                     "armor": 5,
                     "keywords": [
+                        "attachable",
                         "stealth",
                         "score",
                         "fly 25cm"
@@ -29,8 +30,7 @@
                             ],
                             "range": 5
                         }
-                    ],
-                    "attachable": true
+                    ]
                 },
                 {
                     "name": "Iron father Feirros",
@@ -38,6 +38,7 @@
                     "health_points": 6,
                     "armor": 5,
                     "keywords": [
+                        "attachable",
                         "score",
                         "move 15cm"
                     ],
@@ -59,8 +60,7 @@
                             ],
                             "range": 5
                         }
-                    ],
-                    "attachable": true
+                    ]
                 },
                 {
                     "name": "Darnath Lysander",
@@ -68,6 +68,7 @@
                     "health_points": 4,
                     "armor": 7,
                     "keywords": [
+                        "attachable",
                         "teleportation",
                         "score",
                         "move 10cm"
@@ -79,8 +80,7 @@
                             "keywords": [],
                             "range": 5
                         }
-                    ],
-                    "attachable": true
+                    ]
                 },
                 {
                     "name": "Belial",
@@ -88,6 +88,7 @@
                     "health_points": 4,
                     "armor": 6,
                     "keywords": [
+                        "attachable",
                         "teleportation",
                         "score",
                         "move 10cm"
@@ -108,8 +109,7 @@
                             ],
                             "range": 5
                         }
-                    ],
-                    "attachable": true
+                    ]
                 },
                 {
                     "name": "Suboden Khan",
@@ -136,8 +136,7 @@
                             ],
                             "range": 5
                         }
-                    ],
-                    "attachable": false
+                    ]
                 },
                 {
                     "name": "Castellan Crowe",
@@ -145,6 +144,7 @@
                     "health_points": 4,
                     "armor": 5,
                     "keywords": [
+                        "attachable",
                         "teleportation",
                         "score",
                         "move 15cm"
@@ -165,8 +165,7 @@
                             ],
                             "range": 5
                         }
-                    ],
-                    "attachable": true
+                    ]
                 },
                 {
                     "name": "Captain with jump pack",
@@ -174,6 +173,7 @@
                     "health_points": 4,
                     "armor": 5,
                     "keywords": [
+                        "attachable",
                         "score",
                         "fly 25cm"
                     ],
@@ -192,8 +192,7 @@
                             "keywords": [],
                             "range": 5
                         }
-                    ],
-                    "attachable": true
+                    ]
                 },
                 {
                     "name": "Captain in gravis armour",
@@ -201,6 +200,7 @@
                     "health_points": 4,
                     "armor": 5,
                     "keywords": [
+                        "attachable",
                         "score",
                         "move 15cm"
                     ],
@@ -219,8 +219,7 @@
                             ],
                             "range": 5
                         }
-                    ],
-                    "attachable": true
+                    ]
                 },
                 {
                     "name": "Heavy intercessors",
@@ -245,8 +244,7 @@
                             ],
                             "range": 20
                         }
-                    ],
-                    "attachable": false
+                    ]
                 },
                 {
                     "name": "Eradicators",
@@ -272,8 +270,7 @@
                             ],
                             "range": 20
                         }
-                    ],
-                    "attachable": false
+                    ]
                 },
                 {
                     "name": "Jump pack intercessors",
@@ -298,8 +295,7 @@
                             "keywords": [],
                             "range": 5
                         }
-                    ],
-                    "attachable": false
+                    ]
                 },
                 {
                     "name": "Gladiator lancer",
@@ -328,8 +324,7 @@
                             ],
                             "range": 0
                         }
-                    ],
-                    "attachable": false
+                    ]
                 },
                 {
                     "name": "Castellan",
@@ -337,6 +332,7 @@
                     "health_points": 4,
                     "armor": 5,
                     "keywords": [
+                        "attachable",
                         "score",
                         "move 15cm"
                     ],
@@ -357,8 +353,7 @@
                             ],
                             "range": 5
                         }
-                    ],
-                    "attachable": true
+                    ]
                 },
                 {
                     "name": "Sword brethren",
@@ -385,8 +380,7 @@
                             ],
                             "range": 5
                         }
-                    ],
-                    "attachable": false
+                    ]
                 },
                 {
                     "name": "Crusader squad",
@@ -409,8 +403,7 @@
                             "keywords": [],
                             "range": 5
                         }
-                    ],
-                    "attachable": false
+                    ]
                 },
                 {
                     "name": "Deathwing strikemaster",
@@ -418,6 +411,7 @@
                     "health_points": 4,
                     "armor": 7,
                     "keywords": [
+                        "attachable",
                         "teleportation",
                         "score",
                         "move 10cm"
@@ -431,8 +425,7 @@
                             ],
                             "range": 5
                         }
-                    ],
-                    "attachable": true
+                    ]
                 },
                 {
                     "name": "Deathwing knights",
@@ -452,8 +445,7 @@
                             ],
                             "range": 5
                         }
-                    ],
-                    "attachable": false
+                    ]
                 },
                 {
                     "name": "Inner circle companions",
@@ -480,8 +472,7 @@
                             ],
                             "range": 5
                         }
-                    ],
-                    "attachable": false
+                    ]
                 }
             ]
         }
@@ -523,8 +514,7 @@
                             ],
                             "range": 5
                         }
-                    ],
-                    "attachable": false
+                    ]
                 },
                 {
                     "name": "Slaughterbound",
@@ -532,6 +522,7 @@
                     "health_points": 4,
                     "armor": 5,
                     "keywords": [
+                        "attachable",
                         "teleportation",
                         "score",
                         "move 20cm"
@@ -551,8 +542,7 @@
                             "keywords": [],
                             "range": 5
                         }
-                    ],
-                    "attachable": true
+                    ]
                 },
                 {
                     "name": "Exalted Eightbound",
@@ -581,8 +571,7 @@
                             ],
                             "range": 5
                         }
-                    ],
-                    "attachable": false
+                    ]
                 },
                 {
                     "name": "Eightbound",
@@ -599,8 +588,7 @@
                             "keywords": [],
                             "range": 5
                         }
-                    ],
-                    "attachable": false
+                    ]
                 },
                 {
                     "name": "Khorne Berzerkers",
@@ -625,8 +613,7 @@
                             "keywords": [],
                             "range": 5
                         }
-                    ],
-                    "attachable": false
+                    ]
                 }
             ]
         }
@@ -653,8 +640,7 @@
                             ],
                             "range": 0
                         }
-                    ],
-                    "attachable": false
+                    ]
                 },
                 {
                     "name": "Hexmark unit",
@@ -676,8 +662,7 @@
                             ],
                             "range": 20
                         }
-                    ],
-                    "attachable": false
+                    ]
                 },
                 {
                     "name": "Hyperphase unit",
@@ -696,8 +681,7 @@
                             ],
                             "range": 5
                         }
-                    ],
-                    "attachable": false
+                    ]
                 },
                 {
                     "name": "Gauss unit",
@@ -717,8 +701,7 @@
                             ],
                             "range": 0
                         }
-                    ],
-                    "attachable": false
+                    ]
                 },
                 {
                     "name": "Enmitic unit",
@@ -737,8 +720,7 @@
                             ],
                             "range": 20
                         }
-                    ],
-                    "attachable": false
+                    ]
                 }
             ]
         }

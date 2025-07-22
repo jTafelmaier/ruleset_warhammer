@@ -47,8 +47,7 @@
                             ],
                             "range": 0
                         }
-                    ],
-                    "attachable": false
+                    ]
                 },
                 {
                     "name": "Leviathan siege dreadnought",
@@ -85,8 +84,7 @@
                             ],
                             "range": 5
                         }
-                    ],
-                    "attachable": false
+                    ]
                 }
             ]
         }
@@ -101,6 +99,7 @@
                     "health_points": 4,
                     "armor": 5,
                     "keywords": [
+                        "attachable",
                         "teleportation",
                         "score",
                         "move 15cm"
@@ -123,8 +122,7 @@
                             ],
                             "range": 5
                         }
-                    ],
-                    "attachable": true
+                    ]
                 },
                 {
                     "name": "Marduk Sedras",
@@ -132,6 +130,7 @@
                     "health_points": 4,
                     "armor": 6,
                     "keywords": [
+                        "attachable",
                         "teleportation",
                         "score",
                         "move 10cm"
@@ -161,8 +160,7 @@
                             ],
                             "range": 5
                         }
-                    ],
-                    "attachable": true
+                    ]
                 }
             ]
         },
@@ -175,6 +173,7 @@
                     "health_points": 4,
                     "armor": 5,
                     "keywords": [
+                        "attachable",
                         "stealth",
                         "score",
                         "move 15cm"
@@ -189,8 +188,7 @@
                             ],
                             "range": 5
                         }
-                    ],
-                    "attachable": true
+                    ]
                 }
             ]
         }
@@ -205,6 +203,7 @@
                     "health_points": 4,
                     "armor": 6,
                     "keywords": [
+                        "attachable",
                         "score",
                         "move 10cm"
                     ],
@@ -233,8 +232,7 @@
                             ],
                             "range": 5
                         }
-                    ],
-                    "attachable": true
+                    ]
                 },
                 {
                     "name": "MkII Marines",
@@ -251,8 +249,7 @@
                             "keywords": [],
                             "range": 0
                         }
-                    ],
-                    "attachable": false
+                    ]
                 },
                 {
                     "name": "MkII Marines with disintegrator weapons",
@@ -271,8 +268,7 @@
                             ],
                             "range": 0
                         }
-                    ],
-                    "attachable": false
+                    ]
                 },
                 {
                     "name": "MkII Assault Squad",
@@ -295,8 +291,7 @@
                             "keywords": [],
                             "range": 5
                         }
-                    ],
-                    "attachable": false
+                    ]
                 },
                 {
                     "name": "Araknae accelerator platform",
@@ -316,8 +311,7 @@
                             ],
                             "range": 0
                         }
-                    ],
-                    "attachable": false
+                    ]
                 },
                 {
                     "name": "Fellblade super-heavy tank",
@@ -354,8 +348,7 @@
                             ],
                             "range": 0
                         }
-                    ],
-                    "attachable": false
+                    ]
                 }
             ]
         },
@@ -398,8 +391,7 @@
                             ],
                             "range": 5
                         }
-                    ],
-                    "attachable": false
+                    ]
                 },
                 {
                     "name": "Librarian consul",
@@ -407,6 +399,7 @@
                     "health_points": 4,
                     "armor": 5,
                     "keywords": [
+                        "attachable",
                         "teleportation",
                         "score",
                         "move 15cm"
@@ -426,8 +419,7 @@
                             "keywords": [],
                             "range": 5
                         }
-                    ],
-                    "attachable": true
+                    ]
                 }
             ]
         }

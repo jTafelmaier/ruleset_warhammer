@@ -110,7 +110,7 @@ def get_text_html_unit(
                 map(
                     get_text_html_keyword,
                     filter(
-                        lambda text_keyword: text_keyword not in {"teleportation"},
+                        lambda text_keyword: text_keyword not in {"attachable", "teleportation"},
                         dict_unit \
                             ["keywords"])))
 
@@ -132,7 +132,7 @@ def get_text_html_unit(
 
         def get_text_html_attachable():
 
-            if dict_unit["attachable"]:
+            if "attachable" in dict_unit["keywords"]:
                 return "<br/>" \
                     + get_text_html_keyword("attachable")
             else:
