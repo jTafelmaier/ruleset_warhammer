@@ -268,7 +268,7 @@ div.points_cost {
 }
 
 .div_unit {
-    width: 650px;
+    width: 600px;
     height: 200px;
     background-size: cover;
     box-shadow: inset 400px 0px 400px -100px #2e3544;
@@ -379,6 +379,12 @@ td.strength {
     background-color: #2e3544;
 }
 
+#div_army_lists {
+    display: grid;
+    grid-template-columns: 600px 600px;
+    gap: 20px 50px;
+}
+
 .destroyed .action_tokens {
     display: none;
 }
@@ -437,12 +443,6 @@ td.strength {
 
 #button_restore_action_tokens:hover {
     background-color: #626d84;
-}
-
-#div_army_lists {
-    display: grid;
-    grid-template-columns: 650px 650px;
-    gap: 20px 50px;
 }
 
 .destroyed td {

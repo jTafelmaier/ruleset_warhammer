@@ -131,13 +131,13 @@ def get_text_html_army_lists(
 
         text_html_army_list = "<div class=\"army_list " \
             + text_side \
-            + "\"><table class=\"table_default fullwidth\"><tbody><tr><th>Health</th><th>Action tokens</th><th>Unit</th><th>#models</th><th class=\"points_total\">Points (" \
+            + "\"><table class=\"table_default fullwidth\"><tbody><tr><th>Health</th><th>Action tokens</th><th>Unit</th><th>#</th><th class=\"points_total\">Points (" \
             + str(int_total_points) \
-            + " total)</th><th><span class=\"victory_points\" onclick=\"increase_victory_points('" \
+            + " total)</th><th><span onclick=\"decrease_victory_points('" \
             + text_side \
-            + "')\">0</span><span onclick=\"decrease_victory_points('" \
+            + "')\">VP:</span><span class=\"victory_points\" onclick=\"increase_victory_points('" \
             + text_side \
-            + "')\">VP</span></th></tr>" \
+            + "')\">0</span></th></tr>" \
             + text_html_trs_units \
             + "</tbody></table></div>"
 
