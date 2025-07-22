@@ -19,7 +19,7 @@
                             "hits": 2,
                             "strength": 5,
                             "keywords": [],
-                            "range": 20
+                            "range": "20 cm"
                         },
                         {
                             "hits": 4,
@@ -28,7 +28,7 @@
                                 "precise",
                                 "ap 7"
                             ],
-                            "range": 5
+                            "range": "melee"
                         }
                     ]
                 },
@@ -49,7 +49,7 @@
                             "keywords": [
                                 "heavy"
                             ],
-                            "range": 0
+                            "range": "-"
                         },
                         {
                             "hits": 1,
@@ -58,7 +58,7 @@
                                 "separate",
                                 "ap 9"
                             ],
-                            "range": 5
+                            "range": "melee"
                         }
                     ]
                 },
@@ -78,7 +78,7 @@
                             "hits": 1,
                             "strength": 8,
                             "keywords": [],
-                            "range": 5
+                            "range": "melee"
                         }
                     ]
                 },
@@ -98,7 +98,7 @@
                             "hits": 4,
                             "strength": 4,
                             "keywords": [],
-                            "range": 20
+                            "range": "20 cm"
                         },
                         {
                             "hits": 2,
@@ -107,7 +107,7 @@
                                 "precise",
                                 "ap 8"
                             ],
-                            "range": 5
+                            "range": "melee"
                         }
                     ]
                 },
@@ -125,7 +125,7 @@
                             "hits": 4,
                             "strength": 5,
                             "keywords": [],
-                            "range": 20
+                            "range": "20 cm"
                         },
                         {
                             "hits": 1,
@@ -134,7 +134,7 @@
                                 "precise",
                                 "ap 9"
                             ],
-                            "range": 5
+                            "range": "melee"
                         }
                     ]
                 },
@@ -154,7 +154,7 @@
                             "hits": 4,
                             "strength": 4,
                             "keywords": [],
-                            "range": 20
+                            "range": "20 cm"
                         },
                         {
                             "hits": 2,
@@ -163,7 +163,7 @@
                                 "precise",
                                 "ap 9"
                             ],
-                            "range": 5
+                            "range": "melee"
                         }
                     ]
                 },
@@ -184,13 +184,13 @@
                             "keywords": [
                                 "separate"
                             ],
-                            "range": 20
+                            "range": "20 cm"
                         },
                         {
                             "hits": 2,
                             "strength": 7,
                             "keywords": [],
-                            "range": 5
+                            "range": "melee"
                         }
                     ]
                 },
@@ -209,7 +209,7 @@
                             "hits": 4,
                             "strength": 5,
                             "keywords": [],
-                            "range": 0
+                            "range": "-"
                         },
                         {
                             "hits": 2,
@@ -217,7 +217,7 @@
                             "keywords": [
                                 "ap 8"
                             ],
-                            "range": 5
+                            "range": "melee"
                         }
                     ]
                 },
@@ -234,7 +234,7 @@
                             "hits": 2,
                             "strength": 5,
                             "keywords": [],
-                            "range": 0
+                            "range": "-"
                         },
                         {
                             "hits": 1,
@@ -242,7 +242,7 @@
                             "keywords": [
                                 "heavy"
                             ],
-                            "range": 20
+                            "range": "20 cm"
                         }
                     ]
                 },
@@ -259,7 +259,7 @@
                             "hits": 1,
                             "strength": 5,
                             "keywords": [],
-                            "range": 20
+                            "range": "20 cm"
                         },
                         {
                             "hits": 1,
@@ -268,7 +268,7 @@
                                 "heavy",
                                 "ap 11"
                             ],
-                            "range": 20
+                            "range": "20 cm"
                         }
                     ]
                 },
@@ -287,13 +287,13 @@
                             "keywords": [
                                 "separate"
                             ],
-                            "range": 20
+                            "range": "20 cm"
                         },
                         {
                             "hits": 1,
                             "strength": 7,
                             "keywords": [],
-                            "range": 5
+                            "range": "melee"
                         }
                     ]
                 },
@@ -313,7 +313,7 @@
                             "keywords": [
                                 "separate"
                             ],
-                            "range": 20
+                            "range": "20 cm"
                         },
                         {
                             "hits": 1,
@@ -322,7 +322,7 @@
                                 "heavy",
                                 "ap 16"
                             ],
-                            "range": 0
+                            "range": "-"
                         }
                     ]
                 },
@@ -343,7 +343,7 @@
                             "keywords": [
                                 "separate"
                             ],
-                            "range": 20
+                            "range": "20 cm"
                         },
                         {
                             "hits": 2,
@@ -351,7 +351,7 @@
                             "keywords": [
                                 "ap 8"
                             ],
-                            "range": 5
+                            "range": "melee"
                         }
                     ]
                 },
@@ -370,7 +370,7 @@
                             "keywords": [
                                 "separate"
                             ],
-                            "range": 20
+                            "range": "20 cm"
                         },
                         {
                             "hits": 1,
@@ -378,7 +378,7 @@
                             "keywords": [
                                 "ap 8"
                             ],
-                            "range": 5
+                            "range": "melee"
                         }
                     ]
                 },
@@ -395,13 +395,13 @@
                             "hits": 2,
                             "strength": 5,
                             "keywords": [],
-                            "range": 0
+                            "range": "-"
                         },
                         {
                             "hits": 1,
                             "strength": 7,
                             "keywords": [],
-                            "range": 5
+                            "range": "melee"
                         }
                     ]
                 },
@@ -423,7 +423,7 @@
                             "keywords": [
                                 "ap 8"
                             ],
-                            "range": 5
+                            "range": "melee"
                         }
                     ]
                 },
@@ -443,7 +443,7 @@
                             "keywords": [
                                 "ap 8"
                             ],
-                            "range": 5
+                            "range": "melee"
                         }
                     ]
                 },
@@ -461,7 +461,7 @@
                             "hits": 1,
                             "strength": 5,
                             "keywords": [],
-                            "range": 20
+                            "range": "20 cm"
                         },
                         {
                             "hits": 1,
@@ -470,7 +470,7 @@
                                 "precise",
                                 "ap 8"
                             ],
-                            "range": 5
+                            "range": "melee"
                         }
                     ]
                 }
@@ -497,13 +497,13 @@
                             "keywords": [
                                 "separate"
                             ],
-                            "range": 20
+                            "range": "20 cm"
                         },
                         {
                             "hits": 2,
                             "strength": 7,
                             "keywords": [],
-                            "range": 5
+                            "range": "melee"
                         },
                         {
                             "hits": 1,
@@ -512,7 +512,7 @@
                                 "heavy",
                                 "ap 10"
                             ],
-                            "range": 5
+                            "range": "melee"
                         }
                     ]
                 },
@@ -534,13 +534,13 @@
                             "keywords": [
                                 "separate"
                             ],
-                            "range": 5
+                            "range": "melee"
                         },
                         {
                             "hits": 1,
                             "strength": 8,
                             "keywords": [],
-                            "range": 5
+                            "range": "melee"
                         }
                     ]
                 },
@@ -560,7 +560,7 @@
                             "keywords": [
                                 "separate"
                             ],
-                            "range": 5
+                            "range": "melee"
                         },
                         {
                             "hits": 1,
@@ -569,7 +569,7 @@
                                 "heavy",
                                 "ap 10"
                             ],
-                            "range": 5
+                            "range": "melee"
                         }
                     ]
                 },
@@ -586,7 +586,7 @@
                             "hits": 2,
                             "strength": 7,
                             "keywords": [],
-                            "range": 5
+                            "range": "melee"
                         }
                     ]
                 },
@@ -605,13 +605,13 @@
                             "keywords": [
                                 "separate"
                             ],
-                            "range": 20
+                            "range": "20 cm"
                         },
                         {
                             "hits": 1,
                             "strength": 7,
                             "keywords": [],
-                            "range": 5
+                            "range": "melee"
                         }
                     ]
                 }
@@ -638,7 +638,7 @@
                                 "heavy",
                                 "ap 7"
                             ],
-                            "range": 0
+                            "range": "-"
                         }
                     ]
                 },
@@ -660,7 +660,7 @@
                             "keywords": [
                                 "precise"
                             ],
-                            "range": 20
+                            "range": "20 cm"
                         }
                     ]
                 },
@@ -679,7 +679,7 @@
                             "keywords": [
                                 "ap 10"
                             ],
-                            "range": 5
+                            "range": "melee"
                         }
                     ]
                 },
@@ -699,7 +699,7 @@
                                 "heavy",
                                 "ap 14"
                             ],
-                            "range": 0
+                            "range": "-"
                         }
                     ]
                 },
@@ -718,7 +718,7 @@
                             "keywords": [
                                 "heavy"
                             ],
-                            "range": 20
+                            "range": "20 cm"
                         }
                     ]
                 }

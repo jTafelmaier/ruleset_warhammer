@@ -64,16 +64,6 @@ def get_text_html_unit(
     def get_text_html_row_action(
         dict_action:typing.Dict):
 
-        def get_text_weapon_range():
-
-            if dict_action["range"] == 0:
-                return "-"
-            elif dict_action["range"] == 5:
-                return "melee"
-            else:
-                return str(dict_action["range"]) \
-                    + " cm"
-
         def get_text_html_keywords_weapon():
 
             return " " \
@@ -83,25 +73,20 @@ def get_text_html_unit(
                         dict_action \
                             ["keywords"]))
 
-        def get_text_html_attack():
-
-            int_hits = dict_action \
-                ["hits"]
-
-            int_damage = dict_action \
-                ["strength"]
-
-            return "<tr><td class=\"td_weapon_characteristic range\">" \
-                + get_text_weapon_range() \
-                + "</td><td class=\"td_keywords\">" \
-                + get_text_html_keywords_weapon() \
-                + "</td><td class=\"td_weapon_characteristic strength\">" \
-                + str(int_hits) \
-                + "x " \
-                + str(int_damage) \
-                + " st</td></tr>"
-
-        return get_text_html_attack()
+        return "<tr><td class=\"td_weapon_characteristic range\">" \
+            + dict_action \
+                ["range"] \
+            + "</td><td class=\"td_keywords\">" \
+            + get_text_html_keywords_weapon() \
+            + "</td><td class=\"td_weapon_characteristic strength\">" \
+            + str(
+                dict_action \
+                    ["hits"]) \
+            + "x " \
+            + str(
+                dict_action \
+                    ["strength"]) \
+            + " st</td></tr>"
 
     def get_iterable_texts_keywords(
         bool_inactive:bool):
