@@ -173,7 +173,7 @@ body {
 
 .div_faction_content {
     width: 800px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .div_container_faction_rules  {
@@ -225,7 +225,7 @@ body {
 
 .container_unit {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     background-color: #626d84;
     border-radius: 4px;
     clip-path: polygon(
