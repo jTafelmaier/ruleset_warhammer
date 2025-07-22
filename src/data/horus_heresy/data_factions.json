@@ -19,25 +19,8 @@
                             ]
                         },
                         {
-                            "hits": 2,
-                            "strength": 7,
-                            "range": "-",
-                            "keywords_weapon": [
-                                "separate"
-                            ]
-                        },
-                        {
-                            "hits": 2,
-                            "strength": 8,
-                            "range": "-",
-                            "keywords_weapon": [
-                                "heavy",
-                                "blast"
-                            ]
-                        },
-                        {
                             "hits": 1,
-                            "strength": 12,
+                            "strength": 10,
                             "range": "-",
                             "keywords_weapon": [
                                 "heavy",
@@ -57,15 +40,6 @@
                     "health_points": 4,
                     "armor": 9,
                     "actions": [
-                        {
-                            "hits": 4,
-                            "strength": 5,
-                            "range": "-",
-                            "keywords_weapon": [
-                                "heavy",
-                                "separate"
-                            ]
-                        },
                         {
                             "hits": 2,
                             "strength": 9,
@@ -377,7 +351,7 @@
                     "name": "Araknae accelerator platform",
                     "points_per_model": 200,
                     "health_points": 4,
-                    "armor": 9,
+                    "armor": 10,
                     "actions": [
                         {
                             "hits": 4,
