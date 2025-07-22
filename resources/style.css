@@ -228,12 +228,6 @@ body {
     margin-bottom: 20px;
     background-color: #4a5266;
     border-radius: 8px;
-    clip-path: polygon(
-        0 0,
-        100% 0,
-        100% 100%,
-        10px 100%,
-        0 calc(100% - 10px));
 }
 
 .inactive_data {
@@ -262,14 +256,7 @@ div.points_cost {
     background-size: cover;
     box-shadow: inset 400px 0px 400px -100px #2e3544;
     border: 2px solid #2e3544;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-    clip-path: polygon(
-        0 0,
-        100% 0,
-        100% 100%,
-        10px 100%,
-        0 calc(100% - 10px));
+    border-radius: 8px;
 }
 
 .image_unit {
