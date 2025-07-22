@@ -524,19 +524,10 @@
                             ]
                         },
                         {
-                            "hits": 2,
+                            "hits": 4,
                             "strength": 7,
                             "range": "melee",
                             "keywords_weapon": []
-                        },
-                        {
-                            "hits": 1,
-                            "strength": 8,
-                            "range": "melee",
-                            "keywords_weapon": [
-                                "heavy",
-                                "ap 10"
-                            ]
                         }
                     ],
                     "keywords_model": [
@@ -553,14 +544,6 @@
                     "actions": [
                         {
                             "hits": 2,
-                            "strength": 7,
-                            "range": "melee",
-                            "keywords_weapon": [
-                                "separate"
-                            ]
-                        },
-                        {
-                            "hits": 1,
                             "strength": 8,
                             "range": "melee",
                             "keywords_weapon": []
