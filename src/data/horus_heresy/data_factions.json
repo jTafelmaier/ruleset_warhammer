@@ -379,11 +379,11 @@
                     "actions": [
                         {
                             "hits": 4,
-                            "strength": 9,
+                            "strength": 10,
                             "range": "-",
                             "keywords_weapon": [
                                 "heavy",
-                                "ap 11"
+                                "ap 12"
                             ]
                         }
                     ],
