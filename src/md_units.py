@@ -7,6 +7,19 @@ from src import md_shared
 
 
 
+def get_text_html_health_bar(
+    dict_unit:typing.Dict,
+    text_id:str):
+
+    return "<div class=\"health_bar\" onclick=\"reduce_health('" \
+        + text_id \
+        + "')\">" \
+        + ("<div class=\"token\" />" \
+            * dict_unit \
+                ["health_points"]) \
+        + "</div>"
+
+
 def get_text_html_unit(
     dict_unit:typing.Dict,
     dict_keywords:typing.Dict,
