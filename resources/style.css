@@ -82,7 +82,7 @@ body {
 
 .table_default td {
     color: #2e3544;
-    background-color: rgba(200, 200, 200, 0.8);
+    background-color: rgba(255, 255, 255, 0.65);
     border-top: 1px solid #919eba;
     padding: 2px;
     vertical-align: top;
@@ -316,6 +316,10 @@ div.points_cost {
 
 .keywords {
     margin-top: 20px;
+}
+
+.actions td {
+    background-color: rgba(200, 200, 200, 0.8);
 }
 
 td.weapon_characteristic {
