@@ -46,6 +46,16 @@ def get_text_html_unit(
             + text_parameters \
             + "</div>"
 
+    def get_iterable_texts_keywords(
+        bool_inactive:bool):
+
+        return map(
+            get_text_html_keyword,
+            filter(
+                lambda text_keyword: bool_inactive == (text_keyword in {"attachable", "teleportation"}),
+                dict_unit \
+                    ["keywords"]))
+
     path_image_unit = "/" \
         .join(
             [
@@ -88,33 +98,23 @@ def get_text_html_unit(
                     ["strength"]) \
             + " st</td></tr>"
 
-    def get_iterable_texts_keywords(
-        bool_inactive:bool):
-
-        return map(
-            get_text_html_keyword,
-            filter(
-                lambda text_keyword: bool_inactive == (text_keyword in {"attachable", "teleportation"}),
-                dict_unit \
-                    ["keywords"]))
-
     def get_text_html_inactive_information():
 
-        if bool_show_inactive_information:
-            return "<div class=\"inactive_data\"><span class=\"points_cost\">" \
-                + str(
-                    dict_unit \
-                        ["points_per_model"]) \
-                + " points</span><br/><br/>Max health:<span class=\"max_health\">" \
-                + str(
-                    dict_unit \
-                        ["health_points"]) \
-                + "</span><br/><br/>" \
-                + "<br/>" \
-                    .join(get_iterable_texts_keywords(True)) \
-                + "</div>"
-        else:
+        if not bool_show_inactive_information:
             return ""
+
+        return "<div class=\"inactive_data\"><span class=\"points_cost\">" \
+            + str(
+                dict_unit \
+                    ["points_per_model"]) \
+            + " points</span><br/><br/>Max health:<span class=\"max_health\">" \
+            + str(
+                dict_unit \
+                    ["health_points"]) \
+            + "</span><br/><br/>" \
+            + "<br/>" \
+                .join(get_iterable_texts_keywords(True)) \
+            + "</div>"
 
     text_html_rows_actions = "\n" \
         .join(
