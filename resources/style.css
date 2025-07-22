@@ -306,29 +306,28 @@ div.points_cost {
 }
 
 .characteristics_model {
-    display: flex;
-    gap: 5px;
+    margin-right: 2px;
 }
 
 .div_model_characteristic {
     display: flex;
-    padding: 4px;
+    padding: 2px;
 }
 
 .div_model_characteristic_value {
     text-align: center;
+    border: 2px solid white;
     border-radius: 2px;
-    font-weight: bold;
-    color: #2e3544;
+    color: white;
     width: 1.5em;
-    background-color: white;
+    background-color: #4a5266;
 }
 
 .div_model_characteristic_name {
     flex: 1;
     color: white;
     background-color: #2e3544;
-    padding-left: 4px;
+    padding: 2px;
     padding-right: 4px;
 }
 
