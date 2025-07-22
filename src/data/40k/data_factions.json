@@ -649,11 +649,11 @@
                     "actions": [
                         {
                             "hits": 1,
-                            "strength": 5,
+                            "strength": 6,
                             "range": "-",
                             "keywords_weapon": [
                                 "heavy",
-                                "ap 7"
+                                "ap 8"
                             ]
                         }
                     ],
