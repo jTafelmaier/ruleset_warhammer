@@ -214,8 +214,8 @@
                     "armor": 5,
                     "actions": [
                         {
-                            "hits": 4,
-                            "strength": 5,
+                            "hits": 2,
+                            "strength": 6,
                             "range": "-",
                             "keywords_weapon": []
                         },
@@ -243,8 +243,8 @@
                     "armor": 4,
                     "actions": [
                         {
-                            "hits": 2,
-                            "strength": 5,
+                            "hits": 1,
+                            "strength": 6,
                             "range": "-",
                             "keywords_weapon": []
                         },
