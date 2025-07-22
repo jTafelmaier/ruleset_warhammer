@@ -150,9 +150,18 @@ function reduce_health(text_id_element) {
 
     for (let i = 0; i < int_count_tokens_used_new; i++) {
         array_tokens[i].classList.add("used")
+        array_tokens[i].classList.remove("next")
     }
-    for (let i = int_count_tokens_used_new; i < array_tokens.length; i++) {
+
+    let list_classes = array_tokens[int_count_tokens_used_new]
+        .classList
+
+    list_classes.remove("used")
+    list_classes.add("next")
+
+    for (let i = int_count_tokens_used_new + 1; i < array_tokens.length; i++) {
         array_tokens[i].classList.remove("used")
+        array_tokens[i].classList.remove("next")
     }
 }
 

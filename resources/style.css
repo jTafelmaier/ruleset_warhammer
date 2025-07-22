@@ -400,7 +400,7 @@ td.strength {
     box-shadow: 0 0 4px 1px #48abe0;
 }
 
-#army_lists .health_bar:hover .token {
+#army_lists .health_bar:hover .token.next {
     background: linear-gradient(0.5turn, #fcc8c8, #ff4646 25%, #ff4646 75%, #fcc8c8);
     box-shadow: 0 0 5px 2px #ff4646;
 }

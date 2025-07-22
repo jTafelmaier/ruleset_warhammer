@@ -15,10 +15,10 @@ def get_text_html_health_bar(
 
     return "<div class=\"health_bar\"" \
         + text_onclick \
-        + ">" \
+        + "><div class=\"token next\" />" \
         + ("<div class=\"token\" />" \
-            * dict_unit \
-                ["health_points"]) \
+            * (dict_unit \
+                ["health_points"] - 1)) \
         + "</div>"
 
 
