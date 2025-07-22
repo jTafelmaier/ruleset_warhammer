@@ -11,7 +11,7 @@
                     "actions": [
                         {
                             "hits": 2,
-                            "strength": 5,
+                            "strength": 6,
                             "range": "20 cm",
                             "keywords_weapon": []
                         },
@@ -96,7 +96,7 @@
                     "actions": [
                         {
                             "hits": 4,
-                            "strength": 4,
+                            "strength": 5,
                             "range": "20 cm",
                             "keywords_weapon": []
                         },
@@ -127,9 +127,11 @@
                     "actions": [
                         {
                             "hits": 4,
-                            "strength": 5,
+                            "strength": 4,
                             "range": "20 cm",
-                            "keywords_weapon": []
+                            "keywords_weapon": [
+                                "ap 6"
+                            ]
                         },
                         {
                             "hits": 1,
@@ -155,7 +157,7 @@
                     "actions": [
                         {
                             "hits": 4,
-                            "strength": 4,
+                            "strength": 5,
                             "range": "20 cm",
                             "keywords_weapon": []
                         },
@@ -186,7 +188,7 @@
                     "actions": [
                         {
                             "hits": 2,
-                            "strength": 5,
+                            "strength": 6,
                             "range": "20 cm",
                             "keywords_weapon": [
                                 "separate"
@@ -211,7 +213,7 @@
                     "name": "Captain in gravis armour",
                     "points_per_model": 100,
                     "health_points": 4,
-                    "armor": 5,
+                    "armor": 6,
                     "actions": [
                         {
                             "hits": 2,
@@ -240,7 +242,7 @@
                     "name": "Heavy intercessors",
                     "points_per_model": 50,
                     "health_points": 4,
-                    "armor": 4,
+                    "armor": 5,
                     "actions": [
                         {
                             "hits": 1,
@@ -266,11 +268,11 @@
                     "name": "Eradicators",
                     "points_per_model": 50,
                     "health_points": 4,
-                    "armor": 4,
+                    "armor": 5,
                     "actions": [
                         {
                             "hits": 1,
-                            "strength": 5,
+                            "strength": 6,
                             "range": "20 cm",
                             "keywords_weapon": []
                         },
@@ -297,7 +299,7 @@
                     "actions": [
                         {
                             "hits": 1,
-                            "strength": 5,
+                            "strength": 6,
                             "range": "20 cm",
                             "keywords_weapon": [
                                 "separate"
@@ -323,7 +325,7 @@
                     "actions": [
                         {
                             "hits": 2,
-                            "strength": 4,
+                            "strength": 5,
                             "range": "20 cm",
                             "keywords_weapon": [
                                 "separate"
@@ -353,7 +355,7 @@
                     "actions": [
                         {
                             "hits": 2,
-                            "strength": 5,
+                            "strength": 6,
                             "range": "20 cm",
                             "keywords_weapon": [
                                 "separate"
@@ -384,7 +386,7 @@
                     "actions": [
                         {
                             "hits": 1,
-                            "strength": 5,
+                            "strength": 6,
                             "range": "20 cm",
                             "keywords_weapon": [
                                 "separate"
@@ -482,7 +484,7 @@
                     "actions": [
                         {
                             "hits": 1,
-                            "strength": 5,
+                            "strength": 6,
                             "range": "20 cm",
                             "keywords_weapon": []
                         },
@@ -616,7 +618,7 @@
                     "actions": [
                         {
                             "hits": 1,
-                            "strength": 5,
+                            "strength": 6,
                             "range": "20 cm",
                             "keywords_weapon": [
                                 "separate"

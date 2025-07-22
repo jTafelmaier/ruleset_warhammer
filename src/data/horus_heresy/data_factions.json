@@ -105,9 +105,7 @@
                             "hits": 1,
                             "strength": 7,
                             "range": "20 cm",
-                            "keywords_weapon": [
-                                "heavy"
-                            ]
+                            "keywords_weapon": []
                         },
                         {
                             "hits": 2,
@@ -136,7 +134,7 @@
                     "actions": [
                         {
                             "hits": 2,
-                            "strength": 4,
+                            "strength": 5,
                             "range": "-",
                             "keywords_weapon": [
                                 "heavy"
@@ -144,10 +142,10 @@
                         },
                         {
                             "hits": 1,
-                            "strength": 7,
+                            "strength": 6,
                             "range": "20 cm",
                             "keywords_weapon": [
-                                "heavy"
+                                "ap 8"
                             ]
                         },
                         {
@@ -356,7 +354,7 @@
                     "actions": [
                         {
                             "hits": 1,
-                            "strength": 5,
+                            "strength": 6,
                             "range": "20 cm",
                             "keywords_weapon": []
                         },
