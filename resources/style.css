@@ -226,7 +226,7 @@ body {
 .container_unit {
     display: flex;
     margin-bottom: 20px;
-    background-color: #626d84;
+    background-color: #4a5266;
     border-radius: 8px;
     clip-path: polygon(
         0 0,
@@ -364,6 +364,10 @@ td.strength {
 .keyword span {
     color: #9e59ff;
     font-weight: bold;
+}
+
+.keyword.keywords_deployment span {
+    color: #626d84;
 }
 
 .health_bar {

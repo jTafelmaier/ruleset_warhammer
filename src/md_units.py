@@ -41,7 +41,9 @@ def get_text_html_unit(
             text_parameters = text_keyword \
                 .partition(" ")
 
-            return "<div class=\"keyword\" title=\"" \
+            return "<div class=\"keyword " \
+                + text_category \
+                + "\"title=\"" \
                 + dict_keywords \
                     [text_category] \
                     [text_name_keyword] \
