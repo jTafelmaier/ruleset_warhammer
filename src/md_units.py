@@ -126,7 +126,7 @@ def get_text_html_unit(
         + "')\"><div class=\"header_unit\"><h3 class=\"name_unit\">" \
         + dict_unit \
             ["name"] \
-        + "</h3><div class=\"armor\">A" \
+        + "</h3><div class=\"armor\">⛊" \
         + str(
             dict_unit \
                 ["armor"]) \
