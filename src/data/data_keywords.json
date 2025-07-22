@@ -1,59 +1,46 @@
 {
-    "data": [
-        {
-            "name": "attachable",
-            "type": "kw_model_deployment",
-            "function": "This unit can be attached to another friendly unit at deployment."
+    "attachable": {
+        "type": "kw_model_deployment",
+        "function": "This unit can be attached to another friendly unit at deployment."
         },
-        {
-            "name": "teleportation",
-            "type": "kw_model_deployment",
-            "function": "This model's unit can perform the \"Setup teleportation\" action."
+    "teleportation": {
+        "type": "kw_model_deployment",
+        "function": "This model's unit can perform the \"Setup teleportation\" action."
         },
-        {
-            "name": "stealth",
-            "type": "kw_model_defense",
-            "function": "If this model's unit is near cover, it can only be selected as a target unit by units within 20 cm."
+    "stealth": {
+        "type": "kw_model_defense",
+        "function": "If this model's unit is near cover, it can only be selected as a target unit by units within 20 cm."
         },
-        {
-            "name": "large_profile",
-            "type": "kw_model_defense",
-            "function": "This model cannot perform the \"Brace\" action."
+    "large_profile": {
+        "type": "kw_model_defense",
+        "function": "This model cannot perform the \"Brace\" action."
         },
-        {
-            "name": "fly",
-            "type": "kw_model_action",
-            "function": "This model can perform the \"Fly\" action up to the given distance."
+    "fly": {
+        "type": "kw_model_action",
+        "function": "This model can perform the \"Fly\" action up to the given distance."
         },
-        {
-            "name": "move",
-            "type": "kw_model_action",
-            "function": "This model can perform the \"Move\" action up to the given distance."
+    "move": {
+        "type": "kw_model_action",
+        "function": "This model can perform the \"Move\" action up to the given distance."
         },
-        {
-            "name": "score",
-            "type": "kw_model_action",
-            "function": "This model's unit can perform the \"Score objective\" action."
+    "score": {
+        "type": "kw_model_action",
+        "function": "This model's unit can perform the \"Score objective\" action."
         },
-        {
-            "name": "ap",
-            "type": "kw_attack",
-            "function": "If the target model's armor characteristic is no more than 2 higher than this weapon's strength: The minimum damage infliced by each hit is 1."
+    "ap": {
+        "type": "kw_attack",
+        "function": "If the target model's armor characteristic is no more than 2 higher than this weapon's strength: The minimum damage infliced by each hit is 1."
         },
-        {
-            "name": "heavy",
-            "type": "kw_attack",
-            "function": "Can only use this weapon when performing the \"Heavy attack\" action."
+    "heavy": {
+        "type": "kw_attack",
+        "function": "Can only use this weapon when performing the \"Heavy attack\" action."
         },
-        {
-            "name": "precise",
-            "type": "kw_attack",
-            "function": "Can select attached units as target unit."
+    "precise": {
+        "type": "kw_attack",
+        "function": "Can select attached units as target unit."
         },
-        {
-            "name": "separate",
-            "type": "kw_attack",
-            "function": "When attacking with another weapon without \"separate\": Can also attack with this weapon during the attack action."
+    "separate": {
+        "type": "kw_attack",
+        "function": "When attacking with another weapon without \"separate\": Can also attack with this weapon during the attack action."
         }
-    ]
 }

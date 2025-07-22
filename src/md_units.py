@@ -14,14 +14,6 @@ def get_text_html_unit(
     name_directory_faction:str,
     bool_show_inactive_information:bool):
 
-    dict_names_keywords = dict(
-        map(
-            lambda dict_keyword: (
-                dict_keyword["name"],
-                dict_keyword),
-            dict_keywords \
-                ["data"]))
-
     def get_text_html_keyword(
         text_keyword:str):
 
@@ -30,7 +22,7 @@ def get_text_html_unit(
         text_parameters = text_keyword \
             .partition(" ")
 
-        dict_keyword = dict_names_keywords \
+        dict_keyword = dict_keywords \
             [text_name_keyword]
 
         text_title = dict_keyword \
@@ -49,8 +41,7 @@ def get_text_html_unit(
             + "\" title=\"" \
             + text_title \
             + "\"><span>" \
-            + dict_keyword \
-                ["name"] \
+            + text_name_keyword \
             + "</span> " \
             + text_parameters \
             + "</div>"
