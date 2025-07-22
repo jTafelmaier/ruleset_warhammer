@@ -2,22 +2,17 @@
     "faction": "Space Marines",
     "units": [
         {
-            "name": "Aethon Shaan",
+            "name": "Captain in gravis armour",
             "count_models": 1,
-            "attached_to_index": 3
+            "attached_to_index": 2
         },
         {
-            "name": "Captain with jump pack",
-            "count_models": 1,
-            "attached_to_index": 4
-        },
-        {
-            "name": "Jump pack intercessors",
+            "name": "Heavy intercessors",
             "count_models": 5,
             "attached_to_index": null
         },
         {
-            "name": "Jump pack intercessors",
+            "name": "Eradicators",
             "count_models": 5,
             "attached_to_index": null
         },

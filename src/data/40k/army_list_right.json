@@ -13,12 +13,17 @@
         },
         {
             "name": "Hyperphase unit",
-            "count_models": 4,
+            "count_models": 2,
             "attached_to_index": null
         },
         {
             "name": "Gauss unit",
-            "count_models": 2,
+            "count_models": 1,
+            "attached_to_index": null
+        },
+        {
+            "name": "Gauss unit",
+            "count_models": 1,
             "attached_to_index": null
         }
     ]
