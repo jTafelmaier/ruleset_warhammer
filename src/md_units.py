@@ -26,15 +26,10 @@ def get_text_html_unit(
             text_parameters = text_keyword \
                 .partition(" ")
 
-            text_title = dict_keywords \
-                [text_category] \
-                [text_name_keyword]
-
             return "<div class=\"keyword\" title=\"" \
-                + text_title \
-                    .replace(
-                        "\"",
-                        "&quot;") \
+                + dict_keywords \
+                    [text_category] \
+                    [text_name_keyword] \
                 + "\"><span>" \
                 + text_name_keyword \
                 + "</span> " \
