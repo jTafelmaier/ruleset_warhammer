@@ -309,10 +309,18 @@
                     "armor": 4,
                     "actions": [
                         {
-                            "hits": 2,
-                            "strength": 5,
+                            "hits": 1,
+                            "strength": 6,
                             "range": "-",
                             "keywords_weapon": []
+                        },
+                        {
+                            "hits": 1,
+                            "strength": 7,
+                            "range": "20 cm",
+                            "keywords_weapon": [
+                                "heavy"
+                            ]
                         }
                     ],
                     "keywords_model": [
@@ -349,7 +357,7 @@
                         {
                             "hits": 1,
                             "strength": 5,
-                            "range": "-",
+                            "range": "20 cm",
                             "keywords_weapon": []
                         },
                         {
