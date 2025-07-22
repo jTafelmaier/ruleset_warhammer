@@ -1,6 +1,6 @@
 {
     "keywords_deployment": {
-        "attachable": "This unit can be attached to another friendly unit at deployment.",
+        "attachable": "This unit can be attached to another friendly unit at deployment. An attached unit cannot be selected as a target unit unless the weapon has the \"precise\" keyword.",
         "teleportation": "This model's unit can perform the &quot;Setup teleportation&quot; action."
     },
     "keywords_model": {

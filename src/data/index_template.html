@@ -189,14 +189,6 @@
                             <br/>
                             <div class="indented">
                                 Select one of the model's weapons, and, if possible, select one visible enemy unit as "target unit" for this weapon.
-                                <br/>
-                                Cannot select an attached unit as the target unit unless the weapon has
-                                <div class="keyword kw_attack" title="Can select attached units as target unit.">
-                                    <span>
-                                        precise
-                                    </span>
-                                </div>
-                                .
                             </div>
                             <br/>
                             Every enemy target unit may then perform the following action:
@@ -210,7 +202,7 @@
                                 <div>
                                     If this unit is in cover, this unit can only lose health points from melee attacks.
                                     <br/>
-                                    Otherwise, during this attack, increase the armor characteristic of models in this unit by 1.
+                                    Otherwise, during this attack, increase the ⛊ armor characteristic of models in this unit by 1.
                                 </div>
                             </div>
                             <br/>
@@ -221,18 +213,14 @@
                                     If the target unit does not exist, end the attack sequence for this weapon.
                                     <br/>
                                     <br/>
-                                    Reduce unit: <b>health points</b> by max(0, weapon: <b>strength</b> - target model: <b>armor</b>).
+                                    Reduce unit: <b>health</b> by max(0, weapon: <b>st</b> - target model: <b>⛊ armor</b>).
                                     <br/>
                                     <br/>
-                                    If unit: <b>health points</b> &lt= 0:
+                                    If unit: <b>health</b> &lt= 0:
                                     <div class="indented">
-                                        Destroy one model in the target unit. If destroying a model would break unit coherency, then that model cannot be selected.
+                                        The enemy player must choose to destroy one model in the target unit.
                                         <br/>
-                                        <br/>
-                                        If the unit still contains at least one model:
-                                        <div class="indented">
-                                            Restore unit health tokens.
-                                        </div>
+                                        Then, restore the unit health tokens.
                                     </div>
                                 </div>
                             </div>
