@@ -58,7 +58,7 @@ def get_text_html_faction_rules(
                     md_shared.get_text_path_images_faction(
                         name_setting=name_setting,
                         name_directory_faction=name_directory_faction),
-                    "background.png"])
+                    "faction.png"])
 
         return "<div class=\"container_faction_rules " \
             + text_id_faction \
