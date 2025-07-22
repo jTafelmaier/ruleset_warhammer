@@ -74,6 +74,8 @@ def get_text_html_unit(
     def get_text_html_row_action(
         dict_action:typing.Dict):
 
+        text_hits = str(dict_action["hits"]) + "x " if dict_action["hits"] > 1 else ""
+
         return "<tr><td class=\"weapon_characteristic range\">" \
             + dict_action \
                 ["range"] \
@@ -82,10 +84,7 @@ def get_text_html_unit(
                 dict_entity=dict_action,
                 text_category="keywords_weapon") \
             + "</td><td class=\"weapon_characteristic strength\">" \
-            + str(
-                dict_action \
-                    ["hits"]) \
-            + "x " \
+            + text_hits \
             + str(
                 dict_action \
                     ["strength"]) \
