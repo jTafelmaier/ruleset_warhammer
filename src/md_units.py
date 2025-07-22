@@ -122,21 +122,13 @@ def get_text_html_unit(
 
     def get_text_html_inactive_information():
 
-        def get_text_html_teleportation():
-
-            if "teleportation" in dict_unit["keywords"]:
-                return "<br/>" \
-                    + get_text_html_keyword("teleportation")
-            else:
-                return ""
-
-        def get_text_html_attachable():
-
-            if "attachable" in dict_unit["keywords"]:
-                return "<br/>" \
-                    + get_text_html_keyword("attachable")
-            else:
-                return ""
+        text_inactive_keywords = "<br/>" \
+            .join(
+                map(
+                    get_text_html_keyword,
+                    filter(
+                        lambda text_keyword: text_keyword in {"attachable", "teleportation"},
+                        dict_unit["keywords"])))
 
         if bool_show_inactive_information:
             return "<div class=\"inactive_data\"><span class=\"points_cost\">" \
@@ -147,9 +139,8 @@ def get_text_html_unit(
                 + str(
                     dict_unit \
                         ["health_points"]) \
-                + "</span><br/>" \
-                + get_text_html_teleportation() \
-                + get_text_html_attachable() \
+                + "</span><br/><br/>" \
+                + text_inactive_keywords \
                 + "</div>"
         else:
             return ""
