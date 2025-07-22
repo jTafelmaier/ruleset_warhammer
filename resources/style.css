@@ -172,7 +172,7 @@ body {
 }
 
 .div_faction_content {
-    width: 750px;
+    width: 700px;
     margin-top: 20px;
 }
 
@@ -269,7 +269,7 @@ div.points_cost {
 
 .div_unit {
     width: 600px;
-    height: 200px;
+    height: 220px;
     background-size: cover;
     box-shadow: inset 400px 0px 400px -100px #2e3544;
     border: 2px solid #2e3544;
