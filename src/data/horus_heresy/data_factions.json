@@ -211,21 +211,14 @@
                             "strength": 10,
                             "range": "20 cm",
                             "keywords_weapon": [
-                                "precise"
-                            ]
-                        },
-                        {
-                            "hits": 2,
-                            "strength": 7,
-                            "range": "20 cm",
-                            "keywords_weapon": [
-                                "ap 9"
+                                "precise",
+                                "ap 12"
                             ]
                         },
                         {
                             "hits": 2,
                             "strength": 8,
-                            "range": "melee",
+                            "range": "20 cm",
                             "keywords_weapon": [
                                 "ap 10"
                             ]
