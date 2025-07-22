@@ -372,6 +372,10 @@ td.strength {
     gap: 20px 50px;
 }
 
+.action_tokens:hover {
+    box-shadow: 0 0 4px 1px #48abe0;
+}
+
 .destroyed .action_tokens {
     display: none;
 }
@@ -384,6 +388,10 @@ td.strength {
     flex: 1;
     margin-left: 1px;
     margin-right: 1px;
+}
+
+.count_models {
+    user-select: none;
 }
 
 .count_models:hover {
