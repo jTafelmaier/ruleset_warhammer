@@ -9,7 +9,7 @@ function display_faction(text_id_faction) {
     if (style_div_faction.display == "none") {
 
         Array.from(document
-            .getElementsByClassName("div_container_faction_rules"))
+            .getElementsByClassName("container_faction_rules"))
             .forEach(element => element.classList.add("grayscale"))
 
         Array.from(document
@@ -25,7 +25,7 @@ function display_faction(text_id_faction) {
 
     else {
         Array.from(document
-            .getElementsByClassName("div_container_faction_rules"))
+            .getElementsByClassName("container_faction_rules"))
             .forEach(element => element.classList.remove("grayscale"))
 
         style_div_faction.display =  "none"}
@@ -188,7 +188,7 @@ function reduce_action_tokens(text_id_element) {
 function restore_action_tokens() {
 
     Array.from(document
-        .getElementById("div_army_lists")
+        .getElementById("army_lists")
         .getElementsByClassName("action_token token"))
         .forEach(element => element.classList.remove("used"))
 

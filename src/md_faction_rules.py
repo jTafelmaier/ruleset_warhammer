@@ -60,13 +60,13 @@ def get_text_html_faction_rules(
                         name_directory_faction=name_directory_faction),
                     "background.png"])
 
-        return "<div class=\"div_container_faction_rules " \
+        return "<div class=\"container_faction_rules " \
             + text_id_faction \
-            + "\"><div class=\"div_button_faction_rules\" onclick=\"display_faction('" \
+            + "\"><div class=\"preview_faction_rules\" onclick=\"display_faction('" \
             + text_id_faction \
             + "')\" style=\"background-image: url('" \
             + path_image_faction \
-            + "')\"><div class=\"div_faction_name\">" \
+            + "')\"><div class=\"faction_name\">" \
             + name_faction \
             + "</div></div></div>"
 
@@ -102,9 +102,9 @@ def get_text_html_faction_rules(
                 get_text_html_button_show_faction,
                 list_dicts_factions))
 
-    return "<div class=\"div_buttons_factions\">" \
+    return "<div class=\"selection_factions\">" \
         + text_html_buttons_factions \
-        + "</div><div class=\"div_faction_content\">" \
+        + "</div><div class=\"faction_content\">" \
         + "\n" \
             .join(
                 map(

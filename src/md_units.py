@@ -74,14 +74,14 @@ def get_text_html_unit(
     def get_text_html_row_action(
         dict_action:typing.Dict):
 
-        return "<tr><td class=\"td_weapon_characteristic range\">" \
+        return "<tr><td class=\"weapon_characteristic range\">" \
             + dict_action \
                 ["range"] \
             + "</td><td class=\"td_keywords\">" \
             + get_text_html_keywords(
                 dict_entity=dict_action,
                 text_category="keywords_weapon") \
-            + "</td><td class=\"td_weapon_characteristic strength\">" \
+            + "</td><td class=\"weapon_characteristic strength\">" \
             + str(
                 dict_action \
                     ["hits"]) \
@@ -119,11 +119,11 @@ def get_text_html_unit(
 
     return "<div class=\"container_unit\">" \
         + get_text_html_inactive_information() \
-        + "<div class=\"div_unit\" style=\"background-image: url('resources/" \
+        + "<div class=\"unit\" style=\"background-image: url('resources/" \
         + name_setting \
-        + "/general/background.png')\"><div class=\"div_image_unit\" style=\"background-image: url('" \
+        + "/general/background.png')\"><div class=\"image_unit\" style=\"background-image: url('" \
         + path_image_unit \
-        + "')\"><div class=\"div_header_unit\"><h3 class=\"h3_name_unit\">" \
+        + "')\"><div class=\"header_unit\"><h3 class=\"name_unit\">" \
         + dict_unit \
             ["name"] \
         + "</h3><div class=\"armor\">A" \
@@ -134,7 +134,7 @@ def get_text_html_unit(
         + get_text_html_keywords(
             dict_entity=dict_unit,
             text_category="keywords_model") \
-        + "</div><div class=\"model_property actions\"><table class=\"table_default fullwidth\"><tbody><tr><th class=\"th_weapon_characteristic range\"><th class=\"th_weapon_characteristic keywords\"></th><th class=\"th_weapon_characteristic strength\"></th></tr>" \
+        + "</div><div class=\"model_property actions\"><table class=\"table_default fullwidth\"><tbody><tr><th class=\"weapon_characteristic range\"><th class=\"weapon_characteristic keywords\"></th><th class=\"weapon_characteristic strength\"></th></tr>" \
         + text_html_rows_actions \
         + "</tbody></table></div></div></div></div></div>"
 

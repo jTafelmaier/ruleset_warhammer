@@ -38,12 +38,12 @@ body {
     margin-right: auto;
 }
 
-.h2_section {
+.section {
     margin-top: 0px;
     border-bottom: 2px solid #2e3544;
 }
 
-.h1_chapter {
+.chapter {
     margin-top: 50px;
     text-align: center;
     color: white;
@@ -165,26 +165,26 @@ body {
     padding: 5px;
 }
 
-.div_buttons_factions {
+.selection_factions {
     display: grid;
     grid-template-columns: 300px 300px 300px 300px;
     gap: 20px 20px;
 }
 
-.div_faction_content {
+.faction_content {
     width: 700px;
     margin-top: 20px;
 }
 
-.div_container_faction_rules  {
+.container_faction_rules  {
     height: 200px;
 }
 
-.div_container_faction_rules.grayscale  {
+.container_faction_rules.grayscale  {
     filter: grayscale(1);
 }
 
-.div_button_faction_rules {
+.preview_faction_rules {
     width: 280px;
     height: 190px;
     background-size: cover;
@@ -201,14 +201,14 @@ body {
         0 calc(100% - 15px));
 }
 
-.div_button_faction_rules:hover {
+.preview_faction_rules:hover {
     width: 300px;
     height: 200px;
     border: 2px solid #9e59ff;
     box-shadow: inset 0 -50px 50px -20px #9e59ff;
 }
 
-.div_faction_name {
+.faction_name {
     color: white;
     text-align: center;
     font-size: large;
@@ -218,7 +218,7 @@ body {
     margin-top: 160px;
 }
 
-.div_button_faction_rules:hover .div_faction_name{
+.preview_faction_rules:hover .faction_name{
     width: 300px;
     margin-top: 170px;
 }
@@ -256,7 +256,7 @@ div.points_cost {
     padding: 2px;
 }
 
-.div_unit {
+.unit {
     width: 600px;
     height: 220px;
     background-size: cover;
@@ -272,7 +272,7 @@ div.points_cost {
         0 calc(100% - 10px));
 }
 
-.div_image_unit {
+.image_unit {
     display: grid;
     width: 100%;
     height: 100%;
@@ -281,13 +281,13 @@ div.points_cost {
     background-position: 100%;
 }
 
-.div_header_unit {
+.header_unit {
     display: flex;
     padding: 2px;
     height: 29px;
 }
 
-.h3_name_unit {
+.name_unit {
     flex: 1;
     font-weight: normal;
     color: white;
@@ -318,7 +318,7 @@ div.points_cost {
     margin-top: 20px;
 }
 
-td.td_weapon_characteristic {
+td.weapon_characteristic {
     color: #2e3544;
     text-align: right;
     font-weight: bold;
@@ -334,10 +334,6 @@ td.range {
 
 td.strength {
     width: 5em;
-}
-
-.th_weapon_characteristic {
-    color: #2e3544;
 }
 
 .keyword {
@@ -370,7 +366,7 @@ td.strength {
     background-color: #2e3544;
 }
 
-#div_army_lists {
+#army_lists {
     display: grid;
     grid-template-columns: 600px 600px;
     gap: 20px 50px;
