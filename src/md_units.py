@@ -113,12 +113,6 @@ def get_text_html_unit(
                 dict_unit \
                     ["keywords"]))
 
-    def get_text_html_model_characteristics():
-
-        return "<div class=\"characteristics_model\"><div class=\"div_model_characteristic div_armor\"><div class=\"div_model_characteristic_name\">Armor</div><div class=\"div_model_characteristic_value\">" \
-            + str(dict_unit["armor"]) \
-            + "</div></div></div>"
-
     def get_text_html_inactive_information():
 
         if bool_show_inactive_information:
@@ -147,9 +141,11 @@ def get_text_html_unit(
     return "<div class=\"container_unit\"><div class=\"div_unit\"><div class=\"div_header_unit\"><h3 class=\"h3_name_unit\">" \
         + dict_unit \
             ["name"] \
-        + "</h3>" \
-        + get_text_html_model_characteristics() \
-        + "</div><div class=\"div_content_unit\" style=\"background-image: url(resources/" \
+        + "</h3><div class=\"characteristics_model\"><div class=\"div_model_characteristic div_armor\"><div class=\"div_model_characteristic_name\">Armor</div><div class=\"div_model_characteristic_value\">" \
+        + str(
+            dict_unit \
+                ["armor"]) \
+        + "</div></div></div></div><div class=\"div_content_unit\" style=\"background-image: url(resources/" \
         + name_setting \
         + "/general/background.png)\"><div class=\"div_image_unit\" style=\"background-image: url(" \
         + path_image_unit \
