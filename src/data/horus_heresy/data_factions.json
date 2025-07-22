@@ -93,7 +93,7 @@
     ],
     "imperium": [
         {
-            "name": "Dark Angels",
+            "name": "Loyalist Astartes",
             "units": [
                 {
                     "name": "Corswain",
@@ -167,12 +167,7 @@
                         "attachable",
                         "teleportation"
                     ]
-                }
-            ]
-        },
-        {
-            "name": "White Scars",
-            "units": [
+                },
                 {
                     "name": "Hibou Khan",
                     "points_per_model": 150,
@@ -203,8 +198,78 @@
     ],
     "chaos": [
         {
-            "name": "Iron Warriors",
+            "name": "Traitor Astartes",
             "units": [
+                {
+                    "name": "Magnus the red",
+                    "points_per_model": 800,
+                    "health_points": 8,
+                    "armor": 8,
+                    "actions": [
+                        {
+                            "hits": 1,
+                            "strength": 10,
+                            "range": "20 cm",
+                            "keywords_weapon": [
+                                "precise"
+                            ]
+                        },
+                        {
+                            "hits": 2,
+                            "strength": 7,
+                            "range": "20 cm",
+                            "keywords_weapon": [
+                                "ap 9"
+                            ]
+                        },
+                        {
+                            "hits": 2,
+                            "strength": 8,
+                            "range": "melee",
+                            "keywords_weapon": [
+                                "ap 10"
+                            ]
+                        }
+                    ],
+                    "keywords_model": [
+                        "stealth",
+                        "score",
+                        "move 15"
+                    ],
+                    "keywords_deployment": [
+                        "teleportation"
+                    ]
+                },
+                {
+                    "name": "Librarian consul",
+                    "points_per_model": 150,
+                    "health_points": 4,
+                    "armor": 5,
+                    "actions": [
+                        {
+                            "hits": 2,
+                            "strength": 6,
+                            "range": "20 cm",
+                            "keywords_weapon": [
+                                "precise"
+                            ]
+                        },
+                        {
+                            "hits": 1,
+                            "strength": 8,
+                            "range": "melee",
+                            "keywords_weapon": []
+                        }
+                    ],
+                    "keywords_model": [
+                        "score",
+                        "move 15"
+                    ],
+                    "keywords_deployment": [
+                        "attachable",
+                        "teleportation"
+                    ]
+                },
                 {
                     "name": "Warsmith",
                     "points_per_model": 150,
@@ -364,81 +429,6 @@
                         "move 25"
                     ],
                     "keywords_deployment": []
-                }
-            ]
-        },
-        {
-            "name": "Thousand sons",
-            "units": [
-                {
-                    "name": "Magnus the red",
-                    "points_per_model": 800,
-                    "health_points": 8,
-                    "armor": 8,
-                    "actions": [
-                        {
-                            "hits": 1,
-                            "strength": 10,
-                            "range": "20 cm",
-                            "keywords_weapon": [
-                                "precise"
-                            ]
-                        },
-                        {
-                            "hits": 2,
-                            "strength": 7,
-                            "range": "20 cm",
-                            "keywords_weapon": [
-                                "ap 9"
-                            ]
-                        },
-                        {
-                            "hits": 2,
-                            "strength": 8,
-                            "range": "melee",
-                            "keywords_weapon": [
-                                "ap 10"
-                            ]
-                        }
-                    ],
-                    "keywords_model": [
-                        "stealth",
-                        "score",
-                        "move 15"
-                    ],
-                    "keywords_deployment": [
-                        "teleportation"
-                    ]
-                },
-                {
-                    "name": "Librarian consul",
-                    "points_per_model": 150,
-                    "health_points": 4,
-                    "armor": 5,
-                    "actions": [
-                        {
-                            "hits": 2,
-                            "strength": 6,
-                            "range": "20 cm",
-                            "keywords_weapon": [
-                                "precise"
-                            ]
-                        },
-                        {
-                            "hits": 1,
-                            "strength": 8,
-                            "range": "melee",
-                            "keywords_weapon": []
-                        }
-                    ],
-                    "keywords_model": [
-                        "score",
-                        "move 15"
-                    ],
-                    "keywords_deployment": [
-                        "attachable",
-                        "teleportation"
-                    ]
                 }
             ]
         }
