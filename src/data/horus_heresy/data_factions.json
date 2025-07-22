@@ -46,7 +46,7 @@
                     ],
                     "keywords_model": [
                         "large_profile",
-                        "move 25cm"
+                        "move 25"
                     ],
                     "keywords_deployment": []
                 },
@@ -84,7 +84,7 @@
                     ],
                     "keywords_model": [
                         "large_profile",
-                        "move 15cm"
+                        "move 15"
                     ],
                     "keywords_deployment": []
                 }
@@ -121,7 +121,7 @@
                     ],
                     "keywords_model": [
                         "score",
-                        "move 15cm"
+                        "move 15"
                     ],
                     "keywords_deployment": [
                         "attachable",
@@ -161,7 +161,7 @@
                     ],
                     "keywords_model": [
                         "score",
-                        "move 10cm"
+                        "move 10"
                     ],
                     "keywords_deployment": [
                         "attachable",
@@ -192,7 +192,7 @@
                     "keywords_model": [
                         "stealth",
                         "score",
-                        "move 15cm"
+                        "move 15"
                     ],
                     "keywords_deployment": [
                         "attachable"
@@ -238,7 +238,7 @@
                     ],
                     "keywords_model": [
                         "score",
-                        "move 10cm"
+                        "move 10"
                     ],
                     "keywords_deployment": [
                         "attachable"
@@ -258,7 +258,7 @@
                         }
                     ],
                     "keywords_model": [
-                        "move 15cm"
+                        "move 15"
                     ],
                     "keywords_deployment": []
                 },
@@ -278,7 +278,7 @@
                         }
                     ],
                     "keywords_model": [
-                        "move 15cm"
+                        "move 15"
                     ],
                     "keywords_deployment": []
                 },
@@ -302,7 +302,7 @@
                         }
                     ],
                     "keywords_model": [
-                        "fly 25cm"
+                        "fly 25"
                     ],
                     "keywords_deployment": []
                 },
@@ -361,7 +361,7 @@
                     ],
                     "keywords_model": [
                         "large_profile",
-                        "move 25cm"
+                        "move 25"
                     ],
                     "keywords_deployment": []
                 }
@@ -404,7 +404,7 @@
                     "keywords_model": [
                         "stealth",
                         "score",
-                        "move 15cm"
+                        "move 15"
                     ],
                     "keywords_deployment": [
                         "teleportation"
@@ -433,7 +433,7 @@
                     ],
                     "keywords_model": [
                         "score",
-                        "move 15cm"
+                        "move 15"
                     ],
                     "keywords_deployment": [
                         "attachable",
