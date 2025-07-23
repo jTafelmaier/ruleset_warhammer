@@ -73,14 +73,14 @@ def get_text_html_unit(
 
         text_hits = str(dict_action["hits"]) + "x " if dict_action["hits"] > 1 else ""
 
-        return "<tr><td class=\"weapon_characteristic range\">" \
+        return "<tr><td class=\"range\">" \
             + dict_action \
                 ["range"] \
-            + "</td><td class=\"td_keywords\">" \
+            + "</td><td class=\"keywords\">" \
             + get_text_html_keywords(
                 dict_entity=dict_action,
                 text_category="keywords_weapon") \
-            + "</td><td class=\"weapon_characteristic strength\">" \
+            + "</td><td class=\"strength\">" \
             + text_hits \
             + "💥" \
             + str(
@@ -129,7 +129,7 @@ def get_text_html_unit(
         + get_text_html_keywords(
             dict_entity=dict_unit,
             text_category="keywords_model") \
-        + "</div><div class=\"model_property actions\"><table class=\"table_default fullwidth\"><tbody><tr><th class=\"weapon_characteristic range\"><th class=\"weapon_characteristic keywords\"></th><th class=\"weapon_characteristic strength\"></th></tr>" \
+        + "</div><div class=\"model_property weapons\"><table class=\"table_default fullwidth\"><tbody><tr><th/><th/><th/></tr>" \
         + text_html_rows_actions \
         + "</tbody></table></div></div></div></div></div>"
 

@@ -299,45 +299,18 @@ div.points_cost {
     align-self: flex-end;
     width: 250px;
     padding: 5px;
-}
-
-.keywords {
     margin-top: 20px;
-}
-
-.actions td {
-    background-color: rgba(200, 200, 200, 0.8);
-}
-
-td.weapon_characteristic {
-    color: #2e3544;
-    text-align: right;
-    font-weight: bold;
-    padding: 4px;
-}
-
-td.range {
-    width: 3em;
-    text-align: left;
-    color: #4a5266;
-    padding-top: 6px;
-    padding-bottom: 6px;
-}
-
-td.strength {
-    width: 5em;
 }
 
 .keyword {
     display: inline-block;
-    text-align: left;
-    color: #4a5266;
     background-color: white;
     border-radius: 2px;
     padding: 2px;
     padding-left: 5px;
     padding-right: 5px;
-    margin: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 
 .keyword span {
@@ -347,6 +320,24 @@ td.strength {
 
 .keyword.keywords_deployment span {
     color: #626d84;
+}
+
+.weapons td {
+    background-color: rgba(200, 200, 200, 0.8);
+    font-weight: bold;
+    color: #4a5266;
+}
+
+td.range {
+    width: 3em;
+    text-align: left;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+td.strength {
+    width: 5em;
+    text-align: right;
 }
 
 .health_bar {
