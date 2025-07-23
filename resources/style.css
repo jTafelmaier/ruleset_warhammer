@@ -226,7 +226,7 @@ body {
 .container_unit {
     display: flex;
     margin-bottom: 20px;
-    background-color: #4a5266;
+    background-color: #a5adbd;
     border-radius: 8px;
 }
 
@@ -236,18 +236,15 @@ body {
     padding: 5px;
 }
 
-.inactive_data .health_bar {
-    float: right;
-}
-
 .inactive_data .list_building {
     align-self: flex-end;
 }
 
 div.points_cost {
     text-align: left;
-    color: #c2cce0;
+    color: #4a5266;
     padding: 2px;
+    margin-top: 5px;
 }
 
 .unit {
