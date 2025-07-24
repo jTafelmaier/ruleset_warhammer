@@ -665,7 +665,6 @@
                     "armor": 8,
                     "keywords_model": [
                         "teleportation",
-                        "stealth",
                         "score",
                         "move 15"
                     ],
