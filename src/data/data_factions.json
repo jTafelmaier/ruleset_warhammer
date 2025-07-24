@@ -8,7 +8,7 @@
                     "points_per_model": 200,
                     "armor": 5,
                     "keywords_model": [
-                        "stealth",
+                        "teleportation",
                         "score",
                         "fly 25"
                     ],
@@ -407,7 +407,7 @@
                     "points_per_model": 100,
                     "armor": 4,
                     "keywords_model": [
-                        "stealth",
+                        "teleportation",
                         "move 15"
                     ],
                     "actions": [
@@ -491,14 +491,13 @@
                     "points_per_model": 150,
                     "armor": 5,
                     "keywords_model": [
-                        "stealth",
                         "score",
                         "move 15"
                     ],
                     "actions": [
                         {
                             "range": "melee",
-                            "hits": 2,
+                            "hits": 4,
                             "keywords_weapon": [],
                             "strength_lower": 6,
                             "strength_upper": 8
@@ -717,7 +716,6 @@
                     "armor": 5,
                     "keywords_model": [
                         "teleportation",
-                        "stealth",
                         "score",
                         "move 15"
                     ],
@@ -917,7 +915,6 @@
                     "armor": 6,
                     "keywords_model": [
                         "teleportation",
-                        "stealth",
                         "score",
                         "move 15"
                     ],

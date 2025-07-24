@@ -1,7 +1,6 @@
 {
     "keywords_model": {
         "teleportation": "This model's unit can perform the &quot;Setup teleportation&quot; and &quot;Recall&quot; actions.",
-        "stealth": "This model's unit can only be selected as a target unit by units within 20 cm.",
         "large": "This unit is never considered to be in cover, cannot perform the &quot;Brace&quot; action, and units cannot attach to this unit.",
         "fly": "This model can perform the &quot;Fly&quot; action up to the given distance.",
         "move": "This model can perform the &quot;Move&quot; action up to the given distance.",
