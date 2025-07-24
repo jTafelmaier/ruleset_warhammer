@@ -284,7 +284,7 @@
                     "armor": 10,
                     "keywords_deployment": [],
                     "keywords_model": [
-                        "large_profile",
+                        "large",
                         "move 25"
                     ],
                     "actions": [
@@ -831,7 +831,7 @@
                     "armor": 10,
                     "keywords_deployment": [],
                     "keywords_model": [
-                        "large_profile"
+                        "large"
                     ],
                     "actions": [
                         {
@@ -851,7 +851,7 @@
                     "armor": 12,
                     "keywords_deployment": [],
                     "keywords_model": [
-                        "large_profile",
+                        "large",
                         "move 25"
                     ],
                     "actions": [
@@ -1001,7 +1001,7 @@
                     "armor": 10,
                     "keywords_deployment": [],
                     "keywords_model": [
-                        "large_profile",
+                        "large",
                         "move 25"
                     ],
                     "actions": [
@@ -1028,7 +1028,7 @@
                     "armor": 9,
                     "keywords_deployment": [],
                     "keywords_model": [
-                        "large_profile",
+                        "large",
                         "move 15"
                     ],
                     "actions": [
