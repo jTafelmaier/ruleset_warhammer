@@ -59,7 +59,6 @@
                             "hits": 1,
                             "strength": 7,
                             "keywords_weapon": [
-                                "separate",
                                 "ap"
                             ]
                         }
@@ -194,9 +193,7 @@
                             "range": "-",
                             "hits": 2,
                             "strength": 6,
-                            "keywords_weapon": [
-                                "separate"
-                            ]
+                            "keywords_weapon": []
                         },
                         {
                             "range": "melee",
@@ -293,9 +290,7 @@
                             "range": "-",
                             "hits": 1,
                             "strength": 6,
-                            "keywords_weapon": [
-                                "separate"
-                            ]
+                            "keywords_weapon": []
                         },
                         {
                             "range": "melee",
@@ -320,9 +315,7 @@
                             "range": "20 cm",
                             "hits": 2,
                             "strength": 5,
-                            "keywords_weapon": [
-                                "separate"
-                            ]
+                            "keywords_weapon": []
                         },
                         {
                             "range": "-",
@@ -352,9 +345,7 @@
                             "range": "-",
                             "hits": 2,
                             "strength": 6,
-                            "keywords_weapon": [
-                                "separate"
-                            ]
+                            "keywords_weapon": []
                         },
                         {
                             "range": "melee",
@@ -380,9 +371,7 @@
                             "range": "-",
                             "hits": 1,
                             "strength": 6,
-                            "keywords_weapon": [
-                                "separate"
-                            ]
+                            "keywords_weapon": []
                         },
                         {
                             "range": "melee",
@@ -663,9 +652,7 @@
                             "range": "melee",
                             "hits": 1,
                             "strength": 7,
-                            "keywords_weapon": [
-                                "separate"
-                            ]
+                            "keywords_weapon": []
                         },
                         {
                             "range": "melee",
@@ -710,9 +697,7 @@
                             "range": "-",
                             "hits": 1,
                             "strength": 6,
-                            "keywords_weapon": [
-                                "separate"
-                            ]
+                            "keywords_weapon": []
                         },
                         {
                             "range": "melee",
@@ -930,9 +915,7 @@
                             "range": "-",
                             "hits": 4,
                             "strength": 7,
-                            "keywords_weapon": [
-                                "separate"
-                            ]
+                            "keywords_weapon": []
                         },
                         {
                             "range": "-",
@@ -1087,9 +1070,7 @@
                             "range": "-",
                             "hits": 2,
                             "strength": 7,
-                            "keywords_weapon": [
-                                "separate"
-                            ]
+                            "keywords_weapon": []
                         },
                         {
                             "range": "-",
