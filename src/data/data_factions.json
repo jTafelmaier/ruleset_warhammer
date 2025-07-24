@@ -28,7 +28,6 @@
                             "hits": 4,
                             "strength": 5,
                             "keywords_weapon": [
-                                "precise",
                                 "ap"
                             ]
                         }
@@ -113,7 +112,6 @@
                             "hits": 2,
                             "strength": 6,
                             "keywords_weapon": [
-                                "precise",
                                 "ap"
                             ]
                         }
@@ -144,7 +142,6 @@
                             "hits": 1,
                             "strength": 7,
                             "keywords_weapon": [
-                                "precise",
                                 "ap"
                             ]
                         }
@@ -175,7 +172,6 @@
                             "hits": 2,
                             "strength": 7,
                             "keywords_weapon": [
-                                "precise",
                                 "ap"
                             ]
                         }
@@ -488,9 +484,8 @@
                         {
                             "range": "melee",
                             "hits": 1,
-                            "strength": 6,
+                            "strength": 7,
                             "keywords_weapon": [
-                                "precise",
                                 "ap"
                             ]
                         }
@@ -526,7 +521,6 @@
                             "hits": 2,
                             "strength": 7,
                             "keywords_weapon": [
-                                "precise",
                                 "ap"
                             ]
                         }
@@ -591,7 +585,6 @@
                             "hits": 2,
                             "strength": 6,
                             "keywords_weapon": [
-                                "precise",
                                 "ap"
                             ]
                         }
@@ -752,9 +745,7 @@
                             "range": "20 cm",
                             "hits": 1,
                             "strength": 10,
-                            "keywords_weapon": [
-                                "precise"
-                            ]
+                            "keywords_weapon": []
                         },
                         {
                             "range": "20 cm",
@@ -784,9 +775,7 @@
                             "range": "20 cm",
                             "hits": 2,
                             "strength": 6,
-                            "keywords_weapon": [
-                                "precise"
-                            ]
+                            "keywords_weapon": []
                         },
                         {
                             "range": "melee",
@@ -1007,12 +996,10 @@
                     ],
                     "actions": [
                         {
-                            "range": "20 cm",
+                            "range": "-",
                             "hits": 4,
                             "strength": 7,
-                            "keywords_weapon": [
-                                "precise"
-                            ]
+                            "keywords_weapon": []
                         }
                     ]
                 },
