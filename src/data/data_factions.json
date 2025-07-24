@@ -335,7 +335,6 @@
                             "strength": 14,
                             "keywords_weapon": [
                                 "heavy",
-                                "blast",
                                 "ap"
                             ]
                         }
@@ -755,8 +754,7 @@
                             "hits": 1,
                             "strength": 10,
                             "keywords_weapon": [
-                                "precise",
-                                "blast"
+                                "precise"
                             ]
                         },
                         {
@@ -764,7 +762,6 @@
                             "hits": 2,
                             "strength": 8,
                             "keywords_weapon": [
-                                "blast",
                                 "ap"
                             ]
                         }
@@ -954,8 +951,7 @@
                             "hits": 4,
                             "strength": 10,
                             "keywords_weapon": [
-                                "heavy",
-                                "blast"
+                                "heavy"
                             ]
                         },
                         {
@@ -1057,7 +1053,6 @@
                             "strength": 12,
                             "keywords_weapon": [
                                 "heavy",
-                                "blast",
                                 "ap"
                             ]
                         }
@@ -1078,8 +1073,7 @@
                             "hits": 6,
                             "strength": 7,
                             "keywords_weapon": [
-                                "heavy",
-                                "blast"
+                                "heavy"
                             ]
                         }
                     ]

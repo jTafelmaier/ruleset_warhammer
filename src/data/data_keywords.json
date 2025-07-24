@@ -12,7 +12,6 @@
     },
     "keywords_weapon": {
         "ap": "If the target model's armor characteristic is no more than 2 higher than this weapon's strength: The minimum damage infliced by each hit is 1.",
-        "blast": "Target units are not considered to be in cover even while they are.",
         "heavy": "Can only use this weapon when performing the &quot;Heavy attack&quot; action.",
         "precise": "Can select attached units as target unit.",
         "separate": "When attacking with another weapon without &quot;separate&quot;: Can also attack with this weapon during the attack action."
