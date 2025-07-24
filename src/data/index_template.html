@@ -128,15 +128,10 @@
                     </h2>
                     Every unit starts the game in reserves (outside of the board space).
                     <br/>
-                    At the beginning of every turn, every unit of both players gains 2 <div class="action_token token">AT</div>.
-                    <br/>
                     <br/>
                     Players alternate selecting one of their previously unselected units, starting with the starting player.
                     <br/>
-                    When a unit is selected, it can sequentially perform any amount of actions.
-                    <br/>
-                    Choosing any action requires spending the specified amount of <div class="action_token token">AT</div> unless otherwise stated.
-                    <br/>
+                    When a unit is selected, it can sequentially perform up to 2 different actions.
                     <br/>
                     The turn ends when all units have been selected once.
                     <br/>
@@ -160,8 +155,6 @@
                     </h2>
                     <div class="action">
                         <h4>
-                            1<div class="action_token token">AT</div>
-                            <br/>
                             Deploy
                         </h4>
                         <div>
@@ -172,8 +165,6 @@
                     </div>
                     <div class="action">
                         <h4>
-                            1<div class="action_token token">AT</div>
-                            <br/>
                             Attack
                         </h4>
                         <div>
@@ -183,18 +174,14 @@
                                 Select one of the model's weapons, and, if possible, select one visible enemy unit as "target unit" for this weapon.
                             </div>
                             <br/>
-                            Every enemy target unit may then perform the following action:
+                            Every enemy target unit may once per turn then perform the following action:
                             <br/>
                             <div class="action">
                                 <h4>
-                                    1<div class="action_token token">AT</div>
-                                    <br/>
                                     Brace
                                 </h4>
                                 <div>
-                                    If this unit is in cover, this unit can only lose health points from melee attacks.
-                                    <br/>
-                                    Otherwise, during this attack, increase the ⛊ armor characteristic of models in this unit by 1.
+                                    During this attack, increase the ⛊ armor characteristic of models in this unit by 1.
                                 </div>
                             </div>
                             <br/>
@@ -203,6 +190,8 @@
                                 Repeat for weapon: <b>hits</b>:
                                 <div class="indented">
                                     If the target unit does not exist, end the attack sequence for this weapon.
+                                    <br/>
+                                    If the target unit is in cover, this unit can only lose health points from melee attacks.
                                     <br/>
                                     <br/>
                                     Reduce unit: <b>health</b> by max(0, weapon: <b>💥strength</b> - target model: <b>⛊armor</b>).
@@ -220,14 +209,12 @@
                     </div>
                     <div class="action">
                         <h4>
-                            2<div class="action_token token">AT</div>
-                            <br/>
                             Heavy attack
                         </h4>
                         <div>
-                            Perform one "Attack" action at no cost.
+                            Cannot perform this action if another action has already been performed by this unit this turn.
                             <br/>
-                            During this attack, can use weapons with
+                            Perform one "Attack" action, and during this attack, can use weapons with
                             <div class="keyword kw_attack" title='Can only use this weapon when performing the "Heavy attack" action.'>
                                 <span>heavy</span>
                             </div>
@@ -241,8 +228,6 @@
                     </h2>
                     <div class="action">
                         <h4>
-                            1<div class="action_token token">AT</div>
-                            <br/>
                             Move
                         </h4>
                         <div>
@@ -253,8 +238,6 @@
                     </div>
                     <div class="action">
                         <h4>
-                            1<div class="action_token token">AT</div>
-                            <br/>
                             Fly
                         </h4>
                         <div>
@@ -265,19 +248,17 @@
                     </div>
                     <div class="action">
                         <h4>
-                            2<div class="action_token token">AT</div>
-                            <br/>
                             Score objective
                         </h4>
                         <div>
+                            Cannot perform this action if another action has already been performed by this unit this turn.
+                            <br/>
                             If within 5 cm of an objective marker, and no enemy unit is within 5 cm of that objective marker:
                             Gain 1 victory point and remove the objective marker.
                         </div>
                     </div>
                     <div class="action">
                         <h4>
-                            2<div class="action_token token">AT</div>
-                            <br/>
                             Setup teleportation
                         </h4>
                         <div>

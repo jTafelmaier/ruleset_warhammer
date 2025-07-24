@@ -81,10 +81,7 @@ def get_text_html_army_lists(
 
                 return "<div class=\"action_tokens\" onclick=\"reduce_action_tokens('" \
                     + text_id_row \
-                    + "')\">" \
-                    + ("<div class=\"action_token token\">AT</div>" \
-                        * 2) \
-                    + "</div>"
+                    + "')\"><div class=\"action_token token\">AT</div></div>"
 
             return "<tr id=\"" \
                 + text_id_row \
