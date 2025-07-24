@@ -156,6 +156,11 @@ body {
         0 100%);
 }
 
+.action_token.brace {
+    background: radial-gradient(ellipse at 20px 5px, #b1b1ff 0%, #5964ff 10%, #807cff 12%, #5964ff 14%, #626d84 80%, #646284 100%);
+
+}
+
 .action_token.token.used {
     background: #2e3544;
 }
