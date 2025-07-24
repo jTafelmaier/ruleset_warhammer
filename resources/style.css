@@ -236,8 +236,12 @@ body {
     padding: 5px;
 }
 
-.inactive_data .list_building {
+.list_building {
     align-self: flex-end;
+}
+
+.list_building .keyword {
+    margin-bottom: 4px;
 }
 
 div.points_cost {
@@ -306,8 +310,6 @@ div.points_cost {
     padding: 2px;
     padding-left: 5px;
     padding-right: 5px;
-    margin-top: 2px;
-    margin-bottom: 2px;
 }
 
 .keyword span {
@@ -328,15 +330,13 @@ div.points_cost {
 td.range {
     width: 3em;
     text-align: left;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 4px;
 }
 
 td.strength {
     width: 5em;
     text-align: right;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 2px;
 }
 
 .health_bar {
