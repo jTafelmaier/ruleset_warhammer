@@ -44,9 +44,7 @@
                             "range": "-",
                             "hits": 2,
                             "strength": 7,
-                            "keywords_weapon": [
-                                "heavy"
-                            ]
+                            "keywords_weapon": []
                         },
                         {
                             "range": "melee",
@@ -121,7 +119,6 @@
                             "hits": 4,
                             "strength": 4,
                             "keywords_weapon": [
-                                "heavy",
                                 "ap"
                             ]
                         },
@@ -561,14 +558,15 @@
                             "range": "melee",
                             "hits": 4,
                             "strength": 7,
-                            "keywords_weapon": []
+                            "keywords_weapon": [
+                                "heavy"
+                            ]
                         },
                         {
                             "range": "melee",
                             "hits": 1,
                             "strength": 8,
                             "keywords_weapon": [
-                                "heavy",
                                 "ap"
                             ]
                         }
@@ -777,9 +775,7 @@
                             "range": "20 cm",
                             "hits": 1,
                             "strength": 7,
-                            "keywords_weapon": [
-                                "heavy"
-                            ]
+                            "keywords_weapon": []
                         }
                     ]
                 },
