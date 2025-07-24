@@ -228,25 +228,6 @@ body {
     margin-top: 20px;
 }
 
-.container_unit {
-    display: flex;
-    margin-bottom: 20px;
-    background-color: #a5adbd;
-    border-radius: 8px;
-}
-
-.inactive_data {
-    flex: 1;
-    display: grid;
-    padding: 5px;
-}
-
-div.points_cost {
-    text-align: left;
-    color: #4a5266;
-    padding: 2px;
-}
-
 .unit {
     width: 550px;
     height: 220px;
@@ -254,6 +235,7 @@ div.points_cost {
     box-shadow: inset 400px 0px 400px -100px #2e3544;
     border: 2px solid #2e3544;
     border-radius: 8px;
+    margin-bottom: 20px;
 }
 
 .image_unit {
@@ -344,10 +326,6 @@ td.strength {
     display: grid;
     grid-template-columns: 550px 550px;
     gap: 20px 50px;
-}
-
-#army_lists .unit {
-    margin-bottom: 20px;
 }
 
 .action_tokens:hover {

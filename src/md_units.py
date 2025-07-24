@@ -93,7 +93,11 @@ def get_text_html_unit(
                 dict_unit
                     ["actions"]))
 
-    return "<div class=\"unit\" style=\"background-image: url('resources/background.png')\"><div class=\"image_unit\" style=\"background-image: url('" \
+    return "<div class=\"unit\" title=\"" \
+        + str(
+            dict_unit \
+                ["points_per_model"]) \
+        + " points per model.\" style=\"background-image: url('resources/background.png')\"><div class=\"image_unit\" style=\"background-image: url('" \
         + path_image_unit \
         + "')\"><div class=\"header_unit\"><h3 class=\"name_unit\">" \
         + dict_unit \

@@ -26,16 +26,10 @@ def get_text_html_faction_rules(
         def get_text_html_unit(
             dict_unit:typing.Dict):
 
-            return "<div class=\"container_unit\"><div class=\"inactive_data\"><div><div class=\"points_cost\">" \
-                + str(
-                    dict_unit \
-                        ["points_per_model"]) \
-                + " points</div></div></div>" \
-                + md_units.get_text_html_unit(
+            return md_units.get_text_html_unit(
                     dict_unit=dict_unit,
                     dict_keywords=dict_keywords,
-                    name_directory_faction=name_directory_faction) \
-                + "</div>"
+                    name_directory_faction=name_directory_faction)
 
         return "" \
             .join(
