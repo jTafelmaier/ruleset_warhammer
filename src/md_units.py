@@ -72,7 +72,11 @@ def get_text_html_unit(
             + "💥" \
             + str(
                 dict_action \
-                    ["strength"]) \
+                    ["strength_lower"]) \
+            + " - " \
+            + str(
+                dict_action \
+                    ["strength_upper"]) \
             + "</td></tr>"
 
     text_html_rows_actions = "\n" \

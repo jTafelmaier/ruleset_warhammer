@@ -200,7 +200,21 @@
                                     If the target unit the target unit is in cover or does not exist, end the attack sequence for this weapon.
                                     <br/>
                                     <br/>
-                                    Reduce unit: <b>health</b> by max(0, weapon: <b>💥strength</b> - target model: <b>⛊armor</b>).
+                                    If target model: <b>⛊armor</b> is higher than weapon <b>💥strength (high)</b>:
+                                    <div class="indented">
+                                        damage = 0
+                                    </div>
+                                    If target model: <b>⛊armor</b> is within the weapon <b>💥strength</b> range:
+                                    <div class="indented">
+                                        damage = 1
+                                    </div>
+                                    If target model: <b>⛊armor</b> is lower than weapon <b>💥strength (low)</b>:
+                                    <div class="indented">
+                                        damage = 1 + (weapon <b>💥strength (low)</b> - target model: <b>⛊armor</b>)
+                                    </div>
+                                    <br/>
+                                    <br/>
+                                    Reduce unit: <b>health</b> by damage.
                                     <br/>
                                     <br/>
                                     If unit: <b>health</b> &lt= 0:

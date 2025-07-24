@@ -10,7 +10,6 @@
         "score": "This model's unit can perform the &quot;Score objective&quot; action.\nFurthermore, this unit can be attached to another friendly unit at deployment. While this unit is attached to another unit, it cannot be selected as a target unit."
     },
     "keywords_weapon": {
-        "ap": "If the target model's armor characteristic is no more than 2 higher than this weapon's strength: The minimum damage infliced by each hit is 1.",
         "heavy": "Can only use this weapon when performing the &quot;Heavy attack&quot; action."
     }
 }
