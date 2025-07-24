@@ -99,14 +99,14 @@ def get_text_html_unit(
                 ["points_per_model"]) \
         + " points per model.\" style=\"background-image: url('resources/background.png')\"><div class=\"image_unit\" style=\"background-image: url('" \
         + path_image_unit \
-        + "')\"><div class=\"header_unit\"><h3 class=\"name_unit\">" \
-        + dict_unit \
-            ["name"] \
-        + "</h3><div class=\"armor\">⛊" \
+        + "')\"><div class=\"header_unit\"><div class=\"armor\">⛊" \
         + str(
             dict_unit \
                 ["armor"]) \
-        + "</div></div><div class=\"model_properties\"><div class=\"model_property keywords\">" \
+        + "</div><h3 class=\"name_unit\">" \
+        + dict_unit \
+            ["name"] \
+        + "</h3></div><div class=\"model_properties\"><div class=\"model_property keywords\">" \
         + get_text_html_keywords(
             dict_entity=dict_unit,
             dict_keywords=dict_keywords,

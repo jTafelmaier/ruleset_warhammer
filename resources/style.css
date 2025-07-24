@@ -250,7 +250,7 @@ body {
 .header_unit {
     display: flex;
     padding: 2px;
-    height: 29px;
+    height: 25px;
 }
 
 .name_unit {
@@ -263,15 +263,12 @@ body {
 }
 
 .armor {
-    float: right;
-    padding: 2px;
+    width: 2.5em;
     text-align: center;
     border: 2px solid white;
     border-radius: 2px;
     color: white;
-    width: 2.5em;
     background-color: #4a5266;
-    margin: 2px;
 }
 
 .model_properties {
