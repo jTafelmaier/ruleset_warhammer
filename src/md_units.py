@@ -22,42 +22,44 @@ def get_text_html_health_bar(
         + "</div>"
 
 
+def get_text_html_keywords(
+    dict_entity:typing.Dict,
+    dict_keywords:typing.Dict,
+    text_category:str):
+
+    def get_text_html_keyword(
+        text_keyword:str):
+
+        text_name_keyword, \
+        _, \
+        text_parameters = text_keyword \
+            .partition(" ")
+
+        return "<div class=\"keyword " \
+            + text_category \
+            + "\"title=\"" \
+            + dict_keywords \
+                [text_category] \
+                [text_name_keyword] \
+            + "\"><span>" \
+            + text_name_keyword \
+            + "</span> " \
+            + text_parameters \
+            + "</div>"
+
+    return "" \
+        .join(
+            map(
+                get_text_html_keyword,
+                dict_entity \
+                    [text_category]))
+
+
 def get_text_html_unit(
     dict_unit:typing.Dict,
     dict_keywords:typing.Dict,
     name_directory_faction:str,
     bool_show_inactive_information:bool):
-
-    def get_text_html_keywords(
-        dict_entity:typing.Dict,
-        text_category:str):
-
-        def get_text_html_keyword(
-            text_keyword:str):
-
-            text_name_keyword, \
-            _, \
-            text_parameters = text_keyword \
-                .partition(" ")
-
-            return "<div class=\"keyword " \
-                + text_category \
-                + "\"title=\"" \
-                + dict_keywords \
-                    [text_category] \
-                    [text_name_keyword] \
-                + "\"><span>" \
-                + text_name_keyword \
-                + "</span> " \
-                + text_parameters \
-                + "</div>"
-
-        return "" \
-            .join(
-                map(
-                    get_text_html_keyword,
-                    dict_entity \
-                        [text_category]))
 
     path_image_unit = "/" \
         .join(
@@ -79,6 +81,7 @@ def get_text_html_unit(
             + "</td><td class=\"keywords\">" \
             + get_text_html_keywords(
                 dict_entity=dict_action,
+                dict_keywords=dict_keywords,
                 text_category="keywords_weapon") \
             + "</td><td class=\"strength\">" \
             + text_hits \
@@ -104,6 +107,7 @@ def get_text_html_unit(
             + " points</div></div><div class=\"list_building\">" \
             + get_text_html_keywords(
                 dict_entity=dict_unit,
+                dict_keywords=dict_keywords,
                 text_category="keywords_deployment") \
             + "</div></div>"
 
@@ -128,6 +132,7 @@ def get_text_html_unit(
         + "</div></div><div class=\"model_properties\"><div class=\"model_property keywords\">" \
         + get_text_html_keywords(
             dict_entity=dict_unit,
+            dict_keywords=dict_keywords,
             text_category="keywords_model") \
         + "</div><div class=\"model_property weapons\"><table class=\"table_default fullwidth\"><tbody><tr><th/><th/><th/></tr>" \
         + text_html_rows_actions \
