@@ -3,4 +3,5 @@
 
 
 add victory status element
+correct interaction with action tokens
 
