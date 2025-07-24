@@ -965,7 +965,7 @@
                 },
                 {
                     "name": "Lokhust destroyer - Gauss",
-                    "points_per_model": 200,
+                    "points_per_model": 150,
                     "armor": 7,
                     "keywords_deployment": [],
                     "keywords_model": [
@@ -986,7 +986,7 @@
                 },
                 {
                     "name": "Lokhust destroyer - Enmitic",
-                    "points_per_model": 200,
+                    "points_per_model": 150,
                     "armor": 7,
                     "keywords_deployment": [],
                     "keywords_model": [
