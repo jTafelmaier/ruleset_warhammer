@@ -717,6 +717,7 @@
                     "points_per_model": 200,
                     "armor": 5,
                     "keywords_model": [
+                        "teleportation",
                         "stealth",
                         "score",
                         "move 15"
