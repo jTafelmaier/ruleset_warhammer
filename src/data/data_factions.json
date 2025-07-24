@@ -7,7 +7,6 @@
                     "name": "Aethon Shaan",
                     "points_per_model": 200,
                     "armor": 5,
-                    "keywords_deployment": [],
                     "keywords_model": [
                         "stealth",
                         "score",
@@ -34,7 +33,6 @@
                     "name": "Iron father Feirros",
                     "points_per_model": 200,
                     "armor": 6,
-                    "keywords_deployment": [],
                     "keywords_model": [
                         "score",
                         "move 15"
@@ -60,10 +58,8 @@
                     "name": "Darnath Lysander",
                     "points_per_model": 200,
                     "armor": 7,
-                    "keywords_deployment": [
-                        "teleportation"
-                    ],
                     "keywords_model": [
+                        "teleportation",
                         "score",
                         "move 10"
                     ],
@@ -81,10 +77,8 @@
                     "name": "Belial",
                     "points_per_model": 200,
                     "armor": 6,
-                    "keywords_deployment": [
-                        "teleportation"
-                    ],
                     "keywords_model": [
+                        "teleportation",
                         "score",
                         "move 10"
                     ],
@@ -109,7 +103,6 @@
                     "name": "Suboden Khan",
                     "points_per_model": 200,
                     "armor": 6,
-                    "keywords_deployment": [],
                     "keywords_model": [
                         "score",
                         "fly 35"
@@ -135,10 +128,8 @@
                     "name": "Castellan Crowe",
                     "points_per_model": 200,
                     "armor": 5,
-                    "keywords_deployment": [
-                        "teleportation"
-                    ],
                     "keywords_model": [
+                        "teleportation",
                         "score",
                         "move 15"
                     ],
@@ -163,7 +154,6 @@
                     "name": "Captain with jump pack",
                     "points_per_model": 100,
                     "armor": 5,
-                    "keywords_deployment": [],
                     "keywords_model": [
                         "score",
                         "fly 25"
@@ -189,7 +179,6 @@
                     "name": "Captain in gravis armour",
                     "points_per_model": 100,
                     "armor": 6,
-                    "keywords_deployment": [],
                     "keywords_model": [
                         "score",
                         "move 10"
@@ -215,7 +204,6 @@
                     "name": "Heavy intercessors",
                     "points_per_model": 50,
                     "armor": 5,
-                    "keywords_deployment": [],
                     "keywords_model": [
                         "move 10"
                     ],
@@ -233,7 +221,6 @@
                     "name": "Eradicators",
                     "points_per_model": 50,
                     "armor": 5,
-                    "keywords_deployment": [],
                     "keywords_model": [
                         "move 10"
                     ],
@@ -258,7 +245,6 @@
                     "name": "Jump pack intercessors",
                     "points_per_model": 50,
                     "armor": 4,
-                    "keywords_deployment": [],
                     "keywords_model": [
                         "fly 25"
                     ],
@@ -283,7 +269,6 @@
                     "name": "Gladiator lancer",
                     "points_per_model": 400,
                     "armor": 10,
-                    "keywords_deployment": [],
                     "keywords_model": [
                         "large",
                         "move 25"
@@ -311,7 +296,6 @@
                     "name": "Castellan",
                     "points_per_model": 100,
                     "armor": 5,
-                    "keywords_deployment": [],
                     "keywords_model": [
                         "score",
                         "move 15"
@@ -337,7 +321,6 @@
                     "name": "Sword brethren",
                     "points_per_model": 50,
                     "armor": 4,
-                    "keywords_deployment": [],
                     "keywords_model": [
                         "move 15"
                     ],
@@ -362,7 +345,6 @@
                     "name": "Crusader squad",
                     "points_per_model": 50,
                     "armor": 4,
-                    "keywords_deployment": [],
                     "keywords_model": [
                         "move 15"
                     ],
@@ -387,10 +369,8 @@
                     "name": "Deathwing strikemaster",
                     "points_per_model": 200,
                     "armor": 7,
-                    "keywords_deployment": [
-                        "teleportation"
-                    ],
                     "keywords_model": [
+                        "teleportation",
                         "score",
                         "move 10"
                     ],
@@ -408,10 +388,8 @@
                     "name": "Deathwing knights",
                     "points_per_model": 100,
                     "armor": 6,
-                    "keywords_deployment": [
-                        "teleportation"
-                    ],
                     "keywords_model": [
+                        "teleportation",
                         "move 10"
                     ],
                     "actions": [
@@ -428,7 +406,6 @@
                     "name": "Inner circle companions",
                     "points_per_model": 100,
                     "armor": 4,
-                    "keywords_deployment": [],
                     "keywords_model": [
                         "stealth",
                         "move 15"
@@ -459,10 +436,8 @@
                     "name": "Corswain",
                     "points_per_model": 200,
                     "armor": 5,
-                    "keywords_deployment": [
-                        "teleportation"
-                    ],
                     "keywords_model": [
+                        "teleportation",
                         "score",
                         "move 15"
                     ],
@@ -487,10 +462,8 @@
                     "name": "Marduk Sedras",
                     "points_per_model": 200,
                     "armor": 6,
-                    "keywords_deployment": [
-                        "teleportation"
-                    ],
                     "keywords_model": [
+                        "teleportation",
                         "score",
                         "move 10"
                     ],
@@ -524,7 +497,6 @@
                     "name": "Hibou Khan",
                     "points_per_model": 150,
                     "armor": 5,
-                    "keywords_deployment": [],
                     "keywords_model": [
                         "stealth",
                         "score",
@@ -551,7 +523,6 @@
                     "name": "Lord Invocatus",
                     "points_per_model": 250,
                     "armor": 6,
-                    "keywords_deployment": [],
                     "keywords_model": [
                         "score",
                         "move 25"
@@ -579,10 +550,8 @@
                     "name": "Slaughterbound",
                     "points_per_model": 150,
                     "armor": 5,
-                    "keywords_deployment": [
-                        "teleportation"
-                    ],
                     "keywords_model": [
+                        "teleportation",
                         "score",
                         "move 20"
                     ],
@@ -600,10 +569,8 @@
                     "name": "Exalted Eightbound",
                     "points_per_model": 100,
                     "armor": 4,
-                    "keywords_deployment": [
-                        "teleportation"
-                    ],
                     "keywords_model": [
+                        "teleportation",
                         "move 20"
                     ],
                     "actions": [
@@ -629,7 +596,6 @@
                     "name": "Eightbound",
                     "points_per_model": 50,
                     "armor": 4,
-                    "keywords_deployment": [],
                     "keywords_model": [
                         "move 20"
                     ],
@@ -647,7 +613,6 @@
                     "name": "Khorne Berzerkers",
                     "points_per_model": 50,
                     "armor": 4,
-                    "keywords_deployment": [],
                     "keywords_model": [
                         "move 20"
                     ],
@@ -677,10 +642,8 @@
                     "name": "Magnus the red",
                     "points_per_model": 800,
                     "armor": 8,
-                    "keywords_deployment": [
-                        "teleportation"
-                    ],
                     "keywords_model": [
+                        "teleportation",
                         "stealth",
                         "score",
                         "move 15"
@@ -706,10 +669,8 @@
                     "name": "Librarian consul",
                     "points_per_model": 150,
                     "armor": 5,
-                    "keywords_deployment": [
-                        "teleportation"
-                    ],
                     "keywords_model": [
+                        "teleportation",
                         "score",
                         "move 15"
                     ],
@@ -734,7 +695,6 @@
                     "name": "Warsmith",
                     "points_per_model": 150,
                     "armor": 6,
-                    "keywords_deployment": [],
                     "keywords_model": [
                         "score",
                         "move 10"
@@ -771,7 +731,6 @@
                     "name": "MkII Marines",
                     "points_per_model": 50,
                     "armor": 4,
-                    "keywords_deployment": [],
                     "keywords_model": [
                         "move 15"
                     ],
@@ -796,7 +755,6 @@
                     "name": "MkII Marines with disintegrator weapons",
                     "points_per_model": 50,
                     "armor": 4,
-                    "keywords_deployment": [],
                     "keywords_model": [
                         "move 15"
                     ],
@@ -816,7 +774,6 @@
                     "name": "MkII Assault Squad",
                     "points_per_model": 50,
                     "armor": 4,
-                    "keywords_deployment": [],
                     "keywords_model": [
                         "fly 25"
                     ],
@@ -841,7 +798,6 @@
                     "name": "Araknae accelerator platform",
                     "points_per_model": 200,
                     "armor": 10,
-                    "keywords_deployment": [],
                     "keywords_model": [
                         "large"
                     ],
@@ -861,7 +817,6 @@
                     "name": "Fellblade super-heavy tank",
                     "points_per_model": 600,
                     "armor": 12,
-                    "keywords_deployment": [],
                     "keywords_model": [
                         "large",
                         "move 25"
@@ -905,7 +860,6 @@
                     "name": "Warrior",
                     "points_per_model": 50,
                     "armor": 4,
-                    "keywords_deployment": [],
                     "keywords_model": [
                         "score",
                         "move 15"
@@ -926,10 +880,8 @@
                     "name": "Hexmark destroyer",
                     "points_per_model": 250,
                     "armor": 6,
-                    "keywords_deployment": [
-                        "teleportation"
-                    ],
                     "keywords_model": [
+                        "teleportation",
                         "stealth",
                         "score",
                         "move 15"
@@ -948,7 +900,6 @@
                     "name": "Skorpekh destroyer",
                     "points_per_model": 100,
                     "armor": 6,
-                    "keywords_deployment": [],
                     "keywords_model": [
                         "score",
                         "move 15"
@@ -967,7 +918,6 @@
                     "name": "Lokhust destroyer - Gauss",
                     "points_per_model": 150,
                     "armor": 7,
-                    "keywords_deployment": [],
                     "keywords_model": [
                         "score",
                         "fly 15"
@@ -988,7 +938,6 @@
                     "name": "Lokhust destroyer - Enmitic",
                     "points_per_model": 150,
                     "armor": 7,
-                    "keywords_deployment": [],
                     "keywords_model": [
                         "score",
                         "fly 15"
@@ -1014,7 +963,6 @@
                     "name": "Kratos heavy assault tank",
                     "points_per_model": 400,
                     "armor": 10,
-                    "keywords_deployment": [],
                     "keywords_model": [
                         "large",
                         "move 25"
@@ -1042,7 +990,6 @@
                     "name": "Leviathan siege dreadnought",
                     "points_per_model": 200,
                     "armor": 9,
-                    "keywords_deployment": [],
                     "keywords_model": [
                         "large",
                         "move 15"

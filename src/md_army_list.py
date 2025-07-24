@@ -67,8 +67,6 @@ def get_text_html_army_lists(
             dict_unit = dict_units \
                 [text_name_unit]
 
-            text_teleportation = "(t) " if "teleportation" in dict_unit["keywords_deployment"] else ""
-
             text_id_row = "army_list_tr_" \
                 + text_side \
                 + "_" \
@@ -101,7 +99,6 @@ def get_text_html_army_lists(
                 + "</div></td><td>" \
                 + get_text_html_action_tokens() \
                 + "</td><td>" \
-                + text_teleportation \
                 + text_name_unit \
                 + "</td><td class=\"count_models\" initial=\"" \
                 + str(

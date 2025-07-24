@@ -30,12 +30,7 @@ def get_text_html_faction_rules(
                 + str(
                     dict_unit \
                         ["points_per_model"]) \
-                + " points</div></div><div class=\"list_building\">" \
-                + md_units.get_text_html_keywords(
-                    dict_entity=dict_unit,
-                    dict_keywords=dict_keywords,
-                    text_category="keywords_deployment") \
-                + "</div></div>" \
+                + " points</div></div></div>" \
                 + md_units.get_text_html_unit(
                     dict_unit=dict_unit,
                     dict_keywords=dict_keywords,

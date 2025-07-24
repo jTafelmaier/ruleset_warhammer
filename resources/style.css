@@ -241,14 +241,6 @@ body {
     padding: 5px;
 }
 
-.list_building {
-    align-self: flex-end;
-}
-
-.list_building .keyword {
-    margin-bottom: 4px;
-}
-
 div.points_cost {
     text-align: left;
     color: #4a5266;
@@ -302,7 +294,7 @@ div.points_cost {
 
 .model_properties {
     align-self: flex-end;
-    width: 250px;
+    width: 280px;
     padding: 5px;
     margin-top: 20px;
 }
@@ -319,10 +311,6 @@ div.points_cost {
 .keyword span {
     color: #9e59ff;
     font-weight: bold;
-}
-
-.keyword.keywords_deployment span {
-    color: #626d84;
 }
 
 .weapons td {
