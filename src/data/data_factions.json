@@ -478,13 +478,6 @@
                             "strength_upper": 5
                         },
                         {
-                            "range": "20 cm",
-                            "hits": 1,
-                            "keywords_weapon": [],
-                            "strength_lower": 6,
-                            "strength_upper": 8
-                        },
-                        {
                             "range": "melee",
                             "hits": 1,
                             "keywords_weapon": [],
@@ -749,13 +742,6 @@
                         "move 10"
                     ],
                     "actions": [
-                        {
-                            "range": "-",
-                            "hits": 2,
-                            "keywords_weapon": [],
-                            "strength_lower": 5,
-                            "strength_upper": 5
-                        },
                         {
                             "range": "-",
                             "hits": 1,
