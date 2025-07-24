@@ -335,6 +335,8 @@ td.range {
 td.strength {
     width: 5em;
     text-align: right;
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
 
 .health_bar {
