@@ -1,6 +1,5 @@
 {
     "keywords_deployment": {
-        "attachable": "This unit can be attached to another friendly unit at deployment. While a unit is attached to another unit, it cannot be selected as a target unit.",
         "teleportation": "This model's unit can perform the &quot;Setup teleportation&quot; action."
     },
     "keywords_model": {
@@ -8,7 +7,7 @@
         "large_profile": "This unit cannot perform the &quot;Brace&quot; action, and units cannot attach to this unit.",
         "fly": "This model can perform the &quot;Fly&quot; action up to the given distance.",
         "move": "This model can perform the &quot;Move&quot; action up to the given distance.",
-        "score": "This model's unit can perform the &quot;Score objective&quot; action."
+        "score": "This model's unit can perform the &quot;Score objective&quot; action.\nFurthermore, this unit can be attached to another friendly unit at deployment. While this unit is attached to another unit, it cannot be selected as a target unit."
     },
     "keywords_weapon": {
         "ap": "If the target model's armor characteristic is no more than 2 higher than this weapon's strength: The minimum damage infliced by each hit is 1.",
