@@ -79,9 +79,13 @@ def get_text_html_army_lists(
                 if dict_unit_army_list["attached_to_index"] is not None:
                     return "attached"
 
+                text_token_brace = "<div class=\"action_token brace token\">AT</div>" if "large" not in dict_unit["keywords_model"] else ""
+
                 return "<div class=\"action_tokens\" onclick=\"reduce_action_tokens('" \
                     + text_id_row \
-                    + "')\"><div class=\"action_token token\">AT</div><div class=\"action_token brace token\">AT</div></div>"
+                    + "')\"><div class=\"action_token token\">AT</div>" \
+                    + text_token_brace \
+                    + "</div>"
 
             return "<tr id=\"" \
                 + text_id_row \
