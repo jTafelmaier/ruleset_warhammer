@@ -58,8 +58,7 @@ def get_text_html_keywords(
 def get_text_html_unit(
     dict_unit:typing.Dict,
     dict_keywords:typing.Dict,
-    name_directory_faction:str,
-    bool_show_inactive_information:bool):
+    name_directory_faction:str):
 
     path_image_unit = "/" \
         .join(
@@ -91,26 +90,6 @@ def get_text_html_unit(
                     ["strength"]) \
             + "</td></tr>"
 
-    def get_text_html_inactive_information():
-
-        if not bool_show_inactive_information:
-            return ""
-
-        return "<div class=\"inactive_data\"><div>" \
-            + get_text_html_health_bar(
-                dict_unit=dict_unit,
-                text_id=None) \
-            + "<div class=\"points_cost\">" \
-            + str(
-                dict_unit \
-                    ["points_per_model"]) \
-            + " points</div></div><div class=\"list_building\">" \
-            + get_text_html_keywords(
-                dict_entity=dict_unit,
-                dict_keywords=dict_keywords,
-                text_category="keywords_deployment") \
-            + "</div></div>"
-
     text_html_rows_actions = "\n" \
         .join(
             map(
@@ -118,9 +97,7 @@ def get_text_html_unit(
                 dict_unit
                     ["actions"]))
 
-    return "<div class=\"container_unit\">" \
-        + get_text_html_inactive_information() \
-        + "<div class=\"unit\" style=\"background-image: url('resources/background.png')\"><div class=\"image_unit\" style=\"background-image: url('" \
+    return "<div class=\"unit\" style=\"background-image: url('resources/background.png')\"><div class=\"image_unit\" style=\"background-image: url('" \
         + path_image_unit \
         + "')\"><div class=\"header_unit\"><h3 class=\"name_unit\">" \
         + dict_unit \
@@ -136,5 +113,5 @@ def get_text_html_unit(
             text_category="keywords_model") \
         + "</div><div class=\"model_property weapons\"><table class=\"table_default fullwidth\"><tbody><tr><th/><th/><th/></tr>" \
         + text_html_rows_actions \
-        + "</tbody></table></div></div></div></div></div>"
+        + "</tbody></table></div></div></div></div>"
 

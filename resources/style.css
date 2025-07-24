@@ -354,6 +354,10 @@ td.strength {
     gap: 20px 50px;
 }
 
+#army_lists .unit {
+    margin-bottom: 20px;
+}
+
 .action_tokens:hover {
     box-shadow: 0 0 4px 1px #48abe0;
 }

@@ -26,11 +26,25 @@ def get_text_html_faction_rules(
         def get_text_html_unit(
             dict_unit:typing.Dict):
 
-            return md_units.get_text_html_unit(
+            return "<div class=\"container_unit\"><div class=\"inactive_data\"><div>" \
+                + md_units.get_text_html_health_bar(
+                    dict_unit=dict_unit,
+                    text_id=None) \
+                + "<div class=\"points_cost\">" \
+                + str(
+                    dict_unit \
+                        ["points_per_model"]) \
+                + " points</div></div><div class=\"list_building\">" \
+                + md_units.get_text_html_keywords(
+                    dict_entity=dict_unit,
+                    dict_keywords=dict_keywords,
+                    text_category="keywords_deployment") \
+                + "</div></div>" \
+                + md_units.get_text_html_unit(
                     dict_unit=dict_unit,
                     dict_keywords=dict_keywords,
-                    name_directory_faction=name_directory_faction,
-                    bool_show_inactive_information=True)
+                    name_directory_faction=name_directory_faction) \
+                + "</div>"
 
         return "" \
             .join(

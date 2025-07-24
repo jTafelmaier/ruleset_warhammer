@@ -151,8 +151,7 @@ def get_text_html_army_lists(
             return md_units.get_text_html_unit(
                     dict_unit=dict_unit,
                     dict_keywords=dict_keywords,
-                    name_directory_faction=name_directory_faction,
-                    bool_show_inactive_information=False)
+                    name_directory_faction=name_directory_faction)
 
         set_names_units_in_army_list = set(
                 map(
