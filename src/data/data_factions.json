@@ -250,7 +250,7 @@
                             "hits": 1,
                             "keywords_weapon": [],
                             "strength_lower": 8,
-                            "strength_upper": 10
+                            "strength_upper": 12
                         }
                     ]
                 },
@@ -303,7 +303,7 @@
                                 "heavy"
                             ],
                             "strength_lower": 14,
-                            "strength_upper": 16
+                            "strength_upper": 18
                         }
                     ]
                 },
@@ -917,7 +917,7 @@
                             "keywords_weapon": [
                                 "heavy"
                             ],
-                            "strength_lower": 6,
+                            "strength_lower": 5,
                             "strength_upper": 8
                         }
                     ]
@@ -980,7 +980,7 @@
                                 "heavy"
                             ],
                             "strength_lower": 12,
-                            "strength_upper": 14
+                            "strength_upper": 18
                         }
                     ]
                 },
@@ -1052,8 +1052,8 @@
                             "range": "20 cm",
                             "hits": 2,
                             "keywords_weapon": [],
-                            "strength_lower": 9,
-                            "strength_upper": 11
+                            "strength_lower": 8,
+                            "strength_upper": 12
                         },
                         {
                             "range": "melee",
