@@ -59,6 +59,19 @@ def get_text_html_unit(
 
         text_hits = str(dict_action["hits"]) + "x " if dict_action["hits"] > 1 else ""
 
+        def get_text_strength():
+
+            if dict_action["strength_lower"] == dict_action["strength_upper"]:
+                return str(dict_action["strength_lower"])
+            else:
+                return str(
+                        dict_action \
+                            ["strength_lower"]) \
+                    + " - " \
+                    + str(
+                        dict_action \
+                            ["strength_upper"])
+
         return "<tr><td class=\"range\">" \
             + dict_action \
                 ["range"] \
@@ -70,13 +83,7 @@ def get_text_html_unit(
             + "</td><td class=\"strength\">" \
             + text_hits \
             + "💥" \
-            + str(
-                dict_action \
-                    ["strength_lower"]) \
-            + " - " \
-            + str(
-                dict_action \
-                    ["strength_upper"]) \
+            + get_text_strength() \
             + "</td></tr>"
 
     text_html_rows_actions = "\n" \
