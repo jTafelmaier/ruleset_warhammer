@@ -276,9 +276,8 @@
                         {
                             "range": "20 cm",
                             "hits": 1,
-                            "strength": 9,
+                            "strength": 8,
                             "keywords_weapon": [
-                                "heavy",
                                 "ap"
                             ]
                         }
