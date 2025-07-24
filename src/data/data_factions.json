@@ -950,6 +950,7 @@
                     "armor": 4,
                     "keywords_deployment": [],
                     "keywords_model": [
+                        "score",
                         "move 15"
                     ],
                     "actions": [
