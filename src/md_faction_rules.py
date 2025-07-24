@@ -26,11 +26,7 @@ def get_text_html_faction_rules(
         def get_text_html_unit(
             dict_unit:typing.Dict):
 
-            return "<div class=\"container_unit\"><div class=\"inactive_data\"><div>" \
-                + md_units.get_text_html_health_bar(
-                    dict_unit=dict_unit,
-                    text_id=None) \
-                + "<div class=\"points_cost\">" \
+            return "<div class=\"container_unit\"><div class=\"inactive_data\"><div><div class=\"points_cost\">" \
                 + str(
                     dict_unit \
                         ["points_per_model"]) \

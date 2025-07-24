@@ -89,11 +89,12 @@ def get_text_html_army_lists(
                 + str(
                     dict_unit \
                         ["points_per_model"]) \
-                + "\"><td>" \
-                + md_units.get_text_html_health_bar(
-                    dict_unit=dict_unit,
-                    text_id=text_id_row) \
-                + "</td><td>" \
+                + "\"><td><div class=\"health_bar\" onclick=\"reduce_health('" \
+                + text_id_row \
+                + "')\"><div class=\"token next\" />" \
+                + ("<div class=\"token\" />" \
+                    * 7) \
+                + "</div></td><td>" \
                 + get_text_html_action_tokens() \
                 + "</td><td>" \
                 + text_teleportation \

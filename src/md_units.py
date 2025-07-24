@@ -7,21 +7,6 @@ from src import md_shared
 
 
 
-def get_text_html_health_bar(
-    dict_unit:typing.Dict,
-    text_id:str):
-
-    text_onclick = " onclick=\"reduce_health('" + text_id + "')\"" if text_id is not None else ""
-
-    return "<div class=\"health_bar\"" \
-        + text_onclick \
-        + "><div class=\"token next\" />" \
-        + ("<div class=\"token\" />" \
-            * (dict_unit \
-                ["health_points"] - 1)) \
-        + "</div>"
-
-
 def get_text_html_keywords(
     dict_entity:typing.Dict,
     dict_keywords:typing.Dict,
