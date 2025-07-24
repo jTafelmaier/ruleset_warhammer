@@ -67,10 +67,10 @@ def get_text_html_army_lists(
             dict_unit = dict_units \
                 [text_name_unit]
 
-            text_id_row = "army_list_tr_" \
+            text_parameters_functions = "'" \
                 + text_side \
-                + "_" \
-                + str(int_index_unit)
+                + "', " \
+                + str(int_index_unit + 1)
 
             def get_text_html_action_tokens():
 
@@ -79,21 +79,19 @@ def get_text_html_army_lists(
 
                 text_token_brace = "<div class=\"action_token brace token\">AT</div>" if "large" not in dict_unit["keywords_model"] else ""
 
-                return "<div class=\"action_tokens\" onclick=\"reduce_action_tokens('" \
-                    + text_id_row \
-                    + "')\"><div class=\"action_token token\">AT</div>" \
+                return "<div class=\"action_tokens\" onclick=\"reduce_action_tokens(" \
+                    + text_parameters_functions \
+                    + ")\"><div class=\"action_token token\">AT</div>" \
                     + text_token_brace \
                     + "</div>"
 
-            return "<tr id=\"" \
-                + text_id_row \
-                + "\" points_per_model=\"" \
+            return "<tr points_per_model=\"" \
                 + str(
                     dict_unit \
                         ["points_per_model"]) \
-                + "\"><td><div class=\"health_bar\" onclick=\"reduce_health('" \
-                + text_id_row \
-                + "')\"><div class=\"token next\" />" \
+                + "\"><td><div class=\"health_bar\" onclick=\"reduce_health(" \
+                + text_parameters_functions \
+                + ")\"><div class=\"token next\" />" \
                 + ("<div class=\"token\" />" \
                     * 7) \
                 + "</div></td><td>" \
@@ -104,16 +102,16 @@ def get_text_html_army_lists(
                 + str(
                     dict_unit_army_list \
                         ["count_models"]) \
-                + "\" onclick=\"increase_number_models('" \
-                + text_id_row \
-                + "')\">" \
+                + "\" onclick=\"increase_number_models(" \
+                + text_parameters_functions \
+                + ")\">" \
                 + str(
                     dict_unit_army_list \
                         ["count_models"]) \
                 + "</td><td class=\"points_cost\">" \
                 + str(
                     get_points_cost_unit(dict_unit_army_list)) \
-                + "</td><td/></tr>"
+                + "</td></tr>"
 
         text_html_trs_units = "" \
             .join(
@@ -127,15 +125,19 @@ def get_text_html_army_lists(
                     get_points_cost_unit,
                     list_units_army_list))
 
+        text_html_victory_state = "<div class=\"victory_state " \
+            + text_side \
+            + "\"><div class=\"victory_points\"><span onclick=\"increase_victory_points('" \
+            + text_side \
+            + "')\">0</span><span onclick=\"decrease_victory_points('" \
+            + text_side \
+            + "')\"> VP</span></div>,<span class=\"points_total\">" \
+            + str(int_total_points) \
+            + " points remaining.</span></div>"
+
         text_html_army_list = "<div class=\"army_list " \
             + text_side \
-            + "\"><table class=\"table_default fullwidth\"><tbody><tr><th>Health</th><th>AT</th><th>Unit</th><th>#</th><th class=\"points_total\">Points<br/>(" \
-            + str(int_total_points) \
-            + " total)</th><th><span onclick=\"decrease_victory_points('" \
-            + text_side \
-            + "')\">VP:</span><span class=\"victory_points\" onclick=\"increase_victory_points('" \
-            + text_side \
-            + "')\">0</span></th></tr>" \
+            + "\"><table class=\"table_default fullwidth\"><tbody><tr><th>Health</th><th>AT</th><th>Unit</th><th>#</th><th class=\"points\">Points</th></tr>" \
             + text_html_trs_units \
             + "</tbody></table></div>"
 
@@ -171,6 +173,7 @@ def get_text_html_army_lists(
             + "</div>"
 
         return [
+            text_html_victory_state,
             text_html_army_list,
             text_html_units]
 

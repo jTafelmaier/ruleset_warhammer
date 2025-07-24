@@ -35,8 +35,8 @@ function display_faction(text_id_faction) {
 function increase_victory_points(text_side) {
 
     let element_victory_points = document
-        .getElementsByClassName("army_list " + text_side)[0]
-        .getElementsByClassName("victory_points")[0]
+        .getElementsByClassName("victory_state " + text_side)[0]
+        .getElementsByTagName("span")[0]
 
     element_victory_points.textContent = (parseInt(element_victory_points.textContent) + 1).toString()
 }
@@ -45,8 +45,8 @@ function increase_victory_points(text_side) {
 function decrease_victory_points(text_side) {
 
     let element_victory_points = document
-        .getElementsByClassName("army_list " + text_side)[0]
-        .getElementsByClassName("victory_points")[0]
+        .getElementsByClassName("victory_state " + text_side)[0]
+        .getElementsByTagName("span")[0]
 
     let int_victory_points_current = parseInt(element_victory_points.textContent)
 
@@ -58,7 +58,7 @@ function decrease_victory_points(text_side) {
 }
 
 
-function update_count_models(element_tr, bool_increase) {
+function update_count_models(element_tr, text_side, bool_increase) {
 
     let element_count_models = element_tr
         .getElementsByClassName("count_models")[0]
@@ -102,27 +102,31 @@ function update_count_models(element_tr, bool_increase) {
         .map(element => parseInt(element.textContent))
         .reduce((a, b) => a + b)
 
-    element_table
+    document
+        .getElementsByClassName("victory_state " + text_side)[0]
         .getElementsByClassName("points_total")[0]
-        .textContent = "Points (" + int_points_cost_total.toString() + " total)"
+        .textContent = int_points_cost_total.toString() + " points remaining"
 }
 
 
-function increase_number_models(text_id_element) {
+function increase_number_models(text_side, index_row) {
 
     let element_tr = document
-        .getElementById(text_id_element)
+        .getElementsByClassName("army_list " + text_side)[0]
+        .getElementsByTagName("tr")[index_row]
 
     update_count_models(
         element_tr,
+        text_side,
         true)
 }
 
 
-function reduce_health(text_id_element) {
+function reduce_health(text_side, index_row) {
 
     let element_tr = document
-        .getElementById(text_id_element)
+        .getElementsByClassName("army_list " + text_side)[0]
+        .getElementsByTagName("tr")[index_row]
 
     let element_parent = element_tr
         .getElementsByClassName("health_bar")[0]
@@ -139,6 +143,7 @@ function reduce_health(text_id_element) {
 
         update_count_models(
             element_tr,
+            text_side,
             false)
     }
 
@@ -166,10 +171,11 @@ function reduce_health(text_id_element) {
 }
 
 
-function reduce_action_tokens(text_id_element) {
+function reduce_action_tokens(text_side, index_row) {
 
     let element_parent = document
-        .getElementById(text_id_element)
+        .getElementsByClassName("army_list " + text_side)[0]
+        .getElementsByTagName("tr")[index_row]
         .getElementsByClassName("action_tokens")[0]
 
     let array_tokens = element_parent

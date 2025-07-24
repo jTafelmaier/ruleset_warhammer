@@ -352,8 +352,18 @@ td.strength {
     color: #8bc5ff;
 }
 
+.victory_points {
+    display: inline-block;
+    font-size: medium;
+    font-weight: bold;
+}
+
 .victory_points:hover {
     color: #8bc5ff;
+}
+
+.points_total {
+    color: #535f79;
 }
 
 .health_bar .token {
