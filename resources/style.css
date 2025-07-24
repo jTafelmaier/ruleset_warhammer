@@ -265,6 +265,7 @@ body {
 .armor {
     width: 2.5em;
     text-align: center;
+    padding: 1px;
     border: 2px solid white;
     border-radius: 2px;
     color: white;
