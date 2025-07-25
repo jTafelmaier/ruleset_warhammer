@@ -290,13 +290,19 @@ body {
 }
 
 td.range {
-    width: 3em;
+    width: 40px;
     text-align: left;
     padding-top: 4px;
 }
 
+td.hits {
+    width: 10px;
+    text-align: right;
+    padding-top: 4px;
+}
+
 td.strength {
-    width: 7em;
+    width: 70px;
     text-align: right;
     padding-top: 2px;
 }

@@ -57,8 +57,6 @@ def get_text_html_unit(
     def get_text_html_row_action(
         dict_action:typing.Dict):
 
-        text_hits = str(dict_action["hits"]) + "x " if dict_action["hits"] > 1 else ""
-
         def get_text_strength():
 
             if dict_action["strength_lower"] == dict_action["strength_upper"]:
@@ -80,9 +78,8 @@ def get_text_html_unit(
                 dict_entity=dict_action,
                 dict_keywords=dict_keywords,
                 text_category="keywords_weapon") \
-            + "</td><td class=\"strength\">" \
-            + text_hits \
-            + "💥" \
+            + "</td><td class=\"hits\">" \
+            + str(dict_action["hits"]) + "x</td><td class=\"strength\">💥" \
             + get_text_strength() \
             + "</td></tr>"
 
@@ -111,7 +108,7 @@ def get_text_html_unit(
             dict_entity=dict_unit,
             dict_keywords=dict_keywords,
             text_category="keywords_model") \
-        + "</div><div class=\"model_property weapons\"><table class=\"table_default fullwidth\"><tbody><tr><th/><th/><th/></tr>" \
+        + "</div><div class=\"model_property weapons\"><table class=\"table_default fullwidth\"><tbody><tr><th/><th/><th/><th/></tr>" \
         + text_html_rows_actions \
         + "</tbody></table></div></div></div></div>"
 
