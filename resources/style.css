@@ -100,7 +100,6 @@ body {
     width: 600px;
     background-color: #c2cce0;
     color: #2e3544;
-    border: 2px solid #2e3544;
     margin-bottom: 10px;
     border-radius: 2px;
     clip-path: polygon(
@@ -116,7 +115,7 @@ body {
 }
 
 .action > h4 {
-    width: 100px;
+    width: 80px;
     margin-top: 0;
     margin-bottom: 0;
     font-weight: normal;
@@ -148,7 +147,6 @@ body {
 
 .action_token.brace {
     background: radial-gradient(ellipse at 20px 5px, #b1b1ff 0%, #5964ff 10%, #807cff 12%, #5964ff 14%, #626d84 80%, #646284 100%);
-
 }
 
 .action_token.token.used {
