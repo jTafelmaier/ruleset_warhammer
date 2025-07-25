@@ -3,7 +3,8 @@
 body {
     font-family: 'Nunito', Arial;
     font-size: small;
-    color: #2e3544;
+    color: white;
+    background: linear-gradient(90deg, #0b0d10 0%, #1c2029 5%, #1c2029 95%, #0b0d10 100%);
 }
 
 .fullwidth {
