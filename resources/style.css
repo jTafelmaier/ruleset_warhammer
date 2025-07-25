@@ -352,6 +352,10 @@ td.strength {
     color: #8bc5ff;
 }
 
+td.points_cost {
+    color: #c8e2fc;
+}
+
 .victory_points {
     display: inline-block;
     font-size: medium;

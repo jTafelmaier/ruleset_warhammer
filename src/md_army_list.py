@@ -96,8 +96,6 @@ def get_text_html_army_lists(
                     * 7) \
                 + "</div></td><td>" \
                 + get_text_html_action_tokens() \
-                + "</td><td>" \
-                + text_name_unit \
                 + "</td><td class=\"count_models\" initial=\"" \
                 + str(
                     dict_unit_army_list \
@@ -108,6 +106,8 @@ def get_text_html_army_lists(
                 + str(
                     dict_unit_army_list \
                         ["count_models"]) \
+                + "</td><td>" \
+                + text_name_unit \
                 + "</td><td class=\"points_cost\">" \
                 + str(
                     get_points_cost_unit(dict_unit_army_list)) \
@@ -137,7 +137,7 @@ def get_text_html_army_lists(
 
         text_html_army_list = "<div class=\"army_list " \
             + text_side \
-            + "\"><table class=\"table_default fullwidth\"><tbody><tr><th>Health</th><th>AT</th><th>Unit</th><th>#</th><th class=\"points\">Points</th></tr>" \
+            + "\"><table class=\"table_default fullwidth\"><tbody><tr><th>Health</th><th>AT</th><th>#</th><th>Unit</th><th/></tr>" \
             + text_html_trs_units \
             + "</tbody></table></div>"
 
