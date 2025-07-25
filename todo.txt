@@ -2,5 +2,6 @@
 
 
 
+separate faction html files
 correct interaction with action tokens
 

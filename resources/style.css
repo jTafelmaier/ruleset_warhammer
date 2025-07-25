@@ -211,9 +211,11 @@ body {
     margin-top: 170px;
 }
 
-.faction_content {
-    width: 650px;
+.div_faction {
     margin-top: 20px;
+    display: grid;
+    grid-template-columns: 550px 550px;
+    gap: 20px 20px;
 }
 
 .unit {
@@ -223,7 +225,6 @@ body {
     box-shadow: inset 400px 0px 400px -100px #2e3544;
     border: 2px solid #2e3544;
     border-radius: 5px;
-    margin-bottom: 20px;
 }
 
 .image_unit {
