@@ -384,8 +384,8 @@
                             "range": "melee",
                             "hits": 2,
                             "keywords_weapon": [],
-                            "strength_lower": 6,
-                            "strength_upper": 8
+                            "strength_lower": 7,
+                            "strength_upper": 9
                         }
                     ]
                 },
