@@ -678,7 +678,7 @@
                 {
                     "name": "Araknae accelerator platform",
                     "points_per_model": 200,
-                    "armor": 10,
+                    "armor": 11,
                     "keywords_model": [
                         "large"
                     ],
@@ -721,7 +721,7 @@
                         },
                         {
                             "range": "-",
-                            "hits": 1,
+                            "hits": 2,
                             "keywords_weapon": [
                                 "heavy"
                             ],
