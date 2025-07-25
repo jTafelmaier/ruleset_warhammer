@@ -177,50 +177,47 @@
                         </h4>
                         <div>
                             For every model in the attacking unit:
-                            <br/>
                             <div class="indented">
-                                Select one of the model's weapons, and, if possible, select one visible enemy unit as "target unit" for this weapon.
-                            </div>
-                            <br/>
-                            Every enemy target unit may once per turn then perform the following action:
-                            <br/>
-                            <div class="action">
-                                <h4>
+                                Select one of the model's weapons, and, if possible, select one visible enemy unit that is not in cover as "target unit" for this weapon.
+                                <br/>
+                                If no target unit can be selected, end the attack sequence for this weapon.
+                                <br/>
+                                <br/>
+                                The enemy target unit can once per turn perform the following action:
+                                <br/>
+                                <div class="action">
+                                    <h4>
                                     Brace
-                                </h4>
-                                <div>
-                                    During this attack, increase the ⛊ armor characteristic of models in this unit by 1.
+                                    </h4>
+                                    <div>
+                                    Against attacks by this weapon, increase the ⛊ armor characteristic of models in this unit by 1.
+                                    </div>
                                 </div>
-                            </div>
-                            <br/>
-                            For every selected weapon:
-                            <div class="indented">
-                                Repeat for weapon: <b>hits</b>:
                                 <div class="indented">
-                                    If the target unit is in cover or does not exist, end the attack sequence for this weapon.
-                                    <br/>
-                                    <br/>
-                                    If target model: <b>⛊armor</b> is higher than weapon <b>💥strength (high)</b>:
+                                    Repeat for weapon: <b>hits</b>:
                                     <div class="indented">
-                                        damage = 0
-                                    </div>
-                                    If target model: <b>⛊armor</b> is within the weapon <b>💥strength</b> range:
-                                    <div class="indented">
-                                        damage = 1
-                                    </div>
-                                    If target model: <b>⛊armor</b> is lower than weapon <b>💥strength (low)</b>:
-                                    <div class="indented">
-                                        damage = 2 * (weapon <b>💥strength (low)</b> - target model: <b>⛊armor</b>)
-                                    </div>
-                                    <br/>
-                                    Reduce unit: <b>health</b> by damage.
-                                    <br/>
-                                    <br/>
-                                    If unit: <b>health</b> &lt= 0:
-                                    <div class="indented">
-                                        The enemy player must choose to destroy one model in the target unit.
+                                        If target model: <b>⛊armor</b> is higher than weapon <b>💥strength (high)</b>:
+                                        <div class="indented">
+                                            damage = 0
+                                        </div>
+                                        If target model: <b>⛊armor</b> is within the weapon <b>💥strength</b> range:
+                                        <div class="indented">
+                                            damage = 1
+                                        </div>
+                                        If target model: <b>⛊armor</b> is lower than weapon <b>💥strength (low)</b>:
+                                        <div class="indented">
+                                            damage = 2 * (weapon <b>💥strength (low)</b> - target model: <b>⛊armor</b>)
+                                        </div>
                                         <br/>
-                                        Then, restore the unit health tokens.
+                                        Reduce unit: <b>health</b> by damage.
+                                        <br/>
+                                        <br/>
+                                        If unit: <b>health</b> &lt= 0:
+                                        <div class="indented">
+                                            The enemy player must choose to destroy one model in the target unit.
+                                            <br/>
+                                            Then, restore the unit health tokens.
+                                        </div>
                                     </div>
                                 </div>
                             </div>
