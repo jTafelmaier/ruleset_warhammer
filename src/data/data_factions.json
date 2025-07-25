@@ -32,10 +32,10 @@
                 {
                     "name": "Iron father Feirros",
                     "points_per_model": 200,
-                    "armor": 6,
+                    "armor": 7,
                     "keywords_model": [
                         "score",
-                        "move 15"
+                        "move 10"
                     ],
                     "actions": [
                         {
