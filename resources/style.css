@@ -270,6 +270,7 @@ body {
 
 .keyword {
     display: inline-block;
+    color: #4a5266;
     background-color: white;
     border-radius: 2px;
     padding: 2px;
