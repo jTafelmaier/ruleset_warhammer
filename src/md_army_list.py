@@ -1,6 +1,5 @@
 
 
-import itertools
 import typing
 
 from src import md_units
@@ -14,15 +13,12 @@ def get_text_html_army_lists(
     dict_army_list_left:typing.Dict,
     dict_army_list_right:typing.Dict):
 
-    def get_list_htmls_army_list(
+    def get_html_army_list(
         dict_army_list:typing.Dict,
         text_side:str):
 
         name_faction = dict_army_list \
             ["faction"]
-
-        list_units_army_list = dict_army_list \
-            ["units"]
 
         dict_faction = next(
                 filter(
@@ -37,17 +33,6 @@ def get_text_html_army_lists(
                         dict_unit),
                     dict_faction \
                         ["units"]))
-
-        text_html_victory_state = "<div class=\"victory_state " \
-            + text_side \
-            + "\"><div class=\"victory_points\"><span onclick=\"increase_victory_points('" \
-            + text_side \
-            + "')\">0</span><span onclick=\"decrease_victory_points('" \
-            + text_side \
-            + "')\"> VP</span></div>,<span class=\"points_total\">? points remaining.</span></div>"
-
-        name_faction = dict_faction \
-            ["name"]
 
         def get_text_html_unit(
             pair_dict_unit_army_list:typing.Tuple[int, typing.Dict]):
@@ -94,37 +79,28 @@ def get_text_html_army_lists(
                 + text_html_data_unit \
                 + "</div></div>"
 
-        text_html_units_individual = "" \
-            .join(
-                map(
-                    get_text_html_unit,
-                    enumerate(
-                        list_units_army_list)))
-
-        text_html_units = "<div class=\"army_list " \
+        return "<div><div class=\"victory_state " \
+            + text_side \
+            + "\"><div class=\"victory_points\"><span onclick=\"increase_victory_points('" \
+            + text_side \
+            + "')\">0</span><span onclick=\"decrease_victory_points('" \
+            + text_side \
+            + "')\"> VP</span></div>,<span class=\"points_total\">? points remaining.</span></div><div class=\"army_list " \
             + text_side \
             + "\">" \
-            + text_html_units_individual \
-            + "</div>"
+            + "" \
+                .join(
+                    map(
+                        get_text_html_unit,
+                        enumerate(
+                            dict_army_list \
+                                ["units"]))) \
+            + "</div></div>"
 
-        return [
-            text_html_victory_state,
-            text_html_units]
-
-    list_texts_html_army_list_left = get_list_htmls_army_list(
+    return get_html_army_list(
             dict_army_list=dict_army_list_left,
-            text_side="left")
-
-    list_texts_html_army_list_right = get_list_htmls_army_list(
+            text_side="left") \
+        + get_html_army_list(
             dict_army_list=dict_army_list_right,
             text_side="right")
-
-    # TODO refactor
-    return "" \
-        .join(
-            itertools.chain(
-                *
-                    zip(
-                        list_texts_html_army_list_left,
-                        list_texts_html_army_list_right)))
 
