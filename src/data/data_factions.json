@@ -360,7 +360,7 @@
                                 "heavy"
                             ],
                             "strength_lower": 12,
-                            "strength_upper": 18
+                            "strength_upper": 14
                         }
                     ]
                 },
@@ -920,7 +920,7 @@
                                 "heavy"
                             ],
                             "strength_lower": 12,
-                            "strength_upper": 18
+                            "strength_upper": 14
                         }
                     ]
                 },
