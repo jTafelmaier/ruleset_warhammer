@@ -238,10 +238,6 @@ body {
     font-weight: bold;
 }
 
-.unit_property.score {
-    background: linear-gradient(red 0px, #626d84 40px);
-}
-
 #army_lists {
     display: grid;
     grid-template-columns: 490px 490px;
