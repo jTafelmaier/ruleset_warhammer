@@ -252,7 +252,7 @@ body {
 
 #army_lists {
     display: grid;
-    grid-template-columns: 480px 480px;
+    grid-template-columns: 490px 490px;
     gap: 20px 150px;
 }
 
@@ -277,17 +277,18 @@ body {
 
 .unit_state {
     padding: 4px;
-    width: 30px;
+    width: 40px;
 }
 
 .health_bar {
     display: flex;
     flex-direction: column;
     padding: 2px;
-    height: 105px;
+    height: 160px;
     border-radius: 2px;
     background-color: #2e3544;
-    border: 2px solid white;
+    border: 2px solid #c2cce0;
+    margin: 2px;
 }
 
 .health_bar .token {
