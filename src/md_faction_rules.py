@@ -12,7 +12,7 @@ from src import md_units
 
 
 def get_text_html_faction_rules(
-    dict_factions:typing.Dict,
+    list_dicts_factions:typing.List[typing.Dict],
     dict_keywords:typing.Dict):
 
     def get_text_html_button_show_faction(
@@ -75,11 +75,6 @@ def get_text_html_faction_rules(
             + "\" style=\"display: none;\">" \
             + text_html_faction \
             + "</div>"
-
-    list_dicts_factions = dict_factions \
-        >> _dicts.to_iterable_values() \
-        >> _iters.to_iterable_chained() \
-        >> _iters.to_list()
 
     return "<div class=\"selection_factions\">" \
         + "\n" \

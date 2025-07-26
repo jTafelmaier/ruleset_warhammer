@@ -13,7 +13,7 @@ from src import md_units
 
 
 def get_text_html_army_lists(
-    dict_factions:typing.Dict,
+    list_dicts_factions:typing.List[typing.Dict],
     dict_keywords:typing.Dict,
     dict_army_list_left:typing.Dict,
     dict_army_list_right:typing.Dict):
@@ -31,9 +31,7 @@ def get_text_html_army_lists(
         dict_faction = next(
                 filter(
                     lambda dict_faction: dict_faction["name"] == name_faction,
-                    dict_factions \
-                        >> _dicts.to_iterable_values() \
-                        >> _iters.to_iterable_chained()))
+                    list_dicts_factions))
 
         dict_units = dict(
                 map(

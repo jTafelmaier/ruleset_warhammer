@@ -1,5 +1,5 @@
 {
-    "imperium": [
+    "data": [
         {
             "name": "Imperium",
             "units": [
@@ -500,9 +500,7 @@
                     ]
                 }
             ]
-        }
-    ],
-    "chaos": [
+        },
         {
             "name": "Chaos",
             "units": [
@@ -845,9 +843,7 @@
                     ]
                 }
             ]
-        }
-    ],
-    "xenos": [
+        },
         {
             "name": "Necrons",
             "units": [
