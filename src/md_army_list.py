@@ -138,26 +138,23 @@ def get_text_html_army_lists(
         name_directory_faction = md_shared.get_text_name_directory_faction(name_faction)
 
         def get_text_html_unit(
-            dict_unit:typing.Dict):
+            dict_unit_army_list:typing.Dict):
+
+            dict_unit = dict_units \
+                [
+                    dict_unit_army_list \
+                        ["name"]]
 
             return md_units.get_text_html_unit(
                     dict_unit=dict_unit,
                     dict_keywords=dict_keywords,
                     name_directory_faction=name_directory_faction)
 
-        set_names_units_in_army_list = set(
-                map(
-                    lambda dict_unit_army_list: dict_unit_army_list["name"],
-                    list_units_army_list))
-
         text_html_units_individual = "" \
             .join(
                 map(
                     get_text_html_unit,
-                    filter(
-                        lambda dict_unit: dict_unit["name"] in set_names_units_in_army_list,
-                        dict_faction \
-                            ["units"])))
+                    list_units_army_list))
 
         text_html_units = "<div>" \
             + text_html_units_individual \
