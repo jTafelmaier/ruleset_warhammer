@@ -15,29 +15,6 @@ def get_text_html_faction_rules(
     dict_factions:typing.Dict,
     dict_keywords:typing.Dict):
 
-    def get_text_html_faction_list_building(
-        dict_faction:typing.Dict):
-
-        name_faction = dict_faction \
-            ["name"]
-
-        name_directory_faction = md_shared.get_text_name_directory_faction(name_faction)
-
-        def get_text_html_unit(
-            dict_unit:typing.Dict):
-
-            return md_units.get_text_html_unit(
-                    dict_unit=dict_unit,
-                    dict_keywords=dict_keywords,
-                    name_directory_faction=name_directory_faction)
-
-        return "" \
-            .join(
-                map(
-                    get_text_html_unit,
-                    dict_faction \
-                        ["units"]))
-
     def get_text_html_button_show_faction(
         dict_faction:typing.Dict):
 
@@ -73,10 +50,23 @@ def get_text_html_faction_rules(
 
         name_directory_faction = md_shared.get_text_name_directory_faction(name_faction)
 
+        def get_text_html_unit(
+            dict_unit:typing.Dict):
+
+            return md_units.get_text_html_unit(
+                    dict_unit=dict_unit,
+                    dict_keywords=dict_keywords,
+                    name_directory_faction=name_directory_faction)
+
         text_id_faction = "id_faction_" \
             + name_directory_faction
 
-        text_html_faction = get_text_html_faction_list_building(dict_faction)
+        text_html_faction = "" \
+            .join(
+                map(
+                    get_text_html_unit,
+                    dict_faction \
+                        ["units"]))
 
         return "<div class=\"div_faction " \
             + name_directory_faction \
@@ -91,14 +81,12 @@ def get_text_html_faction_rules(
         >> _iters.to_iterable_chained() \
         >> _iters.to_list()
 
-    text_html_buttons_factions = "\n" \
-        .join(
-            map(
-                get_text_html_button_show_faction,
-                list_dicts_factions))
-
     return "<div class=\"selection_factions\">" \
-        + text_html_buttons_factions \
+        + "\n" \
+            .join(
+                map(
+                    get_text_html_button_show_faction,
+                    list_dicts_factions)) \
         + "</div><div class=\"faction_content\">" \
         + "\n" \
             .join(
