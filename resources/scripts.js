@@ -181,7 +181,7 @@ function next_turn() {
 
     Array.from(document
         .getElementsByClassName("unit_army_list"))
-        .forEach(element => element.classList.toggle("inactive"))
+        .forEach(element => element.classList.remove("inactive"))
 
 }
 
