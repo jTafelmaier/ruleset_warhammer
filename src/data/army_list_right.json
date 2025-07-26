@@ -1,29 +1,19 @@
 {
-    "faction": "Necrons",
+    "faction": "Chaos",
     "units": [
         {
-            "name": "Hexmark destroyer",
+            "name": "Slaughterbound",
             "count_models": 1,
+            "attached_to_index": 2
+        },
+        {
+            "name": "Eightbound",
+            "count_models": 8,
             "attached_to_index": null
         },
         {
-            "name": "Hexmark destroyer",
-            "count_models": 1,
-            "attached_to_index": null
-        },
-        {
-            "name": "Skorpekh destroyer",
-            "count_models": 2,
-            "attached_to_index": null
-        },
-        {
-            "name": "Lokhust destroyer - Gauss",
-            "count_models": 1,
-            "attached_to_index": null
-        },
-        {
-            "name": "Lokhust destroyer - Gauss",
-            "count_models": 1,
+            "name": "Khorne Berzerkers",
+            "count_models": 8,
             "attached_to_index": null
         }
     ]
