@@ -283,14 +283,15 @@ td.strength {
 .unit_army_list {
     display: flex;
     background-color: #282d3a;
+    border-radius: 5px;
     margin-top: 20px;
 }
 
 .unit_army_list.destroyed {
-    border-left: 5px solid red;
+    background-color: red;
 }
 
-.destroyed > div {
+.destroyed .unit {
     filter: grayscale(1);
 }
 
@@ -333,6 +334,16 @@ td.strength {
 }
 
 .health_bar .token.used {
+    background: linear-gradient(0.25turn, #535f79, #2e3544 25%, #2e3544 75%, #535f79);
+    box-shadow: none;
+}
+
+.destroyed .health_bar .token {
+    background: linear-gradient(0.25turn, #535f79, #2e3544 25%, #2e3544 75%, #535f79);
+    box-shadow: none;
+}
+
+.destroyed .health_bar:hover .token.next {
     background: linear-gradient(0.25turn, #535f79, #2e3544 25%, #2e3544 75%, #535f79);
     box-shadow: none;
 }
@@ -382,7 +393,7 @@ td.points_cost {
     color: white;
     background-color: #535f79;
     border: 0px;
-    border-radius: 4px;
+    border-radius: 2px;
 }
 
 #button_next_turn:hover {
