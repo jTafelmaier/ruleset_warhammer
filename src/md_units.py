@@ -94,11 +94,11 @@ def get_text_html_data_unit(
                 ["points_per_model"]) \
         + " points per model.\" style=\"background-image: url('resources/background.png')\"><div class=\"image_unit\" style=\"background-image: url('" \
         + path_image_unit \
-        + "')\"><div class=\"header_unit\"><div class=\"armor\">⛊" \
+        + "')\"><div class=\"header_unit\"><div class=\"unit_property\"><span>⛊" \
         + str(
             dict_unit \
                 ["armor"]) \
-        + "</div><h3 class=\"name_unit\">" \
+        + "</span></div><h3 class=\"name_unit\">" \
         + dict_unit \
             ["name"] \
         + "</h3></div><div class=\"model_properties\"><div class=\"model_property keywords\">" \
