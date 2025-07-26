@@ -189,7 +189,7 @@ body {
     width: 520px;
     height: 200px;
     background-size: cover;
-    box-shadow: inset 400px 0px 400px -100px #2e3544;
+    box-shadow: inset 300px 0px 400px -100px #2e3544;
     border: 2px solid #2e3544;
     border-radius: 5px;
 }
@@ -223,7 +223,7 @@ body {
     text-align: center;
     padding: 1px;
     border-radius: 2px;
-    color: #c2cce0;
+    color: #8bc5ff;
     background-color: #4a5266;
 }
 
