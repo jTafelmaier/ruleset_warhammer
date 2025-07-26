@@ -797,7 +797,7 @@
                     "actions": [
                         {
                             "range": "ranged",
-                            "hits": 4,
+                            "hits": 2,
                             "keywords_weapon": [
                                 "heavy"
                             ],
