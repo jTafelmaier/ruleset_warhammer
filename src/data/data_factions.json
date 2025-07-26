@@ -588,19 +588,19 @@
                     "actions": [
                         {
                             "range": "melee",
+                            "hits": 1,
+                            "keywords_weapon": [],
+                            "strength_lower": 8,
+                            "strength_upper": 10
+                        },
+                        {
+                            "range": "melee",
                             "hits": 4,
                             "keywords_weapon": [
                                 "heavy"
                             ],
                             "strength_lower": 7,
                             "strength_upper": 7
-                        },
-                        {
-                            "range": "melee",
-                            "hits": 1,
-                            "keywords_weapon": [],
-                            "strength_lower": 8,
-                            "strength_upper": 10
                         }
                     ]
                 },
