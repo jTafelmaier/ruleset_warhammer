@@ -8,8 +8,6 @@ from lib.unary import _dicts
 from lib.unary import _iters
 from lib.unary.main import unary
 
-from src import md_shared
-
 
 
 
@@ -43,10 +41,8 @@ def main():
             "faction": name_faction,
             "units": list_dicts_units}
 
-        name_directory_faction = md_shared.get_text_name_directory_faction(name_faction)
-
         name_file_json = "army_list_" \
-            + name_directory_faction \
+            + name_faction \
             + ".json"
 
         path_data = os.path.join(

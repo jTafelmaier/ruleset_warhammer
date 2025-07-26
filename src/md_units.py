@@ -43,12 +43,12 @@ def get_text_html_keywords(
 def get_text_html_data_unit(
     dict_unit:typing.Dict,
     dict_keywords:typing.Dict,
-    name_directory_faction:str):
+    name_faction:str):
 
     path_image_unit = "/" \
         .join(
             [
-                md_shared.get_text_path_images_faction(name_directory_faction),
+                md_shared.get_text_path_images_faction(name_faction),
                 "units",
                 dict_unit \
                     ["name"] \

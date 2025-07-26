@@ -3,7 +3,6 @@
 import itertools
 import typing
 
-from src import md_shared
 from src import md_units
 
 
@@ -50,8 +49,6 @@ def get_text_html_army_lists(
         name_faction = dict_faction \
             ["name"]
 
-        name_directory_faction = md_shared.get_text_name_directory_faction(name_faction)
-
         def get_text_html_unit(
             pair_dict_unit_army_list:typing.Tuple[int, typing.Dict]):
 
@@ -72,7 +69,7 @@ def get_text_html_army_lists(
             text_html_data_unit = md_units.get_text_html_data_unit(
                     dict_unit=dict_unit,
                     dict_keywords=dict_keywords,
-                    name_directory_faction=name_directory_faction)
+                    name_faction=name_faction)
 
             return "<div class=\"unit_army_list\" points_per_model=\"" \
                 + str(dict_unit["points_per_model"]) \
