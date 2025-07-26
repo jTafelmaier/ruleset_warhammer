@@ -1,63 +1,37 @@
 
 
-import json
-import os
-import typing
-
 import bs4
 
 from src import md_army_list
 from src import md_faction_rules
+from src import md_shared
 
 
 
 
 def generate_htmls():
 
-    def get_text_file(
-        list_texts_path:typing.List[str]):
-
-        path = os.path.join(
-            *list_texts_path)
-
-        with open(file=path, mode="r", encoding="utf-8") as file:
-            return file.read()
-
-    def get_dict_json(
-        list_texts_path:typing.List[str]):
-
-        return json.loads(get_text_file(list_texts_path))
-
-    def get_dict_setting(
-        name_file:str):
-
-        return get_dict_json(
-            [
-                "src",
-                "data",
-                name_file])
-
     path_images_general = "resources/" \
         + "/general"
 
-    text_html_template = get_text_file(
+    text_html_template = md_shared.get_text_file(
         [
             "src",
             "data",
             "index_template.html"])
 
-    dict_keywords = get_dict_json(
+    dict_keywords = md_shared.get_dict_json(
         [
             "src",
             "data",
             "data_keywords.json"])
 
-    list_dicts_factions = get_dict_setting("data_factions.json") \
+    list_dicts_factions = md_shared.get_dict_setting("data_factions.json") \
         ["data"]
 
-    dict_army_list_left = get_dict_setting("army_list_left.json")
+    dict_army_list_left = md_shared.get_dict_setting("army_list_left.json")
 
-    dict_army_list_right = get_dict_setting("army_list_right.json")
+    dict_army_list_right = md_shared.get_dict_setting("army_list_right.json")
 
     soup_full = bs4.BeautifulSoup(
             markup=text_html_template,
