@@ -288,7 +288,8 @@ body {
     border-radius: 2px;
     background-color: #2e3544;
     border: 2px solid #c2cce0;
-    margin: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
 .health_bar .token {
