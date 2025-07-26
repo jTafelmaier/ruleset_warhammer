@@ -2,21 +2,23 @@
 
 
 
-function display_faction(text_id_faction) {
+function display_faction(name_faction) {
 
-    let style_div_faction = document.getElementById(text_id_faction).style
+    let style_div_faction = document
+        .getElementsByClassName("faction_rules " + name_faction)[0]
+        .style
 
     if (style_div_faction.display == "none") {
-
-        Array.from(document
-            .getElementsByClassName("container_faction_button"))
-            .forEach(element => element.classList.add("grayscale"))
 
         Array.from(document
             .getElementsByClassName("faction_rules"))
             .forEach(element => element.style.display = "none")
 
-        document.getElementsByClassName("container_faction_button " + text_id_faction)
+        Array.from(document
+            .getElementsByClassName("container_faction_button"))
+            .forEach(element => element.classList.add("grayscale"))
+
+        document.getElementsByClassName("container_faction_button " + name_faction)
             [0]
             .classList
             .remove("grayscale")

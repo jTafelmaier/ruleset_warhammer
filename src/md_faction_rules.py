@@ -18,9 +18,6 @@ def get_text_html_faction_rules(
         name_faction = dict_faction \
             ["name"]
 
-        text_id_faction = "id_faction_" \
-            + name_faction
-
         path_image_faction = "/" \
             .join(
                 [
@@ -28,9 +25,9 @@ def get_text_html_faction_rules(
                     "faction.png"])
 
         return "<div class=\"container_faction_button " \
-            + text_id_faction \
+            + name_faction \
             + "\"><div class=\"preview_faction_button\" onclick=\"display_faction('" \
-            + text_id_faction \
+            + name_faction \
             + "')\" style=\"background-image: url('" \
             + path_image_faction \
             + "')\"><div class=\"faction_name\">" \
@@ -51,9 +48,6 @@ def get_text_html_faction_rules(
                     dict_keywords=dict_keywords,
                     name_faction=name_faction)
 
-        text_id_faction = "id_faction_" \
-            + name_faction
-
         text_html_faction = "" \
             .join(
                 map(
@@ -63,8 +57,6 @@ def get_text_html_faction_rules(
 
         return "<div class=\"faction_rules " \
             + name_faction \
-            + "\" id=\"" \
-            + text_id_faction \
             + "\" style=\"display: none;\">" \
             + text_html_faction \
             + "</div>"
