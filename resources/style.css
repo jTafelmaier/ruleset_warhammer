@@ -110,10 +110,6 @@ body {
         0 calc(100% - 7px));
 }
 
-.action .action {
-    width: 450px;
-}
-
 .action > h4 {
     width: 80px;
     margin-top: 0;
@@ -143,10 +139,6 @@ body {
         100% calc(100% - 2px),
         calc(100% - 2px) 100%,
         0 100%);
-}
-
-.action_token.brace {
-    background: radial-gradient(ellipse at 20px 5px, #b1b1ff 0%, #5982ff 10%, #807cff 12%, #5988ff 14%, #476083 80%, #567893 100%);
 }
 
 .action_token.token.used {

@@ -1,6 +1,6 @@
 {
     "keywords_model": {
-        "large": "This unit is never considered to be in cover, cannot perform the &quot;Brace&quot; action, and units cannot attach to this unit.",
+        "large": "This unit is never considered to be in cover and units cannot attach to this unit.",
         "teleportation": "This model's unit can perform the &quot;Setup teleportation&quot; and &quot;Recall&quot; actions.",
         "move": "This model can perform the &quot;Move&quot; action up to the given distance.",
         "fly": "This model can perform the &quot;Fly&quot; action up to the given distance.",
