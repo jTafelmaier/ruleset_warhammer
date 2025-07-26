@@ -24,7 +24,7 @@ def get_text_html_data_unit(
                 .partition(" ")
 
             return "<div class=\"unit_property " \
-                + text_category \
+                + text_name_keyword \
                 + "\"title=\"" \
                 + dict_keywords \
                     [text_category] \
