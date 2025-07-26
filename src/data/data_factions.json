@@ -8,9 +8,9 @@
                     "points_per_model": 200,
                     "armor": 5,
                     "keywords_model": [
-                        "teleportation",
                         "score",
-                        "fly 25"
+                        "fly 25",
+                        "teleportation"
                     ],
                     "actions": [
                         {
@@ -59,9 +59,9 @@
                     "points_per_model": 200,
                     "armor": 7,
                     "keywords_model": [
-                        "teleportation",
                         "score",
-                        "move 10"
+                        "move 10",
+                        "teleportation"
                     ],
                     "actions": [
                         {
@@ -78,9 +78,9 @@
                     "points_per_model": 200,
                     "armor": 6,
                     "keywords_model": [
-                        "teleportation",
                         "score",
-                        "move 10"
+                        "move 10",
+                        "teleportation"
                     ],
                     "actions": [
                         {
@@ -104,9 +104,9 @@
                     "points_per_model": 200,
                     "armor": 5,
                     "keywords_model": [
-                        "teleportation",
                         "score",
-                        "move 15"
+                        "move 15",
+                        "teleportation"
                     ],
                     "actions": [
                         {
@@ -130,9 +130,9 @@
                     "points_per_model": 200,
                     "armor": 6,
                     "keywords_model": [
-                        "teleportation",
                         "score",
-                        "move 10"
+                        "move 10",
+                        "teleportation"
                     ],
                     "actions": [
                         {
@@ -201,9 +201,9 @@
                     "points_per_model": 200,
                     "armor": 5,
                     "keywords_model": [
-                        "teleportation",
                         "score",
-                        "move 15"
+                        "move 15",
+                        "teleportation"
                     ],
                     "actions": [
                         {
@@ -442,9 +442,9 @@
                     "points_per_model": 200,
                     "armor": 7,
                     "keywords_model": [
-                        "teleportation",
                         "score",
-                        "move 10"
+                        "move 10",
+                        "teleportation"
                     ],
                     "actions": [
                         {
@@ -461,8 +461,8 @@
                     "points_per_model": 100,
                     "armor": 6,
                     "keywords_model": [
-                        "teleportation",
-                        "move 10"
+                        "move 10",
+                        "teleportation"
                     ],
                     "actions": [
                         {
@@ -479,8 +479,8 @@
                     "points_per_model": 100,
                     "armor": 4,
                     "keywords_model": [
-                        "teleportation",
-                        "move 15"
+                        "move 15",
+                        "teleportation"
                     ],
                     "actions": [
                         {
@@ -509,9 +509,9 @@
                     "points_per_model": 800,
                     "armor": 8,
                     "keywords_model": [
-                        "teleportation",
                         "score",
-                        "move 20"
+                        "move 20",
+                        "teleportation"
                     ],
                     "actions": [
                         {
@@ -535,9 +535,9 @@
                     "points_per_model": 150,
                     "armor": 5,
                     "keywords_model": [
-                        "teleportation",
                         "score",
-                        "move 15"
+                        "move 15",
+                        "teleportation"
                     ],
                     "actions": [
                         {
@@ -561,9 +561,9 @@
                     "points_per_model": 200,
                     "armor": 5,
                     "keywords_model": [
-                        "teleportation",
                         "score",
-                        "move 15"
+                        "move 15",
+                        "teleportation"
                     ],
                     "actions": [
                         {
@@ -760,9 +760,9 @@
                     "points_per_model": 150,
                     "armor": 5,
                     "keywords_model": [
-                        "teleportation",
                         "score",
-                        "move 20"
+                        "move 20",
+                        "teleportation"
                     ],
                     "actions": [
                         {
@@ -779,8 +779,8 @@
                     "points_per_model": 100,
                     "armor": 4,
                     "keywords_model": [
-                        "teleportation",
-                        "move 20"
+                        "move 20",
+                        "teleportation"
                     ],
                     "actions": [
                         {
@@ -872,9 +872,9 @@
                     "points_per_model": 250,
                     "armor": 6,
                     "keywords_model": [
-                        "teleportation",
                         "score",
-                        "move 15"
+                        "move 15",
+                        "teleportation"
                     ],
                     "actions": [
                         {
