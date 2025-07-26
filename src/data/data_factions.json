@@ -715,8 +715,8 @@
                             "keywords_weapon": [
                                 "heavy"
                             ],
-                            "strength_lower": 10,
-                            "strength_upper": 12
+                            "strength_lower": 9,
+                            "strength_upper": 11
                         }
                     ]
                 },
