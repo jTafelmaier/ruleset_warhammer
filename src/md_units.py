@@ -40,7 +40,7 @@ def get_text_html_keywords(
                     [text_category]))
 
 
-def get_text_html_unit(
+def get_text_html_data_unit(
     dict_unit:typing.Dict,
     dict_keywords:typing.Dict,
     name_directory_faction:str):

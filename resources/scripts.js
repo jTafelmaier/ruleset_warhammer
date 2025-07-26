@@ -58,9 +58,12 @@ function decrease_victory_points(text_side) {
 }
 
 
-function update_count_models(element_tr, text_side, bool_increase) {
+function update_count_models(
+    element_unit,
+    text_side,
+    bool_increase) {
 
-    let element_count_models = element_tr
+    let element_count_models = element_unit
         .getElementsByClassName("count_models")[0]
 
     var int_count_models_current = parseInt(element_count_models.textContent)
@@ -72,34 +75,27 @@ function update_count_models(element_tr, text_side, bool_increase) {
         }
         var int_count_models_new = int_count_models_current + 1
 
-        element_tr
+        element_unit
             .classList
             .remove("destroyed")
     } else {
         if (int_count_models_current <= 0) {
             return
         } else if (int_count_models_current == 1) {
-            element_tr
+            element_unit
                 .classList
                 .add("destroyed")
         }
         var int_count_models_new = int_count_models_current - 1
     }
 
-    let element_table = element_tr
-        .parentElement
-
     element_count_models.textContent = int_count_models_new
         .toString()
 
-    element_tr
-        .getElementsByClassName("points_cost")[0]
-        .textContent = (int_count_models_new * parseInt(element_tr.getAttribute("points_per_model")))
-            .toString()
-
-    let int_points_cost_total = Array.from(element_table
-        .getElementsByClassName("points_cost"))
-        .map(element => parseInt(element.textContent))
+    let int_points_cost_total = Array.from(element_unit
+        .parentElement
+        .getElementsByClassName("unit_army_list"))
+        .map(element => parseInt(element.getElementsByClassName("count_models")[0].textContent) * parseInt(element.getAttribute("points_per_model")))
         .reduce((a, b) => a + b)
 
     document
@@ -111,12 +107,12 @@ function update_count_models(element_tr, text_side, bool_increase) {
 
 function increase_number_models(text_side, index_row) {
 
-    let element_tr = document
+    let element_unit = document
         .getElementsByClassName("army_list " + text_side)[0]
-        .getElementsByTagName("tr")[index_row]
+        .getElementsByClassName("unit_army_list")[index_row]
 
     update_count_models(
-        element_tr,
+        element_unit,
         text_side,
         true)
 }
@@ -124,11 +120,11 @@ function increase_number_models(text_side, index_row) {
 
 function reduce_health(text_side, index_row) {
 
-    let element_tr = document
+    let element_unit = document
         .getElementsByClassName("army_list " + text_side)[0]
-        .getElementsByTagName("tr")[index_row]
+        .getElementsByClassName("unit_army_list")[index_row]
 
-    let element_parent = element_tr
+    let element_parent = element_unit
         .getElementsByClassName("health_bar")[0]
 
     let array_tokens = element_parent
@@ -142,7 +138,7 @@ function reduce_health(text_side, index_row) {
         int_count_tokens_used_new = 0
 
         update_count_models(
-            element_tr,
+            element_unit,
             text_side,
             false)
     }
@@ -171,41 +167,21 @@ function reduce_health(text_side, index_row) {
 }
 
 
-function reduce_action_tokens(text_side, index_row) {
+function toggle_inactive(text_side, index_row) {
 
-    let element_parent = document
+    document
         .getElementsByClassName("army_list " + text_side)[0]
-        .getElementsByTagName("tr")[index_row]
-        .getElementsByClassName("action_tokens")[0]
+        .getElementsByClassName("unit_army_list")[index_row]
+        .classList
+        .toggle("inactive")
 
-    let array_tokens = element_parent
-        .getElementsByClassName("token")
-
-    let int_count_tokens_used_current = element_parent
-        .getElementsByClassName("used")
-        .length
-
-    if (int_count_tokens_used_current < array_tokens.length) {
-        var int_count_tokens_used_new = int_count_tokens_used_current + 1
-    } else {
-        var int_count_tokens_used_new = 0
-    }
-
-    for (let i = 0; i < int_count_tokens_used_new; i++) {
-        array_tokens[i].classList.add("used")
-    }
-    for (let i = int_count_tokens_used_new; i < array_tokens.length; i++) {
-        array_tokens[i].classList.remove("used")
-    }
 }
 
-
-function restore_action_tokens() {
+function next_turn() {
 
     Array.from(document
-        .getElementById("army_lists")
-        .getElementsByClassName("action_token token"))
-        .forEach(element => element.classList.remove("used"))
+        .getElementsByClassName("unit_army_list"))
+        .forEach(element => element.classList.toggle("inactive"))
 
 }
 

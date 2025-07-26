@@ -50,67 +50,6 @@ def get_text_html_army_lists(
                             ["name"]] \
                     ["points_per_model"]
 
-        def get_text_html_tr_unit(
-            pair_dict_unit_army_list:typing.Tuple[int, typing.Dict]):
-
-            int_index_unit, \
-            dict_unit_army_list = pair_dict_unit_army_list
-
-            text_name_unit = dict_unit_army_list \
-                ["name"]
-
-            dict_unit = dict_units \
-                [text_name_unit]
-
-            text_parameters_functions = "'" \
-                + text_side \
-                + "', " \
-                + str(int_index_unit + 1)
-
-            def get_text_html_action_tokens():
-
-                if dict_unit_army_list["attached_to_index"] is not None:
-                    return "attached"
-
-                return "<div class=\"action_tokens\" onclick=\"reduce_action_tokens(" \
-                    + text_parameters_functions \
-                    + ")\"><div class=\"action_token token\">AT</div></div>"
-
-            return "<tr points_per_model=\"" \
-                + str(
-                    dict_unit \
-                        ["points_per_model"]) \
-                + "\"><td><div class=\"health_bar\" onclick=\"reduce_health(" \
-                + text_parameters_functions \
-                + ")\"><div class=\"token next\" />" \
-                + ("<div class=\"token\" />" \
-                    * 7) \
-                + "</div></td><td>" \
-                + get_text_html_action_tokens() \
-                + "</td><td class=\"count_models\" initial=\"" \
-                + str(
-                    dict_unit_army_list \
-                        ["count_models"]) \
-                + "\" onclick=\"increase_number_models(" \
-                + text_parameters_functions \
-                + ")\">" \
-                + str(
-                    dict_unit_army_list \
-                        ["count_models"]) \
-                + "</td><td>" \
-                + text_name_unit \
-                + "</td><td class=\"points_cost\">" \
-                + str(
-                    get_points_cost_unit(dict_unit_army_list)) \
-                + "</td></tr>"
-
-        text_html_trs_units = "" \
-            .join(
-                map(
-                    get_text_html_tr_unit,
-                    enumerate(
-                        list_units_army_list)))
-
         int_total_points = sum(
                 map(
                     get_points_cost_unit,
@@ -126,43 +65,71 @@ def get_text_html_army_lists(
             + str(int_total_points) \
             + " points remaining.</span></div>"
 
-        text_html_army_list = "<div class=\"army_list " \
-            + text_side \
-            + "\"><table class=\"table_default fullwidth\"><tbody><tr><th>Health</th><th>AT</th><th>#</th><th>Unit</th><th/></tr>" \
-            + text_html_trs_units \
-            + "</tbody></table></div>"
-
         name_faction = dict_faction \
             ["name"]
 
         name_directory_faction = md_shared.get_text_name_directory_faction(name_faction)
 
         def get_text_html_unit(
-            dict_unit_army_list:typing.Dict):
+            pair_dict_unit_army_list:typing.Tuple[int, typing.Dict]):
+
+            int_index_unit, \
+            dict_unit_army_list = pair_dict_unit_army_list
+
+            text_name_unit = dict_unit_army_list \
+                ["name"]
 
             dict_unit = dict_units \
-                [
-                    dict_unit_army_list \
-                        ["name"]]
+                [text_name_unit]
 
-            return md_units.get_text_html_unit(
+            text_parameters_functions = "'" \
+                + text_side \
+                + "', " \
+                + str(int_index_unit)
+
+            text_html_data_unit = md_units.get_text_html_data_unit(
                     dict_unit=dict_unit,
                     dict_keywords=dict_keywords,
                     name_directory_faction=name_directory_faction)
+
+            return "<div class=\"unit_army_list\" points_per_model=\"" \
+                + str(dict_unit["points_per_model"]) \
+                + "\"><div class=\"unit_state\"><div class=\"health_bar\" onclick=\"reduce_health(" \
+                + text_parameters_functions \
+                + ")\"><div class=\"token next\" />" \
+                + ("<div class=\"token\" />" \
+                    * 7) \
+                + "</div><div class=\"count_models\" initial=\"" \
+                + str(
+                    dict_unit_army_list \
+                        ["count_models"]) \
+                + "\" onclick=\"increase_number_models(" \
+                + text_parameters_functions \
+                + ")\">" \
+                + str(
+                    dict_unit_army_list \
+                        ["count_models"]) \
+                + "</div></div><div onclick=\"toggle_inactive(" \
+                + text_parameters_functions \
+                + ")\">" \
+                + text_html_data_unit \
+                + "</div></div>"
 
         text_html_units_individual = "" \
             .join(
                 map(
                     get_text_html_unit,
-                    list_units_army_list))
+                    enumerate(
+                        list_units_army_list)))
 
-        text_html_units = "<div>" \
+        text_html_units = "<div class=\"army_list " \
+            + text_side \
+            + "\">" \
             + text_html_units_individual \
             + "</div>"
 
         return [
             text_html_victory_state,
-            text_html_army_list,
             text_html_units]
 
     list_texts_html_army_list_left = get_list_htmls_army_list(
@@ -173,6 +140,7 @@ def get_text_html_army_lists(
             dict_army_list=dict_army_list_right,
             text_side="right")
 
+    # TODO refactor
     return "" \
         .join(
             itertools.chain(

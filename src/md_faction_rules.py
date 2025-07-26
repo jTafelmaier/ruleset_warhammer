@@ -53,7 +53,7 @@ def get_text_html_faction_rules(
         def get_text_html_unit(
             dict_unit:typing.Dict):
 
-            return md_units.get_text_html_unit(
+            return md_units.get_text_html_data_unit(
                     dict_unit=dict_unit,
                     dict_keywords=dict_keywords,
                     name_directory_faction=name_directory_faction)

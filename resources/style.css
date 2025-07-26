@@ -120,31 +120,6 @@ body {
     padding: 5px;
 }
 
-.action_token.token {
-    font-weight: lighter;
-    font-size: x-small;
-    vertical-align: middle;
-    display: inline-block;
-    color: #ffffff71;
-    padding-left: 2px;
-    width: 25px;
-    height: 20px;
-    border-left: 5px solid #4a5266;
-    border-radius: 2px;
-    user-select: none;
-    background: radial-gradient(ellipse at 20px 5px, #ffb1b1 0%, #ff5959 10%, #ff7c7c 12%, #ff5959 14%, #846262 80%, #846262 100%);
-    clip-path: polygon(
-        0 0,
-        100% 0,
-        100% calc(100% - 2px),
-        calc(100% - 2px) 100%,
-        0 100%);
-}
-
-.action_token.token.used {
-    background: #2e3544;
-}
-
 .action > div {
     flex: 1;
     padding: 5px;
@@ -299,44 +274,72 @@ td.strength {
     padding-top: 2px;
 }
 
-.health_bar {
-    display: flex;
-    padding: 2px;
-    width: 105px;
-    height: 15px;
-    border-radius: 2px;
-    background-color: #2e3544;
-}
-
 #army_lists {
     display: grid;
-    grid-template-columns: 550px 550px;
+    grid-template-columns: 580px 580px;
     gap: 20px 50px;
 }
 
-#army_lists .unit {
+.unit_army_list {
+    display: flex;
+    background-color: #282d3a;
     margin-top: 20px;
 }
 
-.action_tokens:hover {
-    box-shadow: 0 0 4px 1px #48abe0;
+.unit_army_list.destroyed {
+    border-left: 5px solid red;
 }
 
-.destroyed .action_tokens {
-    display: none;
+.destroyed > div {
+    filter: grayscale(1);
 }
 
-.destroyed .health_bar {
-    display: none;
+.unit_army_list.inactive {
+    filter: grayscale(1);
+}
+
+.unit_state {
+    padding: 4px;
+    width: 30px;
+}
+
+.health_bar {
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    height: 105px;
+    border-radius: 2px;
+    background-color: #2e3544;
+    border: 2px solid white;
 }
 
 .health_bar .token {
     flex: 1;
-    margin-left: 1px;
-    margin-right: 1px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    border-radius: 1px;
+    background: linear-gradient(0.25turn, #c8e2fc, #8bc5ff 25%, #8bc5ff 75%, #c8e2fc);
+    box-shadow: 0 0 4px 1px #48abe0;
+}
+
+.health_bar:hover .token.next {
+    background: linear-gradient(0.25turn, #fcc8c8, #ff4646 25%, #ff4646 75%, #fcc8c8);
+    box-shadow: 0 0 5px 2px #ff4646;
+}
+
+.health_bar.red .token {
+    background: linear-gradient(0.25turn, #fcc8c8, #ff4646 25%, #ff4646 75%, #fcc8c8);
+    box-shadow: 0 0 5px 2px #ff4646;
+}
+
+.health_bar .token.used {
+    background: linear-gradient(0.25turn, #535f79, #2e3544 25%, #2e3544 75%, #535f79);
+    box-shadow: none;
 }
 
 .count_models {
+    text-align: center;
+    margin-top: 5px;
     user-select: none;
 }
 
@@ -369,28 +372,7 @@ td.points_cost {
     color: #535f79;
 }
 
-.health_bar .token {
-    border-radius: 1px;
-    background: linear-gradient(0.5turn, #c8e2fc, #8bc5ff 25%, #8bc5ff 75%, #c8e2fc);
-    box-shadow: 0 0 4px 1px #48abe0;
-}
-
-#army_lists .health_bar:hover .token.next {
-    background: linear-gradient(0.5turn, #fcc8c8, #ff4646 25%, #ff4646 75%, #fcc8c8);
-    box-shadow: 0 0 5px 2px #ff4646;
-}
-
-#army_lists .health_bar.red .token {
-    background: linear-gradient(0.5turn, #fcc8c8, #ff4646 25%, #ff4646 75%, #fcc8c8);
-    box-shadow: 0 0 5px 2px #ff4646;
-}
-
-#army_lists .health_bar .token.used {
-    background: linear-gradient(0.5turn, #535f79, #2e3544 25%, #2e3544 75%, #535f79);
-    box-shadow: none;
-}
-
-#button_restore_action_tokens {
+#button_next_turn {
     margin: 4px;
     margin-right: 10px;
     float: right;
@@ -403,11 +385,7 @@ td.points_cost {
     border-radius: 4px;
 }
 
-#button_restore_action_tokens:hover {
+#button_next_turn:hover {
     background-color: #626d84;
-}
-
-.destroyed td {
-    color: #919eba;
 }
 
