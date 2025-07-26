@@ -58,6 +58,26 @@ function decrease_victory_points(text_side) {
 }
 
 
+function initialise() {
+    calculate_points_total("left")
+    calculate_points_total("right")
+}
+
+
+function calculate_points_total(text_side) {
+    let int_points_cost_total = Array.from(document
+        .getElementsByClassName("army_list " + text_side)[0]
+        .getElementsByClassName("unit_army_list"))
+        .map(element => parseInt(element.getElementsByClassName("count_models")[0].textContent) * parseInt(element.getAttribute("points_per_model")))
+        .reduce((a, b) => a + b)
+
+    document
+        .getElementsByClassName("victory_state " + text_side)[0]
+        .getElementsByClassName("points_total")[0]
+        .textContent = int_points_cost_total.toString() + " points remaining"
+}
+
+
 function update_count_models(
     element_unit,
     text_side,
@@ -92,16 +112,7 @@ function update_count_models(
     element_count_models.textContent = int_count_models_new
         .toString()
 
-    let int_points_cost_total = Array.from(element_unit
-        .parentElement
-        .getElementsByClassName("unit_army_list"))
-        .map(element => parseInt(element.getElementsByClassName("count_models")[0].textContent) * parseInt(element.getAttribute("points_per_model")))
-        .reduce((a, b) => a + b)
-
-    document
-        .getElementsByClassName("victory_state " + text_side)[0]
-        .getElementsByClassName("points_total")[0]
-        .textContent = int_points_cost_total.toString() + " points remaining"
+    calculate_points_total(text_side)
 }
 
 

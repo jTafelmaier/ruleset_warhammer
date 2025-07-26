@@ -39,31 +39,13 @@ def get_text_html_army_lists(
                     dict_faction \
                         ["units"]))
 
-        def get_points_cost_unit(
-            dict_unit_army_list:typing.Dict):
-
-            return dict_unit_army_list \
-                ["count_models"] \
-                * dict_units \
-                    [
-                        dict_unit_army_list \
-                            ["name"]] \
-                    ["points_per_model"]
-
-        int_total_points = sum(
-                map(
-                    get_points_cost_unit,
-                    list_units_army_list))
-
         text_html_victory_state = "<div class=\"victory_state " \
             + text_side \
             + "\"><div class=\"victory_points\"><span onclick=\"increase_victory_points('" \
             + text_side \
             + "')\">0</span><span onclick=\"decrease_victory_points('" \
             + text_side \
-            + "')\"> VP</span></div>,<span class=\"points_total\">" \
-            + str(int_total_points) \
-            + " points remaining.</span></div>"
+            + "')\"> VP</span></div>,<span class=\"points_total\">? points remaining.</span></div>"
 
         name_faction = dict_faction \
             ["name"]
