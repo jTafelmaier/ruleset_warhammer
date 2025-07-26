@@ -179,15 +179,15 @@ body {
 }
 
 .div_faction {
-    margin-top: 20px;
+    margin-top: 40px;
     display: grid;
-    grid-template-columns: 550px 550px;
-    gap: 20px 20px;
+    grid-template-columns: 520px 520px;
+    gap: 40px 40px;
 }
 
 .unit {
-    width: 550px;
-    height: 220px;
+    width: 520px;
+    height: 200px;
     background-size: cover;
     box-shadow: inset 400px 0px 400px -100px #2e3544;
     border: 2px solid #2e3544;
@@ -275,7 +275,7 @@ td.strength {
 
 #army_lists {
     display: grid;
-    grid-template-columns: 580px 580px;
+    grid-template-columns: 550px 550px;
     gap: 20px 50px;
 }
 
