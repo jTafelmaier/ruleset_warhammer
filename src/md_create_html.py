@@ -26,10 +26,6 @@ def generate_htmls():
     list_dicts_factions = md_shared.get_dict_setting("data_factions.json") \
         ["data"]
 
-    dict_army_list_left = md_shared.get_dict_setting("army_list_left.json")
-
-    dict_army_list_right = md_shared.get_dict_setting("army_list_right.json")
-
     soup_full = bs4.BeautifulSoup(
             markup=text_html_template,
             features="html.parser")
@@ -43,9 +39,7 @@ def generate_htmls():
     soup_army_list = bs4.BeautifulSoup(
             markup=md_army_list.get_text_html_army_lists(
                 list_dicts_factions=list_dicts_factions,
-                dict_keywords=dict_keywords,
-                dict_army_list_left=dict_army_list_left,
-                dict_army_list_right=dict_army_list_right),
+                dict_keywords=dict_keywords),
             features="html.parser")
 
     dict_replacements = {

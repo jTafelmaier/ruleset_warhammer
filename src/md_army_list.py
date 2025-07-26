@@ -3,19 +3,19 @@
 import typing
 
 from src import md_units
+from src import md_shared
 
 
 
 
 def get_text_html_army_lists(
     list_dicts_factions:typing.List[typing.Dict],
-    dict_keywords:typing.Dict,
-    dict_army_list_left:typing.Dict,
-    dict_army_list_right:typing.Dict):
+    dict_keywords:typing.Dict):
 
     def get_html_army_list(
-        dict_army_list:typing.Dict,
         text_side:str):
+
+        dict_army_list = md_shared.get_dict_setting("army_list_" + text_side + ".json")
 
         name_faction = dict_army_list \
             ["faction"]
@@ -92,10 +92,6 @@ def get_text_html_army_lists(
                                 ["units"]))) \
             + "</div></div>"
 
-    return get_html_army_list(
-            dict_army_list=dict_army_list_left,
-            text_side="left") \
-        + get_html_army_list(
-            dict_army_list=dict_army_list_right,
-            text_side="right")
+    return get_html_army_list("left") \
+        + get_html_army_list("right")
 
