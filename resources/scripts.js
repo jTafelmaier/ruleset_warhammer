@@ -2,7 +2,8 @@
 
 
 
-function display_faction(name_faction) {
+function display_faction(
+    name_faction) {
 
     let style_div_faction = document
         .getElementsByClassName("faction_rules " + name_faction)[0]
@@ -34,20 +35,24 @@ function display_faction(name_faction) {
 }
 
 
-function increase_victory_points(text_side) {
+function increase_victory_points(
+    text_side) {
 
     let element_victory_points = document
-        .getElementsByClassName("victory_state " + text_side)[0]
+        .getElementsByClassName(text_side)[0]
+        .getElementsByClassName("victory_state")[0]
         .getElementsByTagName("span")[0]
 
     element_victory_points.textContent = (parseInt(element_victory_points.textContent) + 1).toString()
 }
 
 
-function decrease_victory_points(text_side) {
+function decrease_victory_points(
+    text_side) {
 
     let element_victory_points = document
-        .getElementsByClassName("victory_state " + text_side)[0]
+        .getElementsByClassName(text_side)[0]
+        .getElementsByClassName("victory_state")[0]
         .getElementsByTagName("span")[0]
 
     let int_victory_points_current = parseInt(element_victory_points.textContent)
@@ -61,20 +66,23 @@ function decrease_victory_points(text_side) {
 
 
 function initialise() {
+
     calculate_points_total("left")
     calculate_points_total("right")
 }
 
 
-function calculate_points_total(text_side) {
+function calculate_points_total(
+    text_side) {
+
     let int_points_cost_total = Array.from(document
-        .getElementsByClassName("army_list " + text_side)[0]
+        .getElementsByClassName(text_side)[0]
         .getElementsByClassName("unit_army_list"))
         .map(element => parseInt(element.getElementsByClassName("count_models")[0].textContent) * parseInt(element.getAttribute("points_per_model")))
         .reduce((a, b) => a + b)
 
     document
-        .getElementsByClassName("victory_state " + text_side)[0]
+        .getElementsByClassName(text_side)[0]
         .getElementsByClassName("points_total")[0]
         .textContent = int_points_cost_total.toString() + " points remaining"
 }
@@ -118,10 +126,12 @@ function update_count_models(
 }
 
 
-function increase_number_models(text_side, index_row) {
+function increase_number_models(
+    text_side,
+    index_row) {
 
     let element_unit = document
-        .getElementsByClassName("army_list " + text_side)[0]
+        .getElementsByClassName(text_side)[0]
         .getElementsByClassName("unit_army_list")[index_row]
 
     update_count_models(
@@ -131,10 +141,12 @@ function increase_number_models(text_side, index_row) {
 }
 
 
-function reduce_health(text_side, index_row) {
+function reduce_health(
+    text_side,
+    index_row) {
 
     let element_unit = document
-        .getElementsByClassName("army_list " + text_side)[0]
+        .getElementsByClassName(text_side)[0]
         .getElementsByClassName("unit_army_list")[index_row]
 
     let element_parent = element_unit
@@ -180,10 +192,12 @@ function reduce_health(text_side, index_row) {
 }
 
 
-function toggle_inactive(text_side, index_row) {
+function toggle_inactive(
+    text_side,
+    index_row) {
 
     document
-        .getElementsByClassName("army_list " + text_side)[0]
+        .getElementsByClassName(text_side)[0]
         .getElementsByClassName("unit_army_list")[index_row]
         .classList
         .toggle("inactive")

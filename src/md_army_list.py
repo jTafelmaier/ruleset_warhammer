@@ -40,21 +40,15 @@ def get_text_html_army_lists(
             int_index_unit, \
             dict_unit_army_list = pair_dict_unit_army_list
 
-            text_name_unit = dict_unit_army_list \
-                ["name"]
-
             dict_unit = dict_units \
-                [text_name_unit]
+                [
+                    dict_unit_army_list \
+                        ["name"]]
 
             text_parameters_functions = "'" \
                 + text_side \
                 + "', " \
                 + str(int_index_unit)
-
-            text_html_data_unit = md_units.get_text_html_data_unit(
-                    dict_unit=dict_unit,
-                    dict_keywords=dict_keywords,
-                    name_faction=name_faction)
 
             return "<div class=\"unit_army_list\" points_per_model=\"" \
                 + str(dict_unit["points_per_model"]) \
@@ -76,18 +70,19 @@ def get_text_html_army_lists(
                 + "</div></div><div onclick=\"toggle_inactive(" \
                 + text_parameters_functions \
                 + ")\">" \
-                + text_html_data_unit \
+                + md_units.get_text_html_data_unit(
+                    dict_unit=dict_unit,
+                    dict_keywords=dict_keywords,
+                    name_faction=name_faction) \
                 + "</div></div>"
 
-        return "<div><div class=\"victory_state " \
+        return "<div class=\"" \
             + text_side \
-            + "\"><div class=\"victory_points\"><span onclick=\"increase_victory_points('" \
+            + "\"><div class=\"victory_state\"><div class=\"victory_points\"><span onclick=\"increase_victory_points('" \
             + text_side \
             + "')\">0</span><span onclick=\"decrease_victory_points('" \
             + text_side \
-            + "')\"> VP</span></div>,<span class=\"points_total\">? points remaining.</span></div><div class=\"army_list " \
-            + text_side \
-            + "\">" \
+            + "')\"> VP</span></div>,<span class=\"points_total\">? points remaining.</span></div><div class=\"army_list\">" \
             + "" \
                 .join(
                     map(
