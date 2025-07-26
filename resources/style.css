@@ -295,7 +295,7 @@ td.strength {
     filter: grayscale(1);
 }
 
-.unit_army_list.inactive {
+.inactive .unit{
     filter: grayscale(1);
 }
 
