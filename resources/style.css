@@ -348,9 +348,8 @@ td.points_cost {
     display: inline-block;
     font-size: medium;
     font-weight: bold;
-    color: #4a5266;
-    background-color: white;
-    border: 2px solid #4a5266;
+    color: white;
+    background: linear-gradient(red 0px, #626d84 50px);
     border-radius: 2px;
     padding: 2px;
     padding-left: 4px;
@@ -366,7 +365,7 @@ td.points_cost {
 }
 
 #button_next_turn {
-    margin: 4px;
+    margin: 6px;
     margin-right: 10px;
     float: right;
     padding: 4px;
