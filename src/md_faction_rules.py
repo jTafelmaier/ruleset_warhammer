@@ -70,13 +70,13 @@ def get_text_html_faction_rules(
             + "</div>"
 
     return "<div class=\"selection_factions\">" \
-        + "\n" \
+        + "" \
             .join(
                 map(
                     get_text_html_button_show_faction,
                     list_dicts_factions)) \
         + "</div><div class=\"faction_content\">" \
-        + "\n" \
+        + "" \
             .join(
                 map(
                     get_text_div_faction,

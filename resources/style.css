@@ -234,7 +234,7 @@ body {
     margin-top: 20px;
 }
 
-.keyword {
+.unit_property {
     display: inline-block;
     color: #4a5266;
     background-color: white;
@@ -242,35 +242,12 @@ body {
     padding: 2px;
     padding-left: 5px;
     padding-right: 5px;
+    margin: 2px;
 }
 
-.keyword span {
+.unit_property span {
     color: #9e59ff;
     font-weight: bold;
-}
-
-.weapons td {
-    background-color: #c2cce0;
-    font-weight: bold;
-    color: #4a5266;
-}
-
-td.range {
-    width: 40px;
-    text-align: left;
-    padding-top: 4px;
-}
-
-td.hits {
-    width: 10px;
-    text-align: right;
-    padding-top: 4px;
-}
-
-td.strength {
-    width: 70px;
-    text-align: right;
-    padding-top: 2px;
 }
 
 #army_lists {

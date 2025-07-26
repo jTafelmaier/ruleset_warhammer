@@ -7,43 +7,40 @@ from src import md_shared
 
 
 
-def get_text_html_keywords(
-    dict_entity:typing.Dict,
-    dict_keywords:typing.Dict,
-    text_category:str):
-
-    def get_text_html_keyword(
-        text_keyword:str):
-
-        text_name_keyword, \
-        _, \
-        text_parameters = text_keyword \
-            .partition(" ")
-
-        return "<div class=\"keyword " \
-            + text_category \
-            + "\"title=\"" \
-            + dict_keywords \
-                [text_category] \
-                [text_name_keyword] \
-            + "\"><span>" \
-            + text_name_keyword \
-            + "</span> " \
-            + text_parameters \
-            + "</div>"
-
-    return "" \
-        .join(
-            map(
-                get_text_html_keyword,
-                dict_entity \
-                    [text_category]))
-
-
 def get_text_html_data_unit(
     dict_unit:typing.Dict,
     dict_keywords:typing.Dict,
     name_faction:str):
+
+    def get_text_html_keywords(
+        text_category:str):
+
+        def get_text_html_keyword(
+            text_keyword:str):
+
+            text_name_keyword, \
+            _, \
+            text_parameters = text_keyword \
+                .partition(" ")
+
+            return "<div class=\"unit_property " \
+                + text_category \
+                + "\"title=\"" \
+                + dict_keywords \
+                    [text_category] \
+                    [text_name_keyword] \
+                + "\"><span>" \
+                + text_name_keyword \
+                + "</span> " \
+                + text_parameters \
+                + "</div>"
+
+        return "<br/>" \
+            .join(
+                map(
+                    get_text_html_keyword,
+                    dict_unit \
+                        [text_category]))
 
     path_image_unit = "/" \
         .join(
@@ -70,20 +67,21 @@ def get_text_html_data_unit(
                         dict_action \
                             ["strength_upper"])
 
-        return "<tr><td class=\"range\">" \
+        return "<div class=\"unit_property\"><span>" \
             + dict_action \
                 ["range"] \
-            + "</td><td class=\"keywords\">" \
-            + get_text_html_keywords(
-                dict_entity=dict_action,
-                dict_keywords=dict_keywords,
-                text_category="keywords_weapon") \
-            + "</td><td class=\"hits\">" \
-            + str(dict_action["hits"]) + "x</td><td class=\"strength\">💥" \
+            + "</span>" \
+            + " " \
+                .join(
+                    dict_action \
+                        ["keywords_weapon"]) \
+            + " " \
+            + str(dict_action["hits"]) \
+            + "x 💥" \
             + get_text_strength() \
-            + "</td></tr>"
+            + "</div>"
 
-    text_html_rows_actions = "\n" \
+    text_html_rows_actions = "<br/>" \
         .join(
             map(
                 get_text_html_row_action,
@@ -104,11 +102,8 @@ def get_text_html_data_unit(
         + dict_unit \
             ["name"] \
         + "</h3></div><div class=\"model_properties\"><div class=\"model_property keywords\">" \
-        + get_text_html_keywords(
-            dict_entity=dict_unit,
-            dict_keywords=dict_keywords,
-            text_category="keywords_model") \
-        + "</div><div class=\"model_property weapons\"><table class=\"table_default fullwidth\"><tbody><tr><th/><th/><th/><th/></tr>" \
+        + get_text_html_keywords("keywords_model") \
+        + "<br/>" \
         + text_html_rows_actions \
-        + "</tbody></table></div></div></div></div>"
+        + "</div></div></div></div>"
 
