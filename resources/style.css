@@ -181,12 +181,12 @@ body {
 .div_faction {
     margin-top: 40px;
     display: grid;
-    grid-template-columns: 520px 520px;
-    gap: 40px 40px;
+    grid-template-columns: 480px 480px;
+    gap: 20px 20px;
 }
 
 .unit {
-    width: 520px;
+    width: 450px;
     height: 200px;
     background-size: cover;
     box-shadow: inset 300px 0px 400px -100px #2e3544;
@@ -252,8 +252,8 @@ body {
 
 #army_lists {
     display: grid;
-    grid-template-columns: 550px 550px;
-    gap: 20px 50px;
+    grid-template-columns: 480px 480px;
+    gap: 20px 150px;
 }
 
 .unit_army_list {
