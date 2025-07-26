@@ -67,7 +67,7 @@ def get_text_html_data_unit(
                         dict_action \
                             ["strength_upper"])
 
-        return "<div class=\"unit_property\"><span>" \
+        return "<div class=\"unit_property attack\"><span>" \
             + dict_action \
                 ["range"] \
             + "</span>" \
