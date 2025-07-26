@@ -9,23 +9,23 @@ function display_faction(text_id_faction) {
     if (style_div_faction.display == "none") {
 
         Array.from(document
-            .getElementsByClassName("container_faction_rules"))
+            .getElementsByClassName("container_faction_button"))
             .forEach(element => element.classList.add("grayscale"))
 
         Array.from(document
-            .getElementsByClassName("div_faction"))
+            .getElementsByClassName("faction_rules"))
             .forEach(element => element.style.display = "none")
 
-        document.getElementsByClassName(text_id_faction)
+        document.getElementsByClassName("container_faction_button " + text_id_faction)
             [0]
             .classList
             .remove("grayscale")
 
-        style_div_faction.display =  ""}
+        style_div_faction.display =  "grid"}
 
     else {
         Array.from(document
-            .getElementsByClassName("container_faction_rules"))
+            .getElementsByClassName("container_faction_button"))
             .forEach(element => element.classList.remove("grayscale"))
 
         style_div_faction.display =  "none"}

@@ -131,15 +131,15 @@ body {
     gap: 20px 20px;
 }
 
-.container_faction_rules  {
+.container_faction_button  {
     height: 200px;
 }
 
-.container_faction_rules.grayscale  {
+.container_faction_button.grayscale  {
     filter: grayscale(1);
 }
 
-.preview_faction_rules {
+.preview_faction_button {
     width: 280px;
     height: 190px;
     background-size: cover;
@@ -156,7 +156,7 @@ body {
         0 calc(100% - 15px));
 }
 
-.preview_faction_rules:hover {
+.preview_faction_button:hover {
     width: 300px;
     height: 200px;
     border: 2px solid #9e59ff;
@@ -173,12 +173,12 @@ body {
     margin-top: 160px;
 }
 
-.preview_faction_rules:hover .faction_name{
+.preview_faction_button:hover .faction_name{
     width: 300px;
     margin-top: 170px;
 }
 
-.faction {
+.faction_rules {
     margin-top: 40px;
     display: grid;
     grid-template-columns: 450px 450px;
