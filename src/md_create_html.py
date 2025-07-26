@@ -11,9 +11,6 @@ from src import md_shared
 
 def generate_htmls():
 
-    path_images_general = "resources/" \
-        + "/general"
-
     text_html_template = md_shared.get_text_file(
         [
             "src",
@@ -37,23 +34,6 @@ def generate_htmls():
             markup=text_html_template,
             features="html.parser")
 
-    soup_full \
-        .find(
-            name="div",
-            id="header_document") \
-        ["style"] \
-        = "background-image: url('" \
-            + path_images_general \
-            + "/image_cover.jpg');"
-
-    soup_logo_warhammer = soup_full \
-        .new_tag(
-            name="img",
-            attrs={
-                "class": "logo_warhammer",
-                "src": path_images_general \
-                    + "/logo_warhammer.png"})
-
     soup_factions = bs4.BeautifulSoup(
             markup=md_faction_rules.get_text_html_faction_rules(
                 list_dicts_factions=list_dicts_factions,
@@ -69,7 +49,6 @@ def generate_htmls():
             features="html.parser")
 
     dict_replacements = {
-        "id_logo_warhammer": soup_logo_warhammer,
         "id_factions": soup_factions,
         "id_army_lists": soup_army_list}
 

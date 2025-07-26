@@ -19,7 +19,7 @@ body {
     margin-right: auto;
 }
 
-#header_document {
+.header_document {
     background-size: cover;
     height: 200px;
     padding: 200px;
