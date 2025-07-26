@@ -2,7 +2,7 @@
     "faction": "Chaos",
     "units": [
         {
-            "name": "Slaughterbound",
+            "name": "Lord Invocatus",
             "count_models": 1,
             "attached_to_index": 2
         },
