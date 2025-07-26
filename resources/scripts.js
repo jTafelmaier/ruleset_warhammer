@@ -21,7 +21,7 @@ function display_faction(text_id_faction) {
             .classList
             .remove("grayscale")
 
-        style_div_faction.display =  "grid"}
+        style_div_faction.display =  ""}
 
     else {
         Array.from(document

@@ -37,7 +37,7 @@ def get_text_html_faction_rules(
             + name_faction \
             + "</div></div></div>"
 
-    def get_text_div_faction(
+    def get_text_html_faction(
         dict_faction:typing.Dict):
 
         name_faction = dict_faction \
@@ -61,7 +61,7 @@ def get_text_html_faction_rules(
                     dict_faction \
                         ["units"]))
 
-        return "<div class=\"div_faction " \
+        return "<div class=\"faction " \
             + name_faction \
             + "\" id=\"" \
             + text_id_faction \
@@ -79,7 +79,7 @@ def get_text_html_faction_rules(
         + "" \
             .join(
                 map(
-                    get_text_div_faction,
+                    get_text_html_faction,
                     list_dicts_factions)) \
         + "</div>"
 
