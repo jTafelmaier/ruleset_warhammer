@@ -3,9 +3,6 @@
 import itertools
 import typing
 
-from lib.unary import _dicts
-from lib.unary import _iters
-
 from src import md_shared
 from src import md_units
 
