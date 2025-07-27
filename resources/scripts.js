@@ -2,39 +2,6 @@
 
 
 
-function display_faction(
-    name_faction) {
-
-    let style_div_faction = document
-        .getElementsByClassName("faction_rules " + name_faction)[0]
-        .style
-
-    if (style_div_faction.display == "none") {
-
-        Array.from(document
-            .getElementsByClassName("faction_rules"))
-            .forEach(element => element.style.display = "none")
-
-        Array.from(document
-            .getElementsByClassName("container_faction_button"))
-            .forEach(element => element.classList.add("grayscale"))
-
-        document.getElementsByClassName("container_faction_button " + name_faction)
-            [0]
-            .classList
-            .remove("grayscale")
-
-        style_div_faction.display =  "grid"}
-
-    else {
-        Array.from(document
-            .getElementsByClassName("container_faction_button"))
-            .forEach(element => element.classList.remove("grayscale"))
-
-        style_div_faction.display =  "none"}
-}
-
-
 function calculate_winning_state() {
 
     function set_texts(function_get_text) {
