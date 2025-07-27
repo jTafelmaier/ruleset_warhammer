@@ -283,8 +283,8 @@ body {
     margin-top: 1px;
     margin-bottom: 1px;
     border-radius: 1px;
-    background: linear-gradient(0.25turn, #c8e2fc, #8bc5ff 25%, #8bc5ff 75%, #c8e2fc);
-    box-shadow: 0 0 4px 1px #48abe0;
+    background: linear-gradient(0.25turn, #c8e2fc, #6994c0 25%, #6994c0 75%, #c8e2fc);
+    box-shadow: 0 0 4px 1px #2f6d8f;
 }
 
 .health_bar:hover .token.next {
