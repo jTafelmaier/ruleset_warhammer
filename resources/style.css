@@ -239,7 +239,6 @@ body {
 
 .unit_army_list {
     display: flex;
-    background-color: #282d3a;
     border-radius: 5px;
     margin-top: 20px;
 }
@@ -257,8 +256,13 @@ body {
 }
 
 .unit_state {
-    padding: 2px;
     width: 26px;
+    height: 130px;
+    padding: 2px;
+    background-color: #282d3a;
+    margin-top: 2px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
 }
 
 .health_bar {
