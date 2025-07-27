@@ -97,11 +97,11 @@ def get_text_html_data_unit(
         + "')\"><div class=\"header_unit\"><h3 class=\"name_unit\">" \
         + dict_unit \
             ["name"] \
-        + "</h3></div><div class=\"model_properties\"><div class=\"unit_property\"><span>armor</span>" \
+        + "</h3><div class=\"unit_property\"><span>armor</span>" \
         + str(
             dict_unit \
                 ["armor"]) \
-        + "</div><br/>" \
+        + "</div></div><div class=\"model_properties\"><br/>" \
         + get_text_html_keywords("keywords_model") \
         + "<br/>" \
         + text_html_rows_actions \
