@@ -35,15 +35,71 @@ function display_faction(
 }
 
 
+function calculate_winning_state() {
+
+    function set_texts(function_get_text) {
+        [
+            "left",
+            "right"]
+            .forEach(
+                (text_side, index) => document
+                    .getElementsByClassName(text_side)[0]
+                    .getElementsByClassName("winning")[0]
+                    .textContent = function_get_text(index))
+        }
+
+    function determine_winning(property) {
+
+        function get_int_value(text_side) {
+
+            return parseInt(document
+                .getElementsByClassName(text_side)[0]
+                .getElementsByClassName(property)[0]
+                .getElementsByClassName("value")[0]
+                .textContent)
+        }
+
+        let int_difference = get_int_value("left") - get_int_value("right")
+
+        if (int_difference == 0) {
+            return false
+        }
+
+        let array_winning = [
+            "winning",
+            "losing"]
+
+        if (int_difference < 0) {
+            array_winning.reverse()
+        }
+
+        set_texts(index => array_winning[index])
+
+        return true
+    }
+
+    if (determine_winning("victory_points")) {
+        return
+    }
+    if (determine_winning("model_points")) {
+        return
+    }
+
+    set_texts(index => "draw")
+}
+
+
 function increase_victory_points(
     text_side) {
 
     let element_victory_points = document
         .getElementsByClassName(text_side)[0]
         .getElementsByClassName("victory_state")[0]
-        .getElementsByTagName("span")[0]
+        .getElementsByClassName("value")[0]
 
     element_victory_points.textContent = (parseInt(element_victory_points.textContent) + 1).toString()
+
+    calculate_winning_state()
 }
 
 
@@ -53,7 +109,7 @@ function decrease_victory_points(
     let element_victory_points = document
         .getElementsByClassName(text_side)[0]
         .getElementsByClassName("victory_state")[0]
-        .getElementsByTagName("span")[0]
+        .getElementsByClassName("value")[0]
 
     let int_victory_points_current = parseInt(element_victory_points.textContent)
 
@@ -62,13 +118,8 @@ function decrease_victory_points(
     }
 
     element_victory_points.textContent = (int_victory_points_current - 1).toString()
-}
 
-
-function initialise() {
-
-    calculate_points_total("left")
-    calculate_points_total("right")
+    calculate_winning_state()
 }
 
 
@@ -83,8 +134,19 @@ function calculate_points_total(
 
     document
         .getElementsByClassName(text_side)[0]
-        .getElementsByClassName("points_total")[0]
-        .textContent = int_points_cost_total.toString() + " points remaining"
+        .getElementsByClassName("model_points")[0]
+        .getElementsByClassName("value")[0]
+        .textContent = int_points_cost_total.toString()
+
+    calculate_winning_state()
+}
+
+
+function initialise() {
+
+    calculate_points_total("left")
+    calculate_points_total("right")
+
 }
 
 

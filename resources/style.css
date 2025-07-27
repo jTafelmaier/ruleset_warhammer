@@ -329,6 +329,11 @@ td.points_cost {
     color: #c2cce0;
 }
 
+.victory_state {
+    display: flex;
+    color: #535f79;
+}
+
 .victory_points {
     display: inline-block;
     font-size: medium;
@@ -345,8 +350,12 @@ td.points_cost {
     color: #8bc5ff;
 }
 
-.points_total {
-    color: #535f79;
+.model_points {
+    padding: 4px;
+}
+
+.winning {
+    padding: 4px;
 }
 
 #button_next_turn {
