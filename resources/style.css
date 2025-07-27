@@ -183,7 +183,7 @@ body {
     height: 200px;
     background-size: cover;
     box-shadow: inset 300px 0px 400px -100px #2e3544;
-    border: 2px solid #2e3544;
+    border: 2px solid #919eba;
     border-radius: 5px;
 }
 
@@ -198,7 +198,7 @@ body {
 
 .header_unit {
     display: flex;
-    height: 24px;
+    height: 26px;
 }
 
 .name_unit {
@@ -212,18 +212,18 @@ body {
 .model_properties {
     align-self: flex-end;
     width: 250px;
-    margin-top: 20px;
 }
 
 .unit_property {
     display: inline-block;
     color: #2e3544;
     background: linear-gradient(#919eba 0px, #626d84 40px);
-    border-radius: 2px;
-    padding: 1px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    padding: 2px;
     padding-left: 5px;
     padding-right: 5px;
-    margin: 2px;
+    margin-bottom: 4px;
 }
 
 .unit_property span {
