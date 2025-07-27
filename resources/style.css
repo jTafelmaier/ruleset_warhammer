@@ -204,13 +204,15 @@ body {
 }
 
 .header_unit {
-    height: 26px;
+    display: flex;
+    height: 24px;
 }
 
 .name_unit {
+    flex: 1;
     font-weight: normal;
     color: #a6adba;
-    margin: 4px;
+    margin: 2px;
     margin-left: 5px;
 }
 
@@ -225,7 +227,7 @@ body {
     color: #2e3544;
     background: linear-gradient(#919eba 0px, #626d84 40px);
     border-radius: 2px;
-    padding: 2px;
+    padding: 1px;
     padding-left: 5px;
     padding-right: 5px;
     margin: 2px;
@@ -263,7 +265,7 @@ body {
 
 .unit_state {
     padding: 4px;
-    width: 40px;
+    width: 24px;
 }
 
 .health_bar {
