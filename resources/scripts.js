@@ -44,7 +44,7 @@ function calculate_winning_state() {
             .forEach(
                 (text_side, index) => document
                     .getElementsByClassName(text_side)[0]
-                    .getElementsByClassName("winning")[0]
+                    .getElementsByClassName("outcome")[0]
                     .textContent = function_get_text(index))
         }
 
