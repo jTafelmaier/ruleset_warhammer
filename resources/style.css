@@ -253,7 +253,7 @@ body {
 
 .unit_state {
     width: 26px;
-    height: 130px;
+    height: 110px;
     padding: 2px;
     background-color: #282d3a;
     margin-top: 2px;
@@ -269,7 +269,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 2px;
-    height: 100px;
+    height: 80px;
     border-radius: 2px;
     background-color: #2e3544;
     border: 2px solid #626d84;
