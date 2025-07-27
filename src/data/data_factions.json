@@ -38,7 +38,7 @@
                     "actions": [
                         {
                             "range": "ranged",
-                            "heavy": false,
+                            "heavy": true,
                             "hits": 2,
                             "strength": 7
                         },
