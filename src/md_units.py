@@ -54,31 +54,14 @@ def get_text_html_data_unit(
     def get_text_html_row_action(
         dict_action:typing.Dict):
 
-        def get_text_strength():
-
-            if dict_action["strength_lower"] == dict_action["strength_upper"]:
-                return str(dict_action["strength_lower"])
-            else:
-                return str(
-                        dict_action \
-                            ["strength_lower"]) \
-                    + " - " \
-                    + str(
-                        dict_action \
-                            ["strength_upper"])
-
         return "<div class=\"unit_property attack\"><span>" \
             + dict_action \
                 ["range"] \
             + "</span>" \
-            + " " \
-                .join(
-                    dict_action \
-                        ["keywords_weapon"]) \
-            + " " \
+            + ("heavy " if dict_action["heavy"] else "") \
             + str(dict_action["hits"]) \
             + "x 💥" \
-            + get_text_strength() \
+            + str(dict_action["strength"]) \
             + "</div>"
 
     text_html_rows_actions = "<br/>" \

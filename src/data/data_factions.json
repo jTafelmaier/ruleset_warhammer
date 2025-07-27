@@ -15,17 +15,15 @@
                     "actions": [
                         {
                             "range": "ranged",
+                            "heavy": false,
                             "hits": 2,
-                            "keywords_weapon": [],
-                            "strength_lower": 6,
-                            "strength_upper": 6
+                            "strength": 6
                         },
                         {
                             "range": "melee",
+                            "heavy": false,
                             "hits": 4,
-                            "keywords_weapon": [],
-                            "strength_lower": 5,
-                            "strength_upper": 7
+                            "strength": 5
                         }
                     ]
                 },
@@ -40,17 +38,15 @@
                     "actions": [
                         {
                             "range": "ranged",
+                            "heavy": false,
                             "hits": 2,
-                            "keywords_weapon": [],
-                            "strength_lower": 7,
-                            "strength_upper": 7
+                            "strength": 7
                         },
                         {
                             "range": "melee",
+                            "heavy": false,
                             "hits": 1,
-                            "keywords_weapon": [],
-                            "strength_lower": 7,
-                            "strength_upper": 9
+                            "strength": 7
                         }
                     ]
                 },
@@ -66,10 +62,9 @@
                     "actions": [
                         {
                             "range": "melee",
+                            "heavy": false,
                             "hits": 1,
-                            "keywords_weapon": [],
-                            "strength_lower": 8,
-                            "strength_upper": 8
+                            "strength": 8
                         }
                     ]
                 },
@@ -85,17 +80,15 @@
                     "actions": [
                         {
                             "range": "20 cm",
+                            "heavy": false,
                             "hits": 4,
-                            "keywords_weapon": [],
-                            "strength_lower": 5,
-                            "strength_upper": 5
+                            "strength": 5
                         },
                         {
                             "range": "melee",
+                            "heavy": false,
                             "hits": 2,
-                            "keywords_weapon": [],
-                            "strength_lower": 6,
-                            "strength_upper": 8
+                            "strength": 6
                         }
                     ]
                 },
@@ -111,17 +104,15 @@
                     "actions": [
                         {
                             "range": "20 cm",
+                            "heavy": false,
                             "hits": 1,
-                            "keywords_weapon": [],
-                            "strength_lower": 7,
-                            "strength_upper": 7
+                            "strength": 7
                         },
                         {
                             "range": "melee",
+                            "heavy": false,
                             "hits": 2,
-                            "keywords_weapon": [],
-                            "strength_lower": 7,
-                            "strength_upper": 9
+                            "strength": 7
                         }
                     ]
                 },
@@ -137,19 +128,15 @@
                     "actions": [
                         {
                             "range": "ranged",
+                            "heavy": true,
                             "hits": 2,
-                            "keywords_weapon": [
-                                "heavy"
-                            ],
-                            "strength_lower": 5,
-                            "strength_upper": 5
+                            "strength": 5
                         },
                         {
                             "range": "melee",
+                            "heavy": false,
                             "hits": 1,
-                            "keywords_weapon": [],
-                            "strength_lower": 8,
-                            "strength_upper": 10
+                            "strength": 8
                         }
                     ]
                 },
@@ -164,10 +151,9 @@
                     "actions": [
                         {
                             "range": "melee",
+                            "heavy": false,
                             "hits": 4,
-                            "keywords_weapon": [],
-                            "strength_lower": 6,
-                            "strength_upper": 8
+                            "strength": 6
                         }
                     ]
                 },
@@ -182,17 +168,15 @@
                     "actions": [
                         {
                             "range": "ranged",
+                            "heavy": false,
                             "hits": 4,
-                            "keywords_weapon": [],
-                            "strength_lower": 4,
-                            "strength_upper": 6
+                            "strength": 4
                         },
                         {
                             "range": "melee",
+                            "heavy": false,
                             "hits": 1,
-                            "keywords_weapon": [],
-                            "strength_lower": 7,
-                            "strength_upper": 9
+                            "strength": 7
                         }
                     ]
                 },
@@ -208,17 +192,15 @@
                     "actions": [
                         {
                             "range": "20 cm",
+                            "heavy": false,
                             "hits": 4,
-                            "keywords_weapon": [],
-                            "strength_lower": 5,
-                            "strength_upper": 5
+                            "strength": 5
                         },
                         {
                             "range": "melee",
+                            "heavy": false,
                             "hits": 2,
-                            "keywords_weapon": [],
-                            "strength_lower": 7,
-                            "strength_upper": 9
+                            "strength": 7
                         }
                     ]
                 },
@@ -233,17 +215,15 @@
                     "actions": [
                         {
                             "range": "ranged",
+                            "heavy": false,
                             "hits": 2,
-                            "keywords_weapon": [],
-                            "strength_lower": 6,
-                            "strength_upper": 6
+                            "strength": 6
                         },
                         {
                             "range": "melee",
+                            "heavy": false,
                             "hits": 2,
-                            "keywords_weapon": [],
-                            "strength_lower": 7,
-                            "strength_upper": 7
+                            "strength": 7
                         }
                     ]
                 },
@@ -258,17 +238,15 @@
                     "actions": [
                         {
                             "range": "ranged",
+                            "heavy": false,
                             "hits": 4,
-                            "keywords_weapon": [],
-                            "strength_lower": 6,
-                            "strength_upper": 6
+                            "strength": 6
                         },
                         {
                             "range": "melee",
+                            "heavy": false,
                             "hits": 2,
-                            "keywords_weapon": [],
-                            "strength_lower": 6,
-                            "strength_upper": 8
+                            "strength": 6
                         }
                     ]
                 },
@@ -282,10 +260,9 @@
                     "actions": [
                         {
                             "range": "ranged",
+                            "heavy": false,
                             "hits": 2,
-                            "keywords_weapon": [],
-                            "strength_lower": 6,
-                            "strength_upper": 6
+                            "strength": 6
                         }
                     ]
                 },
@@ -299,17 +276,15 @@
                     "actions": [
                         {
                             "range": "ranged",
+                            "heavy": false,
                             "hits": 1,
-                            "keywords_weapon": [],
-                            "strength_lower": 6,
-                            "strength_upper": 6
+                            "strength": 6
                         },
                         {
                             "range": "20 cm",
+                            "heavy": false,
                             "hits": 1,
-                            "keywords_weapon": [],
-                            "strength_lower": 8,
-                            "strength_upper": 12
+                            "strength": 8
                         }
                     ]
                 },
@@ -323,17 +298,15 @@
                     "actions": [
                         {
                             "range": "ranged",
+                            "heavy": false,
                             "hits": 1,
-                            "keywords_weapon": [],
-                            "strength_lower": 6,
-                            "strength_upper": 6
+                            "strength": 6
                         },
                         {
                             "range": "melee",
+                            "heavy": false,
                             "hits": 1,
-                            "keywords_weapon": [],
-                            "strength_lower": 7,
-                            "strength_upper": 7
+                            "strength": 7
                         }
                     ]
                 },
@@ -348,19 +321,15 @@
                     "actions": [
                         {
                             "range": "20 cm",
+                            "heavy": false,
                             "hits": 2,
-                            "keywords_weapon": [],
-                            "strength_lower": 5,
-                            "strength_upper": 5
+                            "strength": 5
                         },
                         {
                             "range": "ranged",
+                            "heavy": true,
                             "hits": 1,
-                            "keywords_weapon": [
-                                "heavy"
-                            ],
-                            "strength_lower": 12,
-                            "strength_upper": 14
+                            "strength": 12
                         }
                     ]
                 },
@@ -375,17 +344,15 @@
                     "actions": [
                         {
                             "range": "ranged",
+                            "heavy": false,
                             "hits": 2,
-                            "keywords_weapon": [],
-                            "strength_lower": 6,
-                            "strength_upper": 6
+                            "strength": 6
                         },
                         {
                             "range": "melee",
+                            "heavy": false,
                             "hits": 2,
-                            "keywords_weapon": [],
-                            "strength_lower": 7,
-                            "strength_upper": 9
+                            "strength": 7
                         }
                     ]
                 },
@@ -399,17 +366,15 @@
                     "actions": [
                         {
                             "range": "ranged",
+                            "heavy": false,
                             "hits": 1,
-                            "keywords_weapon": [],
-                            "strength_lower": 6,
-                            "strength_upper": 6
+                            "strength": 6
                         },
                         {
                             "range": "melee",
+                            "heavy": false,
                             "hits": 1,
-                            "keywords_weapon": [],
-                            "strength_lower": 6,
-                            "strength_upper": 8
+                            "strength": 6
                         }
                     ]
                 },
@@ -423,17 +388,15 @@
                     "actions": [
                         {
                             "range": "ranged",
+                            "heavy": false,
                             "hits": 2,
-                            "keywords_weapon": [],
-                            "strength_lower": 5,
-                            "strength_upper": 5
+                            "strength": 5
                         },
                         {
                             "range": "melee",
+                            "heavy": false,
                             "hits": 1,
-                            "keywords_weapon": [],
-                            "strength_lower": 7,
-                            "strength_upper": 7
+                            "strength": 7
                         }
                     ]
                 },
@@ -449,10 +412,9 @@
                     "actions": [
                         {
                             "range": "melee",
+                            "heavy": false,
                             "hits": 2,
-                            "keywords_weapon": [],
-                            "strength_lower": 6,
-                            "strength_upper": 8
+                            "strength": 6
                         }
                     ]
                 },
@@ -467,10 +429,9 @@
                     "actions": [
                         {
                             "range": "melee",
+                            "heavy": false,
                             "hits": 1,
-                            "keywords_weapon": [],
-                            "strength_lower": 6,
-                            "strength_upper": 8
+                            "strength": 6
                         }
                     ]
                 },
@@ -485,17 +446,15 @@
                     "actions": [
                         {
                             "range": "ranged",
+                            "heavy": false,
                             "hits": 1,
-                            "keywords_weapon": [],
-                            "strength_lower": 6,
-                            "strength_upper": 6
+                            "strength": 6
                         },
                         {
                             "range": "melee",
+                            "heavy": false,
                             "hits": 1,
-                            "keywords_weapon": [],
-                            "strength_lower": 7,
-                            "strength_upper": 9
+                            "strength": 7
                         }
                     ]
                 }
@@ -516,17 +475,15 @@
                     "actions": [
                         {
                             "range": "20 cm",
+                            "heavy": false,
                             "hits": 1,
-                            "keywords_weapon": [],
-                            "strength_lower": 10,
-                            "strength_upper": 10
+                            "strength": 10
                         },
                         {
                             "range": "20 cm",
+                            "heavy": false,
                             "hits": 2,
-                            "keywords_weapon": [],
-                            "strength_lower": 8,
-                            "strength_upper": 10
+                            "strength": 8
                         }
                     ]
                 },
@@ -542,17 +499,15 @@
                     "actions": [
                         {
                             "range": "20 cm",
+                            "heavy": false,
                             "hits": 2,
-                            "keywords_weapon": [],
-                            "strength_lower": 6,
-                            "strength_upper": 6
+                            "strength": 6
                         },
                         {
                             "range": "melee",
+                            "heavy": false,
                             "hits": 1,
-                            "keywords_weapon": [],
-                            "strength_lower": 8,
-                            "strength_upper": 8
+                            "strength": 8
                         }
                     ]
                 },
@@ -568,12 +523,9 @@
                     "actions": [
                         {
                             "range": "ranged",
+                            "heavy": true,
                             "hits": 2,
-                            "keywords_weapon": [
-                                "heavy"
-                            ],
-                            "strength_lower": 8,
-                            "strength_upper": 8
+                            "strength": 8
                         }
                     ]
                 },
@@ -588,19 +540,15 @@
                     "actions": [
                         {
                             "range": "melee",
+                            "heavy": false,
                             "hits": 1,
-                            "keywords_weapon": [],
-                            "strength_lower": 8,
-                            "strength_upper": 10
+                            "strength": 8
                         },
                         {
                             "range": "melee",
+                            "heavy": true,
                             "hits": 4,
-                            "keywords_weapon": [
-                                "heavy"
-                            ],
-                            "strength_lower": 7,
-                            "strength_upper": 7
+                            "strength": 7
                         }
                     ]
                 },
@@ -616,10 +564,9 @@
                     "actions": [
                         {
                             "range": "melee",
+                            "heavy": false,
                             "hits": 2,
-                            "keywords_weapon": [],
-                            "strength_lower": 8,
-                            "strength_upper": 8
+                            "strength": 8
                         }
                     ]
                 },
@@ -634,19 +581,15 @@
                     "actions": [
                         {
                             "range": "melee",
+                            "heavy": false,
                             "hits": 1,
-                            "keywords_weapon": [],
-                            "strength_lower": 7,
-                            "strength_upper": 7
+                            "strength": 7
                         },
                         {
                             "range": "melee",
+                            "heavy": true,
                             "hits": 1,
-                            "keywords_weapon": [
-                                "heavy"
-                            ],
-                            "strength_lower": 8,
-                            "strength_upper": 10
+                            "strength": 8
                         }
                     ]
                 },
@@ -660,10 +603,9 @@
                     "actions": [
                         {
                             "range": "melee",
+                            "heavy": false,
                             "hits": 2,
-                            "keywords_weapon": [],
-                            "strength_lower": 7,
-                            "strength_upper": 7
+                            "strength": 7
                         }
                     ]
                 },
@@ -677,17 +619,15 @@
                     "actions": [
                         {
                             "range": "ranged",
+                            "heavy": false,
                             "hits": 1,
-                            "keywords_weapon": [],
-                            "strength_lower": 6,
-                            "strength_upper": 6
+                            "strength": 6
                         },
                         {
                             "range": "melee",
+                            "heavy": false,
                             "hits": 1,
-                            "keywords_weapon": [],
-                            "strength_lower": 7,
-                            "strength_upper": 7
+                            "strength": 7
                         }
                     ]
                 },
@@ -702,21 +642,15 @@
                     "actions": [
                         {
                             "range": "ranged",
+                            "heavy": true,
                             "hits": 1,
-                            "keywords_weapon": [
-                                "heavy"
-                            ],
-                            "strength_lower": 4,
-                            "strength_upper": 6
+                            "strength": 4
                         },
                         {
                             "range": "melee",
+                            "heavy": true,
                             "hits": 1,
-                            "keywords_weapon": [
-                                "heavy"
-                            ],
-                            "strength_lower": 9,
-                            "strength_upper": 11
+                            "strength": 9
                         }
                     ]
                 },
@@ -730,17 +664,15 @@
                     "actions": [
                         {
                             "range": "ranged",
+                            "heavy": false,
                             "hits": 1,
-                            "keywords_weapon": [],
-                            "strength_lower": 6,
-                            "strength_upper": 6
+                            "strength": 6
                         },
                         {
                             "range": "20 cm",
+                            "heavy": false,
                             "hits": 1,
-                            "keywords_weapon": [],
-                            "strength_lower": 7,
-                            "strength_upper": 7
+                            "strength": 7
                         }
                     ]
                 },
@@ -754,12 +686,9 @@
                     "actions": [
                         {
                             "range": "ranged",
+                            "heavy": true,
                             "hits": 1,
-                            "keywords_weapon": [
-                                "heavy"
-                            ],
-                            "strength_lower": 8,
-                            "strength_upper": 8
+                            "strength": 8
                         }
                     ]
                 },
@@ -773,17 +702,15 @@
                     "actions": [
                         {
                             "range": "ranged",
+                            "heavy": false,
                             "hits": 1,
-                            "keywords_weapon": [],
-                            "strength_lower": 6,
-                            "strength_upper": 6
+                            "strength": 6
                         },
                         {
                             "range": "melee",
+                            "heavy": false,
                             "hits": 1,
-                            "keywords_weapon": [],
-                            "strength_lower": 7,
-                            "strength_upper": 7
+                            "strength": 7
                         }
                     ]
                 },
@@ -797,12 +724,9 @@
                     "actions": [
                         {
                             "range": "ranged",
+                            "heavy": true,
                             "hits": 2,
-                            "keywords_weapon": [
-                                "heavy"
-                            ],
-                            "strength_lower": 10,
-                            "strength_upper": 12
+                            "strength": 10
                         }
                     ]
                 },
@@ -817,28 +741,21 @@
                     "actions": [
                         {
                             "range": "ranged",
+                            "heavy": false,
                             "hits": 4,
-                            "keywords_weapon": [],
-                            "strength_lower": 7,
-                            "strength_upper": 7
+                            "strength": 7
                         },
                         {
                             "range": "ranged",
+                            "heavy": true,
                             "hits": 4,
-                            "keywords_weapon": [
-                                "heavy"
-                            ],
-                            "strength_lower": 10,
-                            "strength_upper": 10
+                            "strength": 10
                         },
                         {
                             "range": "ranged",
+                            "heavy": true,
                             "hits": 2,
-                            "keywords_weapon": [
-                                "heavy"
-                            ],
-                            "strength_lower": 12,
-                            "strength_upper": 14
+                            "strength": 12
                         }
                     ]
                 }
@@ -858,12 +775,9 @@
                     "actions": [
                         {
                             "range": "ranged",
+                            "heavy": true,
                             "hits": 1,
-                            "keywords_weapon": [
-                                "heavy"
-                            ],
-                            "strength_lower": 5,
-                            "strength_upper": 8
+                            "strength": 5
                         }
                     ]
                 },
@@ -879,10 +793,9 @@
                     "actions": [
                         {
                             "range": "ranged",
+                            "heavy": false,
                             "hits": 4,
-                            "keywords_weapon": [],
-                            "strength_lower": 7,
-                            "strength_upper": 7
+                            "strength": 7
                         }
                     ]
                 },
@@ -897,10 +810,9 @@
                     "actions": [
                         {
                             "range": "melee",
+                            "heavy": false,
                             "hits": 1,
-                            "keywords_weapon": [],
-                            "strength_lower": 8,
-                            "strength_upper": 10
+                            "strength": 8
                         }
                     ]
                 },
@@ -915,12 +827,9 @@
                     "actions": [
                         {
                             "range": "ranged",
+                            "heavy": true,
                             "hits": 1,
-                            "keywords_weapon": [
-                                "heavy"
-                            ],
-                            "strength_lower": 12,
-                            "strength_upper": 14
+                            "strength": 12
                         }
                     ]
                 },
@@ -935,12 +844,9 @@
                     "actions": [
                         {
                             "range": "ranged",
+                            "heavy": true,
                             "hits": 6,
-                            "keywords_weapon": [
-                                "heavy"
-                            ],
-                            "strength_lower": 7,
-                            "strength_upper": 7
+                            "strength": 7
                         }
                     ]
                 }

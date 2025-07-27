@@ -186,17 +186,17 @@
                                 <div class="indented">
                                     Repeat for weapon: <b>hits</b>:
                                     <div class="indented">
-                                        If target model: <b>⛊armor</b> is higher than weapon <b>💥strength (high)</b>:
+                                        If weapon <b>💥strength</b> is lower than target model: <b>⛊armor</b> - 1:
                                         <div class="indented">
                                             damage = 0
                                         </div>
-                                        If target model: <b>⛊armor</b> is within the weapon <b>💥strength</b> range:
+                                        If weapon <b>💥strength</b> is equal to target model: <b>⛊armor</b> or lower by 1:
                                         <div class="indented">
                                             damage = 1
                                         </div>
-                                        If target model: <b>⛊armor</b> is lower than weapon <b>💥strength (low)</b>:
+                                        If weapon <b>💥strength</b> is higher target model: <b>⛊armor</b>:
                                         <div class="indented">
-                                            damage = 2 * (weapon <b>💥strength (low)</b> - target model: <b>⛊armor</b>)
+                                            damage = 2 * (weapon <b>💥strength</b> - target model: <b>⛊armor</b>)
                                         </div>
                                         <br/>
                                         Reduce unit: <b>health</b> by damage.
