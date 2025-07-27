@@ -233,8 +233,8 @@ body {
 
 #army_lists {
     display: grid;
-    grid-template-columns: 490px 490px;
-    gap: 20px 150px;
+    grid-template-columns: 480px 480px;
+    gap: 0px 150px;
 }
 
 .unit_army_list {
@@ -257,8 +257,8 @@ body {
 }
 
 .unit_state {
-    padding: 4px;
-    width: 24px;
+    padding: 2px;
+    width: 26px;
 }
 
 .health_bar {
