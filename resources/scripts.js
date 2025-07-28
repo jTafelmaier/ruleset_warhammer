@@ -5,14 +5,25 @@
 function calculate_winning_state() {
 
     function set_texts(function_get_text) {
+    
+        function set_text(
+            text_side,
+            index) {
+
+            element = document
+                .getElementsByClassName(text_side)[0]
+                .getElementsByClassName("outcome")[0]
+
+            text = function_get_text(index)
+
+            element.textContent = text
+            element.classList = "outcome " + text
+        }
+
         [
             "left",
             "right"]
-            .forEach(
-                (text_side, index) => document
-                    .getElementsByClassName(text_side)[0]
-                    .getElementsByClassName("outcome")[0]
-                    .textContent = function_get_text(index))
+            .forEach(set_text)
         }
 
     function determine_winning(property) {

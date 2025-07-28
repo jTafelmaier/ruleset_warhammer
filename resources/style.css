@@ -352,7 +352,21 @@ td.points_cost {
 }
 
 .outcome {
+    color: white;
+    border-radius: 2px;
     padding: 4px;
+}
+
+.outcome.winning {
+    background: linear-gradient(#8bc5ff 0px, #626d84 50px);
+}
+
+.outcome.losing {
+    background: linear-gradient(red 0px, #626d84 50px);
+}
+
+.outcome.draw {
+    background: linear-gradient(#919eba 0px, #626d84 50px);
 }
 
 #button_next_turn {
