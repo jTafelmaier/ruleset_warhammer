@@ -187,7 +187,7 @@ body {
     height: 200px;
     background-size: cover;
     box-shadow: inset 300px 0px 400px -100px #2e3544;
-    border: 2px solid #919eba;
+    border: 2px solid #9fa7ba;
     border-radius: 5px;
 }
 
@@ -221,7 +221,7 @@ body {
 .unit_property {
     display: inline-block;
     color: #2e3544;
-    background: linear-gradient(#919eba 0px, #626d84 40px);
+    background: linear-gradient(#9fa7ba 0px, #6b7384 40px);
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
     padding: 2px;
@@ -286,8 +286,8 @@ body {
     margin-top: 1px;
     margin-bottom: 1px;
     border-radius: 1px;
-    background: linear-gradient(0.25turn, #c8e2fc, #6994c0 25%, #6994c0 75%, #c8e2fc);
-    box-shadow: 0 0 4px 1px #2f6d8f;
+    background: linear-gradient(0.25turn, #8cb8e4, #4f99e2 25%, #4f99e2 75%, #8cb8e4);
+    box-shadow: 0 0 4px 1px #2f95cc96;
 }
 
 .health_bar:hover .token.next {
@@ -332,19 +332,12 @@ td.points_cost {
 
 .victory_state {
     display: flex;
+    font-size: medium;
     color: #535f79;
 }
 
 .victory_points {
-    display: inline-block;
-    font-size: medium;
-    font-weight: bold;
-    color: white;
-    background: linear-gradient(#535f79 0px, #626d84 50px);
-    border-radius: 2px;
-    padding: 2px;
-    padding-left: 4px;
-    padding-right: 4px;
+    padding: 4px;
 }
 
 .victory_points:hover {
@@ -356,6 +349,7 @@ td.points_cost {
 }
 
 .outcome {
+    font-weight: bold;
     color: white;
     border-radius: 2px;
     padding: 4px;
