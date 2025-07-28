@@ -129,8 +129,8 @@
                         {
                             "range": "ranged",
                             "heavy": true,
-                            "hits": 2,
-                            "strength": 5
+                            "hits": 4,
+                            "strength": 4
                         },
                         {
                             "range": "melee",
