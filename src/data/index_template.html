@@ -84,7 +84,7 @@
                                         In cover
                                     </td>
                                     <td>
-                                        Drawing the shortest possible line between two units passes through a cover object, and the attacking unit is not near all passed cover objects.
+                                        Drawing the shortest possible line between the base centers of two units passes through a cover object, and the attacking unit is not near all passed cover objects.
                                     </td>
                                 </tr>
                                 <tr>
@@ -182,22 +182,49 @@
                                 <br/>
                                 If no target unit can be selected, end the attack sequence for this weapon.
                                 <br/>
+                                Can only use heavy weapons if this action is the first one performed for this unit this turn.
+                                <br/>
                                 <br/>
                                 <div class="indented">
                                     Repeat for weapon: <b>hits</b>:
                                     <div class="indented">
-                                        If weapon <b>💥strength</b> is lower than target model: <b>⛊armor</b> - 1:
-                                        <div class="indented">
-                                            damage = 0
-                                        </div>
-                                        If weapon <b>💥strength</b> is equal to target model: <b>⛊armor</b> or lower by 1:
-                                        <div class="indented">
-                                            damage = 1
-                                        </div>
-                                        If weapon <b>💥strength</b> is higher than target model: <b>⛊armor</b>:
-                                        <div class="indented">
-                                            damage = 2 * (weapon <b>💥strength</b> - target model: <b>⛊armor</b>)
-                                        </div>
+                                        remaining strength = weapon <b>💥strength</b> - target model: <b>⛊armor</b>
+                                        <table class="table_default">
+                                            <tbody>
+                                                <tr>
+                                                    <th>
+                                                        remaining strength
+                                                    </th>
+                                                    <th>
+                                                        damage
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        < -1
+                                                    </td>
+                                                    <td>
+                                                        0
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        -1 or 0
+                                                    </td>
+                                                    <td>
+                                                        1
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        > 0
+                                                    </td>
+                                                    <td>
+                                                        2 * remaining strength
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                         <br/>
                                         Reduce unit: <b>health</b> by damage.
                                         <br/>
@@ -213,22 +240,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="action">
-                        <h4>
-                            Heavy attack
-                        </h4>
-                        <div>
-                            This action must be the first one performed for this unit, and cannot perform the "Attack" action as a second action this turn.
-                            <br/>
-                            Perform one "Attack" action, and during this attack, can use weapons with
-                            <div class="keyword kw_attack" title='Can only use this weapon when performing the "Heavy attack" action.'>
-                                <span>heavy</span>
-                            </div>
-                            .
-                        </div>
-                    </div>
-                    <br/>
-                    <br/>
                     <h2 class="section">
                         Restricted actions
                     </h2>
