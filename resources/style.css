@@ -95,6 +95,10 @@ body {
     gap: 100px 50px;
 }
 
+.icon {
+    font-size: x-small;
+}
+
 .action {
     display: flex;
     width: 600px;

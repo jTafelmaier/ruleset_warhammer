@@ -34,7 +34,7 @@
                                         Unit: health
                                     </td>
                                     <td>
-                                        Inherent property of all units: The initial and maximum value for health is 8.
+                                        Inherent property of all units: The initial and maximum value for health is 4.
                                     </td>
                                 </tr>
                                 <tr>
@@ -185,56 +185,66 @@
                                 Can only use heavy weapons if this action is the first one performed for this unit this turn.
                                 <br/>
                                 <br/>
+                                Repeat for weapon: <b>hits</b>:
                                 <div class="indented">
-                                    Repeat for weapon: <b>hits</b>:
+                                    <table class="table_default">
+                                        <tbody>
+                                            <tr>
+                                                <th>
+                                                    <b><span class="icon">💥</span>strength</b> - <b><span class="icon">⛊</span>armor</b>
+                                                </th>
+                                                <th>
+                                                    Reduce unit: <b>health</b> by:
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    < 0
+                                                </td>
+                                                <td>
+                                                    0
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    0
+                                                </td>
+                                                <td>
+                                                    1
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    1
+                                                </td>
+                                                <td>
+                                                    1
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    2
+                                                </td>
+                                                <td>
+                                                    2
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    >= 3
+                                                </td>
+                                                <td>
+                                                    4
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <br/>
+                                    If unit: <b>health</b> &lt= 0:
                                     <div class="indented">
-                                        remaining strength = weapon <b>💥strength</b> - target model: <b>⛊armor</b>
-                                        <table class="table_default">
-                                            <tbody>
-                                                <tr>
-                                                    <th>
-                                                        remaining strength
-                                                    </th>
-                                                    <th>
-                                                        damage
-                                                    </th>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        < -1
-                                                    </td>
-                                                    <td>
-                                                        0
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        -1 or 0
-                                                    </td>
-                                                    <td>
-                                                        1
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        > 0
-                                                    </td>
-                                                    <td>
-                                                        2 * remaining strength
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                        The enemy player must choose to destroy one model in the target unit.
                                         <br/>
-                                        Reduce unit: <b>health</b> by damage.
-                                        <br/>
-                                        <br/>
-                                        If unit: <b>health</b> &lt= 0:
-                                        <div class="indented">
-                                            The enemy player must choose to destroy one model in the target unit.
-                                            <br/>
-                                            Then, restore the unit health tokens.
-                                        </div>
+                                        Then, restore the unit health tokens.
                                     </div>
                                 </div>
                             </div>
