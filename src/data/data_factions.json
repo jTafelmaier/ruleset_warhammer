@@ -14,7 +14,7 @@
                     ],
                     "actions": [
                         {
-                            "range": "ranged",
+                            "range": "rn",
                             "heavy": false,
                             "hits": 2,
                             "strength": 5
@@ -37,7 +37,7 @@
                     ],
                     "actions": [
                         {
-                            "range": "ranged",
+                            "range": "rn",
                             "heavy": true,
                             "hits": 2,
                             "strength": 7
@@ -127,7 +127,7 @@
                     ],
                     "actions": [
                         {
-                            "range": "ranged",
+                            "range": "rn",
                             "heavy": true,
                             "hits": 4,
                             "strength": 4
@@ -167,7 +167,7 @@
                     ],
                     "actions": [
                         {
-                            "range": "ranged",
+                            "range": "rn",
                             "heavy": false,
                             "hits": 4,
                             "strength": 5
@@ -214,7 +214,7 @@
                     ],
                     "actions": [
                         {
-                            "range": "ranged",
+                            "range": "rn",
                             "heavy": false,
                             "hits": 2,
                             "strength": 5
@@ -237,7 +237,7 @@
                     ],
                     "actions": [
                         {
-                            "range": "ranged",
+                            "range": "rn",
                             "heavy": false,
                             "hits": 4,
                             "strength": 5
@@ -259,7 +259,7 @@
                     ],
                     "actions": [
                         {
-                            "range": "ranged",
+                            "range": "rn",
                             "heavy": false,
                             "hits": 2,
                             "strength": 5
@@ -275,7 +275,7 @@
                     ],
                     "actions": [
                         {
-                            "range": "ranged",
+                            "range": "rn",
                             "heavy": false,
                             "hits": 1,
                             "strength": 5
@@ -297,7 +297,7 @@
                     ],
                     "actions": [
                         {
-                            "range": "ranged",
+                            "range": "rn",
                             "heavy": false,
                             "hits": 1,
                             "strength": 5
@@ -325,7 +325,7 @@
                             "strength": 4
                         },
                         {
-                            "range": "ranged",
+                            "range": "rn",
                             "heavy": true,
                             "hits": 1,
                             "strength": 12
@@ -342,7 +342,7 @@
                     ],
                     "actions": [
                         {
-                            "range": "ranged",
+                            "range": "rn",
                             "heavy": false,
                             "hits": 2,
                             "strength": 5
@@ -364,7 +364,7 @@
                     ],
                     "actions": [
                         {
-                            "range": "ranged",
+                            "range": "rn",
                             "heavy": false,
                             "hits": 1,
                             "strength": 5
@@ -386,7 +386,7 @@
                     ],
                     "actions": [
                         {
-                            "range": "ranged",
+                            "range": "rn",
                             "heavy": false,
                             "hits": 2,
                             "strength": 5
@@ -444,7 +444,7 @@
                     ],
                     "actions": [
                         {
-                            "range": "ranged",
+                            "range": "rn",
                             "heavy": false,
                             "hits": 1,
                             "strength": 5
@@ -521,7 +521,7 @@
                     ],
                     "actions": [
                         {
-                            "range": "ranged",
+                            "range": "rn",
                             "heavy": true,
                             "hits": 2,
                             "strength": 7
@@ -617,7 +617,7 @@
                     ],
                     "actions": [
                         {
-                            "range": "ranged",
+                            "range": "rn",
                             "heavy": false,
                             "hits": 1,
                             "strength": 5
@@ -641,7 +641,7 @@
                     ],
                     "actions": [
                         {
-                            "range": "ranged",
+                            "range": "rn",
                             "heavy": false,
                             "hits": 2,
                             "strength": 5
@@ -664,7 +664,7 @@
                     ],
                     "actions": [
                         {
-                            "range": "ranged",
+                            "range": "rn",
                             "heavy": true,
                             "hits": 1,
                             "strength": 7
@@ -686,7 +686,7 @@
                     ],
                     "actions": [
                         {
-                            "range": "ranged",
+                            "range": "rn",
                             "heavy": false,
                             "hits": 1,
                             "strength": 5
@@ -708,7 +708,7 @@
                     ],
                     "actions": [
                         {
-                            "range": "ranged",
+                            "range": "rn",
                             "heavy": true,
                             "hits": 1,
                             "strength": 7
@@ -724,7 +724,7 @@
                     ],
                     "actions": [
                         {
-                            "range": "ranged",
+                            "range": "rn",
                             "heavy": false,
                             "hits": 1,
                             "strength": 5
@@ -744,7 +744,7 @@
                     "keywords_model": [],
                     "actions": [
                         {
-                            "range": "ranged",
+                            "range": "rn",
                             "heavy": true,
                             "hits": 2,
                             "strength": 12
@@ -760,19 +760,19 @@
                     ],
                     "actions": [
                         {
-                            "range": "ranged",
+                            "range": "rn",
                             "heavy": false,
                             "hits": 4,
                             "strength": 6
                         },
                         {
-                            "range": "ranged",
+                            "range": "rn",
                             "heavy": true,
                             "hits": 4,
                             "strength": 10
                         },
                         {
-                            "range": "ranged",
+                            "range": "rn",
                             "heavy": true,
                             "hits": 1,
                             "strength": 14
@@ -794,7 +794,7 @@
                     ],
                     "actions": [
                         {
-                            "range": "ranged",
+                            "range": "rn",
                             "heavy": true,
                             "hits": 2,
                             "strength": 6
@@ -818,7 +818,7 @@
                     ],
                     "actions": [
                         {
-                            "range": "ranged",
+                            "range": "rn",
                             "heavy": false,
                             "hits": 6,
                             "strength": 6
@@ -835,7 +835,7 @@
                     ],
                     "actions": [
                         {
-                            "range": "ranged",
+                            "range": "rn",
                             "heavy": true,
                             "hits": 1,
                             "strength": 7
@@ -887,7 +887,7 @@
                     ],
                     "actions": [
                         {
-                            "range": "ranged",
+                            "range": "rn",
                             "heavy": true,
                             "hits": 1,
                             "strength": 12
@@ -904,7 +904,7 @@
                     ],
                     "actions": [
                         {
-                            "range": "ranged",
+                            "range": "rn",
                             "heavy": true,
                             "hits": 4,
                             "strength": 7
