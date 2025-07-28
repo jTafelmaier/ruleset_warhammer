@@ -315,7 +315,6 @@
                     "points_per_model": 400,
                     "armor": 10,
                     "keywords_model": [
-                        "large",
                         "move 25"
                     ],
                     "actions": [
@@ -742,9 +741,7 @@
                     "name": "Araknae accelerator platform",
                     "points_per_model": 200,
                     "armor": 11,
-                    "keywords_model": [
-                        "large"
-                    ],
+                    "keywords_model": [],
                     "actions": [
                         {
                             "range": "ranged",
@@ -759,7 +756,6 @@
                     "points_per_model": 600,
                     "armor": 12,
                     "keywords_model": [
-                        "large",
                         "move 25"
                     ],
                     "actions": [
