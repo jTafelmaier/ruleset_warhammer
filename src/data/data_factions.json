@@ -632,6 +632,30 @@
                     ]
                 },
                 {
+                    "name": "Saturnine praetor",
+                    "points_per_model": 200,
+                    "armor": 7,
+                    "keywords_model": [
+                        "score",
+                        "move 10",
+                        "teleportation"
+                    ],
+                    "actions": [
+                        {
+                            "range": "ranged",
+                            "heavy": true,
+                            "hits": 1,
+                            "strength": 6
+                        },
+                        {
+                            "range": "melee",
+                            "heavy": false,
+                            "hits": 1,
+                            "strength": 8
+                        }
+                    ]
+                },
+                {
                     "name": "Warsmith",
                     "points_per_model": 150,
                     "armor": 6,
