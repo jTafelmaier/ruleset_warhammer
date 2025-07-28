@@ -23,7 +23,7 @@
                             "range": "melee",
                             "heavy": false,
                             "hits": 4,
-                            "strength": 5
+                            "strength": 6
                         }
                     ]
                 },
@@ -40,13 +40,13 @@
                             "range": "ranged",
                             "heavy": true,
                             "hits": 2,
-                            "strength": 6
+                            "strength": 7
                         },
                         {
                             "range": "melee",
                             "heavy": false,
                             "hits": 1,
-                            "strength": 6
+                            "strength": 7
                         }
                     ]
                 },
@@ -82,7 +82,7 @@
                             "range": "20 cm",
                             "heavy": false,
                             "hits": 4,
-                            "strength": 5
+                            "strength": 4
                         },
                         {
                             "range": "melee",
@@ -152,8 +152,8 @@
                         {
                             "range": "melee",
                             "heavy": false,
-                            "hits": 4,
-                            "strength": 5
+                            "hits": 2,
+                            "strength": 7
                         }
                     ]
                 },
@@ -170,7 +170,7 @@
                             "range": "ranged",
                             "heavy": false,
                             "hits": 4,
-                            "strength": 4
+                            "strength": 5
                         },
                         {
                             "range": "melee",
@@ -194,7 +194,7 @@
                             "range": "20 cm",
                             "heavy": false,
                             "hits": 4,
-                            "strength": 5
+                            "strength": 4
                         },
                         {
                             "range": "melee",
@@ -711,7 +711,7 @@
                             "range": "ranged",
                             "heavy": true,
                             "hits": 1,
-                            "strength": 8
+                            "strength": 7
                         }
                     ]
                 },
@@ -747,7 +747,7 @@
                             "range": "ranged",
                             "heavy": true,
                             "hits": 2,
-                            "strength": 10
+                            "strength": 12
                         }
                     ]
                 },
@@ -774,8 +774,8 @@
                         {
                             "range": "ranged",
                             "heavy": true,
-                            "hits": 2,
-                            "strength": 12
+                            "hits": 1,
+                            "strength": 14
                         }
                     ]
                 }
