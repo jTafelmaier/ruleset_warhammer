@@ -789,9 +789,9 @@
             "name": "Necrons",
             "units": [
                 {
-                    "name": "Warrior",
-                    "points_per_model": 50,
-                    "armor": 4,
+                    "name": "Skorpekh lord",
+                    "points_per_model": 250,
+                    "armor": 8,
                     "keywords_model": [
                         "score",
                         "move 15"
@@ -800,8 +800,14 @@
                         {
                             "range": "ranged",
                             "heavy": true,
-                            "hits": 1,
-                            "strength": 7
+                            "hits": 2,
+                            "strength": 6
+                        },
+                        {
+                            "range": "melee",
+                            "heavy": false,
+                            "hits": 2,
+                            "strength": 9
                         }
                     ]
                 },
@@ -824,6 +830,23 @@
                     ]
                 },
                 {
+                    "name": "Warrior",
+                    "points_per_model": 50,
+                    "armor": 4,
+                    "keywords_model": [
+                        "score",
+                        "move 15"
+                    ],
+                    "actions": [
+                        {
+                            "range": "ranged",
+                            "heavy": true,
+                            "hits": 1,
+                            "strength": 7
+                        }
+                    ]
+                },
+                {
                     "name": "Skorpekh destroyer",
                     "points_per_model": 100,
                     "armor": 6,
@@ -837,6 +860,24 @@
                             "heavy": false,
                             "hits": 1,
                             "strength": 9
+                        }
+                    ]
+                },
+                {
+                    "name": "Ophydian destroyer",
+                    "points_per_model": 100,
+                    "armor": 5,
+                    "keywords_model": [
+                        "score",
+                        "move 25",
+                        "teleportation"
+                    ],
+                    "actions": [
+                        {
+                            "range": "melee",
+                            "heavy": false,
+                            "hits": 2,
+                            "strength": 7
                         }
                     ]
                 },
