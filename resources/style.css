@@ -336,7 +336,7 @@ td.points_cost {
     font-size: medium;
     font-weight: bold;
     color: white;
-    background: linear-gradient(red 0px, #626d84 50px);
+    background: linear-gradient(#535f79 0px, #626d84 50px);
     border-radius: 2px;
     padding: 2px;
     padding-left: 4px;
@@ -358,7 +358,7 @@ td.points_cost {
 }
 
 .outcome.winning {
-    background: linear-gradient(#8bc5ff 0px, #626d84 50px);
+    background: linear-gradient(#4e6bfb 0px, #626d84 50px);
 }
 
 .outcome.losing {
