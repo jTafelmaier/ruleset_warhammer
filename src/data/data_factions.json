@@ -643,9 +643,9 @@
                     "actions": [
                         {
                             "range": "ranged",
-                            "heavy": true,
-                            "hits": 1,
-                            "strength": 6
+                            "heavy": false,
+                            "hits": 2,
+                            "strength": 5
                         },
                         {
                             "range": "melee",
@@ -668,7 +668,7 @@
                             "range": "ranged",
                             "heavy": true,
                             "hits": 1,
-                            "strength": 6
+                            "strength": 7
                         },
                         {
                             "range": "melee",
