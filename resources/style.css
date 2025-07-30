@@ -224,9 +224,7 @@ body {
     background: linear-gradient(#9fa7ba 0px, #6b7384 40px);
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
-    padding: 2px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: 2px 5px 2px 5px;
     margin-bottom: 4px;
 }
 
@@ -337,7 +335,7 @@ td.points_cost {
 }
 
 .victory_points {
-    padding: 4px;
+    padding: 2px;
 }
 
 .victory_points:hover {
@@ -345,14 +343,15 @@ td.points_cost {
 }
 
 .model_points {
-    padding: 4px;
+    padding: 2px;
 }
 
 .outcome {
     font-weight: bold;
     color: white;
     border-radius: 2px;
-    padding: 4px;
+    padding: 2px 4px 2px 4px;
+    margin-left: 5px;
 }
 
 .outcome.winning {
