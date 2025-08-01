@@ -9,38 +9,27 @@ from src import md_shared
 
 def get_text_html_data_unit(
     dict_unit:typing.Dict,
-    dict_keywords:typing.Dict,
+    dict_actions:typing.Dict,
     name_faction:str):
 
-    def get_text_html_keywords(
-        text_category:str):
+    def get_text_html_action(
+        text_action:str):
 
-        def get_text_html_keyword(
-            text_keyword:str):
+        text_name_action, \
+        _, \
+        text_parameters = text_action \
+            .partition(" ")
 
-            text_name_keyword, \
-            _, \
-            text_parameters = text_keyword \
-                .partition(" ")
-
-            return "<div class=\"unit_property " \
-                + text_name_keyword \
-                + "\"title=\"" \
-                + dict_keywords \
-                    [text_category] \
-                    [text_name_keyword] \
-                + "\"><span>" \
-                + text_name_keyword \
-                + "</span> " \
-                + text_parameters \
-                + "</div>"
-
-        return "<br/>" \
-            .join(
-                map(
-                    get_text_html_keyword,
-                    dict_unit \
-                        [text_category]))
+        return "<div class=\"unit_property " \
+            + text_name_action \
+            + "\"title=\"" \
+            + dict_actions \
+                [text_name_action] \
+            + "\"><span>" \
+            + text_name_action \
+            + "</span> " \
+            + text_parameters \
+            + "</div>"
 
     path_image_unit = "/" \
         .join(
@@ -51,7 +40,7 @@ def get_text_html_data_unit(
                     ["name"] \
                     + ".png"])
 
-    def get_text_html_row_action(
+    def get_text_html_row_weapon(
         dict_action:typing.Dict):
 
         return "<div class=\"unit_property attack\"><span>⚔</span>" \
@@ -65,9 +54,9 @@ def get_text_html_data_unit(
     text_html_rows_actions = "<br/>" \
         .join(
             map(
-                get_text_html_row_action,
+                get_text_html_row_weapon,
                 dict_unit
-                    ["actions"]))
+                    ["weapons"]))
 
     return "<div class=\"unit\" title=\"" \
         + str(
@@ -83,7 +72,12 @@ def get_text_html_data_unit(
         + dict_unit \
             ["name"] \
         + "</h3></div><div class=\"model_properties\"><br/>" \
-        + get_text_html_keywords("keywords_model") \
+        + "<br/>" \
+            .join(
+                map(
+                    get_text_html_action,
+                    dict_unit \
+                        ["actions"])) \
         + "<br/>" \
         + text_html_rows_actions \
         + "</div></div></div>"

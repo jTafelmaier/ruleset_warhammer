@@ -10,7 +10,7 @@ from src import md_shared
 
 def get_text_html_army_lists(
     list_dicts_factions:typing.List[typing.Dict],
-    dict_keywords:typing.Dict):
+    dict_actions:typing.Dict):
 
     def get_html_army_list(
         text_side:str):
@@ -72,7 +72,7 @@ def get_text_html_army_lists(
                 + ")\">" \
                 + md_units.get_text_html_data_unit(
                     dict_unit=dict_unit,
-                    dict_keywords=dict_keywords,
+                    dict_actions=dict_actions,
                     name_faction=name_faction) \
                 + "</div></div>"
 

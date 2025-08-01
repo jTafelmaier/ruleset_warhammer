@@ -36,7 +36,7 @@ def main():
                         map(
                             modify_action,
                             dict_unit \
-                                ["actions"]))
+                                ["weapons"]))
 
                 return None
 

@@ -17,11 +17,11 @@ def generate_htmls():
             "data",
             "index_template.html"])
 
-    dict_keywords = md_shared.get_dict_json(
+    dict_actions = md_shared.get_dict_json(
         [
             "src",
             "data",
-            "data_keywords.json"])
+            "data_actions.json"])
 
     list_dicts_factions = md_shared.get_dict_setting("data_factions.json") \
         ["data"]
@@ -33,13 +33,13 @@ def generate_htmls():
     soup_factions = bs4.BeautifulSoup(
             markup=md_faction_rules.get_text_html_faction_rules(
                 list_dicts_factions=list_dicts_factions,
-                dict_keywords=dict_keywords),
+                dict_actions=dict_actions),
             features="html.parser")
 
     soup_army_list = bs4.BeautifulSoup(
             markup=md_army_list.get_text_html_army_lists(
                 list_dicts_factions=list_dicts_factions,
-                dict_keywords=dict_keywords),
+                dict_actions=dict_actions),
             features="html.parser")
 
     dict_replacements = {

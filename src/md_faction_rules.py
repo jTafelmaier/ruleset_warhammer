@@ -12,7 +12,7 @@ from src import md_units
 
 def get_text_html_faction_rules(
     list_dicts_factions:typing.List[typing.Dict],
-    dict_keywords:typing.Dict):
+    dict_actions:typing.Dict):
 
     def get_text_html_button_show_faction(
         dict_faction:typing.Dict):
@@ -47,7 +47,7 @@ def get_text_html_faction_rules(
 
             return md_units.get_text_html_data_unit(
                     dict_unit=dict_unit,
-                    dict_keywords=dict_keywords,
+                    dict_actions=dict_actions,
                     name_faction=name_faction)
 
         text_html_faction = "" \

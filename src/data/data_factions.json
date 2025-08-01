@@ -7,12 +7,12 @@
                     "name": "Aethon Shaan",
                     "points_per_model": 200,
                     "armor": 5,
-                    "keywords_model": [
+                    "actions": [
                         "score",
                         "move fly 25",
                         "teleportation"
                     ],
-                    "actions": [
+                    "weapons": [
                         {
                             "range": "rn",
                             "heavy": false,
@@ -31,11 +31,11 @@
                     "name": "Iron father Feirros",
                     "points_per_model": 200,
                     "armor": 6,
-                    "keywords_model": [
+                    "actions": [
                         "score",
                         "move 10"
                     ],
-                    "actions": [
+                    "weapons": [
                         {
                             "range": "rn",
                             "heavy": true,
@@ -54,12 +54,12 @@
                     "name": "Darnath Lysander",
                     "points_per_model": 200,
                     "armor": 7,
-                    "keywords_model": [
+                    "actions": [
                         "score",
                         "move 10",
                         "teleportation"
                     ],
-                    "actions": [
+                    "weapons": [
                         {
                             "range": "melee",
                             "heavy": false,
@@ -72,12 +72,12 @@
                     "name": "Belial",
                     "points_per_model": 200,
                     "armor": 6,
-                    "keywords_model": [
+                    "actions": [
                         "score",
                         "move 10",
                         "teleportation"
                     ],
-                    "actions": [
+                    "weapons": [
                         {
                             "range": "20 cm",
                             "heavy": false,
@@ -96,12 +96,12 @@
                     "name": "Corswain",
                     "points_per_model": 200,
                     "armor": 5,
-                    "keywords_model": [
+                    "actions": [
                         "score",
                         "move 15",
                         "teleportation"
                     ],
-                    "actions": [
+                    "weapons": [
                         {
                             "range": "20 cm",
                             "heavy": true,
@@ -120,12 +120,12 @@
                     "name": "Marduk Sedras",
                     "points_per_model": 200,
                     "armor": 6,
-                    "keywords_model": [
+                    "actions": [
                         "score",
                         "move 10",
                         "teleportation"
                     ],
-                    "actions": [
+                    "weapons": [
                         {
                             "range": "rn",
                             "heavy": true,
@@ -144,11 +144,11 @@
                     "name": "Hibou Khan",
                     "points_per_model": 150,
                     "armor": 5,
-                    "keywords_model": [
+                    "actions": [
                         "score",
                         "move 15"
                     ],
-                    "actions": [
+                    "weapons": [
                         {
                             "range": "melee",
                             "heavy": false,
@@ -161,11 +161,11 @@
                     "name": "Suboden Khan",
                     "points_per_model": 200,
                     "armor": 6,
-                    "keywords_model": [
+                    "actions": [
                         "score",
                         "move fly 35"
                     ],
-                    "actions": [
+                    "weapons": [
                         {
                             "range": "rn",
                             "heavy": false,
@@ -184,12 +184,12 @@
                     "name": "Castellan Crowe",
                     "points_per_model": 200,
                     "armor": 5,
-                    "keywords_model": [
+                    "actions": [
                         "score",
                         "move 15",
                         "teleportation"
                     ],
-                    "actions": [
+                    "weapons": [
                         {
                             "range": "20 cm",
                             "heavy": false,
@@ -208,11 +208,11 @@
                     "name": "Captain with jump pack",
                     "points_per_model": 100,
                     "armor": 5,
-                    "keywords_model": [
+                    "actions": [
                         "score",
                         "move fly 25"
                     ],
-                    "actions": [
+                    "weapons": [
                         {
                             "range": "rn",
                             "heavy": false,
@@ -231,11 +231,11 @@
                     "name": "Captain in gravis armour",
                     "points_per_model": 100,
                     "armor": 6,
-                    "keywords_model": [
+                    "actions": [
                         "score",
                         "move 10"
                     ],
-                    "actions": [
+                    "weapons": [
                         {
                             "range": "rn",
                             "heavy": false,
@@ -254,10 +254,10 @@
                     "name": "Heavy intercessors",
                     "points_per_model": 50,
                     "armor": 5,
-                    "keywords_model": [
+                    "actions": [
                         "move 10"
                     ],
-                    "actions": [
+                    "weapons": [
                         {
                             "range": "rn",
                             "heavy": false,
@@ -270,10 +270,10 @@
                     "name": "Eradicators",
                     "points_per_model": 50,
                     "armor": 5,
-                    "keywords_model": [
+                    "actions": [
                         "move 10"
                     ],
-                    "actions": [
+                    "weapons": [
                         {
                             "range": "rn",
                             "heavy": false,
@@ -292,10 +292,10 @@
                     "name": "Jump pack intercessors",
                     "points_per_model": 50,
                     "armor": 4,
-                    "keywords_model": [
+                    "actions": [
                         "move fly 25"
                     ],
-                    "actions": [
+                    "weapons": [
                         {
                             "range": "rn",
                             "heavy": false,
@@ -314,10 +314,10 @@
                     "name": "Gladiator lancer",
                     "points_per_model": 400,
                     "armor": 10,
-                    "keywords_model": [
+                    "actions": [
                         "move 25"
                     ],
-                    "actions": [
+                    "weapons": [
                         {
                             "range": "20 cm",
                             "heavy": false,
@@ -336,11 +336,11 @@
                     "name": "Castellan",
                     "points_per_model": 100,
                     "armor": 5,
-                    "keywords_model": [
+                    "actions": [
                         "score",
                         "move 15"
                     ],
-                    "actions": [
+                    "weapons": [
                         {
                             "range": "rn",
                             "heavy": false,
@@ -359,10 +359,10 @@
                     "name": "Sword brethren",
                     "points_per_model": 50,
                     "armor": 4,
-                    "keywords_model": [
+                    "actions": [
                         "move 15"
                     ],
-                    "actions": [
+                    "weapons": [
                         {
                             "range": "rn",
                             "heavy": false,
@@ -381,10 +381,10 @@
                     "name": "Crusader squad",
                     "points_per_model": 50,
                     "armor": 4,
-                    "keywords_model": [
+                    "actions": [
                         "move 15"
                     ],
-                    "actions": [
+                    "weapons": [
                         {
                             "range": "rn",
                             "heavy": false,
@@ -403,12 +403,12 @@
                     "name": "Deathwing strikemaster",
                     "points_per_model": 200,
                     "armor": 7,
-                    "keywords_model": [
+                    "actions": [
                         "score",
                         "move 10",
                         "teleportation"
                     ],
-                    "actions": [
+                    "weapons": [
                         {
                             "range": "melee",
                             "heavy": false,
@@ -421,11 +421,11 @@
                     "name": "Deathwing knights",
                     "points_per_model": 100,
                     "armor": 6,
-                    "keywords_model": [
+                    "actions": [
                         "move 10",
                         "teleportation"
                     ],
-                    "actions": [
+                    "weapons": [
                         {
                             "range": "melee",
                             "heavy": false,
@@ -438,11 +438,11 @@
                     "name": "Inner circle companions",
                     "points_per_model": 100,
                     "armor": 4,
-                    "keywords_model": [
+                    "actions": [
                         "move 15",
                         "teleportation"
                     ],
-                    "actions": [
+                    "weapons": [
                         {
                             "range": "rn",
                             "heavy": false,
@@ -466,12 +466,12 @@
                     "name": "Magnus the red",
                     "points_per_model": 800,
                     "armor": 8,
-                    "keywords_model": [
+                    "actions": [
                         "score",
                         "move 20",
                         "teleportation"
                     ],
-                    "actions": [
+                    "weapons": [
                         {
                             "range": "20 cm",
                             "heavy": false,
@@ -490,12 +490,12 @@
                     "name": "Librarian consul",
                     "points_per_model": 150,
                     "armor": 5,
-                    "keywords_model": [
+                    "actions": [
                         "score",
                         "move 15",
                         "teleportation"
                     ],
-                    "actions": [
+                    "weapons": [
                         {
                             "range": "20 cm",
                             "heavy": false,
@@ -514,12 +514,12 @@
                     "name": "Exodus",
                     "points_per_model": 200,
                     "armor": 5,
-                    "keywords_model": [
+                    "actions": [
                         "score",
                         "move 15",
                         "teleportation"
                     ],
-                    "actions": [
+                    "weapons": [
                         {
                             "range": "rn",
                             "heavy": true,
@@ -532,11 +532,11 @@
                     "name": "Lord Invocatus",
                     "points_per_model": 250,
                     "armor": 6,
-                    "keywords_model": [
+                    "actions": [
                         "score",
                         "move 25"
                     ],
-                    "actions": [
+                    "weapons": [
                         {
                             "range": "melee",
                             "heavy": false,
@@ -555,12 +555,12 @@
                     "name": "Slaughterbound",
                     "points_per_model": 150,
                     "armor": 5,
-                    "keywords_model": [
+                    "actions": [
                         "score",
                         "move 20",
                         "teleportation"
                     ],
-                    "actions": [
+                    "weapons": [
                         {
                             "range": "melee",
                             "heavy": false,
@@ -573,11 +573,11 @@
                     "name": "Exalted Eightbound",
                     "points_per_model": 100,
                     "armor": 4,
-                    "keywords_model": [
+                    "actions": [
                         "move 20",
                         "teleportation"
                     ],
-                    "actions": [
+                    "weapons": [
                         {
                             "range": "melee",
                             "heavy": false,
@@ -596,10 +596,10 @@
                     "name": "Eightbound",
                     "points_per_model": 50,
                     "armor": 4,
-                    "keywords_model": [
+                    "actions": [
                         "move 20"
                     ],
-                    "actions": [
+                    "weapons": [
                         {
                             "range": "melee",
                             "heavy": false,
@@ -612,10 +612,10 @@
                     "name": "Khorne Berzerkers",
                     "points_per_model": 50,
                     "armor": 4,
-                    "keywords_model": [
+                    "actions": [
                         "move 20"
                     ],
-                    "actions": [
+                    "weapons": [
                         {
                             "range": "rn",
                             "heavy": false,
@@ -634,12 +634,12 @@
                     "name": "Saturnine praetor",
                     "points_per_model": 200,
                     "armor": 7,
-                    "keywords_model": [
+                    "actions": [
                         "score",
                         "move 10",
                         "teleportation"
                     ],
-                    "actions": [
+                    "weapons": [
                         {
                             "range": "rn",
                             "heavy": false,
@@ -658,11 +658,11 @@
                     "name": "Warsmith",
                     "points_per_model": 150,
                     "armor": 6,
-                    "keywords_model": [
+                    "actions": [
                         "score",
                         "move 10"
                     ],
-                    "actions": [
+                    "weapons": [
                         {
                             "range": "rn",
                             "heavy": true,
@@ -681,10 +681,10 @@
                     "name": "MkII Marines",
                     "points_per_model": 50,
                     "armor": 4,
-                    "keywords_model": [
+                    "actions": [
                         "move 15"
                     ],
-                    "actions": [
+                    "weapons": [
                         {
                             "range": "rn",
                             "heavy": false,
@@ -703,10 +703,10 @@
                     "name": "MkII Marines with disintegrator weapons",
                     "points_per_model": 50,
                     "armor": 4,
-                    "keywords_model": [
+                    "actions": [
                         "move 15"
                     ],
-                    "actions": [
+                    "weapons": [
                         {
                             "range": "rn",
                             "heavy": true,
@@ -719,10 +719,10 @@
                     "name": "MkII Assault Squad",
                     "points_per_model": 50,
                     "armor": 4,
-                    "keywords_model": [
+                    "actions": [
                         "move fly 25"
                     ],
-                    "actions": [
+                    "weapons": [
                         {
                             "range": "rn",
                             "heavy": false,
@@ -741,8 +741,8 @@
                     "name": "Araknae accelerator platform",
                     "points_per_model": 200,
                     "armor": 11,
-                    "keywords_model": [],
-                    "actions": [
+                    "actions": [],
+                    "weapons": [
                         {
                             "range": "rn",
                             "heavy": true,
@@ -755,10 +755,10 @@
                     "name": "Fellblade super-heavy tank",
                     "points_per_model": 600,
                     "armor": 12,
-                    "keywords_model": [
+                    "actions": [
                         "move 25"
                     ],
-                    "actions": [
+                    "weapons": [
                         {
                             "range": "rn",
                             "heavy": false,
@@ -788,12 +788,12 @@
                     "name": "Hexmark destroyer",
                     "points_per_model": 250,
                     "armor": 6,
-                    "keywords_model": [
+                    "actions": [
                         "score",
                         "move 15",
                         "teleportation"
                     ],
-                    "actions": [
+                    "weapons": [
                         {
                             "range": "rn",
                             "heavy": false,
@@ -806,11 +806,11 @@
                     "name": "Warrior",
                     "points_per_model": 50,
                     "armor": 4,
-                    "keywords_model": [
+                    "actions": [
                         "score",
                         "move 15"
                     ],
-                    "actions": [
+                    "weapons": [
                         {
                             "range": "rn",
                             "heavy": true,
@@ -823,11 +823,11 @@
                     "name": "Skorpekh destroyer",
                     "points_per_model": 100,
                     "armor": 6,
-                    "keywords_model": [
+                    "actions": [
                         "score",
                         "move 15"
                     ],
-                    "actions": [
+                    "weapons": [
                         {
                             "range": "melee",
                             "heavy": false,
@@ -840,11 +840,11 @@
                     "name": "Lokhust destroyer - Gauss",
                     "points_per_model": 150,
                     "armor": 7,
-                    "keywords_model": [
+                    "actions": [
                         "score",
                         "move fly 15"
                     ],
-                    "actions": [
+                    "weapons": [
                         {
                             "range": "rn",
                             "heavy": true,
@@ -857,11 +857,11 @@
                     "name": "Lokhust destroyer - Enmitic",
                     "points_per_model": 150,
                     "armor": 7,
-                    "keywords_model": [
+                    "actions": [
                         "score",
                         "move fly 15"
                     ],
-                    "actions": [
+                    "weapons": [
                         {
                             "range": "rn",
                             "heavy": true,
