@@ -104,7 +104,7 @@
                     "actions": [
                         {
                             "range": "20 cm",
-                            "heavy": false,
+                            "heavy": true,
                             "hits": 1,
                             "strength": 7
                         },
