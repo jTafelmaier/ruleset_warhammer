@@ -785,29 +785,6 @@
             "name": "Necrons",
             "units": [
                 {
-                    "name": "Skorpekh lord",
-                    "points_per_model": 250,
-                    "armor": 8,
-                    "keywords_model": [
-                        "score",
-                        "move 15"
-                    ],
-                    "actions": [
-                        {
-                            "range": "rn",
-                            "heavy": true,
-                            "hits": 2,
-                            "strength": 7
-                        },
-                        {
-                            "range": "melee",
-                            "heavy": false,
-                            "hits": 2,
-                            "strength": 9
-                        }
-                    ]
-                },
-                {
                     "name": "Hexmark destroyer",
                     "points_per_model": 250,
                     "armor": 6,
@@ -856,24 +833,6 @@
                             "heavy": false,
                             "hits": 1,
                             "strength": 9
-                        }
-                    ]
-                },
-                {
-                    "name": "Ophydian destroyer",
-                    "points_per_model": 100,
-                    "armor": 5,
-                    "keywords_model": [
-                        "score",
-                        "move 25",
-                        "teleportation"
-                    ],
-                    "actions": [
-                        {
-                            "range": "melee",
-                            "heavy": false,
-                            "hits": 2,
-                            "strength": 7
                         }
                     ]
                 },
