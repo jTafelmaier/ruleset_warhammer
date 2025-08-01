@@ -54,11 +54,9 @@ def get_text_html_data_unit(
     def get_text_html_row_action(
         dict_action:typing.Dict):
 
-        return "<div class=\"unit_property attack\"><span>" \
-            + dict_action \
-                ["range"] \
-            + "</span>" \
+        return "<div class=\"unit_property attack\"><span>⚔</span>" \
             + ("heavy " if dict_action["heavy"] else "") \
+            + (dict_action["range"] + " " if dict_action["range"] != "rn" else "") \
             + str(dict_action["hits"]) \
             + "x 💥" \
             + str(dict_action["strength"]) \
