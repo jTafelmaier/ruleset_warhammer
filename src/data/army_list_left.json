@@ -2,18 +2,23 @@
     "faction": "Imperium",
     "units": [
         {
-            "name": "Castellan",
+            "name": "Captain in gravis armour",
             "count_models": 1,
             "attached_to_index": 2
         },
         {
-            "name": "Sword brethren",
-            "count_models": 8,
+            "name": "Heavy intercessors",
+            "count_models": 5,
             "attached_to_index": null
         },
         {
-            "name": "Crusader squad",
-            "count_models": 10,
+            "name": "Eradicators",
+            "count_models": 5,
+            "attached_to_index": null
+        },
+        {
+            "name": "Gladiator lancer",
+            "count_models": 1,
             "attached_to_index": null
         }
     ]

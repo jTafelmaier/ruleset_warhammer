@@ -2,23 +2,18 @@
     "faction": "Chaos",
     "units": [
         {
-            "name": "Warsmith",
+            "name": "Lord Invocatus",
             "count_models": 1,
             "attached_to_index": 2
         },
         {
-            "name": "MkII Assault Squad",
-            "count_models": 9,
+            "name": "Eightbound",
+            "count_models": 8,
             "attached_to_index": null
         },
         {
-            "name": "Araknae accelerator platform",
-            "count_models": 1,
-            "attached_to_index": null
-        },
-        {
-            "name": "Araknae accelerator platform",
-            "count_models": 1,
+            "name": "Khorne Berzerkers",
+            "count_models": 8,
             "attached_to_index": null
         }
     ]
