@@ -188,7 +188,8 @@ body {
     background-size: cover;
     box-shadow: inset 300px 0px 400px -100px #2e3544;
     border: 2px solid #9fa7ba;
-    border-radius: 4px;
+    border-left: 5px solid #9fa7ba;
+    border-radius: 2px;
     clip-path: polygon(
         0 0,
         calc(100% - 15px) 0,
@@ -242,7 +243,7 @@ body {
 
 #army_lists {
     display: grid;
-    grid-template-columns: 480px 480px;
+    grid-template-columns: 500px 500px;
     gap: 0px 150px;
 }
 
@@ -262,10 +263,8 @@ body {
 
 .unit_state {
     width: 26px;
-    height: 110px;
     padding: 2px;
     background-color: #282d3a;
-    margin-top: 2px;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
 }
@@ -278,7 +277,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 2px;
-    height: 80px;
+    height: 165px;
     border-radius: 2px;
     background-color: #2e3544;
     border: 2px solid #626d84;

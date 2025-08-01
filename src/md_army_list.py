@@ -56,7 +56,7 @@ def get_text_html_army_lists(
                 + text_parameters_functions \
                 + ")\"><div class=\"token next\" />" \
                 + ("<div class=\"token\" />" \
-                    * 3) \
+                    * 7) \
                 + "</div><div class=\"count_models\" initial=\"" \
                 + str(
                     dict_unit_army_list \
