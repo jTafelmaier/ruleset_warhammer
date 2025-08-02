@@ -5,7 +5,7 @@
 function calculate_winning_state() {
 
     function set_texts(function_get_text) {
-    
+
         function set_text(
             text_side,
             index) {
