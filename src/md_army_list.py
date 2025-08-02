@@ -50,6 +50,10 @@ def get_text_html_army_lists(
                 + "', " \
                 + str(int_index_unit)
 
+            text_count_models = str(
+                dict_unit_army_list \
+                    ["count_models"])
+
             return "<div class=\"unit_army_list\" points_per_model=\"" \
                 + str(dict_unit["points_per_model"]) \
                 + "\"><div class=\"unit_state\"><div class=\"health_bar\" onclick=\"reduce_health(" \
@@ -58,15 +62,11 @@ def get_text_html_army_lists(
                 + ("<div class=\"token\" />" \
                     * 7) \
                 + "</div><div class=\"count_models\" initial=\"" \
-                + str(
-                    dict_unit_army_list \
-                        ["count_models"]) \
+                + text_count_models \
                 + "\" onclick=\"increase_number_models(" \
                 + text_parameters_functions \
                 + ")\">" \
-                + str(
-                    dict_unit_army_list \
-                        ["count_models"]) \
+                + text_count_models \
                 + "</div></div><div onclick=\"toggle_inactive(" \
                 + text_parameters_functions \
                 + ")\">" \
