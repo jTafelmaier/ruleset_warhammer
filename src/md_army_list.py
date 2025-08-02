@@ -59,15 +59,15 @@ def get_text_html_army_lists(
                 + "\"><div class=\"unit_state\"><div class=\"health_bar\">" \
                 + ("<div class=\"token\" />" \
                     * 8) \
-                + "</div><div class=\"count_models\"><div class=\"increase\" onclick=\"increase_number_models(" \
+                + "</div><div class=\"count_models\"><div class=\"increase\" onclick=\"update_count_models(" \
                 + text_parameters_functions \
-                + ")\">▲</div><div class=\"count_current\" initial=\"" \
+                + ", true)\">▲</div><div class=\"count_current\" initial=\"" \
                 + text_count_models \
                 + "\">" \
                 + text_count_models \
-                + "</div><div class=\"decrease\" onclick=\"decrease_number_models(" \
+                + "</div><div class=\"decrease\" onclick=\"update_count_models(" \
                 + text_parameters_functions \
-                + ")\">▼</div></div></div><div onclick=\"toggle_inactive(" \
+                + ", false)\">▼</div></div></div><div onclick=\"toggle_inactive(" \
                 + text_parameters_functions \
                 + ")\">" \
                 + md_units.get_text_html_data_unit(

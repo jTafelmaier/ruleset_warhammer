@@ -194,9 +194,13 @@ function initialise() {
 
 
 function update_count_models(
-    element_unit,
     text_side,
+    index_row,
     bool_increase) {
+
+    let element_unit = document
+        .getElementsByClassName(text_side)[0]
+        .getElementsByClassName("unit_army_list")[index_row]
 
     let element_count_models = element_unit
         .getElementsByClassName("count_current")[0]
@@ -228,36 +232,6 @@ function update_count_models(
         .toString()
 
     calculate_points_total(text_side)
-}
-
-
-function increase_number_models(
-    text_side,
-    index_row) {
-
-    let element_unit = document
-        .getElementsByClassName(text_side)[0]
-        .getElementsByClassName("unit_army_list")[index_row]
-
-    update_count_models(
-        element_unit,
-        text_side,
-        true)
-}
-
-
-function decrease_number_models(
-    text_side,
-    index_row) {
-
-    let element_unit = document
-        .getElementsByClassName(text_side)[0]
-        .getElementsByClassName("unit_army_list")[index_row]
-
-    update_count_models(
-        element_unit,
-        text_side,
-        false)
 }
 
 
