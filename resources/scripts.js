@@ -69,22 +69,14 @@ function calculate_winning_state() {
 
 function update_victory_points(
     text_side,
-    bool_increase) {
+    int_change) {
 
     let element_victory_points = document
         .getElementsByClassName(text_side)[0]
         .getElementsByClassName("victory_state")[0]
         .getElementsByClassName("value")[0]
 
-    let int_victory_points_current = parseInt(element_victory_points.textContent)
-
-    let int_change = bool_increase ? 1 : -1
-
-    if (int_victory_points_current <= 0 && int_change == -1) {
-        return
-    }
-
-    element_victory_points.textContent = (int_victory_points_current + int_change).toString()
+    element_victory_points.textContent = Math.max(0, parseInt(element_victory_points.textContent) + int_change).toString()
 
     calculate_winning_state()
 }
