@@ -78,11 +78,11 @@ def get_text_html_army_lists(
 
         return "<div class=\"" \
             + text_side \
-            + "\"><div class=\"victory_state\"><div class=\"victory_points\"><span class=\"value\" onclick=\"increase_victory_points('" \
+            + "\"><div class=\"victory_state\"><div class=\"victory_points\"><span class=\"value\" onclick=\"update_victory_points('" \
             + text_side \
-            + "')\">0</span><span onclick=\"decrease_victory_points('" \
+            + "', true)\">0</span><span onclick=\"update_victory_points('" \
             + text_side \
-            + "')\"> VP,</span></div><div class=\"model_points\"><span class=\"value\">?</span>points remaining. -></div><span class=\"outcome\"></span></div><div class=\"army_list\">" \
+            + "', false)\"> VP,</span></div><div class=\"model_points\"><span class=\"value\">?</span>points remaining. -></div><span class=\"outcome\"></span></div><div class=\"army_list\">" \
             + "" \
                 .join(
                     map(
