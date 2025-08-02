@@ -277,7 +277,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 2px;
-    height: 165px;
+    height: 145px;
     border-radius: 2px;
     background-color: #2e3544;
     border: 2px solid #626d84;
@@ -323,11 +323,25 @@ body {
     color: #4a5266;
     text-align: center;
     margin-top: 5px;
+    line-height: 14px;
     user-select: none;
 }
 
-.count_models:hover {
+.increase {
+    font-size: x-small;
+}
+
+.decrease {
+    line-height: 10px;
+    font-size: x-small;
+}
+
+.increase:hover {
     color: #8bc5ff;
+}
+
+.decrease:hover {
+    color: red;
 }
 
 td.points_cost {

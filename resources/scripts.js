@@ -107,7 +107,7 @@ function calculate_points_total(
     let int_points_cost_total = Array.from(document
         .getElementsByClassName(text_side)[0]
         .getElementsByClassName("unit_army_list"))
-        .map(element => parseInt(element.getElementsByClassName("count_models")[0].textContent) * parseInt(element.getAttribute("points_per_model")))
+        .map(element => parseInt(element.getElementsByClassName("count_current")[0].textContent) * parseInt(element.getAttribute("points_per_model")))
         .reduce((a, b) => a + b)
 
     document
@@ -134,7 +134,7 @@ function update_count_models(
     bool_increase) {
 
     let element_count_models = element_unit
-        .getElementsByClassName("count_models")[0]
+        .getElementsByClassName("count_current")[0]
 
     var int_count_models_current = parseInt(element_count_models.textContent)
     let int_count_models_initial = parseInt(element_count_models.getAttribute("initial"))
@@ -178,6 +178,21 @@ function increase_number_models(
         element_unit,
         text_side,
         true)
+}
+
+
+function decrease_number_models(
+    text_side,
+    index_row) {
+
+    let element_unit = document
+        .getElementsByClassName(text_side)[0]
+        .getElementsByClassName("unit_army_list")[index_row]
+
+    update_count_models(
+        element_unit,
+        text_side,
+        false)
 }
 
 

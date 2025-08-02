@@ -61,13 +61,15 @@ def get_text_html_army_lists(
                 + ")\"><div class=\"token next\" />" \
                 + ("<div class=\"token\" />" \
                     * 7) \
-                + "</div><div class=\"count_models\" initial=\"" \
-                + text_count_models \
-                + "\" onclick=\"increase_number_models(" \
+                + "</div><div class=\"count_models\"><div class=\"increase\" onclick=\"increase_number_models(" \
                 + text_parameters_functions \
-                + ")\">" \
+                + ")\">▲</div><div class=\"count_current\" initial=\"" \
                 + text_count_models \
-                + "</div></div><div onclick=\"toggle_inactive(" \
+                + "\">" \
+                + text_count_models \
+                + "</div><div class=\"decrease\" onclick=\"decrease_number_models(" \
+                + text_parameters_functions \
+                + ")\">▼</div></div></div><div onclick=\"toggle_inactive(" \
                 + text_parameters_functions \
                 + ")\">" \
                 + md_units.get_text_html_data_unit(
