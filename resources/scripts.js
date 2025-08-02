@@ -120,8 +120,73 @@ function calculate_points_total(
 }
 
 
+function setup_health_bars() {
+
+    function setup_health_bars_side(
+        text_side) {
+
+        let array_units = document
+            .getElementsByClassName(text_side)[0]
+            .getElementsByClassName("unit_army_list")
+
+        function setup_health_bar(
+            index) {
+
+            let element_health_bar = array_units[index]
+                .getElementsByClassName("health_bar")[0]
+
+            let array_tokens = element_health_bar
+                .getElementsByClassName("token")
+
+            function set_class_health_tokens(
+                index_token,
+                text_class) {
+
+                Array.from(array_tokens)
+                    .slice(0, index_token)
+                    .forEach(element => element.classList.add(text_class))
+
+                Array.from(array_tokens)
+                    .slice(index_token, array_tokens.length)
+                    .forEach(element => element.classList.remove(text_class))
+            }
+
+            function save_health_bar(
+                index_token) {
+
+                set_class_health_tokens(index_token, "used")
+
+                if (index_token == array_tokens.length - 1) {
+                    element_health_bar.classList.add("red")
+                } else {
+                    element_health_bar.classList.remove("red")
+                }
+            }
+
+            for (let index_token = 0; index_token < array_tokens.length; index_token++) {
+                array_tokens[index_token].addEventListener("mouseenter", () => set_class_health_tokens(index_token, "preview_used"))
+                array_tokens[index_token].addEventListener("click", () => save_health_bar(index_token))
+            }
+
+            element_health_bar
+                .addEventListener("mouseleave", () => set_class_health_tokens(0, "preview_used"))
+        }
+
+        for (let index_unit = 0; index_unit < array_units.length; index_unit++) {
+            setup_health_bar(index_unit)
+        }
+
+    }
+
+    setup_health_bars_side("left")
+    setup_health_bars_side("right")
+
+}
+
+
 function initialise() {
 
+    setup_health_bars()
     calculate_points_total("left")
     calculate_points_total("right")
 
@@ -193,57 +258,6 @@ function decrease_number_models(
         element_unit,
         text_side,
         false)
-}
-
-
-function reduce_health(
-    text_side,
-    index_row) {
-
-    let element_unit = document
-        .getElementsByClassName(text_side)[0]
-        .getElementsByClassName("unit_army_list")[index_row]
-
-    let element_parent = element_unit
-        .getElementsByClassName("health_bar")[0]
-
-    let array_tokens = element_parent
-        .getElementsByClassName("token")
-
-    let int_count_tokens_used_new = element_parent
-        .getElementsByClassName("used")
-        .length + 1
-
-    if (int_count_tokens_used_new == array_tokens.length) {
-        int_count_tokens_used_new = 0
-
-        update_count_models(
-            element_unit,
-            text_side,
-            false)
-    }
-
-    if (int_count_tokens_used_new == array_tokens.length - 1) {
-        element_parent.classList.add("red")
-    } else {
-        element_parent.classList.remove("red")
-    }
-
-    for (let i = 0; i < int_count_tokens_used_new; i++) {
-        array_tokens[i].classList.add("used")
-        array_tokens[i].classList.remove("next")
-    }
-
-    let list_classes = array_tokens[int_count_tokens_used_new]
-        .classList
-
-    list_classes.remove("used")
-    list_classes.add("next")
-
-    for (let i = int_count_tokens_used_new + 1; i < array_tokens.length; i++) {
-        array_tokens[i].classList.remove("used")
-        array_tokens[i].classList.remove("next")
-    }
 }
 
 

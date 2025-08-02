@@ -294,27 +294,12 @@ body {
     box-shadow: 0 0 4px 1px #2f95cc96;
 }
 
-.health_bar:hover .token.next {
-    background: linear-gradient(0.25turn, #fcc8c8, #ff4646 25%, #ff4646 75%, #fcc8c8);
-    box-shadow: 0 0 5px 2px #ff4646;
-}
-
 .health_bar.red .token {
     background: linear-gradient(0.25turn, #fcc8c8, #ff4646 25%, #ff4646 75%, #fcc8c8);
     box-shadow: 0 0 5px 2px #ff4646;
 }
 
-.health_bar .token.used {
-    background: linear-gradient(0.25turn, #535f79, #2e3544 25%, #2e3544 75%, #535f79);
-    box-shadow: none;
-}
-
-.destroyed .health_bar .token {
-    background: linear-gradient(0.25turn, #535f79, #2e3544 25%, #2e3544 75%, #535f79);
-    box-shadow: none;
-}
-
-.destroyed .health_bar:hover .token.next {
+.health_bar .token.used, .health_bar .token.preview_used, .destroyed .health_bar .token  {
     background: linear-gradient(0.25turn, #535f79, #2e3544 25%, #2e3544 75%, #535f79);
     box-shadow: none;
 }

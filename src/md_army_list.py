@@ -56,11 +56,9 @@ def get_text_html_army_lists(
 
             return "<div class=\"unit_army_list\" points_per_model=\"" \
                 + str(dict_unit["points_per_model"]) \
-                + "\"><div class=\"unit_state\"><div class=\"health_bar\" onclick=\"reduce_health(" \
-                + text_parameters_functions \
-                + ")\"><div class=\"token next\" />" \
+                + "\"><div class=\"unit_state\"><div class=\"health_bar\">" \
                 + ("<div class=\"token\" />" \
-                    * 7) \
+                    * 8) \
                 + "</div><div class=\"count_models\"><div class=\"increase\" onclick=\"increase_number_models(" \
                 + text_parameters_functions \
                 + ")\">▲</div><div class=\"count_current\" initial=\"" \
