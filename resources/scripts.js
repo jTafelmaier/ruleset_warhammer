@@ -101,6 +101,32 @@ function calculate_points_total(
 }
 
 
+function set_health_bar(
+    element_health_bar,
+    index_token,
+    text_class) {
+
+    let array_tokens = Array.from(element_health_bar
+        .getElementsByClassName("token"))
+
+    array_tokens
+        .slice(0, index_token)
+        .forEach(element => element.classList.add(text_class))
+
+    array_tokens
+        .slice(index_token, array_tokens.length)
+        .forEach(element => element.classList.remove(text_class))
+
+    if (text_class == "used") {
+        if (index_token == array_tokens.length - 1) {
+            element_health_bar.classList.add("red")
+        } else {
+            element_health_bar.classList.remove("red")
+        }
+    }
+}
+
+
 function setup_health_bars() {
 
     function setup_health_bar(
@@ -113,38 +139,15 @@ function setup_health_bars() {
             .getElementsByClassName("token"))
 
         function set_triggers(
-            element_token,
-            index_token) {
+            element,
+            index) {
 
-            function set_class_health_tokens(
-                text_class) {
-
-                array_tokens
-                    .slice(0, index_token)
-                    .forEach(element => element.classList.add(text_class))
-
-                array_tokens
-                    .slice(index_token, array_tokens.length)
-                    .forEach(element => element.classList.remove(text_class))
-            }
-
-            function save_health_bar() {
-
-                set_class_health_tokens("used")
-
-                if (index_token == array_tokens.length - 1) {
-                    element_health_bar.classList.add("red")
-                } else {
-                    element_health_bar.classList.remove("red")
-                }
-            }
-
-            element_token.addEventListener("mouseenter", () => set_class_health_tokens("preview_used"))
-            element_token.addEventListener("click", save_health_bar)
-            }
+            element.addEventListener("click", () => set_health_bar(element_health_bar, index, "used"))
+            element.addEventListener("mouseenter", () => set_health_bar(element_health_bar, index, "preview_used"))
+        }
 
         element_health_bar
-            .addEventListener("mouseleave", () => array_tokens.forEach(element => element.classList.remove("preview_used")))
+            .addEventListener("mouseleave", () => set_health_bar(element_health_bar, 0, "preview_used"))
 
         array_tokens
             .forEach(set_triggers)
@@ -161,7 +164,6 @@ function initialise() {
     setup_health_bars()
     calculate_points_total("left")
     calculate_points_total("right")
-
 }
 
 
@@ -203,6 +205,12 @@ function update_count_models(
     element_count_models.textContent = int_count_models_new
         .toString()
 
+    set_health_bar(element_unit
+        .getElementsByClassName(
+            "health_bar")[0],
+            0,
+            "used")
+
     calculate_points_total(text_side)
 }
 
@@ -216,14 +224,13 @@ function toggle_inactive(
         .getElementsByClassName("unit_army_list")[index_row]
         .classList
         .toggle("inactive")
-
 }
+
 
 function next_turn() {
 
     Array.from(document
         .getElementsByClassName("unit_army_list"))
         .forEach(element => element.classList.remove("inactive"))
-
 }
 
