@@ -185,6 +185,7 @@ body {
 .unit {
     width: 450px;
     height: 200px;
+    background-image: url("background.png");
     background-size: cover;
     box-shadow: inset 300px 0px 400px -100px #2e3544;
     border: 2px solid #9fa7ba;

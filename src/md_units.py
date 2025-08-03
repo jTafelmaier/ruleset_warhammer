@@ -62,7 +62,7 @@ def get_text_html_data_unit(
         + str(
             dict_unit \
                 ["points_per_model"]) \
-        + " points per model.\" style=\"background-image: url('resources/background.png')\"><div class=\"image_unit\" style=\"background-image: url('" \
+        + " points per model.\"><div class=\"image_unit\" style=\"background-image: url('" \
         + path_image_unit \
         + "')\"><div class=\"header_unit\"><div class=\"unit_property\"><span>⛊</span>" \
         + str(
