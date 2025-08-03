@@ -291,7 +291,7 @@ body {
     margin-bottom: 1px;
     border-radius: 1px;
     background: linear-gradient(0.25turn, #c8e2fc, #8bc5ff 25%, #8bc5ff 75%, #c8e2fc);
-    box-shadow: 0 0 4px 1px #2f95cc96;
+    box-shadow: 0 0 5px 2px #5374b7;
 }
 
 .health_bar.red .token {
