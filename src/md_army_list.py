@@ -76,7 +76,7 @@ def get_text_html_army_lists(
                     name_faction=name_faction) \
                 + "</div></div>"
 
-        return "<div class=\"" \
+        return "<div id=\"" \
             + text_side \
             + "\"><div class=\"victory_state\"><div class=\"victory_points\"><span class=\"value\" onclick=\"update_victory_points('" \
             + text_side \

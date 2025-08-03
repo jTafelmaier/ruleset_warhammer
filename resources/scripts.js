@@ -11,7 +11,7 @@ function calculate_winning_state() {
             index) {
 
             element = document
-                .getElementsByClassName(text_side)[0]
+                .getElementById(text_side)
                 .getElementsByClassName("outcome")[0]
 
             text = function_get_text(index)
@@ -31,7 +31,7 @@ function calculate_winning_state() {
         function get_int_value(text_side) {
 
             return parseInt(document
-                .getElementsByClassName(text_side)[0]
+                .getElementById(text_side)
                 .getElementsByClassName(property)[0]
                 .getElementsByClassName("value")[0]
                 .textContent)
@@ -72,7 +72,7 @@ function update_victory_points(
     int_change) {
 
     let element_victory_points = document
-        .getElementsByClassName(text_side)[0]
+        .getElementById(text_side)
         .getElementsByClassName("victory_state")[0]
         .getElementsByClassName("value")[0]
 
@@ -86,13 +86,13 @@ function calculate_points_total(
     text_side) {
 
     let int_points_cost_total = Array.from(document
-        .getElementsByClassName(text_side)[0]
+        .getElementById(text_side)
         .getElementsByClassName("unit_army_list"))
         .map(element => parseInt(element.getElementsByClassName("count_current")[0].textContent) * parseInt(element.getAttribute("points_per_model")))
         .reduce((a, b) => a + b)
 
     document
-        .getElementsByClassName(text_side)[0]
+        .getElementById(text_side)
         .getElementsByClassName("model_points")[0]
         .getElementsByClassName("value")[0]
         .textContent = int_points_cost_total.toString()
@@ -171,7 +171,7 @@ function update_count_models(
     bool_increase) {
 
     let element_unit = document
-        .getElementsByClassName(text_side)[0]
+        .getElementById(text_side)
         .getElementsByClassName("unit_army_list")[index_row]
 
     let element_count_models = element_unit
@@ -212,7 +212,7 @@ function toggle_inactive(
     index_row) {
 
     document
-        .getElementsByClassName(text_side)[0]
+        .getElementById(text_side)
         .getElementsByClassName("unit_army_list")[index_row]
         .classList
         .toggle("inactive")
