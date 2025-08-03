@@ -103,39 +103,34 @@ function calculate_points_total(
 
 function setup_health_bars() {
 
-    function setup_health_bars_side(
-        text_side) {
+    function setup_health_bar(
+        element_unit) {
 
-        let array_units = document
-            .getElementsByClassName(text_side)[0]
-            .getElementsByClassName("unit_army_list")
+        let element_health_bar = element_unit
+            .getElementsByClassName("health_bar")[0]
 
-        function setup_health_bar(
-            index) {
+        let array_tokens = Array.from(element_health_bar
+            .getElementsByClassName("token"))
 
-            let element_health_bar = array_units[index]
-                .getElementsByClassName("health_bar")[0]
-
-            let array_tokens = element_health_bar
-                .getElementsByClassName("token")
+        function set_triggers(
+            element_token,
+            index_token) {
 
             function set_class_health_tokens(
-                index_token,
                 text_class) {
 
-                Array.from(array_tokens)
+                array_tokens
                     .slice(0, index_token)
                     .forEach(element => element.classList.add(text_class))
 
-                Array.from(array_tokens)
+                array_tokens
                     .slice(index_token, array_tokens.length)
                     .forEach(element => element.classList.remove(text_class))
             }
 
-            function save_health_bar(
-                index_token) {
+            function save_health_bar() {
 
-                set_class_health_tokens(index_token, "used")
+                set_class_health_tokens("used")
 
                 if (index_token == array_tokens.length - 1) {
                     element_health_bar.classList.add("red")
@@ -144,24 +139,20 @@ function setup_health_bars() {
                 }
             }
 
-            for (let index_token = 0; index_token < array_tokens.length; index_token++) {
-                array_tokens[index_token].addEventListener("mouseenter", () => set_class_health_tokens(index_token, "preview_used"))
-                array_tokens[index_token].addEventListener("click", () => save_health_bar(index_token))
+            element_token.addEventListener("mouseenter", () => set_class_health_tokens("preview_used"))
+            element_token.addEventListener("click", save_health_bar)
             }
 
-            element_health_bar
-                .addEventListener("mouseleave", () => set_class_health_tokens(0, "preview_used"))
-        }
+        element_health_bar
+            .addEventListener("mouseleave", () => array_tokens.forEach(element => element.classList.remove("preview_used")))
 
-        for (let index_unit = 0; index_unit < array_units.length; index_unit++) {
-            setup_health_bar(index_unit)
-        }
-
+        array_tokens
+            .forEach(set_triggers)
     }
 
-    setup_health_bars_side("left")
-    setup_health_bars_side("right")
-
+    Array.from(document
+        .getElementsByClassName("unit_army_list"))
+        .forEach(setup_health_bar)
 }
 
 
