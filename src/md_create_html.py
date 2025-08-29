@@ -17,11 +17,11 @@ def generate_htmls():
             "data",
             "index_template.html"])
 
-    dict_actions = md_shared.get_dict_json(
-        [
-            "src",
-            "data",
-            "data_actions.json"])
+    dict_actions = {
+            "teleportation": "This model's unit can perform the &quot;Setup teleportation&quot; and &quot;Recall&quot; actions.",
+            "move": "This model can perform the &quot;Move&quot; action.",
+            "score": "This model's unit can perform the &quot;Score objective&quot; action.\nFurthermore, this unit can be attached to another friendly unit at deployment, if that unit does not have a higher armor characteristic than this unit. While this unit is attached to another unit, it cannot be selected as a target unit."
+        }
 
     list_dicts_factions = md_shared.get_dict_setting("data_factions.json") \
         ["data"]
