@@ -4,16 +4,21 @@
         {
             "name": "Lord Invocatus",
             "count_models": 1,
+            "enhancements": [],
             "attached_to_index": 2
         },
         {
             "name": "Eightbound",
             "count_models": 8,
+            "enhancements": [],
             "attached_to_index": null
         },
         {
             "name": "Khorne Berzerkers",
             "count_models": 8,
+            "enhancements": [
+                "Chainglaives"
+            ],
             "attached_to_index": null
         }
     ]

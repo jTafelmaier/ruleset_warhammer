@@ -67,13 +67,16 @@ def get_text_html_army_lists(
                 + text_count_models \
                 + "</div><div class=\"decrease\" onclick=\"update_count_models(" \
                 + text_parameters_functions \
-                + ", false)\">▼</div></div></div><div onclick=\"toggle_inactive(" \
+                + ", false)\">▼</div></div><div class=\"reveal_enhancements\" onclick=\"reveal_enhancements(" \
+                + text_parameters_functions \
+                + ")\">?</div></div><div onclick=\"toggle_inactive(" \
                 + text_parameters_functions \
                 + ")\">" \
                 + md_units.get_text_html_data_unit(
                     dict_unit=dict_unit,
                     dict_actions=dict_actions,
-                    name_faction=name_faction) \
+                    name_faction=name_faction,
+                    list_names_enhancements=dict_unit_army_list["enhancements"]) \
                 + "</div></div>"
 
         return "<div id=\"" \

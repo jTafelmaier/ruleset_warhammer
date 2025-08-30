@@ -177,9 +177,20 @@ body {
 
 .faction_rules {
     margin-top: 40px;
-    display: grid;
-    grid-template-columns: 450px 450px;
-    gap: 20px 50px;
+}
+
+.unit_schema {
+    display: flex;
+    margin-top: 20px;
+}
+
+.enhancements {
+    padding: 10px;
+}
+
+.name_enhancement {
+    display: inline-block;
+    min-width: 180px;
 }
 
 .unit {
@@ -268,6 +279,7 @@ body {
     background-color: #282d3a;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
+    user-select: none;
 }
 
 .destroyed .unit_state {
@@ -278,7 +290,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 2px;
-    height: 145px;
+    height: 125px;
     border-radius: 2px;
     background-color: #2e3544;
     border: 2px solid #626d84;
@@ -310,7 +322,17 @@ body {
     text-align: center;
     margin-top: 5px;
     line-height: 14px;
-    user-select: none;
+}
+
+.reveal_enhancements {
+    color: #4e6bfb;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.enhanced {
+    background: #4e6bfb;
+    color: white;
 }
 
 .increase {

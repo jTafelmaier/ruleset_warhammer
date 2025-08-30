@@ -215,6 +215,34 @@ function update_count_models(
 }
 
 
+function reveal_enhancements(
+    text_side,
+    index_row) {
+
+    function toggle_visibility(
+        element) {
+
+        if (element.classList.contains("replaceable_by_enhancement")) {
+            element.style = "display: none;"
+        } else {
+            element.style = ""
+        }
+    }
+
+    element_unit = document
+        .getElementById(text_side)
+        .getElementsByClassName("unit_army_list")[index_row]
+
+    element_unit
+        .getElementsByClassName("reveal_enhancements")[0]
+        .remove()
+
+    Array.from(element_unit
+        .getElementsByClassName("unit_property"))
+        .forEach(toggle_visibility)
+}
+
+
 function toggle_inactive(
     text_side,
     index_row) {

@@ -25,6 +25,19 @@
                             "hits": 4,
                             "strength": 6
                         }
+                    ],
+                    "enhancements": [
+                        {
+                            "name": "Melta bombs",
+                            "type": "weapon",
+                            "visible": false,
+                            "data": {
+                                "range": "melee",
+                                "heavy": true,
+                                "hits": 1,
+                                "strength": 10
+                            }
+                        }
                     ]
                 },
                 {
@@ -48,6 +61,19 @@
                             "hits": 1,
                             "strength": 7
                         }
+                    ],
+                    "enhancements": [
+                        {
+                            "name": "Kraken ammunition",
+                            "type": "weapon",
+                            "visible": false,
+                            "data": {
+                                "range": "rn",
+                                "heavy": true,
+                                "hits": 4,
+                                "strength": 6
+                            }
+                        }
                     ]
                 },
                 {
@@ -66,7 +92,8 @@
                             "hits": 1,
                             "strength": 8
                         }
-                    ]
+                    ],
+                    "enhancements": []
                 },
                 {
                     "name": "Belial",
@@ -90,7 +117,8 @@
                             "hits": 2,
                             "strength": 7
                         }
-                    ]
+                    ],
+                    "enhancements": []
                 },
                 {
                     "name": "Corswain",
@@ -114,7 +142,8 @@
                             "hits": 2,
                             "strength": 7
                         }
-                    ]
+                    ],
+                    "enhancements": []
                 },
                 {
                     "name": "Marduk Sedras",
@@ -138,7 +167,8 @@
                             "hits": 1,
                             "strength": 8
                         }
-                    ]
+                    ],
+                    "enhancements": []
                 },
                 {
                     "name": "Hibou Khan",
@@ -154,6 +184,19 @@
                             "heavy": false,
                             "hits": 2,
                             "strength": 7
+                        }
+                    ],
+                    "enhancements": [
+                        {
+                            "name": "Frag grenades",
+                            "type": "weapon",
+                            "visible": false,
+                            "data": {
+                                "range": "20 cm",
+                                "heavy": true,
+                                "hits": 4,
+                                "strength": 4
+                            }
                         }
                     ]
                 },
@@ -178,7 +221,8 @@
                             "hits": 1,
                             "strength": 7
                         }
-                    ]
+                    ],
+                    "enhancements": []
                 },
                 {
                     "name": "Castellan Crowe",
@@ -201,6 +245,16 @@
                             "heavy": false,
                             "hits": 2,
                             "strength": 7
+                        }
+                    ],
+                    "enhancements": [
+                        {
+                            "name": "short-range teleporter",
+                            "type": "action",
+                            "visible": false,
+                            "data": {
+                                "name": "move fly 25"
+                            }
                         }
                     ]
                 },
@@ -225,6 +279,19 @@
                             "hits": 2,
                             "strength": 7
                         }
+                    ],
+                    "enhancements": [
+                        {
+                            "name": "Melta bombs",
+                            "type": "weapon",
+                            "visible": false,
+                            "data": {
+                                "range": "melee",
+                                "heavy": true,
+                                "hits": 1,
+                                "strength": 10
+                            }
+                        }
                     ]
                 },
                 {
@@ -248,6 +315,27 @@
                             "hits": 2,
                             "strength": 7
                         }
+                    ],
+                    "enhancements": [
+                        {
+                            "name": "armor reinforcement",
+                            "type": "armor",
+                            "visible": false,
+                            "data": {
+                                "value": 7
+                            }
+                        },
+                        {
+                            "name": "armor-piercing ammunition",
+                            "type": "weapon",
+                            "visible": false,
+                            "data": {
+                                "range": "rn",
+                                "heavy": false,
+                                "hits": 2,
+                                "strength": 6
+                            }
+                        }
                     ]
                 },
                 {
@@ -263,6 +351,30 @@
                             "heavy": false,
                             "hits": 2,
                             "strength": 5
+                        }
+                    ],
+                    "enhancements": [
+                        {
+                            "name": "armor-piercing ammunition",
+                            "type": "weapon",
+                            "visible": false,
+                            "data": {
+                                "range": "rn",
+                                "heavy": false,
+                                "hits": 1,
+                                "strength": 6
+                            }
+                        },
+                        {
+                            "name": "Heavy bolters",
+                            "type": "weapon",
+                            "visible": true,
+                            "data": {
+                                "range": "rn",
+                                "heavy": true,
+                                "hits": 1,
+                                "strength": 7
+                            }
                         }
                     ]
                 },
@@ -284,7 +396,20 @@
                             "range": "20 cm",
                             "heavy": false,
                             "hits": 1,
-                            "strength": 9
+                            "strength": 10
+                        }
+                    ],
+                    "enhancements": [
+                        {
+                            "name": "Multimeltas",
+                            "type": "weapon",
+                            "visible": true,
+                            "data": {
+                                "range": "20 cm",
+                                "heavy": true,
+                                "hits": 1,
+                                "strength": 11
+                            }
                         }
                     ]
                 },
@@ -308,6 +433,19 @@
                             "hits": 1,
                             "strength": 7
                         }
+                    ],
+                    "enhancements": [
+                        {
+                            "name": "Melta bombs",
+                            "type": "weapon",
+                            "visible": false,
+                            "data": {
+                                "range": "melee",
+                                "heavy": true,
+                                "hits": 1,
+                                "strength": 10
+                            }
+                        }
                     ]
                 },
                 {
@@ -329,6 +467,27 @@
                             "heavy": true,
                             "hits": 1,
                             "strength": 12
+                        }
+                    ],
+                    "enhancements": [
+                        {
+                            "name": "Engine upgrade",
+                            "type": "action",
+                            "visible": false,
+                            "data": {
+                                "name": "move 40"
+                            }
+                        },
+                        {
+                            "name": "Turret maneuverability",
+                            "type": "weapon",
+                            "visible": false,
+                            "data": {
+                                "range": "rn",
+                                "heavy": false,
+                                "hits": 1,
+                                "strength": 12
+                            }
                         }
                     ]
                 },
@@ -353,6 +512,30 @@
                             "hits": 2,
                             "strength": 7
                         }
+                    ],
+                    "enhancements": [
+                        {
+                            "name": "Thunder hammer",
+                            "type": "weapon",
+                            "visible": true,
+                            "data": {
+                                "range": "melee",
+                                "heavy": false,
+                                "hits": 1,
+                                "strength": 8
+                            }
+                        },
+                        {
+                            "name": "Combi-melta",
+                            "type": "weapon",
+                            "visible": true,
+                            "data": {
+                                "range": "20 cm",
+                                "heavy": false,
+                                "hits": 1,
+                                "strength": 8
+                            }
+                        }
                     ]
                 },
                 {
@@ -374,6 +557,19 @@
                             "heavy": false,
                             "hits": 2,
                             "strength": 7
+                        }
+                    ],
+                    "enhancements": [
+                        {
+                            "name": "Combi-melta",
+                            "type": "weapon",
+                            "visible": true,
+                            "data": {
+                                "range": "20 cm",
+                                "heavy": false,
+                                "hits": 1,
+                                "strength": 8
+                            }
                         }
                     ]
                 },
@@ -397,7 +593,8 @@
                             "hits": 1,
                             "strength": 7
                         }
-                    ]
+                    ],
+                    "enhancements": []
                 },
                 {
                     "name": "Deathwing strikemaster",
@@ -415,6 +612,19 @@
                             "hits": 2,
                             "strength": 7
                         }
+                    ],
+                    "enhancements": [
+                        {
+                            "name": "Power mace",
+                            "type": "weapon",
+                            "visible": true,
+                            "data": {
+                                "range": "melee",
+                                "heavy": false,
+                                "hits": 1,
+                                "strength": 8
+                            }
+                        }
                     ]
                 },
                 {
@@ -429,31 +639,21 @@
                         {
                             "range": "melee",
                             "heavy": false,
-                            "hits": 1,
+                            "hits": 2,
                             "strength": 7
                         }
-                    ]
-                },
-                {
-                    "name": "Inner circle companions",
-                    "points_per_model": 100,
-                    "armor": 4,
-                    "actions": [
-                        "move 15",
-                        "teleportation"
                     ],
-                    "weapons": [
+                    "enhancements": [
                         {
-                            "range": "rn",
-                            "heavy": false,
-                            "hits": 1,
-                            "strength": 5
-                        },
-                        {
-                            "range": "melee",
-                            "heavy": false,
-                            "hits": 1,
-                            "strength": 7
+                            "name": "Power mace",
+                            "type": "weapon",
+                            "visible": true,
+                            "data": {
+                                "range": "melee",
+                                "heavy": false,
+                                "hits": 1,
+                                "strength": 8
+                            }
                         }
                     ]
                 }
@@ -484,7 +684,8 @@
                             "hits": 2,
                             "strength": 8
                         }
-                    ]
+                    ],
+                    "enhancements": []
                 },
                 {
                     "name": "Librarian consul",
@@ -508,6 +709,16 @@
                             "hits": 1,
                             "strength": 8
                         }
+                    ],
+                    "enhancements": [
+                        {
+                            "name": "Armor reinforcement",
+                            "type": "armor",
+                            "visible": false,
+                            "data": {
+                                "value": 6
+                            }
+                        }
                     ]
                 },
                 {
@@ -525,6 +736,30 @@
                             "heavy": true,
                             "hits": 2,
                             "strength": 7
+                        }
+                    ],
+                    "enhancements": [
+                        {
+                            "name": "Armor-piercing ammunition",
+                            "type": "weapon",
+                            "visible": false,
+                            "data": {
+                                "range": "rn",
+                                "heavy": true,
+                                "hits": 1,
+                                "strength": 8
+                            }
+                        },
+                        {
+                            "name": "Melta bombs",
+                            "type": "weapon",
+                            "visible": false,
+                            "data": {
+                                "range": "melee",
+                                "heavy": true,
+                                "hits": 1,
+                                "strength": 10
+                            }
                         }
                     ]
                 },
@@ -549,7 +784,8 @@
                             "hits": 4,
                             "strength": 7
                         }
-                    ]
+                    ],
+                    "enhancements": []
                 },
                 {
                     "name": "Slaughterbound",
@@ -567,7 +803,8 @@
                             "hits": 2,
                             "strength": 7
                         }
-                    ]
+                    ],
+                    "enhancements": []
                 },
                 {
                     "name": "Exalted Eightbound",
@@ -590,6 +827,19 @@
                             "hits": 1,
                             "strength": 9
                         }
+                    ],
+                    "enhancements": [
+                        {
+                            "name": "Chainglaives",
+                            "type": "weapon",
+                            "visible": true,
+                            "data": {
+                                "range": "melee",
+                                "heavy": false,
+                                "hits": 2,
+                                "strength": 7
+                            }
+                        }
                     ]
                 },
                 {
@@ -606,7 +856,8 @@
                             "hits": 2,
                             "strength": 7
                         }
-                    ]
+                    ],
+                    "enhancements": []
                 },
                 {
                     "name": "Khorne Berzerkers",
@@ -627,6 +878,19 @@
                             "heavy": false,
                             "hits": 1,
                             "strength": 7
+                        }
+                    ],
+                    "enhancements": [
+                        {
+                            "name": "Chainglaives",
+                            "type": "weapon",
+                            "visible": true,
+                            "data": {
+                                "range": "melee",
+                                "heavy": false,
+                                "hits": 2,
+                                "strength": 7
+                            }
                         }
                     ]
                 },
@@ -651,7 +915,8 @@
                             "hits": 1,
                             "strength": 9
                         }
-                    ]
+                    ],
+                    "enhancements": []
                 },
                 {
                     "name": "MkII Marines",
@@ -673,21 +938,18 @@
                             "hits": 1,
                             "strength": 6
                         }
-                    ]
-                },
-                {
-                    "name": "MkII Marines with disintegrator weapons",
-                    "points_per_model": 50,
-                    "armor": 4,
-                    "actions": [
-                        "move 15"
                     ],
-                    "weapons": [
+                    "enhancements": [
                         {
-                            "range": "rn",
-                            "heavy": true,
-                            "hits": 1,
-                            "strength": 7
+                            "name": "Disintegrator weapons",
+                            "type": "weapon",
+                            "visible": true,
+                            "data": {
+                                "range": "rn",
+                                "heavy": true,
+                                "hits": 1,
+                                "strength": 7
+                            }
                         }
                     ]
                 },
@@ -711,12 +973,25 @@
                             "hits": 1,
                             "strength": 7
                         }
+                    ],
+                    "enhancements": [
+                        {
+                            "name": "Melta bombs",
+                            "type": "weapon",
+                            "visible": false,
+                            "data": {
+                                "range": "melee",
+                                "heavy": true,
+                                "hits": 1,
+                                "strength": 10
+                            }
+                        }
                     ]
                 },
                 {
                     "name": "Araknae accelerator platform",
                     "points_per_model": 200,
-                    "armor": 11,
+                    "armor": 9,
                     "actions": [],
                     "weapons": [
                         {
@@ -724,6 +999,16 @@
                             "heavy": true,
                             "hits": 2,
                             "strength": 12
+                        }
+                    ],
+                    "enhancements": [
+                        {
+                            "name": "Void shield upgrade",
+                            "type": "armor",
+                            "visible": false,
+                            "data": {
+                                "value": 11
+                            }
                         }
                     ]
                 },
@@ -753,7 +1038,8 @@
                             "hits": 1,
                             "strength": 14
                         }
-                    ]
+                    ],
+                    "enhancements": []
                 }
             ]
         },
@@ -776,6 +1062,27 @@
                             "hits": 6,
                             "strength": 6
                         }
+                    ],
+                    "enhancements": [
+                        {
+                            "name": "Armor reinforcement",
+                            "type": "armor",
+                            "visible": false,
+                            "data": {
+                                "value": 7
+                            }
+                        },
+                        {
+                            "name": "Enmitic matrix",
+                            "type": "weapon",
+                            "visible": false,
+                            "data": {
+                                "range": "rn",
+                                "heavy": false,
+                                "hits": 1,
+                                "strength": 8
+                            }
+                        }
                     ]
                 },
                 {
@@ -793,7 +1100,8 @@
                             "hits": 1,
                             "strength": 7
                         }
-                    ]
+                    ],
+                    "enhancements": []
                 },
                 {
                     "name": "Skorpekh destroyer",
@@ -809,6 +1117,16 @@
                             "heavy": false,
                             "hits": 1,
                             "strength": 9
+                        }
+                    ],
+                    "enhancements": [
+                        {
+                            "name": "Armor reinforcement",
+                            "type": "armor",
+                            "visible": false,
+                            "data": {
+                                "value": 7
+                            }
                         }
                     ]
                 },
@@ -827,6 +1145,27 @@
                             "hits": 1,
                             "strength": 12
                         }
+                    ],
+                    "enhancements": [
+                        {
+                            "name": "Armor reinforcement",
+                            "type": "armor",
+                            "visible": false,
+                            "data": {
+                                "value": 8
+                            }
+                        },
+                        {
+                            "name": "Dynamic charging",
+                            "type": "weapon",
+                            "visible": false,
+                            "data": {
+                                "range": "rn",
+                                "heavy": false,
+                                "hits": 1,
+                                "strength": 10
+                            }
+                        }
                     ]
                 },
                 {
@@ -843,6 +1182,16 @@
                             "heavy": true,
                             "hits": 4,
                             "strength": 7
+                        }
+                    ],
+                    "enhancements": [
+                        {
+                            "name": "Armor reinforcement",
+                            "type": "armor",
+                            "visible": false,
+                            "data": {
+                                "value": 8
+                            }
                         }
                     ]
                 }
