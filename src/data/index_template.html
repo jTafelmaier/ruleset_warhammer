@@ -31,22 +31,6 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        Unit: health
-                                    </td>
-                                    <td>
-                                        Inherent property of all units: The initial and maximum value for health is 8.
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Weapon: hits
-                                    </td>
-                                    <td>
-                                        Number before "x"
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
                                         Distance between models
                                     </td>
                                     <td>
@@ -103,6 +87,14 @@
                                     When every model is within 5 cm of another model in the unit.
                                     <br/>
                                     If at the beginning of any action, unit coherency is not given for any friendly unit, destroy models in that unit until unit coherency is given.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Unit: health
+                                    </td>
+                                    <td>
+                                        Inherent property of all units: The initial and maximum value for health is 8.
                                     </td>
                                 </tr>
                             </tbody>
@@ -180,30 +172,31 @@
                             <div class="indented">
                                 Select one weapon and one visible enemy unit as "target unit".
                                 <br/>
-                                - If no target unit can be selected, end the attack sequence for this model.
-                                <br/>
-                                - Units in cover are considered to have at least an <b><span class="icon">⛊</span>armor</b> characteristic of 8.
-                                <br/>
-                                - Can only use weapons with &quot;heavy&quot; if this is the first action for this unit this turn.
-                                <br/>
-                                - Can only use weapons with &quot;20 cm&quot; if the target unit is within 20 cm.
-                                <br/>
-                                - Can only use weapons with &quot;melee&quot; if the target unit is within 5 cm.
+                                Units in cover are considered to have at least an <b><span class="icon">⛊</span>armor</b> characteristic of 8.
                                 <br/>
                                 <br/>
-                                If weapon <b>ap</b> >= target unit <b><span class="icon">⛊</span>armor</b>:
+                                End the attack sequence for this model if any of the following are true:
                                 <div class="indented">
-                                    Repeat for weapon: <span class="icon">💥</span> damage:
+                                    - No target unit can be selected
+                                    <br/>
+                                    - Weapon <b><span class="icon">⛉</span>ap</b> is lower than target unit <b><span class="icon">⛊</span>armor</b>
+                                    <br/>
+                                    - The weapon has &quot;heavy&quot; and this is not the first action for this unit this turn.
+                                    <br/>
+                                    - The weapon has &quot;20 cm&quot; and the target unit is not within 20 cm.
+                                    <br/>
+                                    - The weapon has &quot;melee&quot; and the target unit is not within 5 cm.
+                                </div>
+                                <br/>
+                                Repeat for weapon: <span class="icon">💥</span> damage:
+                                <div class="indented">
+                                    Reduce unit: health by 1.
+                                    <br/>
+                                    If unit: <b>health</b> is 0:
                                     <div class="indented">
-                                        Reduce unit: health by 1.
+                                        The enemy player must choose to destroy one model in the target unit.
                                         <br/>
-                                        <br/>
-                                        If unit: <b>health</b> is 0:
-                                        <div class="indented">
-                                            The enemy player must choose to destroy one model in the target unit.
-                                            <br/>
-                                            Then, restore the unit health tokens.
-                                        </div>
+                                        Then, restore the unit health tokens.
                                     </div>
                                 </div>
                             </div>
