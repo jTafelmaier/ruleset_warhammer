@@ -51,8 +51,8 @@ def get_text_html_row_weapon(
         + "</div> [max " \
         + str(dict_action["max_targets"]) \
         + "] " \
-        + ("[heavy] " if dict_action["heavy"] else "") \
         + ("[" + dict_action["range"] + "] " if dict_action["range"] != "rn" else "") \
+        + ("[heavy] " if dict_action["heavy"] else "") \
         + "💥" \
         + str(dict_action["damage"]) \
         + "</div>"
