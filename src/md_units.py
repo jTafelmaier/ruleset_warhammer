@@ -46,7 +46,7 @@ def get_text_html_row_weapon(
 
     return "<div class=\"unit_property attack\"" \
         + get_text_style_visible(bool_visible) \
-        + "><span>⚔</span><div class=\"weapon_ap\">⛉" \
+        + "><span>⚔</span><div class=\"weapon_ap\">🗲" \
         + str(dict_action["ap"]) \
         + "</div> " \
         + ("[heavy] " if dict_action["heavy"] else "") \
