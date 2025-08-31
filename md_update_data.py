@@ -23,8 +23,8 @@ def main():
             def modify_unit(
                 dict_unit:typing.Dict):
 
-                def modify_action(
-                    dict_action:typing.Dict):
+                def modify_weapon(
+                    dict_weapon:typing.Dict):
 
                     # placeholder
 
@@ -34,7 +34,7 @@ def main():
 
                 list(
                         map(
-                            modify_action,
+                            modify_weapon,
                             dict_unit \
                                 ["weapons"]))
 
