@@ -46,12 +46,13 @@ def get_text_html_row_weapon(
 
     return "<div class=\"unit_property attack\"" \
         + get_text_style_visible(bool_visible) \
-        + "><span>⚔</span>" \
-        + ("heavy " if dict_action["heavy"] else "") \
-        + (dict_action["range"] + " " if dict_action["range"] != "rn" else "") \
-        + str(dict_action["hits"]) \
-        + "x 💥" \
-        + str(dict_action["strength"]) \
+        + "><span>⚔</span>⛉" \
+        + str(dict_action["ap"]) \
+        + " " \
+        + ("[heavy] " if dict_action["heavy"] else "") \
+        + ("[" + dict_action["range"] + "] " if dict_action["range"] != "rn" else "") \
+        + "💥" \
+        + str(dict_action["damage"]) \
         + "</div>"
 
 

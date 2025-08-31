@@ -16,14 +16,14 @@
                         {
                             "range": "rn",
                             "heavy": false,
-                            "hits": 2,
-                            "strength": 5
+                            "ap": 5,
+                            "damage": 4
                         },
                         {
                             "range": "melee",
                             "heavy": false,
-                            "hits": 4,
-                            "strength": 6
+                            "ap": 6,
+                            "damage": 8
                         }
                     ],
                     "enhancements": [
@@ -34,8 +34,8 @@
                             "data": {
                                 "range": "melee",
                                 "heavy": true,
-                                "hits": 1,
-                                "strength": 10
+                                "ap": 10,
+                                "damage": 6
                             }
                         }
                     ]
@@ -52,14 +52,14 @@
                         {
                             "range": "rn",
                             "heavy": true,
-                            "hits": 2,
-                            "strength": 7
+                            "ap": 5,
+                            "damage": 4
                         },
                         {
                             "range": "melee",
                             "heavy": false,
-                            "hits": 1,
-                            "strength": 7
+                            "ap": 7,
+                            "damage": 4
                         }
                     ],
                     "enhancements": [
@@ -70,8 +70,8 @@
                             "data": {
                                 "range": "rn",
                                 "heavy": true,
-                                "hits": 4,
-                                "strength": 6
+                                "ap": 4,
+                                "damage": 8
                             }
                         }
                     ]
@@ -89,8 +89,8 @@
                         {
                             "range": "melee",
                             "heavy": false,
-                            "hits": 1,
-                            "strength": 8
+                            "ap": 7,
+                            "damage": 4
                         }
                     ],
                     "enhancements": []
@@ -108,14 +108,14 @@
                         {
                             "range": "20 cm",
                             "heavy": false,
-                            "hits": 4,
-                            "strength": 4
+                            "ap": 4,
+                            "damage": 8
                         },
                         {
                             "range": "melee",
                             "heavy": false,
-                            "hits": 2,
-                            "strength": 7
+                            "ap": 7,
+                            "damage": 4
                         }
                     ],
                     "enhancements": []
@@ -133,14 +133,14 @@
                         {
                             "range": "20 cm",
                             "heavy": true,
-                            "hits": 1,
-                            "strength": 7
+                            "ap": 5,
+                            "damage": 4
                         },
                         {
                             "range": "melee",
                             "heavy": false,
-                            "hits": 2,
-                            "strength": 7
+                            "ap": 8,
+                            "damage": 4
                         }
                     ],
                     "enhancements": []
@@ -158,14 +158,14 @@
                         {
                             "range": "rn",
                             "heavy": true,
-                            "hits": 4,
-                            "strength": 4
+                            "ap": 4,
+                            "damage": 4
                         },
                         {
                             "range": "melee",
                             "heavy": false,
-                            "hits": 1,
-                            "strength": 8
+                            "ap": 7,
+                            "damage": 8
                         }
                     ],
                     "enhancements": []
@@ -182,8 +182,8 @@
                         {
                             "range": "melee",
                             "heavy": false,
-                            "hits": 2,
-                            "strength": 7
+                            "ap": 7,
+                            "damage": 6
                         }
                     ],
                     "enhancements": [
@@ -194,8 +194,8 @@
                             "data": {
                                 "range": "20 cm",
                                 "heavy": true,
-                                "hits": 4,
-                                "strength": 4
+                                "ap": 4,
+                                "damage": 8
                             }
                         }
                     ]
@@ -212,14 +212,14 @@
                         {
                             "range": "rn",
                             "heavy": false,
-                            "hits": 4,
-                            "strength": 5
+                            "ap": 6,
+                            "damage": 4
                         },
                         {
                             "range": "melee",
                             "heavy": false,
-                            "hits": 1,
-                            "strength": 7
+                            "ap": 7,
+                            "damage": 4
                         }
                     ],
                     "enhancements": []
@@ -237,14 +237,14 @@
                         {
                             "range": "20 cm",
                             "heavy": false,
-                            "hits": 4,
-                            "strength": 4
+                            "ap": 4,
+                            "damage": 8
                         },
                         {
                             "range": "melee",
                             "heavy": false,
-                            "hits": 2,
-                            "strength": 7
+                            "ap": 6,
+                            "damage": 8
                         }
                     ],
                     "enhancements": [
@@ -270,14 +270,14 @@
                         {
                             "range": "rn",
                             "heavy": false,
-                            "hits": 2,
-                            "strength": 5
+                            "ap": 5,
+                            "damage": 4
                         },
                         {
                             "range": "melee",
                             "heavy": false,
-                            "hits": 2,
-                            "strength": 7
+                            "ap": 5,
+                            "damage": 6
                         }
                     ],
                     "enhancements": [
@@ -288,8 +288,8 @@
                             "data": {
                                 "range": "melee",
                                 "heavy": true,
-                                "hits": 1,
-                                "strength": 10
+                                "ap": 10,
+                                "damage": 6
                             }
                         }
                     ]
@@ -306,14 +306,14 @@
                         {
                             "range": "rn",
                             "heavy": false,
-                            "hits": 4,
-                            "strength": 5
+                            "ap": 5,
+                            "damage": 8
                         },
                         {
                             "range": "melee",
                             "heavy": false,
-                            "hits": 2,
-                            "strength": 7
+                            "ap": 7,
+                            "damage": 4
                         }
                     ],
                     "enhancements": [
@@ -332,8 +332,8 @@
                             "data": {
                                 "range": "rn",
                                 "heavy": false,
-                                "hits": 2,
-                                "strength": 6
+                                "ap": 7,
+                                "damage": 4
                             }
                         }
                     ]
@@ -349,8 +349,8 @@
                         {
                             "range": "rn",
                             "heavy": false,
-                            "hits": 2,
-                            "strength": 5
+                            "ap": 5,
+                            "damage": 4
                         }
                     ],
                     "enhancements": [
@@ -361,8 +361,8 @@
                             "data": {
                                 "range": "rn",
                                 "heavy": false,
-                                "hits": 1,
-                                "strength": 6
+                                "ap": 7,
+                                "damage": 2
                             }
                         },
                         {
@@ -372,8 +372,8 @@
                             "data": {
                                 "range": "rn",
                                 "heavy": true,
-                                "hits": 1,
-                                "strength": 7
+                                "ap": 5,
+                                "damage": 8
                             }
                         }
                     ]
@@ -389,14 +389,14 @@
                         {
                             "range": "rn",
                             "heavy": false,
-                            "hits": 1,
-                            "strength": 5
+                            "ap": 5,
+                            "damage": 2
                         },
                         {
                             "range": "20 cm",
                             "heavy": false,
-                            "hits": 1,
-                            "strength": 10
+                            "ap": 12,
+                            "damage": 4
                         }
                     ],
                     "enhancements": [
@@ -407,8 +407,8 @@
                             "data": {
                                 "range": "20 cm",
                                 "heavy": true,
-                                "hits": 1,
-                                "strength": 11
+                                "ap": 12,
+                                "damage": 8
                             }
                         }
                     ]
@@ -424,14 +424,14 @@
                         {
                             "range": "rn",
                             "heavy": false,
-                            "hits": 1,
-                            "strength": 5
+                            "ap": 5,
+                            "damage": 2
                         },
                         {
                             "range": "melee",
                             "heavy": false,
-                            "hits": 1,
-                            "strength": 7
+                            "ap": 5,
+                            "damage": 4
                         }
                     ],
                     "enhancements": [
@@ -442,8 +442,8 @@
                             "data": {
                                 "range": "melee",
                                 "heavy": true,
-                                "hits": 1,
-                                "strength": 10
+                                "ap": 10,
+                                "damage": 6
                             }
                         }
                     ]
@@ -459,14 +459,14 @@
                         {
                             "range": "20 cm",
                             "heavy": false,
-                            "hits": 2,
-                            "strength": 4
+                            "ap": 4,
+                            "damage": 8
                         },
                         {
                             "range": "rn",
                             "heavy": true,
-                            "hits": 1,
-                            "strength": 12
+                            "ap": 12,
+                            "damage": 8
                         }
                     ],
                     "enhancements": [
@@ -485,8 +485,8 @@
                             "data": {
                                 "range": "rn",
                                 "heavy": false,
-                                "hits": 1,
-                                "strength": 12
+                                "ap": 12,
+                                "damage": 8
                             }
                         }
                     ]
@@ -503,28 +503,17 @@
                         {
                             "range": "rn",
                             "heavy": false,
-                            "hits": 2,
-                            "strength": 5
+                            "ap": 5,
+                            "damage": 4
                         },
                         {
                             "range": "melee",
                             "heavy": false,
-                            "hits": 2,
-                            "strength": 7
+                            "ap": 7,
+                            "damage": 4
                         }
                     ],
                     "enhancements": [
-                        {
-                            "name": "Thunder hammer",
-                            "type": "weapon",
-                            "visible": true,
-                            "data": {
-                                "range": "melee",
-                                "heavy": false,
-                                "hits": 1,
-                                "strength": 8
-                            }
-                        },
                         {
                             "name": "Combi-melta",
                             "type": "weapon",
@@ -532,8 +521,8 @@
                             "data": {
                                 "range": "20 cm",
                                 "heavy": false,
-                                "hits": 1,
-                                "strength": 8
+                                "ap": 10,
+                                "damage": 4
                             }
                         }
                     ]
@@ -549,14 +538,14 @@
                         {
                             "range": "rn",
                             "heavy": false,
-                            "hits": 1,
-                            "strength": 5
+                            "ap": 5,
+                            "damage": 2
                         },
                         {
                             "range": "melee",
                             "heavy": false,
-                            "hits": 2,
-                            "strength": 7
+                            "ap": 7,
+                            "damage": 2
                         }
                     ],
                     "enhancements": [
@@ -567,8 +556,8 @@
                             "data": {
                                 "range": "20 cm",
                                 "heavy": false,
-                                "hits": 1,
-                                "strength": 8
+                                "ap": 10,
+                                "damage": 4
                             }
                         }
                     ]
@@ -584,14 +573,14 @@
                         {
                             "range": "rn",
                             "heavy": false,
-                            "hits": 2,
-                            "strength": 5
+                            "ap": 5,
+                            "damage": 4
                         },
                         {
                             "range": "melee",
                             "heavy": false,
-                            "hits": 1,
-                            "strength": 7
+                            "ap": 5,
+                            "damage": 4
                         }
                     ],
                     "enhancements": []
@@ -609,23 +598,11 @@
                         {
                             "range": "melee",
                             "heavy": false,
-                            "hits": 2,
-                            "strength": 7
+                            "ap": 7,
+                            "damage": 4
                         }
                     ],
-                    "enhancements": [
-                        {
-                            "name": "Power mace",
-                            "type": "weapon",
-                            "visible": true,
-                            "data": {
-                                "range": "melee",
-                                "heavy": false,
-                                "hits": 1,
-                                "strength": 8
-                            }
-                        }
-                    ]
+                    "enhancements": []
                 },
                 {
                     "name": "Deathwing knights",
@@ -639,23 +616,11 @@
                         {
                             "range": "melee",
                             "heavy": false,
-                            "hits": 2,
-                            "strength": 7
+                            "ap": 7,
+                            "damage": 2
                         }
                     ],
-                    "enhancements": [
-                        {
-                            "name": "Power mace",
-                            "type": "weapon",
-                            "visible": true,
-                            "data": {
-                                "range": "melee",
-                                "heavy": false,
-                                "hits": 1,
-                                "strength": 8
-                            }
-                        }
-                    ]
+                    "enhancements": []
                 }
             ]
         },
@@ -675,14 +640,14 @@
                         {
                             "range": "20 cm",
                             "heavy": false,
-                            "hits": 1,
-                            "strength": 10
+                            "ap": 10,
+                            "damage": 6
                         },
                         {
                             "range": "20 cm",
                             "heavy": false,
-                            "hits": 2,
-                            "strength": 8
+                            "ap": 8,
+                            "damage": 8
                         }
                     ],
                     "enhancements": []
@@ -700,14 +665,14 @@
                         {
                             "range": "20 cm",
                             "heavy": false,
-                            "hits": 2,
-                            "strength": 5
+                            "ap": 5,
+                            "damage": 6
                         },
                         {
                             "range": "melee",
                             "heavy": false,
-                            "hits": 1,
-                            "strength": 8
+                            "ap": 7,
+                            "damage": 4
                         }
                     ],
                     "enhancements": [
@@ -734,8 +699,8 @@
                         {
                             "range": "rn",
                             "heavy": true,
-                            "hits": 2,
-                            "strength": 7
+                            "ap": 7,
+                            "damage": 8
                         }
                     ],
                     "enhancements": [
@@ -746,8 +711,8 @@
                             "data": {
                                 "range": "rn",
                                 "heavy": true,
-                                "hits": 1,
-                                "strength": 8
+                                "ap": 9,
+                                "damage": 4
                             }
                         },
                         {
@@ -757,8 +722,8 @@
                             "data": {
                                 "range": "melee",
                                 "heavy": true,
-                                "hits": 1,
-                                "strength": 10
+                                "ap": 10,
+                                "damage": 6
                             }
                         }
                     ]
@@ -775,14 +740,14 @@
                         {
                             "range": "melee",
                             "heavy": false,
-                            "hits": 1,
-                            "strength": 8
+                            "ap": 7,
+                            "damage": 10
                         },
                         {
                             "range": "melee",
                             "heavy": true,
-                            "hits": 4,
-                            "strength": 7
+                            "ap": 5,
+                            "damage": 12
                         }
                     ],
                     "enhancements": []
@@ -800,8 +765,8 @@
                         {
                             "range": "melee",
                             "heavy": false,
-                            "hits": 2,
-                            "strength": 7
+                            "ap": 5,
+                            "damage": 12
                         }
                     ],
                     "enhancements": []
@@ -818,14 +783,14 @@
                         {
                             "range": "melee",
                             "heavy": false,
-                            "hits": 1,
-                            "strength": 7
+                            "ap": 5,
+                            "damage": 10
                         },
                         {
                             "range": "melee",
                             "heavy": true,
-                            "hits": 1,
-                            "strength": 9
+                            "ap": 10,
+                            "damage": 4
                         }
                     ],
                     "enhancements": [
@@ -836,8 +801,8 @@
                             "data": {
                                 "range": "melee",
                                 "heavy": false,
-                                "hits": 2,
-                                "strength": 7
+                                "ap": 6,
+                                "damage": 10
                             }
                         }
                     ]
@@ -853,8 +818,8 @@
                         {
                             "range": "melee",
                             "heavy": false,
-                            "hits": 2,
-                            "strength": 7
+                            "ap": 5,
+                            "damage": 10
                         }
                     ],
                     "enhancements": []
@@ -870,14 +835,14 @@
                         {
                             "range": "rn",
                             "heavy": false,
-                            "hits": 1,
-                            "strength": 5
+                            "ap": 5,
+                            "damage": 2
                         },
                         {
                             "range": "melee",
                             "heavy": false,
-                            "hits": 1,
-                            "strength": 7
+                            "ap": 5,
+                            "damage": 8
                         }
                     ],
                     "enhancements": [
@@ -888,8 +853,8 @@
                             "data": {
                                 "range": "melee",
                                 "heavy": false,
-                                "hits": 2,
-                                "strength": 7
+                                "ap": 6,
+                                "damage": 8
                             }
                         }
                     ]
@@ -906,14 +871,14 @@
                         {
                             "range": "rn",
                             "heavy": true,
-                            "hits": 1,
-                            "strength": 7
+                            "ap": 8,
+                            "damage": 2
                         },
                         {
                             "range": "melee",
                             "heavy": true,
-                            "hits": 1,
-                            "strength": 9
+                            "ap": 6,
+                            "damage": 8
                         }
                     ],
                     "enhancements": []
@@ -929,14 +894,14 @@
                         {
                             "range": "rn",
                             "heavy": false,
-                            "hits": 2,
-                            "strength": 5
+                            "ap": 5,
+                            "damage": 4
                         },
                         {
                             "range": "20 cm",
                             "heavy": true,
-                            "hits": 1,
-                            "strength": 6
+                            "ap": 6,
+                            "damage": 4
                         }
                     ],
                     "enhancements": [
@@ -947,8 +912,8 @@
                             "data": {
                                 "range": "rn",
                                 "heavy": true,
-                                "hits": 1,
-                                "strength": 7
+                                "ap": 6,
+                                "damage": 8
                             }
                         }
                     ]
@@ -964,14 +929,14 @@
                         {
                             "range": "rn",
                             "heavy": false,
-                            "hits": 1,
-                            "strength": 5
+                            "ap": 5,
+                            "damage": 2
                         },
                         {
                             "range": "melee",
                             "heavy": false,
-                            "hits": 1,
-                            "strength": 7
+                            "ap": 5,
+                            "damage": 4
                         }
                     ],
                     "enhancements": [
@@ -982,8 +947,8 @@
                             "data": {
                                 "range": "melee",
                                 "heavy": true,
-                                "hits": 1,
-                                "strength": 10
+                                "ap": 10,
+                                "damage": 6
                             }
                         }
                     ]
@@ -997,8 +962,8 @@
                         {
                             "range": "rn",
                             "heavy": true,
-                            "hits": 2,
-                            "strength": 12
+                            "ap": 12,
+                            "damage": 4
                         }
                     ],
                     "enhancements": [
@@ -1023,20 +988,20 @@
                         {
                             "range": "rn",
                             "heavy": false,
-                            "hits": 4,
-                            "strength": 7
+                            "ap": 5,
+                            "damage": 16
                         },
                         {
                             "range": "rn",
                             "heavy": true,
-                            "hits": 4,
-                            "strength": 10
+                            "ap": 6,
+                            "damage": 24
                         },
                         {
                             "range": "rn",
                             "heavy": true,
-                            "hits": 1,
-                            "strength": 14
+                            "ap": 14,
+                            "damage": 8
                         }
                     ],
                     "enhancements": []
@@ -1059,8 +1024,8 @@
                         {
                             "range": "rn",
                             "heavy": false,
-                            "hits": 6,
-                            "strength": 6
+                            "ap": 7,
+                            "damage": 8
                         }
                     ],
                     "enhancements": [
@@ -1070,17 +1035,6 @@
                             "visible": false,
                             "data": {
                                 "value": 7
-                            }
-                        },
-                        {
-                            "name": "Enmitic matrix",
-                            "type": "weapon",
-                            "visible": false,
-                            "data": {
-                                "range": "rn",
-                                "heavy": false,
-                                "hits": 1,
-                                "strength": 8
                             }
                         }
                     ]
@@ -1097,8 +1051,8 @@
                         {
                             "range": "rn",
                             "heavy": true,
-                            "hits": 1,
-                            "strength": 7
+                            "ap": 7,
+                            "damage": 2
                         }
                     ],
                     "enhancements": []
@@ -1115,8 +1069,8 @@
                         {
                             "range": "melee",
                             "heavy": false,
-                            "hits": 1,
-                            "strength": 9
+                            "ap": 8,
+                            "damage": 8
                         }
                     ],
                     "enhancements": [
@@ -1142,8 +1096,8 @@
                         {
                             "range": "rn",
                             "heavy": true,
-                            "hits": 1,
-                            "strength": 12
+                            "ap": 14,
+                            "damage": 4
                         }
                     ],
                     "enhancements": [
@@ -1162,8 +1116,8 @@
                             "data": {
                                 "range": "rn",
                                 "heavy": false,
-                                "hits": 1,
-                                "strength": 10
+                                "ap": 12,
+                                "damage": 2
                             }
                         }
                     ]
@@ -1180,8 +1134,8 @@
                         {
                             "range": "rn",
                             "heavy": true,
-                            "hits": 4,
-                            "strength": 7
+                            "ap": 7,
+                            "damage": 12
                         }
                     ],
                     "enhancements": [

@@ -191,66 +191,19 @@
                                 - Can only use weapons with &quot;melee&quot; if the target unit is within 5 cm.
                                 <br/>
                                 <br/>
-                                Repeat for weapon: <b>hits</b>:
+                                If weapon <b>ap</b> >= target unit <b><span class="icon">⛊</span>armor</b>:
                                 <div class="indented">
-                                    <table class="table_default">
-                                        <tbody>
-                                            <tr>
-                                                <th>
-                                                    <b><span class="icon">💥</span>strength</b> - <b><span class="icon">⛊</span>armor</b>
-                                                </th>
-                                                <th>
-                                                    Reduce unit: <b>health</b> by:
-                                                </th>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    < 0
-                                                </td>
-                                                <td>
-                                                    0
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    0
-                                                </td>
-                                                <td>
-                                                    1
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    1
-                                                </td>
-                                                <td>
-                                                    2
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    2
-                                                </td>
-                                                <td>
-                                                    4
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    >= 3
-                                                </td>
-                                                <td>
-                                                    8
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <br/>
-                                    If unit: <b>health</b> &lt= 0:
+                                    Repeat for weapon: <span class="icon">💥</span> damage:
                                     <div class="indented">
-                                        The enemy player must choose to destroy one model in the target unit.
+                                        Reduce unit: health by 1.
                                         <br/>
-                                        Then, restore the unit health tokens.
+                                        <br/>
+                                        If unit: <b>health</b> is 0:
+                                        <div class="indented">
+                                            The enemy player must choose to destroy one model in the target unit.
+                                            <br/>
+                                            Then, restore the unit health tokens.
+                                        </div>
                                     </div>
                                 </div>
                             </div>
