@@ -32,8 +32,8 @@ def main():
 
                     dict_unit[name_property] = t
 
-                def modify_weapon(
-                    dict_weapon:typing.Dict):
+                def modify_action(
+                    dict_action:typing.Dict):
 
                     # placeholder
 
@@ -43,9 +43,9 @@ def main():
 
                 list(
                         map(
-                            modify_weapon,
+                            modify_action,
                             dict_unit \
-                                ["weapons"]))
+                                ["actions"]))
 
                 return None
 

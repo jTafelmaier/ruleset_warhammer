@@ -179,20 +179,6 @@ body {
     margin-top: 40px;
 }
 
-.unit_schema {
-    display: flex;
-    margin-top: 20px;
-}
-
-.enhancements {
-    padding: 10px;
-}
-
-.name_enhancement {
-    display: inline-block;
-    min-width: 180px;
-}
-
 .unit {
     width: 450px;
     height: 200px;
@@ -202,6 +188,7 @@ body {
     border: 2px solid #9fa7ba;
     border-left: 5px solid #9fa7ba;
     border-radius: 2px;
+    margin-top: 20px;
     clip-path: polygon(
         0 0,
         calc(100% - 15px) 0,
@@ -246,6 +233,11 @@ body {
     border-bottom-right-radius: 2px;
     padding: 1px 5px;
     margin-bottom: 4px;
+}
+
+.enhancement {
+    background: #4e6bfb;
+    color: white;
 }
 
 .unit_property span {
@@ -328,11 +320,6 @@ body {
     color: #4e6bfb;
     text-align: center;
     margin-top: 5px;
-}
-
-.enhanced {
-    background: #4e6bfb;
-    color: white;
 }
 
 .increase {

@@ -10,16 +10,14 @@
         {
             "name": "Eightbound",
             "count_models": 8,
-            "enhancements": [
-                "Armor reinforcement"
-            ],
+            "enhancements": [],
             "attached_to_index": null
         },
         {
             "name": "Khorne Berzerkers",
             "count_models": 8,
             "enhancements": [
-                "Chainglaives"
+                3
             ],
             "attached_to_index": null
         }

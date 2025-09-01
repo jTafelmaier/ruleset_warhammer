@@ -7,98 +7,67 @@ from src import md_shared
 
 
 
-def get_text_style_visible(
-    bool_visible:bool):
-
-    if bool_visible:
-        return ""
-    else:
-        return " style=\"display: none;\""
-
-
-def get_text_html_action(
-    text_action:str,
-    dict_actions:typing.Dict,
-    bool_visible:bool = True):
-
-    text_name_action, \
-    _, \
-    text_parameters = text_action \
-        .partition(" ")
-
-    return "<div class=\"unit_property " \
-        + text_name_action \
-        + "\" title=\"" \
-        + dict_actions \
-            [text_name_action] \
-        + "\"" \
-        + get_text_style_visible(bool_visible) \
-        + "><span>" \
-        + text_name_action \
-        + "</span> " \
-        + text_parameters \
-        + "</div>"
-
-
-def get_text_html_row_weapon(
-    dict_weapon:typing.Dict,
-    bool_visible:bool = True):
-
-    list_texts_keywords = list(
-        filter(
-            lambda text: text is not None,
-            [
-                (dict_weapon["range"] if dict_weapon["range"] != "rn" else None),
-                ("heavy" if dict_weapon["heavy"] else None),
-                ("single" if dict_weapon["single"] else None)]))
-
-    return "<div class=\"unit_property attack\"" \
-        + get_text_style_visible(bool_visible) \
-        + "><span>⚔</span>🗲" \
-        + str(dict_weapon["ap"]) \
-        + " 💥" \
-        + str(dict_weapon["damage"]) \
-        + " [" \
-        + ", " \
-            .join(list_texts_keywords) \
-        + "]</div>"
-
-
 def get_text_html_data_unit(
     dict_unit:typing.Dict,
-    dict_actions:typing.Dict,
+    dict_descriptions_actions:typing.Dict,
     name_faction:str,
-    list_names_enhancements:typing.List[str] = []):
+    list_indices_enhancements:typing.List[int] = [],
+    bool_show_invisible_enhancements = False):
 
-    list_dicts_enhancements = list(
-        filter(
-            lambda dict_enhancement: dict_enhancement["name"] in list_names_enhancements,
-            dict_unit \
-                ["enhancements"]))
+    def get_text_html_action(
+        pair_action:typing.Tuple[int, typing.Dict]):
 
-    list_texts_rows_actions_enhancements = list(
-        map(
-            lambda dict_enhancement: get_text_html_action(
-                text_action=dict_enhancement \
-                    ["data"] \
-                    ["name"],
-                dict_actions=dict_actions,
-                bool_visible=dict_enhancement \
-                    ["visible"]),
-            filter(
-                lambda dict_enhancement: dict_enhancement["type"] == "action",
-                list_dicts_enhancements)))
+        dict_action = pair_action \
+            [-1]
 
-    list_texts_rows_weapons_enhancements = list(
-        map(
-            lambda dict_enhancement: get_text_html_row_weapon(
-                dict_weapon=dict_enhancement \
-                    ["data"],
-                bool_visible=dict_enhancement \
-                    ["visible"]),
-            filter(
-                lambda dict_enhancement: dict_enhancement["type"] == "weapon",
-                list_dicts_enhancements)))
+        text_type_action = dict_action \
+            ["type"]
+
+        def get_text_content():
+
+            if text_type_action != "weapon":
+                return "<span>" \
+                    + dict_action \
+                        ["type"] \
+                    + "</span> " \
+                    + dict_action \
+                        ["data"] \
+                        ["parameters"]
+
+            dict_weapon = dict_action \
+                ["data"]
+
+            list_texts_keywords = list(
+                filter(
+                    lambda text: text is not None,
+                    [
+                        (dict_weapon["range"] if dict_weapon["range"] != "rn" else None),
+                        ("heavy" if dict_weapon["heavy"] else None),
+                        ("single" if dict_weapon["single"] else None)]))
+
+            return "<span>⚔</span>🗲" \
+                + dict_weapon \
+                    ["ap"] \
+                    .__str__() \
+                + " 💥" \
+                + dict_weapon \
+                    ["damage"] \
+                    .__str__() \
+                + " [" \
+                + ", " \
+                    .join(list_texts_keywords) \
+                + "]"
+
+        return "<div class=\"unit_property " \
+            + ("enhancement" if dict_action["is_enhancement"] else "") \
+            + "\" title=\"" \
+            + dict_descriptions_actions \
+                [text_type_action] \
+            + "\"" \
+            + ("" if dict_action["is_visible"] or bool_show_invisible_enhancements else " style=\"display: none;\"") \
+            + ">" \
+            + get_text_content() \
+            + "</div>"
 
     path_image_unit = "/" \
         .join(
@@ -111,48 +80,15 @@ def get_text_html_data_unit(
 
     text_html_rows_actions = "" \
         .join(
-            list(
-                map(
-                    lambda text_action: get_text_html_action(
-                        text_action=text_action,
-                        dict_actions=dict_actions),
-                    dict_unit \
-                        ["actions"])) \
-            + list_texts_rows_actions_enhancements)
-
-    text_html_rows_weapons = "" \
-        .join(
-            list(
-                map(
-                    get_text_html_row_weapon,
-                    dict_unit
-                        ["weapons"])) \
-            + list_texts_rows_weapons_enhancements)
+            map(
+                get_text_html_action,
+                filter(
+                    lambda pair_action: not pair_action[-1]["is_enhancement"] or pair_action[0] in list_indices_enhancements,
+                    enumerate(
+                        dict_unit
+                            ["actions"]))))
 
     def get_text_html_armor():
-
-        list_dicts_enhancements_armor = list(
-            filter(
-                lambda dict_enhancement: dict_enhancement["type"] == "armor",
-                list_dicts_enhancements))
-
-        if len(list_dicts_enhancements_armor) > 0:
-            return "<div class=\"unit_property replaceable_by_enhancement\"><span>⛊</span>" \
-                + str(
-                    dict_unit \
-                        ["armor"]) \
-                + "</div><div class=\"unit_property enhanced\"" \
-                + get_text_style_visible(
-                    list_dicts_enhancements_armor \
-                        [0] \
-                        ["visible"]) \
-                + "><span>⛊</span>" \
-                + str(
-                    list_dicts_enhancements_armor \
-                        [0] \
-                        ["data"] \
-                        ["value"]) \
-                + "</div>"
 
         return "<div class=\"unit_property\"><span>⛊</span>" \
             + str(
@@ -173,6 +109,5 @@ def get_text_html_data_unit(
             ["name"] \
         + "</h3></div><div class=\"model_properties\">" \
         + text_html_rows_actions \
-        + text_html_rows_weapons \
         + "</div></div></div>"
 

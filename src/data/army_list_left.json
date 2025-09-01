@@ -5,7 +5,7 @@
             "name": "Captain in gravis armour",
             "count_models": 1,
             "enhancements": [
-                "Scanners"
+                0
             ],
             "attached_to_index": 2
         },
@@ -24,9 +24,7 @@
         {
             "name": "Gladiator lancer",
             "count_models": 1,
-            "enhancements": [
-                "Turret maneuverability"
-            ],
+            "enhancements": [],
             "attached_to_index": null
         }
     ]

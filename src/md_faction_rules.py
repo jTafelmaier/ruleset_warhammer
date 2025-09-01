@@ -12,7 +12,7 @@ from src import md_units
 
 def get_text_html_faction_rules(
     list_dicts_factions:typing.List[typing.Dict],
-    dict_actions:typing.Dict):
+    dict_descriptions_actions:typing.Dict):
 
     def get_text_html_button_show_faction(
         dict_faction:typing.Dict):
@@ -45,49 +45,12 @@ def get_text_html_faction_rules(
         def get_text_html_unit(
             dict_unit:typing.Dict):
 
-            def get_text_enhancement(
-                dict_enhancement:typing.Dict):
-
-                def get_text_data():
-
-                    if dict_enhancement["type"] == "armor":
-                        return "<div class=\"unit_property\"><span>⛊</span>" \
-                            + str(
-                                dict_enhancement \
-                                    ["data"] \
-                                    ["value"]) \
-                            + "</div>"
-                    elif dict_enhancement["type"] == "action":
-                        return md_units.get_text_html_action(
-                                text_action=dict_enhancement \
-                                    ["data"] \
-                                    ["name"],
-                                dict_actions=dict_actions)
-                    if dict_enhancement["type"] == "weapon":
-                        return md_units.get_text_html_row_weapon(dict_enhancement["data"])
-                    else:
-                        raise Exception("invalid enhancement type")
-
-                return "<div class=\"enhancement\"><div class=\"name_enhancement\">"\
-                    + dict_enhancement["name"] \
-                    + "</div>" \
-                    + get_text_data() \
-                    + "</div>"
-
-            text_enhancements = "" \
-                .join(
-                    map(
-                        get_text_enhancement,
-                        dict_unit["enhancements"]))
-
-            return "<div class=\"unit_schema\">"\
-                + md_units.get_text_html_data_unit(
+            return md_units.get_text_html_data_unit(
                     dict_unit=dict_unit,
-                    dict_actions=dict_actions,
-                    name_faction=name_faction) \
-                + "<div class=\"enhancements\">"\
-                + text_enhancements \
-                + "</div></div>"
+                    dict_descriptions_actions=dict_descriptions_actions,
+                    name_faction=name_faction,
+                    list_indices_enhancements=list(range(len(dict_unit["actions"]))),
+                    bool_show_invisible_enhancements=True)
 
         text_html_faction = "" \
             .join(

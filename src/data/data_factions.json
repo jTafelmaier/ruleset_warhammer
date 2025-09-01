@@ -9,32 +9,66 @@
                     "health": 4,
                     "armor": 5,
                     "actions": [
-                        "scan",
-                        "score",
-                        "move fly 25",
-                        "teleportation"
-                    ],
-                    "weapons": [
                         {
-                            "range": "rn",
-                            "heavy": false,
-                            "ap": 5,
-                            "damage": 4,
-                            "single": false
+                            "type": "scan",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": ""
+                            }
                         },
                         {
-                            "range": "melee",
-                            "heavy": false,
-                            "ap": 6,
-                            "damage": 8,
-                            "single": false
-                        }
-                    ],
-                    "enhancements": [
+                            "type": "score",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": ""
+                            }
+                        },
                         {
-                            "name": "Melta bombs",
+                            "type": "move",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": "fly 25"
+                            }
+                        },
+                        {
+                            "type": "teleportation",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": ""
+                            }
+                        },
+                        {
                             "type": "weapon",
-                            "visible": false,
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "rn",
+                                "heavy": false,
+                                "ap": 5,
+                                "damage": 4,
+                                "single": false
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "melee",
+                                "heavy": false,
+                                "ap": 6,
+                                "damage": 8,
+                                "single": false
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": true,
+                            "is_visible": true,
                             "data": {
                                 "range": "melee",
                                 "heavy": true,
@@ -51,31 +85,58 @@
                     "health": 6,
                     "armor": 6,
                     "actions": [
-                        "scan",
-                        "score",
-                        "move 10"
-                    ],
-                    "weapons": [
                         {
-                            "range": "rn",
-                            "heavy": true,
-                            "ap": 5,
-                            "damage": 4,
-                            "single": false
+                            "type": "scan",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": ""
+                            }
                         },
                         {
-                            "range": "melee",
-                            "heavy": false,
-                            "ap": 7,
-                            "damage": 4,
-                            "single": false
-                        }
-                    ],
-                    "enhancements": [
+                            "type": "score",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": ""
+                            }
+                        },
                         {
-                            "name": "Kraken ammunition",
+                            "type": "move",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": "10"
+                            }
+                        },
+                        {
                             "type": "weapon",
-                            "visible": false,
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "rn",
+                                "heavy": true,
+                                "ap": 5,
+                                "damage": 4,
+                                "single": false
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "melee",
+                                "heavy": false,
+                                "ap": 7,
+                                "damage": 4,
+                                "single": false
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": true,
+                            "is_visible": false,
                             "data": {
                                 "range": "rn",
                                 "heavy": true,
@@ -92,20 +153,43 @@
                     "health": 4,
                     "armor": 7,
                     "actions": [
-                        "score",
-                        "move 10",
-                        "teleportation"
-                    ],
-                    "weapons": [
                         {
-                            "range": "melee",
-                            "heavy": false,
-                            "ap": 7,
-                            "damage": 4,
-                            "single": false
+                            "type": "score",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": ""
+                            }
+                        },
+                        {
+                            "type": "move",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": "10"
+                            }
+                        },
+                        {
+                            "type": "teleportation",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": ""
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "melee",
+                                "heavy": false,
+                                "ap": 7,
+                                "damage": 4,
+                                "single": false
+                            }
                         }
-                    ],
-                    "enhancements": []
+                    ]
                 },
                 {
                     "name": "Belial",
@@ -113,27 +197,55 @@
                     "health": 4,
                     "armor": 6,
                     "actions": [
-                        "score",
-                        "move 10",
-                        "teleportation"
-                    ],
-                    "weapons": [
                         {
-                            "range": "20 cm",
-                            "heavy": false,
-                            "ap": 4,
-                            "damage": 8,
-                            "single": false
+                            "type": "score",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": ""
+                            }
                         },
                         {
-                            "range": "melee",
-                            "heavy": false,
-                            "ap": 7,
-                            "damage": 4,
-                            "single": false
+                            "type": "move",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": "10"
+                            }
+                        },
+                        {
+                            "type": "teleportation",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": ""
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "20 cm",
+                                "heavy": false,
+                                "ap": 4,
+                                "damage": 8,
+                                "single": false
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "melee",
+                                "heavy": false,
+                                "ap": 7,
+                                "damage": 4,
+                                "single": false
+                            }
                         }
-                    ],
-                    "enhancements": []
+                    ]
                 },
                 {
                     "name": "Corswain",
@@ -141,27 +253,55 @@
                     "health": 4,
                     "armor": 5,
                     "actions": [
-                        "score",
-                        "move 15",
-                        "teleportation"
-                    ],
-                    "weapons": [
                         {
-                            "range": "20 cm",
-                            "heavy": true,
-                            "ap": 5,
-                            "damage": 4,
-                            "single": true
+                            "type": "score",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": ""
+                            }
                         },
                         {
-                            "range": "melee",
-                            "heavy": false,
-                            "ap": 8,
-                            "damage": 4,
-                            "single": false
+                            "type": "move",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": "15"
+                            }
+                        },
+                        {
+                            "type": "teleportation",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": ""
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "20 cm",
+                                "heavy": true,
+                                "ap": 5,
+                                "damage": 4,
+                                "single": true
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "melee",
+                                "heavy": false,
+                                "ap": 8,
+                                "damage": 4,
+                                "single": false
+                            }
                         }
-                    ],
-                    "enhancements": []
+                    ]
                 },
                 {
                     "name": "Marduk Sedras",
@@ -169,27 +309,55 @@
                     "health": 4,
                     "armor": 6,
                     "actions": [
-                        "score",
-                        "move 10",
-                        "teleportation"
-                    ],
-                    "weapons": [
                         {
-                            "range": "rn",
-                            "heavy": true,
-                            "ap": 4,
-                            "damage": 4,
-                            "single": false
+                            "type": "score",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": ""
+                            }
                         },
                         {
-                            "range": "melee",
-                            "heavy": false,
-                            "ap": 7,
-                            "damage": 8,
-                            "single": false
+                            "type": "move",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": "10"
+                            }
+                        },
+                        {
+                            "type": "teleportation",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": ""
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "rn",
+                                "heavy": true,
+                                "ap": 4,
+                                "damage": 4,
+                                "single": false
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "melee",
+                                "heavy": false,
+                                "ap": 7,
+                                "damage": 8,
+                                "single": false
+                            }
                         }
-                    ],
-                    "enhancements": []
+                    ]
                 },
                 {
                     "name": "Hibou Khan",
@@ -197,23 +365,38 @@
                     "health": 4,
                     "armor": 5,
                     "actions": [
-                        "score",
-                        "move 15"
-                    ],
-                    "weapons": [
                         {
-                            "range": "melee",
-                            "heavy": false,
-                            "ap": 7,
-                            "damage": 6,
-                            "single": false
-                        }
-                    ],
-                    "enhancements": [
+                            "type": "score",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": ""
+                            }
+                        },
                         {
-                            "name": "Frag grenades",
+                            "type": "move",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": "15"
+                            }
+                        },
+                        {
                             "type": "weapon",
-                            "visible": false,
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "melee",
+                                "heavy": false,
+                                "ap": 7,
+                                "damage": 6,
+                                "single": false
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": true,
+                            "is_visible": false,
                             "data": {
                                 "range": "20 cm",
                                 "heavy": true,
@@ -230,26 +413,47 @@
                     "health": 6,
                     "armor": 6,
                     "actions": [
-                        "score",
-                        "move fly 35"
-                    ],
-                    "weapons": [
                         {
-                            "range": "rn",
-                            "heavy": false,
-                            "ap": 6,
-                            "damage": 4,
-                            "single": false
+                            "type": "score",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": ""
+                            }
                         },
                         {
-                            "range": "melee",
-                            "heavy": false,
-                            "ap": 7,
-                            "damage": 4,
-                            "single": false
+                            "type": "move",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": "fly 35"
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "rn",
+                                "heavy": false,
+                                "ap": 6,
+                                "damage": 4,
+                                "single": false
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "melee",
+                                "heavy": false,
+                                "ap": 7,
+                                "damage": 4,
+                                "single": false
+                            }
                         }
-                    ],
-                    "enhancements": []
+                    ]
                 },
                 {
                     "name": "Castellan Crowe",
@@ -257,33 +461,60 @@
                     "health": 4,
                     "armor": 5,
                     "actions": [
-                        "score",
-                        "move 15",
-                        "teleportation"
-                    ],
-                    "weapons": [
                         {
-                            "range": "20 cm",
-                            "heavy": false,
-                            "ap": 4,
-                            "damage": 8,
-                            "single": false
+                            "type": "score",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": ""
+                            }
                         },
                         {
-                            "range": "melee",
-                            "heavy": false,
-                            "ap": 6,
-                            "damage": 8,
-                            "single": false
-                        }
-                    ],
-                    "enhancements": [
-                        {
-                            "name": "short-range teleporter",
-                            "type": "action",
-                            "visible": false,
+                            "type": "move",
+                            "is_enhancement": false,
+                            "is_visible": true,
                             "data": {
-                                "name": "move fly 25"
+                                "parameters": "15"
+                            }
+                        },
+                        {
+                            "type": "move",
+                            "is_enhancement": true,
+                            "is_visible": false,
+                            "data": {
+                                "parameters": "fly 25"
+                            }
+                        },
+                        {
+                            "type": "teleportation",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": ""
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "20 cm",
+                                "heavy": false,
+                                "ap": 4,
+                                "damage": 8,
+                                "single": false
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "melee",
+                                "heavy": false,
+                                "ap": 6,
+                                "damage": 8,
+                                "single": false
                             }
                         }
                     ]
@@ -294,30 +525,50 @@
                     "health": 4,
                     "armor": 5,
                     "actions": [
-                        "score",
-                        "move fly 25"
-                    ],
-                    "weapons": [
                         {
-                            "range": "rn",
-                            "heavy": false,
-                            "ap": 5,
-                            "damage": 4,
-                            "single": false
+                            "type": "score",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": ""
+                            }
                         },
                         {
-                            "range": "melee",
-                            "heavy": false,
-                            "ap": 5,
-                            "damage": 6,
-                            "single": false
-                        }
-                    ],
-                    "enhancements": [
+                            "type": "move",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": "fly 25"
+                            }
+                        },
                         {
-                            "name": "Melta bombs",
                             "type": "weapon",
-                            "visible": false,
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "rn",
+                                "heavy": false,
+                                "ap": 5,
+                                "damage": 4,
+                                "single": false
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "melee",
+                                "heavy": false,
+                                "ap": 5,
+                                "damage": 6,
+                                "single": false
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": true,
+                            "is_visible": true,
                             "data": {
                                 "range": "melee",
                                 "heavy": true,
@@ -334,40 +585,52 @@
                     "health": 4,
                     "armor": 6,
                     "actions": [
-                        "score",
-                        "move 10"
-                    ],
-                    "weapons": [
                         {
-                            "range": "rn",
-                            "heavy": false,
-                            "ap": 5,
-                            "damage": 8,
-                            "single": false
-                        },
-                        {
-                            "range": "melee",
-                            "heavy": false,
-                            "ap": 7,
-                            "damage": 4,
-                            "single": false
-                        }
-                    ],
-                    "enhancements": [
-                        {
-                            "name": "Armor reinforcement",
-                            "type": "armor",
-                            "visible": false,
+                            "type": "scan",
+                            "is_enhancement": true,
+                            "is_visible": false,
                             "data": {
-                                "value": 7
+                                "parameters": ""
                             }
                         },
                         {
-                            "name": "Scanners",
-                            "type": "action",
-                            "visible": false,
+                            "type": "score",
+                            "is_enhancement": false,
+                            "is_visible": true,
                             "data": {
-                                "name": "scan"
+                                "parameters": ""
+                            }
+                        },
+                        {
+                            "type": "move",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": "10"
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "rn",
+                                "heavy": false,
+                                "ap": 5,
+                                "damage": 8,
+                                "single": false
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "melee",
+                                "heavy": false,
+                                "ap": 7,
+                                "damage": 4,
+                                "single": false
                             }
                         }
                     ]
@@ -378,22 +641,30 @@
                     "health": 4,
                     "armor": 5,
                     "actions": [
-                        "move 10"
-                    ],
-                    "weapons": [
                         {
-                            "range": "rn",
-                            "heavy": false,
-                            "ap": 5,
-                            "damage": 4,
-                            "single": false
-                        }
-                    ],
-                    "enhancements": [
+                            "type": "move",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": "10"
+                            }
+                        },
                         {
-                            "name": "armor-piercing ammunition",
                             "type": "weapon",
-                            "visible": false,
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "rn",
+                                "heavy": false,
+                                "ap": 5,
+                                "damage": 4,
+                                "single": false
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": true,
+                            "is_visible": false,
                             "data": {
                                 "range": "rn",
                                 "heavy": false,
@@ -403,9 +674,9 @@
                             }
                         },
                         {
-                            "name": "Heavy bolters",
                             "type": "weapon",
-                            "visible": true,
+                            "is_enhancement": true,
+                            "is_visible": true,
                             "data": {
                                 "range": "rn",
                                 "heavy": true,
@@ -422,29 +693,42 @@
                     "health": 4,
                     "armor": 5,
                     "actions": [
-                        "move 10"
-                    ],
-                    "weapons": [
                         {
-                            "range": "rn",
-                            "heavy": false,
-                            "ap": 5,
-                            "damage": 2,
-                            "single": false
+                            "type": "move",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": "10"
+                            }
                         },
                         {
-                            "range": "20 cm",
-                            "heavy": false,
-                            "ap": 12,
-                            "damage": 4,
-                            "single": true
-                        }
-                    ],
-                    "enhancements": [
-                        {
-                            "name": "Multimeltas",
                             "type": "weapon",
-                            "visible": true,
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "rn",
+                                "heavy": false,
+                                "ap": 5,
+                                "damage": 2,
+                                "single": false
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "20 cm",
+                                "heavy": false,
+                                "ap": 12,
+                                "damage": 4,
+                                "single": true
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": true,
+                            "is_visible": true,
                             "data": {
                                 "range": "20 cm",
                                 "heavy": true,
@@ -461,29 +745,42 @@
                     "health": 4,
                     "armor": 4,
                     "actions": [
-                        "move fly 25"
-                    ],
-                    "weapons": [
                         {
-                            "range": "rn",
-                            "heavy": false,
-                            "ap": 5,
-                            "damage": 2,
-                            "single": false
+                            "type": "move",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": "fly 25"
+                            }
                         },
                         {
-                            "range": "melee",
-                            "heavy": false,
-                            "ap": 5,
-                            "damage": 4,
-                            "single": false
-                        }
-                    ],
-                    "enhancements": [
-                        {
-                            "name": "Melta bombs",
                             "type": "weapon",
-                            "visible": false,
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "rn",
+                                "heavy": false,
+                                "ap": 5,
+                                "damage": 2,
+                                "single": false
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "melee",
+                                "heavy": false,
+                                "ap": 5,
+                                "damage": 4,
+                                "single": false
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": true,
+                            "is_visible": true,
                             "data": {
                                 "range": "melee",
                                 "heavy": true,
@@ -500,38 +797,58 @@
                     "health": 8,
                     "armor": 10,
                     "actions": [
-                        "scan",
-                        "move 25"
-                    ],
-                    "weapons": [
                         {
-                            "range": "20 cm",
-                            "heavy": false,
-                            "ap": 4,
-                            "damage": 8,
-                            "single": false
-                        },
-                        {
-                            "range": "rn",
-                            "heavy": true,
-                            "ap": 12,
-                            "damage": 8,
-                            "single": true
-                        }
-                    ],
-                    "enhancements": [
-                        {
-                            "name": "Engine upgrade",
-                            "type": "action",
-                            "visible": false,
+                            "type": "scan",
+                            "is_enhancement": false,
+                            "is_visible": true,
                             "data": {
-                                "name": "move 40"
+                                "parameters": ""
                             }
                         },
                         {
-                            "name": "Turret maneuverability",
+                            "type": "move",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": "25"
+                            }
+                        },
+                        {
+                            "type": "move",
+                            "is_enhancement": true,
+                            "is_visible": false,
+                            "data": {
+                                "parameters": "40"
+                            }
+                        },
+                        {
                             "type": "weapon",
-                            "visible": false,
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "20 cm",
+                                "heavy": false,
+                                "ap": 4,
+                                "damage": 8,
+                                "single": false
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "rn",
+                                "heavy": true,
+                                "ap": 12,
+                                "damage": 8,
+                                "single": true
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": true,
+                            "is_visible": false,
                             "data": {
                                 "range": "rn",
                                 "heavy": false,
@@ -548,30 +865,50 @@
                     "health": 4,
                     "armor": 5,
                     "actions": [
-                        "score",
-                        "move 15"
-                    ],
-                    "weapons": [
                         {
-                            "range": "rn",
-                            "heavy": false,
-                            "ap": 5,
-                            "damage": 4,
-                            "single": false
+                            "type": "score",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": ""
+                            }
                         },
                         {
-                            "range": "melee",
-                            "heavy": false,
-                            "ap": 7,
-                            "damage": 4,
-                            "single": false
-                        }
-                    ],
-                    "enhancements": [
+                            "type": "move",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": "15"
+                            }
+                        },
                         {
-                            "name": "Combi-melta",
                             "type": "weapon",
-                            "visible": true,
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "rn",
+                                "heavy": false,
+                                "ap": 5,
+                                "damage": 4,
+                                "single": false
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "melee",
+                                "heavy": false,
+                                "ap": 7,
+                                "damage": 4,
+                                "single": false
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": true,
+                            "is_visible": true,
                             "data": {
                                 "range": "20 cm",
                                 "heavy": false,
@@ -588,29 +925,42 @@
                     "health": 4,
                     "armor": 4,
                     "actions": [
-                        "move 15"
-                    ],
-                    "weapons": [
                         {
-                            "range": "rn",
-                            "heavy": false,
-                            "ap": 5,
-                            "damage": 2,
-                            "single": false
+                            "type": "move",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": "15"
+                            }
                         },
                         {
-                            "range": "melee",
-                            "heavy": false,
-                            "ap": 7,
-                            "damage": 2,
-                            "single": false
-                        }
-                    ],
-                    "enhancements": [
-                        {
-                            "name": "Combi-melta",
                             "type": "weapon",
-                            "visible": true,
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "rn",
+                                "heavy": false,
+                                "ap": 5,
+                                "damage": 2,
+                                "single": false
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "melee",
+                                "heavy": false,
+                                "ap": 7,
+                                "damage": 2,
+                                "single": false
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": true,
+                            "is_visible": true,
                             "data": {
                                 "range": "20 cm",
                                 "heavy": false,
@@ -627,18 +977,27 @@
                     "health": 4,
                     "armor": 4,
                     "actions": [
-                        "move 15"
-                    ],
-                    "weapons": [
                         {
-                            "range": "rn",
-                            "heavy": false,
-                            "ap": 5,
-                            "damage": 4,
-                            "single": false
+                            "type": "move",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": "15"
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "rn",
+                                "heavy": false,
+                                "ap": 5,
+                                "damage": 4,
+                                "single": false
+                            }
                         }
-                    ],
-                    "enhancements": []
+                    ]
                 },
                 {
                     "name": "Deathwing strikemaster",
@@ -646,24 +1005,46 @@
                     "health": 4,
                     "armor": 7,
                     "actions": [
-                        "score",
-                        "move 10",
-                        "teleportation"
-                    ],
-                    "weapons": [
                         {
-                            "range": "melee",
-                            "heavy": false,
-                            "ap": 7,
-                            "damage": 4,
-                            "single": false
-                        }
-                    ],
-                    "enhancements": [
+                            "type": "score",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": ""
+                            }
+                        },
                         {
-                            "name": "Power mace",
+                            "type": "move",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": "10"
+                            }
+                        },
+                        {
+                            "type": "teleportation",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": ""
+                            }
+                        },
+                        {
                             "type": "weapon",
-                            "visible": true,
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "melee",
+                                "heavy": false,
+                                "ap": 7,
+                                "damage": 4,
+                                "single": false
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": true,
+                            "is_visible": true,
                             "data": {
                                 "range": "melee",
                                 "heavy": false,
@@ -680,23 +1061,38 @@
                     "health": 4,
                     "armor": 6,
                     "actions": [
-                        "move 10",
-                        "teleportation"
-                    ],
-                    "weapons": [
                         {
-                            "range": "melee",
-                            "heavy": false,
-                            "ap": 7,
-                            "damage": 2,
-                            "single": false
-                        }
-                    ],
-                    "enhancements": [
+                            "type": "move",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": "10"
+                            }
+                        },
                         {
-                            "name": "Power mace",
+                            "type": "teleportation",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": ""
+                            }
+                        },
+                        {
                             "type": "weapon",
-                            "visible": true,
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "melee",
+                                "heavy": false,
+                                "ap": 7,
+                                "damage": 2,
+                                "single": false
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": true,
+                            "is_visible": true,
                             "data": {
                                 "range": "melee",
                                 "heavy": false,
@@ -718,28 +1114,63 @@
                     "health": 8,
                     "armor": 8,
                     "actions": [
-                        "scan",
-                        "score",
-                        "move 20",
-                        "teleportation"
-                    ],
-                    "weapons": [
                         {
-                            "range": "20 cm",
-                            "heavy": false,
-                            "ap": 8,
-                            "damage": 8,
-                            "single": true
+                            "type": "scan",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": ""
+                            }
                         },
                         {
-                            "range": "20 cm",
-                            "heavy": false,
-                            "ap": 10,
-                            "damage": 6,
-                            "single": false
+                            "type": "score",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": ""
+                            }
+                        },
+                        {
+                            "type": "move",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": "20"
+                            }
+                        },
+                        {
+                            "type": "teleportation",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": ""
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "20 cm",
+                                "heavy": false,
+                                "ap": 8,
+                                "damage": 8,
+                                "single": true
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "20 cm",
+                                "heavy": false,
+                                "ap": 10,
+                                "damage": 6,
+                                "single": false
+                            }
                         }
-                    ],
-                    "enhancements": []
+                    ]
                 },
                 {
                     "name": "Librarian consul",
@@ -747,34 +1178,60 @@
                     "health": 4,
                     "armor": 5,
                     "actions": [
-                        "scan",
-                        "score",
-                        "move 15",
-                        "teleportation"
-                    ],
-                    "weapons": [
                         {
-                            "range": "20 cm",
-                            "heavy": false,
-                            "ap": 5,
-                            "damage": 6,
-                            "single": false
+                            "type": "scan",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": ""
+                            }
                         },
                         {
-                            "range": "melee",
-                            "heavy": false,
-                            "ap": 7,
-                            "damage": 4,
-                            "single": true
-                        }
-                    ],
-                    "enhancements": [
-                        {
-                            "name": "Armor reinforcement",
-                            "type": "armor",
-                            "visible": false,
+                            "type": "score",
+                            "is_enhancement": false,
+                            "is_visible": true,
                             "data": {
-                                "value": 6
+                                "parameters": ""
+                            }
+                        },
+                        {
+                            "type": "move",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": "15"
+                            }
+                        },
+                        {
+                            "type": "teleportation",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": ""
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "20 cm",
+                                "heavy": false,
+                                "ap": 5,
+                                "damage": 6,
+                                "single": false
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "melee",
+                                "heavy": false,
+                                "ap": 7,
+                                "damage": 4,
+                                "single": true
                             }
                         }
                     ]
@@ -785,43 +1242,72 @@
                     "health": 4,
                     "armor": 5,
                     "actions": [
-                        "scan",
-                        "score",
-                        "move 15",
-                        "teleportation"
-                    ],
-                    "weapons": [
                         {
-                            "range": "rn",
-                            "heavy": true,
-                            "ap": 7,
-                            "damage": 8,
-                            "single": true
-                        }
-                    ],
-                    "enhancements": [
+                            "type": "scan",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": ""
+                            }
+                        },
                         {
-                            "name": "Armor-piercing ammunition",
+                            "type": "score",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": ""
+                            }
+                        },
+                        {
+                            "type": "move",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": "15"
+                            }
+                        },
+                        {
+                            "type": "teleportation",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": ""
+                            }
+                        },
+                        {
                             "type": "weapon",
-                            "visible": false,
+                            "is_enhancement": false,
+                            "is_visible": true,
                             "data": {
                                 "range": "rn",
                                 "heavy": true,
-                                "ap": 9,
-                                "damage": 4,
+                                "ap": 7,
+                                "damage": 8,
                                 "single": true
                             }
                         },
                         {
-                            "name": "Melta bombs",
                             "type": "weapon",
-                            "visible": false,
+                            "is_enhancement": true,
+                            "is_visible": true,
                             "data": {
                                 "range": "melee",
                                 "heavy": true,
                                 "ap": 10,
                                 "damage": 6,
                                 "single": false
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": true,
+                            "is_visible": false,
+                            "data": {
+                                "range": "rn",
+                                "heavy": true,
+                                "ap": 9,
+                                "damage": 4,
+                                "single": true
                             }
                         }
                     ]
@@ -832,26 +1318,47 @@
                     "health": 8,
                     "armor": 6,
                     "actions": [
-                        "score",
-                        "move 25"
-                    ],
-                    "weapons": [
                         {
-                            "range": "melee",
-                            "heavy": true,
-                            "ap": 5,
-                            "damage": 12,
-                            "single": false
+                            "type": "score",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": ""
+                            }
                         },
                         {
-                            "range": "melee",
-                            "heavy": false,
-                            "ap": 7,
-                            "damage": 10,
-                            "single": true
+                            "type": "move",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": "25"
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "melee",
+                                "heavy": true,
+                                "ap": 5,
+                                "damage": 12,
+                                "single": false
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "melee",
+                                "heavy": false,
+                                "ap": 7,
+                                "damage": 10,
+                                "single": true
+                            }
                         }
-                    ],
-                    "enhancements": []
+                    ]
                 },
                 {
                     "name": "Slaughterbound",
@@ -859,26 +1366,40 @@
                     "health": 6,
                     "armor": 5,
                     "actions": [
-                        "score",
-                        "move 20",
-                        "teleportation"
-                    ],
-                    "weapons": [
                         {
-                            "range": "melee",
-                            "heavy": false,
-                            "ap": 5,
-                            "damage": 12,
-                            "single": false
-                        }
-                    ],
-                    "enhancements": [
-                        {
-                            "name": "Armor reinforcement",
-                            "type": "armor",
-                            "visible": false,
+                            "type": "score",
+                            "is_enhancement": false,
+                            "is_visible": true,
                             "data": {
-                                "value": 6
+                                "parameters": ""
+                            }
+                        },
+                        {
+                            "type": "move",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": "20"
+                            }
+                        },
+                        {
+                            "type": "teleportation",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": ""
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "melee",
+                                "heavy": false,
+                                "ap": 5,
+                                "damage": 12,
+                                "single": false
                             }
                         }
                     ]
@@ -889,38 +1410,50 @@
                     "health": 6,
                     "armor": 4,
                     "actions": [
-                        "move 20",
-                        "teleportation"
-                    ],
-                    "weapons": [
                         {
-                            "range": "melee",
-                            "heavy": false,
-                            "ap": 5,
-                            "damage": 10,
-                            "single": false
-                        },
-                        {
-                            "range": "melee",
-                            "heavy": true,
-                            "ap": 10,
-                            "damage": 4,
-                            "single": true
-                        }
-                    ],
-                    "enhancements": [
-                        {
-                            "name": "Armor reinforcement",
-                            "type": "armor",
-                            "visible": false,
+                            "type": "move",
+                            "is_enhancement": false,
+                            "is_visible": true,
                             "data": {
-                                "value": 5
+                                "parameters": "20"
                             }
                         },
                         {
-                            "name": "Chainglaives",
+                            "type": "teleportation",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": ""
+                            }
+                        },
+                        {
                             "type": "weapon",
-                            "visible": true,
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "melee",
+                                "heavy": false,
+                                "ap": 5,
+                                "damage": 10,
+                                "single": false
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "melee",
+                                "heavy": true,
+                                "ap": 10,
+                                "damage": 4,
+                                "single": true
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": true,
+                            "is_visible": true,
                             "data": {
                                 "range": "melee",
                                 "heavy": false,
@@ -937,24 +1470,24 @@
                     "health": 6,
                     "armor": 4,
                     "actions": [
-                        "move 20"
-                    ],
-                    "weapons": [
                         {
-                            "range": "melee",
-                            "heavy": false,
-                            "ap": 5,
-                            "damage": 10,
-                            "single": false
-                        }
-                    ],
-                    "enhancements": [
-                        {
-                            "name": "Armor reinforcement",
-                            "type": "armor",
-                            "visible": false,
+                            "type": "move",
+                            "is_enhancement": false,
+                            "is_visible": true,
                             "data": {
-                                "value": 5
+                                "parameters": "20"
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "melee",
+                                "heavy": false,
+                                "ap": 5,
+                                "damage": 10,
+                                "single": false
                             }
                         }
                     ]
@@ -965,29 +1498,42 @@
                     "health": 4,
                     "armor": 4,
                     "actions": [
-                        "move 20"
-                    ],
-                    "weapons": [
                         {
-                            "range": "rn",
-                            "heavy": false,
-                            "ap": 5,
-                            "damage": 2,
-                            "single": false
+                            "type": "move",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": "20"
+                            }
                         },
                         {
-                            "range": "melee",
-                            "heavy": false,
-                            "ap": 5,
-                            "damage": 8,
-                            "single": false
-                        }
-                    ],
-                    "enhancements": [
-                        {
-                            "name": "Chainglaives",
                             "type": "weapon",
-                            "visible": true,
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "rn",
+                                "heavy": false,
+                                "ap": 5,
+                                "damage": 2,
+                                "single": false
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "melee",
+                                "heavy": false,
+                                "ap": 5,
+                                "damage": 8,
+                                "single": false
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": true,
+                            "is_visible": true,
                             "data": {
                                 "range": "melee",
                                 "heavy": false,
@@ -1004,27 +1550,55 @@
                     "health": 4,
                     "armor": 6,
                     "actions": [
-                        "scan",
-                        "score",
-                        "move 10"
-                    ],
-                    "weapons": [
                         {
-                            "range": "melee",
-                            "heavy": true,
-                            "ap": 6,
-                            "damage": 8,
-                            "single": true
+                            "type": "scan",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": ""
+                            }
                         },
                         {
-                            "range": "rn",
-                            "heavy": true,
-                            "ap": 8,
-                            "damage": 2,
-                            "single": true
+                            "type": "score",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": ""
+                            }
+                        },
+                        {
+                            "type": "move",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": "10"
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "melee",
+                                "heavy": true,
+                                "ap": 6,
+                                "damage": 8,
+                                "single": true
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "rn",
+                                "heavy": true,
+                                "ap": 8,
+                                "damage": 2,
+                                "single": true
+                            }
                         }
-                    ],
-                    "enhancements": []
+                    ]
                 },
                 {
                     "name": "MkII Marines",
@@ -1032,29 +1606,42 @@
                     "health": 4,
                     "armor": 4,
                     "actions": [
-                        "move 15"
-                    ],
-                    "weapons": [
                         {
-                            "range": "rn",
-                            "heavy": false,
-                            "ap": 5,
-                            "damage": 4,
-                            "single": false
+                            "type": "move",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": "15"
+                            }
                         },
                         {
-                            "range": "20 cm",
-                            "heavy": true,
-                            "ap": 6,
-                            "damage": 4,
-                            "single": true
-                        }
-                    ],
-                    "enhancements": [
-                        {
-                            "name": "Disintegrator weapons",
                             "type": "weapon",
-                            "visible": true,
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "rn",
+                                "heavy": false,
+                                "ap": 5,
+                                "damage": 4,
+                                "single": false
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "20 cm",
+                                "heavy": true,
+                                "ap": 6,
+                                "damage": 4,
+                                "single": true
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": true,
+                            "is_visible": true,
                             "data": {
                                 "range": "rn",
                                 "heavy": true,
@@ -1071,29 +1658,42 @@
                     "health": 4,
                     "armor": 4,
                     "actions": [
-                        "move fly 25"
-                    ],
-                    "weapons": [
                         {
-                            "range": "rn",
-                            "heavy": false,
-                            "ap": 5,
-                            "damage": 2,
-                            "single": false
+                            "type": "move",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": "fly 25"
+                            }
                         },
                         {
-                            "range": "melee",
-                            "heavy": false,
-                            "ap": 5,
-                            "damage": 4,
-                            "single": false
-                        }
-                    ],
-                    "enhancements": [
-                        {
-                            "name": "Melta bombs",
                             "type": "weapon",
-                            "visible": false,
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "rn",
+                                "heavy": false,
+                                "ap": 5,
+                                "damage": 2,
+                                "single": false
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "melee",
+                                "heavy": false,
+                                "ap": 5,
+                                "damage": 4,
+                                "single": false
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": true,
+                            "is_visible": true,
                             "data": {
                                 "range": "melee",
                                 "heavy": true,
@@ -1109,23 +1709,17 @@
                     "points_per_model": 200,
                     "health": 8,
                     "armor": 10,
-                    "actions": [],
-                    "weapons": [
+                    "actions": [
                         {
-                            "range": "rn",
-                            "heavy": true,
-                            "ap": 12,
-                            "damage": 4,
-                            "single": false
-                        }
-                    ],
-                    "enhancements": [
-                        {
-                            "name": "Void shield upgrade",
-                            "type": "armor",
-                            "visible": false,
+                            "type": "weapon",
+                            "is_enhancement": false,
+                            "is_visible": true,
                             "data": {
-                                "value": 12
+                                "range": "rn",
+                                "heavy": true,
+                                "ap": 12,
+                                "damage": 4,
+                                "single": false
                             }
                         }
                     ]
@@ -1136,33 +1730,59 @@
                     "health": 8,
                     "armor": 12,
                     "actions": [
-                        "scan",
-                        "move 25"
-                    ],
-                    "weapons": [
                         {
-                            "range": "rn",
-                            "heavy": false,
-                            "ap": 5,
-                            "damage": 12,
-                            "single": false
+                            "type": "scan",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": ""
+                            }
                         },
                         {
-                            "range": "rn",
-                            "heavy": true,
-                            "ap": 6,
-                            "damage": 12,
-                            "single": false
+                            "type": "move",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": "25"
+                            }
                         },
                         {
-                            "range": "rn",
-                            "heavy": true,
-                            "ap": 14,
-                            "damage": 8,
-                            "single": false
+                            "type": "weapon",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "rn",
+                                "heavy": false,
+                                "ap": 5,
+                                "damage": 12,
+                                "single": false
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "rn",
+                                "heavy": true,
+                                "ap": 6,
+                                "damage": 12,
+                                "single": false
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "rn",
+                                "heavy": true,
+                                "ap": 14,
+                                "damage": 8,
+                                "single": false
+                            }
                         }
-                    ],
-                    "enhancements": []
+                    ]
                 }
             ]
         },
@@ -1175,27 +1795,48 @@
                     "health": 8,
                     "armor": 6,
                     "actions": [
-                        "scan",
-                        "score",
-                        "move 15",
-                        "teleportation"
-                    ],
-                    "weapons": [
                         {
-                            "range": "rn",
-                            "heavy": false,
-                            "ap": 7,
-                            "damage": 8,
-                            "single": false
-                        }
-                    ],
-                    "enhancements": [
-                        {
-                            "name": "Armor reinforcement",
-                            "type": "armor",
-                            "visible": false,
+                            "type": "scan",
+                            "is_enhancement": false,
+                            "is_visible": true,
                             "data": {
-                                "value": 7
+                                "parameters": ""
+                            }
+                        },
+                        {
+                            "type": "score",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": ""
+                            }
+                        },
+                        {
+                            "type": "move",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": "15"
+                            }
+                        },
+                        {
+                            "type": "teleportation",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": ""
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "rn",
+                                "heavy": false,
+                                "ap": 7,
+                                "damage": 8,
+                                "single": false
                             }
                         }
                     ]
@@ -1206,19 +1847,35 @@
                     "health": 4,
                     "armor": 4,
                     "actions": [
-                        "score",
-                        "move 15"
-                    ],
-                    "weapons": [
                         {
-                            "range": "rn",
-                            "heavy": true,
-                            "ap": 7,
-                            "damage": 2,
-                            "single": true
+                            "type": "score",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": ""
+                            }
+                        },
+                        {
+                            "type": "move",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": "15"
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "rn",
+                                "heavy": true,
+                                "ap": 7,
+                                "damage": 2,
+                                "single": true
+                            }
                         }
-                    ],
-                    "enhancements": []
+                    ]
                 },
                 {
                     "name": "Skorpekh destroyer",
@@ -1226,25 +1883,32 @@
                     "health": 8,
                     "armor": 6,
                     "actions": [
-                        "score",
-                        "move 15"
-                    ],
-                    "weapons": [
                         {
-                            "range": "melee",
-                            "heavy": false,
-                            "ap": 8,
-                            "damage": 8,
-                            "single": false
-                        }
-                    ],
-                    "enhancements": [
-                        {
-                            "name": "Armor reinforcement",
-                            "type": "armor",
-                            "visible": false,
+                            "type": "score",
+                            "is_enhancement": false,
+                            "is_visible": true,
                             "data": {
-                                "value": 7
+                                "parameters": ""
+                            }
+                        },
+                        {
+                            "type": "move",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": "15"
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "melee",
+                                "heavy": false,
+                                "ap": 8,
+                                "damage": 8,
+                                "single": false
                             }
                         }
                     ]
@@ -1255,32 +1919,46 @@
                     "health": 8,
                     "armor": 7,
                     "actions": [
-                        "scan",
-                        "score",
-                        "move fly 15"
-                    ],
-                    "weapons": [
                         {
-                            "range": "rn",
-                            "heavy": true,
-                            "ap": 14,
-                            "damage": 4,
-                            "single": true
-                        }
-                    ],
-                    "enhancements": [
-                        {
-                            "name": "Armor reinforcement",
-                            "type": "armor",
-                            "visible": false,
+                            "type": "scan",
+                            "is_enhancement": false,
+                            "is_visible": true,
                             "data": {
-                                "value": 8
+                                "parameters": ""
                             }
                         },
                         {
-                            "name": "Dynamic charging",
+                            "type": "score",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": ""
+                            }
+                        },
+                        {
+                            "type": "move",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": "fly 15"
+                            }
+                        },
+                        {
                             "type": "weapon",
-                            "visible": false,
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "rn",
+                                "heavy": true,
+                                "ap": 14,
+                                "damage": 4,
+                                "single": true
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": true,
+                            "is_visible": false,
                             "data": {
                                 "range": "rn",
                                 "heavy": false,
@@ -1297,26 +1975,40 @@
                     "health": 8,
                     "armor": 7,
                     "actions": [
-                        "scan",
-                        "score",
-                        "move fly 15"
-                    ],
-                    "weapons": [
                         {
-                            "range": "rn",
-                            "heavy": true,
-                            "ap": 7,
-                            "damage": 12,
-                            "single": false
-                        }
-                    ],
-                    "enhancements": [
-                        {
-                            "name": "Armor reinforcement",
-                            "type": "armor",
-                            "visible": false,
+                            "type": "scan",
+                            "is_enhancement": false,
+                            "is_visible": true,
                             "data": {
-                                "value": 8
+                                "parameters": ""
+                            }
+                        },
+                        {
+                            "type": "score",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": ""
+                            }
+                        },
+                        {
+                            "type": "move",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": "fly 15"
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "rn",
+                                "heavy": true,
+                                "ap": 7,
+                                "damage": 12,
+                                "single": false
                             }
                         }
                     ]
