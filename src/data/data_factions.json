@@ -1342,7 +1342,7 @@
                                 "range": "melee",
                                 "heavy": true,
                                 "ap": 5,
-                                "damage": 12,
+                                "damage": 10,
                                 "single": false
                             }
                         },
@@ -1354,7 +1354,7 @@
                                 "range": "melee",
                                 "heavy": false,
                                 "ap": 7,
-                                "damage": 10,
+                                "damage": 8,
                                 "single": true
                             }
                         }
@@ -1398,7 +1398,7 @@
                                 "range": "melee",
                                 "heavy": false,
                                 "ap": 5,
-                                "damage": 12,
+                                "damage": 8,
                                 "single": false
                             }
                         }
@@ -1434,7 +1434,7 @@
                                 "range": "melee",
                                 "heavy": false,
                                 "ap": 5,
-                                "damage": 10,
+                                "damage": 4,
                                 "single": false
                             }
                         },
@@ -1458,7 +1458,7 @@
                                 "range": "melee",
                                 "heavy": false,
                                 "ap": 6,
-                                "damage": 10,
+                                "damage": 4,
                                 "single": false
                             }
                         }
@@ -1486,7 +1486,7 @@
                                 "range": "melee",
                                 "heavy": false,
                                 "ap": 5,
-                                "damage": 10,
+                                "damage": 4,
                                 "single": false
                             }
                         }
@@ -1526,7 +1526,7 @@
                                 "range": "melee",
                                 "heavy": false,
                                 "ap": 5,
-                                "damage": 8,
+                                "damage": 4,
                                 "single": false
                             }
                         },
@@ -1538,7 +1538,7 @@
                                 "range": "melee",
                                 "heavy": false,
                                 "ap": 6,
-                                "damage": 8,
+                                "damage": 4,
                                 "single": false
                             }
                         }
@@ -1581,8 +1581,8 @@
                             "data": {
                                 "range": "melee",
                                 "heavy": true,
-                                "ap": 6,
-                                "damage": 8,
+                                "ap": 10,
+                                "damage": 4,
                                 "single": true
                             }
                         },
