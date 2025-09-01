@@ -11,8 +11,7 @@ from src import md_units
 
 
 def get_text_html_faction_rules(
-    list_dicts_factions:typing.List[typing.Dict],
-    dict_descriptions_actions:typing.Dict):
+    list_dicts_factions:typing.List[typing.Dict]):
 
     def get_text_html_button_show_faction(
         dict_faction:typing.Dict):
@@ -47,7 +46,6 @@ def get_text_html_faction_rules(
 
             return md_units.get_text_html_data_unit(
                     dict_unit=dict_unit,
-                    dict_descriptions_actions=dict_descriptions_actions,
                     name_faction=name_faction,
                     list_indices_enhancements=list(range(len(dict_unit["actions"]))),
                     bool_show_invisible_enhancements=True)

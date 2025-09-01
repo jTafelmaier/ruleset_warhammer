@@ -17,13 +17,6 @@ def generate_htmls():
             "data",
             "index_template.html"])
 
-    dict_descriptions_actions = {
-            "teleportation": "This model's unit can perform the &quot;Setup teleportation&quot; and &quot;Recall&quot; actions.",
-            "move": "This model can perform the &quot;Move&quot; action.",
-            "scan": "This model can perform the &quot;Scan&quot; action.",
-            "score": "This model's unit can perform the &quot;Score objective&quot; action.\nFurthermore, this unit can be attached to another friendly unit at deployment, if that unit does not have a higher armor characteristic than this unit. While this unit is attached to another unit, it cannot be selected as a target unit.",
-            "weapon": "This model can perform the &quot;Attack&quot; action."}
-
     list_dicts_factions = md_shared.get_dict_setting("data_factions.json") \
         ["data"]
 
@@ -32,15 +25,11 @@ def generate_htmls():
             features="html.parser")
 
     soup_factions = bs4.BeautifulSoup(
-            markup=md_faction_rules.get_text_html_faction_rules(
-                list_dicts_factions=list_dicts_factions,
-                dict_descriptions_actions=dict_descriptions_actions),
+            markup=md_faction_rules.get_text_html_faction_rules(list_dicts_factions),
             features="html.parser")
 
     soup_army_list = bs4.BeautifulSoup(
-            markup=md_army_list.get_text_html_army_lists(
-                list_dicts_factions=list_dicts_factions,
-                dict_descriptions_actions=dict_descriptions_actions),
+            markup=md_army_list.get_text_html_army_lists(list_dicts_factions),
             features="html.parser")
 
     dict_replacements = {

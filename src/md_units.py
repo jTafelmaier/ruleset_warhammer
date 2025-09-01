@@ -9,10 +9,16 @@ from src import md_shared
 
 def get_text_html_data_unit(
     dict_unit:typing.Dict,
-    dict_descriptions_actions:typing.Dict,
     name_faction:str,
     list_indices_enhancements:typing.List[int] = [],
     bool_show_invisible_enhancements = False):
+
+    DICT_DESCRIPTIONS_ACTIONS = {
+        "teleportation": "This model's unit can perform the &quot;Setup teleportation&quot; and &quot;Recall&quot; actions.",
+        "move": "This model can perform the &quot;Move&quot; action.",
+        "scan": "This model can perform the &quot;Scan&quot; action.",
+        "score": "This model's unit can perform the &quot;Score objective&quot; action.\nFurthermore, this unit can be attached to another friendly unit at deployment, if that unit does not have a higher armor characteristic than this unit. While this unit is attached to another unit, it cannot be selected as a target unit.",
+        "weapon": "This model can perform the &quot;Attack&quot; action."}
 
     def get_text_html_action(
         pair_action:typing.Tuple[int, typing.Dict]):
@@ -61,7 +67,7 @@ def get_text_html_data_unit(
         return "<div class=\"unit_property " \
             + ("enhancement" if dict_action["is_enhancement"] else "") \
             + "\" title=\"" \
-            + dict_descriptions_actions \
+            + DICT_DESCRIPTIONS_ACTIONS \
                 [text_type_action] \
             + "\"" \
             + ("" if dict_action["is_visible"] or bool_show_invisible_enhancements else " style=\"display: none;\"") \
