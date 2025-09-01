@@ -4,7 +4,7 @@ body {
     font-family: 'Nunito', Arial;
     font-size: small;
     color: white;
-    background: linear-gradient(90deg, #282d3a 0%, #1c2029 4%, #1c2029 96%, #282d3a 100%);
+    background-color: #1c2029;
 }
 
 .fullwidth {
@@ -244,7 +244,7 @@ body {
     background: linear-gradient(#9fa7ba 0px, #6b7384 40px);
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
-    padding: 2px 5px 2px 5px;
+    padding: 1px 5px;
     margin-bottom: 4px;
 }
 
