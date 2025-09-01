@@ -23,6 +23,15 @@ def main():
             def modify_unit(
                 dict_unit:typing.Dict):
 
+                def re_add_property(
+                    name_property:str):
+
+                    t = dict_unit[name_property]
+
+                    del dict_unit[name_property]
+
+                    dict_unit[name_property] = t
+
                 def modify_weapon(
                     dict_weapon:typing.Dict):
 
