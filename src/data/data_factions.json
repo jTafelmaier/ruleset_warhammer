@@ -353,7 +353,7 @@
                     ],
                     "enhancements": [
                         {
-                            "name": "armor reinforcement",
+                            "name": "Armor reinforcement",
                             "type": "armor",
                             "visible": false,
                             "data": {
@@ -401,7 +401,7 @@
                                 "heavy": false,
                                 "ap": 7,
                                 "damage": 2,
-                                "single": true
+                                "single": false
                             }
                         },
                         {
@@ -870,7 +870,16 @@
                             "single": false
                         }
                     ],
-                    "enhancements": []
+                    "enhancements": [
+                        {
+                            "name": "Armor reinforcement",
+                            "type": "armor",
+                            "visible": false,
+                            "data": {
+                                "value": 6
+                            }
+                        }
+                    ]
                 },
                 {
                     "name": "Exalted Eightbound",
@@ -898,6 +907,14 @@
                         }
                     ],
                     "enhancements": [
+                        {
+                            "name": "Armor reinforcement",
+                            "type": "armor",
+                            "visible": false,
+                            "data": {
+                                "value": 5
+                            }
+                        },
                         {
                             "name": "Chainglaives",
                             "type": "weapon",
@@ -929,7 +946,16 @@
                             "single": false
                         }
                     ],
-                    "enhancements": []
+                    "enhancements": [
+                        {
+                            "name": "Armor reinforcement",
+                            "type": "armor",
+                            "visible": false,
+                            "data": {
+                                "value": 5
+                            }
+                        }
+                    ]
                 },
                 {
                     "name": "Khorne Berzerkers",

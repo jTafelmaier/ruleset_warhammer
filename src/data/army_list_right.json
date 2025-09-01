@@ -10,7 +10,9 @@
         {
             "name": "Eightbound",
             "count_models": 8,
-            "enhancements": [],
+            "enhancements": [
+                "Armor reinforcement"
+            ],
             "attached_to_index": null
         },
         {
