@@ -9,6 +9,7 @@
                     "health": 4,
                     "armor": 5,
                     "actions": [
+                        "scan",
                         "score",
                         "move fly 25",
                         "teleportation"
@@ -50,6 +51,7 @@
                     "health": 6,
                     "armor": 6,
                     "actions": [
+                        "scan",
                         "score",
                         "move 10"
                     ],
@@ -361,15 +363,11 @@
                             }
                         },
                         {
-                            "name": "armor-piercing ammunition",
-                            "type": "weapon",
+                            "name": "Scanners",
+                            "type": "action",
                             "visible": false,
                             "data": {
-                                "range": "rn",
-                                "heavy": false,
-                                "ap": 7,
-                                "damage": 4,
-                                "single": false
+                                "name": "scan"
                             }
                         }
                     ]
@@ -502,6 +500,7 @@
                     "health": 8,
                     "armor": 10,
                     "actions": [
+                        "scan",
                         "move 25"
                     ],
                     "weapons": [
@@ -719,6 +718,7 @@
                     "health": 8,
                     "armor": 8,
                     "actions": [
+                        "scan",
                         "score",
                         "move 20",
                         "teleportation"
@@ -747,6 +747,7 @@
                     "health": 4,
                     "armor": 5,
                     "actions": [
+                        "scan",
                         "score",
                         "move 15",
                         "teleportation"
@@ -784,6 +785,7 @@
                     "health": 4,
                     "armor": 5,
                     "actions": [
+                        "scan",
                         "score",
                         "move 15",
                         "teleportation"
@@ -1002,6 +1004,7 @@
                     "health": 4,
                     "armor": 6,
                     "actions": [
+                        "scan",
                         "score",
                         "move 10"
                     ],
@@ -1133,6 +1136,7 @@
                     "health": 8,
                     "armor": 12,
                     "actions": [
+                        "scan",
                         "move 25"
                     ],
                     "weapons": [
@@ -1171,6 +1175,7 @@
                     "health": 8,
                     "armor": 6,
                     "actions": [
+                        "scan",
                         "score",
                         "move 15",
                         "teleportation"
@@ -1250,6 +1255,7 @@
                     "health": 8,
                     "armor": 7,
                     "actions": [
+                        "scan",
                         "score",
                         "move fly 15"
                     ],
@@ -1291,6 +1297,7 @@
                     "health": 8,
                     "armor": 7,
                     "actions": [
+                        "scan",
                         "score",
                         "move fly 15"
                     ],

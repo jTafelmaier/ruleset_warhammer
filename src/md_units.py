@@ -109,7 +109,7 @@ def get_text_html_data_unit(
                     ["name"] \
                     + ".png"])
 
-    text_html_rows_actions = "<br/>" \
+    text_html_rows_actions = "" \
         .join(
             list(
                 map(
@@ -120,7 +120,7 @@ def get_text_html_data_unit(
                         ["actions"])) \
             + list_texts_rows_actions_enhancements)
 
-    text_html_rows_weapons = "<br/>" \
+    text_html_rows_weapons = "" \
         .join(
             list(
                 map(
@@ -171,9 +171,8 @@ def get_text_html_data_unit(
         + "<h3 class=\"name_unit\">" \
         + dict_unit \
             ["name"] \
-        + "</h3></div><div class=\"model_properties\"><br/>" \
+        + "</h3></div><div class=\"model_properties\">" \
         + text_html_rows_actions \
-        + "<br/>" \
         + text_html_rows_weapons \
         + "</div></div></div>"
 

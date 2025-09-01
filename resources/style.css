@@ -239,7 +239,7 @@ body {
 }
 
 .unit_property {
-    display: inline-block;
+    width: fit-content;
     color: #2e3544;
     background: linear-gradient(#9fa7ba 0px, #6b7384 40px);
     border-top-right-radius: 2px;
