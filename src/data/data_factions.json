@@ -77,71 +77,6 @@
                     ]
                 },
                 {
-                    "name": "Iron father Feirros",
-                    "points_per_model": 200,
-                    "health": 6,
-                    "armor": 6,
-                    "actions": [
-                        {
-                            "type": "scan",
-                            "is_enhancement": false,
-                            "is_visible": true,
-                            "data": {
-                                "parameters": ""
-                            }
-                        },
-                        {
-                            "type": "score",
-                            "is_enhancement": false,
-                            "is_visible": true,
-                            "data": {
-                                "parameters": ""
-                            }
-                        },
-                        {
-                            "type": "move",
-                            "is_enhancement": false,
-                            "is_visible": true,
-                            "data": {
-                                "parameters": "10"
-                            }
-                        },
-                        {
-                            "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
-                            "data": {
-                                "range": "rn",
-                                "heavy": true,
-                                "hits": 2,
-                                "strength": 7
-                            }
-                        },
-                        {
-                            "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
-                            "data": {
-                                "range": "melee",
-                                "heavy": false,
-                                "hits": 2,
-                                "strength": 7
-                            }
-                        },
-                        {
-                            "type": "weapon",
-                            "is_enhancement": true,
-                            "is_visible": false,
-                            "data": {
-                                "range": "rn",
-                                "heavy": true,
-                                "hits": 4,
-                                "strength": 6
-                            }
-                        }
-                    ]
-                },
-                {
                     "name": "Darnath Lysander",
                     "points_per_model": 200,
                     "health": 4,
@@ -1125,6 +1060,33 @@
                                 "heavy": false,
                                 "hits": 1,
                                 "strength": 8
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Jakhals",
+                    "points_per_model": 10,
+                    "health": 2,
+                    "armor": 1,
+                    "actions": [
+                        {
+                            "type": "move",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": "10"
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "melee",
+                                "heavy": false,
+                                "hits": 1,
+                                "strength": 4
                             }
                         }
                     ]
