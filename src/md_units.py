@@ -41,21 +41,27 @@ def get_text_html_action(
 
 
 def get_text_html_row_weapon(
-    dict_action:typing.Dict,
+    dict_weapon:typing.Dict,
     bool_visible:bool = True):
+
+    list_texts_keywords = list(
+        filter(
+            lambda text: text is not None,
+            [
+                (dict_weapon["range"] if dict_weapon["range"] != "rn" else None),
+                ("heavy" if dict_weapon["heavy"] else None),
+                ("single" if dict_weapon["single"] else None)]))
 
     return "<div class=\"unit_property attack\"" \
         + get_text_style_visible(bool_visible) \
-        + "><span>⚔</span><div class=\"weapon_ap\">🗲" \
-        + str(dict_action["ap"]) \
-        + "</div> [max " \
-        + str(dict_action["max_targets"]) \
-        + "] " \
-        + ("[" + dict_action["range"] + "] " if dict_action["range"] != "rn" else "") \
-        + ("[heavy] " if dict_action["heavy"] else "") \
-        + "💥" \
-        + str(dict_action["damage"]) \
-        + "</div>"
+        + "><span>⚔</span>🗲" \
+        + str(dict_weapon["ap"]) \
+        + " 💥" \
+        + str(dict_weapon["damage"]) \
+        + " [" \
+        + ", " \
+            .join(list_texts_keywords) \
+        + "]</div>"
 
 
 def get_text_html_data_unit(
@@ -86,7 +92,7 @@ def get_text_html_data_unit(
     list_texts_rows_weapons_enhancements = list(
         map(
             lambda dict_enhancement: get_text_html_row_weapon(
-                dict_action=dict_enhancement \
+                dict_weapon=dict_enhancement \
                     ["data"],
                 bool_visible=dict_enhancement \
                     ["visible"]),
