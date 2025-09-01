@@ -48,16 +48,15 @@ def get_text_html_data_unit(
                     lambda text: text is not None,
                     [
                         (dict_weapon["range"] if dict_weapon["range"] != "rn" else None),
-                        ("heavy" if dict_weapon["heavy"] else None),
-                        ("single" if dict_weapon["single"] else None)]))
+                        ("heavy" if dict_weapon["heavy"] else None)]))
 
-            return "<span>⚔</span>🗲" \
+            return "<span>⚔</span>" \
                 + dict_weapon \
-                    ["ap"] \
+                    ["hits"] \
                     .__str__() \
-                + " 💥" \
+                + "x💥" \
                 + dict_weapon \
-                    ["damage"] \
+                    ["strength"] \
                     .__str__() \
                 + " [" \
                 + ", " \

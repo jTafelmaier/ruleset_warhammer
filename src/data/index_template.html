@@ -171,8 +171,6 @@
                                 <div class="indented">
                                     - No target unit can be selected
                                     <br/>
-                                    - Weapon <b><span class="icon">🗲</span>ap</b> is lower than target unit <b><span class="icon">⛊</span>armor</b>
-                                    <br/>
                                     - The weapon has &quot;heavy&quot; and this is not the first action for this unit this turn.
                                     <br/>
                                     - The weapon has &quot;20 cm&quot; and the target unit is not within 20 cm.
@@ -180,21 +178,16 @@
                                     - The weapon has &quot;melee&quot; and the target unit is not within 5 cm.
                                 </div>
                                 <br/>
-                                Repeat for weapon: <span class="icon">💥</span> damage:
+                                Repeat for weapon: <b>hits</b>:
                                 <div class="indented">
-                                    Reduce unit: health by 1.
+                                    Reduce unit: health by max(0, weapon: <span class="icon">💥</span><b>strength</b> - target model: <b><span class="icon">⛊</span>armor</b>).
                                     <br/>
-                                    If unit: <b>health</b> is 0:
+                                    <br/>
+                                    If target unit: <b>health</b> is 0:
                                     <div class="indented">
                                         The enemy player must choose to destroy one model in the target unit.
                                         <br/>
-                                        Then, restore the unit health tokens.
-                                        <br/>
-                                        <br/>
-                                        If the weapon has <b>single</b>:
-                                        <div class="indented">
-                                            End the attack sequence for this model.
-                                        </div>
+                                        Then, the target unit health tokens are fully restored.
                                     </div>
                                 </div>
                             </div>
