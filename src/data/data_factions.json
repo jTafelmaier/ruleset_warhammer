@@ -196,214 +196,6 @@
                     ]
                 },
                 {
-                    "name": "Belial",
-                    "points_per_model": 200,
-                    "health": 4,
-                    "armor": 6,
-                    "actions": [
-                        {
-                            "type": "score",
-                            "is_enhancement": false,
-                            "is_visible": true,
-                            "data": {
-                                "parameters": ""
-                            }
-                        },
-                        {
-                            "type": "move",
-                            "is_enhancement": false,
-                            "is_visible": true,
-                            "data": {
-                                "parameters": "10"
-                            }
-                        },
-                        {
-                            "type": "teleportation",
-                            "is_enhancement": false,
-                            "is_visible": true,
-                            "data": {
-                                "parameters": ""
-                            }
-                        },
-                        {
-                            "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
-                            "data": {
-                                "range": "20 cm",
-                                "heavy": false,
-                                "hits": 4,
-                                "strength": 5
-                            }
-                        },
-                        {
-                            "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
-                            "data": {
-                                "range": "melee",
-                                "heavy": false,
-                                "hits": 2,
-                                "strength": 7
-                            }
-                        }
-                    ]
-                },
-                {
-                    "name": "Corswain",
-                    "points_per_model": 200,
-                    "health": 4,
-                    "armor": 5,
-                    "actions": [
-                        {
-                            "type": "score",
-                            "is_enhancement": false,
-                            "is_visible": true,
-                            "data": {
-                                "parameters": ""
-                            }
-                        },
-                        {
-                            "type": "move",
-                            "is_enhancement": false,
-                            "is_visible": true,
-                            "data": {
-                                "parameters": "15"
-                            }
-                        },
-                        {
-                            "type": "teleportation",
-                            "is_enhancement": false,
-                            "is_visible": true,
-                            "data": {
-                                "parameters": ""
-                            }
-                        },
-                        {
-                            "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
-                            "data": {
-                                "range": "20 cm",
-                                "heavy": true,
-                                "hits": 1,
-                                "strength": 7
-                            }
-                        },
-                        {
-                            "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
-                            "data": {
-                                "range": "melee",
-                                "heavy": false,
-                                "hits": 2,
-                                "strength": 8
-                            }
-                        }
-                    ]
-                },
-                {
-                    "name": "Marduk Sedras",
-                    "points_per_model": 200,
-                    "health": 4,
-                    "armor": 6,
-                    "actions": [
-                        {
-                            "type": "score",
-                            "is_enhancement": false,
-                            "is_visible": true,
-                            "data": {
-                                "parameters": ""
-                            }
-                        },
-                        {
-                            "type": "move",
-                            "is_enhancement": false,
-                            "is_visible": true,
-                            "data": {
-                                "parameters": "10"
-                            }
-                        },
-                        {
-                            "type": "teleportation",
-                            "is_enhancement": false,
-                            "is_visible": true,
-                            "data": {
-                                "parameters": ""
-                            }
-                        },
-                        {
-                            "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
-                            "data": {
-                                "range": "rn",
-                                "heavy": false,
-                                "hits": 2,
-                                "strength": 5
-                            }
-                        },
-                        {
-                            "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
-                            "data": {
-                                "range": "melee",
-                                "heavy": false,
-                                "hits": 2,
-                                "strength": 8
-                            }
-                        }
-                    ]
-                },
-                {
-                    "name": "Hibou Khan",
-                    "points_per_model": 150,
-                    "health": 4,
-                    "armor": 5,
-                    "actions": [
-                        {
-                            "type": "score",
-                            "is_enhancement": false,
-                            "is_visible": true,
-                            "data": {
-                                "parameters": ""
-                            }
-                        },
-                        {
-                            "type": "move",
-                            "is_enhancement": false,
-                            "is_visible": true,
-                            "data": {
-                                "parameters": "15"
-                            }
-                        },
-                        {
-                            "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
-                            "data": {
-                                "range": "melee",
-                                "heavy": false,
-                                "hits": 4,
-                                "strength": 6
-                            }
-                        },
-                        {
-                            "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
-                            "data": {
-                                "range": "20 cm",
-                                "heavy": true,
-                                "hits": 4,
-                                "strength": 4
-                            }
-                        }
-                    ]
-                },
-                {
                     "name": "Suboden Khan",
                     "points_per_model": 200,
                     "health": 6,
@@ -957,6 +749,60 @@
                     ]
                 },
                 {
+                    "name": "Belial",
+                    "points_per_model": 200,
+                    "health": 4,
+                    "armor": 6,
+                    "actions": [
+                        {
+                            "type": "score",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": ""
+                            }
+                        },
+                        {
+                            "type": "move",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": "10"
+                            }
+                        },
+                        {
+                            "type": "teleportation",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": ""
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "20 cm",
+                                "heavy": false,
+                                "hits": 4,
+                                "strength": 5
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "melee",
+                                "heavy": false,
+                                "hits": 2,
+                                "strength": 7
+                            }
+                        }
+                    ]
+                },
+                {
                     "name": "Deathwing strikemaster",
                     "points_per_model": 200,
                     "health": 4,
@@ -1061,203 +907,6 @@
         {
             "name": "Chaos",
             "units": [
-                {
-                    "name": "Magnus the red",
-                    "points_per_model": 800,
-                    "health": 8,
-                    "armor": 8,
-                    "actions": [
-                        {
-                            "type": "scan",
-                            "is_enhancement": false,
-                            "is_visible": true,
-                            "data": {
-                                "parameters": ""
-                            }
-                        },
-                        {
-                            "type": "score",
-                            "is_enhancement": false,
-                            "is_visible": true,
-                            "data": {
-                                "parameters": ""
-                            }
-                        },
-                        {
-                            "type": "move",
-                            "is_enhancement": false,
-                            "is_visible": true,
-                            "data": {
-                                "parameters": "20"
-                            }
-                        },
-                        {
-                            "type": "teleportation",
-                            "is_enhancement": false,
-                            "is_visible": true,
-                            "data": {
-                                "parameters": ""
-                            }
-                        },
-                        {
-                            "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
-                            "data": {
-                                "range": "20 cm",
-                                "heavy": false,
-                                "hits": 4,
-                                "strength": 8
-                            }
-                        },
-                        {
-                            "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
-                            "data": {
-                                "range": "20 cm",
-                                "heavy": false,
-                                "hits": 1,
-                                "strength": 10
-                            }
-                        }
-                    ]
-                },
-                {
-                    "name": "Librarian consul",
-                    "points_per_model": 150,
-                    "health": 4,
-                    "armor": 5,
-                    "actions": [
-                        {
-                            "type": "scan",
-                            "is_enhancement": false,
-                            "is_visible": true,
-                            "data": {
-                                "parameters": ""
-                            }
-                        },
-                        {
-                            "type": "score",
-                            "is_enhancement": false,
-                            "is_visible": true,
-                            "data": {
-                                "parameters": ""
-                            }
-                        },
-                        {
-                            "type": "move",
-                            "is_enhancement": false,
-                            "is_visible": true,
-                            "data": {
-                                "parameters": "15"
-                            }
-                        },
-                        {
-                            "type": "teleportation",
-                            "is_enhancement": false,
-                            "is_visible": true,
-                            "data": {
-                                "parameters": ""
-                            }
-                        },
-                        {
-                            "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
-                            "data": {
-                                "range": "20 cm",
-                                "heavy": false,
-                                "hits": 2,
-                                "strength": 5
-                            }
-                        },
-                        {
-                            "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
-                            "data": {
-                                "range": "melee",
-                                "heavy": false,
-                                "hits": 1,
-                                "strength": 7
-                            }
-                        }
-                    ]
-                },
-                {
-                    "name": "Exodus",
-                    "points_per_model": 200,
-                    "health": 4,
-                    "armor": 5,
-                    "actions": [
-                        {
-                            "type": "scan",
-                            "is_enhancement": false,
-                            "is_visible": true,
-                            "data": {
-                                "parameters": ""
-                            }
-                        },
-                        {
-                            "type": "score",
-                            "is_enhancement": false,
-                            "is_visible": true,
-                            "data": {
-                                "parameters": ""
-                            }
-                        },
-                        {
-                            "type": "move",
-                            "is_enhancement": false,
-                            "is_visible": true,
-                            "data": {
-                                "parameters": "15"
-                            }
-                        },
-                        {
-                            "type": "teleportation",
-                            "is_enhancement": false,
-                            "is_visible": true,
-                            "data": {
-                                "parameters": ""
-                            }
-                        },
-                        {
-                            "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
-                            "data": {
-                                "range": "rn",
-                                "heavy": true,
-                                "hits": 1,
-                                "strength": 8
-                            }
-                        },
-                        {
-                            "type": "weapon",
-                            "is_enhancement": true,
-                            "is_visible": true,
-                            "data": {
-                                "range": "melee",
-                                "heavy": true,
-                                "hits": 1,
-                                "strength": 10
-                            }
-                        },
-                        {
-                            "type": "weapon",
-                            "is_enhancement": true,
-                            "is_visible": false,
-                            "data": {
-                                "range": "rn",
-                                "heavy": true,
-                                "hits": 1,
-                                "strength": 9
-                            }
-                        }
-                    ]
-                },
                 {
                     "name": "Lord Invocatus",
                     "points_per_model": 250,
@@ -1704,6 +1353,79 @@
                                 "heavy": true,
                                 "hits": 2,
                                 "strength": 14
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Exodus",
+                    "points_per_model": 200,
+                    "health": 4,
+                    "armor": 5,
+                    "actions": [
+                        {
+                            "type": "scan",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": ""
+                            }
+                        },
+                        {
+                            "type": "score",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": ""
+                            }
+                        },
+                        {
+                            "type": "move",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": "15"
+                            }
+                        },
+                        {
+                            "type": "teleportation",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": ""
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "range": "rn",
+                                "heavy": true,
+                                "hits": 1,
+                                "strength": 8
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": true,
+                            "is_visible": true,
+                            "data": {
+                                "range": "melee",
+                                "heavy": true,
+                                "hits": 1,
+                                "strength": 10
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": true,
+                            "is_visible": false,
+                            "data": {
+                                "range": "rn",
+                                "heavy": true,
+                                "hits": 1,
+                                "strength": 9
                             }
                         }
                     ]
