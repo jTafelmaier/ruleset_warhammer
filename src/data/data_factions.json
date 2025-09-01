@@ -663,6 +663,14 @@
                     "armor": 4,
                     "actions": [
                         {
+                            "type": "scan",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": ""
+                            }
+                        },
+                        {
                             "type": "move",
                             "is_enhancement": false,
                             "is_visible": true,
@@ -1151,6 +1159,14 @@
                     "health": 4,
                     "armor": 4,
                     "actions": [
+                        {
+                            "type": "scan",
+                            "is_enhancement": false,
+                            "is_visible": true,
+                            "data": {
+                                "parameters": ""
+                            }
+                        },
                         {
                             "type": "move",
                             "is_enhancement": false,
