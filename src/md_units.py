@@ -47,8 +47,8 @@ def get_text_html_data_unit(
                 filter(
                     lambda text: text is not None,
                     [
-                        (dict_weapon["range"] if dict_weapon["range"] != "rn" else None),
-                        ("heavy" if dict_weapon["heavy"] else None)]))
+                        ("[" + dict_weapon["range"] + "]" if dict_weapon["range"] != "rn" else None),
+                        ("[heavy]" if dict_weapon["heavy"] else None)]))
 
             return "<span>⚔</span>" \
                 + dict_weapon \
@@ -58,10 +58,9 @@ def get_text_html_data_unit(
                 + dict_weapon \
                     ["strength"] \
                     .__str__() \
-                + " [" \
-                + ", " \
-                    .join(list_texts_keywords) \
-                + "]"
+                + " " \
+                + " " \
+                    .join(list_texts_keywords)
 
         return "<div class=\"unit_property" \
             + (" enhancement" if dict_action["is_enhancement"] else "") \
