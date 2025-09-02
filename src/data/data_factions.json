@@ -11,40 +11,30 @@
                     "actions": [
                         {
                             "type": "scan",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": ""
                             }
                         },
                         {
                             "type": "score",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": ""
                             }
                         },
                         {
                             "type": "move",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": "fly 25"
                             }
                         },
                         {
                             "type": "teleportation",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": ""
                             }
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "rn",
                                 "heavy": false,
@@ -54,18 +44,17 @@
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "melee",
                                 "heavy": false,
                                 "hits": 4,
                                 "strength": 6
                             }
-                        },
+                        }
+                    ],
+                    "enhancements": [
                         {
                             "type": "weapon",
-                            "is_enhancement": true,
                             "is_visible": true,
                             "data": {
                                 "range": "melee",
@@ -84,32 +73,24 @@
                     "actions": [
                         {
                             "type": "score",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": ""
                             }
                         },
                         {
                             "type": "move",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": "10"
                             }
                         },
                         {
                             "type": "teleportation",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": ""
                             }
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "melee",
                                 "heavy": false,
@@ -119,8 +100,6 @@
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "melee",
                                 "heavy": false,
@@ -128,7 +107,8 @@
                                 "strength": 9
                             }
                         }
-                    ]
+                    ],
+                    "enhancements": []
                 },
                 {
                     "name": "Suboden Khan",
@@ -138,24 +118,18 @@
                     "actions": [
                         {
                             "type": "score",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": ""
                             }
                         },
                         {
                             "type": "move",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": "fly 40"
                             }
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "rn",
                                 "heavy": false,
@@ -165,8 +139,6 @@
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "melee",
                                 "heavy": false,
@@ -174,7 +146,8 @@
                                 "strength": 7
                             }
                         }
-                    ]
+                    ],
+                    "enhancements": []
                 },
                 {
                     "name": "Castellan Crowe",
@@ -184,40 +157,24 @@
                     "actions": [
                         {
                             "type": "score",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": ""
                             }
                         },
                         {
                             "type": "move",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": "15"
                             }
                         },
                         {
-                            "type": "move",
-                            "is_enhancement": true,
-                            "is_visible": false,
-                            "data": {
-                                "parameters": "fly 25"
-                            }
-                        },
-                        {
                             "type": "teleportation",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": ""
                             }
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "20 cm",
                                 "heavy": false,
@@ -227,13 +184,20 @@
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "melee",
                                 "heavy": false,
                                 "hits": 2,
                                 "strength": 8
+                            }
+                        }
+                    ],
+                    "enhancements": [
+                        {
+                            "type": "move",
+                            "is_visible": false,
+                            "data": {
+                                "parameters": "fly 25"
                             }
                         }
                     ]
@@ -246,24 +210,18 @@
                     "actions": [
                         {
                             "type": "score",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": ""
                             }
                         },
                         {
                             "type": "move",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": "fly 25"
                             }
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "rn",
                                 "heavy": false,
@@ -273,18 +231,17 @@
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "melee",
                                 "heavy": false,
                                 "hits": 2,
                                 "strength": 7
                             }
-                        },
+                        }
+                    ],
+                    "enhancements": [
                         {
                             "type": "weapon",
-                            "is_enhancement": true,
                             "is_visible": true,
                             "data": {
                                 "range": "melee",
@@ -302,33 +259,19 @@
                     "armor": 6,
                     "actions": [
                         {
-                            "type": "scan",
-                            "is_enhancement": true,
-                            "is_visible": false,
-                            "data": {
-                                "parameters": ""
-                            }
-                        },
-                        {
                             "type": "score",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": ""
                             }
                         },
                         {
                             "type": "move",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": "10"
                             }
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "rn",
                                 "heavy": false,
@@ -338,13 +281,20 @@
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "melee",
                                 "heavy": false,
                                 "hits": 2,
                                 "strength": 7
+                            }
+                        }
+                    ],
+                    "enhancements": [
+                        {
+                            "type": "scan",
+                            "is_visible": false,
+                            "data": {
+                                "parameters": ""
                             }
                         }
                     ]
@@ -357,26 +307,23 @@
                     "actions": [
                         {
                             "type": "move",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": "10"
                             }
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "rn",
                                 "heavy": false,
                                 "hits": 2,
                                 "strength": 6
                             }
-                        },
+                        }
+                    ],
+                    "enhancements": [
                         {
                             "type": "weapon",
-                            "is_enhancement": true,
                             "is_visible": true,
                             "data": {
                                 "range": "rn",
@@ -395,16 +342,12 @@
                     "actions": [
                         {
                             "type": "move",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": "10"
                             }
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "rn",
                                 "heavy": false,
@@ -414,18 +357,17 @@
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "20 cm",
                                 "heavy": false,
                                 "hits": 1,
                                 "strength": 12
                             }
-                        },
+                        }
+                    ],
+                    "enhancements": [
                         {
                             "type": "weapon",
-                            "is_enhancement": true,
                             "is_visible": true,
                             "data": {
                                 "range": "20 cm",
@@ -444,16 +386,12 @@
                     "actions": [
                         {
                             "type": "move",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": "fly 25"
                             }
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "rn",
                                 "heavy": false,
@@ -463,18 +401,17 @@
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "melee",
                                 "heavy": false,
                                 "hits": 1,
                                 "strength": 7
                             }
-                        },
+                        }
+                    ],
+                    "enhancements": [
                         {
                             "type": "weapon",
-                            "is_enhancement": true,
                             "is_visible": true,
                             "data": {
                                 "range": "melee",
@@ -493,32 +430,18 @@
                     "actions": [
                         {
                             "type": "scan",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": ""
                             }
                         },
                         {
                             "type": "move",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": "25"
                             }
                         },
                         {
-                            "type": "move",
-                            "is_enhancement": true,
-                            "is_visible": false,
-                            "data": {
-                                "parameters": "40"
-                            }
-                        },
-                        {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "20 cm",
                                 "heavy": false,
@@ -528,18 +451,24 @@
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "rn",
                                 "heavy": true,
                                 "hits": 1,
                                 "strength": 15
                             }
+                        }
+                    ],
+                    "enhancements": [
+                        {
+                            "type": "move",
+                            "is_visible": false,
+                            "data": {
+                                "parameters": "40"
+                            }
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": true,
                             "is_visible": false,
                             "data": {
                                 "range": "rn",
@@ -558,24 +487,18 @@
                     "actions": [
                         {
                             "type": "score",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": ""
                             }
                         },
                         {
                             "type": "move",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": "15"
                             }
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "rn",
                                 "heavy": false,
@@ -585,18 +508,17 @@
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "melee",
                                 "heavy": false,
                                 "hits": 2,
                                 "strength": 7
                             }
-                        },
+                        }
+                    ],
+                    "enhancements": [
                         {
                             "type": "weapon",
-                            "is_enhancement": true,
                             "is_visible": true,
                             "data": {
                                 "range": "20 cm",
@@ -615,16 +537,12 @@
                     "actions": [
                         {
                             "type": "move",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": "15"
                             }
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "rn",
                                 "heavy": false,
@@ -634,18 +552,17 @@
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "melee",
                                 "heavy": false,
                                 "hits": 1,
                                 "strength": 7
                             }
-                        },
+                        }
+                    ],
+                    "enhancements": [
                         {
                             "type": "weapon",
-                            "is_enhancement": true,
                             "is_visible": true,
                             "data": {
                                 "range": "20 cm",
@@ -664,24 +581,18 @@
                     "actions": [
                         {
                             "type": "scan",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": ""
                             }
                         },
                         {
                             "type": "move",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": "15"
                             }
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "rn",
                                 "heavy": false,
@@ -689,7 +600,8 @@
                                 "strength": 5
                             }
                         }
-                    ]
+                    ],
+                    "enhancements": []
                 },
                 {
                     "name": "Belial",
@@ -699,32 +611,24 @@
                     "actions": [
                         {
                             "type": "score",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": ""
                             }
                         },
                         {
                             "type": "move",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": "10"
                             }
                         },
                         {
                             "type": "teleportation",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": ""
                             }
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "20 cm",
                                 "heavy": false,
@@ -734,8 +638,6 @@
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "melee",
                                 "heavy": false,
@@ -743,7 +645,8 @@
                                 "strength": 7
                             }
                         }
-                    ]
+                    ],
+                    "enhancements": []
                 },
                 {
                     "name": "Deathwing strikemaster",
@@ -753,42 +656,35 @@
                     "actions": [
                         {
                             "type": "score",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": ""
                             }
                         },
                         {
                             "type": "move",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": "10"
                             }
                         },
                         {
                             "type": "teleportation",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": ""
                             }
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "melee",
                                 "heavy": false,
                                 "hits": 2,
                                 "strength": 7
                             }
-                        },
+                        }
+                    ],
+                    "enhancements": [
                         {
                             "type": "weapon",
-                            "is_enhancement": true,
                             "is_visible": true,
                             "data": {
                                 "range": "melee",
@@ -807,34 +703,29 @@
                     "actions": [
                         {
                             "type": "move",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": "10"
                             }
                         },
                         {
                             "type": "teleportation",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": ""
                             }
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "melee",
                                 "heavy": false,
                                 "hits": 1,
                                 "strength": 7
                             }
-                        },
+                        }
+                    ],
+                    "enhancements": [
                         {
                             "type": "weapon",
-                            "is_enhancement": true,
                             "is_visible": true,
                             "data": {
                                 "range": "melee",
@@ -858,24 +749,18 @@
                     "actions": [
                         {
                             "type": "score",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": ""
                             }
                         },
                         {
                             "type": "move",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": "25"
                             }
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "melee",
                                 "heavy": false,
@@ -885,8 +770,6 @@
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "melee",
                                 "heavy": true,
@@ -894,7 +777,8 @@
                                 "strength": 6
                             }
                         }
-                    ]
+                    ],
+                    "enhancements": []
                 },
                 {
                     "name": "Slaughterbound",
@@ -904,32 +788,24 @@
                     "actions": [
                         {
                             "type": "score",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": ""
                             }
                         },
                         {
                             "type": "move",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": "20"
                             }
                         },
                         {
                             "type": "teleportation",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": ""
                             }
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "melee",
                                 "heavy": false,
@@ -937,7 +813,8 @@
                                 "strength": 8
                             }
                         }
-                    ]
+                    ],
+                    "enhancements": []
                 },
                 {
                     "name": "Exalted Eightbound",
@@ -947,24 +824,18 @@
                     "actions": [
                         {
                             "type": "move",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": "20"
                             }
                         },
                         {
                             "type": "teleportation",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": ""
                             }
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "melee",
                                 "heavy": false,
@@ -974,18 +845,17 @@
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "melee",
                                 "heavy": true,
                                 "hits": 1,
                                 "strength": 10
                             }
-                        },
+                        }
+                    ],
+                    "enhancements": [
                         {
                             "type": "weapon",
-                            "is_enhancement": true,
                             "is_visible": true,
                             "data": {
                                 "range": "melee",
@@ -1004,16 +874,12 @@
                     "actions": [
                         {
                             "type": "move",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": "20"
                             }
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "melee",
                                 "heavy": false,
@@ -1021,7 +887,8 @@
                                 "strength": 6
                             }
                         }
-                    ]
+                    ],
+                    "enhancements": []
                 },
                 {
                     "name": "Khorne Berzerkers",
@@ -1031,16 +898,12 @@
                     "actions": [
                         {
                             "type": "move",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": "20"
                             }
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "rn",
                                 "heavy": false,
@@ -1050,18 +913,17 @@
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "melee",
                                 "heavy": false,
                                 "hits": 2,
                                 "strength": 6
                             }
-                        },
+                        }
+                    ],
+                    "enhancements": [
                         {
                             "type": "weapon",
-                            "is_enhancement": true,
                             "is_visible": true,
                             "data": {
                                 "range": "melee",
@@ -1080,16 +942,12 @@
                     "actions": [
                         {
                             "type": "move",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": "10"
                             }
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "melee",
                                 "heavy": false,
@@ -1097,7 +955,8 @@
                                 "strength": 4
                             }
                         }
-                    ]
+                    ],
+                    "enhancements": []
                 },
                 {
                     "name": "Warsmith",
@@ -1107,32 +966,24 @@
                     "actions": [
                         {
                             "type": "scan",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": ""
                             }
                         },
                         {
                             "type": "score",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": ""
                             }
                         },
                         {
                             "type": "move",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": "10"
                             }
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "rn",
                                 "heavy": true,
@@ -1142,8 +993,6 @@
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "melee",
                                 "heavy": true,
@@ -1151,7 +1000,8 @@
                                 "strength": 10
                             }
                         }
-                    ]
+                    ],
+                    "enhancements": []
                 },
                 {
                     "name": "MkII Marines",
@@ -1161,24 +1011,18 @@
                     "actions": [
                         {
                             "type": "scan",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": ""
                             }
                         },
                         {
                             "type": "move",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": "15"
                             }
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "rn",
                                 "heavy": false,
@@ -1188,18 +1032,17 @@
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "20 cm",
                                 "heavy": true,
                                 "hits": 1,
                                 "strength": 6
                             }
-                        },
+                        }
+                    ],
+                    "enhancements": [
                         {
                             "type": "weapon",
-                            "is_enhancement": true,
                             "is_visible": true,
                             "data": {
                                 "range": "rn",
@@ -1218,16 +1061,12 @@
                     "actions": [
                         {
                             "type": "move",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": "fly 25"
                             }
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "rn",
                                 "heavy": false,
@@ -1237,18 +1076,17 @@
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "melee",
                                 "heavy": false,
                                 "hits": 1,
                                 "strength": 7
                             }
-                        },
+                        }
+                    ],
+                    "enhancements": [
                         {
                             "type": "weapon",
-                            "is_enhancement": true,
                             "is_visible": true,
                             "data": {
                                 "range": "melee",
@@ -1267,8 +1105,6 @@
                     "actions": [
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "rn",
                                 "heavy": true,
@@ -1276,7 +1112,8 @@
                                 "strength": 12
                             }
                         }
-                    ]
+                    ],
+                    "enhancements": []
                 },
                 {
                     "name": "Fellblade super-heavy tank",
@@ -1286,24 +1123,18 @@
                     "actions": [
                         {
                             "type": "scan",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": ""
                             }
                         },
                         {
                             "type": "move",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": "25"
                             }
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "rn",
                                 "heavy": false,
@@ -1313,8 +1144,6 @@
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "rn",
                                 "heavy": true,
@@ -1324,8 +1153,6 @@
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "rn",
                                 "heavy": true,
@@ -1333,7 +1160,8 @@
                                 "strength": 14
                             }
                         }
-                    ]
+                    ],
+                    "enhancements": []
                 },
                 {
                     "name": "Exodus",
@@ -1343,50 +1171,41 @@
                     "actions": [
                         {
                             "type": "scan",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": ""
                             }
                         },
                         {
                             "type": "score",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": ""
                             }
                         },
                         {
                             "type": "move",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": "15"
                             }
                         },
                         {
                             "type": "teleportation",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": ""
                             }
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "rn",
                                 "heavy": true,
                                 "hits": 1,
                                 "strength": 8
                             }
-                        },
+                        }
+                    ],
+                    "enhancements": [
                         {
                             "type": "weapon",
-                            "is_enhancement": true,
                             "is_visible": false,
                             "data": {
                                 "range": "rn",
@@ -1397,7 +1216,6 @@
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": true,
                             "is_visible": true,
                             "data": {
                                 "range": "melee",
@@ -1421,40 +1239,30 @@
                     "actions": [
                         {
                             "type": "scan",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": ""
                             }
                         },
                         {
                             "type": "score",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": ""
                             }
                         },
                         {
                             "type": "move",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": "15"
                             }
                         },
                         {
                             "type": "teleportation",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": ""
                             }
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "rn",
                                 "heavy": false,
@@ -1462,7 +1270,8 @@
                                 "strength": 6
                             }
                         }
-                    ]
+                    ],
+                    "enhancements": []
                 },
                 {
                     "name": "Warrior",
@@ -1472,24 +1281,18 @@
                     "actions": [
                         {
                             "type": "score",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": ""
                             }
                         },
                         {
                             "type": "move",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": "15"
                             }
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "rn",
                                 "heavy": true,
@@ -1497,7 +1300,8 @@
                                 "strength": 7
                             }
                         }
-                    ]
+                    ],
+                    "enhancements": []
                 },
                 {
                     "name": "Skorpekh destroyer",
@@ -1507,24 +1311,18 @@
                     "actions": [
                         {
                             "type": "score",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": ""
                             }
                         },
                         {
                             "type": "move",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": "15"
                             }
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "melee",
                                 "heavy": false,
@@ -1532,7 +1330,8 @@
                                 "strength": 9
                             }
                         }
-                    ]
+                    ],
+                    "enhancements": []
                 },
                 {
                     "name": "Lokhust destroyer - Gauss",
@@ -1542,42 +1341,35 @@
                     "actions": [
                         {
                             "type": "scan",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": ""
                             }
                         },
                         {
                             "type": "score",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": ""
                             }
                         },
                         {
                             "type": "move",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": "fly 15"
                             }
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "rn",
                                 "heavy": true,
                                 "hits": 1,
                                 "strength": 14
                             }
-                        },
+                        }
+                    ],
+                    "enhancements": [
                         {
                             "type": "weapon",
-                            "is_enhancement": true,
                             "is_visible": false,
                             "data": {
                                 "range": "rn",
@@ -1596,32 +1388,24 @@
                     "actions": [
                         {
                             "type": "scan",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": ""
                             }
                         },
                         {
                             "type": "score",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": ""
                             }
                         },
                         {
                             "type": "move",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "parameters": "fly 15"
                             }
                         },
                         {
                             "type": "weapon",
-                            "is_enhancement": false,
-                            "is_visible": true,
                             "data": {
                                 "range": "rn",
                                 "heavy": true,
@@ -1629,7 +1413,8 @@
                                 "strength": 7
                             }
                         }
-                    ]
+                    ],
+                    "enhancements": []
                 }
             ]
         }

@@ -14,17 +14,14 @@ def get_text_html_data_unit(
     bool_show_invisible_enhancements = False):
 
     DICT_DESCRIPTIONS_ACTIONS = {
-        "teleportation": "This model's unit can perform the &quot;Setup teleportation&quot; and &quot;Recall&quot; actions.",
-        "move": "This model can perform the &quot;Move&quot; action.",
         "scan": "This model can perform the &quot;Scan&quot; action.",
         "score": "This model's unit can perform the &quot;Score objective&quot; action.\nFurthermore, this unit can be attached to another friendly unit at deployment, if that unit does not have a higher armor characteristic than this unit. While this unit is attached to another unit, it cannot be selected as a target unit.",
+        "move": "This model can perform the &quot;Move&quot; action.",
+        "teleportation": "This model's unit can perform the &quot;Setup teleportation&quot; and &quot;Recall&quot; actions.",
         "weapon": "This model can perform the &quot;Attack&quot; action."}
 
     def get_text_html_action(
-        pair_action:typing.Tuple[int, typing.Dict]):
-
-        dict_action = pair_action \
-            [-1]
+        dict_action:typing.Dict):
 
         text_type_action = dict_action \
             ["type"]
@@ -65,8 +62,8 @@ def get_text_html_data_unit(
                     .join(list_texts_keywords)
 
         return "<div class=\"unit_property" \
-            + (" enhancement" if dict_action["is_enhancement"] else "") \
-            + (" revealable invisible" if dict_action["is_enhancement"] and not dict_action["is_visible"] and not bool_show_invisible_enhancements else "") \
+            + (" enhancement" if dict_action.get("is_enhancement", False) else "") \
+            + (" revealable invisible" if not dict_action.get("is_visible", True) and not bool_show_invisible_enhancements else "") \
             + "\" title=\"" \
             + DICT_DESCRIPTIONS_ACTIONS \
                 [text_type_action] \
@@ -83,15 +80,63 @@ def get_text_html_data_unit(
                     ["name"] \
                     + ".png"])
 
+    def get_dict_enhancement(
+        index:int):
+
+        dict_enhancement = dict_unit \
+            ["enhancements"] \
+            [index]
+
+        dict_enhancement["is_enhancement"] = True
+
+        return dict_enhancement
+
+    list_dicts_enhancements = list(
+        map(
+            get_dict_enhancement,
+            list_indices_enhancements))
+
+    def get_tuple_sorting(
+        dict_action:typing.Dict):
+
+        int_key_1 = list(
+                DICT_DESCRIPTIONS_ACTIONS \
+                    .keys()) \
+            .index(dict_action["type"])
+
+        if dict_action["type"] != "weapon":
+            return (
+                int_key_1,
+                0,
+                0)
+
+        int_key_2 = [
+            "rn",
+            "20 cm",
+            "melee"] \
+            .index(
+                dict_action \
+                    ["data"] \
+                    ["range"])
+
+        int_key_3 = dict_action \
+            ["data"] \
+            ["heavy"]
+
+        return (
+            int_key_1,
+            int_key_2,
+            int_key_3)
+
     text_html_rows_actions = "" \
         .join(
             map(
                 get_text_html_action,
-                filter(
-                    lambda pair_action: not pair_action[-1]["is_enhancement"] or pair_action[0] in list_indices_enhancements,
-                    enumerate(
-                        dict_unit
-                            ["actions"]))))
+                sorted(
+                    list_dicts_enhancements \
+                        + dict_unit
+                            ["actions"],
+                    key=get_tuple_sorting)))
 
     def get_text_html_armor():
 
