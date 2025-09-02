@@ -4,205 +4,6 @@
             "name": "Imperium",
             "units": [
                 {
-                    "name": "Aethon Shaan",
-                    "points_per_model": 200,
-                    "health": 4,
-                    "armor": 5,
-                    "actions": [
-                        {
-                            "type": "scan",
-                            "data": {
-                                "parameters": ""
-                            }
-                        },
-                        {
-                            "type": "score",
-                            "data": {
-                                "parameters": ""
-                            }
-                        },
-                        {
-                            "type": "move",
-                            "data": {
-                                "parameters": "fly 25"
-                            }
-                        },
-                        {
-                            "type": "teleportation",
-                            "data": {
-                                "parameters": ""
-                            }
-                        },
-                        {
-                            "type": "weapon",
-                            "data": {
-                                "range": 1000,
-                                "heavy": false,
-                                "hits": 2,
-                                "strength": 5
-                            }
-                        },
-                        {
-                            "type": "weapon",
-                            "data": {
-                                "range": 5,
-                                "heavy": false,
-                                "hits": 4,
-                                "strength": 6
-                            }
-                        }
-                    ],
-                    "enhancements": [
-                        {
-                            "type": "weapon",
-                            "is_visible": true,
-                            "data": {
-                                "range": 5,
-                                "heavy": true,
-                                "hits": 1,
-                                "strength": 10
-                            }
-                        }
-                    ]
-                },
-                {
-                    "name": "Darnath Lysander",
-                    "points_per_model": 200,
-                    "health": 4,
-                    "armor": 7,
-                    "actions": [
-                        {
-                            "type": "score",
-                            "data": {
-                                "parameters": ""
-                            }
-                        },
-                        {
-                            "type": "move",
-                            "data": {
-                                "parameters": "10"
-                            }
-                        },
-                        {
-                            "type": "teleportation",
-                            "data": {
-                                "parameters": ""
-                            }
-                        },
-                        {
-                            "type": "weapon",
-                            "data": {
-                                "range": 5,
-                                "heavy": false,
-                                "hits": 2,
-                                "strength": 6
-                            }
-                        },
-                        {
-                            "type": "weapon",
-                            "data": {
-                                "range": 5,
-                                "heavy": false,
-                                "hits": 1,
-                                "strength": 9
-                            }
-                        }
-                    ],
-                    "enhancements": []
-                },
-                {
-                    "name": "Suboden Khan",
-                    "points_per_model": 200,
-                    "health": 6,
-                    "armor": 6,
-                    "actions": [
-                        {
-                            "type": "score",
-                            "data": {
-                                "parameters": ""
-                            }
-                        },
-                        {
-                            "type": "move",
-                            "data": {
-                                "parameters": "fly 40"
-                            }
-                        },
-                        {
-                            "type": "weapon",
-                            "data": {
-                                "range": 1000,
-                                "heavy": false,
-                                "hits": 4,
-                                "strength": 5
-                            }
-                        },
-                        {
-                            "type": "weapon",
-                            "data": {
-                                "range": 5,
-                                "heavy": false,
-                                "hits": 2,
-                                "strength": 7
-                            }
-                        }
-                    ],
-                    "enhancements": []
-                },
-                {
-                    "name": "Castellan Crowe",
-                    "points_per_model": 200,
-                    "health": 4,
-                    "armor": 5,
-                    "actions": [
-                        {
-                            "type": "score",
-                            "data": {
-                                "parameters": ""
-                            }
-                        },
-                        {
-                            "type": "move",
-                            "data": {
-                                "parameters": "15"
-                            }
-                        },
-                        {
-                            "type": "teleportation",
-                            "data": {
-                                "parameters": ""
-                            }
-                        },
-                        {
-                            "type": "weapon",
-                            "data": {
-                                "range": 20,
-                                "heavy": false,
-                                "hits": 4,
-                                "strength": 5
-                            }
-                        },
-                        {
-                            "type": "weapon",
-                            "data": {
-                                "range": 5,
-                                "heavy": false,
-                                "hits": 2,
-                                "strength": 8
-                            }
-                        }
-                    ],
-                    "enhancements": [
-                        {
-                            "type": "move",
-                            "is_visible": false,
-                            "data": {
-                                "parameters": "fly 25"
-                            }
-                        }
-                    ]
-                },
-                {
                     "name": "Captain with jump pack",
                     "points_per_model": 100,
                     "health": 4,
@@ -713,6 +514,205 @@
                         }
                     ],
                     "enhancements": []
+                },
+                {
+                    "name": "Aethon Shaan",
+                    "points_per_model": 200,
+                    "health": 4,
+                    "armor": 5,
+                    "actions": [
+                        {
+                            "type": "scan",
+                            "data": {
+                                "parameters": ""
+                            }
+                        },
+                        {
+                            "type": "score",
+                            "data": {
+                                "parameters": ""
+                            }
+                        },
+                        {
+                            "type": "move",
+                            "data": {
+                                "parameters": "fly 25"
+                            }
+                        },
+                        {
+                            "type": "teleportation",
+                            "data": {
+                                "parameters": ""
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "data": {
+                                "range": 1000,
+                                "heavy": false,
+                                "hits": 2,
+                                "strength": 5
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "data": {
+                                "range": 5,
+                                "heavy": false,
+                                "hits": 4,
+                                "strength": 6
+                            }
+                        }
+                    ],
+                    "enhancements": [
+                        {
+                            "type": "weapon",
+                            "is_visible": true,
+                            "data": {
+                                "range": 5,
+                                "heavy": true,
+                                "hits": 1,
+                                "strength": 10
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Darnath Lysander",
+                    "points_per_model": 200,
+                    "health": 4,
+                    "armor": 7,
+                    "actions": [
+                        {
+                            "type": "score",
+                            "data": {
+                                "parameters": ""
+                            }
+                        },
+                        {
+                            "type": "move",
+                            "data": {
+                                "parameters": "10"
+                            }
+                        },
+                        {
+                            "type": "teleportation",
+                            "data": {
+                                "parameters": ""
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "data": {
+                                "range": 5,
+                                "heavy": false,
+                                "hits": 2,
+                                "strength": 6
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "data": {
+                                "range": 5,
+                                "heavy": false,
+                                "hits": 1,
+                                "strength": 9
+                            }
+                        }
+                    ],
+                    "enhancements": []
+                },
+                {
+                    "name": "Suboden Khan",
+                    "points_per_model": 200,
+                    "health": 6,
+                    "armor": 6,
+                    "actions": [
+                        {
+                            "type": "score",
+                            "data": {
+                                "parameters": ""
+                            }
+                        },
+                        {
+                            "type": "move",
+                            "data": {
+                                "parameters": "fly 40"
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "data": {
+                                "range": 1000,
+                                "heavy": false,
+                                "hits": 4,
+                                "strength": 5
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "data": {
+                                "range": 5,
+                                "heavy": false,
+                                "hits": 2,
+                                "strength": 7
+                            }
+                        }
+                    ],
+                    "enhancements": []
+                },
+                {
+                    "name": "Castellan Crowe",
+                    "points_per_model": 200,
+                    "health": 4,
+                    "armor": 5,
+                    "actions": [
+                        {
+                            "type": "score",
+                            "data": {
+                                "parameters": ""
+                            }
+                        },
+                        {
+                            "type": "move",
+                            "data": {
+                                "parameters": "15"
+                            }
+                        },
+                        {
+                            "type": "teleportation",
+                            "data": {
+                                "parameters": ""
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "data": {
+                                "range": 20,
+                                "heavy": false,
+                                "hits": 4,
+                                "strength": 5
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "data": {
+                                "range": 5,
+                                "heavy": false,
+                                "hits": 2,
+                                "strength": 8
+                            }
+                        }
+                    ],
+                    "enhancements": [
+                        {
+                            "type": "move",
+                            "is_visible": false,
+                            "data": {
+                                "parameters": "fly 25"
+                            }
+                        }
+                    ]
                 }
             ]
         },
