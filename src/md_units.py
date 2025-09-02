@@ -116,7 +116,8 @@ def get_text_html_data_unit(
         return (
             int_key_1,
             dict_data \
-                ["range"],
+                ["range"] \
+                * -1,
             dict_data \
                 ["heavy"])
 
