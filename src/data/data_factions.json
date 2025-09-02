@@ -200,8 +200,8 @@
                             "data": {
                                 "range": 5,
                                 "heavy": false,
-                                "hits": 1,
-                                "strength": 7
+                                "hits": 2,
+                                "strength": 6
                             }
                         }
                     ],
@@ -348,8 +348,8 @@
                             "data": {
                                 "range": 5,
                                 "heavy": false,
-                                "hits": 1,
-                                "strength": 7
+                                "hits": 2,
+                                "strength": 6
                             }
                         }
                     ],
@@ -433,7 +433,7 @@
                                 "range": 5,
                                 "heavy": false,
                                 "hits": 2,
-                                "strength": 7
+                                "strength": 8
                             }
                         }
                     ],
@@ -468,7 +468,7 @@
                                 "range": 5,
                                 "heavy": false,
                                 "hits": 2,
-                                "strength": 7
+                                "strength": 8
                             }
                         }
                     ],
@@ -496,7 +496,7 @@
                             "data": {
                                 "range": 5,
                                 "heavy": false,
-                                "hits": 1,
+                                "hits": 2,
                                 "strength": 7
                             }
                         }
@@ -547,7 +547,7 @@
                                 "range": 5,
                                 "heavy": false,
                                 "hits": 4,
-                                "strength": 6
+                                "strength": 7
                             }
                         }
                     ],
@@ -726,7 +726,7 @@
                                 "range": 5,
                                 "heavy": false,
                                 "hits": 1,
-                                "strength": 8
+                                "strength": 9
                             }
                         },
                         {
@@ -735,7 +735,7 @@
                                 "range": 5,
                                 "heavy": true,
                                 "hits": 4,
-                                "strength": 6
+                                "strength": 7
                             }
                         }
                     ],
@@ -907,7 +907,7 @@
                             "data": {
                                 "range": 5,
                                 "heavy": false,
-                                "hits": 1,
+                                "hits": 2,
                                 "strength": 4
                             }
                         }
@@ -1032,8 +1032,8 @@
                             "data": {
                                 "range": 5,
                                 "heavy": false,
-                                "hits": 1,
-                                "strength": 7
+                                "hits": 2,
+                                "strength": 6
                             }
                         }
                     ],

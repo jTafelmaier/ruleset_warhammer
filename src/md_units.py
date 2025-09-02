@@ -53,7 +53,7 @@ def get_text_html_data_unit(
                 + dict_weapon \
                     ["hits"] \
                     .__str__() \
-                + "x💥" \
+                + "x 💥" \
                 + dict_weapon \
                     ["strength"] \
                     .__str__() \
