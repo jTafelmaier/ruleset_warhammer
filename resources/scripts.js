@@ -229,7 +229,7 @@ function reveal_enhancements(
         .toggle("revealed")
 
     Array.from(element_unit
-        .getElementsByClassName("enhancement"))
+        .getElementsByClassName("revealable"))
         .forEach(element => element.classList.toggle("invisible"))
 }
 

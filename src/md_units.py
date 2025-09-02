@@ -65,7 +65,7 @@ def get_text_html_data_unit(
 
         return "<div class=\"unit_property" \
             + (" enhancement" if dict_action["is_enhancement"] else "") \
-            + ("" if dict_action["is_visible"] or bool_show_invisible_enhancements else " invisible") \
+            + (" revealable invisible" if dict_action["is_enhancement"] and not dict_action["is_visible"] and not bool_show_invisible_enhancements else "") \
             + "\" title=\"" \
             + DICT_DESCRIPTIONS_ACTIONS \
                 [text_type_action] \
