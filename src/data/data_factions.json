@@ -682,18 +682,7 @@
                             }
                         }
                     ],
-                    "enhancements": [
-                        {
-                            "type": "weapon",
-                            "is_visible": true,
-                            "data": {
-                                "range": 5,
-                                "heavy": false,
-                                "hits": 1,
-                                "strength": 9
-                            }
-                        }
-                    ]
+                    "enhancements": []
                 },
                 {
                     "name": "Deathwing knights",
@@ -723,18 +712,7 @@
                             }
                         }
                     ],
-                    "enhancements": [
-                        {
-                            "type": "weapon",
-                            "is_visible": true,
-                            "data": {
-                                "range": 5,
-                                "heavy": false,
-                                "hits": 1,
-                                "strength": 9
-                            }
-                        }
-                    ]
+                    "enhancements": []
                 }
             ]
         },
