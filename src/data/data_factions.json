@@ -878,9 +878,9 @@
                             "is_visible": true,
                             "data": {
                                 "range": "melee",
-                                "heavy": true,
-                                "hits": 4,
-                                "strength": 6
+                                "heavy": false,
+                                "hits": 1,
+                                "strength": 8
                             }
                         },
                         {
@@ -889,9 +889,9 @@
                             "is_visible": true,
                             "data": {
                                 "range": "melee",
-                                "heavy": false,
-                                "hits": 1,
-                                "strength": 8
+                                "heavy": true,
+                                "hits": 4,
+                                "strength": 6
                             }
                         }
                     ]
@@ -1387,23 +1387,23 @@
                         {
                             "type": "weapon",
                             "is_enhancement": true,
-                            "is_visible": true,
-                            "data": {
-                                "range": "melee",
-                                "heavy": true,
-                                "hits": 1,
-                                "strength": 10
-                            }
-                        },
-                        {
-                            "type": "weapon",
-                            "is_enhancement": true,
                             "is_visible": false,
                             "data": {
                                 "range": "rn",
                                 "heavy": true,
                                 "hits": 1,
                                 "strength": 9
+                            }
+                        },
+                        {
+                            "type": "weapon",
+                            "is_enhancement": true,
+                            "is_visible": true,
+                            "data": {
+                                "range": "melee",
+                                "heavy": true,
+                                "hits": 1,
+                                "strength": 10
                             }
                         }
                     ]
