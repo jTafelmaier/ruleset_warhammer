@@ -44,11 +44,11 @@ def get_text_html_data_unit(
                 filter(
                     lambda text: text is not None,
                     [
-                        ("[20 cm]" if dict_weapon["range"] == "20 cm" else None),
+                        ("[20 cm]" if dict_weapon["range"] == 20 else None),
                         ("[heavy]" if dict_weapon["heavy"] else None)]))
 
             return "<span>" \
-                + ("⚔" if dict_weapon["range"] == "melee" else "𖦏") \
+                + ("⚔" if dict_weapon["range"] == 5 else "𖦏") \
                 + "</span>" \
                 + dict_weapon \
                     ["hits"] \
@@ -110,14 +110,9 @@ def get_text_html_data_unit(
                 0,
                 0)
 
-        int_key_2 = [
-            "rn",
-            "20 cm",
-            "melee"] \
-            .index(
-                dict_action \
-                    ["data"] \
-                    ["range"])
+        int_key_2 = dict_action \
+            ["data"] \
+            ["range"]
 
         int_key_3 = dict_action \
             ["data"] \
