@@ -63,14 +63,13 @@ def get_text_html_data_unit(
                     .join(list_texts_keywords) \
                 + "]"
 
-        return "<div class=\"unit_property " \
-            + ("enhancement" if dict_action["is_enhancement"] else "") \
+        return "<div class=\"unit_property" \
+            + (" enhancement" if dict_action["is_enhancement"] else "") \
+            + ("" if dict_action["is_visible"] or bool_show_invisible_enhancements else " invisible") \
             + "\" title=\"" \
             + DICT_DESCRIPTIONS_ACTIONS \
                 [text_type_action] \
-            + "\"" \
-            + ("" if dict_action["is_visible"] or bool_show_invisible_enhancements else " style=\"display: none;\"") \
-            + ">" \
+            + "\">" \
             + get_text_content() \
             + "</div>"
 

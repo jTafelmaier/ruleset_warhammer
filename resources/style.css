@@ -11,6 +11,10 @@ body {
     width: 100%;
 }
 
+.invisible {
+    display: none;
+}
+
 #main {
     width: 80%;
     margin-top: 50px;
@@ -315,7 +319,6 @@ body {
     color: #4a5266;
     text-align: center;
     margin-top: 5px;
-    line-height: 14px;
 }
 
 .reveal_enhancements {
@@ -324,13 +327,16 @@ body {
     margin-top: 5px;
 }
 
-.increase {
+.reveal_enhancements.revealed {
+    color: #2e3544;
+}
+
+.increase, .decrease {
     font-size: x-small;
 }
 
 .decrease {
     line-height: 10px;
-    font-size: x-small;
 }
 
 .increase:hover {
