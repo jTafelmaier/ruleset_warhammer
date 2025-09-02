@@ -188,7 +188,7 @@ body {
 
 .unit {
     width: 450px;
-    height: 200px;
+    height: 210px;
     background-image: url("background.png");
     background-size: cover;
     box-shadow: inset 300px 0px 400px -100px #2e3544;
@@ -238,7 +238,9 @@ body {
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
     padding: 1px 5px;
-    margin-bottom: 4px;
+    margin-bottom: 2px;
+    font-size: 15px;
+    user-select: none;
 }
 
 .enhancement {
@@ -247,8 +249,10 @@ body {
 }
 
 .unit_property span {
+    display: inline-block;
     color: white;
     font-weight: bold;
+    min-width: 15px;
 }
 
 #army_lists {
@@ -260,7 +264,7 @@ body {
 .unit_army_list {
     display: flex;
     border-radius: 5px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .destroyed .unit {

@@ -47,10 +47,12 @@ def get_text_html_data_unit(
                 filter(
                     lambda text: text is not None,
                     [
-                        ("[" + dict_weapon["range"] + "]" if dict_weapon["range"] != "rn" else None),
+                        ("[20 cm]" if dict_weapon["range"] == "20 cm" else None),
                         ("[heavy]" if dict_weapon["heavy"] else None)]))
 
-            return "<span>⚔</span>" \
+            return "<span>" \
+                + ("⚔" if dict_weapon["range"] == "melee" else "𖦏") \
+                + "</span>" \
                 + dict_weapon \
                     ["hits"] \
                     .__str__() \
