@@ -6,7 +6,6 @@
                 {
                     "name": "Captain with jump pack",
                     "points_per_model": 100,
-                    "health": 4,
                     "armor": 5,
                     "actions": [
                         {
@@ -56,7 +55,6 @@
                 {
                     "name": "Captain in gravis armour",
                     "points_per_model": 100,
-                    "health": 4,
                     "armor": 6,
                     "actions": [
                         {
@@ -103,7 +101,6 @@
                 {
                     "name": "Heavy intercessors",
                     "points_per_model": 50,
-                    "health": 4,
                     "armor": 5,
                     "actions": [
                         {
@@ -138,7 +135,6 @@
                 {
                     "name": "Eradicators",
                     "points_per_model": 50,
-                    "health": 4,
                     "armor": 5,
                     "actions": [
                         {
@@ -182,7 +178,6 @@
                 {
                     "name": "Jump pack intercessors",
                     "points_per_model": 50,
-                    "health": 4,
                     "armor": 4,
                     "actions": [
                         {
@@ -226,7 +221,6 @@
                 {
                     "name": "Gladiator lancer",
                     "points_per_model": 400,
-                    "health": 8,
                     "armor": 10,
                     "actions": [
                         {
@@ -283,7 +277,6 @@
                 {
                     "name": "Castellan",
                     "points_per_model": 100,
-                    "health": 4,
                     "armor": 5,
                     "actions": [
                         {
@@ -333,7 +326,6 @@
                 {
                     "name": "Sword brethren",
                     "points_per_model": 50,
-                    "health": 4,
                     "armor": 4,
                     "actions": [
                         {
@@ -377,7 +369,6 @@
                 {
                     "name": "Crusader squad",
                     "points_per_model": 50,
-                    "health": 4,
                     "armor": 4,
                     "actions": [
                         {
@@ -407,7 +398,6 @@
                 {
                     "name": "Belial",
                     "points_per_model": 200,
-                    "health": 4,
                     "armor": 6,
                     "actions": [
                         {
@@ -452,7 +442,6 @@
                 {
                     "name": "Deathwing strikemaster",
                     "points_per_model": 200,
-                    "health": 4,
                     "armor": 7,
                     "actions": [
                         {
@@ -488,7 +477,6 @@
                 {
                     "name": "Deathwing knights",
                     "points_per_model": 100,
-                    "health": 4,
                     "armor": 6,
                     "actions": [
                         {
@@ -518,7 +506,6 @@
                 {
                     "name": "Aethon Shaan",
                     "points_per_model": 200,
-                    "health": 4,
                     "armor": 5,
                     "actions": [
                         {
@@ -580,7 +567,6 @@
                 {
                     "name": "Darnath Lysander",
                     "points_per_model": 200,
-                    "health": 4,
                     "armor": 7,
                     "actions": [
                         {
@@ -625,7 +611,6 @@
                 {
                     "name": "Suboden Khan",
                     "points_per_model": 200,
-                    "health": 6,
                     "armor": 6,
                     "actions": [
                         {
@@ -664,7 +649,6 @@
                 {
                     "name": "Castellan Crowe",
                     "points_per_model": 200,
-                    "health": 4,
                     "armor": 5,
                     "actions": [
                         {
@@ -722,7 +706,6 @@
                 {
                     "name": "Lord Invocatus",
                     "points_per_model": 250,
-                    "health": 8,
                     "armor": 6,
                     "actions": [
                         {
@@ -761,7 +744,6 @@
                 {
                     "name": "Slaughterbound",
                     "points_per_model": 150,
-                    "health": 6,
                     "armor": 5,
                     "actions": [
                         {
@@ -797,7 +779,6 @@
                 {
                     "name": "Exalted Eightbound",
                     "points_per_model": 100,
-                    "health": 6,
                     "armor": 4,
                     "actions": [
                         {
@@ -847,7 +828,6 @@
                 {
                     "name": "Eightbound",
                     "points_per_model": 50,
-                    "health": 6,
                     "armor": 4,
                     "actions": [
                         {
@@ -871,7 +851,6 @@
                 {
                     "name": "Khorne Berzerkers",
                     "points_per_model": 50,
-                    "health": 4,
                     "armor": 4,
                     "actions": [
                         {
@@ -915,7 +894,6 @@
                 {
                     "name": "Jakhals",
                     "points_per_model": 10,
-                    "health": 2,
                     "armor": 1,
                     "actions": [
                         {
@@ -939,7 +917,6 @@
                 {
                     "name": "Warsmith",
                     "points_per_model": 150,
-                    "health": 4,
                     "armor": 6,
                     "actions": [
                         {
@@ -984,7 +961,6 @@
                 {
                     "name": "MkII Marines",
                     "points_per_model": 50,
-                    "health": 4,
                     "armor": 4,
                     "actions": [
                         {
@@ -1034,7 +1010,6 @@
                 {
                     "name": "MkII Assault Squad",
                     "points_per_model": 50,
-                    "health": 4,
                     "armor": 4,
                     "actions": [
                         {
@@ -1078,7 +1053,6 @@
                 {
                     "name": "Araknae accelerator platform",
                     "points_per_model": 200,
-                    "health": 8,
                     "armor": 10,
                     "actions": [
                         {
@@ -1096,7 +1070,6 @@
                 {
                     "name": "Fellblade super-heavy tank",
                     "points_per_model": 600,
-                    "health": 8,
                     "armor": 11,
                     "actions": [
                         {
@@ -1144,7 +1117,6 @@
                 {
                     "name": "Exodus",
                     "points_per_model": 200,
-                    "health": 4,
                     "armor": 5,
                     "actions": [
                         {
@@ -1212,7 +1184,6 @@
                 {
                     "name": "Hexmark destroyer",
                     "points_per_model": 250,
-                    "health": 8,
                     "armor": 6,
                     "actions": [
                         {
@@ -1254,7 +1225,6 @@
                 {
                     "name": "Warrior",
                     "points_per_model": 50,
-                    "health": 4,
                     "armor": 4,
                     "actions": [
                         {
@@ -1284,7 +1254,6 @@
                 {
                     "name": "Skorpekh destroyer",
                     "points_per_model": 100,
-                    "health": 8,
                     "armor": 6,
                     "actions": [
                         {
@@ -1314,7 +1283,6 @@
                 {
                     "name": "Lokhust destroyer - Gauss",
                     "points_per_model": 150,
-                    "health": 8,
                     "armor": 7,
                     "actions": [
                         {
@@ -1361,7 +1329,6 @@
                 {
                     "name": "Lokhust destroyer - Enmitic",
                     "points_per_model": 150,
-                    "health": 8,
                     "armor": 7,
                     "actions": [
                         {

@@ -57,8 +57,7 @@ def get_text_html_army_lists(
                 + str(dict_unit["points_per_model"]) \
                 + "\"><div class=\"unit_state\"><div class=\"health_bar\">" \
                 + ("<div class=\"token\" />" \
-                    * dict_unit \
-                        ["health"]) \
+                    * 8) \
                 + "</div><div class=\"count_models\"><div class=\"increase\" onclick=\"update_count_models(" \
                 + text_parameters_functions \
                 + ", true)\">▲</div><div class=\"count_current\" initial=\"" \
