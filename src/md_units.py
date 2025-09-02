@@ -110,18 +110,15 @@ def get_text_html_data_unit(
                 0,
                 0)
 
-        int_key_2 = dict_action \
-            ["data"] \
-            ["range"]
-
-        int_key_3 = dict_action \
-            ["data"] \
-            ["heavy"]
+        dict_data = dict_action \
+            ["data"]
 
         return (
             int_key_1,
-            int_key_2,
-            int_key_3)
+            dict_data \
+                ["range"],
+            dict_data \
+                ["heavy"])
 
     text_html_rows_actions = "" \
         .join(
