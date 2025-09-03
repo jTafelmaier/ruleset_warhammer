@@ -53,6 +53,15 @@ def get_text_html_army_lists(
                 dict_unit_army_list \
                     ["count_models"])
 
+            def get_text_html_reveal_enhancements():
+
+                if any(map(lambda dict_enhancement: not dict_enhancement["is_visible"], dict_unit["enhancements"])):
+                    return "<div class=\"reveal_enhancements\" onclick=\"reveal_enhancements(" \
+                        + text_parameters_functions \
+                        + ")\">?</div>"
+                else:
+                    return ""
+
             return "<div class=\"unit_army_list\" points_per_model=\"" \
                 + str(dict_unit["points_per_model"]) \
                 + "\"><div class=\"unit_state\"><div class=\"health_bar\">" \
@@ -66,9 +75,9 @@ def get_text_html_army_lists(
                 + text_count_models \
                 + "</div><div class=\"decrease\" onclick=\"update_count_models(" \
                 + text_parameters_functions \
-                + ", false)\">▼</div></div><div class=\"reveal_enhancements\" onclick=\"reveal_enhancements(" \
-                + text_parameters_functions \
-                + ")\">?</div></div><div onclick=\"toggle_inactive(" \
+                + ", false)\">▼</div></div>" \
+                + get_text_html_reveal_enhancements() \
+                + "</div><div onclick=\"toggle_inactive(" \
                 + text_parameters_functions \
                 + ")\">" \
                 + md_units.get_text_html_data_unit(
