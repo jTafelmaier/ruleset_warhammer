@@ -118,6 +118,7 @@ def get_text_html_data_unit(
             return (
                 int_key_1,
                 0,
+                0,
                 0)
 
         return (
@@ -126,7 +127,9 @@ def get_text_html_data_unit(
                 ["range"] \
                 * -1,
             dict_action \
-                ["heavy"])
+                ["heavy"],
+            dict_action \
+                ["strength"])
 
     def get_dict_action(
         pair_action:typing.Tuple[int, typing.Dict]):
