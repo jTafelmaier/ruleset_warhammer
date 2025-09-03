@@ -48,16 +48,24 @@ def get_text_html_faction_rules(
             def get_text_enhancement(
                 dict_enhancement:typing.Dict):
 
-                dict_action_enhancement_copy = copy.copy(
-                    dict_enhancement \
-                        ["action_gained"])
+                def get_text_action(
+                    dict_action:typing.Dict):
 
-                dict_action_enhancement_copy["is_enhancement"] = True
-                dict_action_enhancement_copy["is_revealable"] = False
-                dict_action_enhancement_copy["to_replace"] = False
+                    dict_action_copy = copy.copy(dict_action)
+
+                    dict_action_copy["is_enhancement"] = True
+                    dict_action_copy["is_revealable"] = False
+                    dict_action_copy["to_replace"] = False
+
+                    return md_units.get_text_html_action(dict_action_copy)
 
                 return "<div class=\"enhancement_option\">" \
-                    + md_units.get_text_html_action(dict_action_enhancement_copy) \
+                    + "" \
+                        .join(
+                            map(
+                                get_text_action,
+                                dict_enhancement \
+                                    ["actions_gained"])) \
                     + ("revealable" if dict_enhancement["is_revealable"] else "visible") \
                     + (", replaces index " + " and ".join(map(str, dict_enhancement["replace_ids"])) if len(dict_enhancement["replace_ids"]) > 0 else "") \
                     + "</div>"

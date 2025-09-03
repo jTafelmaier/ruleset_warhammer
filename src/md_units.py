@@ -151,18 +151,25 @@ def get_text_html_data_unit(
                     dict_unit
                         ["actions"]))))
 
-    def get_dict_action_enhancement(
+    def get_iterable_dicts_action_enhancement(
         dict_enhancement:typing.Dict):
 
-        dict_action = copy.copy(
-            dict_enhancement \
-                ["action_gained"])
+        def get_dict_action_copy(
+            dict_action:typing.Dict):
 
-        dict_action["is_enhancement"] = True
-        dict_action["is_revealable"] = dict_enhancement["is_revealable"]
-        dict_action["to_replace"] = False
+            dict_action_copy = copy.copy(dict_action)
 
-        return dict_action
+            dict_action_copy["is_enhancement"] = True
+            dict_action_copy["is_revealable"] = dict_enhancement["is_revealable"]
+            dict_action_copy["to_replace"] = False
+
+            return dict_action_copy
+
+        return list(
+            map(
+                get_dict_action_copy,
+                dict_enhancement \
+                    ["actions_gained"]))
 
     text_html_rows_actions = "" \
         .join(
@@ -170,9 +177,10 @@ def get_text_html_data_unit(
                 get_text_html_action,
                 sorted(
                     list(
-                        map(
-                            get_dict_action_enhancement,
-                            list_dicts_chosen_enhancements)) \
+                        itertools.chain(*
+                            map(
+                                get_iterable_dicts_action_enhancement,
+                                list_dicts_chosen_enhancements))) \
                         + list_dicts_actions,
                     key=get_tuple_sorting)))
 

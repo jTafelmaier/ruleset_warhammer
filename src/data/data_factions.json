@@ -35,13 +35,15 @@
                         {
                             "is_revealable": true,
                             "replace_ids": [],
-                            "action_gained": {
-                                "type": "weapon",
-                                "range": 5,
-                                "heavy": true,
-                                "hits": 1,
-                                "strength": 10
-                            }
+                            "actions_gained": [
+                                {
+                                    "type": "weapon",
+                                    "range": 5,
+                                    "heavy": true,
+                                    "hits": 1,
+                                    "strength": 10
+                                }
+                            ]
                         }
                     ]
                 },
@@ -77,10 +79,12 @@
                         {
                             "is_revealable": true,
                             "replace_ids": [],
-                            "action_gained": {
-                                "type": "scan",
-                                "parameters": ""
-                            }
+                            "actions_gained": [
+                                {
+                                    "type": "scan",
+                                    "parameters": ""
+                                }
+                            ]
                         }
                     ]
                 },
@@ -107,13 +111,15 @@
                             "replace_ids": [
                                 1
                             ],
-                            "action_gained": {
-                                "type": "weapon",
-                                "range": 1000,
-                                "heavy": true,
-                                "hits": 2,
-                                "strength": 7
-                            }
+                            "actions_gained": [
+                                {
+                                    "type": "weapon",
+                                    "range": 1000,
+                                    "heavy": true,
+                                    "hits": 2,
+                                    "strength": 7
+                                }
+                            ]
                         }
                     ]
                 },
@@ -147,13 +153,15 @@
                             "replace_ids": [
                                 2
                             ],
-                            "action_gained": {
-                                "type": "weapon",
-                                "range": 20,
-                                "heavy": true,
-                                "hits": 1,
-                                "strength": 14
-                            }
+                            "actions_gained": [
+                                {
+                                    "type": "weapon",
+                                    "range": 20,
+                                    "heavy": true,
+                                    "hits": 1,
+                                    "strength": 14
+                                }
+                            ]
                         }
                     ]
                 },
@@ -185,13 +193,15 @@
                         {
                             "is_revealable": true,
                             "replace_ids": [],
-                            "action_gained": {
-                                "type": "weapon",
-                                "range": 5,
-                                "heavy": true,
-                                "hits": 1,
-                                "strength": 10
-                            }
+                            "actions_gained": [
+                                {
+                                    "type": "weapon",
+                                    "range": 5,
+                                    "heavy": true,
+                                    "hits": 1,
+                                    "strength": 10
+                                }
+                            ]
                         }
                     ]
                 },
@@ -229,23 +239,27 @@
                             "replace_ids": [
                                 1
                             ],
-                            "action_gained": {
-                                "type": "move",
-                                "parameters": "40"
-                            }
+                            "actions_gained": [
+                                {
+                                    "type": "move",
+                                    "parameters": "40"
+                                }
+                            ]
                         },
                         {
                             "is_revealable": true,
                             "replace_ids": [
                                 3
                             ],
-                            "action_gained": {
-                                "type": "weapon",
-                                "range": 1000,
-                                "heavy": false,
-                                "hits": 1,
-                                "strength": 15
-                            }
+                            "actions_gained": [
+                                {
+                                    "type": "weapon",
+                                    "range": 1000,
+                                    "heavy": false,
+                                    "hits": 1,
+                                    "strength": 15
+                                }
+                            ]
                         }
                     ]
                 },
@@ -281,13 +295,15 @@
                         {
                             "is_revealable": false,
                             "replace_ids": [],
-                            "action_gained": {
-                                "type": "weapon",
-                                "range": 20,
-                                "heavy": false,
-                                "hits": 1,
-                                "strength": 10
-                            }
+                            "actions_gained": [
+                                {
+                                    "type": "weapon",
+                                    "range": 20,
+                                    "heavy": false,
+                                    "hits": 1,
+                                    "strength": 10
+                                }
+                            ]
                         }
                     ]
                 },
@@ -319,13 +335,15 @@
                         {
                             "is_revealable": false,
                             "replace_ids": [],
-                            "action_gained": {
-                                "type": "weapon",
-                                "range": 20,
-                                "heavy": false,
-                                "hits": 1,
-                                "strength": 10
-                            }
+                            "actions_gained": [
+                                {
+                                    "type": "weapon",
+                                    "range": 20,
+                                    "heavy": false,
+                                    "hits": 1,
+                                    "strength": 10
+                                }
+                            ]
                         }
                     ]
                 },
@@ -417,13 +435,22 @@
                             "replace_ids": [
                                 3
                             ],
-                            "action_gained": {
-                                "type": "weapon",
-                                "range": 5,
-                                "heavy": false,
-                                "hits": 1,
-                                "strength": 9
-                            }
+                            "actions_gained": [
+                                {
+                                    "type": "weapon",
+                                    "range": 5,
+                                    "heavy": false,
+                                    "hits": 2,
+                                    "strength": 7
+                                },
+                                {
+                                    "type": "weapon",
+                                    "range": 5,
+                                    "heavy": false,
+                                    "hits": 1,
+                                    "strength": 9
+                                }
+                            ]
                         }
                     ]
                 },
@@ -454,13 +481,22 @@
                             "replace_ids": [
                                 2
                             ],
-                            "action_gained": {
-                                "type": "weapon",
-                                "range": 5,
-                                "heavy": false,
-                                "hits": 1,
-                                "strength": 8
-                            }
+                            "actions_gained": [
+                                {
+                                    "type": "weapon",
+                                    "range": 5,
+                                    "heavy": false,
+                                    "hits": 2,
+                                    "strength": 6
+                                },
+                                {
+                                    "type": "weapon",
+                                    "range": 5,
+                                    "heavy": false,
+                                    "hits": 1,
+                                    "strength": 8
+                                }
+                            ]
                         }
                     ]
                 },
@@ -504,13 +540,15 @@
                         {
                             "is_revealable": true,
                             "replace_ids": [],
-                            "action_gained": {
-                                "type": "weapon",
-                                "range": 5,
-                                "heavy": true,
-                                "hits": 1,
-                                "strength": 10
-                            }
+                            "actions_gained": [
+                                {
+                                    "type": "weapon",
+                                    "range": 5,
+                                    "heavy": true,
+                                    "hits": 1,
+                                    "strength": 10
+                                }
+                            ]
                         }
                     ]
                 },
@@ -616,10 +654,12 @@
                             "replace_ids": [
                                 1
                             ],
-                            "action_gained": {
-                                "type": "move",
-                                "parameters": "fly 25"
-                            }
+                            "actions_gained": [
+                                {
+                                    "type": "move",
+                                    "parameters": "fly 25"
+                                }
+                            ]
                         }
                     ]
                 }
@@ -719,13 +759,15 @@
                             "replace_ids": [
                                 3
                             ],
-                            "action_gained": {
-                                "type": "weapon",
-                                "range": 5,
-                                "heavy": false,
-                                "hits": 1,
-                                "strength": 8
-                            }
+                            "actions_gained": [
+                                {
+                                    "type": "weapon",
+                                    "range": 5,
+                                    "heavy": false,
+                                    "hits": 1,
+                                    "strength": 8
+                                }
+                            ]
                         }
                     ]
                 },
@@ -776,13 +818,15 @@
                         {
                             "is_revealable": false,
                             "replace_ids": [],
-                            "action_gained": {
-                                "type": "weapon",
-                                "range": 5,
-                                "heavy": false,
-                                "hits": 1,
-                                "strength": 8
-                            }
+                            "actions_gained": [
+                                {
+                                    "type": "weapon",
+                                    "range": 5,
+                                    "heavy": false,
+                                    "hits": 1,
+                                    "strength": 8
+                                }
+                            ]
                         }
                     ]
                 },
@@ -874,13 +918,15 @@
                                 2,
                                 3
                             ],
-                            "action_gained": {
-                                "type": "weapon",
-                                "range": 1000,
-                                "heavy": true,
-                                "hits": 1,
-                                "strength": 7
-                            }
+                            "actions_gained": [
+                                {
+                                    "type": "weapon",
+                                    "range": 1000,
+                                    "heavy": true,
+                                    "hits": 1,
+                                    "strength": 7
+                                }
+                            ]
                         }
                     ]
                 },
@@ -912,13 +958,15 @@
                         {
                             "is_revealable": true,
                             "replace_ids": [],
-                            "action_gained": {
-                                "type": "weapon",
-                                "range": 5,
-                                "heavy": true,
-                                "hits": 1,
-                                "strength": 10
-                            }
+                            "actions_gained": [
+                                {
+                                    "type": "weapon",
+                                    "range": 5,
+                                    "heavy": true,
+                                    "hits": 1,
+                                    "strength": 10
+                                }
+                            ]
                         }
                     ]
                 },
@@ -1009,24 +1057,28 @@
                             "replace_ids": [
                                 4
                             ],
-                            "action_gained": {
-                                "type": "weapon",
-                                "range": 1000,
-                                "heavy": true,
-                                "hits": 1,
-                                "strength": 9
-                            }
+                            "actions_gained": [
+                                {
+                                    "type": "weapon",
+                                    "range": 1000,
+                                    "heavy": true,
+                                    "hits": 1,
+                                    "strength": 9
+                                }
+                            ]
                         },
                         {
                             "is_revealable": true,
                             "replace_ids": [],
-                            "action_gained": {
-                                "type": "weapon",
-                                "range": 5,
-                                "heavy": true,
-                                "hits": 1,
-                                "strength": 10
-                            }
+                            "actions_gained": [
+                                {
+                                    "type": "weapon",
+                                    "range": 5,
+                                    "heavy": true,
+                                    "hits": 1,
+                                    "strength": 10
+                                }
+                            ]
                         }
                     ]
                 }
@@ -1141,13 +1193,15 @@
                         {
                             "is_revealable": true,
                             "replace_ids": [],
-                            "action_gained": {
-                                "type": "weapon",
-                                "range": 1000,
-                                "heavy": false,
-                                "hits": 1,
-                                "strength": 12
-                            }
+                            "actions_gained": [
+                                {
+                                    "type": "weapon",
+                                    "range": 1000,
+                                    "heavy": false,
+                                    "hits": 1,
+                                    "strength": 12
+                                }
+                            ]
                         }
                     ]
                 },
