@@ -42,7 +42,7 @@
                     "enhancements": [
                         {
                             "type": "weapon",
-                            "is_visible": true,
+                            "is_revealable": false,
                             "replace_id": null,
                             "data": {
                                 "range": 5,
@@ -92,7 +92,7 @@
                     "enhancements": [
                         {
                             "type": "scan",
-                            "is_visible": false,
+                            "is_revealable": true,
                             "replace_id": null,
                             "data": {
                                 "parameters": ""
@@ -124,7 +124,7 @@
                     "enhancements": [
                         {
                             "type": "weapon",
-                            "is_visible": true,
+                            "is_revealable": false,
                             "replace_id": 1,
                             "data": {
                                 "range": 1000,
@@ -168,7 +168,7 @@
                     "enhancements": [
                         {
                             "type": "weapon",
-                            "is_visible": true,
+                            "is_revealable": false,
                             "replace_id": 2,
                             "data": {
                                 "range": 20,
@@ -212,7 +212,7 @@
                     "enhancements": [
                         {
                             "type": "weapon",
-                            "is_visible": true,
+                            "is_revealable": false,
                             "replace_id": null,
                             "data": {
                                 "range": 5,
@@ -262,7 +262,7 @@
                     "enhancements": [
                         {
                             "type": "move",
-                            "is_visible": false,
+                            "is_revealable": true,
                             "replace_id": 1,
                             "data": {
                                 "parameters": "40"
@@ -270,7 +270,7 @@
                         },
                         {
                             "type": "weapon",
-                            "is_visible": false,
+                            "is_revealable": true,
                             "replace_id": 3,
                             "data": {
                                 "range": 1000,
@@ -320,7 +320,7 @@
                     "enhancements": [
                         {
                             "type": "weapon",
-                            "is_visible": true,
+                            "is_revealable": false,
                             "replace_id": null,
                             "data": {
                                 "range": 20,
@@ -364,7 +364,7 @@
                     "enhancements": [
                         {
                             "type": "weapon",
-                            "is_visible": true,
+                            "is_revealable": false,
                             "replace_id": null,
                             "data": {
                                 "range": 20,
@@ -563,7 +563,7 @@
                     "enhancements": [
                         {
                             "type": "weapon",
-                            "is_visible": true,
+                            "is_revealable": false,
                             "replace_id": null,
                             "data": {
                                 "range": 5,
@@ -701,7 +701,7 @@
                     "enhancements": [
                         {
                             "type": "move",
-                            "is_visible": false,
+                            "is_revealable": true,
                             "replace_id": 1,
                             "data": {
                                 "parameters": "fly 25"
@@ -826,7 +826,7 @@
                     "enhancements": [
                         {
                             "type": "weapon",
-                            "is_visible": true,
+                            "is_revealable": false,
                             "replace_id": 3,
                             "data": {
                                 "range": 5,
@@ -893,7 +893,7 @@
                     "enhancements": [
                         {
                             "type": "weapon",
-                            "is_visible": true,
+                            "is_revealable": false,
                             "replace_id": null,
                             "data": {
                                 "range": 5,
@@ -1010,7 +1010,7 @@
                     "enhancements": [
                         {
                             "type": "weapon",
-                            "is_visible": true,
+                            "is_revealable": false,
                             "replace_id": 2,
                             "data": {
                                 "range": 1000,
@@ -1054,7 +1054,7 @@
                     "enhancements": [
                         {
                             "type": "weapon",
-                            "is_visible": true,
+                            "is_revealable": false,
                             "replace_id": null,
                             "data": {
                                 "range": 5,
@@ -1171,7 +1171,7 @@
                     "enhancements": [
                         {
                             "type": "weapon",
-                            "is_visible": false,
+                            "is_revealable": true,
                             "replace_id": 4,
                             "data": {
                                 "range": 1000,
@@ -1182,7 +1182,7 @@
                         },
                         {
                             "type": "weapon",
-                            "is_visible": true,
+                            "is_revealable": false,
                             "replace_id": null,
                             "data": {
                                 "range": 5,
@@ -1333,7 +1333,7 @@
                     "enhancements": [
                         {
                             "type": "weapon",
-                            "is_visible": false,
+                            "is_revealable": true,
                             "replace_id": null,
                             "data": {
                                 "range": 1000,

@@ -55,7 +55,7 @@ def get_text_html_army_lists(
 
             def get_text_html_reveal_enhancements():
 
-                if any(map(lambda dict_enhancement: not dict_enhancement["is_visible"], dict_unit["enhancements"])):
+                if any(map(lambda dict_enhancement: dict_enhancement["is_revealable"], dict_unit["enhancements"])):
                     return "<div class=\"reveal_enhancements\" onclick=\"reveal_enhancements(" \
                         + text_parameters_functions \
                         + ")\">?</div>"

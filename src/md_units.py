@@ -11,7 +11,7 @@ def get_text_html_data_unit(
     dict_unit:typing.Dict,
     name_faction:str,
     list_indices_chosen_enhancements:typing.List[int] = [],
-    bool_show_invisible_enhancements = False):
+    bool_show_revealable_enhancements = False):
 
     DICT_DESCRIPTIONS_ACTIONS = {
         "scan": "This model can perform the &quot;Scan&quot; action.",
@@ -63,7 +63,7 @@ def get_text_html_data_unit(
 
         return "<div class=\"unit_property" \
             + (" enhancement" if dict_action["is_enhancement"] else "") \
-            + (" revealable invisible" if not dict_action["is_visible"] and not bool_show_invisible_enhancements else "") \
+            + (" revealable invisible" if dict_action["is_revealable"] and not bool_show_revealable_enhancements else "") \
             + (" revealable" if dict_action["to_replace"] else "") \
             + "\" title=\"" \
             + DICT_DESCRIPTIONS_ACTIONS \
@@ -99,7 +99,7 @@ def get_text_html_data_unit(
             list_indices_chosen_enhancements))
 
     def get_set_indices_remove(
-        bool_visible:bool):
+        bool_revealable:bool):
 
         return set(
             filter(
@@ -107,12 +107,12 @@ def get_text_html_data_unit(
                 map(
                     lambda dict_enhancement: dict_enhancement["replace_id"],
                     filter(
-                        lambda dict_enhancement: dict_enhancement["is_visible"] == bool_visible,
+                        lambda dict_enhancement: dict_enhancement["is_revealable"] == bool_revealable,
                         list_dicts_chosen_enhancements))))
 
-    set_indices_remove_on_reveal = get_set_indices_remove(False)
+    set_indices_remove_on_reveal = get_set_indices_remove(True)
 
-    set_indices_remove_at_start = get_set_indices_remove(True)
+    set_indices_remove_at_start = get_set_indices_remove(False)
 
     def get_tuple_sorting(
         dict_action:typing.Dict):
@@ -146,7 +146,7 @@ def get_text_html_data_unit(
         dict_action = pair_action
 
         dict_action["is_enhancement"] = False
-        dict_action["is_visible"] = True
+        dict_action["is_revealable"] = False
         dict_action["to_replace"] = index_action in set_indices_remove_on_reveal
 
         return dict_action

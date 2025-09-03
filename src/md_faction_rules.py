@@ -48,7 +48,7 @@ def get_text_html_faction_rules(
                     dict_unit=dict_unit,
                     name_faction=name_faction,
                     list_indices_chosen_enhancements=list(range(len(dict_unit["enhancements"]))),
-                    bool_show_invisible_enhancements=True)
+                    bool_show_revealable_enhancements=True)
 
         text_html_faction = "" \
             .join(
