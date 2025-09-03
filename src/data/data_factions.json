@@ -42,7 +42,7 @@
                     "enhancements": [
                         {
                             "type": "weapon",
-                            "is_revealable": false,
+                            "is_revealable": true,
                             "replace_id": null,
                             "data": {
                                 "range": 5,
@@ -212,7 +212,7 @@
                     "enhancements": [
                         {
                             "type": "weapon",
-                            "is_revealable": false,
+                            "is_revealable": true,
                             "replace_id": null,
                             "data": {
                                 "range": 5,
@@ -481,7 +481,19 @@
                             }
                         }
                     ],
-                    "enhancements": []
+                    "enhancements": [
+                        {
+                            "type": "weapon",
+                            "is_revealable": false,
+                            "replace_id": 3,
+                            "data": {
+                                "range": 5,
+                                "heavy": false,
+                                "hits": 1,
+                                "strength": 9
+                            }
+                        }
+                    ]
                 },
                 {
                     "name": "Deathwing knights",
@@ -510,7 +522,19 @@
                             }
                         }
                     ],
-                    "enhancements": []
+                    "enhancements": [
+                        {
+                            "type": "weapon",
+                            "is_revealable": false,
+                            "replace_id": 2,
+                            "data": {
+                                "range": 5,
+                                "heavy": false,
+                                "hits": 1,
+                                "strength": 8
+                            }
+                        }
+                    ]
                 },
                 {
                     "name": "Aethon Shaan",
@@ -563,7 +587,7 @@
                     "enhancements": [
                         {
                             "type": "weapon",
-                            "is_revealable": false,
+                            "is_revealable": true,
                             "replace_id": null,
                             "data": {
                                 "range": 5,
@@ -603,7 +627,7 @@
                                 "range": 5,
                                 "heavy": false,
                                 "hits": 2,
-                                "strength": 6
+                                "strength": 7
                             }
                         },
                         {
@@ -1054,7 +1078,7 @@
                     "enhancements": [
                         {
                             "type": "weapon",
-                            "is_revealable": false,
+                            "is_revealable": true,
                             "replace_id": null,
                             "data": {
                                 "range": 5,
@@ -1182,7 +1206,7 @@
                         },
                         {
                             "type": "weapon",
-                            "is_revealable": false,
+                            "is_revealable": true,
                             "replace_id": null,
                             "data": {
                                 "range": 5,
