@@ -56,8 +56,8 @@ def get_text_html_faction_rules(
 
                 return "<div class=\"enhancement_option\">" \
                     + md_units.get_text_html_action(dict_enhancement_copy) \
-                    + ("<span>[invisible]</span>" if dict_enhancement["is_revealable"] else "") \
-                    + ("<span>[replaces index " + str(dict_enhancement["replace_id"]) + "]</span>" if dict_enhancement["replace_id"] is not None else "") \
+                    + ("revealable" if dict_enhancement["is_revealable"] else "visible") \
+                    + (", replaces index " + " and ".join(map(str, dict_enhancement["replace_ids"])) if len(dict_enhancement["replace_ids"]) > 0 else "") \
                     + "</div>"
 
             text_html_enhancements = "" \

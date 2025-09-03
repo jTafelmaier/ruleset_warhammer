@@ -1,6 +1,7 @@
 
 
 import copy
+import itertools
 import typing
 
 from src import md_shared
@@ -105,10 +106,9 @@ def get_text_html_data_unit(
         bool_revealable:bool):
 
         return set(
-            filter(
-                lambda id_to_replace: id_to_replace is not None,
-                map(
-                    lambda dict_enhancement: dict_enhancement["replace_id"],
+            itertools.chain(
+                *map(
+                    lambda dict_enhancement: dict_enhancement["replace_ids"],
                     filter(
                         lambda dict_enhancement: dict_enhancement["is_revealable"] == bool_revealable,
                         list_dicts_chosen_enhancements))))

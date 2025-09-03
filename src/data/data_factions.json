@@ -43,13 +43,13 @@
                         {
                             "type": "weapon",
                             "is_revealable": true,
-                            "replace_id": null,
                             "data": {
                                 "range": 5,
                                 "heavy": true,
                                 "hits": 1,
                                 "strength": 10
-                            }
+                            },
+                            "replace_ids": []
                         }
                     ]
                 },
@@ -93,10 +93,10 @@
                         {
                             "type": "scan",
                             "is_revealable": true,
-                            "replace_id": null,
                             "data": {
                                 "parameters": ""
-                            }
+                            },
+                            "replace_ids": []
                         }
                     ]
                 },
@@ -125,13 +125,15 @@
                         {
                             "type": "weapon",
                             "is_revealable": false,
-                            "replace_id": 1,
                             "data": {
                                 "range": 1000,
                                 "heavy": true,
                                 "hits": 2,
                                 "strength": 7
-                            }
+                            },
+                            "replace_ids": [
+                                1
+                            ]
                         }
                     ]
                 },
@@ -169,13 +171,15 @@
                         {
                             "type": "weapon",
                             "is_revealable": false,
-                            "replace_id": 2,
                             "data": {
                                 "range": 20,
                                 "heavy": true,
                                 "hits": 1,
                                 "strength": 14
-                            }
+                            },
+                            "replace_ids": [
+                                2
+                            ]
                         }
                     ]
                 },
@@ -213,13 +217,13 @@
                         {
                             "type": "weapon",
                             "is_revealable": true,
-                            "replace_id": null,
                             "data": {
                                 "range": 5,
                                 "heavy": true,
                                 "hits": 1,
                                 "strength": 10
-                            }
+                            },
+                            "replace_ids": []
                         }
                     ]
                 },
@@ -263,21 +267,25 @@
                         {
                             "type": "move",
                             "is_revealable": true,
-                            "replace_id": 1,
                             "data": {
                                 "parameters": "40"
-                            }
+                            },
+                            "replace_ids": [
+                                1
+                            ]
                         },
                         {
                             "type": "weapon",
                             "is_revealable": true,
-                            "replace_id": 3,
                             "data": {
                                 "range": 1000,
                                 "heavy": false,
                                 "hits": 1,
                                 "strength": 15
-                            }
+                            },
+                            "replace_ids": [
+                                3
+                            ]
                         }
                     ]
                 },
@@ -321,13 +329,13 @@
                         {
                             "type": "weapon",
                             "is_revealable": false,
-                            "replace_id": null,
                             "data": {
                                 "range": 20,
                                 "heavy": false,
                                 "hits": 1,
                                 "strength": 10
-                            }
+                            },
+                            "replace_ids": []
                         }
                     ]
                 },
@@ -365,13 +373,13 @@
                         {
                             "type": "weapon",
                             "is_revealable": false,
-                            "replace_id": null,
                             "data": {
                                 "range": 20,
                                 "heavy": false,
                                 "hits": 1,
                                 "strength": 10
-                            }
+                            },
+                            "replace_ids": []
                         }
                     ]
                 },
@@ -485,13 +493,15 @@
                         {
                             "type": "weapon",
                             "is_revealable": false,
-                            "replace_id": 3,
                             "data": {
                                 "range": 5,
                                 "heavy": false,
                                 "hits": 1,
                                 "strength": 9
-                            }
+                            },
+                            "replace_ids": [
+                                3
+                            ]
                         }
                     ]
                 },
@@ -526,13 +536,15 @@
                         {
                             "type": "weapon",
                             "is_revealable": false,
-                            "replace_id": 2,
                             "data": {
                                 "range": 5,
                                 "heavy": false,
                                 "hits": 1,
                                 "strength": 8
-                            }
+                            },
+                            "replace_ids": [
+                                2
+                            ]
                         }
                     ]
                 },
@@ -588,13 +600,13 @@
                         {
                             "type": "weapon",
                             "is_revealable": true,
-                            "replace_id": null,
                             "data": {
                                 "range": 5,
                                 "heavy": true,
                                 "hits": 1,
                                 "strength": 10
-                            }
+                            },
+                            "replace_ids": []
                         }
                     ]
                 },
@@ -726,10 +738,12 @@
                         {
                             "type": "move",
                             "is_revealable": true,
-                            "replace_id": 1,
                             "data": {
                                 "parameters": "fly 25"
-                            }
+                            },
+                            "replace_ids": [
+                                1
+                            ]
                         }
                     ]
                 }
@@ -851,13 +865,15 @@
                         {
                             "type": "weapon",
                             "is_revealable": false,
-                            "replace_id": 3,
                             "data": {
                                 "range": 5,
                                 "heavy": false,
                                 "hits": 1,
                                 "strength": 8
-                            }
+                            },
+                            "replace_ids": [
+                                3
+                            ]
                         }
                     ]
                 },
@@ -918,13 +934,13 @@
                         {
                             "type": "weapon",
                             "is_revealable": false,
-                            "replace_id": null,
                             "data": {
                                 "range": 5,
                                 "heavy": false,
                                 "hits": 1,
                                 "strength": 8
-                            }
+                            },
+                            "replace_ids": []
                         }
                     ]
                 },
@@ -1035,13 +1051,16 @@
                         {
                             "type": "weapon",
                             "is_revealable": false,
-                            "replace_id": 2,
                             "data": {
                                 "range": 1000,
                                 "heavy": true,
                                 "hits": 1,
                                 "strength": 7
-                            }
+                            },
+                            "replace_ids": [
+                                2,
+                                3
+                            ]
                         }
                     ]
                 },
@@ -1079,13 +1098,13 @@
                         {
                             "type": "weapon",
                             "is_revealable": true,
-                            "replace_id": null,
                             "data": {
                                 "range": 5,
                                 "heavy": true,
                                 "hits": 1,
                                 "strength": 10
-                            }
+                            },
+                            "replace_ids": []
                         }
                     ]
                 },
@@ -1196,24 +1215,26 @@
                         {
                             "type": "weapon",
                             "is_revealable": true,
-                            "replace_id": 4,
                             "data": {
                                 "range": 1000,
                                 "heavy": true,
                                 "hits": 1,
                                 "strength": 9
-                            }
+                            },
+                            "replace_ids": [
+                                4
+                            ]
                         },
                         {
                             "type": "weapon",
                             "is_revealable": true,
-                            "replace_id": null,
                             "data": {
                                 "range": 5,
                                 "heavy": true,
                                 "hits": 1,
                                 "strength": 10
-                            }
+                            },
+                            "replace_ids": []
                         }
                     ]
                 }
@@ -1358,13 +1379,13 @@
                         {
                             "type": "weapon",
                             "is_revealable": true,
-                            "replace_id": null,
                             "data": {
                                 "range": 1000,
                                 "heavy": false,
                                 "hits": 1,
                                 "strength": 12
-                            }
+                            },
+                            "replace_ids": []
                         }
                     ]
                 },
