@@ -43,6 +43,7 @@
                         {
                             "type": "weapon",
                             "is_visible": true,
+                            "replace_id": null,
                             "data": {
                                 "range": 5,
                                 "heavy": true,
@@ -92,6 +93,7 @@
                         {
                             "type": "scan",
                             "is_visible": false,
+                            "replace_id": null,
                             "data": {
                                 "parameters": ""
                             }
@@ -123,6 +125,7 @@
                         {
                             "type": "weapon",
                             "is_visible": true,
+                            "replace_id": 1,
                             "data": {
                                 "range": 1000,
                                 "heavy": true,
@@ -166,6 +169,7 @@
                         {
                             "type": "weapon",
                             "is_visible": true,
+                            "replace_id": 2,
                             "data": {
                                 "range": 20,
                                 "heavy": true,
@@ -209,6 +213,7 @@
                         {
                             "type": "weapon",
                             "is_visible": true,
+                            "replace_id": null,
                             "data": {
                                 "range": 5,
                                 "heavy": true,
@@ -258,6 +263,7 @@
                         {
                             "type": "move",
                             "is_visible": false,
+                            "replace_id": 1,
                             "data": {
                                 "parameters": "40"
                             }
@@ -265,6 +271,7 @@
                         {
                             "type": "weapon",
                             "is_visible": false,
+                            "replace_id": 3,
                             "data": {
                                 "range": 1000,
                                 "heavy": false,
@@ -314,6 +321,7 @@
                         {
                             "type": "weapon",
                             "is_visible": true,
+                            "replace_id": null,
                             "data": {
                                 "range": 20,
                                 "heavy": false,
@@ -357,6 +365,7 @@
                         {
                             "type": "weapon",
                             "is_visible": true,
+                            "replace_id": null,
                             "data": {
                                 "range": 20,
                                 "heavy": false,
@@ -555,6 +564,7 @@
                         {
                             "type": "weapon",
                             "is_visible": true,
+                            "replace_id": null,
                             "data": {
                                 "range": 5,
                                 "heavy": true,
@@ -692,6 +702,7 @@
                         {
                             "type": "move",
                             "is_visible": false,
+                            "replace_id": 1,
                             "data": {
                                 "parameters": "fly 25"
                             }
@@ -816,6 +827,7 @@
                         {
                             "type": "weapon",
                             "is_visible": true,
+                            "replace_id": 3,
                             "data": {
                                 "range": 5,
                                 "heavy": false,
@@ -882,6 +894,7 @@
                         {
                             "type": "weapon",
                             "is_visible": true,
+                            "replace_id": null,
                             "data": {
                                 "range": 5,
                                 "heavy": false,
@@ -998,6 +1011,7 @@
                         {
                             "type": "weapon",
                             "is_visible": true,
+                            "replace_id": 2,
                             "data": {
                                 "range": 1000,
                                 "heavy": true,
@@ -1041,6 +1055,7 @@
                         {
                             "type": "weapon",
                             "is_visible": true,
+                            "replace_id": null,
                             "data": {
                                 "range": 5,
                                 "heavy": true,
@@ -1157,6 +1172,7 @@
                         {
                             "type": "weapon",
                             "is_visible": false,
+                            "replace_id": 4,
                             "data": {
                                 "range": 1000,
                                 "heavy": true,
@@ -1167,6 +1183,7 @@
                         {
                             "type": "weapon",
                             "is_visible": true,
+                            "replace_id": null,
                             "data": {
                                 "range": 5,
                                 "heavy": true,
@@ -1317,6 +1334,7 @@
                         {
                             "type": "weapon",
                             "is_visible": false,
+                            "replace_id": null,
                             "data": {
                                 "range": 1000,
                                 "heavy": false,

@@ -10,7 +10,7 @@ from src import md_shared
 def get_text_html_data_unit(
     dict_unit:typing.Dict,
     name_faction:str,
-    list_indices_enhancements:typing.List[int] = [],
+    list_indices_chosen_enhancements:typing.List[int] = [],
     bool_show_invisible_enhancements = False):
 
     DICT_DESCRIPTIONS_ACTIONS = {
@@ -62,8 +62,9 @@ def get_text_html_data_unit(
                     .join(list_texts_keywords)
 
         return "<div class=\"unit_property" \
-            + (" enhancement" if dict_action.get("is_enhancement", False) else "") \
-            + (" revealable invisible" if not dict_action.get("is_visible", True) and not bool_show_invisible_enhancements else "") \
+            + (" enhancement" if dict_action["is_enhancement"] else "") \
+            + (" revealable invisible" if not dict_action["is_visible"] and not bool_show_invisible_enhancements else "") \
+            + (" revealable" if dict_action["to_replace"] else "") \
             + "\" title=\"" \
             + DICT_DESCRIPTIONS_ACTIONS \
                 [text_type_action] \
@@ -88,13 +89,30 @@ def get_text_html_data_unit(
             [index]
 
         dict_enhancement["is_enhancement"] = True
+        dict_enhancement["to_replace"] = False
 
         return dict_enhancement
 
-    list_dicts_enhancements = list(
+    list_dicts_chosen_enhancements = list(
         map(
             get_dict_enhancement,
-            list_indices_enhancements))
+            list_indices_chosen_enhancements))
+
+    def get_set_indices_remove(
+        bool_visible:bool):
+
+        return set(
+            filter(
+                lambda id_to_replace: id_to_replace is not None,
+                map(
+                    lambda dict_enhancement: dict_enhancement["replace_id"],
+                    filter(
+                        lambda dict_enhancement: dict_enhancement["is_visible"] == bool_visible,
+                        list_dicts_chosen_enhancements))))
+
+    set_indices_remove_on_reveal = get_set_indices_remove(False)
+
+    set_indices_remove_at_start = get_set_indices_remove(True)
 
     def get_tuple_sorting(
         dict_action:typing.Dict):
@@ -121,14 +139,34 @@ def get_text_html_data_unit(
             dict_data \
                 ["heavy"])
 
+    def get_dict_action(
+        pair_action:typing.Tuple[int, typing.Dict]):
+
+        index_action, \
+        dict_action = pair_action
+
+        dict_action["is_enhancement"] = False
+        dict_action["is_visible"] = True
+        dict_action["to_replace"] = index_action in set_indices_remove_on_reveal
+
+        return dict_action
+
+    list_dicts_actions = list(
+        map(
+            get_dict_action,
+            filter(
+                lambda pair_action: pair_action[0] not in set_indices_remove_at_start,
+                enumerate(
+                    dict_unit
+                        ["actions"]))))
+
     text_html_rows_actions = "" \
         .join(
             map(
                 get_text_html_action,
                 sorted(
-                    list_dicts_enhancements \
-                        + dict_unit
-                            ["actions"],
+                    list_dicts_chosen_enhancements \
+                        + list_dicts_actions,
                     key=get_tuple_sorting)))
 
     def get_text_html_armor():
