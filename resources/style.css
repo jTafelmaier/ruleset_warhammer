@@ -182,8 +182,12 @@ body {
 .faction_rules {
     display: grid;
     margin-top: 40px;
-    grid-template-columns: 500px;
+    grid-template-columns: 1000px;
     gap: 20px;
+}
+
+.unit_options {
+    display: flex;
 }
 
 .unit {
@@ -253,6 +257,14 @@ body {
     color: white;
     font-weight: bold;
     min-width: 15px;
+}
+
+.enhancement_options {
+    padding: 10px;
+}
+
+.enhancement_option {
+    margin-bottom: 10px;
 }
 
 #army_lists {

@@ -1,5 +1,6 @@
 
 
+import copy
 import typing
 
 from src import md_shared
@@ -7,70 +8,71 @@ from src import md_shared
 
 
 
+DICT_DESCRIPTIONS_ACTIONS = {
+    "scan": "This model can perform the &quot;Scan&quot; action.",
+    "score": "This model's unit can perform the &quot;Score objective&quot; action.\nFurthermore, this unit can be attached to another friendly unit at deployment, if that unit does not have a higher armor characteristic than this unit. While this unit is attached to another unit, it cannot be selected as a target unit.",
+    "move": "This model can perform the &quot;Move&quot; action.",
+    "teleportation": "This model's unit can perform the &quot;Setup teleportation&quot; and &quot;Recall&quot; actions.",
+    "weapon": "This model can perform the &quot;Attack&quot; action."}
+
+
+def get_text_html_action(
+    dict_action:typing.Dict):
+
+    text_type_action = dict_action \
+        ["type"]
+
+    def get_text_content():
+
+        if text_type_action != "weapon":
+            return "<span>" \
+                + dict_action \
+                    ["type"] \
+                + "</span> " \
+                + dict_action \
+                    ["data"] \
+                    ["parameters"]
+
+        dict_weapon = dict_action \
+            ["data"]
+
+        list_texts_keywords = list(
+            filter(
+                lambda text: text is not None,
+                [
+                    ("[20 cm]" if dict_weapon["range"] == 20 else None),
+                    ("[heavy]" if dict_weapon["heavy"] else None)]))
+
+        return "<span>" \
+            + ("⚔" if dict_weapon["range"] == 5 else "𖦏") \
+            + "</span>" \
+            + dict_weapon \
+                ["hits"] \
+                .__str__() \
+            + "x 💥" \
+            + dict_weapon \
+                ["strength"] \
+                .__str__() \
+            + " " \
+            + " " \
+                .join(list_texts_keywords)
+
+    return "<div class=\"unit_property" \
+        + (" enhancement" if dict_action["is_enhancement"] else "") \
+        + (" revealable invisible" if dict_action["is_revealable"] else "") \
+        + (" revealable" if dict_action["to_replace"] else "") \
+        + "\" title=\"" \
+        + DICT_DESCRIPTIONS_ACTIONS \
+            [text_type_action] \
+        + "\">" \
+        + get_text_content() \
+        + "</div>"
+
+
 def get_text_html_data_unit(
     dict_unit:typing.Dict,
     name_faction:str,
-    list_indices_chosen_enhancements:typing.List[int] = [],
-    bool_show_revealable_enhancements = False):
-
-    DICT_DESCRIPTIONS_ACTIONS = {
-        "scan": "This model can perform the &quot;Scan&quot; action.",
-        "score": "This model's unit can perform the &quot;Score objective&quot; action.\nFurthermore, this unit can be attached to another friendly unit at deployment, if that unit does not have a higher armor characteristic than this unit. While this unit is attached to another unit, it cannot be selected as a target unit.",
-        "move": "This model can perform the &quot;Move&quot; action.",
-        "teleportation": "This model's unit can perform the &quot;Setup teleportation&quot; and &quot;Recall&quot; actions.",
-        "weapon": "This model can perform the &quot;Attack&quot; action."}
-
-    def get_text_html_action(
-        dict_action:typing.Dict):
-
-        text_type_action = dict_action \
-            ["type"]
-
-        def get_text_content():
-
-            if text_type_action != "weapon":
-                return "<span>" \
-                    + dict_action \
-                        ["type"] \
-                    + "</span> " \
-                    + dict_action \
-                        ["data"] \
-                        ["parameters"]
-
-            dict_weapon = dict_action \
-                ["data"]
-
-            list_texts_keywords = list(
-                filter(
-                    lambda text: text is not None,
-                    [
-                        ("[20 cm]" if dict_weapon["range"] == 20 else None),
-                        ("[heavy]" if dict_weapon["heavy"] else None)]))
-
-            return "<span>" \
-                + ("⚔" if dict_weapon["range"] == 5 else "𖦏") \
-                + "</span>" \
-                + dict_weapon \
-                    ["hits"] \
-                    .__str__() \
-                + "x 💥" \
-                + dict_weapon \
-                    ["strength"] \
-                    .__str__() \
-                + " " \
-                + " " \
-                    .join(list_texts_keywords)
-
-        return "<div class=\"unit_property" \
-            + (" enhancement" if dict_action["is_enhancement"] else "") \
-            + (" revealable invisible" if dict_action["is_revealable"] and not bool_show_revealable_enhancements else "") \
-            + (" revealable" if dict_action["to_replace"] else "") \
-            + "\" title=\"" \
-            + DICT_DESCRIPTIONS_ACTIONS \
-                [text_type_action] \
-            + "\">" \
-            + get_text_content() \
-            + "</div>"
+    list_indices_chosen_enhancements:typing.List[int] = []):
 
     path_image_unit = "/" \
         .join(
@@ -84,9 +86,10 @@ def get_text_html_data_unit(
     def get_dict_enhancement(
         index:int):
 
-        dict_enhancement = dict_unit \
-            ["enhancements"] \
-            [index]
+        dict_enhancement = copy.copy(
+            dict_unit \
+                ["enhancements"] \
+                [index])
 
         dict_enhancement["is_enhancement"] = True
         dict_enhancement["to_replace"] = False
@@ -145,11 +148,13 @@ def get_text_html_data_unit(
         index_action, \
         dict_action = pair_action
 
-        dict_action["is_enhancement"] = False
-        dict_action["is_revealable"] = False
-        dict_action["to_replace"] = index_action in set_indices_remove_on_reveal
+        dict_action_copy = copy.copy(dict_action)
 
-        return dict_action
+        dict_action_copy["is_enhancement"] = False
+        dict_action_copy["is_revealable"] = False
+        dict_action_copy["to_replace"] = index_action in set_indices_remove_on_reveal
+
+        return dict_action_copy
 
     list_dicts_actions = list(
         map(

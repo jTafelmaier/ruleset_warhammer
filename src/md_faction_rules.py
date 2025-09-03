@@ -1,5 +1,6 @@
 
 
+import copy
 import typing
 
 import bs4
@@ -44,11 +45,35 @@ def get_text_html_faction_rules(
         def get_text_html_unit(
             dict_unit:typing.Dict):
 
-            return md_units.get_text_html_data_unit(
+            def get_text_enhancement(
+                dict_enhancement:typing.Dict):
+
+                dict_enhancement_copy = copy.copy(dict_enhancement)
+
+                dict_enhancement_copy["is_enhancement"] = True
+                dict_enhancement_copy["is_revealable"] = False
+                dict_enhancement_copy["to_replace"] = False
+
+                return "<div class=\"enhancement_option\">" \
+                    + md_units.get_text_html_action(dict_enhancement_copy) \
+                    + ("<span>[invisible]</span>" if dict_enhancement["is_revealable"] else "") \
+                    + ("<span>[replaces index " + str(dict_enhancement["replace_id"]) + "]</span>" if dict_enhancement["replace_id"] is not None else "") \
+                    + "</div>"
+
+            text_html_enhancements = "" \
+                .join(
+                    map(
+                        get_text_enhancement,
+                        dict_unit \
+                            ["enhancements"]))
+
+            return "<div class=\"unit_options\">" \
+                + md_units.get_text_html_data_unit(
                     dict_unit=dict_unit,
-                    name_faction=name_faction,
-                    list_indices_chosen_enhancements=list(range(len(dict_unit["enhancements"]))),
-                    bool_show_revealable_enhancements=True)
+                    name_faction=name_faction) \
+                + "<div class=\"enhancement_options\"><div>Enhancements:</div><br/>" \
+                + text_html_enhancements \
+                + "</div></div>"
 
         text_html_faction = "" \
             .join(
