@@ -12,9 +12,7 @@
         {
             "name": "Heavy intercessors",
             "count_models": 5,
-            "enhancements": [
-                0
-            ],
+            "enhancements": [],
             "attached_to_index": null
         },
         {
@@ -27,7 +25,6 @@
             "name": "Gladiator lancer",
             "count_models": 1,
             "enhancements": [
-                0,
                 1
             ],
             "attached_to_index": null
