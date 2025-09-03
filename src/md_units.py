@@ -27,31 +27,26 @@ def get_text_html_action(
 
         if text_type_action != "weapon":
             return "<span>" \
-                + dict_action \
-                    ["type"] \
+                + text_type_action \
                 + "</span> " \
                 + dict_action \
-                    ["data"] \
                     ["parameters"]
-
-        dict_weapon = dict_action \
-            ["data"]
 
         list_texts_keywords = list(
             filter(
                 lambda text: text is not None,
                 [
-                    ("[20 cm]" if dict_weapon["range"] == 20 else None),
-                    ("[heavy]" if dict_weapon["heavy"] else None)]))
+                    ("[20 cm]" if dict_action["range"] == 20 else None),
+                    ("[heavy]" if dict_action["heavy"] else None)]))
 
         return "<span>" \
-            + ("⚔" if dict_weapon["range"] == 5 else "𖦏") \
+            + ("⚔" if dict_action["range"] == 5 else "𖦏") \
             + "</span>" \
-            + dict_weapon \
+            + dict_action \
                 ["hits"] \
                 .__str__() \
             + "x 💥" \
-            + dict_weapon \
+            + dict_action \
                 ["strength"] \
                 .__str__() \
             + " " \
@@ -87,15 +82,9 @@ def get_text_html_data_unit(
     def get_dict_enhancement(
         index:int):
 
-        dict_enhancement = copy.copy(
-            dict_unit \
-                ["enhancements"] \
-                [index])
-
-        dict_enhancement["is_enhancement"] = True
-        dict_enhancement["to_replace"] = False
-
-        return dict_enhancement
+        return dict_unit \
+            ["enhancements"] \
+            [index]
 
     list_dicts_chosen_enhancements = list(
         map(
@@ -131,15 +120,12 @@ def get_text_html_data_unit(
                 0,
                 0)
 
-        dict_data = dict_action \
-            ["data"]
-
         return (
             int_key_1,
-            dict_data \
+            dict_action \
                 ["range"] \
                 * -1,
-            dict_data \
+            dict_action \
                 ["heavy"])
 
     def get_dict_action(
@@ -165,12 +151,28 @@ def get_text_html_data_unit(
                     dict_unit
                         ["actions"]))))
 
+    def get_dict_action_enhancement(
+        dict_enhancement:typing.Dict):
+
+        dict_action = copy.copy(
+            dict_enhancement \
+                ["action_gained"])
+
+        dict_action["is_enhancement"] = True
+        dict_action["is_revealable"] = dict_enhancement["is_revealable"]
+        dict_action["to_replace"] = False
+
+        return dict_action
+
     text_html_rows_actions = "" \
         .join(
             map(
                 get_text_html_action,
                 sorted(
-                    list_dicts_chosen_enhancements \
+                    list(
+                        map(
+                            get_dict_action_enhancement,
+                            list_dicts_chosen_enhancements)) \
                         + list_dicts_actions,
                     key=get_tuple_sorting)))
 

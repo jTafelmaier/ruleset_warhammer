@@ -10,46 +10,38 @@
                     "actions": [
                         {
                             "type": "score",
-                            "data": {
-                                "parameters": ""
-                            }
+                            "parameters": ""
                         },
                         {
                             "type": "move",
-                            "data": {
-                                "parameters": "fly 25"
-                            }
+                            "parameters": "fly 25"
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 1000,
-                                "heavy": false,
-                                "hits": 2,
-                                "strength": 5
-                            }
+                            "range": 1000,
+                            "heavy": false,
+                            "hits": 2,
+                            "strength": 5
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 5,
-                                "heavy": false,
-                                "hits": 2,
-                                "strength": 7
-                            }
+                            "range": 5,
+                            "heavy": false,
+                            "hits": 2,
+                            "strength": 7
                         }
                     ],
                     "enhancements": [
                         {
-                            "type": "weapon",
                             "is_revealable": true,
-                            "data": {
+                            "replace_ids": [],
+                            "action_gained": {
+                                "type": "weapon",
                                 "range": 5,
                                 "heavy": true,
                                 "hits": 1,
                                 "strength": 10
-                            },
-                            "replace_ids": []
+                            }
                         }
                     ]
                 },
@@ -60,43 +52,35 @@
                     "actions": [
                         {
                             "type": "score",
-                            "data": {
-                                "parameters": ""
-                            }
+                            "parameters": ""
                         },
                         {
                             "type": "move",
-                            "data": {
-                                "parameters": "10"
-                            }
+                            "parameters": "10"
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 1000,
-                                "heavy": false,
-                                "hits": 4,
-                                "strength": 6
-                            }
+                            "range": 1000,
+                            "heavy": false,
+                            "hits": 4,
+                            "strength": 6
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 5,
-                                "heavy": false,
-                                "hits": 2,
-                                "strength": 7
-                            }
+                            "range": 5,
+                            "heavy": false,
+                            "hits": 2,
+                            "strength": 7
                         }
                     ],
                     "enhancements": [
                         {
-                            "type": "scan",
                             "is_revealable": true,
-                            "data": {
+                            "replace_ids": [],
+                            "action_gained": {
+                                "type": "scan",
                                 "parameters": ""
-                            },
-                            "replace_ids": []
+                            }
                         }
                     ]
                 },
@@ -107,33 +91,29 @@
                     "actions": [
                         {
                             "type": "move",
-                            "data": {
-                                "parameters": "10"
-                            }
+                            "parameters": "10"
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 1000,
-                                "heavy": false,
-                                "hits": 2,
-                                "strength": 6
-                            }
+                            "range": 1000,
+                            "heavy": false,
+                            "hits": 2,
+                            "strength": 6
                         }
                     ],
                     "enhancements": [
                         {
-                            "type": "weapon",
                             "is_revealable": false,
-                            "data": {
+                            "replace_ids": [
+                                1
+                            ],
+                            "action_gained": {
+                                "type": "weapon",
                                 "range": 1000,
                                 "heavy": true,
                                 "hits": 2,
                                 "strength": 7
-                            },
-                            "replace_ids": [
-                                1
-                            ]
+                            }
                         }
                     ]
                 },
@@ -144,42 +124,36 @@
                     "actions": [
                         {
                             "type": "move",
-                            "data": {
-                                "parameters": "10"
-                            }
+                            "parameters": "10"
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 1000,
-                                "heavy": false,
-                                "hits": 1,
-                                "strength": 5
-                            }
+                            "range": 1000,
+                            "heavy": false,
+                            "hits": 1,
+                            "strength": 5
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 20,
-                                "heavy": false,
-                                "hits": 1,
-                                "strength": 12
-                            }
+                            "range": 20,
+                            "heavy": false,
+                            "hits": 1,
+                            "strength": 12
                         }
                     ],
                     "enhancements": [
                         {
-                            "type": "weapon",
                             "is_revealable": false,
-                            "data": {
+                            "replace_ids": [
+                                2
+                            ],
+                            "action_gained": {
+                                "type": "weapon",
                                 "range": 20,
                                 "heavy": true,
                                 "hits": 1,
                                 "strength": 14
-                            },
-                            "replace_ids": [
-                                2
-                            ]
+                            }
                         }
                     ]
                 },
@@ -190,40 +164,34 @@
                     "actions": [
                         {
                             "type": "move",
-                            "data": {
-                                "parameters": "fly 25"
-                            }
+                            "parameters": "fly 25"
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 1000,
-                                "heavy": false,
-                                "hits": 1,
-                                "strength": 5
-                            }
+                            "range": 1000,
+                            "heavy": false,
+                            "hits": 1,
+                            "strength": 5
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 5,
-                                "heavy": false,
-                                "hits": 2,
-                                "strength": 6
-                            }
+                            "range": 5,
+                            "heavy": false,
+                            "hits": 2,
+                            "strength": 6
                         }
                     ],
                     "enhancements": [
                         {
-                            "type": "weapon",
                             "is_revealable": true,
-                            "data": {
+                            "replace_ids": [],
+                            "action_gained": {
+                                "type": "weapon",
                                 "range": 5,
                                 "heavy": true,
                                 "hits": 1,
                                 "strength": 10
-                            },
-                            "replace_ids": []
+                            }
                         }
                     ]
                 },
@@ -234,58 +202,50 @@
                     "actions": [
                         {
                             "type": "scan",
-                            "data": {
-                                "parameters": ""
-                            }
+                            "parameters": ""
                         },
                         {
                             "type": "move",
-                            "data": {
-                                "parameters": "25"
-                            }
+                            "parameters": "25"
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 20,
-                                "heavy": false,
-                                "hits": 4,
-                                "strength": 5
-                            }
+                            "range": 20,
+                            "heavy": false,
+                            "hits": 4,
+                            "strength": 5
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 1000,
-                                "heavy": true,
-                                "hits": 1,
-                                "strength": 15
-                            }
+                            "range": 1000,
+                            "heavy": true,
+                            "hits": 1,
+                            "strength": 15
                         }
                     ],
                     "enhancements": [
                         {
-                            "type": "move",
                             "is_revealable": true,
-                            "data": {
-                                "parameters": "40"
-                            },
                             "replace_ids": [
                                 1
-                            ]
+                            ],
+                            "action_gained": {
+                                "type": "move",
+                                "parameters": "40"
+                            }
                         },
                         {
-                            "type": "weapon",
                             "is_revealable": true,
-                            "data": {
+                            "replace_ids": [
+                                3
+                            ],
+                            "action_gained": {
+                                "type": "weapon",
                                 "range": 1000,
                                 "heavy": false,
                                 "hits": 1,
                                 "strength": 15
-                            },
-                            "replace_ids": [
-                                3
-                            ]
+                            }
                         }
                     ]
                 },
@@ -296,46 +256,38 @@
                     "actions": [
                         {
                             "type": "score",
-                            "data": {
-                                "parameters": ""
-                            }
+                            "parameters": ""
                         },
                         {
                             "type": "move",
-                            "data": {
-                                "parameters": "15"
-                            }
+                            "parameters": "15"
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 1000,
-                                "heavy": false,
-                                "hits": 2,
-                                "strength": 5
-                            }
+                            "range": 1000,
+                            "heavy": false,
+                            "hits": 2,
+                            "strength": 5
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 5,
-                                "heavy": false,
-                                "hits": 2,
-                                "strength": 7
-                            }
+                            "range": 5,
+                            "heavy": false,
+                            "hits": 2,
+                            "strength": 7
                         }
                     ],
                     "enhancements": [
                         {
-                            "type": "weapon",
                             "is_revealable": false,
-                            "data": {
+                            "replace_ids": [],
+                            "action_gained": {
+                                "type": "weapon",
                                 "range": 20,
                                 "heavy": false,
                                 "hits": 1,
                                 "strength": 10
-                            },
-                            "replace_ids": []
+                            }
                         }
                     ]
                 },
@@ -346,40 +298,34 @@
                     "actions": [
                         {
                             "type": "move",
-                            "data": {
-                                "parameters": "15"
-                            }
+                            "parameters": "15"
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 1000,
-                                "heavy": false,
-                                "hits": 1,
-                                "strength": 5
-                            }
+                            "range": 1000,
+                            "heavy": false,
+                            "hits": 1,
+                            "strength": 5
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 5,
-                                "heavy": false,
-                                "hits": 2,
-                                "strength": 6
-                            }
+                            "range": 5,
+                            "heavy": false,
+                            "hits": 2,
+                            "strength": 6
                         }
                     ],
                     "enhancements": [
                         {
-                            "type": "weapon",
                             "is_revealable": false,
-                            "data": {
+                            "replace_ids": [],
+                            "action_gained": {
+                                "type": "weapon",
                                 "range": 20,
                                 "heavy": false,
                                 "hits": 1,
                                 "strength": 10
-                            },
-                            "replace_ids": []
+                            }
                         }
                     ]
                 },
@@ -390,24 +336,18 @@
                     "actions": [
                         {
                             "type": "scan",
-                            "data": {
-                                "parameters": ""
-                            }
+                            "parameters": ""
                         },
                         {
                             "type": "move",
-                            "data": {
-                                "parameters": "15"
-                            }
+                            "parameters": "15"
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 1000,
-                                "heavy": false,
-                                "hits": 2,
-                                "strength": 5
-                            }
+                            "range": 1000,
+                            "heavy": false,
+                            "hits": 2,
+                            "strength": 5
                         }
                     ],
                     "enhancements": []
@@ -419,39 +359,29 @@
                     "actions": [
                         {
                             "type": "score",
-                            "data": {
-                                "parameters": ""
-                            }
+                            "parameters": ""
                         },
                         {
                             "type": "move",
-                            "data": {
-                                "parameters": "10"
-                            }
+                            "parameters": "10"
                         },
                         {
                             "type": "teleportation",
-                            "data": {
-                                "parameters": ""
-                            }
+                            "parameters": ""
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 20,
-                                "heavy": false,
-                                "hits": 4,
-                                "strength": 5
-                            }
+                            "range": 20,
+                            "heavy": false,
+                            "hits": 4,
+                            "strength": 5
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 5,
-                                "heavy": false,
-                                "hits": 2,
-                                "strength": 8
-                            }
+                            "range": 5,
+                            "heavy": false,
+                            "hits": 2,
+                            "strength": 8
                         }
                     ],
                     "enhancements": []
@@ -463,45 +393,37 @@
                     "actions": [
                         {
                             "type": "score",
-                            "data": {
-                                "parameters": ""
-                            }
+                            "parameters": ""
                         },
                         {
                             "type": "move",
-                            "data": {
-                                "parameters": "10"
-                            }
+                            "parameters": "10"
                         },
                         {
                             "type": "teleportation",
-                            "data": {
-                                "parameters": ""
-                            }
+                            "parameters": ""
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 5,
-                                "heavy": false,
-                                "hits": 2,
-                                "strength": 8
-                            }
+                            "range": 5,
+                            "heavy": false,
+                            "hits": 2,
+                            "strength": 8
                         }
                     ],
                     "enhancements": [
                         {
-                            "type": "weapon",
                             "is_revealable": false,
-                            "data": {
+                            "replace_ids": [
+                                3
+                            ],
+                            "action_gained": {
+                                "type": "weapon",
                                 "range": 5,
                                 "heavy": false,
                                 "hits": 1,
                                 "strength": 9
-                            },
-                            "replace_ids": [
-                                3
-                            ]
+                            }
                         }
                     ]
                 },
@@ -512,39 +434,33 @@
                     "actions": [
                         {
                             "type": "move",
-                            "data": {
-                                "parameters": "10"
-                            }
+                            "parameters": "10"
                         },
                         {
                             "type": "teleportation",
-                            "data": {
-                                "parameters": ""
-                            }
+                            "parameters": ""
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 5,
-                                "heavy": false,
-                                "hits": 2,
-                                "strength": 7
-                            }
+                            "range": 5,
+                            "heavy": false,
+                            "hits": 2,
+                            "strength": 7
                         }
                     ],
                     "enhancements": [
                         {
-                            "type": "weapon",
                             "is_revealable": false,
-                            "data": {
+                            "replace_ids": [
+                                2
+                            ],
+                            "action_gained": {
+                                "type": "weapon",
                                 "range": 5,
                                 "heavy": false,
                                 "hits": 1,
                                 "strength": 8
-                            },
-                            "replace_ids": [
-                                2
-                            ]
+                            }
                         }
                     ]
                 },
@@ -555,58 +471,46 @@
                     "actions": [
                         {
                             "type": "scan",
-                            "data": {
-                                "parameters": ""
-                            }
+                            "parameters": ""
                         },
                         {
                             "type": "score",
-                            "data": {
-                                "parameters": ""
-                            }
+                            "parameters": ""
                         },
                         {
                             "type": "move",
-                            "data": {
-                                "parameters": "fly 25"
-                            }
+                            "parameters": "fly 25"
                         },
                         {
                             "type": "teleportation",
-                            "data": {
-                                "parameters": ""
-                            }
+                            "parameters": ""
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 1000,
-                                "heavy": false,
-                                "hits": 2,
-                                "strength": 5
-                            }
+                            "range": 1000,
+                            "heavy": false,
+                            "hits": 2,
+                            "strength": 5
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 5,
-                                "heavy": false,
-                                "hits": 4,
-                                "strength": 7
-                            }
+                            "range": 5,
+                            "heavy": false,
+                            "hits": 4,
+                            "strength": 7
                         }
                     ],
                     "enhancements": [
                         {
-                            "type": "weapon",
                             "is_revealable": true,
-                            "data": {
+                            "replace_ids": [],
+                            "action_gained": {
+                                "type": "weapon",
                                 "range": 5,
                                 "heavy": true,
                                 "hits": 1,
                                 "strength": 10
-                            },
-                            "replace_ids": []
+                            }
                         }
                     ]
                 },
@@ -617,39 +521,29 @@
                     "actions": [
                         {
                             "type": "score",
-                            "data": {
-                                "parameters": ""
-                            }
+                            "parameters": ""
                         },
                         {
                             "type": "move",
-                            "data": {
-                                "parameters": "10"
-                            }
+                            "parameters": "10"
                         },
                         {
                             "type": "teleportation",
-                            "data": {
-                                "parameters": ""
-                            }
+                            "parameters": ""
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 5,
-                                "heavy": false,
-                                "hits": 2,
-                                "strength": 7
-                            }
+                            "range": 5,
+                            "heavy": false,
+                            "hits": 2,
+                            "strength": 7
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 5,
-                                "heavy": false,
-                                "hits": 1,
-                                "strength": 9
-                            }
+                            "range": 5,
+                            "heavy": false,
+                            "hits": 1,
+                            "strength": 9
                         }
                     ],
                     "enhancements": []
@@ -661,33 +555,25 @@
                     "actions": [
                         {
                             "type": "score",
-                            "data": {
-                                "parameters": ""
-                            }
+                            "parameters": ""
                         },
                         {
                             "type": "move",
-                            "data": {
-                                "parameters": "fly 40"
-                            }
+                            "parameters": "fly 40"
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 1000,
-                                "heavy": false,
-                                "hits": 4,
-                                "strength": 5
-                            }
+                            "range": 1000,
+                            "heavy": false,
+                            "hits": 4,
+                            "strength": 5
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 5,
-                                "heavy": false,
-                                "hits": 2,
-                                "strength": 7
-                            }
+                            "range": 5,
+                            "heavy": false,
+                            "hits": 2,
+                            "strength": 7
                         }
                     ],
                     "enhancements": []
@@ -699,51 +585,41 @@
                     "actions": [
                         {
                             "type": "score",
-                            "data": {
-                                "parameters": ""
-                            }
+                            "parameters": ""
                         },
                         {
                             "type": "move",
-                            "data": {
-                                "parameters": "15"
-                            }
+                            "parameters": "15"
                         },
                         {
                             "type": "teleportation",
-                            "data": {
-                                "parameters": ""
-                            }
+                            "parameters": ""
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 20,
-                                "heavy": false,
-                                "hits": 4,
-                                "strength": 5
-                            }
+                            "range": 20,
+                            "heavy": false,
+                            "hits": 4,
+                            "strength": 5
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 5,
-                                "heavy": false,
-                                "hits": 2,
-                                "strength": 8
-                            }
+                            "range": 5,
+                            "heavy": false,
+                            "hits": 2,
+                            "strength": 8
                         }
                     ],
                     "enhancements": [
                         {
-                            "type": "move",
                             "is_revealable": true,
-                            "data": {
-                                "parameters": "fly 25"
-                            },
                             "replace_ids": [
                                 1
-                            ]
+                            ],
+                            "action_gained": {
+                                "type": "move",
+                                "parameters": "fly 25"
+                            }
                         }
                     ]
                 }
@@ -759,33 +635,25 @@
                     "actions": [
                         {
                             "type": "score",
-                            "data": {
-                                "parameters": ""
-                            }
+                            "parameters": ""
                         },
                         {
                             "type": "move",
-                            "data": {
-                                "parameters": "25"
-                            }
+                            "parameters": "25"
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 5,
-                                "heavy": false,
-                                "hits": 1,
-                                "strength": 9
-                            }
+                            "range": 5,
+                            "heavy": false,
+                            "hits": 1,
+                            "strength": 9
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 5,
-                                "heavy": true,
-                                "hits": 4,
-                                "strength": 7
-                            }
+                            "range": 5,
+                            "heavy": true,
+                            "hits": 4,
+                            "strength": 7
                         }
                     ],
                     "enhancements": []
@@ -797,30 +665,22 @@
                     "actions": [
                         {
                             "type": "score",
-                            "data": {
-                                "parameters": ""
-                            }
+                            "parameters": ""
                         },
                         {
                             "type": "move",
-                            "data": {
-                                "parameters": "20"
-                            }
+                            "parameters": "20"
                         },
                         {
                             "type": "teleportation",
-                            "data": {
-                                "parameters": ""
-                            }
+                            "parameters": ""
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 5,
-                                "heavy": false,
-                                "hits": 2,
-                                "strength": 8
-                            }
+                            "range": 5,
+                            "heavy": false,
+                            "hits": 2,
+                            "strength": 8
                         }
                     ],
                     "enhancements": []
@@ -832,48 +692,40 @@
                     "actions": [
                         {
                             "type": "move",
-                            "data": {
-                                "parameters": "20"
-                            }
+                            "parameters": "20"
                         },
                         {
                             "type": "teleportation",
-                            "data": {
-                                "parameters": ""
-                            }
+                            "parameters": ""
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 5,
-                                "heavy": false,
-                                "hits": 2,
-                                "strength": 6
-                            }
+                            "range": 5,
+                            "heavy": false,
+                            "hits": 2,
+                            "strength": 6
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 5,
-                                "heavy": true,
-                                "hits": 1,
-                                "strength": 10
-                            }
+                            "range": 5,
+                            "heavy": true,
+                            "hits": 1,
+                            "strength": 10
                         }
                     ],
                     "enhancements": [
                         {
-                            "type": "weapon",
                             "is_revealable": false,
-                            "data": {
+                            "replace_ids": [
+                                3
+                            ],
+                            "action_gained": {
+                                "type": "weapon",
                                 "range": 5,
                                 "heavy": false,
                                 "hits": 1,
                                 "strength": 8
-                            },
-                            "replace_ids": [
-                                3
-                            ]
+                            }
                         }
                     ]
                 },
@@ -884,18 +736,14 @@
                     "actions": [
                         {
                             "type": "move",
-                            "data": {
-                                "parameters": "20"
-                            }
+                            "parameters": "20"
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 5,
-                                "heavy": false,
-                                "hits": 2,
-                                "strength": 6
-                            }
+                            "range": 5,
+                            "heavy": false,
+                            "hits": 2,
+                            "strength": 6
                         }
                     ],
                     "enhancements": []
@@ -907,40 +755,34 @@
                     "actions": [
                         {
                             "type": "move",
-                            "data": {
-                                "parameters": "20"
-                            }
+                            "parameters": "20"
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 1000,
-                                "heavy": false,
-                                "hits": 1,
-                                "strength": 5
-                            }
+                            "range": 1000,
+                            "heavy": false,
+                            "hits": 1,
+                            "strength": 5
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 5,
-                                "heavy": false,
-                                "hits": 2,
-                                "strength": 6
-                            }
+                            "range": 5,
+                            "heavy": false,
+                            "hits": 2,
+                            "strength": 6
                         }
                     ],
                     "enhancements": [
                         {
-                            "type": "weapon",
                             "is_revealable": false,
-                            "data": {
+                            "replace_ids": [],
+                            "action_gained": {
+                                "type": "weapon",
                                 "range": 5,
                                 "heavy": false,
                                 "hits": 1,
                                 "strength": 8
-                            },
-                            "replace_ids": []
+                            }
                         }
                     ]
                 },
@@ -951,18 +793,14 @@
                     "actions": [
                         {
                             "type": "move",
-                            "data": {
-                                "parameters": "10"
-                            }
+                            "parameters": "10"
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 5,
-                                "heavy": false,
-                                "hits": 2,
-                                "strength": 4
-                            }
+                            "range": 5,
+                            "heavy": false,
+                            "hits": 2,
+                            "strength": 4
                         }
                     ],
                     "enhancements": []
@@ -974,39 +812,29 @@
                     "actions": [
                         {
                             "type": "scan",
-                            "data": {
-                                "parameters": ""
-                            }
+                            "parameters": ""
                         },
                         {
                             "type": "score",
-                            "data": {
-                                "parameters": ""
-                            }
+                            "parameters": ""
                         },
                         {
                             "type": "move",
-                            "data": {
-                                "parameters": "10"
-                            }
+                            "parameters": "10"
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 1000,
-                                "heavy": true,
-                                "hits": 1,
-                                "strength": 7
-                            }
+                            "range": 1000,
+                            "heavy": true,
+                            "hits": 1,
+                            "strength": 7
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 5,
-                                "heavy": true,
-                                "hits": 1,
-                                "strength": 10
-                            }
+                            "range": 5,
+                            "heavy": true,
+                            "hits": 1,
+                            "strength": 10
                         }
                     ],
                     "enhancements": []
@@ -1018,49 +846,41 @@
                     "actions": [
                         {
                             "type": "scan",
-                            "data": {
-                                "parameters": ""
-                            }
+                            "parameters": ""
                         },
                         {
                             "type": "move",
-                            "data": {
-                                "parameters": "15"
-                            }
+                            "parameters": "15"
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 1000,
-                                "heavy": false,
-                                "hits": 2,
-                                "strength": 5
-                            }
+                            "range": 1000,
+                            "heavy": false,
+                            "hits": 2,
+                            "strength": 5
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 20,
-                                "heavy": true,
-                                "hits": 1,
-                                "strength": 6
-                            }
+                            "range": 20,
+                            "heavy": true,
+                            "hits": 1,
+                            "strength": 6
                         }
                     ],
                     "enhancements": [
                         {
-                            "type": "weapon",
                             "is_revealable": false,
-                            "data": {
+                            "replace_ids": [
+                                2,
+                                3
+                            ],
+                            "action_gained": {
+                                "type": "weapon",
                                 "range": 1000,
                                 "heavy": true,
                                 "hits": 1,
                                 "strength": 7
-                            },
-                            "replace_ids": [
-                                2,
-                                3
-                            ]
+                            }
                         }
                     ]
                 },
@@ -1071,40 +891,34 @@
                     "actions": [
                         {
                             "type": "move",
-                            "data": {
-                                "parameters": "fly 25"
-                            }
+                            "parameters": "fly 25"
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 1000,
-                                "heavy": false,
-                                "hits": 1,
-                                "strength": 5
-                            }
+                            "range": 1000,
+                            "heavy": false,
+                            "hits": 1,
+                            "strength": 5
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 5,
-                                "heavy": false,
-                                "hits": 2,
-                                "strength": 6
-                            }
+                            "range": 5,
+                            "heavy": false,
+                            "hits": 2,
+                            "strength": 6
                         }
                     ],
                     "enhancements": [
                         {
-                            "type": "weapon",
                             "is_revealable": true,
-                            "data": {
+                            "replace_ids": [],
+                            "action_gained": {
+                                "type": "weapon",
                                 "range": 5,
                                 "heavy": true,
                                 "hits": 1,
                                 "strength": 10
-                            },
-                            "replace_ids": []
+                            }
                         }
                     ]
                 },
@@ -1115,12 +929,10 @@
                     "actions": [
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 1000,
-                                "heavy": true,
-                                "hits": 4,
-                                "strength": 12
-                            }
+                            "range": 1000,
+                            "heavy": true,
+                            "hits": 4,
+                            "strength": 12
                         }
                     ],
                     "enhancements": []
@@ -1132,42 +944,32 @@
                     "actions": [
                         {
                             "type": "scan",
-                            "data": {
-                                "parameters": ""
-                            }
+                            "parameters": ""
                         },
                         {
                             "type": "move",
-                            "data": {
-                                "parameters": "25"
-                            }
+                            "parameters": "25"
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 1000,
-                                "heavy": false,
-                                "hits": 4,
-                                "strength": 7
-                            }
+                            "range": 1000,
+                            "heavy": false,
+                            "hits": 4,
+                            "strength": 7
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 1000,
-                                "heavy": true,
-                                "hits": 6,
-                                "strength": 6
-                            }
+                            "range": 1000,
+                            "heavy": true,
+                            "hits": 6,
+                            "strength": 6
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 1000,
-                                "heavy": true,
-                                "hits": 2,
-                                "strength": 14
-                            }
+                            "range": 1000,
+                            "heavy": true,
+                            "hits": 2,
+                            "strength": 14
                         }
                     ],
                     "enhancements": []
@@ -1179,62 +981,52 @@
                     "actions": [
                         {
                             "type": "scan",
-                            "data": {
-                                "parameters": ""
-                            }
+                            "parameters": ""
                         },
                         {
                             "type": "score",
-                            "data": {
-                                "parameters": ""
-                            }
+                            "parameters": ""
                         },
                         {
                             "type": "move",
-                            "data": {
-                                "parameters": "15"
-                            }
+                            "parameters": "15"
                         },
                         {
                             "type": "teleportation",
-                            "data": {
-                                "parameters": ""
-                            }
+                            "parameters": ""
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 1000,
-                                "heavy": true,
-                                "hits": 1,
-                                "strength": 8
-                            }
+                            "range": 1000,
+                            "heavy": true,
+                            "hits": 1,
+                            "strength": 8
                         }
                     ],
                     "enhancements": [
                         {
-                            "type": "weapon",
                             "is_revealable": true,
-                            "data": {
+                            "replace_ids": [
+                                4
+                            ],
+                            "action_gained": {
+                                "type": "weapon",
                                 "range": 1000,
                                 "heavy": true,
                                 "hits": 1,
                                 "strength": 9
-                            },
-                            "replace_ids": [
-                                4
-                            ]
+                            }
                         },
                         {
-                            "type": "weapon",
                             "is_revealable": true,
-                            "data": {
+                            "replace_ids": [],
+                            "action_gained": {
+                                "type": "weapon",
                                 "range": 5,
                                 "heavy": true,
                                 "hits": 1,
                                 "strength": 10
-                            },
-                            "replace_ids": []
+                            }
                         }
                     ]
                 }
@@ -1250,36 +1042,26 @@
                     "actions": [
                         {
                             "type": "scan",
-                            "data": {
-                                "parameters": ""
-                            }
+                            "parameters": ""
                         },
                         {
                             "type": "score",
-                            "data": {
-                                "parameters": ""
-                            }
+                            "parameters": ""
                         },
                         {
                             "type": "move",
-                            "data": {
-                                "parameters": "15"
-                            }
+                            "parameters": "15"
                         },
                         {
                             "type": "teleportation",
-                            "data": {
-                                "parameters": ""
-                            }
+                            "parameters": ""
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 1000,
-                                "heavy": false,
-                                "hits": 6,
-                                "strength": 6
-                            }
+                            "range": 1000,
+                            "heavy": false,
+                            "hits": 6,
+                            "strength": 6
                         }
                     ],
                     "enhancements": []
@@ -1291,24 +1073,18 @@
                     "actions": [
                         {
                             "type": "score",
-                            "data": {
-                                "parameters": ""
-                            }
+                            "parameters": ""
                         },
                         {
                             "type": "move",
-                            "data": {
-                                "parameters": "15"
-                            }
+                            "parameters": "15"
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 1000,
-                                "heavy": true,
-                                "hits": 1,
-                                "strength": 7
-                            }
+                            "range": 1000,
+                            "heavy": true,
+                            "hits": 1,
+                            "strength": 7
                         }
                     ],
                     "enhancements": []
@@ -1320,24 +1096,18 @@
                     "actions": [
                         {
                             "type": "score",
-                            "data": {
-                                "parameters": ""
-                            }
+                            "parameters": ""
                         },
                         {
                             "type": "move",
-                            "data": {
-                                "parameters": "15"
-                            }
+                            "parameters": "15"
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 5,
-                                "heavy": false,
-                                "hits": 2,
-                                "strength": 9
-                            }
+                            "range": 5,
+                            "heavy": false,
+                            "hits": 2,
+                            "strength": 9
                         }
                     ],
                     "enhancements": []
@@ -1349,43 +1119,35 @@
                     "actions": [
                         {
                             "type": "scan",
-                            "data": {
-                                "parameters": ""
-                            }
+                            "parameters": ""
                         },
                         {
                             "type": "score",
-                            "data": {
-                                "parameters": ""
-                            }
+                            "parameters": ""
                         },
                         {
                             "type": "move",
-                            "data": {
-                                "parameters": "fly 15"
-                            }
+                            "parameters": "fly 15"
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 1000,
-                                "heavy": true,
-                                "hits": 1,
-                                "strength": 14
-                            }
+                            "range": 1000,
+                            "heavy": true,
+                            "hits": 1,
+                            "strength": 14
                         }
                     ],
                     "enhancements": [
                         {
-                            "type": "weapon",
                             "is_revealable": true,
-                            "data": {
+                            "replace_ids": [],
+                            "action_gained": {
+                                "type": "weapon",
                                 "range": 1000,
                                 "heavy": false,
                                 "hits": 1,
                                 "strength": 12
-                            },
-                            "replace_ids": []
+                            }
                         }
                     ]
                 },
@@ -1396,30 +1158,22 @@
                     "actions": [
                         {
                             "type": "scan",
-                            "data": {
-                                "parameters": ""
-                            }
+                            "parameters": ""
                         },
                         {
                             "type": "score",
-                            "data": {
-                                "parameters": ""
-                            }
+                            "parameters": ""
                         },
                         {
                             "type": "move",
-                            "data": {
-                                "parameters": "fly 15"
-                            }
+                            "parameters": "fly 15"
                         },
                         {
                             "type": "weapon",
-                            "data": {
-                                "range": 1000,
-                                "heavy": true,
-                                "hits": 6,
-                                "strength": 7
-                            }
+                            "range": 1000,
+                            "heavy": true,
+                            "hits": 6,
+                            "strength": 7
                         }
                     ],
                     "enhancements": []
