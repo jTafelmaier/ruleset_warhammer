@@ -180,17 +180,19 @@
                                 <br/>
                                 Repeat for weapon: <b>hits</b>:
                                 <div class="indented">
-                                    Reduce unit: health by max(0, weapon: <span class="icon">💥</span><b>strength</b> - target model: <b><span class="icon">⛊</span>armor</b>).
+                                    Reduce unit: health by 2^(weapon: <span class="icon">💥</span><b>strength</b> - target model: <b><span class="icon">⛊</span>armor</b>).
                                     <br/>
                                     <br/>
-                                    If target unit: <b>health</b> is 0:
+                                    If target unit: <b>health</b> &le; 0:
                                     <div class="indented">
                                         The enemy player must choose to destroy one model in the target unit.
                                         <br/>
-                                        Then, the target unit health tokens are fully restored.
+                                        Then, the target unit health points are fully restored.
                                     </div>
                                 </div>
                             </div>
+                            <br/>
+                            Any fractional unit health point values are rounded to the next integer value.
                         </div>
                     </div>
                     <h2 class="section">

@@ -144,7 +144,7 @@
                             "range": 20,
                             "heavy": false,
                             "hits": 1,
-                            "strength": 12
+                            "strength": 10
                         }
                     ],
                     "enhancements": [
@@ -158,8 +158,8 @@
                                     "type": "weapon",
                                     "range": 20,
                                     "heavy": true,
-                                    "hits": 1,
-                                    "strength": 14
+                                    "hits": 2,
+                                    "strength": 10
                                 }
                             ]
                         }
@@ -230,7 +230,7 @@
                             "range": 1000,
                             "heavy": true,
                             "hits": 1,
-                            "strength": 15
+                            "strength": 12
                         }
                     ],
                     "enhancements": [
@@ -301,7 +301,7 @@
                                     "range": 20,
                                     "heavy": false,
                                     "hits": 1,
-                                    "strength": 10
+                                    "strength": 9
                                 }
                             ]
                         }
@@ -341,7 +341,7 @@
                                     "range": 20,
                                     "heavy": false,
                                     "hits": 1,
-                                    "strength": 10
+                                    "strength": 9
                                 }
                             ]
                         }
@@ -980,7 +980,7 @@
                             "range": 1000,
                             "heavy": true,
                             "hits": 4,
-                            "strength": 12
+                            "strength": 9
                         }
                     ],
                     "enhancements": []
@@ -1017,7 +1017,7 @@
                             "range": 1000,
                             "heavy": true,
                             "hits": 2,
-                            "strength": 14
+                            "strength": 12
                         }
                     ],
                     "enhancements": []
@@ -1052,21 +1052,6 @@
                         }
                     ],
                     "enhancements": [
-                        {
-                            "is_revealable": true,
-                            "replace_ids": [
-                                4
-                            ],
-                            "actions_gained": [
-                                {
-                                    "type": "weapon",
-                                    "range": 1000,
-                                    "heavy": true,
-                                    "hits": 1,
-                                    "strength": 9
-                                }
-                            ]
-                        },
                         {
                             "is_revealable": true,
                             "replace_ids": [],
@@ -1113,7 +1098,7 @@
                             "range": 1000,
                             "heavy": false,
                             "hits": 6,
-                            "strength": 6
+                            "strength": 5
                         }
                     ],
                     "enhancements": []
@@ -1136,7 +1121,7 @@
                             "range": 1000,
                             "heavy": true,
                             "hits": 1,
-                            "strength": 7
+                            "strength": 6
                         }
                     ],
                     "enhancements": []
@@ -1159,7 +1144,7 @@
                             "range": 5,
                             "heavy": false,
                             "hits": 2,
-                            "strength": 9
+                            "strength": 8
                         }
                     ],
                     "enhancements": []
@@ -1179,14 +1164,14 @@
                         },
                         {
                             "type": "move",
-                            "parameters": "fly 15"
+                            "parameters": "15"
                         },
                         {
                             "type": "weapon",
                             "range": 1000,
                             "heavy": true,
                             "hits": 1,
-                            "strength": 14
+                            "strength": 12
                         }
                     ],
                     "enhancements": [
@@ -1199,7 +1184,7 @@
                                     "range": 1000,
                                     "heavy": false,
                                     "hits": 1,
-                                    "strength": 12
+                                    "strength": 11
                                 }
                             ]
                         }
@@ -1220,7 +1205,7 @@
                         },
                         {
                             "type": "move",
-                            "parameters": "fly 15"
+                            "parameters": "15"
                         },
                         {
                             "type": "weapon",
