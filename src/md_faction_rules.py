@@ -45,44 +45,42 @@ def get_text_html_faction_rules(
         def get_text_html_unit(
             dict_unit:typing.Dict):
 
-            def get_text_enhancement(
-                dict_enhancement:typing.Dict):
+            def get_text_variation(
+                dict_variation:typing.Dict):
 
                 def get_text_action(
                     dict_action:typing.Dict):
 
                     dict_action_copy = copy.copy(dict_action)
 
-                    dict_action_copy["is_enhancement"] = True
-                    dict_action_copy["is_revealable"] = False
+                    dict_action_copy["is_variation"] = False
                     dict_action_copy["to_replace"] = False
 
                     return md_units.get_text_html_action(dict_action_copy)
 
-                return "<div class=\"enhancement_option\">" \
+                return "<div class=\"variation_option\">" \
                     + "" \
                         .join(
                             map(
                                 get_text_action,
-                                dict_enhancement \
+                                dict_variation \
                                     ["actions_gained"])) \
-                    + ("revealable" if dict_enhancement["is_revealable"] else "visible") \
-                    + (", replaces index " + " and ".join(map(str, dict_enhancement["replace_ids"])) if len(dict_enhancement["replace_ids"]) > 0 else "") \
+                    + ("Replaces index " + " and ".join(map(str, dict_variation["replace_ids"]))) \
                     + "</div>"
 
-            text_html_enhancements = "" \
+            text_html_variations = "" \
                 .join(
                     map(
-                        get_text_enhancement,
+                        get_text_variation,
                         dict_unit \
-                            ["enhancements"]))
+                            ["variations"]))
 
             return "<div class=\"unit_options\">" \
                 + md_units.get_text_html_data_unit(
                     dict_unit=dict_unit,
                     name_faction=name_faction) \
-                + "<div class=\"enhancement_options\"><div>Enhancements:</div><br/>" \
-                + text_html_enhancements \
+                + "<div class=\"variation_options\"><div>Variations:</div><br/>" \
+                + text_html_variations \
                 + "</div></div>"
 
         text_html_faction = "" \

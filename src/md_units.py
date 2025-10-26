@@ -54,8 +54,7 @@ def get_text_html_action(
                 .join(list_texts_keywords)
 
     return "<div class=\"unit_property" \
-        + (" enhancement" if dict_action["is_enhancement"] else "") \
-        + (" revealable invisible" if dict_action["is_revealable"] else "") \
+        + (" revealable variation invisible" if dict_action["is_variation"] else "") \
         + (" revealable" if dict_action["to_replace"] else "") \
         + "\" title=\"" \
         + DICT_DESCRIPTIONS_ACTIONS \
@@ -68,7 +67,7 @@ def get_text_html_action(
 def get_text_html_data_unit(
     dict_unit:typing.Dict,
     name_faction:str,
-    list_indices_chosen_enhancements:typing.List[int] = []):
+    index_chosen_variation:typing.Optional[int] = None):
 
     path_image_unit = "/" \
         .join(
@@ -79,32 +78,18 @@ def get_text_html_data_unit(
                     ["name"] \
                     + ".png"])
 
-    def get_dict_enhancement(
-        index:int):
+    def get_dict_chosen_variation():
 
-        return dict_unit \
-            ["enhancements"] \
-            [index]
+        if index_chosen_variation is None:
+            return {
+                "replace_ids": [],
+                "actions_gained": []}
+        else:
+            return dict_unit \
+                ["variations"] \
+                [index_chosen_variation]
 
-    list_dicts_chosen_enhancements = list(
-        map(
-            get_dict_enhancement,
-            list_indices_chosen_enhancements))
-
-    def get_set_indices_remove(
-        bool_revealable:bool):
-
-        return set(
-            itertools.chain(
-                *map(
-                    lambda dict_enhancement: dict_enhancement["replace_ids"],
-                    filter(
-                        lambda dict_enhancement: dict_enhancement["is_revealable"] == bool_revealable,
-                        list_dicts_chosen_enhancements))))
-
-    set_indices_remove_on_reveal = get_set_indices_remove(True)
-
-    set_indices_remove_at_start = get_set_indices_remove(False)
+    dict_chosen_variation = get_dict_chosen_variation()
 
     def get_tuple_sorting(
         dict_action:typing.Dict):
@@ -139,40 +124,27 @@ def get_text_html_data_unit(
 
         dict_action_copy = copy.copy(dict_action)
 
-        dict_action_copy["is_enhancement"] = False
-        dict_action_copy["is_revealable"] = False
-        dict_action_copy["to_replace"] = index_action in set_indices_remove_on_reveal
+        dict_action_copy["is_variation"] = False
+        dict_action_copy["to_replace"] = index_action in dict_chosen_variation["replace_ids"]
 
         return dict_action_copy
 
     list_dicts_actions = list(
         map(
             get_dict_action,
-            filter(
-                lambda pair_action: pair_action[0] not in set_indices_remove_at_start,
-                enumerate(
-                    dict_unit
-                        ["actions"]))))
+            enumerate(
+                dict_unit
+                    ["actions"])))
 
-    def get_iterable_dicts_action_enhancement(
-        dict_enhancement:typing.Dict):
+    def get_dict_action_copy(
+        dict_action:typing.Dict):
 
-        def get_dict_action_copy(
-            dict_action:typing.Dict):
+        dict_action_copy = copy.copy(dict_action)
 
-            dict_action_copy = copy.copy(dict_action)
+        dict_action_copy["is_variation"] = True
+        dict_action_copy["to_replace"] = False
 
-            dict_action_copy["is_enhancement"] = True
-            dict_action_copy["is_revealable"] = dict_enhancement["is_revealable"]
-            dict_action_copy["to_replace"] = False
-
-            return dict_action_copy
-
-        return list(
-            map(
-                get_dict_action_copy,
-                dict_enhancement \
-                    ["actions_gained"]))
+        return dict_action_copy
 
     text_html_rows_actions = "" \
         .join(
@@ -180,10 +152,10 @@ def get_text_html_data_unit(
                 get_text_html_action,
                 sorted(
                     list(
-                        itertools.chain(*
-                            map(
-                                get_iterable_dicts_action_enhancement,
-                                list_dicts_chosen_enhancements))) \
+                        map(
+                            get_dict_action_copy,
+                            dict_chosen_variation \
+                                ["actions_gained"])) \
                         + list_dicts_actions,
                     key=get_tuple_sorting)))
 

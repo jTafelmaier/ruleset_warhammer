@@ -215,7 +215,7 @@ function update_count_models(
 }
 
 
-function reveal_enhancements(
+function reveal_variation(
     text_side,
     index_row) {
 
@@ -224,7 +224,7 @@ function reveal_enhancements(
         .getElementsByClassName("unit_army_list")[index_row]
 
     element_unit
-        .getElementsByClassName("reveal_enhancements")[0]
+        .getElementsByClassName("reveal_variation")[0]
         .classList
         .toggle("revealed")
 

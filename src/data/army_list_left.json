@@ -4,29 +4,25 @@
         {
             "name": "Captain in gravis armour",
             "count_models": 1,
-            "enhancements": [
-                0
-            ],
+            "variation": null,
             "attached_to_index": 2
         },
         {
             "name": "Heavy intercessors",
             "count_models": 5,
-            "enhancements": [],
+            "variation": null,
             "attached_to_index": null
         },
         {
             "name": "Eradicators",
             "count_models": 6,
-            "enhancements": [],
+            "variation": null,
             "attached_to_index": null
         },
         {
             "name": "Gladiator lancer",
             "count_models": 1,
-            "enhancements": [
-                1
-            ],
+            "variation": 0,
             "attached_to_index": null
         }
     ]

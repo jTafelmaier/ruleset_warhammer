@@ -247,7 +247,7 @@ body {
     user-select: none;
 }
 
-.enhancement {
+.variation {
     background: #4e6bfb;
     color: white;
 }
@@ -259,11 +259,11 @@ body {
     min-width: 15px;
 }
 
-.enhancement_options {
+.variation_options {
     padding: 10px;
 }
 
-.enhancement_option {
+.variation_option {
     margin-bottom: 10px;
 }
 
@@ -337,13 +337,13 @@ body {
     margin-top: 5px;
 }
 
-.reveal_enhancements {
+.reveal_variation {
     color: #4e6bfb;
     text-align: center;
     margin-top: 5px;
 }
 
-.reveal_enhancements.revealed {
+.reveal_variation.revealed {
     color: #2e3544;
 }
 

@@ -31,21 +31,7 @@
                             "strength": 7
                         }
                     ],
-                    "enhancements": [
-                        {
-                            "is_revealable": true,
-                            "replace_ids": [],
-                            "actions_gained": [
-                                {
-                                    "type": "weapon",
-                                    "range": 5,
-                                    "heavy": true,
-                                    "hits": 1,
-                                    "strength": 10
-                                }
-                            ]
-                        }
-                    ]
+                    "variations": []
                 },
                 {
                     "name": "Captain in gravis armour",
@@ -75,18 +61,7 @@
                             "strength": 7
                         }
                     ],
-                    "enhancements": [
-                        {
-                            "is_revealable": true,
-                            "replace_ids": [],
-                            "actions_gained": [
-                                {
-                                    "type": "scan",
-                                    "parameters": ""
-                                }
-                            ]
-                        }
-                    ]
+                    "variations": []
                 },
                 {
                     "name": "Heavy intercessors",
@@ -105,9 +80,8 @@
                             "strength": 6
                         }
                     ],
-                    "enhancements": [
+                    "variations": [
                         {
-                            "is_revealable": false,
                             "replace_ids": [
                                 1
                             ],
@@ -147,9 +121,8 @@
                             "strength": 10
                         }
                     ],
-                    "enhancements": [
+                    "variations": [
                         {
-                            "is_revealable": false,
                             "replace_ids": [
                                 2
                             ],
@@ -189,21 +162,7 @@
                             "strength": 6
                         }
                     ],
-                    "enhancements": [
-                        {
-                            "is_revealable": true,
-                            "replace_ids": [],
-                            "actions_gained": [
-                                {
-                                    "type": "weapon",
-                                    "range": 5,
-                                    "heavy": true,
-                                    "hits": 1,
-                                    "strength": 10
-                                }
-                            ]
-                        }
-                    ]
+                    "variations": []
                 },
                 {
                     "name": "Gladiator lancer",
@@ -233,21 +192,8 @@
                             "strength": 12
                         }
                     ],
-                    "enhancements": [
+                    "variations": [
                         {
-                            "is_revealable": true,
-                            "replace_ids": [
-                                1
-                            ],
-                            "actions_gained": [
-                                {
-                                    "type": "move",
-                                    "parameters": "40"
-                                }
-                            ]
-                        },
-                        {
-                            "is_revealable": true,
                             "replace_ids": [
                                 3
                             ],
@@ -291,21 +237,7 @@
                             "strength": 7
                         }
                     ],
-                    "enhancements": [
-                        {
-                            "is_revealable": false,
-                            "replace_ids": [],
-                            "actions_gained": [
-                                {
-                                    "type": "weapon",
-                                    "range": 20,
-                                    "heavy": false,
-                                    "hits": 1,
-                                    "strength": 9
-                                }
-                            ]
-                        }
-                    ]
+                    "variations": []
                 },
                 {
                     "name": "Sword brethren",
@@ -331,21 +263,7 @@
                             "strength": 6
                         }
                     ],
-                    "enhancements": [
-                        {
-                            "is_revealable": false,
-                            "replace_ids": [],
-                            "actions_gained": [
-                                {
-                                    "type": "weapon",
-                                    "range": 20,
-                                    "heavy": false,
-                                    "hits": 1,
-                                    "strength": 9
-                                }
-                            ]
-                        }
-                    ]
+                    "variations": []
                 },
                 {
                     "name": "Crusader squad",
@@ -368,7 +286,7 @@
                             "strength": 5
                         }
                     ],
-                    "enhancements": []
+                    "variations": []
                 },
                 {
                     "name": "Belial",
@@ -402,7 +320,7 @@
                             "strength": 8
                         }
                     ],
-                    "enhancements": []
+                    "variations": []
                 },
                 {
                     "name": "Deathwing strikemaster",
@@ -429,9 +347,8 @@
                             "strength": 8
                         }
                     ],
-                    "enhancements": [
+                    "variations": [
                         {
-                            "is_revealable": false,
                             "replace_ids": [
                                 3
                             ],
@@ -475,9 +392,8 @@
                             "strength": 7
                         }
                     ],
-                    "enhancements": [
+                    "variations": [
                         {
-                            "is_revealable": false,
                             "replace_ids": [
                                 2
                             ],
@@ -536,21 +452,7 @@
                             "strength": 7
                         }
                     ],
-                    "enhancements": [
-                        {
-                            "is_revealable": true,
-                            "replace_ids": [],
-                            "actions_gained": [
-                                {
-                                    "type": "weapon",
-                                    "range": 5,
-                                    "heavy": true,
-                                    "hits": 1,
-                                    "strength": 10
-                                }
-                            ]
-                        }
-                    ]
+                    "variations": []
                 },
                 {
                     "name": "Darnath Lysander",
@@ -584,7 +486,7 @@
                             "strength": 9
                         }
                     ],
-                    "enhancements": []
+                    "variations": []
                 },
                 {
                     "name": "Suboden Khan",
@@ -614,7 +516,7 @@
                             "strength": 7
                         }
                     ],
-                    "enhancements": []
+                    "variations": []
                 },
                 {
                     "name": "Castellan Crowe",
@@ -648,9 +550,8 @@
                             "strength": 8
                         }
                     ],
-                    "enhancements": [
+                    "variations": [
                         {
-                            "is_revealable": true,
                             "replace_ids": [
                                 1
                             ],
@@ -696,7 +597,7 @@
                             "strength": 7
                         }
                     ],
-                    "enhancements": []
+                    "variations": []
                 },
                 {
                     "name": "Slaughterbound",
@@ -723,7 +624,7 @@
                             "strength": 8
                         }
                     ],
-                    "enhancements": []
+                    "variations": []
                 },
                 {
                     "name": "Exalted Eightbound",
@@ -753,9 +654,8 @@
                             "strength": 10
                         }
                     ],
-                    "enhancements": [
+                    "variations": [
                         {
-                            "is_revealable": false,
                             "replace_ids": [
                                 3
                             ],
@@ -788,7 +688,7 @@
                             "strength": 6
                         }
                     ],
-                    "enhancements": []
+                    "variations": []
                 },
                 {
                     "name": "Khorne Berzerkers",
@@ -814,21 +714,7 @@
                             "strength": 6
                         }
                     ],
-                    "enhancements": [
-                        {
-                            "is_revealable": false,
-                            "replace_ids": [],
-                            "actions_gained": [
-                                {
-                                    "type": "weapon",
-                                    "range": 5,
-                                    "heavy": false,
-                                    "hits": 1,
-                                    "strength": 8
-                                }
-                            ]
-                        }
-                    ]
+                    "variations": []
                 },
                 {
                     "name": "Jakhals",
@@ -847,7 +733,7 @@
                             "strength": 4
                         }
                     ],
-                    "enhancements": []
+                    "variations": []
                 },
                 {
                     "name": "Warsmith",
@@ -881,7 +767,7 @@
                             "strength": 10
                         }
                     ],
-                    "enhancements": []
+                    "variations": []
                 },
                 {
                     "name": "MkII Marines",
@@ -911,9 +797,8 @@
                             "strength": 6
                         }
                     ],
-                    "enhancements": [
+                    "variations": [
                         {
-                            "is_revealable": false,
                             "replace_ids": [
                                 2,
                                 3
@@ -954,21 +839,7 @@
                             "strength": 6
                         }
                     ],
-                    "enhancements": [
-                        {
-                            "is_revealable": true,
-                            "replace_ids": [],
-                            "actions_gained": [
-                                {
-                                    "type": "weapon",
-                                    "range": 5,
-                                    "heavy": true,
-                                    "hits": 1,
-                                    "strength": 10
-                                }
-                            ]
-                        }
-                    ]
+                    "variations": []
                 },
                 {
                     "name": "Araknae accelerator platform",
@@ -983,7 +854,7 @@
                             "strength": 9
                         }
                     ],
-                    "enhancements": []
+                    "variations": []
                 },
                 {
                     "name": "Fellblade super-heavy tank",
@@ -1020,7 +891,7 @@
                             "strength": 12
                         }
                     ],
-                    "enhancements": []
+                    "variations": []
                 },
                 {
                     "name": "Exodus",
@@ -1051,21 +922,7 @@
                             "strength": 8
                         }
                     ],
-                    "enhancements": [
-                        {
-                            "is_revealable": true,
-                            "replace_ids": [],
-                            "actions_gained": [
-                                {
-                                    "type": "weapon",
-                                    "range": 5,
-                                    "heavy": true,
-                                    "hits": 1,
-                                    "strength": 10
-                                }
-                            ]
-                        }
-                    ]
+                    "variations": []
                 }
             ]
         },
@@ -1101,7 +958,7 @@
                             "strength": 5
                         }
                     ],
-                    "enhancements": []
+                    "variations": []
                 },
                 {
                     "name": "Warrior",
@@ -1124,7 +981,7 @@
                             "strength": 6
                         }
                     ],
-                    "enhancements": []
+                    "variations": []
                 },
                 {
                     "name": "Skorpekh destroyer",
@@ -1147,7 +1004,7 @@
                             "strength": 8
                         }
                     ],
-                    "enhancements": []
+                    "variations": []
                 },
                 {
                     "name": "Lokhust destroyer - Gauss",
@@ -1174,21 +1031,7 @@
                             "strength": 12
                         }
                     ],
-                    "enhancements": [
-                        {
-                            "is_revealable": true,
-                            "replace_ids": [],
-                            "actions_gained": [
-                                {
-                                    "type": "weapon",
-                                    "range": 1000,
-                                    "heavy": false,
-                                    "hits": 1,
-                                    "strength": 11
-                                }
-                            ]
-                        }
-                    ]
+                    "variations": []
                 },
                 {
                     "name": "Lokhust destroyer - Enmitic",
@@ -1215,7 +1058,7 @@
                             "strength": 7
                         }
                     ],
-                    "enhancements": []
+                    "variations": []
                 }
             ]
         }
