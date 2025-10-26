@@ -179,7 +179,7 @@
                         },
                         {
                             "type": "weapon",
-                            "range": 20,
+                            "range": 1000,
                             "heavy": false,
                             "hits": 4,
                             "strength": 5
@@ -307,7 +307,7 @@
                         },
                         {
                             "type": "weapon",
-                            "range": 20,
+                            "range": 1000,
                             "heavy": false,
                             "hits": 4,
                             "strength": 5
@@ -537,7 +537,7 @@
                         },
                         {
                             "type": "weapon",
-                            "range": 20,
+                            "range": 1000,
                             "heavy": false,
                             "hits": 4,
                             "strength": 5
@@ -788,13 +788,6 @@
                             "heavy": false,
                             "hits": 2,
                             "strength": 5
-                        },
-                        {
-                            "type": "weapon",
-                            "range": 20,
-                            "heavy": true,
-                            "hits": 1,
-                            "strength": 6
                         }
                     ],
                     "variations": [
