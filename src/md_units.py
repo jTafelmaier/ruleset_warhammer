@@ -17,6 +17,7 @@ DICT_DESCRIPTIONS_ACTIONS = {
     "kinetic": "This model can perform the &quot;Attack&quot; action.",
     "energy": "This model can perform the &quot;Attack&quot; action.",
     "melta": "This model can perform the &quot;Attack&quot; action.",
+    "blast": "This model can perform the &quot;Attack&quot; action.",
     "grav": "This model can perform the &quot;Attack&quot; action.",
     "melee": "This model can perform the &quot;Attack&quot; action."}
 
@@ -25,6 +26,7 @@ LIST_NAMES_ACTIONS_ATTACK = [
     "kinetic",
     "energy",
     "melta",
+    "blast",
     "grav",
     "melee"]
 

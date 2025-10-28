@@ -21,7 +21,7 @@
                             "type": "kinetic",
                             "heavy": false,
                             "hits": 2,
-                            "strength": 5
+                            "strength": 4
                         },
                         {
                             "type": "melee",
@@ -50,7 +50,7 @@
                             "type": "kinetic",
                             "heavy": false,
                             "hits": 4,
-                            "strength": 6
+                            "strength": 5
                         },
                         {
                             "type": "melee",
@@ -74,8 +74,8 @@
                         {
                             "type": "kinetic",
                             "heavy": false,
-                            "hits": 2,
-                            "strength": 6
+                            "hits": 4,
+                            "strength": 5
                         }
                     ],
                     "variations": [
@@ -87,8 +87,8 @@
                                 {
                                     "type": "kinetic",
                                     "heavy": true,
-                                    "hits": 2,
-                                    "strength": 7
+                                    "hits": 4,
+                                    "strength": 6
                                 }
                             ]
                         }
@@ -107,8 +107,8 @@
                         {
                             "type": "kinetic",
                             "heavy": false,
-                            "hits": 1,
-                            "strength": 5
+                            "hits": 2,
+                            "strength": 4
                         },
                         {
                             "type": "melta",
@@ -146,8 +146,8 @@
                         {
                             "type": "kinetic",
                             "heavy": false,
-                            "hits": 1,
-                            "strength": 5
+                            "hits": 2,
+                            "strength": 4
                         },
                         {
                             "type": "melee",
@@ -175,8 +175,8 @@
                         {
                             "type": "kinetic",
                             "heavy": false,
-                            "hits": 4,
-                            "strength": 5
+                            "hits": 8,
+                            "strength": 4
                         },
                         {
                             "type": "energy",
@@ -192,7 +192,7 @@
                             ],
                             "actions_gained": [
                                 {
-                                    "type": "kinetic",
+                                    "type": "energy",
                                     "heavy": false,
                                     "hits": 1,
                                     "strength": 11
@@ -219,7 +219,7 @@
                             "type": "kinetic",
                             "heavy": false,
                             "hits": 2,
-                            "strength": 5
+                            "strength": 4
                         },
                         {
                             "type": "melee",
@@ -243,8 +243,8 @@
                         {
                             "type": "kinetic",
                             "heavy": false,
-                            "hits": 1,
-                            "strength": 5
+                            "hits": 2,
+                            "strength": 4
                         },
                         {
                             "type": "melee",
@@ -272,7 +272,7 @@
                         {
                             "type": "kinetic",
                             "heavy": false,
-                            "hits": 2,
+                            "hits": 4,
                             "strength": 5
                         }
                     ],
@@ -300,7 +300,7 @@
                             "type": "kinetic",
                             "heavy": false,
                             "hits": 4,
-                            "strength": 5
+                            "strength": 4
                         },
                         {
                             "type": "melee",
@@ -427,7 +427,7 @@
                             "type": "kinetic",
                             "heavy": false,
                             "hits": 2,
-                            "strength": 5
+                            "strength": 4
                         },
                         {
                             "type": "melee",
@@ -488,8 +488,8 @@
                         {
                             "type": "kinetic",
                             "heavy": false,
-                            "hits": 4,
-                            "strength": 5
+                            "hits": 8,
+                            "strength": 4
                         },
                         {
                             "type": "melee",
@@ -522,7 +522,7 @@
                             "type": "kinetic",
                             "heavy": false,
                             "hits": 4,
-                            "strength": 5
+                            "strength": 4
                         },
                         {
                             "type": "melee",
@@ -681,8 +681,8 @@
                         {
                             "type": "kinetic",
                             "heavy": false,
-                            "hits": 1,
-                            "strength": 5
+                            "hits": 2,
+                            "strength": 4
                         },
                         {
                             "type": "melee",
@@ -762,7 +762,7 @@
                         {
                             "type": "kinetic",
                             "heavy": false,
-                            "hits": 2,
+                            "hits": 4,
                             "strength": 5
                         }
                     ],
@@ -796,8 +796,8 @@
                         {
                             "type": "kinetic",
                             "heavy": false,
-                            "hits": 1,
-                            "strength": 5
+                            "hits": 2,
+                            "strength": 4
                         },
                         {
                             "type": "melee",
@@ -817,8 +817,8 @@
                         {
                             "type": "kinetic",
                             "heavy": true,
-                            "hits": 4,
-                            "strength": 9
+                            "hits": 8,
+                            "strength": 8
                         }
                     ],
                     "variations": []
@@ -840,14 +840,14 @@
                         {
                             "type": "kinetic",
                             "heavy": false,
-                            "hits": 4,
-                            "strength": 7
+                            "hits": 8,
+                            "strength": 6
                         },
                         {
-                            "type": "kinetic",
+                            "type": "blast",
                             "heavy": true,
-                            "hits": 6,
-                            "strength": 6
+                            "hits": 1,
+                            "strength": 8
                         },
                         {
                             "type": "kinetic",
