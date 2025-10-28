@@ -14,7 +14,19 @@ DICT_DESCRIPTIONS_ACTIONS = {
     "score": "This model's unit can perform the &quot;Score objective&quot; action.\nFurthermore, this unit can be attached to another friendly unit at deployment, if that unit does not have a higher armor characteristic than this unit. While this unit is attached to another unit, it cannot be selected as a target unit.",
     "move": "This model can perform the &quot;Move&quot; action.",
     "teleportation": "This model's unit can perform the &quot;Setup teleportation&quot; and &quot;Recall&quot; actions.",
-    "weapon": "This model can perform the &quot;Attack&quot; action."}
+    "kinetic": "This model can perform the &quot;Attack&quot; action.",
+    "energy": "This model can perform the &quot;Attack&quot; action.",
+    "melta": "This model can perform the &quot;Attack&quot; action.",
+    "grav": "This model can perform the &quot;Attack&quot; action.",
+    "melee": "This model can perform the &quot;Attack&quot; action."}
+
+
+LIST_NAMES_ACTIONS_ATTACK = [
+    "kinetic",
+    "energy",
+    "melta",
+    "grav",
+    "melee"]
 
 
 def get_text_html_action(
@@ -25,22 +37,15 @@ def get_text_html_action(
 
     def get_text_content():
 
-        if text_type_action != "weapon":
+        if text_type_action not in LIST_NAMES_ACTIONS_ATTACK:
             return "<span>" \
                 + text_type_action \
                 + "</span> " \
                 + dict_action \
                     ["parameters"]
 
-        list_texts_keywords = list(
-            filter(
-                lambda text: text is not None,
-                [
-                    ("[20 cm]" if dict_action["range"] == 20 else None),
-                    ("[heavy]" if dict_action["heavy"] else None)]))
-
         return "<span>" \
-            + ("⚔" if dict_action["range"] == 5 else "𖦏") \
+            + dict_action["type"] \
             + "</span>" \
             + dict_action \
                 ["hits"] \
@@ -49,9 +54,7 @@ def get_text_html_action(
             + dict_action \
                 ["strength"] \
                 .__str__() \
-            + " " \
-            + " " \
-                .join(list_texts_keywords)
+            + (" [heavy]" if dict_action["heavy"] else "")
 
     return "<div class=\"unit_property" \
         + (" revealable variation invisible" if dict_action["is_variation"] else "") \
@@ -99,7 +102,7 @@ def get_text_html_data_unit(
                     .keys()) \
             .index(dict_action["type"])
 
-        if dict_action["type"] != "weapon":
+        if dict_action["type"] not in LIST_NAMES_ACTIONS_ATTACK:
             return (
                 int_key_1,
                 0,
@@ -109,8 +112,7 @@ def get_text_html_data_unit(
         return (
             int_key_1,
             dict_action \
-                ["range"] \
-                * -1,
+                ["type"],
             dict_action \
                 ["heavy"],
             dict_action \

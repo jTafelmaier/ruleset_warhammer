@@ -17,15 +17,13 @@
                             "parameters": "fly 25"
                         },
                         {
-                            "type": "weapon",
-                            "range": 1000,
+                            "type": "kinetic",
                             "heavy": false,
                             "hits": 2,
                             "strength": 5
                         },
                         {
-                            "type": "weapon",
-                            "range": 5,
+                            "type": "melee",
                             "heavy": false,
                             "hits": 2,
                             "strength": 7
@@ -47,15 +45,13 @@
                             "parameters": "10"
                         },
                         {
-                            "type": "weapon",
-                            "range": 1000,
+                            "type": "kinetic",
                             "heavy": false,
                             "hits": 4,
                             "strength": 6
                         },
                         {
-                            "type": "weapon",
-                            "range": 5,
+                            "type": "melee",
                             "heavy": false,
                             "hits": 2,
                             "strength": 7
@@ -73,8 +69,7 @@
                             "parameters": "10"
                         },
                         {
-                            "type": "weapon",
-                            "range": 1000,
+                            "type": "kinetic",
                             "heavy": false,
                             "hits": 2,
                             "strength": 6
@@ -87,8 +82,7 @@
                             ],
                             "actions_gained": [
                                 {
-                                    "type": "weapon",
-                                    "range": 1000,
+                                    "type": "kinetic",
                                     "heavy": true,
                                     "hits": 2,
                                     "strength": 7
@@ -107,15 +101,13 @@
                             "parameters": "10"
                         },
                         {
-                            "type": "weapon",
-                            "range": 1000,
+                            "type": "kinetic",
                             "heavy": false,
                             "hits": 1,
                             "strength": 5
                         },
                         {
-                            "type": "weapon",
-                            "range": 20,
+                            "type": "melta",
                             "heavy": false,
                             "hits": 1,
                             "strength": 10
@@ -128,8 +120,7 @@
                             ],
                             "actions_gained": [
                                 {
-                                    "type": "weapon",
-                                    "range": 20,
+                                    "type": "melta",
                                     "heavy": true,
                                     "hits": 2,
                                     "strength": 10
@@ -148,15 +139,13 @@
                             "parameters": "fly 25"
                         },
                         {
-                            "type": "weapon",
-                            "range": 1000,
+                            "type": "kinetic",
                             "heavy": false,
                             "hits": 1,
                             "strength": 5
                         },
                         {
-                            "type": "weapon",
-                            "range": 5,
+                            "type": "melee",
                             "heavy": false,
                             "hits": 2,
                             "strength": 6
@@ -178,15 +167,13 @@
                             "parameters": "25"
                         },
                         {
-                            "type": "weapon",
-                            "range": 1000,
+                            "type": "kinetic",
                             "heavy": false,
                             "hits": 4,
                             "strength": 5
                         },
                         {
-                            "type": "weapon",
-                            "range": 1000,
+                            "type": "energy",
                             "heavy": true,
                             "hits": 1,
                             "strength": 12
@@ -199,8 +186,7 @@
                             ],
                             "actions_gained": [
                                 {
-                                    "type": "weapon",
-                                    "range": 1000,
+                                    "type": "kinetic",
                                     "heavy": false,
                                     "hits": 1,
                                     "strength": 11
@@ -223,15 +209,13 @@
                             "parameters": "15"
                         },
                         {
-                            "type": "weapon",
-                            "range": 1000,
+                            "type": "kinetic",
                             "heavy": false,
                             "hits": 2,
                             "strength": 5
                         },
                         {
-                            "type": "weapon",
-                            "range": 5,
+                            "type": "melee",
                             "heavy": false,
                             "hits": 2,
                             "strength": 7
@@ -249,15 +233,13 @@
                             "parameters": "15"
                         },
                         {
-                            "type": "weapon",
-                            "range": 1000,
+                            "type": "kinetic",
                             "heavy": false,
                             "hits": 1,
                             "strength": 5
                         },
                         {
-                            "type": "weapon",
-                            "range": 5,
+                            "type": "melee",
                             "heavy": false,
                             "hits": 2,
                             "strength": 6
@@ -279,8 +261,7 @@
                             "parameters": "15"
                         },
                         {
-                            "type": "weapon",
-                            "range": 1000,
+                            "type": "kinetic",
                             "heavy": false,
                             "hits": 2,
                             "strength": 5
@@ -306,15 +287,13 @@
                             "parameters": ""
                         },
                         {
-                            "type": "weapon",
-                            "range": 1000,
+                            "type": "kinetic",
                             "heavy": false,
                             "hits": 4,
                             "strength": 5
                         },
                         {
-                            "type": "weapon",
-                            "range": 5,
+                            "type": "melee",
                             "heavy": false,
                             "hits": 2,
                             "strength": 8
@@ -340,8 +319,7 @@
                             "parameters": ""
                         },
                         {
-                            "type": "weapon",
-                            "range": 5,
+                            "type": "melee",
                             "heavy": false,
                             "hits": 2,
                             "strength": 8
@@ -354,15 +332,13 @@
                             ],
                             "actions_gained": [
                                 {
-                                    "type": "weapon",
-                                    "range": 5,
+                                    "type": "melee",
                                     "heavy": false,
                                     "hits": 2,
                                     "strength": 7
                                 },
                                 {
-                                    "type": "weapon",
-                                    "range": 5,
+                                    "type": "melee",
                                     "heavy": false,
                                     "hits": 1,
                                     "strength": 9
@@ -385,8 +361,7 @@
                             "parameters": ""
                         },
                         {
-                            "type": "weapon",
-                            "range": 5,
+                            "type": "melee",
                             "heavy": false,
                             "hits": 2,
                             "strength": 7
@@ -399,15 +374,13 @@
                             ],
                             "actions_gained": [
                                 {
-                                    "type": "weapon",
-                                    "range": 5,
+                                    "type": "melee",
                                     "heavy": false,
                                     "hits": 2,
                                     "strength": 6
                                 },
                                 {
-                                    "type": "weapon",
-                                    "range": 5,
+                                    "type": "melee",
                                     "heavy": false,
                                     "hits": 1,
                                     "strength": 8
@@ -438,15 +411,13 @@
                             "parameters": ""
                         },
                         {
-                            "type": "weapon",
-                            "range": 1000,
+                            "type": "kinetic",
                             "heavy": false,
                             "hits": 2,
                             "strength": 5
                         },
                         {
-                            "type": "weapon",
-                            "range": 5,
+                            "type": "melee",
                             "heavy": false,
                             "hits": 4,
                             "strength": 7
@@ -472,15 +443,13 @@
                             "parameters": ""
                         },
                         {
-                            "type": "weapon",
-                            "range": 5,
+                            "type": "melee",
                             "heavy": false,
                             "hits": 2,
                             "strength": 7
                         },
                         {
-                            "type": "weapon",
-                            "range": 5,
+                            "type": "melee",
                             "heavy": false,
                             "hits": 1,
                             "strength": 9
@@ -502,15 +471,13 @@
                             "parameters": "fly 40"
                         },
                         {
-                            "type": "weapon",
-                            "range": 1000,
+                            "type": "kinetic",
                             "heavy": false,
                             "hits": 4,
                             "strength": 5
                         },
                         {
-                            "type": "weapon",
-                            "range": 5,
+                            "type": "melee",
                             "heavy": false,
                             "hits": 2,
                             "strength": 7
@@ -536,15 +503,13 @@
                             "parameters": ""
                         },
                         {
-                            "type": "weapon",
-                            "range": 1000,
+                            "type": "kinetic",
                             "heavy": false,
                             "hits": 4,
                             "strength": 5
                         },
                         {
-                            "type": "weapon",
-                            "range": 5,
+                            "type": "melee",
                             "heavy": false,
                             "hits": 2,
                             "strength": 8
@@ -583,15 +548,13 @@
                             "parameters": "25"
                         },
                         {
-                            "type": "weapon",
-                            "range": 5,
+                            "type": "melee",
                             "heavy": false,
                             "hits": 1,
                             "strength": 9
                         },
                         {
-                            "type": "weapon",
-                            "range": 5,
+                            "type": "melee",
                             "heavy": true,
                             "hits": 4,
                             "strength": 7
@@ -617,8 +580,7 @@
                             "parameters": ""
                         },
                         {
-                            "type": "weapon",
-                            "range": 5,
+                            "type": "melee",
                             "heavy": false,
                             "hits": 2,
                             "strength": 8
@@ -640,15 +602,13 @@
                             "parameters": ""
                         },
                         {
-                            "type": "weapon",
-                            "range": 5,
+                            "type": "melee",
                             "heavy": false,
                             "hits": 2,
                             "strength": 6
                         },
                         {
-                            "type": "weapon",
-                            "range": 5,
+                            "type": "melee",
                             "heavy": true,
                             "hits": 1,
                             "strength": 10
@@ -661,8 +621,7 @@
                             ],
                             "actions_gained": [
                                 {
-                                    "type": "weapon",
-                                    "range": 5,
+                                    "type": "melee",
                                     "heavy": false,
                                     "hits": 1,
                                     "strength": 8
@@ -681,8 +640,7 @@
                             "parameters": "20"
                         },
                         {
-                            "type": "weapon",
-                            "range": 5,
+                            "type": "melee",
                             "heavy": false,
                             "hits": 2,
                             "strength": 6
@@ -700,15 +658,13 @@
                             "parameters": "20"
                         },
                         {
-                            "type": "weapon",
-                            "range": 1000,
+                            "type": "kinetic",
                             "heavy": false,
                             "hits": 1,
                             "strength": 5
                         },
                         {
-                            "type": "weapon",
-                            "range": 5,
+                            "type": "melee",
                             "heavy": false,
                             "hits": 2,
                             "strength": 6
@@ -726,8 +682,7 @@
                             "parameters": "10"
                         },
                         {
-                            "type": "weapon",
-                            "range": 5,
+                            "type": "melee",
                             "heavy": false,
                             "hits": 2,
                             "strength": 4
@@ -753,15 +708,13 @@
                             "parameters": "10"
                         },
                         {
-                            "type": "weapon",
-                            "range": 1000,
+                            "type": "grav",
                             "heavy": true,
                             "hits": 1,
                             "strength": 7
                         },
                         {
-                            "type": "weapon",
-                            "range": 5,
+                            "type": "melee",
                             "heavy": true,
                             "hits": 1,
                             "strength": 10
@@ -783,8 +736,7 @@
                             "parameters": "15"
                         },
                         {
-                            "type": "weapon",
-                            "range": 1000,
+                            "type": "kinetic",
                             "heavy": false,
                             "hits": 2,
                             "strength": 5
@@ -798,8 +750,7 @@
                             ],
                             "actions_gained": [
                                 {
-                                    "type": "weapon",
-                                    "range": 1000,
+                                    "type": "energy",
                                     "heavy": true,
                                     "hits": 1,
                                     "strength": 7
@@ -818,15 +769,13 @@
                             "parameters": "fly 25"
                         },
                         {
-                            "type": "weapon",
-                            "range": 1000,
+                            "type": "kinetic",
                             "heavy": false,
                             "hits": 1,
                             "strength": 5
                         },
                         {
-                            "type": "weapon",
-                            "range": 5,
+                            "type": "melee",
                             "heavy": false,
                             "hits": 2,
                             "strength": 6
@@ -840,8 +789,7 @@
                     "armor": 10,
                     "actions": [
                         {
-                            "type": "weapon",
-                            "range": 1000,
+                            "type": "kinetic",
                             "heavy": true,
                             "hits": 4,
                             "strength": 9
@@ -863,22 +811,19 @@
                             "parameters": "25"
                         },
                         {
-                            "type": "weapon",
-                            "range": 1000,
+                            "type": "kinetic",
                             "heavy": false,
                             "hits": 4,
                             "strength": 7
                         },
                         {
-                            "type": "weapon",
-                            "range": 1000,
+                            "type": "kinetic",
                             "heavy": true,
                             "hits": 6,
                             "strength": 6
                         },
                         {
-                            "type": "weapon",
-                            "range": 1000,
+                            "type": "kinetic",
                             "heavy": true,
                             "hits": 2,
                             "strength": 12
@@ -908,8 +853,7 @@
                             "parameters": ""
                         },
                         {
-                            "type": "weapon",
-                            "range": 1000,
+                            "type": "kinetic",
                             "heavy": true,
                             "hits": 1,
                             "strength": 8
@@ -944,8 +888,7 @@
                             "parameters": ""
                         },
                         {
-                            "type": "weapon",
-                            "range": 1000,
+                            "type": "kinetic",
                             "heavy": false,
                             "hits": 6,
                             "strength": 5
@@ -967,8 +910,7 @@
                             "parameters": "15"
                         },
                         {
-                            "type": "weapon",
-                            "range": 1000,
+                            "type": "energy",
                             "heavy": true,
                             "hits": 1,
                             "strength": 6
@@ -990,8 +932,7 @@
                             "parameters": "15"
                         },
                         {
-                            "type": "weapon",
-                            "range": 5,
+                            "type": "melee",
                             "heavy": false,
                             "hits": 2,
                             "strength": 8
@@ -1017,8 +958,7 @@
                             "parameters": "15"
                         },
                         {
-                            "type": "weapon",
-                            "range": 1000,
+                            "type": "energy",
                             "heavy": true,
                             "hits": 1,
                             "strength": 12
@@ -1044,8 +984,7 @@
                             "parameters": "15"
                         },
                         {
-                            "type": "weapon",
-                            "range": 1000,
+                            "type": "kinetic",
                             "heavy": true,
                             "hits": 6,
                             "strength": 7
