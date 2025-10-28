@@ -164,18 +164,22 @@
                             <div class="indented">
                                 Select one weapon and one visible enemy unit as "target unit".
                                 <br/>
-                                Units in cover are considered to have at least an <b><span class="icon">⛊</span>armor</b> characteristic of 8.
+                                During this attack, the armor value of units in cover that are not of &quot;vehicle&quot; type is increased by 1.
                                 <br/>
                                 <br/>
                                 End the attack sequence for this model if any of the following are true:
                                 <div class="indented">
                                     - No target unit can be selected
                                     <br/>
-                                    - The weapon has &quot;heavy&quot; and this is not the first action for this unit this turn.
+                                    - The weapon has &quot;heavy&quot;, this is not the first action for this unit this turn, and the target model is not of &quot;vehicle&quot; type.
                                     <br/>
-                                    - The weapon has &quot;20 cm&quot; and the target unit is not within 20 cm.
+                                    - The weapon is of &quot;melta&quot; type and the target unit is not within 20 cm.
                                     <br/>
-                                    - The weapon has &quot;melee&quot; and the target unit is not within 5 cm.
+                                    - The weapon is of &quot;melee&quot; type and the target unit is not within 5 cm.
+                                    <br/>
+                                    - The target unit is of &quot;sealed&quot; type, the weapon is of &quot;kinetic&quot;, &quot;blast&quot; or &quot;melee&quot; type, and the weapon strength is lower than the target model armor.
+                                    <br/>
+                                    - The target unit is of &quot;stealth&quot; type and not within 20 cm.
                                 </div>
                                 <br/>
                                 Repeat for weapon: <b>hits</b>:

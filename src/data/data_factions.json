@@ -7,6 +7,7 @@
                     "name": "Captain with jump pack",
                     "points_per_model": 100,
                     "armor": 5,
+                    "armor_type": "infantry",
                     "actions": [
                         {
                             "type": "score",
@@ -34,7 +35,8 @@
                 {
                     "name": "Captain in gravis armour",
                     "points_per_model": 100,
-                    "armor": 6,
+                    "armor": 5,
+                    "armor_type": "sealed",
                     "actions": [
                         {
                             "type": "score",
@@ -62,7 +64,8 @@
                 {
                     "name": "Heavy intercessors",
                     "points_per_model": 50,
-                    "armor": 5,
+                    "armor": 4,
+                    "armor_type": "sealed",
                     "actions": [
                         {
                             "type": "move",
@@ -94,7 +97,8 @@
                 {
                     "name": "Eradicators",
                     "points_per_model": 50,
-                    "armor": 5,
+                    "armor": 4,
+                    "armor_type": "sealed",
                     "actions": [
                         {
                             "type": "move",
@@ -133,6 +137,7 @@
                     "name": "Jump pack intercessors",
                     "points_per_model": 50,
                     "armor": 4,
+                    "armor_type": "infantry",
                     "actions": [
                         {
                             "type": "move",
@@ -157,6 +162,7 @@
                     "name": "Gladiator lancer",
                     "points_per_model": 400,
                     "armor": 10,
+                    "armor_type": "vehicle",
                     "actions": [
                         {
                             "type": "scan",
@@ -199,6 +205,7 @@
                     "name": "Castellan",
                     "points_per_model": 100,
                     "armor": 5,
+                    "armor_type": "infantry",
                     "actions": [
                         {
                             "type": "score",
@@ -227,6 +234,7 @@
                     "name": "Sword brethren",
                     "points_per_model": 50,
                     "armor": 4,
+                    "armor_type": "infantry",
                     "actions": [
                         {
                             "type": "move",
@@ -251,6 +259,7 @@
                     "name": "Crusader squad",
                     "points_per_model": 50,
                     "armor": 4,
+                    "armor_type": "infantry",
                     "actions": [
                         {
                             "type": "scan",
@@ -273,6 +282,7 @@
                     "name": "Belial",
                     "points_per_model": 200,
                     "armor": 6,
+                    "armor_type": "sealed",
                     "actions": [
                         {
                             "type": "score",
@@ -305,6 +315,7 @@
                     "name": "Deathwing strikemaster",
                     "points_per_model": 200,
                     "armor": 7,
+                    "armor_type": "sealed",
                     "actions": [
                         {
                             "type": "score",
@@ -351,6 +362,7 @@
                     "name": "Deathwing knights",
                     "points_per_model": 100,
                     "armor": 6,
+                    "armor_type": "sealed",
                     "actions": [
                         {
                             "type": "move",
@@ -393,6 +405,7 @@
                     "name": "Aethon Shaan",
                     "points_per_model": 200,
                     "armor": 5,
+                    "armor_type": "infantry",
                     "actions": [
                         {
                             "type": "scan",
@@ -429,6 +442,7 @@
                     "name": "Darnath Lysander",
                     "points_per_model": 200,
                     "armor": 7,
+                    "armor_type": "sealed",
                     "actions": [
                         {
                             "type": "score",
@@ -461,6 +475,7 @@
                     "name": "Suboden Khan",
                     "points_per_model": 200,
                     "armor": 6,
+                    "armor_type": "mounted",
                     "actions": [
                         {
                             "type": "score",
@@ -489,6 +504,7 @@
                     "name": "Castellan Crowe",
                     "points_per_model": 200,
                     "armor": 5,
+                    "armor_type": "infantry",
                     "actions": [
                         {
                             "type": "score",
@@ -538,6 +554,7 @@
                     "name": "Lord Invocatus",
                     "points_per_model": 250,
                     "armor": 6,
+                    "armor_type": "mounted",
                     "actions": [
                         {
                             "type": "score",
@@ -566,6 +583,7 @@
                     "name": "Slaughterbound",
                     "points_per_model": 150,
                     "armor": 5,
+                    "armor_type": "infantry",
                     "actions": [
                         {
                             "type": "score",
@@ -592,6 +610,7 @@
                     "name": "Exalted Eightbound",
                     "points_per_model": 100,
                     "armor": 4,
+                    "armor_type": "infantry",
                     "actions": [
                         {
                             "type": "move",
@@ -634,6 +653,7 @@
                     "name": "Eightbound",
                     "points_per_model": 50,
                     "armor": 4,
+                    "armor_type": "infantry",
                     "actions": [
                         {
                             "type": "move",
@@ -652,6 +672,7 @@
                     "name": "Khorne Berzerkers",
                     "points_per_model": 50,
                     "armor": 4,
+                    "armor_type": "infantry",
                     "actions": [
                         {
                             "type": "move",
@@ -676,6 +697,7 @@
                     "name": "Jakhals",
                     "points_per_model": 10,
                     "armor": 1,
+                    "armor_type": "infantry",
                     "actions": [
                         {
                             "type": "move",
@@ -694,6 +716,7 @@
                     "name": "Warsmith",
                     "points_per_model": 150,
                     "armor": 6,
+                    "armor_type": "sealed",
                     "actions": [
                         {
                             "type": "scan",
@@ -726,6 +749,7 @@
                     "name": "MkII Marines",
                     "points_per_model": 50,
                     "armor": 4,
+                    "armor_type": "infantry",
                     "actions": [
                         {
                             "type": "scan",
@@ -763,6 +787,7 @@
                     "name": "MkII Assault Squad",
                     "points_per_model": 50,
                     "armor": 4,
+                    "armor_type": "infantry",
                     "actions": [
                         {
                             "type": "move",
@@ -787,6 +812,7 @@
                     "name": "Araknae accelerator platform",
                     "points_per_model": 200,
                     "armor": 10,
+                    "armor_type": "vehicle",
                     "actions": [
                         {
                             "type": "kinetic",
@@ -801,6 +827,7 @@
                     "name": "Fellblade super-heavy tank",
                     "points_per_model": 600,
                     "armor": 11,
+                    "armor_type": "vehicle",
                     "actions": [
                         {
                             "type": "scan",
@@ -835,6 +862,7 @@
                     "name": "Exodus",
                     "points_per_model": 200,
                     "armor": 5,
+                    "armor_type": "infantry",
                     "actions": [
                         {
                             "type": "scan",
@@ -870,6 +898,7 @@
                     "name": "Hexmark destroyer",
                     "points_per_model": 250,
                     "armor": 6,
+                    "armor_type": "stealth",
                     "actions": [
                         {
                             "type": "scan",
@@ -900,6 +929,7 @@
                     "name": "Warrior",
                     "points_per_model": 50,
                     "armor": 4,
+                    "armor_type": "infantry",
                     "actions": [
                         {
                             "type": "score",
@@ -922,6 +952,7 @@
                     "name": "Skorpekh destroyer",
                     "points_per_model": 100,
                     "armor": 6,
+                    "armor_type": "infantry",
                     "actions": [
                         {
                             "type": "score",
@@ -944,6 +975,7 @@
                     "name": "Lokhust destroyer - Gauss",
                     "points_per_model": 150,
                     "armor": 7,
+                    "armor_type": "infantry",
                     "actions": [
                         {
                             "type": "scan",
@@ -970,6 +1002,7 @@
                     "name": "Lokhust destroyer - Enmitic",
                     "points_per_model": 150,
                     "armor": 7,
+                    "armor_type": "infantry",
                     "actions": [
                         {
                             "type": "scan",

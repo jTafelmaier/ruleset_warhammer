@@ -163,7 +163,9 @@ def get_text_html_data_unit(
 
     def get_text_html_armor():
 
-        return "<div class=\"unit_property\"><span>⛊</span>" \
+        return "<div class=\"unit_property\"><span>" \
+            + dict_unit["armor_type"] \
+            + "</span>" \
             + str(
                     dict_unit \
                         ["armor"]) \
