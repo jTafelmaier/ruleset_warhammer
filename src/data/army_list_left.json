@@ -22,7 +22,7 @@
         {
             "name": "Gladiator lancer",
             "count_models": 1,
-            "variation": 0,
+            "variation": null,
             "attached_to_index": null
         }
     ]

@@ -185,21 +185,7 @@
                             "strength": 12
                         }
                     ],
-                    "variations": [
-                        {
-                            "replace_ids": [
-                                3
-                            ],
-                            "actions_gained": [
-                                {
-                                    "type": "energy",
-                                    "heavy": false,
-                                    "hits": 1,
-                                    "strength": 11
-                                }
-                            ]
-                        }
-                    ]
+                    "variations": []
                 },
                 {
                     "name": "Castellan",
