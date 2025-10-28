@@ -619,21 +619,7 @@
                             "strength": 7
                         }
                     ],
-                    "variations": [
-                        {
-                            "replace_ids": [
-                                1
-                            ],
-                            "actions_gained": [
-                                {
-                                    "type": "energy",
-                                    "heavy": false,
-                                    "hits": 1,
-                                    "strength": 5
-                                }
-                            ]
-                        }
-                    ]
+                    "variations": []
                 },
                 {
                     "name": "Jakhals",
