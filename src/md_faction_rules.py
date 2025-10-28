@@ -58,7 +58,7 @@ def get_text_html_faction_rules(
 
                     return md_units.get_text_html_action(dict_action_copy)
 
-                return "<div class=\"variation_option\">" \
+                return "Variation:<br/><br/><div class=\"variation_option\">" \
                     + "" \
                         .join(
                             map(
@@ -79,7 +79,7 @@ def get_text_html_faction_rules(
                 + md_units.get_text_html_data_unit(
                     dict_unit=dict_unit,
                     name_faction=name_faction) \
-                + "<div class=\"variation_options\"><div>Variations:</div><br/>" \
+                + "<div class=\"variation_options\">" \
                 + text_html_variations \
                 + "</div></div>"
 

@@ -336,27 +336,7 @@
                             "strength": 8
                         }
                     ],
-                    "variations": [
-                        {
-                            "replace_ids": [
-                                3
-                            ],
-                            "actions_gained": [
-                                {
-                                    "type": "melee",
-                                    "heavy": false,
-                                    "hits": 2,
-                                    "strength": 7
-                                },
-                                {
-                                    "type": "melee",
-                                    "heavy": false,
-                                    "hits": 1,
-                                    "strength": 9
-                                }
-                            ]
-                        }
-                    ]
+                    "variations": []
                 },
                 {
                     "name": "Deathwing knights",
@@ -379,27 +359,7 @@
                             "strength": 7
                         }
                     ],
-                    "variations": [
-                        {
-                            "replace_ids": [
-                                2
-                            ],
-                            "actions_gained": [
-                                {
-                                    "type": "melee",
-                                    "heavy": false,
-                                    "hits": 2,
-                                    "strength": 6
-                                },
-                                {
-                                    "type": "melee",
-                                    "heavy": false,
-                                    "hits": 1,
-                                    "strength": 8
-                                }
-                            ]
-                        }
-                    ]
+                    "variations": []
                 },
                 {
                     "name": "Aethon Shaan",
@@ -460,13 +420,7 @@
                             "type": "melee",
                             "heavy": false,
                             "hits": 2,
-                            "strength": 7
-                        },
-                        {
-                            "type": "melee",
-                            "heavy": false,
-                            "hits": 1,
-                            "strength": 9
+                            "strength": 8
                         }
                     ],
                     "variations": []
