@@ -365,7 +365,7 @@
                     "name": "Aethon Shaan",
                     "points_per_model": 200,
                     "armor": 5,
-                    "armor_type": "infantry",
+                    "armor_type": "stealth",
                     "actions": [
                         {
                             "type": "scan",
@@ -816,7 +816,7 @@
                     "name": "Exodus",
                     "points_per_model": 200,
                     "armor": 5,
-                    "armor_type": "infantry",
+                    "armor_type": "stealth",
                     "actions": [
                         {
                             "type": "scan",
