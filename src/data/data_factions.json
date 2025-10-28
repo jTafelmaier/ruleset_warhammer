@@ -471,19 +471,7 @@
                             "strength": 8
                         }
                     ],
-                    "variations": [
-                        {
-                            "replace_ids": [
-                                1
-                            ],
-                            "actions_gained": [
-                                {
-                                    "type": "move",
-                                    "parameters": "fly 25"
-                                }
-                            ]
-                        }
-                    ]
+                    "variations": []
                 }
             ]
         },
