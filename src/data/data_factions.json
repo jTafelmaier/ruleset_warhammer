@@ -33,6 +33,31 @@
                     "variations": []
                 },
                 {
+                    "name": "Jump pack intercessors",
+                    "points_per_model": 50,
+                    "armor": 5,
+                    "armor_type": "infantry",
+                    "actions": [
+                        {
+                            "type": "move",
+                            "parameters": "fly 25"
+                        },
+                        {
+                            "type": "kinetic",
+                            "heavy": false,
+                            "hits": 2,
+                            "strength": 4
+                        },
+                        {
+                            "type": "melee",
+                            "heavy": false,
+                            "hits": 2,
+                            "strength": 6
+                        }
+                    ],
+                    "variations": []
+                },
+                {
                     "name": "Captain in gravis armour",
                     "points_per_model": 100,
                     "armor": 6,
@@ -132,31 +157,6 @@
                             ]
                         }
                     ]
-                },
-                {
-                    "name": "Jump pack intercessors",
-                    "points_per_model": 50,
-                    "armor": 5,
-                    "armor_type": "infantry",
-                    "actions": [
-                        {
-                            "type": "move",
-                            "parameters": "fly 25"
-                        },
-                        {
-                            "type": "kinetic",
-                            "heavy": false,
-                            "hits": 2,
-                            "strength": 4
-                        },
-                        {
-                            "type": "melee",
-                            "heavy": false,
-                            "hits": 2,
-                            "strength": 6
-                        }
-                    ],
-                    "variations": []
                 },
                 {
                     "name": "Gladiator lancer",
