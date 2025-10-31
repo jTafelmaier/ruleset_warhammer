@@ -164,12 +164,12 @@
                             <div class="indented">
                                 Select one weapon and one visible enemy unit as "target unit".
                                 <br/>
-                                During this attack, the armor value of units in cover that are not of &quot;vehicle&quot; or &quot;mounted&quot; type is increased by 1.
+                                During this attack, the armor value of units in cover that are not of &quot;vehicle&quot; type is increased by 1.
                                 <br/>
                                 <br/>
-                                If the weapon is of &quot;blast&quot; or &quot;grenade&quot; type:
+                                If the weapon has &quot;blast&quot;:
                                 <div class="indented">
-                                    During this attack, multiply weapon: <b>hits</b> by the number of models in the target unit at the start of this attack, up to a maximum of 5.
+                                    During this attack, multiply weapon: <b>hits</b> by the number of models in the target unit at the start of this attack, up to a maximum of 10.
                                 </div>
                                 <br/>
                                 End the attack sequence for this model if any of the following are true:
@@ -178,15 +178,13 @@
                                     <br/>
                                     - The target unit is of &quot;stealth&quot; type and not within 20 cm.
                                     <br/>
-                                    - The weapon is of &quot;grenade&quot; type and the target unit is not within 20 cm.
+                                    - The weapon has &quot;20 cm&quot; and the target unit is not within 20 cm.
                                     <br/>
-                                    - The weapon is of &quot;melta&quot; type and the target unit is not within 20 cm.
+                                    - The weapon has &quot;melee&quot; and the target unit is not within 5 cm.
                                     <br/>
-                                    - The weapon is of &quot;melee&quot; type and the target unit is not within 5 cm.
+                                    - The weapon has &quot;heavy&quot; and this is not the first action for this unit this turn.
                                     <br/>
-                                    - The weapon has &quot;heavy&quot;, this is not the first action for this unit this turn, and the target model is not of &quot;vehicle&quot; type.
-                                    <br/>
-                                    - The target unit is of &quot;sealed&quot; type, the weapon is of &quot;kinetic&quot;, &quot;blast&quot; or &quot;melee&quot; type, and the weapon strength is lower than the target model armor.
+                                    - The target unit is of &quot;sealed&quot; type, the weapon does not have &quot;ap&quot;, and the weapon strength is lower than the target model armor.
                                 </div>
                                 <br/>
                                 Repeat for weapon: <b>hits</b>:

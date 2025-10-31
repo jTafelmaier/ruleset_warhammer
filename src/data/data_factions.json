@@ -18,16 +18,18 @@
                             "parameters": "fly 25"
                         },
                         {
-                            "type": "kinetic",
-                            "heavy": false,
+                            "type": "attack",
                             "hits": 2,
-                            "strength": 4
+                            "strength": 4,
+                            "keywords": []
                         },
                         {
-                            "type": "melee",
-                            "heavy": false,
+                            "type": "attack",
                             "hits": 2,
-                            "strength": 7
+                            "strength": 7,
+                            "keywords": [
+                                "melee"
+                            ]
                         }
                     ],
                     "variations": []
@@ -43,16 +45,18 @@
                             "parameters": "fly 25"
                         },
                         {
-                            "type": "kinetic",
-                            "heavy": false,
+                            "type": "attack",
                             "hits": 2,
-                            "strength": 4
+                            "strength": 4,
+                            "keywords": []
                         },
                         {
-                            "type": "melee",
-                            "heavy": false,
+                            "type": "attack",
                             "hits": 2,
-                            "strength": 6
+                            "strength": 6,
+                            "keywords": [
+                                "melee"
+                            ]
                         }
                     ],
                     "variations": []
@@ -72,16 +76,18 @@
                             "parameters": "10"
                         },
                         {
-                            "type": "kinetic",
-                            "heavy": false,
+                            "type": "attack",
                             "hits": 4,
-                            "strength": 5
+                            "strength": 5,
+                            "keywords": []
                         },
                         {
-                            "type": "melee",
-                            "heavy": false,
+                            "type": "attack",
                             "hits": 2,
-                            "strength": 7
+                            "strength": 7,
+                            "keywords": [
+                                "melee"
+                            ]
                         }
                     ],
                     "variations": []
@@ -97,23 +103,36 @@
                             "parameters": "10"
                         },
                         {
-                            "type": "kinetic",
-                            "heavy": false,
+                            "type": "attack",
                             "hits": 4,
-                            "strength": 5
+                            "strength": 5,
+                            "keywords": []
+                        },
+                        {
+                            "type": "attack",
+                            "hits": 1,
+                            "strength": 4,
+                            "keywords": [
+                                "20 cm",
+                                "heavy",
+                                "blast"
+                            ]
                         }
                     ],
                     "variations": [
                         {
                             "replace_ids": [
-                                1
+                                2
                             ],
                             "actions_gained": [
                                 {
-                                    "type": "kinetic",
-                                    "heavy": true,
-                                    "hits": 4,
-                                    "strength": 6
+                                    "type": "attack",
+                                    "hits": 1,
+                                    "strength": 6,
+                                    "keywords": [
+                                        "20 cm",
+                                        "heavy"
+                                    ]
                                 }
                             ]
                         }
@@ -130,33 +149,22 @@
                             "parameters": "10"
                         },
                         {
-                            "type": "kinetic",
-                            "heavy": false,
+                            "type": "attack",
                             "hits": 2,
-                            "strength": 4
+                            "strength": 4,
+                            "keywords": []
                         },
                         {
-                            "type": "melta",
-                            "heavy": false,
+                            "type": "attack",
                             "hits": 1,
-                            "strength": 10
-                        }
-                    ],
-                    "variations": [
-                        {
-                            "replace_ids": [
-                                2
-                            ],
-                            "actions_gained": [
-                                {
-                                    "type": "melta",
-                                    "heavy": true,
-                                    "hits": 2,
-                                    "strength": 10
-                                }
+                            "strength": 10,
+                            "keywords": [
+                                "20 cm",
+                                "ap"
                             ]
                         }
-                    ]
+                    ],
+                    "variations": []
                 },
                 {
                     "name": "Gladiator lancer",
@@ -173,16 +181,19 @@
                             "parameters": "25"
                         },
                         {
-                            "type": "kinetic",
-                            "heavy": false,
+                            "type": "attack",
                             "hits": 8,
-                            "strength": 4
+                            "strength": 4,
+                            "keywords": []
                         },
                         {
-                            "type": "energy",
-                            "heavy": true,
+                            "type": "attack",
                             "hits": 1,
-                            "strength": 12
+                            "strength": 12,
+                            "keywords": [
+                                "heavy",
+                                "ap"
+                            ]
                         }
                     ],
                     "variations": []
@@ -202,16 +213,18 @@
                             "parameters": "15"
                         },
                         {
-                            "type": "kinetic",
-                            "heavy": false,
+                            "type": "attack",
                             "hits": 2,
-                            "strength": 4
+                            "strength": 4,
+                            "keywords": []
                         },
                         {
-                            "type": "melee",
-                            "heavy": false,
+                            "type": "attack",
                             "hits": 2,
-                            "strength": 7
+                            "strength": 7,
+                            "keywords": [
+                                "melee"
+                            ]
                         }
                     ],
                     "variations": []
@@ -227,16 +240,18 @@
                             "parameters": "15"
                         },
                         {
-                            "type": "kinetic",
-                            "heavy": false,
+                            "type": "attack",
                             "hits": 2,
-                            "strength": 4
+                            "strength": 4,
+                            "keywords": []
                         },
                         {
-                            "type": "melee",
-                            "heavy": false,
+                            "type": "attack",
                             "hits": 2,
-                            "strength": 6
+                            "strength": 6,
+                            "keywords": [
+                                "melee"
+                            ]
                         }
                     ],
                     "variations": []
@@ -256,13 +271,40 @@
                             "parameters": "15"
                         },
                         {
-                            "type": "kinetic",
-                            "heavy": false,
+                            "type": "attack",
                             "hits": 4,
-                            "strength": 5
+                            "strength": 5,
+                            "keywords": []
+                        },
+                        {
+                            "type": "attack",
+                            "hits": 1,
+                            "strength": 4,
+                            "keywords": [
+                                "20 cm",
+                                "heavy",
+                                "blast"
+                            ]
                         }
                     ],
-                    "variations": []
+                    "variations": [
+                        {
+                            "replace_ids": [
+                                3
+                            ],
+                            "actions_gained": [
+                                {
+                                    "type": "attack",
+                                    "hits": 1,
+                                    "strength": 6,
+                                    "keywords": [
+                                        "20 cm",
+                                        "heavy"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     "name": "Belial",
@@ -283,16 +325,20 @@
                             "parameters": ""
                         },
                         {
-                            "type": "kinetic",
-                            "heavy": false,
+                            "type": "attack",
                             "hits": 4,
-                            "strength": 4
+                            "strength": 4,
+                            "keywords": [
+                                "20 cm"
+                            ]
                         },
                         {
-                            "type": "melee",
-                            "heavy": false,
+                            "type": "attack",
                             "hits": 2,
-                            "strength": 8
+                            "strength": 8,
+                            "keywords": [
+                                "melee"
+                            ]
                         }
                     ],
                     "variations": []
@@ -316,10 +362,12 @@
                             "parameters": ""
                         },
                         {
-                            "type": "melee",
-                            "heavy": false,
+                            "type": "attack",
                             "hits": 2,
-                            "strength": 8
+                            "strength": 8,
+                            "keywords": [
+                                "melee"
+                            ]
                         }
                     ],
                     "variations": []
@@ -339,10 +387,12 @@
                             "parameters": ""
                         },
                         {
-                            "type": "melee",
-                            "heavy": false,
+                            "type": "attack",
                             "hits": 2,
-                            "strength": 7
+                            "strength": 7,
+                            "keywords": [
+                                "melee"
+                            ]
                         }
                     ],
                     "variations": []
@@ -370,16 +420,18 @@
                             "parameters": ""
                         },
                         {
-                            "type": "kinetic",
-                            "heavy": false,
+                            "type": "attack",
                             "hits": 2,
-                            "strength": 4
+                            "strength": 4,
+                            "keywords": []
                         },
                         {
-                            "type": "melee",
-                            "heavy": false,
+                            "type": "attack",
                             "hits": 4,
-                            "strength": 7
+                            "strength": 7,
+                            "keywords": [
+                                "melee"
+                            ]
                         }
                     ],
                     "variations": []
@@ -403,10 +455,12 @@
                             "parameters": ""
                         },
                         {
-                            "type": "melee",
-                            "heavy": false,
+                            "type": "attack",
                             "hits": 2,
-                            "strength": 8
+                            "strength": 8,
+                            "keywords": [
+                                "melee"
+                            ]
                         }
                     ],
                     "variations": []
@@ -415,7 +469,7 @@
                     "name": "Suboden Khan",
                     "points_per_model": 200,
                     "armor": 7,
-                    "armor_type": "mounted",
+                    "armor_type": "vehicle",
                     "actions": [
                         {
                             "type": "score",
@@ -426,16 +480,20 @@
                             "parameters": "fly 40"
                         },
                         {
-                            "type": "kinetic",
-                            "heavy": false,
+                            "type": "attack",
                             "hits": 8,
-                            "strength": 4
+                            "strength": 4,
+                            "keywords": [
+                                "heavy"
+                            ]
                         },
                         {
-                            "type": "melee",
-                            "heavy": false,
+                            "type": "attack",
                             "hits": 2,
-                            "strength": 7
+                            "strength": 7,
+                            "keywords": [
+                                "melee"
+                            ]
                         }
                     ],
                     "variations": []
@@ -459,16 +517,20 @@
                             "parameters": ""
                         },
                         {
-                            "type": "kinetic",
-                            "heavy": false,
+                            "type": "attack",
                             "hits": 4,
-                            "strength": 4
+                            "strength": 4,
+                            "keywords": [
+                                "20 cm"
+                            ]
                         },
                         {
-                            "type": "melee",
-                            "heavy": false,
+                            "type": "attack",
                             "hits": 2,
-                            "strength": 8
+                            "strength": 8,
+                            "keywords": [
+                                "melee"
+                            ]
                         }
                     ],
                     "variations": []
@@ -482,7 +544,7 @@
                     "name": "Lord Invocatus",
                     "points_per_model": 250,
                     "armor": 7,
-                    "armor_type": "mounted",
+                    "armor_type": "vehicle",
                     "actions": [
                         {
                             "type": "score",
@@ -493,16 +555,21 @@
                             "parameters": "25"
                         },
                         {
-                            "type": "melee",
-                            "heavy": false,
+                            "type": "attack",
                             "hits": 1,
-                            "strength": 9
+                            "strength": 9,
+                            "keywords": [
+                                "melee"
+                            ]
                         },
                         {
-                            "type": "melee",
-                            "heavy": true,
+                            "type": "attack",
                             "hits": 4,
-                            "strength": 7
+                            "strength": 7,
+                            "keywords": [
+                                "melee",
+                                "heavy"
+                            ]
                         }
                     ],
                     "variations": []
@@ -519,17 +586,19 @@
                         },
                         {
                             "type": "move",
-                            "parameters": "20"
+                            "parameters": "20 cm"
                         },
                         {
                             "type": "teleportation",
                             "parameters": ""
                         },
                         {
-                            "type": "melee",
-                            "heavy": false,
+                            "type": "attack",
                             "hits": 2,
-                            "strength": 8
+                            "strength": 8,
+                            "keywords": [
+                                "melee"
+                            ]
                         }
                     ],
                     "variations": []
@@ -542,40 +611,31 @@
                     "actions": [
                         {
                             "type": "move",
-                            "parameters": "20"
+                            "parameters": "20 cm"
                         },
                         {
                             "type": "teleportation",
                             "parameters": ""
                         },
                         {
-                            "type": "melee",
-                            "heavy": false,
+                            "type": "attack",
                             "hits": 2,
-                            "strength": 7
+                            "strength": 7,
+                            "keywords": [
+                                "melee"
+                            ]
                         },
                         {
-                            "type": "melee",
-                            "heavy": true,
+                            "type": "attack",
                             "hits": 1,
-                            "strength": 10
-                        }
-                    ],
-                    "variations": [
-                        {
-                            "replace_ids": [
-                                3
-                            ],
-                            "actions_gained": [
-                                {
-                                    "type": "melee",
-                                    "heavy": false,
-                                    "hits": 1,
-                                    "strength": 8
-                                }
+                            "strength": 10,
+                            "keywords": [
+                                "melee",
+                                "heavy"
                             ]
                         }
-                    ]
+                    ],
+                    "variations": []
                 },
                 {
                     "name": "Eightbound",
@@ -585,13 +645,15 @@
                     "actions": [
                         {
                             "type": "move",
-                            "parameters": "20"
+                            "parameters": "20 cm"
                         },
                         {
-                            "type": "melee",
-                            "heavy": false,
+                            "type": "attack",
                             "hits": 2,
-                            "strength": 7
+                            "strength": 7,
+                            "keywords": [
+                                "melee"
+                            ]
                         }
                     ],
                     "variations": []
@@ -604,19 +666,21 @@
                     "actions": [
                         {
                             "type": "move",
-                            "parameters": "20"
+                            "parameters": "20 cm"
                         },
                         {
-                            "type": "kinetic",
-                            "heavy": false,
+                            "type": "attack",
                             "hits": 2,
-                            "strength": 4
+                            "strength": 4,
+                            "keywords": []
                         },
                         {
-                            "type": "melee",
-                            "heavy": false,
+                            "type": "attack",
                             "hits": 2,
-                            "strength": 7
+                            "strength": 7,
+                            "keywords": [
+                                "melee"
+                            ]
                         }
                     ],
                     "variations": []
@@ -632,10 +696,12 @@
                             "parameters": "10"
                         },
                         {
-                            "type": "melee",
-                            "heavy": false,
+                            "type": "attack",
                             "hits": 2,
-                            "strength": 4
+                            "strength": 4,
+                            "keywords": [
+                                "melee"
+                            ]
                         }
                     ],
                     "variations": []
@@ -659,16 +725,22 @@
                             "parameters": "10"
                         },
                         {
-                            "type": "grav",
-                            "heavy": true,
+                            "type": "attack",
                             "hits": 1,
-                            "strength": 7
+                            "strength": 7,
+                            "keywords": [
+                                "heavy",
+                                "ap"
+                            ]
                         },
                         {
-                            "type": "melee",
-                            "heavy": true,
+                            "type": "attack",
                             "hits": 1,
-                            "strength": 10
+                            "strength": 10,
+                            "keywords": [
+                                "melee",
+                                "heavy"
+                            ]
                         }
                     ],
                     "variations": []
@@ -688,28 +760,13 @@
                             "parameters": "15"
                         },
                         {
-                            "type": "kinetic",
-                            "heavy": false,
+                            "type": "attack",
                             "hits": 4,
-                            "strength": 5
+                            "strength": 5,
+                            "keywords": []
                         }
                     ],
-                    "variations": [
-                        {
-                            "replace_ids": [
-                                2,
-                                3
-                            ],
-                            "actions_gained": [
-                                {
-                                    "type": "energy",
-                                    "heavy": true,
-                                    "hits": 1,
-                                    "strength": 7
-                                }
-                            ]
-                        }
-                    ]
+                    "variations": []
                 },
                 {
                     "name": "MkII Assault Squad",
@@ -722,16 +779,18 @@
                             "parameters": "fly 25"
                         },
                         {
-                            "type": "kinetic",
-                            "heavy": false,
+                            "type": "attack",
                             "hits": 2,
-                            "strength": 4
+                            "strength": 4,
+                            "keywords": []
                         },
                         {
-                            "type": "melee",
-                            "heavy": false,
+                            "type": "attack",
                             "hits": 2,
-                            "strength": 6
+                            "strength": 6,
+                            "keywords": [
+                                "melee"
+                            ]
                         }
                     ],
                     "variations": []
@@ -743,10 +802,12 @@
                     "armor_type": "vehicle",
                     "actions": [
                         {
-                            "type": "kinetic",
-                            "heavy": true,
+                            "type": "attack",
                             "hits": 8,
-                            "strength": 9
+                            "strength": 9,
+                            "keywords": [
+                                "heavy"
+                            ]
                         }
                     ],
                     "variations": []
@@ -766,22 +827,27 @@
                             "parameters": "25"
                         },
                         {
-                            "type": "kinetic",
-                            "heavy": false,
+                            "type": "attack",
                             "hits": 8,
-                            "strength": 6
+                            "strength": 6,
+                            "keywords": []
                         },
                         {
-                            "type": "blast",
-                            "heavy": true,
+                            "type": "attack",
                             "hits": 1,
-                            "strength": 8
+                            "strength": 8,
+                            "keywords": [
+                                "heavy",
+                                "blast"
+                            ]
                         },
                         {
-                            "type": "kinetic",
-                            "heavy": true,
+                            "type": "attack",
                             "hits": 2,
-                            "strength": 12
+                            "strength": 12,
+                            "keywords": [
+                                "heavy"
+                            ]
                         }
                     ],
                     "variations": []
@@ -809,10 +875,12 @@
                             "parameters": ""
                         },
                         {
-                            "type": "kinetic",
-                            "heavy": true,
+                            "type": "attack",
                             "hits": 1,
-                            "strength": 8
+                            "strength": 8,
+                            "keywords": [
+                                "heavy"
+                            ]
                         }
                     ],
                     "variations": []
@@ -845,10 +913,10 @@
                             "parameters": ""
                         },
                         {
-                            "type": "kinetic",
-                            "heavy": false,
+                            "type": "attack",
                             "hits": 6,
-                            "strength": 6
+                            "strength": 6,
+                            "keywords": []
                         }
                     ],
                     "variations": []
@@ -868,10 +936,13 @@
                             "parameters": "15"
                         },
                         {
-                            "type": "energy",
-                            "heavy": true,
+                            "type": "attack",
                             "hits": 1,
-                            "strength": 6
+                            "strength": 6,
+                            "keywords": [
+                                "heavy",
+                                "ap"
+                            ]
                         }
                     ],
                     "variations": []
@@ -891,10 +962,13 @@
                             "parameters": "15"
                         },
                         {
-                            "type": "melee",
-                            "heavy": false,
+                            "type": "attack",
                             "hits": 2,
-                            "strength": 8
+                            "strength": 8,
+                            "keywords": [
+                                "melee",
+                                "ap"
+                            ]
                         }
                     ],
                     "variations": []
@@ -903,7 +977,7 @@
                     "name": "Lokhust destroyer - Gauss",
                     "points_per_model": 150,
                     "armor": 8,
-                    "armor_type": "mounted",
+                    "armor_type": "vehicle",
                     "actions": [
                         {
                             "type": "scan",
@@ -918,10 +992,13 @@
                             "parameters": "15"
                         },
                         {
-                            "type": "energy",
-                            "heavy": true,
+                            "type": "attack",
                             "hits": 1,
-                            "strength": 12
+                            "strength": 12,
+                            "keywords": [
+                                "heavy",
+                                "ap"
+                            ]
                         }
                     ],
                     "variations": []
@@ -930,7 +1007,7 @@
                     "name": "Lokhust destroyer - Enmitic",
                     "points_per_model": 150,
                     "armor": 8,
-                    "armor_type": "mounted",
+                    "armor_type": "vehicle",
                     "actions": [
                         {
                             "type": "scan",
@@ -945,10 +1022,12 @@
                             "parameters": "15"
                         },
                         {
-                            "type": "kinetic",
-                            "heavy": true,
+                            "type": "attack",
                             "hits": 6,
-                            "strength": 7
+                            "strength": 7,
+                            "keywords": [
+                                "heavy"
+                            ]
                         }
                     ],
                     "variations": []

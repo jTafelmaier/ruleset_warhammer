@@ -35,11 +35,7 @@ def main():
                 def modify_action(
                     dict_action:typing.Dict):
 
-                    # placeholder
-
                     return None
-
-                # placeholder
 
                 list(
                         map(
