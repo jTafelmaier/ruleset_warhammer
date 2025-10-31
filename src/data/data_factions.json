@@ -6,7 +6,7 @@
                 {
                     "name": "Captain with jump pack",
                     "points_per_model": 100,
-                    "armor": 6,
+                    "armor": 5,
                     "armor_type": "infantry",
                     "actions": [
                         {
@@ -64,7 +64,7 @@
                 {
                     "name": "Captain in gravis armour",
                     "points_per_model": 100,
-                    "armor": 6,
+                    "armor": 5,
                     "armor_type": "sealed",
                     "actions": [
                         {
@@ -201,7 +201,7 @@
                 {
                     "name": "Castellan",
                     "points_per_model": 100,
-                    "armor": 6,
+                    "armor": 5,
                     "armor_type": "infantry",
                     "actions": [
                         {
@@ -309,7 +309,7 @@
                 {
                     "name": "Belial",
                     "points_per_model": 200,
-                    "armor": 7,
+                    "armor": 6,
                     "armor_type": "sealed",
                     "actions": [
                         {
@@ -346,7 +346,7 @@
                 {
                     "name": "Deathwing strikemaster",
                     "points_per_model": 200,
-                    "armor": 8,
+                    "armor": 7,
                     "armor_type": "sealed",
                     "actions": [
                         {
@@ -400,7 +400,7 @@
                 {
                     "name": "Aethon Shaan",
                     "points_per_model": 200,
-                    "armor": 6,
+                    "armor": 5,
                     "armor_type": "stealth",
                     "actions": [
                         {
@@ -439,7 +439,7 @@
                 {
                     "name": "Darnath Lysander",
                     "points_per_model": 200,
-                    "armor": 8,
+                    "armor": 7,
                     "armor_type": "sealed",
                     "actions": [
                         {
@@ -468,7 +468,7 @@
                 {
                     "name": "Suboden Khan",
                     "points_per_model": 200,
-                    "armor": 7,
+                    "armor": 6,
                     "armor_type": "vehicle",
                     "actions": [
                         {
@@ -501,7 +501,7 @@
                 {
                     "name": "Castellan Crowe",
                     "points_per_model": 200,
-                    "armor": 6,
+                    "armor": 5,
                     "armor_type": "infantry",
                     "actions": [
                         {
@@ -543,7 +543,7 @@
                 {
                     "name": "Lord Invocatus",
                     "points_per_model": 250,
-                    "armor": 7,
+                    "armor": 6,
                     "armor_type": "vehicle",
                     "actions": [
                         {
@@ -577,7 +577,7 @@
                 {
                     "name": "Slaughterbound",
                     "points_per_model": 150,
-                    "armor": 6,
+                    "armor": 5,
                     "armor_type": "infantry",
                     "actions": [
                         {
@@ -709,7 +709,7 @@
                 {
                     "name": "Warsmith",
                     "points_per_model": 150,
-                    "armor": 7,
+                    "armor": 6,
                     "armor_type": "sealed",
                     "actions": [
                         {
@@ -855,7 +855,7 @@
                 {
                     "name": "Exodus",
                     "points_per_model": 200,
-                    "armor": 6,
+                    "armor": 5,
                     "armor_type": "stealth",
                     "actions": [
                         {
@@ -893,7 +893,7 @@
                 {
                     "name": "Hexmark destroyer",
                     "points_per_model": 250,
-                    "armor": 7,
+                    "armor": 6,
                     "armor_type": "stealth",
                     "actions": [
                         {
