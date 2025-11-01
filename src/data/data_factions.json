@@ -119,7 +119,7 @@
                             "keywords": [
                                 "20 cm",
                                 "heavy",
-                                "blast"
+                                "volume"
                             ]
                         }
                     ],
@@ -291,7 +291,7 @@
                             "keywords": [
                                 "20 cm",
                                 "heavy",
-                                "blast"
+                                "volume"
                             ]
                         }
                     ],
@@ -586,11 +586,12 @@
                         },
                         {
                             "type": "attack",
-                            "hits": 4,
-                            "strength": 7,
+                            "hits": 2,
+                            "strength": 8,
                             "keywords": [
                                 "melee",
-                                "heavy"
+                                "heavy",
+                                "volume"
                             ]
                         }
                     ],
@@ -619,7 +620,8 @@
                             "hits": 2,
                             "strength": 8,
                             "keywords": [
-                                "melee"
+                                "melee",
+                                "volume"
                             ]
                         }
                     ],
@@ -644,7 +646,8 @@
                             "hits": 2,
                             "strength": 7,
                             "keywords": [
-                                "melee"
+                                "melee",
+                                "volume"
                             ]
                         },
                         {
@@ -674,7 +677,8 @@
                             "hits": 2,
                             "strength": 7,
                             "keywords": [
-                                "melee"
+                                "melee",
+                                "volume"
                             ]
                         }
                     ],
@@ -701,7 +705,8 @@
                             "hits": 2,
                             "strength": 7,
                             "keywords": [
-                                "melee"
+                                "melee",
+                                "volume"
                             ]
                         }
                     ],
@@ -753,8 +758,7 @@
                             "hits": 1,
                             "strength": 7,
                             "keywords": [
-                                "heavy",
-                                "ap"
+                                "heavy"
                             ]
                         },
                         {
@@ -822,15 +826,15 @@
                 {
                     "name": "Araknae accelerator platform",
                     "points_per_model": 200,
-                    "armor": 11,
+                    "armor": 10,
                     "keywords": [
                         "vehicle"
                     ],
                     "actions": [
                         {
                             "type": "attack",
-                            "hits": 8,
-                            "strength": 9,
+                            "hits": 4,
+                            "strength": 10,
                             "keywords": [
                                 "heavy"
                             ]
@@ -866,7 +870,7 @@
                             "strength": 8,
                             "keywords": [
                                 "heavy",
-                                "blast"
+                                "volume"
                             ]
                         },
                         {
