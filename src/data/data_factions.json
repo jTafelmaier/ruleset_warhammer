@@ -948,9 +948,17 @@
                         },
                         {
                             "type": "attack",
-                            "hits": 6,
+                            "hits": 4,
                             "strength": 6,
                             "keywords": []
+                        },
+                        {
+                            "type": "attack",
+                            "hits": 1,
+                            "strength": 6,
+                            "keywords": [
+                                "volume"
+                            ]
                         }
                     ],
                     "variations": []
