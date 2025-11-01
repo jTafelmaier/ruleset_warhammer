@@ -587,7 +587,7 @@
                         {
                             "type": "attack",
                             "hits": 2,
-                            "strength": 8,
+                            "strength": 7,
                             "keywords": [
                                 "melee",
                                 "heavy",
@@ -618,7 +618,7 @@
                         {
                             "type": "attack",
                             "hits": 2,
-                            "strength": 8,
+                            "strength": 7,
                             "keywords": [
                                 "melee",
                                 "volume"
@@ -644,7 +644,7 @@
                         {
                             "type": "attack",
                             "hits": 2,
-                            "strength": 7,
+                            "strength": 6,
                             "keywords": [
                                 "melee",
                                 "volume"
@@ -675,7 +675,7 @@
                         {
                             "type": "attack",
                             "hits": 2,
-                            "strength": 7,
+                            "strength": 6,
                             "keywords": [
                                 "melee",
                                 "volume"
@@ -703,7 +703,7 @@
                         {
                             "type": "attack",
                             "hits": 2,
-                            "strength": 7,
+                            "strength": 6,
                             "keywords": [
                                 "melee",
                                 "volume"
