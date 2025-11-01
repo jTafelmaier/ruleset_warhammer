@@ -159,12 +159,23 @@ def get_text_html_data_unit(
 
     def get_text_html_armor():
 
-        return "<div class=\"unit_property\"><span>" \
-            + dict_unit["armor_type"] \
-            + "</span>" \
+        def get_text_keywords():
+
+            if len(dict_unit["keywords"]) == 0:
+                return ""
+
+            return " [" \
+                + " " \
+                    .join(
+                        dict_unit \
+                            ["keywords"]) \
+                + "]"
+
+        return "<div class=\"unit_property\"><span>⛊</span>" \
             + str(
                     dict_unit \
                         ["armor"]) \
+            + get_text_keywords() \
             + "</div>"
 
     return "<div class=\"unit\" title=\"" \
