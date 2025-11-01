@@ -443,10 +443,11 @@
                         },
                         {
                             "type": "attack",
-                            "hits": 4,
-                            "strength": 7,
+                            "hits": 2,
+                            "strength": 6,
                             "keywords": [
-                                "melee"
+                                "melee",
+                                "volume"
                             ]
                         }
                     ],
