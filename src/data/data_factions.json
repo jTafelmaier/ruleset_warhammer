@@ -997,11 +997,12 @@
                         },
                         {
                             "type": "attack",
-                            "hits": 2,
+                            "hits": 1,
                             "strength": 8,
                             "keywords": [
                                 "melee",
-                                "ap"
+                                "ap",
+                                "volume"
                             ]
                         }
                     ],
