@@ -2,19 +2,16 @@
     "faction": "Chaos",
     "units": [
         {
-            "name": "Lord Invocatus",
-            "count_models": 1,
-            "attached_to_index": 2
+            "name": "Slaughterbound",
+            "count_models": 1
         },
         {
             "name": "Eightbound",
-            "count_models": 8,
-            "attached_to_index": null
+            "count_models": 8
         },
         {
             "name": "Khorne Berzerkers",
-            "count_models": 8,
-            "attached_to_index": null
+            "count_models": 8
         }
     ]
 }
