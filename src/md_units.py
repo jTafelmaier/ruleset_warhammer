@@ -56,7 +56,7 @@ def get_text_html_data_unit(
                 dict_unit
                     ["attacks"]))
 
-    return "<div class=\"unit\" title=\"" \
+    return "<div class=\"model\" title=\"" \
         + str(
             dict_unit \
                 ["points_per_model"]) \

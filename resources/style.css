@@ -186,7 +186,7 @@ body {
     gap: 20px;
 }
 
-.unit {
+.model {
     width: 450px;
     height: 210px;
     background-image: url("background.png");
@@ -264,11 +264,11 @@ body {
     margin-top: 10px;
 }
 
-.destroyed .unit {
+.destroyed .model {
     filter: grayscale(1);
 }
 
-.inactive .unit{
+.inactive .model{
     filter: grayscale(1);
 }
 
