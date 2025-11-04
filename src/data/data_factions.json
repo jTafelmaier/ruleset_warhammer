@@ -14,13 +14,11 @@
                     "move": 25,
                     "attacks": [
                         {
-                            "type": "attack",
                             "hits": 2,
                             "strength": 5,
                             "keywords": []
                         },
                         {
-                            "type": "attack",
                             "hits": 2,
                             "strength": 7,
                             "keywords": [
@@ -40,13 +38,11 @@
                     "move": 25,
                     "attacks": [
                         {
-                            "type": "attack",
                             "hits": 2,
                             "strength": 5,
                             "keywords": []
                         },
                         {
-                            "type": "attack",
                             "hits": 2,
                             "strength": 6,
                             "keywords": [
@@ -66,13 +62,11 @@
                     "move": 10,
                     "attacks": [
                         {
-                            "type": "attack",
                             "hits": 4,
                             "strength": 5,
                             "keywords": []
                         },
                         {
-                            "type": "attack",
                             "hits": 2,
                             "strength": 7,
                             "keywords": [
@@ -92,13 +86,11 @@
                     "move": 10,
                     "attacks": [
                         {
-                            "type": "attack",
                             "hits": 4,
                             "strength": 5,
                             "keywords": []
                         },
                         {
-                            "type": "attack",
                             "hits": 1,
                             "strength": 6,
                             "keywords": [
@@ -119,13 +111,11 @@
                     "move": 10,
                     "attacks": [
                         {
-                            "type": "attack",
                             "hits": 2,
                             "strength": 5,
                             "keywords": []
                         },
                         {
-                            "type": "attack",
                             "hits": 1,
                             "strength": 10,
                             "keywords": [
@@ -145,13 +135,11 @@
                     "move": 25,
                     "attacks": [
                         {
-                            "type": "attack",
                             "hits": 8,
                             "strength": 4,
                             "keywords": []
                         },
                         {
-                            "type": "attack",
                             "hits": 1,
                             "strength": 12,
                             "keywords": [
@@ -171,13 +159,11 @@
                     "move": 15,
                     "attacks": [
                         {
-                            "type": "attack",
                             "hits": 2,
                             "strength": 5,
                             "keywords": []
                         },
                         {
-                            "type": "attack",
                             "hits": 2,
                             "strength": 7,
                             "keywords": [
@@ -195,13 +181,11 @@
                     "move": 15,
                     "attacks": [
                         {
-                            "type": "attack",
                             "hits": 2,
                             "strength": 5,
                             "keywords": []
                         },
                         {
-                            "type": "attack",
                             "hits": 2,
                             "strength": 6,
                             "keywords": [
@@ -219,13 +203,11 @@
                     "move": 15,
                     "attacks": [
                         {
-                            "type": "attack",
                             "hits": 4,
                             "strength": 5,
                             "keywords": []
                         },
                         {
-                            "type": "attack",
                             "hits": 1,
                             "strength": 6,
                             "keywords": [
@@ -248,7 +230,6 @@
                     "move": 10,
                     "attacks": [
                         {
-                            "type": "attack",
                             "hits": 4,
                             "strength": 4,
                             "keywords": [
@@ -256,7 +237,6 @@
                             ]
                         },
                         {
-                            "type": "attack",
                             "hits": 2,
                             "strength": 8,
                             "keywords": [
@@ -278,7 +258,6 @@
                     "move": 10,
                     "attacks": [
                         {
-                            "type": "attack",
                             "hits": 2,
                             "strength": 8,
                             "keywords": [
@@ -299,7 +278,6 @@
                     "move": 10,
                     "attacks": [
                         {
-                            "type": "attack",
                             "hits": 2,
                             "strength": 7,
                             "keywords": [
@@ -322,13 +300,11 @@
                     "move": 25,
                     "attacks": [
                         {
-                            "type": "attack",
                             "hits": 2,
                             "strength": 5,
                             "keywords": []
                         },
                         {
-                            "type": "attack",
                             "hits": 4,
                             "strength": 6,
                             "keywords": [
@@ -350,7 +326,6 @@
                     "move": 10,
                     "attacks": [
                         {
-                            "type": "attack",
                             "hits": 2,
                             "strength": 8,
                             "keywords": [
@@ -371,7 +346,6 @@
                     "move": 40,
                     "attacks": [
                         {
-                            "type": "attack",
                             "hits": 8,
                             "strength": 4,
                             "keywords": [
@@ -379,7 +353,6 @@
                             ]
                         },
                         {
-                            "type": "attack",
                             "hits": 2,
                             "strength": 7,
                             "keywords": [
@@ -400,7 +373,6 @@
                     "move": 15,
                     "attacks": [
                         {
-                            "type": "attack",
                             "hits": 4,
                             "strength": 4,
                             "keywords": [
@@ -408,7 +380,6 @@
                             ]
                         },
                         {
-                            "type": "attack",
                             "hits": 2,
                             "strength": 8,
                             "keywords": [
@@ -432,7 +403,6 @@
                     "move": 25,
                     "attacks": [
                         {
-                            "type": "attack",
                             "hits": 1,
                             "strength": 9,
                             "keywords": [
@@ -440,7 +410,6 @@
                             ]
                         },
                         {
-                            "type": "attack",
                             "hits": 4,
                             "strength": 7,
                             "keywords": [
@@ -460,7 +429,6 @@
                     "move": 20,
                     "attacks": [
                         {
-                            "type": "attack",
                             "hits": 2,
                             "strength": 8,
                             "keywords": [
@@ -479,7 +447,6 @@
                     "move": 20,
                     "attacks": [
                         {
-                            "type": "attack",
                             "hits": 2,
                             "strength": 7,
                             "keywords": [
@@ -487,7 +454,6 @@
                             ]
                         },
                         {
-                            "type": "attack",
                             "hits": 1,
                             "strength": 10,
                             "keywords": [
@@ -506,7 +472,6 @@
                     "move": 20,
                     "attacks": [
                         {
-                            "type": "attack",
                             "hits": 2,
                             "strength": 7,
                             "keywords": [
@@ -523,13 +488,11 @@
                     "move": 20,
                     "attacks": [
                         {
-                            "type": "attack",
                             "hits": 2,
                             "strength": 5,
                             "keywords": []
                         },
                         {
-                            "type": "attack",
                             "hits": 2,
                             "strength": 6,
                             "keywords": [
@@ -546,7 +509,6 @@
                     "move": 10,
                     "attacks": [
                         {
-                            "type": "attack",
                             "hits": 2,
                             "strength": 4,
                             "keywords": [
@@ -566,7 +528,6 @@
                     "move": 10,
                     "attacks": [
                         {
-                            "type": "attack",
                             "hits": 1,
                             "strength": 7,
                             "keywords": [
@@ -574,7 +535,6 @@
                             ]
                         },
                         {
-                            "type": "attack",
                             "hits": 1,
                             "strength": 10,
                             "keywords": [
@@ -592,13 +552,11 @@
                     "move": 15,
                     "attacks": [
                         {
-                            "type": "attack",
                             "hits": 4,
                             "strength": 5,
                             "keywords": []
                         },
                         {
-                            "type": "attack",
                             "hits": 1,
                             "strength": 6,
                             "keywords": [
@@ -619,13 +577,11 @@
                     "move": 25,
                     "attacks": [
                         {
-                            "type": "attack",
                             "hits": 2,
                             "strength": 5,
                             "keywords": []
                         },
                         {
-                            "type": "attack",
                             "hits": 2,
                             "strength": 6,
                             "keywords": [
@@ -644,7 +600,6 @@
                     "move": 0,
                     "attacks": [
                         {
-                            "type": "attack",
                             "hits": 4,
                             "strength": 10,
                             "keywords": [
@@ -664,13 +619,11 @@
                     "move": 25,
                     "attacks": [
                         {
-                            "type": "attack",
                             "hits": 8,
                             "strength": 6,
                             "keywords": []
                         },
                         {
-                            "type": "attack",
                             "hits": 1,
                             "strength": 8,
                             "keywords": [
@@ -679,7 +632,6 @@
                             ]
                         },
                         {
-                            "type": "attack",
                             "hits": 2,
                             "strength": 12,
                             "keywords": [
@@ -700,7 +652,6 @@
                     "move": 15,
                     "attacks": [
                         {
-                            "type": "attack",
                             "hits": 1,
                             "strength": 8,
                             "keywords": [
@@ -725,13 +676,11 @@
                     "move": 15,
                     "attacks": [
                         {
-                            "type": "attack",
                             "hits": 4,
                             "strength": 6,
                             "keywords": []
                         },
                         {
-                            "type": "attack",
                             "hits": 1,
                             "strength": 6,
                             "keywords": [
@@ -748,7 +697,6 @@
                     "move": 15,
                     "attacks": [
                         {
-                            "type": "attack",
                             "hits": 1,
                             "strength": 6,
                             "keywords": [
@@ -766,7 +714,6 @@
                     "move": 15,
                     "attacks": [
                         {
-                            "type": "attack",
                             "hits": 2,
                             "strength": 8,
                             "keywords": [
@@ -784,7 +731,6 @@
                     "move": 15,
                     "attacks": [
                         {
-                            "type": "attack",
                             "hits": 1,
                             "strength": 12,
                             "keywords": [
@@ -802,7 +748,6 @@
                     "move": 15,
                     "attacks": [
                         {
-                            "type": "attack",
                             "hits": 6,
                             "strength": 7,
                             "keywords": [
