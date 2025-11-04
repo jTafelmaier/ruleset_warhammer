@@ -1016,9 +1016,7 @@
                     "name": "Lokhust destroyer - Gauss",
                     "points_per_model": 150,
                     "armor": 8,
-                    "keywords": [
-                        "vehicle"
-                    ],
+                    "keywords": [],
                     "actions": [
                         {
                             "type": "scan",
@@ -1048,9 +1046,7 @@
                     "name": "Lokhust destroyer - Enmitic",
                     "points_per_model": 150,
                     "armor": 8,
-                    "keywords": [
-                        "vehicle"
-                    ],
+                    "keywords": [],
                     "actions": [
                         {
                             "type": "scan",
