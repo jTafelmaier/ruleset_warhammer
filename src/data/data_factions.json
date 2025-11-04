@@ -596,6 +596,16 @@
                             "hits": 4,
                             "strength": 5,
                             "keywords": []
+                        },
+                        {
+                            "type": "attack",
+                            "hits": 1,
+                            "strength": 6,
+                            "keywords": [
+                                "20 cm",
+                                "heavy",
+                                "ap"
+                            ]
                         }
                     ]
                 },
