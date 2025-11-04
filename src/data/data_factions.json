@@ -9,9 +9,9 @@
                     "armor": 5,
                     "keywords": [
                         "fly",
-                        "leader",
-                        "move 25"
+                        "leader"
                     ],
+                    "move": 25,
                     "attacks": [
                         {
                             "type": "attack",
@@ -34,9 +34,9 @@
                     "points_per_model": 50,
                     "armor": 5,
                     "keywords": [
-                        "fly",
-                        "move 25"
+                        "fly"
                     ],
+                    "move": 25,
                     "attacks": [
                         {
                             "type": "attack",
@@ -60,9 +60,9 @@
                     "armor": 5,
                     "keywords": [
                         "sealed",
-                        "leader",
-                        "move 10"
+                        "leader"
                     ],
+                    "move": 10,
                     "attacks": [
                         {
                             "type": "attack",
@@ -85,9 +85,9 @@
                     "points_per_model": 50,
                     "armor": 5,
                     "keywords": [
-                        "sealed",
-                        "move 10"
+                        "sealed"
                     ],
+                    "move": 10,
                     "attacks": [
                         {
                             "type": "attack",
@@ -112,9 +112,9 @@
                     "points_per_model": 50,
                     "armor": 5,
                     "keywords": [
-                        "sealed",
-                        "move 10"
+                        "sealed"
                     ],
+                    "move": 10,
                     "attacks": [
                         {
                             "type": "attack",
@@ -138,9 +138,9 @@
                     "points_per_model": 400,
                     "armor": 11,
                     "keywords": [
-                        "vehicle",
-                        "move 25"
+                        "vehicle"
                     ],
+                    "move": 25,
                     "attacks": [
                         {
                             "type": "attack",
@@ -164,9 +164,9 @@
                     "points_per_model": 100,
                     "armor": 5,
                     "keywords": [
-                        "leader",
-                        "move 15"
+                        "leader"
                     ],
+                    "move": 15,
                     "attacks": [
                         {
                             "type": "attack",
@@ -188,9 +188,8 @@
                     "name": "Sword brethren",
                     "points_per_model": 50,
                     "armor": 5,
-                    "keywords": [
-                        "move 15"
-                    ],
+                    "keywords": [],
+                    "move": 15,
                     "attacks": [
                         {
                             "type": "attack",
@@ -212,9 +211,8 @@
                     "name": "Crusader squad",
                     "points_per_model": 50,
                     "armor": 5,
-                    "keywords": [
-                        "move 15"
-                    ],
+                    "keywords": [],
+                    "move": 15,
                     "attacks": [
                         {
                             "type": "attack",
@@ -241,9 +239,9 @@
                     "keywords": [
                         "sealed",
                         "teleportation",
-                        "leader",
-                        "move 10"
+                        "leader"
                     ],
+                    "move": 10,
                     "attacks": [
                         {
                             "type": "attack",
@@ -270,9 +268,9 @@
                     "keywords": [
                         "sealed",
                         "teleportation",
-                        "leader",
-                        "move 10"
+                        "leader"
                     ],
+                    "move": 10,
                     "attacks": [
                         {
                             "type": "attack",
@@ -290,9 +288,9 @@
                     "armor": 7,
                     "keywords": [
                         "sealed",
-                        "teleportation",
-                        "move 10"
+                        "teleportation"
                     ],
+                    "move": 10,
                     "attacks": [
                         {
                             "type": "attack",
@@ -312,9 +310,9 @@
                         "stealth",
                         "teleportation",
                         "fly",
-                        "leader",
-                        "move 25"
+                        "leader"
                     ],
+                    "move": 25,
                     "attacks": [
                         {
                             "type": "attack",
@@ -339,9 +337,9 @@
                     "keywords": [
                         "sealed",
                         "teleportation",
-                        "leader",
-                        "move 10"
+                        "leader"
                     ],
+                    "move": 10,
                     "attacks": [
                         {
                             "type": "attack",
@@ -360,9 +358,9 @@
                     "keywords": [
                         "vehicle",
                         "fly",
-                        "leader",
-                        "move 40"
+                        "leader"
                     ],
+                    "move": 40,
                     "attacks": [
                         {
                             "type": "attack",
@@ -388,9 +386,9 @@
                     "armor": 5,
                     "keywords": [
                         "teleportation",
-                        "leader",
-                        "move 15"
+                        "leader"
                     ],
+                    "move": 15,
                     "attacks": [
                         {
                             "type": "attack",
@@ -420,9 +418,9 @@
                     "points_per_model": 250,
                     "armor": 6,
                     "keywords": [
-                        "vehicle",
-                        "move 25"
+                        "vehicle"
                     ],
+                    "move": 25,
                     "attacks": [
                         {
                             "type": "attack",
@@ -448,9 +446,9 @@
                     "points_per_model": 150,
                     "armor": 5,
                     "keywords": [
-                        "teleportation",
-                        "move 20"
+                        "teleportation"
                     ],
+                    "move": 20,
                     "attacks": [
                         {
                             "type": "attack",
@@ -467,9 +465,9 @@
                     "points_per_model": 100,
                     "armor": 5,
                     "keywords": [
-                        "teleportation",
-                        "move 20"
+                        "teleportation"
                     ],
+                    "move": 20,
                     "attacks": [
                         {
                             "type": "attack",
@@ -494,9 +492,8 @@
                     "name": "Eightbound",
                     "points_per_model": 50,
                     "armor": 5,
-                    "keywords": [
-                        "move 20"
-                    ],
+                    "keywords": [],
+                    "move": 20,
                     "attacks": [
                         {
                             "type": "attack",
@@ -512,9 +509,8 @@
                     "name": "Khorne Berzerkers",
                     "points_per_model": 50,
                     "armor": 5,
-                    "keywords": [
-                        "move 20"
-                    ],
+                    "keywords": [],
+                    "move": 20,
                     "attacks": [
                         {
                             "type": "attack",
@@ -536,9 +532,8 @@
                     "name": "Jakhals",
                     "points_per_model": 10,
                     "armor": 2,
-                    "keywords": [
-                        "move 10"
-                    ],
+                    "keywords": [],
+                    "move": 10,
                     "attacks": [
                         {
                             "type": "attack",
@@ -556,9 +551,9 @@
                     "armor": 6,
                     "keywords": [
                         "sealed",
-                        "leader",
-                        "move 10"
+                        "leader"
                     ],
+                    "move": 10,
                     "attacks": [
                         {
                             "type": "attack",
@@ -583,9 +578,8 @@
                     "name": "MkII Marines",
                     "points_per_model": 50,
                     "armor": 5,
-                    "keywords": [
-                        "move 15"
-                    ],
+                    "keywords": [],
+                    "move": 15,
                     "attacks": [
                         {
                             "type": "attack",
@@ -600,9 +594,9 @@
                     "points_per_model": 50,
                     "armor": 5,
                     "keywords": [
-                        "fly",
-                        "move 25"
+                        "fly"
                     ],
+                    "move": 25,
                     "attacks": [
                         {
                             "type": "attack",
@@ -625,9 +619,9 @@
                     "points_per_model": 200,
                     "armor": 10,
                     "keywords": [
-                        "vehicle",
-                        "move 0"
+                        "vehicle"
                     ],
+                    "move": 0,
                     "attacks": [
                         {
                             "type": "attack",
@@ -644,9 +638,9 @@
                     "points_per_model": 600,
                     "armor": 12,
                     "keywords": [
-                        "vehicle",
-                        "move 25"
+                        "vehicle"
                     ],
+                    "move": 25,
                     "attacks": [
                         {
                             "type": "attack",
@@ -680,9 +674,9 @@
                     "keywords": [
                         "stealth",
                         "teleportation",
-                        "leader",
-                        "move 15"
+                        "leader"
                     ],
+                    "move": 15,
                     "attacks": [
                         {
                             "type": "attack",
@@ -705,9 +699,9 @@
                     "armor": 6,
                     "keywords": [
                         "stealth",
-                        "teleportation",
-                        "move 15"
+                        "teleportation"
                     ],
+                    "move": 15,
                     "attacks": [
                         {
                             "type": "attack",
@@ -729,9 +723,8 @@
                     "name": "Warrior",
                     "points_per_model": 50,
                     "armor": 5,
-                    "keywords": [
-                        "move 15"
-                    ],
+                    "keywords": [],
+                    "move": 15,
                     "attacks": [
                         {
                             "type": "attack",
@@ -748,9 +741,8 @@
                     "name": "Skorpekh destroyer",
                     "points_per_model": 100,
                     "armor": 7,
-                    "keywords": [
-                        "move 15"
-                    ],
+                    "keywords": [],
+                    "move": 15,
                     "attacks": [
                         {
                             "type": "attack",
@@ -767,9 +759,8 @@
                     "name": "Lokhust destroyer - Gauss",
                     "points_per_model": 150,
                     "armor": 8,
-                    "keywords": [
-                        "move 15"
-                    ],
+                    "keywords": [],
+                    "move": 15,
                     "attacks": [
                         {
                             "type": "attack",
@@ -786,9 +777,8 @@
                     "name": "Lokhust destroyer - Enmitic",
                     "points_per_model": 150,
                     "armor": 8,
-                    "keywords": [
-                        "move 15"
-                    ],
+                    "keywords": [],
+                    "move": 15,
                     "attacks": [
                         {
                             "type": "attack",

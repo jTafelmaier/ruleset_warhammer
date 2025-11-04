@@ -22,7 +22,7 @@ def get_text_keywords(
 def get_text_html_attack(
     dict_attack:typing.Dict):
 
-    return "<div class=\"unit_property\"><span>⚔</span>" \
+    return "<div class=\"model_property\">" \
         + dict_attack \
             ["hits"] \
             .__str__() \
@@ -62,18 +62,22 @@ def get_text_html_data_unit(
                 ["points_per_model"]) \
         + " points per model.\"><div class=\"image_unit\" style=\"background-image: url('" \
         + path_image_unit \
-        + "')\"><div class=\"header_unit\">" \
-        + "<div class=\"unit_property\"><span>⛊</span>" \
+        + "')\"><div class=\"header_unit\"><div class=\"model_properties\"><div class=\"model_property\"><span>⛊</span>" \
         + str(
             dict_unit \
                 ["armor"]) \
+        + "<span>🡆</span>" \
+        + str(
+            dict_unit \
+                ["move"]) \
+        + "</div><span class=\"name_unit\">" \
+        + dict_unit \
+            ["name"] \
+        + "</span></div><div class=\"model_keywords\">" \
         + get_text_keywords( \
             dict_unit \
                 ["keywords"]) \
-        + "</div><h3 class=\"name_unit\">" \
-        + dict_unit \
-            ["name"] \
-        + "</h3></div><div class=\"model_properties\">" \
+        + "</div></div><div class=\"model_attacks\">" \
         + text_html_rows_attacks \
         + "</div></div></div>"
 

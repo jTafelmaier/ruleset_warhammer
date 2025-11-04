@@ -195,6 +195,7 @@ body {
     border: 2px solid #9fa7ba;
     border-left: 5px solid #9fa7ba;
     border-radius: 2px;
+    font-size: 15px;
     clip-path: polygon(
         0 0,
         calc(100% - 15px) 0,
@@ -213,25 +214,19 @@ body {
     background-position: 100%;
 }
 
-.header_unit {
-    display: flex;
-    height: 26px;
-}
-
 .name_unit {
     flex: 1;
-    font-weight: normal;
     color: #a6adba;
     margin: 2px;
     margin-left: 5px;
 }
 
 .model_properties {
-    align-self: flex-end;
-    width: 250px;
+    display: flex;
+    height: 26px;
 }
 
-.unit_property {
+.model_property {
     width: fit-content;
     color: #2e3544;
     background: linear-gradient(#9fa7ba 0px, #6b7384 40px);
@@ -239,15 +234,22 @@ body {
     border-bottom-right-radius: 2px;
     padding: 1px 5px;
     margin-bottom: 2px;
-    font-size: 15px;
     user-select: none;
 }
 
-.unit_property span {
+.model_property span {
     display: inline-block;
     color: white;
     font-weight: bold;
-    min-width: 15px;
+}
+
+.model_keywords {
+    margin-left: 2px;
+}
+
+.model_attacks {
+    align-self: flex-end;
+    width: 250px;
 }
 
 #army_lists {
