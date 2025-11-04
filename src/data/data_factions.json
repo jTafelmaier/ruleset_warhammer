@@ -14,13 +14,11 @@
                     ],
                     "attacks": [
                         {
-                            "hits": 2,
-                            "strength": 5,
+                            "strength": 6,
                             "keywords": []
                         },
                         {
-                            "hits": 2,
-                            "strength": 7,
+                            "strength": 8,
                             "keywords": [
                                 "melee",
                                 "ap"
@@ -38,13 +36,11 @@
                     ],
                     "attacks": [
                         {
-                            "hits": 2,
-                            "strength": 5,
+                            "strength": 6,
                             "keywords": []
                         },
                         {
-                            "hits": 2,
-                            "strength": 6,
+                            "strength": 7,
                             "keywords": [
                                 "melee"
                             ]
@@ -62,13 +58,11 @@
                     ],
                     "attacks": [
                         {
-                            "hits": 4,
-                            "strength": 5,
+                            "strength": 7,
                             "keywords": []
                         },
                         {
-                            "hits": 2,
-                            "strength": 7,
+                            "strength": 8,
                             "keywords": [
                                 "melee",
                                 "ap"
@@ -86,17 +80,16 @@
                     ],
                     "attacks": [
                         {
-                            "hits": 4,
-                            "strength": 5,
+                            "strength": 7,
                             "keywords": []
                         },
                         {
-                            "hits": 1,
-                            "strength": 6,
+                            "strength": 7,
                             "keywords": [
                                 "20 cm",
                                 "heavy",
-                                "ap"
+                                "ap",
+                                "single"
                             ]
                         }
                     ]
@@ -111,16 +104,15 @@
                     ],
                     "attacks": [
                         {
-                            "hits": 2,
-                            "strength": 5,
+                            "strength": 6,
                             "keywords": []
                         },
                         {
-                            "hits": 1,
                             "strength": 10,
                             "keywords": [
                                 "20 cm",
-                                "ap"
+                                "ap",
+                                "single"
                             ]
                         }
                     ]
@@ -128,23 +120,22 @@
                 {
                     "name": "Gladiator lancer",
                     "points_per_model": 400,
-                    "armor": 11,
+                    "armor": 10,
                     "move": 25,
                     "keywords": [
                         "vehicle"
                     ],
                     "attacks": [
                         {
-                            "hits": 8,
-                            "strength": 4,
+                            "strength": 7,
                             "keywords": []
                         },
                         {
-                            "hits": 1,
                             "strength": 12,
                             "keywords": [
                                 "heavy",
-                                "ap"
+                                "ap",
+                                "single"
                             ]
                         }
                     ]
@@ -159,13 +150,11 @@
                     ],
                     "attacks": [
                         {
-                            "hits": 2,
-                            "strength": 5,
+                            "strength": 6,
                             "keywords": []
                         },
                         {
-                            "hits": 2,
-                            "strength": 7,
+                            "strength": 8,
                             "keywords": [
                                 "melee",
                                 "ap"
@@ -181,13 +170,11 @@
                     "keywords": [],
                     "attacks": [
                         {
-                            "hits": 2,
-                            "strength": 5,
+                            "strength": 6,
                             "keywords": []
                         },
                         {
-                            "hits": 2,
-                            "strength": 6,
+                            "strength": 7,
                             "keywords": [
                                 "melee",
                                 "ap"
@@ -203,17 +190,16 @@
                     "keywords": [],
                     "attacks": [
                         {
-                            "hits": 4,
-                            "strength": 5,
+                            "strength": 7,
                             "keywords": []
                         },
                         {
-                            "hits": 1,
-                            "strength": 6,
+                            "strength": 7,
                             "keywords": [
                                 "20 cm",
                                 "heavy",
-                                "ap"
+                                "ap",
+                                "single"
                             ]
                         }
                     ]
@@ -230,15 +216,13 @@
                     ],
                     "attacks": [
                         {
-                            "hits": 4,
-                            "strength": 4,
+                            "strength": 6,
                             "keywords": [
                                 "20 cm"
                             ]
                         },
                         {
-                            "hits": 2,
-                            "strength": 8,
+                            "strength": 9,
                             "keywords": [
                                 "melee",
                                 "ap"
@@ -258,8 +242,7 @@
                     ],
                     "attacks": [
                         {
-                            "hits": 2,
-                            "strength": 8,
+                            "strength": 9,
                             "keywords": [
                                 "melee",
                                 "ap"
@@ -278,8 +261,7 @@
                     ],
                     "attacks": [
                         {
-                            "hits": 2,
-                            "strength": 7,
+                            "strength": 8,
                             "keywords": [
                                 "melee",
                                 "ap"
@@ -300,13 +282,11 @@
                     ],
                     "attacks": [
                         {
-                            "hits": 2,
-                            "strength": 5,
+                            "strength": 6,
                             "keywords": []
                         },
                         {
-                            "hits": 4,
-                            "strength": 6,
+                            "strength": 8,
                             "keywords": [
                                 "melee",
                                 "ap"
@@ -326,8 +306,7 @@
                     ],
                     "attacks": [
                         {
-                            "hits": 2,
-                            "strength": 8,
+                            "strength": 9,
                             "keywords": [
                                 "melee"
                             ]
@@ -346,15 +325,13 @@
                     ],
                     "attacks": [
                         {
-                            "hits": 8,
-                            "strength": 4,
+                            "strength": 7,
                             "keywords": [
                                 "heavy"
                             ]
                         },
                         {
-                            "hits": 2,
-                            "strength": 7,
+                            "strength": 8,
                             "keywords": [
                                 "melee",
                                 "ap"
@@ -373,15 +350,13 @@
                     ],
                     "attacks": [
                         {
-                            "hits": 4,
-                            "strength": 4,
+                            "strength": 6,
                             "keywords": [
                                 "20 cm"
                             ]
                         },
                         {
-                            "hits": 2,
-                            "strength": 8,
+                            "strength": 9,
                             "keywords": [
                                 "melee"
                             ]
@@ -403,15 +378,14 @@
                     ],
                     "attacks": [
                         {
-                            "hits": 1,
                             "strength": 9,
                             "keywords": [
-                                "melee"
+                                "melee",
+                                "single"
                             ]
                         },
                         {
-                            "hits": 4,
-                            "strength": 7,
+                            "strength": 9,
                             "keywords": [
                                 "melee",
                                 "heavy"
@@ -429,8 +403,7 @@
                     ],
                     "attacks": [
                         {
-                            "hits": 2,
-                            "strength": 8,
+                            "strength": 9,
                             "keywords": [
                                 "melee"
                             ]
@@ -447,19 +420,18 @@
                     ],
                     "attacks": [
                         {
-                            "hits": 2,
-                            "strength": 7,
+                            "strength": 8,
                             "keywords": [
                                 "melee"
                             ]
                         },
                         {
-                            "hits": 1,
                             "strength": 10,
                             "keywords": [
                                 "melee",
                                 "heavy",
-                                "ap"
+                                "ap",
+                                "single"
                             ]
                         }
                     ]
@@ -472,8 +444,7 @@
                     "keywords": [],
                     "attacks": [
                         {
-                            "hits": 2,
-                            "strength": 7,
+                            "strength": 8,
                             "keywords": [
                                 "melee"
                             ]
@@ -488,13 +459,11 @@
                     "keywords": [],
                     "attacks": [
                         {
-                            "hits": 2,
-                            "strength": 5,
+                            "strength": 6,
                             "keywords": []
                         },
                         {
-                            "hits": 2,
-                            "strength": 6,
+                            "strength": 7,
                             "keywords": [
                                 "melee"
                             ]
@@ -509,8 +478,7 @@
                     "keywords": [],
                     "attacks": [
                         {
-                            "hits": 2,
-                            "strength": 4,
+                            "strength": 5,
                             "keywords": [
                                 "melee"
                             ]
@@ -528,18 +496,18 @@
                     ],
                     "attacks": [
                         {
-                            "hits": 1,
                             "strength": 7,
                             "keywords": [
-                                "heavy"
+                                "heavy",
+                                "single"
                             ]
                         },
                         {
-                            "hits": 1,
                             "strength": 10,
                             "keywords": [
                                 "melee",
-                                "heavy"
+                                "heavy",
+                                "single"
                             ]
                         }
                     ]
@@ -552,17 +520,16 @@
                     "keywords": [],
                     "attacks": [
                         {
-                            "hits": 4,
-                            "strength": 5,
+                            "strength": 7,
                             "keywords": []
                         },
                         {
-                            "hits": 1,
-                            "strength": 6,
+                            "strength": 7,
                             "keywords": [
                                 "20 cm",
                                 "heavy",
-                                "ap"
+                                "ap",
+                                "single"
                             ]
                         }
                     ]
@@ -577,13 +544,11 @@
                     ],
                     "attacks": [
                         {
-                            "hits": 2,
-                            "strength": 5,
+                            "strength": 6,
                             "keywords": []
                         },
                         {
-                            "hits": 2,
-                            "strength": 6,
+                            "strength": 7,
                             "keywords": [
                                 "melee"
                             ]
@@ -600,8 +565,7 @@
                     ],
                     "attacks": [
                         {
-                            "hits": 4,
-                            "strength": 10,
+                            "strength": 12,
                             "keywords": [
                                 "heavy",
                                 "ap"
@@ -612,19 +576,17 @@
                 {
                     "name": "Fellblade super-heavy tank",
                     "points_per_model": 600,
-                    "armor": 12,
+                    "armor": 11,
                     "move": 25,
                     "keywords": [
                         "vehicle"
                     ],
                     "attacks": [
                         {
-                            "hits": 8,
-                            "strength": 6,
+                            "strength": 9,
                             "keywords": []
                         },
                         {
-                            "hits": 1,
                             "strength": 8,
                             "keywords": [
                                 "heavy",
@@ -632,7 +594,6 @@
                             ]
                         },
                         {
-                            "hits": 2,
                             "strength": 12,
                             "keywords": [
                                 "heavy"
@@ -652,10 +613,10 @@
                     ],
                     "attacks": [
                         {
-                            "hits": 1,
                             "strength": 8,
                             "keywords": [
-                                "heavy"
+                                "heavy",
+                                "single"
                             ]
                         }
                     ]
@@ -676,12 +637,10 @@
                     ],
                     "attacks": [
                         {
-                            "hits": 4,
-                            "strength": 6,
+                            "strength": 8,
                             "keywords": []
                         },
                         {
-                            "hits": 1,
                             "strength": 6,
                             "keywords": [
                                 "volume"
@@ -697,11 +656,11 @@
                     "keywords": [],
                     "attacks": [
                         {
-                            "hits": 1,
                             "strength": 6,
                             "keywords": [
                                 "heavy",
-                                "ap"
+                                "ap",
+                                "single"
                             ]
                         }
                     ]
@@ -714,8 +673,7 @@
                     "keywords": [],
                     "attacks": [
                         {
-                            "hits": 2,
-                            "strength": 8,
+                            "strength": 9,
                             "keywords": [
                                 "melee",
                                 "ap"
@@ -731,11 +689,11 @@
                     "keywords": [],
                     "attacks": [
                         {
-                            "hits": 1,
                             "strength": 12,
                             "keywords": [
                                 "heavy",
-                                "ap"
+                                "ap",
+                                "single"
                             ]
                         }
                     ]
@@ -748,8 +706,7 @@
                     "keywords": [],
                     "attacks": [
                         {
-                            "hits": 6,
-                            "strength": 7,
+                            "strength": 9,
                             "keywords": [
                                 "heavy"
                             ]

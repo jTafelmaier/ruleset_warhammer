@@ -195,17 +195,11 @@
                             Attack
                         </h4>
                         <div>
+                            remaining damage = 0.0
+                            <br/>
                             For every model in the attacking unit:
                             <div class="indented">
                                 Select one weapon and one visible enemy unit as "target unit".
-                                <br/>
-                                During this attack, the armor value of units in cover that do not have &quot;vehicle&quot; is increased by 1.
-                                <br/>
-                                <br/>
-                                If the weapon has &quot;volume&quot;:
-                                <div class="indented">
-                                    During this attack, multiply weapon: <b>hits</b> by the number of models in the target unit at the start of this attack, up to a maximum of 10.
-                                </div>
                                 <br/>
                                 End the attack sequence for this model if any of the following are true:
                                 <div class="indented">
@@ -218,25 +212,41 @@
                                     - The weapon has &quot;melee&quot; and the target unit is not within 5 cm.
                                     <br/>
                                     - The weapon has &quot;heavy&quot; and this is not the first action for this unit this turn.
-                                    <br/>
-                                    - The target unit has &quot;sealed&quot;, the weapon does not have &quot;ap&quot;, and the weapon strength is lower than the target model armor.
                                 </div>
                                 <br/>
-                                Repeat for weapon: <b>hits</b>:
+                                During this attack, increase the armor value of target models by 1 for each true condition:
                                 <div class="indented">
-                                    Reduce unit: health by 2^(weapon: <span class="icon">💥</span><b>strength</b> - target model: <b><span class="icon">⛊</span>armor</b>).
+                                    - the model does not have &quot;vehicle&quot; and is in cover.
                                     <br/>
+                                    - the model has &quot;sealed&quot; and the weapon does not have &quot;ap&quot;.
+                                </div>
+                                <br/>
+                                damage = 2^(weapon: <span class="icon">💥</span><b>strength</b> - target model: <b><span class="icon">⛊</span>armor</b>)
+                                <br/>
+                                If the weapon has &quot;volume&quot;:
+                                <div class="indented">
+                                    damage = damage * max(10, # models in the target unit at the start of this attack)
+                                </div>
+                                <br/>
+                                damage = remaining damage + damage
+                                <br/>
+                                remaining damage = damage - floor(damage)
+                                <br/>
+                                <br/>
+                                Repeat for floor(damage):
+                                <div class="indented">
+                                    Reduce unit: health by 1.
                                     <br/>
                                     If target unit: <b>health</b> &le; 0:
                                     <div class="indented">
                                         The enemy player must choose to destroy one model in the target unit.
                                         <br/>
                                         Then, the target unit health points are fully restored.
+                                        <br/>
+                                        If the weapon has &quot;single&quot;: end the attack sequence for this model.
                                     </div>
                                 </div>
                             </div>
-                            <br/>
-                            Any fractional unit health point values are rounded to the next integer value.
                         </div>
                     </div>
                 </div>

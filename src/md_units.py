@@ -25,11 +25,7 @@ def get_text_html_data_unit(
     def get_text_html_attack(
         dict_attack:typing.Dict):
 
-        return "<div class=\"model_property\">" \
-            + dict_attack \
-                ["hits"] \
-                .__str__() \
-            + "x 💥" \
+        return "<div class=\"model_property\">💥" \
             + dict_attack \
                 ["strength"] \
                 .__str__() \
