@@ -176,10 +176,6 @@
                     ],
                     "actions": [
                         {
-                            "type": "scan",
-                            "parameters": ""
-                        },
-                        {
                             "type": "move",
                             "parameters": "25"
                         },
@@ -263,10 +259,6 @@
                     "armor": 5,
                     "keywords": [],
                     "actions": [
-                        {
-                            "type": "scan",
-                            "parameters": ""
-                        },
                         {
                             "type": "move",
                             "parameters": "15"
@@ -399,10 +391,6 @@
                         "leader"
                     ],
                     "actions": [
-                        {
-                            "type": "scan",
-                            "parameters": ""
-                        },
                         {
                             "type": "move",
                             "parameters": "fly 25"
@@ -684,10 +672,6 @@
                     ],
                     "actions": [
                         {
-                            "type": "scan",
-                            "parameters": ""
-                        },
-                        {
                             "type": "move",
                             "parameters": "10"
                         },
@@ -717,10 +701,6 @@
                     "armor": 5,
                     "keywords": [],
                     "actions": [
-                        {
-                            "type": "scan",
-                            "parameters": ""
-                        },
                         {
                             "type": "move",
                             "parameters": "15"
@@ -789,10 +769,6 @@
                     ],
                     "actions": [
                         {
-                            "type": "scan",
-                            "parameters": ""
-                        },
-                        {
                             "type": "move",
                             "parameters": "25"
                         },
@@ -833,10 +809,6 @@
                     ],
                     "actions": [
                         {
-                            "type": "scan",
-                            "parameters": ""
-                        },
-                        {
                             "type": "move",
                             "parameters": "15"
                         },
@@ -865,10 +837,6 @@
                         "teleportation"
                     ],
                     "actions": [
-                        {
-                            "type": "scan",
-                            "parameters": ""
-                        },
                         {
                             "type": "move",
                             "parameters": "15"

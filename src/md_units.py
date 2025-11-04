@@ -10,7 +10,6 @@ from src import md_shared
 
 
 DICT_DESCRIPTIONS_ACTIONS = {
-    "scan": "This model can perform the &quot;Scan&quot; action.",
     "move": "This model can perform the &quot;Move&quot; action.",
     "attack": "This model can perform the &quot;Attack&quot; action."}
 
