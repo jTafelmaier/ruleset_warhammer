@@ -103,7 +103,7 @@ body {
     font-size: x-small;
 }
 
-.attack {
+.action {
     display: flex;
     width: 600px;
     background-color: #c2cce0;
@@ -118,7 +118,7 @@ body {
         0 calc(100% - 7px));
 }
 
-.attack > h4 {
+.action > h4 {
     width: 80px;
     margin-top: 0;
     margin-bottom: 0;
@@ -128,7 +128,7 @@ body {
     padding: 5px;
 }
 
-.attack > div {
+.action > div {
     flex: 1;
     padding: 5px;
 }
