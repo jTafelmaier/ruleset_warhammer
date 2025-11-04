@@ -98,11 +98,11 @@
                         {
                             "type": "attack",
                             "hits": 1,
-                            "strength": 4,
+                            "strength": 6,
                             "keywords": [
                                 "20 cm",
                                 "heavy",
-                                "volume"
+                                "ap"
                             ]
                         }
                     ]
@@ -223,11 +223,11 @@
                         {
                             "type": "attack",
                             "hits": 1,
-                            "strength": 4,
+                            "strength": 6,
                             "keywords": [
                                 "20 cm",
                                 "heavy",
-                                "volume"
+                                "ap"
                             ]
                         }
                     ]
