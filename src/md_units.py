@@ -165,7 +165,7 @@ def get_text_html_data_unit(
                 return ""
 
             return " [" \
-                + " " \
+                + ", " \
                     .join(
                         dict_unit \
                             ["keywords"]) \

@@ -7,12 +7,10 @@
                     "name": "Captain with jump pack",
                     "points_per_model": 100,
                     "armor": 5,
-                    "keywords": [],
+                    "keywords": [
+                        "score"
+                    ],
                     "actions": [
-                        {
-                            "type": "score",
-                            "parameters": ""
-                        },
                         {
                             "type": "move",
                             "parameters": "fly 25"
@@ -66,13 +64,10 @@
                     "points_per_model": 100,
                     "armor": 5,
                     "keywords": [
-                        "sealed"
+                        "sealed",
+                        "score"
                     ],
                     "actions": [
-                        {
-                            "type": "score",
-                            "parameters": ""
-                        },
                         {
                             "type": "move",
                             "parameters": "10"
@@ -210,12 +205,10 @@
                     "name": "Castellan",
                     "points_per_model": 100,
                     "armor": 5,
-                    "keywords": [],
+                    "keywords": [
+                        "score"
+                    ],
                     "actions": [
-                        {
-                            "type": "score",
-                            "parameters": ""
-                        },
                         {
                             "type": "move",
                             "parameters": "15"
@@ -319,13 +312,10 @@
                     "points_per_model": 200,
                     "armor": 6,
                     "keywords": [
-                        "sealed"
+                        "sealed",
+                        "score"
                     ],
                     "actions": [
-                        {
-                            "type": "score",
-                            "parameters": ""
-                        },
                         {
                             "type": "move",
                             "parameters": "10"
@@ -358,13 +348,10 @@
                     "points_per_model": 200,
                     "armor": 7,
                     "keywords": [
-                        "sealed"
+                        "sealed",
+                        "score"
                     ],
                     "actions": [
-                        {
-                            "type": "score",
-                            "parameters": ""
-                        },
                         {
                             "type": "move",
                             "parameters": "10"
@@ -416,15 +403,12 @@
                     "points_per_model": 200,
                     "armor": 5,
                     "keywords": [
-                        "stealth"
+                        "stealth",
+                        "score"
                     ],
                     "actions": [
                         {
                             "type": "scan",
-                            "parameters": ""
-                        },
-                        {
-                            "type": "score",
                             "parameters": ""
                         },
                         {
@@ -457,13 +441,10 @@
                     "points_per_model": 200,
                     "armor": 7,
                     "keywords": [
-                        "sealed"
+                        "sealed",
+                        "score"
                     ],
                     "actions": [
-                        {
-                            "type": "score",
-                            "parameters": ""
-                        },
                         {
                             "type": "move",
                             "parameters": "10"
@@ -488,13 +469,10 @@
                     "points_per_model": 200,
                     "armor": 6,
                     "keywords": [
-                        "vehicle"
+                        "vehicle",
+                        "score"
                     ],
                     "actions": [
-                        {
-                            "type": "score",
-                            "parameters": ""
-                        },
                         {
                             "type": "move",
                             "parameters": "fly 40"
@@ -522,12 +500,10 @@
                     "name": "Castellan Crowe",
                     "points_per_model": 200,
                     "armor": 5,
-                    "keywords": [],
+                    "keywords": [
+                        "score"
+                    ],
                     "actions": [
-                        {
-                            "type": "score",
-                            "parameters": ""
-                        },
                         {
                             "type": "move",
                             "parameters": "15"
@@ -725,15 +701,12 @@
                     "points_per_model": 150,
                     "armor": 6,
                     "keywords": [
-                        "sealed"
+                        "sealed",
+                        "score"
                     ],
                     "actions": [
                         {
                             "type": "scan",
-                            "parameters": ""
-                        },
-                        {
-                            "type": "score",
                             "parameters": ""
                         },
                         {
@@ -876,15 +849,12 @@
                     "points_per_model": 200,
                     "armor": 5,
                     "keywords": [
-                        "stealth"
+                        "stealth",
+                        "score"
                     ],
                     "actions": [
                         {
                             "type": "scan",
-                            "parameters": ""
-                        },
-                        {
-                            "type": "score",
                             "parameters": ""
                         },
                         {
