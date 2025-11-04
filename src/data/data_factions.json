@@ -6,7 +6,7 @@
                 {
                     "name": "Captain with jump pack",
                     "points_per_model": 100,
-                    "armor": 5,
+                    "armor": 4,
                     "move": 25,
                     "keywords": [
                         "fly",
@@ -14,11 +14,11 @@
                     ],
                     "attacks": [
                         {
-                            "strength": 6,
+                            "strength": 5,
                             "keywords": []
                         },
                         {
-                            "strength": 8,
+                            "strength": 7,
                             "keywords": [
                                 "melee",
                                 "ap"
@@ -29,18 +29,18 @@
                 {
                     "name": "Jump pack intercessors",
                     "points_per_model": 50,
-                    "armor": 5,
+                    "armor": 4,
                     "move": 25,
                     "keywords": [
                         "fly"
                     ],
                     "attacks": [
                         {
-                            "strength": 6,
+                            "strength": 5,
                             "keywords": []
                         },
                         {
-                            "strength": 7,
+                            "strength": 6,
                             "keywords": [
                                 "melee"
                             ]
@@ -50,7 +50,7 @@
                 {
                     "name": "Captain in gravis armour",
                     "points_per_model": 100,
-                    "armor": 5,
+                    "armor": 4,
                     "move": 10,
                     "keywords": [
                         "sealed",
@@ -58,11 +58,11 @@
                     ],
                     "attacks": [
                         {
-                            "strength": 7,
+                            "strength": 6,
                             "keywords": []
                         },
                         {
-                            "strength": 8,
+                            "strength": 7,
                             "keywords": [
                                 "melee",
                                 "ap"
@@ -73,18 +73,18 @@
                 {
                     "name": "Heavy intercessors",
                     "points_per_model": 50,
-                    "armor": 5,
+                    "armor": 4,
                     "move": 10,
                     "keywords": [
                         "sealed"
                     ],
                     "attacks": [
                         {
-                            "strength": 7,
+                            "strength": 6,
                             "keywords": []
                         },
                         {
-                            "strength": 7,
+                            "strength": 6,
                             "keywords": [
                                 "20 cm",
                                 "heavy",
@@ -97,18 +97,18 @@
                 {
                     "name": "Eradicators",
                     "points_per_model": 50,
-                    "armor": 5,
+                    "armor": 4,
                     "move": 10,
                     "keywords": [
                         "sealed"
                     ],
                     "attacks": [
                         {
-                            "strength": 6,
+                            "strength": 5,
                             "keywords": []
                         },
                         {
-                            "strength": 10,
+                            "strength": 9,
                             "keywords": [
                                 "20 cm",
                                 "ap",
@@ -120,18 +120,18 @@
                 {
                     "name": "Gladiator lancer",
                     "points_per_model": 400,
-                    "armor": 10,
+                    "armor": 9,
                     "move": 25,
                     "keywords": [
                         "vehicle"
                     ],
                     "attacks": [
                         {
-                            "strength": 7,
+                            "strength": 6,
                             "keywords": []
                         },
                         {
-                            "strength": 12,
+                            "strength": 11,
                             "keywords": [
                                 "heavy",
                                 "ap",
@@ -143,18 +143,18 @@
                 {
                     "name": "Castellan",
                     "points_per_model": 100,
-                    "armor": 5,
+                    "armor": 4,
                     "move": 15,
                     "keywords": [
                         "leader"
                     ],
                     "attacks": [
                         {
-                            "strength": 6,
+                            "strength": 5,
                             "keywords": []
                         },
                         {
-                            "strength": 8,
+                            "strength": 7,
                             "keywords": [
                                 "melee",
                                 "ap"
@@ -165,16 +165,16 @@
                 {
                     "name": "Sword brethren",
                     "points_per_model": 50,
-                    "armor": 5,
+                    "armor": 4,
                     "move": 15,
                     "keywords": [],
                     "attacks": [
                         {
-                            "strength": 6,
+                            "strength": 5,
                             "keywords": []
                         },
                         {
-                            "strength": 7,
+                            "strength": 6,
                             "keywords": [
                                 "melee",
                                 "ap"
@@ -185,16 +185,16 @@
                 {
                     "name": "Crusader squad",
                     "points_per_model": 50,
-                    "armor": 5,
+                    "armor": 4,
                     "move": 15,
                     "keywords": [],
                     "attacks": [
                         {
-                            "strength": 7,
+                            "strength": 6,
                             "keywords": []
                         },
                         {
-                            "strength": 7,
+                            "strength": 6,
                             "keywords": [
                                 "20 cm",
                                 "heavy",
@@ -207,7 +207,7 @@
                 {
                     "name": "Belial",
                     "points_per_model": 200,
-                    "armor": 6,
+                    "armor": 5,
                     "move": 10,
                     "keywords": [
                         "sealed",
@@ -216,13 +216,13 @@
                     ],
                     "attacks": [
                         {
-                            "strength": 6,
+                            "strength": 5,
                             "keywords": [
                                 "20 cm"
                             ]
                         },
                         {
-                            "strength": 9,
+                            "strength": 8,
                             "keywords": [
                                 "melee",
                                 "ap"
@@ -233,7 +233,7 @@
                 {
                     "name": "Deathwing strikemaster",
                     "points_per_model": 200,
-                    "armor": 7,
+                    "armor": 6,
                     "move": 10,
                     "keywords": [
                         "sealed",
@@ -242,7 +242,7 @@
                     ],
                     "attacks": [
                         {
-                            "strength": 9,
+                            "strength": 8,
                             "keywords": [
                                 "melee",
                                 "ap"
@@ -253,7 +253,7 @@
                 {
                     "name": "Deathwing knights",
                     "points_per_model": 100,
-                    "armor": 7,
+                    "armor": 6,
                     "move": 10,
                     "keywords": [
                         "sealed",
@@ -261,7 +261,7 @@
                     ],
                     "attacks": [
                         {
-                            "strength": 8,
+                            "strength": 7,
                             "keywords": [
                                 "melee",
                                 "ap"
@@ -272,7 +272,7 @@
                 {
                     "name": "Aethon Shaan",
                     "points_per_model": 200,
-                    "armor": 5,
+                    "armor": 4,
                     "move": 25,
                     "keywords": [
                         "stealth",
@@ -282,11 +282,11 @@
                     ],
                     "attacks": [
                         {
-                            "strength": 6,
+                            "strength": 5,
                             "keywords": []
                         },
                         {
-                            "strength": 8,
+                            "strength": 7,
                             "keywords": [
                                 "melee",
                                 "ap"
@@ -297,7 +297,7 @@
                 {
                     "name": "Darnath Lysander",
                     "points_per_model": 200,
-                    "armor": 7,
+                    "armor": 6,
                     "move": 10,
                     "keywords": [
                         "sealed",
@@ -306,7 +306,7 @@
                     ],
                     "attacks": [
                         {
-                            "strength": 9,
+                            "strength": 8,
                             "keywords": [
                                 "melee"
                             ]
@@ -316,7 +316,7 @@
                 {
                     "name": "Suboden Khan",
                     "points_per_model": 200,
-                    "armor": 6,
+                    "armor": 5,
                     "move": 40,
                     "keywords": [
                         "vehicle",
@@ -325,13 +325,13 @@
                     ],
                     "attacks": [
                         {
-                            "strength": 7,
+                            "strength": 6,
                             "keywords": [
                                 "heavy"
                             ]
                         },
                         {
-                            "strength": 8,
+                            "strength": 7,
                             "keywords": [
                                 "melee",
                                 "ap"
@@ -342,7 +342,7 @@
                 {
                     "name": "Castellan Crowe",
                     "points_per_model": 200,
-                    "armor": 5,
+                    "armor": 4,
                     "move": 15,
                     "keywords": [
                         "teleportation",
@@ -350,13 +350,13 @@
                     ],
                     "attacks": [
                         {
-                            "strength": 6,
+                            "strength": 5,
                             "keywords": [
                                 "20 cm"
                             ]
                         },
                         {
-                            "strength": 9,
+                            "strength": 8,
                             "keywords": [
                                 "melee"
                             ]
@@ -371,21 +371,21 @@
                 {
                     "name": "Lord Invocatus",
                     "points_per_model": 250,
-                    "armor": 6,
+                    "armor": 5,
                     "move": 25,
                     "keywords": [
                         "vehicle"
                     ],
                     "attacks": [
                         {
-                            "strength": 9,
+                            "strength": 8,
                             "keywords": [
                                 "melee",
                                 "single"
                             ]
                         },
                         {
-                            "strength": 9,
+                            "strength": 8,
                             "keywords": [
                                 "melee",
                                 "heavy"
@@ -396,24 +396,7 @@
                 {
                     "name": "Slaughterbound",
                     "points_per_model": 150,
-                    "armor": 5,
-                    "move": 20,
-                    "keywords": [
-                        "teleportation"
-                    ],
-                    "attacks": [
-                        {
-                            "strength": 9,
-                            "keywords": [
-                                "melee"
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "name": "Exalted Eightbound",
-                    "points_per_model": 100,
-                    "armor": 5,
+                    "armor": 4,
                     "move": 20,
                     "keywords": [
                         "teleportation"
@@ -424,9 +407,26 @@
                             "keywords": [
                                 "melee"
                             ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Exalted Eightbound",
+                    "points_per_model": 100,
+                    "armor": 4,
+                    "move": 20,
+                    "keywords": [
+                        "teleportation"
+                    ],
+                    "attacks": [
+                        {
+                            "strength": 7,
+                            "keywords": [
+                                "melee"
+                            ]
                         },
                         {
-                            "strength": 10,
+                            "strength": 9,
                             "keywords": [
                                 "melee",
                                 "heavy",
@@ -439,12 +439,12 @@
                 {
                     "name": "Eightbound",
                     "points_per_model": 50,
-                    "armor": 5,
+                    "armor": 4,
                     "move": 20,
                     "keywords": [],
                     "attacks": [
                         {
-                            "strength": 8,
+                            "strength": 7,
                             "keywords": [
                                 "melee"
                             ]
@@ -454,16 +454,16 @@
                 {
                     "name": "Khorne Berzerkers",
                     "points_per_model": 50,
-                    "armor": 5,
+                    "armor": 4,
                     "move": 20,
                     "keywords": [],
                     "attacks": [
                         {
-                            "strength": 6,
+                            "strength": 5,
                             "keywords": []
                         },
                         {
-                            "strength": 7,
+                            "strength": 6,
                             "keywords": [
                                 "melee"
                             ]
@@ -473,12 +473,12 @@
                 {
                     "name": "Jakhals",
                     "points_per_model": 10,
-                    "armor": 2,
+                    "armor": 1,
                     "move": 10,
                     "keywords": [],
                     "attacks": [
                         {
-                            "strength": 5,
+                            "strength": 4,
                             "keywords": [
                                 "melee"
                             ]
@@ -488,7 +488,7 @@
                 {
                     "name": "Warsmith",
                     "points_per_model": 150,
-                    "armor": 6,
+                    "armor": 5,
                     "move": 10,
                     "keywords": [
                         "sealed",
@@ -496,14 +496,14 @@
                     ],
                     "attacks": [
                         {
-                            "strength": 7,
+                            "strength": 6,
                             "keywords": [
                                 "heavy",
                                 "single"
                             ]
                         },
                         {
-                            "strength": 10,
+                            "strength": 9,
                             "keywords": [
                                 "melee",
                                 "heavy",
@@ -515,16 +515,16 @@
                 {
                     "name": "MkII Marines",
                     "points_per_model": 50,
-                    "armor": 5,
+                    "armor": 4,
                     "move": 15,
                     "keywords": [],
                     "attacks": [
                         {
-                            "strength": 7,
+                            "strength": 6,
                             "keywords": []
                         },
                         {
-                            "strength": 7,
+                            "strength": 6,
                             "keywords": [
                                 "20 cm",
                                 "heavy",
@@ -537,18 +537,18 @@
                 {
                     "name": "MkII Assault Squad",
                     "points_per_model": 50,
-                    "armor": 5,
+                    "armor": 4,
                     "move": 25,
                     "keywords": [
                         "fly"
                     ],
                     "attacks": [
                         {
-                            "strength": 6,
+                            "strength": 5,
                             "keywords": []
                         },
                         {
-                            "strength": 7,
+                            "strength": 6,
                             "keywords": [
                                 "melee"
                             ]
@@ -558,14 +558,14 @@
                 {
                     "name": "Araknae accelerator platform",
                     "points_per_model": 200,
-                    "armor": 10,
+                    "armor": 9,
                     "move": 0,
                     "keywords": [
                         "vehicle"
                     ],
                     "attacks": [
                         {
-                            "strength": 12,
+                            "strength": 11,
                             "keywords": [
                                 "heavy",
                                 "ap"
@@ -576,25 +576,25 @@
                 {
                     "name": "Fellblade super-heavy tank",
                     "points_per_model": 600,
-                    "armor": 11,
+                    "armor": 10,
                     "move": 25,
                     "keywords": [
                         "vehicle"
                     ],
                     "attacks": [
                         {
-                            "strength": 9,
+                            "strength": 8,
                             "keywords": []
                         },
                         {
-                            "strength": 8,
+                            "strength": 7,
                             "keywords": [
                                 "heavy",
                                 "volume"
                             ]
                         },
                         {
-                            "strength": 12,
+                            "strength": 11,
                             "keywords": [
                                 "heavy"
                             ]
@@ -604,7 +604,7 @@
                 {
                     "name": "Exodus",
                     "points_per_model": 200,
-                    "armor": 5,
+                    "armor": 4,
                     "move": 15,
                     "keywords": [
                         "stealth",
@@ -613,7 +613,7 @@
                     ],
                     "attacks": [
                         {
-                            "strength": 8,
+                            "strength": 7,
                             "keywords": [
                                 "heavy",
                                 "single"
@@ -629,7 +629,7 @@
                 {
                     "name": "Hexmark destroyer",
                     "points_per_model": 250,
-                    "armor": 6,
+                    "armor": 5,
                     "move": 15,
                     "keywords": [
                         "stealth",
@@ -637,11 +637,11 @@
                     ],
                     "attacks": [
                         {
-                            "strength": 8,
+                            "strength": 7,
                             "keywords": []
                         },
                         {
-                            "strength": 6,
+                            "strength": 5,
                             "keywords": [
                                 "volume"
                             ]
@@ -651,12 +651,12 @@
                 {
                     "name": "Warrior",
                     "points_per_model": 50,
-                    "armor": 5,
+                    "armor": 4,
                     "move": 15,
                     "keywords": [],
                     "attacks": [
                         {
-                            "strength": 6,
+                            "strength": 5,
                             "keywords": [
                                 "heavy",
                                 "ap",
@@ -668,12 +668,12 @@
                 {
                     "name": "Skorpekh destroyer",
                     "points_per_model": 100,
-                    "armor": 7,
+                    "armor": 6,
                     "move": 15,
                     "keywords": [],
                     "attacks": [
                         {
-                            "strength": 9,
+                            "strength": 8,
                             "keywords": [
                                 "melee",
                                 "ap"
@@ -684,12 +684,12 @@
                 {
                     "name": "Lokhust destroyer - Gauss",
                     "points_per_model": 150,
-                    "armor": 8,
+                    "armor": 7,
                     "move": 15,
                     "keywords": [],
                     "attacks": [
                         {
-                            "strength": 12,
+                            "strength": 11,
                             "keywords": [
                                 "heavy",
                                 "ap",
@@ -701,12 +701,12 @@
                 {
                     "name": "Lokhust destroyer - Enmitic",
                     "points_per_model": 150,
-                    "armor": 8,
+                    "armor": 7,
                     "move": 15,
                     "keywords": [],
                     "attacks": [
                         {
-                            "strength": 9,
+                            "strength": 8,
                             "keywords": [
                                 "heavy"
                             ]
