@@ -66,15 +66,12 @@ def get_text_html_army_lists(
                 + text_count_models \
                 + "</div><div class=\"decrease\" onclick=\"update_count_models(" \
                 + text_parameters_functions \
-                + ", false)\">▼</div></div><div class=\"reveal_variation\" onclick=\"reveal_variation(" \
-                + text_parameters_functions \
-                + ")\">?</div></div><div onclick=\"toggle_inactive(" \
+                + ", false)\">▼</div></div></div><div onclick=\"toggle_inactive(" \
                 + text_parameters_functions \
                 + ")\">" \
                 + md_units.get_text_html_data_unit(
                     dict_unit=dict_unit,
-                    name_faction=name_faction,
-                    index_chosen_variation=dict_unit_army_list["variation"]) \
+                    name_faction=name_faction) \
                 + "</div></div>"
 
         return "<div id=\"" \

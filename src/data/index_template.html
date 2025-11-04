@@ -143,7 +143,7 @@
                 </div>
                 <div class="turn_structure">
                     <h2 class="section">
-                        Default actions
+                        Actions
                     </h2>
                     <div class="action">
                         <h4>
@@ -153,6 +153,28 @@
                             This action can only be performed when this unit is in reserves.
                             <br/>
                             This unit may be placed anywhere in the owner's deployment zone.
+                        </div>
+                    </div>
+                    <div class="action">
+                        <h4>
+                            Setup teleportation
+                        </h4>
+                        <div>
+                            Can only perform this action if at least one model in the unit has &quot;teleportation&quot;.
+                            <br/>
+                            May set up a teleporter token on the board space, where allowed.
+                            <br/>
+                            When this unit performs the "Deploy" action: May place the unit as close as possible to any placed teleporter token, and then remove that teleporter token.
+                        </div>
+                    </div>
+                    <div class="action">
+                        <h4>
+                            Move
+                        </h4>
+                        <div>
+                            Every model in the unit may move up to its value x in centimeters.
+                            <br/>
+                            If the model does not have &quot;fly&quot;, it cannot move over enemy models or more than 5cm vertically.
                         </div>
                     </div>
                     <div class="action">
@@ -215,29 +237,6 @@
                             </div>
                             <br/>
                             Any fractional unit health point values are rounded to the next integer value.
-                        </div>
-                    </div>
-                    <h2 class="section">
-                        Restricted actions
-                    </h2>
-                    <div class="action">
-                        <h4>
-                            Move
-                        </h4>
-                        <div>
-                            Every model in the unit may move up to its value x in centimeters.
-                            <br/>
-                            If the model does not have &quot;fly&quot;, it cannot move over enemy models or more than 5cm vertically.
-                        </div>
-                    </div>
-                    <div class="action">
-                        <h4>
-                            Setup teleportation
-                        </h4>
-                        <div>
-                            May set up a teleporter token on the board space, where allowed.
-                            <br/>
-                            When this unit performs the "Deploy" action: May place the unit as close as possible to any placed teleporter token, and then remove that teleporter token.
                         </div>
                     </div>
                 </div>

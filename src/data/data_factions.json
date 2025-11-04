@@ -9,13 +9,10 @@
                     "armor": 5,
                     "keywords": [
                         "fly",
-                        "leader"
+                        "leader",
+                        "move 25"
                     ],
-                    "actions": [
-                        {
-                            "type": "move",
-                            "parameters": "25"
-                        },
+                    "attacks": [
                         {
                             "type": "attack",
                             "hits": 2,
@@ -30,21 +27,17 @@
                                 "melee"
                             ]
                         }
-                    ],
-                    "variations": []
+                    ]
                 },
                 {
                     "name": "Jump pack intercessors",
                     "points_per_model": 50,
                     "armor": 5,
                     "keywords": [
-                        "fly"
+                        "fly",
+                        "move 25"
                     ],
-                    "actions": [
-                        {
-                            "type": "move",
-                            "parameters": "25"
-                        },
+                    "attacks": [
                         {
                             "type": "attack",
                             "hits": 2,
@@ -59,8 +52,7 @@
                                 "melee"
                             ]
                         }
-                    ],
-                    "variations": []
+                    ]
                 },
                 {
                     "name": "Captain in gravis armour",
@@ -68,13 +60,10 @@
                     "armor": 5,
                     "keywords": [
                         "sealed",
-                        "leader"
+                        "leader",
+                        "move 10"
                     ],
-                    "actions": [
-                        {
-                            "type": "move",
-                            "parameters": "10"
-                        },
+                    "attacks": [
                         {
                             "type": "attack",
                             "hits": 4,
@@ -89,21 +78,17 @@
                                 "melee"
                             ]
                         }
-                    ],
-                    "variations": []
+                    ]
                 },
                 {
                     "name": "Heavy intercessors",
                     "points_per_model": 50,
                     "armor": 5,
                     "keywords": [
-                        "sealed"
+                        "sealed",
+                        "move 10"
                     ],
-                    "actions": [
-                        {
-                            "type": "move",
-                            "parameters": "10"
-                        },
+                    "attacks": [
                         {
                             "type": "attack",
                             "hits": 4,
@@ -120,24 +105,6 @@
                                 "volume"
                             ]
                         }
-                    ],
-                    "variations": [
-                        {
-                            "replace_ids": [
-                                2
-                            ],
-                            "actions_gained": [
-                                {
-                                    "type": "attack",
-                                    "hits": 1,
-                                    "strength": 6,
-                                    "keywords": [
-                                        "20 cm",
-                                        "heavy"
-                                    ]
-                                }
-                            ]
-                        }
                     ]
                 },
                 {
@@ -145,13 +112,10 @@
                     "points_per_model": 50,
                     "armor": 5,
                     "keywords": [
-                        "sealed"
+                        "sealed",
+                        "move 10"
                     ],
-                    "actions": [
-                        {
-                            "type": "move",
-                            "parameters": "10"
-                        },
+                    "attacks": [
                         {
                             "type": "attack",
                             "hits": 2,
@@ -167,21 +131,17 @@
                                 "ap"
                             ]
                         }
-                    ],
-                    "variations": []
+                    ]
                 },
                 {
                     "name": "Gladiator lancer",
                     "points_per_model": 400,
                     "armor": 11,
                     "keywords": [
-                        "vehicle"
+                        "vehicle",
+                        "move 25"
                     ],
-                    "actions": [
-                        {
-                            "type": "move",
-                            "parameters": "25"
-                        },
+                    "attacks": [
                         {
                             "type": "attack",
                             "hits": 8,
@@ -197,21 +157,17 @@
                                 "ap"
                             ]
                         }
-                    ],
-                    "variations": []
+                    ]
                 },
                 {
                     "name": "Castellan",
                     "points_per_model": 100,
                     "armor": 5,
                     "keywords": [
-                        "leader"
+                        "leader",
+                        "move 15"
                     ],
-                    "actions": [
-                        {
-                            "type": "move",
-                            "parameters": "15"
-                        },
+                    "attacks": [
                         {
                             "type": "attack",
                             "hits": 2,
@@ -226,19 +182,16 @@
                                 "melee"
                             ]
                         }
-                    ],
-                    "variations": []
+                    ]
                 },
                 {
                     "name": "Sword brethren",
                     "points_per_model": 50,
                     "armor": 5,
-                    "keywords": [],
-                    "actions": [
-                        {
-                            "type": "move",
-                            "parameters": "15"
-                        },
+                    "keywords": [
+                        "move 15"
+                    ],
+                    "attacks": [
                         {
                             "type": "attack",
                             "hits": 2,
@@ -253,19 +206,16 @@
                                 "melee"
                             ]
                         }
-                    ],
-                    "variations": []
+                    ]
                 },
                 {
                     "name": "Crusader squad",
                     "points_per_model": 50,
                     "armor": 5,
-                    "keywords": [],
-                    "actions": [
-                        {
-                            "type": "move",
-                            "parameters": "15"
-                        },
+                    "keywords": [
+                        "move 15"
+                    ],
+                    "attacks": [
                         {
                             "type": "attack",
                             "hits": 4,
@@ -282,24 +232,6 @@
                                 "volume"
                             ]
                         }
-                    ],
-                    "variations": [
-                        {
-                            "replace_ids": [
-                                3
-                            ],
-                            "actions_gained": [
-                                {
-                                    "type": "attack",
-                                    "hits": 1,
-                                    "strength": 6,
-                                    "keywords": [
-                                        "20 cm",
-                                        "heavy"
-                                    ]
-                                }
-                            ]
-                        }
                     ]
                 },
                 {
@@ -309,13 +241,10 @@
                     "keywords": [
                         "sealed",
                         "teleportation",
-                        "leader"
+                        "leader",
+                        "move 10"
                     ],
-                    "actions": [
-                        {
-                            "type": "move",
-                            "parameters": "10"
-                        },
+                    "attacks": [
                         {
                             "type": "attack",
                             "hits": 4,
@@ -332,8 +261,7 @@
                                 "melee"
                             ]
                         }
-                    ],
-                    "variations": []
+                    ]
                 },
                 {
                     "name": "Deathwing strikemaster",
@@ -342,13 +270,10 @@
                     "keywords": [
                         "sealed",
                         "teleportation",
-                        "leader"
+                        "leader",
+                        "move 10"
                     ],
-                    "actions": [
-                        {
-                            "type": "move",
-                            "parameters": "10"
-                        },
+                    "attacks": [
                         {
                             "type": "attack",
                             "hits": 2,
@@ -357,8 +282,7 @@
                                 "melee"
                             ]
                         }
-                    ],
-                    "variations": []
+                    ]
                 },
                 {
                     "name": "Deathwing knights",
@@ -366,13 +290,10 @@
                     "armor": 7,
                     "keywords": [
                         "sealed",
-                        "teleportation"
+                        "teleportation",
+                        "move 10"
                     ],
-                    "actions": [
-                        {
-                            "type": "move",
-                            "parameters": "10"
-                        },
+                    "attacks": [
                         {
                             "type": "attack",
                             "hits": 2,
@@ -381,8 +302,7 @@
                                 "melee"
                             ]
                         }
-                    ],
-                    "variations": []
+                    ]
                 },
                 {
                     "name": "Aethon Shaan",
@@ -392,13 +312,10 @@
                         "stealth",
                         "teleportation",
                         "fly",
-                        "leader"
+                        "leader",
+                        "move 25"
                     ],
-                    "actions": [
-                        {
-                            "type": "move",
-                            "parameters": "25"
-                        },
+                    "attacks": [
                         {
                             "type": "attack",
                             "hits": 2,
@@ -413,8 +330,7 @@
                                 "melee"
                             ]
                         }
-                    ],
-                    "variations": []
+                    ]
                 },
                 {
                     "name": "Darnath Lysander",
@@ -423,13 +339,10 @@
                     "keywords": [
                         "sealed",
                         "teleportation",
-                        "leader"
+                        "leader",
+                        "move 10"
                     ],
-                    "actions": [
-                        {
-                            "type": "move",
-                            "parameters": "10"
-                        },
+                    "attacks": [
                         {
                             "type": "attack",
                             "hits": 2,
@@ -438,8 +351,7 @@
                                 "melee"
                             ]
                         }
-                    ],
-                    "variations": []
+                    ]
                 },
                 {
                     "name": "Suboden Khan",
@@ -448,13 +360,10 @@
                     "keywords": [
                         "vehicle",
                         "fly",
-                        "leader"
+                        "leader",
+                        "move 40"
                     ],
-                    "actions": [
-                        {
-                            "type": "move",
-                            "parameters": "40"
-                        },
+                    "attacks": [
                         {
                             "type": "attack",
                             "hits": 8,
@@ -471,8 +380,7 @@
                                 "melee"
                             ]
                         }
-                    ],
-                    "variations": []
+                    ]
                 },
                 {
                     "name": "Castellan Crowe",
@@ -480,13 +388,10 @@
                     "armor": 5,
                     "keywords": [
                         "teleportation",
-                        "leader"
+                        "leader",
+                        "move 15"
                     ],
-                    "actions": [
-                        {
-                            "type": "move",
-                            "parameters": "15"
-                        },
+                    "attacks": [
                         {
                             "type": "attack",
                             "hits": 4,
@@ -503,8 +408,7 @@
                                 "melee"
                             ]
                         }
-                    ],
-                    "variations": []
+                    ]
                 }
             ]
         },
@@ -516,13 +420,10 @@
                     "points_per_model": 250,
                     "armor": 6,
                     "keywords": [
-                        "vehicle"
+                        "vehicle",
+                        "move 25"
                     ],
-                    "actions": [
-                        {
-                            "type": "move",
-                            "parameters": "25"
-                        },
+                    "attacks": [
                         {
                             "type": "attack",
                             "hits": 1,
@@ -540,21 +441,17 @@
                                 "heavy"
                             ]
                         }
-                    ],
-                    "variations": []
+                    ]
                 },
                 {
                     "name": "Slaughterbound",
                     "points_per_model": 150,
                     "armor": 5,
                     "keywords": [
-                        "teleportation"
+                        "teleportation",
+                        "move 20"
                     ],
-                    "actions": [
-                        {
-                            "type": "move",
-                            "parameters": "20 cm"
-                        },
+                    "attacks": [
                         {
                             "type": "attack",
                             "hits": 2,
@@ -563,21 +460,17 @@
                                 "melee"
                             ]
                         }
-                    ],
-                    "variations": []
+                    ]
                 },
                 {
                     "name": "Exalted Eightbound",
                     "points_per_model": 100,
                     "armor": 5,
                     "keywords": [
-                        "teleportation"
+                        "teleportation",
+                        "move 20"
                     ],
-                    "actions": [
-                        {
-                            "type": "move",
-                            "parameters": "20 cm"
-                        },
+                    "attacks": [
                         {
                             "type": "attack",
                             "hits": 2,
@@ -595,19 +488,16 @@
                                 "heavy"
                             ]
                         }
-                    ],
-                    "variations": []
+                    ]
                 },
                 {
                     "name": "Eightbound",
                     "points_per_model": 50,
                     "armor": 5,
-                    "keywords": [],
-                    "actions": [
-                        {
-                            "type": "move",
-                            "parameters": "20 cm"
-                        },
+                    "keywords": [
+                        "move 20"
+                    ],
+                    "attacks": [
                         {
                             "type": "attack",
                             "hits": 2,
@@ -616,19 +506,16 @@
                                 "melee"
                             ]
                         }
-                    ],
-                    "variations": []
+                    ]
                 },
                 {
                     "name": "Khorne Berzerkers",
                     "points_per_model": 50,
                     "armor": 5,
-                    "keywords": [],
-                    "actions": [
-                        {
-                            "type": "move",
-                            "parameters": "20 cm"
-                        },
+                    "keywords": [
+                        "move 20"
+                    ],
+                    "attacks": [
                         {
                             "type": "attack",
                             "hits": 2,
@@ -643,19 +530,16 @@
                                 "melee"
                             ]
                         }
-                    ],
-                    "variations": []
+                    ]
                 },
                 {
                     "name": "Jakhals",
                     "points_per_model": 10,
                     "armor": 2,
-                    "keywords": [],
-                    "actions": [
-                        {
-                            "type": "move",
-                            "parameters": "10"
-                        },
+                    "keywords": [
+                        "move 10"
+                    ],
+                    "attacks": [
                         {
                             "type": "attack",
                             "hits": 2,
@@ -664,8 +548,7 @@
                                 "melee"
                             ]
                         }
-                    ],
-                    "variations": []
+                    ]
                 },
                 {
                     "name": "Warsmith",
@@ -673,13 +556,10 @@
                     "armor": 6,
                     "keywords": [
                         "sealed",
-                        "leader"
+                        "leader",
+                        "move 10"
                     ],
-                    "actions": [
-                        {
-                            "type": "move",
-                            "parameters": "10"
-                        },
+                    "attacks": [
                         {
                             "type": "attack",
                             "hits": 1,
@@ -697,40 +577,33 @@
                                 "heavy"
                             ]
                         }
-                    ],
-                    "variations": []
+                    ]
                 },
                 {
                     "name": "MkII Marines",
                     "points_per_model": 50,
                     "armor": 5,
-                    "keywords": [],
-                    "actions": [
-                        {
-                            "type": "move",
-                            "parameters": "15"
-                        },
+                    "keywords": [
+                        "move 15"
+                    ],
+                    "attacks": [
                         {
                             "type": "attack",
                             "hits": 4,
                             "strength": 5,
                             "keywords": []
                         }
-                    ],
-                    "variations": []
+                    ]
                 },
                 {
                     "name": "MkII Assault Squad",
                     "points_per_model": 50,
                     "armor": 5,
                     "keywords": [
-                        "fly"
+                        "fly",
+                        "move 25"
                     ],
-                    "actions": [
-                        {
-                            "type": "move",
-                            "parameters": "25"
-                        },
+                    "attacks": [
                         {
                             "type": "attack",
                             "hits": 2,
@@ -745,17 +618,17 @@
                                 "melee"
                             ]
                         }
-                    ],
-                    "variations": []
+                    ]
                 },
                 {
                     "name": "Araknae accelerator platform",
                     "points_per_model": 200,
                     "armor": 10,
                     "keywords": [
-                        "vehicle"
+                        "vehicle",
+                        "move 0"
                     ],
-                    "actions": [
+                    "attacks": [
                         {
                             "type": "attack",
                             "hits": 4,
@@ -764,21 +637,17 @@
                                 "heavy"
                             ]
                         }
-                    ],
-                    "variations": []
+                    ]
                 },
                 {
                     "name": "Fellblade super-heavy tank",
                     "points_per_model": 600,
                     "armor": 12,
                     "keywords": [
-                        "vehicle"
+                        "vehicle",
+                        "move 25"
                     ],
-                    "actions": [
-                        {
-                            "type": "move",
-                            "parameters": "25"
-                        },
+                    "attacks": [
                         {
                             "type": "attack",
                             "hits": 8,
@@ -802,8 +671,7 @@
                                 "heavy"
                             ]
                         }
-                    ],
-                    "variations": []
+                    ]
                 },
                 {
                     "name": "Exodus",
@@ -812,13 +680,10 @@
                     "keywords": [
                         "stealth",
                         "teleportation",
-                        "leader"
+                        "leader",
+                        "move 15"
                     ],
-                    "actions": [
-                        {
-                            "type": "move",
-                            "parameters": "15"
-                        },
+                    "attacks": [
                         {
                             "type": "attack",
                             "hits": 1,
@@ -827,8 +692,7 @@
                                 "heavy"
                             ]
                         }
-                    ],
-                    "variations": []
+                    ]
                 }
             ]
         },
@@ -841,13 +705,10 @@
                     "armor": 6,
                     "keywords": [
                         "stealth",
-                        "teleportation"
+                        "teleportation",
+                        "move 15"
                     ],
-                    "actions": [
-                        {
-                            "type": "move",
-                            "parameters": "15"
-                        },
+                    "attacks": [
                         {
                             "type": "attack",
                             "hits": 4,
@@ -862,19 +723,16 @@
                                 "volume"
                             ]
                         }
-                    ],
-                    "variations": []
+                    ]
                 },
                 {
                     "name": "Warrior",
                     "points_per_model": 50,
                     "armor": 5,
-                    "keywords": [],
-                    "actions": [
-                        {
-                            "type": "move",
-                            "parameters": "15"
-                        },
+                    "keywords": [
+                        "move 15"
+                    ],
+                    "attacks": [
                         {
                             "type": "attack",
                             "hits": 1,
@@ -884,19 +742,16 @@
                                 "ap"
                             ]
                         }
-                    ],
-                    "variations": []
+                    ]
                 },
                 {
                     "name": "Skorpekh destroyer",
                     "points_per_model": 100,
                     "armor": 7,
-                    "keywords": [],
-                    "actions": [
-                        {
-                            "type": "move",
-                            "parameters": "15"
-                        },
+                    "keywords": [
+                        "move 15"
+                    ],
+                    "attacks": [
                         {
                             "type": "attack",
                             "hits": 2,
@@ -906,19 +761,16 @@
                                 "ap"
                             ]
                         }
-                    ],
-                    "variations": []
+                    ]
                 },
                 {
                     "name": "Lokhust destroyer - Gauss",
                     "points_per_model": 150,
                     "armor": 8,
-                    "keywords": [],
-                    "actions": [
-                        {
-                            "type": "move",
-                            "parameters": "15"
-                        },
+                    "keywords": [
+                        "move 15"
+                    ],
+                    "attacks": [
                         {
                             "type": "attack",
                             "hits": 1,
@@ -928,19 +780,16 @@
                                 "ap"
                             ]
                         }
-                    ],
-                    "variations": []
+                    ]
                 },
                 {
                     "name": "Lokhust destroyer - Enmitic",
                     "points_per_model": 150,
                     "armor": 8,
-                    "keywords": [],
-                    "actions": [
-                        {
-                            "type": "move",
-                            "parameters": "15"
-                        },
+                    "keywords": [
+                        "move 15"
+                    ],
+                    "attacks": [
                         {
                             "type": "attack",
                             "hits": 6,
@@ -949,8 +798,7 @@
                                 "heavy"
                             ]
                         }
-                    ],
-                    "variations": []
+                    ]
                 }
             ]
         }

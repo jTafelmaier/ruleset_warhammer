@@ -103,7 +103,7 @@ body {
     font-size: x-small;
 }
 
-.action {
+.attack {
     display: flex;
     width: 600px;
     background-color: #c2cce0;
@@ -118,7 +118,7 @@ body {
         0 calc(100% - 7px));
 }
 
-.action > h4 {
+.attack > h4 {
     width: 80px;
     margin-top: 0;
     margin-bottom: 0;
@@ -128,7 +128,7 @@ body {
     padding: 5px;
 }
 
-.action > div {
+.attack > div {
     flex: 1;
     padding: 5px;
 }
@@ -184,10 +184,6 @@ body {
     margin-top: 40px;
     grid-template-columns: 1000px;
     gap: 20px;
-}
-
-.unit_options {
-    display: flex;
 }
 
 .unit {
@@ -247,24 +243,11 @@ body {
     user-select: none;
 }
 
-.variation {
-    background: #4e6bfb;
-    color: white;
-}
-
 .unit_property span {
     display: inline-block;
     color: white;
     font-weight: bold;
     min-width: 15px;
-}
-
-.variation_options {
-    padding: 10px;
-}
-
-.variation_option {
-    margin-bottom: 10px;
 }
 
 #army_lists {
@@ -335,16 +318,6 @@ body {
     color: #4a5266;
     text-align: center;
     margin-top: 5px;
-}
-
-.reveal_variation {
-    color: #4e6bfb;
-    text-align: center;
-    margin-top: 5px;
-}
-
-.reveal_variation.revealed {
-    color: #2e3544;
 }
 
 .increase, .decrease {

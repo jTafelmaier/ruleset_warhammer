@@ -215,25 +215,6 @@ function update_count_models(
 }
 
 
-function reveal_variation(
-    text_side,
-    index_row) {
-
-    element_unit = document
-        .getElementById(text_side)
-        .getElementsByClassName("unit_army_list")[index_row]
-
-    element_unit
-        .getElementsByClassName("reveal_variation")[0]
-        .classList
-        .toggle("revealed")
-
-    Array.from(element_unit
-        .getElementsByClassName("revealable"))
-        .forEach(element => element.classList.toggle("invisible"))
-}
-
-
 function toggle_inactive(
     text_side,
     index_row) {

@@ -45,43 +45,9 @@ def get_text_html_faction_rules(
         def get_text_html_unit(
             dict_unit:typing.Dict):
 
-            def get_text_variation(
-                dict_variation:typing.Dict):
-
-                def get_text_action(
-                    dict_action:typing.Dict):
-
-                    dict_action_copy = copy.copy(dict_action)
-
-                    dict_action_copy["is_variation"] = False
-                    dict_action_copy["to_replace"] = False
-
-                    return md_units.get_text_html_action(dict_action_copy)
-
-                return "Variation:<br/><br/><div class=\"variation_option\">" \
-                    + "" \
-                        .join(
-                            map(
-                                get_text_action,
-                                dict_variation \
-                                    ["actions_gained"])) \
-                    + ("Replaces index " + " and ".join(map(str, dict_variation["replace_ids"]))) \
-                    + "</div>"
-
-            text_html_variations = "" \
-                .join(
-                    map(
-                        get_text_variation,
-                        dict_unit \
-                            ["variations"]))
-
-            return "<div class=\"unit_options\">" \
-                + md_units.get_text_html_data_unit(
-                    dict_unit=dict_unit,
-                    name_faction=name_faction) \
-                + "<div class=\"variation_options\">" \
-                + text_html_variations \
-                + "</div></div>"
+            return md_units.get_text_html_data_unit(
+                dict_unit=dict_unit,
+                name_faction=name_faction)
 
         text_html_faction = "" \
             .join(
