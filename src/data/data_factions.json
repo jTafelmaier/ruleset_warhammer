@@ -569,10 +569,6 @@
                     ],
                     "actions": [
                         {
-                            "type": "score",
-                            "parameters": ""
-                        },
-                        {
                             "type": "move",
                             "parameters": "25"
                         },
@@ -602,10 +598,6 @@
                     "armor": 5,
                     "keywords": [],
                     "actions": [
-                        {
-                            "type": "score",
-                            "parameters": ""
-                        },
                         {
                             "type": "move",
                             "parameters": "20 cm"
@@ -932,10 +924,6 @@
                             "parameters": ""
                         },
                         {
-                            "type": "score",
-                            "parameters": ""
-                        },
-                        {
                             "type": "move",
                             "parameters": "15"
                         },
@@ -967,10 +955,6 @@
                     "keywords": [],
                     "actions": [
                         {
-                            "type": "score",
-                            "parameters": ""
-                        },
-                        {
                             "type": "move",
                             "parameters": "15"
                         },
@@ -992,10 +976,6 @@
                     "armor": 7,
                     "keywords": [],
                     "actions": [
-                        {
-                            "type": "score",
-                            "parameters": ""
-                        },
                         {
                             "type": "move",
                             "parameters": "15"
@@ -1019,14 +999,6 @@
                     "keywords": [],
                     "actions": [
                         {
-                            "type": "scan",
-                            "parameters": ""
-                        },
-                        {
-                            "type": "score",
-                            "parameters": ""
-                        },
-                        {
                             "type": "move",
                             "parameters": "15"
                         },
@@ -1048,14 +1020,6 @@
                     "armor": 8,
                     "keywords": [],
                     "actions": [
-                        {
-                            "type": "scan",
-                            "parameters": ""
-                        },
-                        {
-                            "type": "score",
-                            "parameters": ""
-                        },
                         {
                             "type": "move",
                             "parameters": "15"

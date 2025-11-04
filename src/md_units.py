@@ -11,7 +11,7 @@ from src import md_shared
 
 DICT_DESCRIPTIONS_ACTIONS = {
     "scan": "This model can perform the &quot;Scan&quot; action.",
-    "score": "This model's unit can perform the &quot;Score objective&quot; action.\nFurthermore, this unit can be attached to another friendly unit at deployment, if that unit does not have a higher armor characteristic than this unit. While this unit is attached to another unit, it cannot be selected as a target unit.",
+    "score": "When this model's unit performs the &quot;Score objective&quot; action: Gain 1 additional victory point.\nFurthermore, this unit can be attached to another friendly unit at deployment, if that unit does not have a higher armor characteristic than this unit. While this unit is attached to another unit, it cannot be selected as a target unit.",
     "move": "This model can perform the &quot;Move&quot; action.",
     "teleportation": "This model's unit can perform the &quot;Setup teleportation&quot; and &quot;Recall&quot; actions.",
     "attack": "This model can perform the &quot;Attack&quot; action."}
