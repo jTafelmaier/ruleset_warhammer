@@ -64,14 +64,13 @@ def get_text_html_data_unit(
         + str(
             dict_unit \
                 ["move"]) \
-        + "</div><span class=\"name_unit\">" \
-        + dict_unit \
-            ["name"] \
-        + "</span></div><div class=\"model_keywords\">" \
         + get_text_keywords( \
             dict_unit \
                 ["keywords"]) \
-        + "</div></div><div class=\"model_attacks\">" \
+        + "</div></div><span class=\"name_unit\">" \
+        + dict_unit \
+            ["name"] \
+        + "</span></div><div class=\"model_attacks\">" \
         + text_html_rows_attacks \
         + "</div></div></div>"
 

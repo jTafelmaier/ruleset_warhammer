@@ -243,10 +243,6 @@ body {
     font-weight: bold;
 }
 
-.model_keywords {
-    margin-left: 2px;
-}
-
 .model_attacks {
     align-self: flex-end;
     width: 250px;
