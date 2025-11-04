@@ -8,7 +8,7 @@
                     "points_per_model": 100,
                     "armor": 5,
                     "keywords": [
-                        "score"
+                        "leader"
                     ],
                     "actions": [
                         {
@@ -65,7 +65,7 @@
                     "armor": 5,
                     "keywords": [
                         "sealed",
-                        "score"
+                        "leader"
                     ],
                     "actions": [
                         {
@@ -206,7 +206,7 @@
                     "points_per_model": 100,
                     "armor": 5,
                     "keywords": [
-                        "score"
+                        "leader"
                     ],
                     "actions": [
                         {
@@ -313,16 +313,13 @@
                     "armor": 6,
                     "keywords": [
                         "sealed",
-                        "score"
+                        "teleportation",
+                        "leader"
                     ],
                     "actions": [
                         {
                             "type": "move",
                             "parameters": "10"
-                        },
-                        {
-                            "type": "teleportation",
-                            "parameters": ""
                         },
                         {
                             "type": "attack",
@@ -349,16 +346,13 @@
                     "armor": 7,
                     "keywords": [
                         "sealed",
-                        "score"
+                        "teleportation",
+                        "leader"
                     ],
                     "actions": [
                         {
                             "type": "move",
                             "parameters": "10"
-                        },
-                        {
-                            "type": "teleportation",
-                            "parameters": ""
                         },
                         {
                             "type": "attack",
@@ -376,16 +370,13 @@
                     "points_per_model": 100,
                     "armor": 7,
                     "keywords": [
-                        "sealed"
+                        "sealed",
+                        "teleportation"
                     ],
                     "actions": [
                         {
                             "type": "move",
                             "parameters": "10"
-                        },
-                        {
-                            "type": "teleportation",
-                            "parameters": ""
                         },
                         {
                             "type": "attack",
@@ -404,7 +395,8 @@
                     "armor": 5,
                     "keywords": [
                         "stealth",
-                        "score"
+                        "teleportation",
+                        "leader"
                     ],
                     "actions": [
                         {
@@ -414,10 +406,6 @@
                         {
                             "type": "move",
                             "parameters": "fly 25"
-                        },
-                        {
-                            "type": "teleportation",
-                            "parameters": ""
                         },
                         {
                             "type": "attack",
@@ -442,16 +430,13 @@
                     "armor": 7,
                     "keywords": [
                         "sealed",
-                        "score"
+                        "teleportation",
+                        "leader"
                     ],
                     "actions": [
                         {
                             "type": "move",
                             "parameters": "10"
-                        },
-                        {
-                            "type": "teleportation",
-                            "parameters": ""
                         },
                         {
                             "type": "attack",
@@ -470,7 +455,7 @@
                     "armor": 6,
                     "keywords": [
                         "vehicle",
-                        "score"
+                        "leader"
                     ],
                     "actions": [
                         {
@@ -501,16 +486,13 @@
                     "points_per_model": 200,
                     "armor": 5,
                     "keywords": [
-                        "score"
+                        "teleportation",
+                        "leader"
                     ],
                     "actions": [
                         {
                             "type": "move",
                             "parameters": "15"
-                        },
-                        {
-                            "type": "teleportation",
-                            "parameters": ""
                         },
                         {
                             "type": "attack",
@@ -572,15 +554,13 @@
                     "name": "Slaughterbound",
                     "points_per_model": 150,
                     "armor": 5,
-                    "keywords": [],
+                    "keywords": [
+                        "teleportation"
+                    ],
                     "actions": [
                         {
                             "type": "move",
                             "parameters": "20 cm"
-                        },
-                        {
-                            "type": "teleportation",
-                            "parameters": ""
                         },
                         {
                             "type": "attack",
@@ -597,15 +577,13 @@
                     "name": "Exalted Eightbound",
                     "points_per_model": 100,
                     "armor": 5,
-                    "keywords": [],
+                    "keywords": [
+                        "teleportation"
+                    ],
                     "actions": [
                         {
                             "type": "move",
                             "parameters": "20 cm"
-                        },
-                        {
-                            "type": "teleportation",
-                            "parameters": ""
                         },
                         {
                             "type": "attack",
@@ -702,7 +680,7 @@
                     "armor": 6,
                     "keywords": [
                         "sealed",
-                        "score"
+                        "leader"
                     ],
                     "actions": [
                         {
@@ -850,7 +828,8 @@
                     "armor": 5,
                     "keywords": [
                         "stealth",
-                        "score"
+                        "teleportation",
+                        "leader"
                     ],
                     "actions": [
                         {
@@ -860,10 +839,6 @@
                         {
                             "type": "move",
                             "parameters": "15"
-                        },
-                        {
-                            "type": "teleportation",
-                            "parameters": ""
                         },
                         {
                             "type": "attack",
@@ -886,7 +861,8 @@
                     "points_per_model": 250,
                     "armor": 6,
                     "keywords": [
-                        "stealth"
+                        "stealth",
+                        "teleportation"
                     ],
                     "actions": [
                         {
@@ -896,10 +872,6 @@
                         {
                             "type": "move",
                             "parameters": "15"
-                        },
-                        {
-                            "type": "teleportation",
-                            "parameters": ""
                         },
                         {
                             "type": "attack",
