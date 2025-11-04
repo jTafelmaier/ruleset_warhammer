@@ -7,38 +7,36 @@ from src import md_shared
 
 
 
-def get_text_keywords(
-    list_texts_keywords:typing.List[str]):
-
-    if len(list_texts_keywords) == 0:
-        return ""
-
-    return " [" \
-        + ", " \
-            .join(list_texts_keywords) \
-        + "]"
-
-
-def get_text_html_attack(
-    dict_attack:typing.Dict):
-
-    return "<div class=\"model_property\">" \
-        + dict_attack \
-            ["hits"] \
-            .__str__() \
-        + "x 💥" \
-        + dict_attack \
-            ["strength"] \
-            .__str__() \
-        + get_text_keywords(
-            dict_attack \
-                ["keywords"]) \
-        + "</div>"
-
-
 def get_text_html_data_unit(
     dict_unit:typing.Dict,
     name_faction:str):
+
+    def get_text_keywords(
+        list_texts_keywords:typing.List[str]):
+
+        if len(list_texts_keywords) == 0:
+            return ""
+
+        return " [" \
+            + ", " \
+                .join(list_texts_keywords) \
+            + "]"
+
+    def get_text_html_attack(
+        dict_attack:typing.Dict):
+
+        return "<div class=\"model_property\">" \
+            + dict_attack \
+                ["hits"] \
+                .__str__() \
+            + "x 💥" \
+            + dict_attack \
+                ["strength"] \
+                .__str__() \
+            + get_text_keywords(
+                dict_attack \
+                    ["keywords"]) \
+            + "</div>"
 
     path_image_unit = "/" \
         .join(
