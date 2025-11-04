@@ -17,10 +17,9 @@ def get_text_html_data_unit(
         if len(list_texts_keywords) == 0:
             return ""
 
-        return " [" \
+        return " " \
             + ", " \
-                .join(list_texts_keywords) \
-            + "]"
+                .join(list_texts_keywords)
 
     def get_text_html_attack(
         dict_attack:typing.Dict):
