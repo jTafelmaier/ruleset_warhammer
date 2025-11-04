@@ -443,11 +443,10 @@
                         },
                         {
                             "type": "attack",
-                            "hits": 2,
+                            "hits": 4,
                             "strength": 6,
                             "keywords": [
-                                "melee",
-                                "volume"
+                                "melee"
                             ]
                         }
                     ],
@@ -618,10 +617,9 @@
                         {
                             "type": "attack",
                             "hits": 2,
-                            "strength": 7,
+                            "strength": 8,
                             "keywords": [
-                                "melee",
-                                "volume"
+                                "melee"
                             ]
                         }
                     ],
@@ -644,10 +642,9 @@
                         {
                             "type": "attack",
                             "hits": 2,
-                            "strength": 6,
+                            "strength": 7,
                             "keywords": [
-                                "melee",
-                                "volume"
+                                "melee"
                             ]
                         },
                         {
@@ -675,10 +672,9 @@
                         {
                             "type": "attack",
                             "hits": 2,
-                            "strength": 6,
+                            "strength": 7,
                             "keywords": [
-                                "melee",
-                                "volume"
+                                "melee"
                             ]
                         }
                     ],
@@ -1006,12 +1002,11 @@
                         },
                         {
                             "type": "attack",
-                            "hits": 1,
+                            "hits": 2,
                             "strength": 8,
                             "keywords": [
                                 "melee",
-                                "ap",
-                                "volume"
+                                "ap"
                             ]
                         }
                     ],
