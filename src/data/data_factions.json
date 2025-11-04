@@ -24,7 +24,8 @@
                             "hits": 2,
                             "strength": 7,
                             "keywords": [
-                                "melee"
+                                "melee",
+                                "ap"
                             ]
                         }
                     ]
@@ -75,7 +76,8 @@
                             "hits": 2,
                             "strength": 7,
                             "keywords": [
-                                "melee"
+                                "melee",
+                                "ap"
                             ]
                         }
                     ]
@@ -179,7 +181,8 @@
                             "hits": 2,
                             "strength": 7,
                             "keywords": [
-                                "melee"
+                                "melee",
+                                "ap"
                             ]
                         }
                     ]
@@ -202,7 +205,8 @@
                             "hits": 2,
                             "strength": 6,
                             "keywords": [
-                                "melee"
+                                "melee",
+                                "ap"
                             ]
                         }
                     ]
@@ -256,7 +260,8 @@
                             "hits": 2,
                             "strength": 8,
                             "keywords": [
-                                "melee"
+                                "melee",
+                                "ap"
                             ]
                         }
                     ]
@@ -277,7 +282,8 @@
                             "hits": 2,
                             "strength": 8,
                             "keywords": [
-                                "melee"
+                                "melee",
+                                "ap"
                             ]
                         }
                     ]
@@ -297,7 +303,8 @@
                             "hits": 2,
                             "strength": 7,
                             "keywords": [
-                                "melee"
+                                "melee",
+                                "ap"
                             ]
                         }
                     ]
@@ -325,7 +332,8 @@
                             "hits": 4,
                             "strength": 6,
                             "keywords": [
-                                "melee"
+                                "melee",
+                                "ap"
                             ]
                         }
                     ]
@@ -375,7 +383,8 @@
                             "hits": 2,
                             "strength": 7,
                             "keywords": [
-                                "melee"
+                                "melee",
+                                "ap"
                             ]
                         }
                     ]
@@ -483,7 +492,8 @@
                             "strength": 10,
                             "keywords": [
                                 "melee",
-                                "heavy"
+                                "heavy",
+                                "ap"
                             ]
                         }
                     ]
@@ -521,7 +531,7 @@
                         {
                             "type": "attack",
                             "hits": 2,
-                            "strength": 7,
+                            "strength": 6,
                             "keywords": [
                                 "melee"
                             ]
@@ -628,7 +638,8 @@
                             "hits": 4,
                             "strength": 10,
                             "keywords": [
-                                "heavy"
+                                "heavy",
+                                "ap"
                             ]
                         }
                     ]
