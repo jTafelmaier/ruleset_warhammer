@@ -38,14 +38,12 @@ def main():
                     return None
 
                 list(
-                        map(
-                            modify_action,
-                            dict_unit \
-                                ["actions"]))
+                    map(
+                        modify_action,
+                        dict_unit \
+                            ["attacks"]))
 
                 return None
-
-            # placeholder
 
             list(
                     map(
