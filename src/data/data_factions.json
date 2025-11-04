@@ -8,12 +8,13 @@
                     "points_per_model": 100,
                     "armor": 5,
                     "keywords": [
+                        "fly",
                         "leader"
                     ],
                     "actions": [
                         {
                             "type": "move",
-                            "parameters": "fly 25"
+                            "parameters": "25"
                         },
                         {
                             "type": "attack",
@@ -36,11 +37,13 @@
                     "name": "Jump pack intercessors",
                     "points_per_model": 50,
                     "armor": 5,
-                    "keywords": [],
+                    "keywords": [
+                        "fly"
+                    ],
                     "actions": [
                         {
                             "type": "move",
-                            "parameters": "fly 25"
+                            "parameters": "25"
                         },
                         {
                             "type": "attack",
@@ -388,12 +391,13 @@
                     "keywords": [
                         "stealth",
                         "teleportation",
+                        "fly",
                         "leader"
                     ],
                     "actions": [
                         {
                             "type": "move",
-                            "parameters": "fly 25"
+                            "parameters": "25"
                         },
                         {
                             "type": "attack",
@@ -443,12 +447,13 @@
                     "armor": 6,
                     "keywords": [
                         "vehicle",
+                        "fly",
                         "leader"
                     ],
                     "actions": [
                         {
                             "type": "move",
-                            "parameters": "fly 40"
+                            "parameters": "40"
                         },
                         {
                             "type": "attack",
@@ -718,11 +723,13 @@
                     "name": "MkII Assault Squad",
                     "points_per_model": 50,
                     "armor": 5,
-                    "keywords": [],
+                    "keywords": [
+                        "fly"
+                    ],
                     "actions": [
                         {
                             "type": "move",
-                            "parameters": "fly 25"
+                            "parameters": "25"
                         },
                         {
                             "type": "attack",
