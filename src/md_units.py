@@ -55,7 +55,7 @@ def get_text_html_data_unit(
                 ["points_per_model"]) \
         + " points per model.\"><div class=\"image_unit\" style=\"background-image: url('" \
         + path_image_unit \
-        + "')\"><div class=\"header_unit\"><div class=\"model_properties\"><div class=\"model_property\"><span>⛊</span>" \
+        + "')\"><div class=\"header_unit\"><div class=\"model_property\"><span>⛊</span>" \
         + str(
             dict_unit \
                 ["armor"]) \
@@ -66,7 +66,7 @@ def get_text_html_data_unit(
         + get_text_keywords( \
             dict_unit \
                 ["keywords"]) \
-        + "</div></div><span class=\"name_unit\">" \
+        + "</div><span class=\"name_unit\">" \
         + dict_unit \
             ["name"] \
         + "</span></div><div class=\"model_attacks\">" \

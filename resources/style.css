@@ -221,11 +221,6 @@ body {
     margin-left: 5px;
 }
 
-.model_properties {
-    display: flex;
-    height: 26px;
-}
-
 .model_property {
     width: fit-content;
     color: #2e3544;
