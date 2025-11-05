@@ -187,7 +187,7 @@ body {
 }
 
 .model {
-    width: 450px;
+    width: 480px;
     height: 210px;
     background-image: url("background.png");
     background-size: cover;
@@ -206,7 +206,6 @@ body {
 }
 
 .image_unit {
-    display: grid;
     width: 100%;
     height: 100%;
     background-size: contain;
@@ -214,22 +213,23 @@ body {
     background-position: 100%;
 }
 
+.data_unit {
+    width: 200px;
+}
+
 .name_unit {
-    flex: 1;
-    color: #a6adba;
-    margin: 2px;
-    margin-left: 5px;
+    color: #2e3544;
+    background: linear-gradient(0.25turn, #9fa7ba, #6b7384a6);
+    padding: 1px 5px;
 }
 
 .model_property {
-    width: fit-content;
     color: #2e3544;
-    background: linear-gradient(#9fa7ba 0px, #6b7384 40px);
+    background: linear-gradient(0.25turn, #80899c9d, #555c6c00);
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
     padding: 1px 5px;
     margin-bottom: 2px;
-    user-select: none;
 }
 
 .model_property span {
@@ -238,15 +238,10 @@ body {
     font-weight: bold;
 }
 
-.model_attacks {
-    align-self: flex-end;
-    width: 250px;
-}
-
 #army_lists {
     display: grid;
-    grid-template-columns: 500px 500px;
-    gap: 0px 150px;
+    grid-template-columns: 550px 550px;
+    gap: 0px 100px;
 }
 
 .unit_army_list {

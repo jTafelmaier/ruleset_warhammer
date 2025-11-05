@@ -55,21 +55,24 @@ def get_text_html_data_unit(
                 ["points_per_model"]) \
         + " points per model.\"><div class=\"image_unit\" style=\"background-image: url('" \
         + path_image_unit \
-        + "')\"><div class=\"header_unit\"><div class=\"model_property\"><span>⛊</span>" \
+        + "')\"><div class=\"data_unit\"><div class=\"name_unit\">" \
+        + dict_unit \
+            ["name"] \
+        + "</div><div class=\"model_property\"><span>⛊</span>" \
         + str(
             dict_unit \
                 ["armor"]) \
-        + "<span>🡆</span>" \
+        + get_text_keywords( \
+            dict_unit \
+                ["keywords_armor"]) \
+        + "</div><div class=\"model_property\"><span>🡆</span>" \
         + str(
             dict_unit \
                 ["move"]) \
         + get_text_keywords( \
             dict_unit \
-                ["keywords"]) \
-        + "</div><span class=\"name_unit\">" \
-        + dict_unit \
-            ["name"] \
-        + "</span></div><div class=\"model_attacks\">" \
+                ["keywords_movement"]) \
+        + "</div><div class=\"model_attacks\">" \
         + text_html_rows_attacks \
-        + "</div></div></div>"
+        + "</div></div></div></div>"
 
