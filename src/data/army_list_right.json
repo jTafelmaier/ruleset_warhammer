@@ -2,16 +2,16 @@
     "faction": "Chaos",
     "units": [
         {
-            "name": "Slaughterbound",
+            "name": "Warsmith",
             "count_models": 1
         },
         {
-            "name": "Eightbound",
-            "count_models": 8
+            "name": "Fellblade super-heavy tank",
+            "count_models": 1
         },
         {
-            "name": "Khorne Berzerkers",
-            "count_models": 8
+            "name": "Exodus",
+            "count_models": 1
         }
     ]
 }
