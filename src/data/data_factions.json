@@ -633,7 +633,8 @@
                         {
                             "strength": 11,
                             "keywords": [
-                                "heavy"
+                                "heavy",
+                                "single"
                             ]
                         }
                     ]
