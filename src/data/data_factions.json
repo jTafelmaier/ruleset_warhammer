@@ -691,7 +691,7 @@
                     "name": "Warrior",
                     "points_per_model": 50,
                     "armor": 4,
-                    "move": 15,
+                    "move": 10,
                     "keywords_armor": [],
                     "keywords_movement": [],
                     "attacks": [
