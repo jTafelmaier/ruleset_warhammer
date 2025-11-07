@@ -423,7 +423,9 @@
                     "points_per_model": 150,
                     "armor": 5,
                     "move": 20,
-                    "keywords_armor": [],
+                    "keywords_armor": [
+                        "leader"
+                    ],
                     "keywords_movement": [
                         "teleportation"
                     ],
