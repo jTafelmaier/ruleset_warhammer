@@ -708,7 +708,7 @@
                 {
                     "name": "Skorpekh destroyer",
                     "points_per_model": 100,
-                    "armor": 6,
+                    "armor": 5,
                     "move": 15,
                     "keywords_armor": [],
                     "keywords_movement": [],
@@ -725,7 +725,7 @@
                 {
                     "name": "Lokhust destroyer - Gauss",
                     "points_per_model": 150,
-                    "armor": 7,
+                    "armor": 6,
                     "move": 15,
                     "keywords_armor": [],
                     "keywords_movement": [],
@@ -743,7 +743,7 @@
                 {
                     "name": "Lokhust destroyer - Enmitic",
                     "points_per_model": 150,
-                    "armor": 7,
+                    "armor": 6,
                     "move": 15,
                     "keywords_armor": [],
                     "keywords_movement": [],
