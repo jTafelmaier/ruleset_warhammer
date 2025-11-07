@@ -3,15 +3,15 @@
     "units": [
         {
             "name": "Captain in gravis armour",
-            "count_models": 1
+            "count_models": 2
         },
         {
             "name": "Heavy intercessors",
-            "count_models": 4
+            "count_models": 5
         },
         {
             "name": "Eradicators",
-            "count_models": 5
+            "count_models": 6
         },
         {
             "name": "Gladiator lancer",

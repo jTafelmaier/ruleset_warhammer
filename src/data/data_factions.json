@@ -421,7 +421,7 @@
                 {
                     "name": "Slaughterbound",
                     "points_per_model": 150,
-                    "armor": 4,
+                    "armor": 5,
                     "move": 20,
                     "keywords_armor": [],
                     "keywords_movement": [
@@ -439,7 +439,7 @@
                 {
                     "name": "Exalted Eightbound",
                     "points_per_model": 100,
-                    "armor": 4,
+                    "armor": 5,
                     "move": 20,
                     "keywords_armor": [],
                     "keywords_movement": [
@@ -465,8 +465,8 @@
                 },
                 {
                     "name": "Eightbound",
-                    "points_per_model": 50,
-                    "armor": 4,
+                    "points_per_model": 75,
+                    "armor": 5,
                     "move": 20,
                     "keywords_armor": [],
                     "keywords_movement": [],
