@@ -546,6 +546,31 @@
                     ]
                 },
                 {
+                    "name": "Cataphractii terminators",
+                    "points_per_model": 100,
+                    "armor": 5,
+                    "move": 10,
+                    "keywords_armor": [
+                        "sealed"
+                    ],
+                    "keywords_movement": [],
+                    "attacks": [
+                        {
+                            "strength": 5,
+                            "keywords": [
+                                "ap"
+                            ]
+                        },
+                        {
+                            "strength": 7,
+                            "keywords": [
+                                "ap",
+                                "melee"
+                            ]
+                        }
+                    ]
+                },
+                {
                     "name": "MkII Marines",
                     "points_per_model": 50,
                     "armor": 4,
@@ -586,6 +611,22 @@
                             "strength": 6,
                             "keywords": [
                                 "melee"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MkIII Breacher Squad",
+                    "points_per_model": 50,
+                    "armor": 5,
+                    "move": 15,
+                    "keywords_armor": [],
+                    "keywords_movement": [],
+                    "attacks": [
+                        {
+                            "strength": 6,
+                            "keywords": [
+                                "heavy"
                             ]
                         }
                     ]
