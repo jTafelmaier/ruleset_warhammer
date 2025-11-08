@@ -526,7 +526,9 @@
                         "sealed",
                         "leader"
                     ],
-                    "keywords_movement": [],
+                    "keywords_movement": [
+                        "teleportation"
+                    ],
                     "attacks": [
                         {
                             "strength": 6,
@@ -553,7 +555,9 @@
                     "keywords_armor": [
                         "sealed"
                     ],
-                    "keywords_movement": [],
+                    "keywords_movement": [
+                        "teleportation"
+                    ],
                     "attacks": [
                         {
                             "strength": 5,
