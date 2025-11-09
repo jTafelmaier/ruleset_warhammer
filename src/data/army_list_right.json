@@ -1,16 +1,20 @@
 {
-    "faction": "Chaos",
+    "faction": "Necrons",
     "units": [
         {
-            "name": "Warsmith",
+            "name": "Nekrosor Ammentar",
             "count_models": 1
         },
         {
-            "name": "MkIII Breacher Squad",
-            "count_models": 5
+            "name": "Hexmark destroyer",
+            "count_models": 1
         },
         {
-            "name": "Araknae accelerator platform",
+            "name": "Skorpekh destroyer",
+            "count_models": 2
+        },
+        {
+            "name": "Lokhust destroyer - Gauss",
             "count_models": 1
         }
     ]
