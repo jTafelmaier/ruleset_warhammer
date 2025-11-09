@@ -712,6 +712,51 @@
             "name": "Necrons",
             "units": [
                 {
+                    "name": "Nekrosor Ammentar",
+                    "points_per_model": 500,
+                    "armor": 8,
+                    "move": 25,
+                    "keywords_armor": [],
+                    "keywords_movement": [
+                        "teleportation"
+                    ],
+                    "attacks": [
+                        {
+                            "strength": 7,
+                            "keywords": []
+                        },
+                        {
+                            "strength": 11,
+                            "keywords": [
+                                "melee"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Skorpekh lord",
+                    "points_per_model": 250,
+                    "armor": 7,
+                    "move": 15,
+                    "keywords_armor": [],
+                    "keywords_movement": [],
+                    "attacks": [
+                        {
+                            "strength": 7,
+                            "keywords": [
+                                "heavy"
+                            ]
+                        },
+                        {
+                            "strength": 10,
+                            "keywords": [
+                                "ap",
+                                "melee"
+                            ]
+                        }
+                    ]
+                },
+                {
                     "name": "Hexmark destroyer",
                     "points_per_model": 250,
                     "armor": 5,
@@ -731,24 +776,6 @@
                             "strength": 5,
                             "keywords": [
                                 "volume"
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "name": "Warrior",
-                    "points_per_model": 50,
-                    "armor": 4,
-                    "move": 10,
-                    "keywords_armor": [],
-                    "keywords_movement": [],
-                    "attacks": [
-                        {
-                            "strength": 5,
-                            "keywords": [
-                                "ap",
-                                "heavy",
-                                "single"
                             ]
                         }
                     ]
