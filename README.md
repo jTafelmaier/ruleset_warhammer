@@ -8,10 +8,6 @@ Alternatively, there is a semi-regularly updated checkpoint version of "index.ht
 It needs to be moved outside of "resources", and all other data under "resources" must be present to work properly.
 All images ©Games Workshop.
 
-## Unit data examples
-![Missing image](resources/screenshots/faction_rules_1.png "Faction rules 1")
-![Missing image](resources/screenshots/faction_rules_2.png "Faction rules 2")
-
 ## Army list example
 ![Missing image](resources/screenshots/army_list.png "Army list example")
 
