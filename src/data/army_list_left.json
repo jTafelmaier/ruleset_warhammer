@@ -1,17 +1,17 @@
 {
-    "faction": "Imperium",
+    "faction": "Tau",
     "units": [
         {
-            "name": "Castellan",
+            "name": "Scatterflare",
             "count_models": 1
         },
         {
-            "name": "Sword brethren",
-            "count_models": 10
+            "name": "Sunsear",
+            "count_models": 1
         },
         {
-            "name": "Crusader squad",
-            "count_models": 10
+            "name": "Stealth suit [burst cannon]",
+            "count_models": 5
         }
     ]
 }

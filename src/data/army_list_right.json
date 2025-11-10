@@ -10,12 +10,8 @@
             "count_models": 1
         },
         {
-            "name": "Skorpekh destroyer",
-            "count_models": 2
-        },
-        {
             "name": "Lokhust destroyer - Gauss",
-            "count_models": 1
+            "count_models": 2
         }
     ]
 }
