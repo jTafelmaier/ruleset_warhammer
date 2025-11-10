@@ -832,6 +832,131 @@
                     ]
                 }
             ]
+        },
+        {
+            "name": "Tau",
+            "units": [
+                {
+                    "name": "Commander Farsight",
+                    "points_per_model": 250,
+                    "armor": 7,
+                    "move": 25,
+                    "keywords_armor": [
+                        "vehicle",
+                        "stealth"
+                    ],
+                    "keywords_movement": [
+                        "fly"
+                    ],
+                    "attacks": [
+                        {
+                            "strength": 8,
+                            "keywords": []
+                        },
+                        {
+                            "strength": 9,
+                            "keywords": [
+                                "ap",
+                                "melee"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Scatterflare",
+                    "points_per_model": 400,
+                    "armor": 9,
+                    "move": 25,
+                    "keywords_armor": [
+                        "vehicle"
+                    ],
+                    "keywords_movement": [
+                        "fly"
+                    ],
+                    "attacks": [
+                        {
+                            "strength": 7,
+                            "keywords": [
+                                "ap",
+                                "volume"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Sunsear",
+                    "points_per_model": 400,
+                    "armor": 9,
+                    "move": 25,
+                    "keywords_armor": [
+                        "vehicle"
+                    ],
+                    "keywords_movement": [
+                        "fly"
+                    ],
+                    "attacks": [
+                        {
+                            "strength": 7,
+                            "keywords": []
+                        },
+                        {
+                            "strength": 11,
+                            "keywords": [
+                                "ap",
+                                "20 cm",
+                                "single"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Stealth suit [burst cannon]",
+                    "points_per_model": 50,
+                    "armor": 4,
+                    "move": 10,
+                    "keywords_armor": [
+                        "stealth"
+                    ],
+                    "keywords_movement": [],
+                    "attacks": [
+                        {
+                            "strength": 5,
+                            "keywords": []
+                        },
+                        {
+                            "strength": 6,
+                            "keywords": [
+                                "heavy"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Stealth suit [fusion blaster]",
+                    "points_per_model": 50,
+                    "armor": 4,
+                    "move": 10,
+                    "keywords_armor": [
+                        "stealth"
+                    ],
+                    "keywords_movement": [],
+                    "attacks": [
+                        {
+                            "strength": 5,
+                            "keywords": []
+                        },
+                        {
+                            "strength": 9,
+                            "keywords": [
+                                "ap",
+                                "20 cm",
+                                "heavy",
+                                "single"
+                            ]
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
