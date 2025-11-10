@@ -32,22 +32,6 @@
         </tr>
         <tr>
          <td>
-          Unit: health
-         </td>
-         <td>
-          Inherent property of all units: The initial and maximum value for health is 8.
-         </td>
-        </tr>
-        <tr>
-         <td>
-          Weapon: hits
-         </td>
-         <td>
-          Number before "x"
-         </td>
-        </tr>
-        <tr>
-         <td>
           Distance between models
          </td>
          <td>
@@ -85,7 +69,7 @@
           In cover
          </td>
          <td>
-          Drawing the shortest possible line between two units passes through a cover object, and the attacking unit is not near all passed cover objects.
+          Drawing the shortest possible line between the base centers of two units passes through a cover object, and the attacking unit is not near all passed cover objects.
          </td>
         </tr>
         <tr>
@@ -160,7 +144,7 @@
     </div>
     <div class="turn_structure">
      <h2 class="section">
-      Default actions
+      Actions
      </h2>
      <div class="action">
       <h4>
@@ -174,111 +158,16 @@
      </div>
      <div class="action">
       <h4>
-       Attack
+       Setup teleportation
       </h4>
       <div>
-       For every model in the attacking unit:
-       <div class="indented">
-        Select one of the model's weapons, and, if possible, select one visible enemy unit that is either not in cover or within 20 cm as "target unit" for this weapon.
-        <br/>
-        If no target unit can be selected, end the attack sequence for this weapon.
-        <br/>
-        <br/>
-        <div class="indented">
-         Repeat for weapon:
-         <b>
-          hits
-         </b>
-         :
-         <div class="indented">
-          If target model:
-          <b>
-           ⛊armor
-          </b>
-          is higher than weapon
-          <b>
-           💥strength (high)
-          </b>
-          :
-          <div class="indented">
-           damage = 0
-          </div>
-          If target model:
-          <b>
-           ⛊armor
-          </b>
-          is within the weapon
-          <b>
-           💥strength
-          </b>
-          range:
-          <div class="indented">
-           damage = 1
-          </div>
-          If target model:
-          <b>
-           ⛊armor
-          </b>
-          is lower than weapon
-          <b>
-           💥strength (low)
-          </b>
-          :
-          <div class="indented">
-           damage = 2 * (weapon
-           <b>
-            💥strength (low)
-           </b>
-           - target model:
-           <b>
-            ⛊armor
-           </b>
-           )
-          </div>
-          <br/>
-          Reduce unit:
-          <b>
-           health
-          </b>
-          by damage.
-          <br/>
-          <br/>
-          If unit:
-          <b>
-           health
-          </b>
-          &lt;= 0:
-          <div class="indented">
-           The enemy player must choose to destroy one model in the target unit.
-           <br/>
-           Then, restore the unit health tokens.
-          </div>
-         </div>
-        </div>
-       </div>
-      </div>
-     </div>
-     <div class="action">
-      <h4>
-       Heavy attack
-      </h4>
-      <div>
-       This action must be the first one performed for this unit, and cannot perform the "Attack" action as a second action this turn.
+       Can only perform this action if at least one model in the unit has "teleportation".
        <br/>
-       Perform one "Attack" action, and during this attack, can use weapons with
-       <div class="keyword kw_attack" title='Can only use this weapon when performing the "Heavy attack" action.'>
-        <span>
-         heavy
-        </span>
-       </div>
-       .
+       May set up a teleporter token on the board space, where allowed.
+       <br/>
+       When this unit performs the "Deploy" action: May place the unit as close as possible to any placed teleporter token, and then remove that teleporter token.
       </div>
      </div>
-     <br/>
-     <br/>
-     <h2 class="section">
-      Restricted actions
-     </h2>
      <div class="action">
       <h4>
        Move
@@ -286,17 +175,7 @@
       <div>
        Every model in the unit may move up to its value x in centimeters.
        <br/>
-       Models cannot move over enemy models or more than 5cm vertically.
-      </div>
-     </div>
-     <div class="action">
-      <h4>
-       Fly
-      </h4>
-      <div>
-       Every model in the unit may move up to its value x in centimeters.
-       <br/>
-       Models can move over enemy models and vertically.
+       If the model does not have "fly", it cannot move over enemy models or more than 5cm vertically.
       </div>
      </div>
      <div class="action">
@@ -308,24 +187,85 @@
        <br/>
        If within 5 cm of an objective marker, and no enemy unit is within 5 cm of that objective marker:
                             Gain 1 victory point and remove the objective marker.
-      </div>
-     </div>
-     <div class="action">
-      <h4>
-       Setup teleportation
-      </h4>
-      <div>
-       May set up a teleporter token on the board space, where allowed.
        <br/>
-       When this unit performs the "Deploy" action: May place the unit as close as possible to the placed teleporter token, and then remove the teleporter token.
+       If the unit has "leader": Gain 1 additional victory point.
       </div>
      </div>
      <div class="action">
       <h4>
-       Recall
+       Attack
       </h4>
       <div>
-       Place this unit into reserves.
+       remaining damage = 0.0
+       <br/>
+       For every model in the attacking unit:
+       <div class="indented">
+        Select one weapon and one visible enemy unit as "target unit".
+        <br/>
+        End the attack sequence for this model if any of the following are true:
+        <div class="indented">
+         - No target unit can be selected.
+         <br/>
+         - The target unit has "stealth", is in cover and not within 20 cm.
+         <br/>
+         - The weapon has "20 cm" and the target unit is not within 20 cm.
+         <br/>
+         - The weapon has "melee" and the target unit is not within 5 cm.
+         <br/>
+         - The weapon has "heavy" and this is not the first action for this unit this turn.
+        </div>
+        <br/>
+        During this attack, increase the armor value of target models by 1 for each true condition:
+        <div class="indented">
+         - the model does not have "vehicle" and is in cover.
+         <br/>
+         - the model has "sealed" and the weapon does not have "ap".
+        </div>
+        <br/>
+        damage = 2^(weapon:
+        <span class="icon">
+         💥
+        </span>
+        <b>
+         strength
+        </b>
+        - target model:
+        <b>
+         <span class="icon">
+          ⛊
+         </span>
+         armor
+        </b>
+        )
+        <br/>
+        If the weapon has "volume":
+        <div class="indented">
+         damage = damage * max(10, # models in the target unit at the start of this attack)
+        </div>
+        <br/>
+        damage = remaining damage + damage
+        <br/>
+        remaining damage = damage - floor(damage)
+        <br/>
+        <br/>
+        Repeat for floor(damage):
+        <div class="indented">
+         Reduce unit: health by 1.
+         <br/>
+         If target unit:
+         <b>
+          health
+         </b>
+         ≤ 0:
+         <div class="indented">
+          The enemy player must choose to destroy one model in the target unit.
+          <br/>
+          Then, the target unit health points are fully restored.
+          <br/>
+          If the weapon has "single": end the attack sequence for this model.
+         </div>
+        </div>
+       </div>
       </div>
      </div>
     </div>
@@ -336,1724 +276,24 @@
    <div id="div_factions">
     <div class="selection_factions">
      <div class="container_faction_button Imperium">
-      <div class="preview_faction_button" onclick="display_faction('Imperium')" style="background-image: url('resources/factions/Imperium/faction.png')">
-       <div class="faction_name">
-        Imperium
-       </div>
-      </div>
+      <a class="preview_faction_button" href="index_Imperium.html" style="background-image: url('resources/factions/Imperium/faction.png')">
+       Imperium
+      </a>
      </div>
      <div class="container_faction_button Chaos">
-      <div class="preview_faction_button" onclick="display_faction('Chaos')" style="background-image: url('resources/factions/Chaos/faction.png')">
-       <div class="faction_name">
-        Chaos
-       </div>
-      </div>
+      <a class="preview_faction_button" href="index_Chaos.html" style="background-image: url('resources/factions/Chaos/faction.png')">
+       Chaos
+      </a>
      </div>
      <div class="container_faction_button Necrons">
-      <div class="preview_faction_button" onclick="display_faction('Necrons')" style="background-image: url('resources/factions/Necrons/faction.png')">
-       <div class="faction_name">
-        Necrons
-       </div>
-      </div>
+      <a class="preview_faction_button" href="index_Necrons.html" style="background-image: url('resources/factions/Necrons/faction.png')">
+       Necrons
+      </a>
      </div>
-    </div>
-    <div class="faction_content">
-     <div class="faction_rules Imperium" style="display: none;">
-      <div class="unit" style="background-image: url('resources/background.png')" title="200 points per model.">
-       <div class="image_unit" style="background-image: url('resources/factions/Imperium/units/Aethon Shaan.png')">
-        <div class="header_unit">
-         <h3 class="name_unit">
-          Aethon Shaan
-         </h3>
-        </div>
-        <div class="model_properties">
-         <div class="unit_property">
-          <span>
-           armor
-          </span>
-          5
-         </div>
-         <br/>
-         <div class="unit_property score" title="This model's unit can perform the &quot;Score objective&quot; action.
-Furthermore, this unit can be attached to another friendly unit at deployment. While this unit is attached to another unit, it cannot be selected as a target unit.">
-          <span>
-           score
-          </span>
-         </div>
-         <br/>
-         <div class="unit_property fly" title='This model can perform the "Fly" action up to the given distance.'>
-          <span>
-           fly
-          </span>
-          25
-         </div>
-         <br/>
-         <div class="unit_property teleportation" title="This model's unit can perform the &quot;Setup teleportation&quot; and &quot;Recall&quot; actions.">
-          <span>
-           teleportation
-          </span>
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           ranged
-          </span>
-          2x 💥6
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           melee
-          </span>
-          4x 💥5 - 7
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="unit" style="background-image: url('resources/background.png')" title="200 points per model.">
-       <div class="image_unit" style="background-image: url('resources/factions/Imperium/units/Iron father Feirros.png')">
-        <div class="header_unit">
-         <h3 class="name_unit">
-          Iron father Feirros
-         </h3>
-        </div>
-        <div class="model_properties">
-         <div class="unit_property">
-          <span>
-           armor
-          </span>
-          6
-         </div>
-         <br/>
-         <div class="unit_property score" title="This model's unit can perform the &quot;Score objective&quot; action.
-Furthermore, this unit can be attached to another friendly unit at deployment. While this unit is attached to another unit, it cannot be selected as a target unit.">
-          <span>
-           score
-          </span>
-         </div>
-         <br/>
-         <div class="unit_property move" title='This model can perform the "Move" action up to the given distance.'>
-          <span>
-           move
-          </span>
-          10
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           ranged
-          </span>
-          2x 💥7
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           melee
-          </span>
-          1x 💥7 - 9
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="unit" style="background-image: url('resources/background.png')" title="200 points per model.">
-       <div class="image_unit" style="background-image: url('resources/factions/Imperium/units/Darnath Lysander.png')">
-        <div class="header_unit">
-         <h3 class="name_unit">
-          Darnath Lysander
-         </h3>
-        </div>
-        <div class="model_properties">
-         <div class="unit_property">
-          <span>
-           armor
-          </span>
-          7
-         </div>
-         <br/>
-         <div class="unit_property score" title="This model's unit can perform the &quot;Score objective&quot; action.
-Furthermore, this unit can be attached to another friendly unit at deployment. While this unit is attached to another unit, it cannot be selected as a target unit.">
-          <span>
-           score
-          </span>
-         </div>
-         <br/>
-         <div class="unit_property move" title='This model can perform the "Move" action up to the given distance.'>
-          <span>
-           move
-          </span>
-          10
-         </div>
-         <br/>
-         <div class="unit_property teleportation" title="This model's unit can perform the &quot;Setup teleportation&quot; and &quot;Recall&quot; actions.">
-          <span>
-           teleportation
-          </span>
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           melee
-          </span>
-          1x 💥8
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="unit" style="background-image: url('resources/background.png')" title="200 points per model.">
-       <div class="image_unit" style="background-image: url('resources/factions/Imperium/units/Belial.png')">
-        <div class="header_unit">
-         <h3 class="name_unit">
-          Belial
-         </h3>
-        </div>
-        <div class="model_properties">
-         <div class="unit_property">
-          <span>
-           armor
-          </span>
-          6
-         </div>
-         <br/>
-         <div class="unit_property score" title="This model's unit can perform the &quot;Score objective&quot; action.
-Furthermore, this unit can be attached to another friendly unit at deployment. While this unit is attached to another unit, it cannot be selected as a target unit.">
-          <span>
-           score
-          </span>
-         </div>
-         <br/>
-         <div class="unit_property move" title='This model can perform the "Move" action up to the given distance.'>
-          <span>
-           move
-          </span>
-          10
-         </div>
-         <br/>
-         <div class="unit_property teleportation" title="This model's unit can perform the &quot;Setup teleportation&quot; and &quot;Recall&quot; actions.">
-          <span>
-           teleportation
-          </span>
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           20 cm
-          </span>
-          4x 💥5
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           melee
-          </span>
-          2x 💥6 - 8
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="unit" style="background-image: url('resources/background.png')" title="200 points per model.">
-       <div class="image_unit" style="background-image: url('resources/factions/Imperium/units/Corswain.png')">
-        <div class="header_unit">
-         <h3 class="name_unit">
-          Corswain
-         </h3>
-        </div>
-        <div class="model_properties">
-         <div class="unit_property">
-          <span>
-           armor
-          </span>
-          5
-         </div>
-         <br/>
-         <div class="unit_property score" title="This model's unit can perform the &quot;Score objective&quot; action.
-Furthermore, this unit can be attached to another friendly unit at deployment. While this unit is attached to another unit, it cannot be selected as a target unit.">
-          <span>
-           score
-          </span>
-         </div>
-         <br/>
-         <div class="unit_property move" title='This model can perform the "Move" action up to the given distance.'>
-          <span>
-           move
-          </span>
-          15
-         </div>
-         <br/>
-         <div class="unit_property teleportation" title="This model's unit can perform the &quot;Setup teleportation&quot; and &quot;Recall&quot; actions.">
-          <span>
-           teleportation
-          </span>
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           20 cm
-          </span>
-          1x 💥7
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           melee
-          </span>
-          2x 💥7 - 9
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="unit" style="background-image: url('resources/background.png')" title="200 points per model.">
-       <div class="image_unit" style="background-image: url('resources/factions/Imperium/units/Marduk Sedras.png')">
-        <div class="header_unit">
-         <h3 class="name_unit">
-          Marduk Sedras
-         </h3>
-        </div>
-        <div class="model_properties">
-         <div class="unit_property">
-          <span>
-           armor
-          </span>
-          6
-         </div>
-         <br/>
-         <div class="unit_property score" title="This model's unit can perform the &quot;Score objective&quot; action.
-Furthermore, this unit can be attached to another friendly unit at deployment. While this unit is attached to another unit, it cannot be selected as a target unit.">
-          <span>
-           score
-          </span>
-         </div>
-         <br/>
-         <div class="unit_property move" title='This model can perform the "Move" action up to the given distance.'>
-          <span>
-           move
-          </span>
-          10
-         </div>
-         <br/>
-         <div class="unit_property teleportation" title="This model's unit can perform the &quot;Setup teleportation&quot; and &quot;Recall&quot; actions.">
-          <span>
-           teleportation
-          </span>
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           ranged
-          </span>
-          heavy 2x 💥5
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           melee
-          </span>
-          1x 💥8 - 10
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="unit" style="background-image: url('resources/background.png')" title="150 points per model.">
-       <div class="image_unit" style="background-image: url('resources/factions/Imperium/units/Hibou Khan.png')">
-        <div class="header_unit">
-         <h3 class="name_unit">
-          Hibou Khan
-         </h3>
-        </div>
-        <div class="model_properties">
-         <div class="unit_property">
-          <span>
-           armor
-          </span>
-          5
-         </div>
-         <br/>
-         <div class="unit_property score" title="This model's unit can perform the &quot;Score objective&quot; action.
-Furthermore, this unit can be attached to another friendly unit at deployment. While this unit is attached to another unit, it cannot be selected as a target unit.">
-          <span>
-           score
-          </span>
-         </div>
-         <br/>
-         <div class="unit_property move" title='This model can perform the "Move" action up to the given distance.'>
-          <span>
-           move
-          </span>
-          15
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           melee
-          </span>
-          4x 💥6 - 8
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="unit" style="background-image: url('resources/background.png')" title="200 points per model.">
-       <div class="image_unit" style="background-image: url('resources/factions/Imperium/units/Suboden Khan.png')">
-        <div class="header_unit">
-         <h3 class="name_unit">
-          Suboden Khan
-         </h3>
-        </div>
-        <div class="model_properties">
-         <div class="unit_property">
-          <span>
-           armor
-          </span>
-          6
-         </div>
-         <br/>
-         <div class="unit_property score" title="This model's unit can perform the &quot;Score objective&quot; action.
-Furthermore, this unit can be attached to another friendly unit at deployment. While this unit is attached to another unit, it cannot be selected as a target unit.">
-          <span>
-           score
-          </span>
-         </div>
-         <br/>
-         <div class="unit_property fly" title='This model can perform the "Fly" action up to the given distance.'>
-          <span>
-           fly
-          </span>
-          35
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           ranged
-          </span>
-          4x 💥4 - 6
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           melee
-          </span>
-          1x 💥7 - 9
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="unit" style="background-image: url('resources/background.png')" title="200 points per model.">
-       <div class="image_unit" style="background-image: url('resources/factions/Imperium/units/Castellan Crowe.png')">
-        <div class="header_unit">
-         <h3 class="name_unit">
-          Castellan Crowe
-         </h3>
-        </div>
-        <div class="model_properties">
-         <div class="unit_property">
-          <span>
-           armor
-          </span>
-          5
-         </div>
-         <br/>
-         <div class="unit_property score" title="This model's unit can perform the &quot;Score objective&quot; action.
-Furthermore, this unit can be attached to another friendly unit at deployment. While this unit is attached to another unit, it cannot be selected as a target unit.">
-          <span>
-           score
-          </span>
-         </div>
-         <br/>
-         <div class="unit_property move" title='This model can perform the "Move" action up to the given distance.'>
-          <span>
-           move
-          </span>
-          15
-         </div>
-         <br/>
-         <div class="unit_property teleportation" title="This model's unit can perform the &quot;Setup teleportation&quot; and &quot;Recall&quot; actions.">
-          <span>
-           teleportation
-          </span>
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           20 cm
-          </span>
-          4x 💥5
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           melee
-          </span>
-          2x 💥7 - 9
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="unit" style="background-image: url('resources/background.png')" title="100 points per model.">
-       <div class="image_unit" style="background-image: url('resources/factions/Imperium/units/Captain with jump pack.png')">
-        <div class="header_unit">
-         <h3 class="name_unit">
-          Captain with jump pack
-         </h3>
-        </div>
-        <div class="model_properties">
-         <div class="unit_property">
-          <span>
-           armor
-          </span>
-          5
-         </div>
-         <br/>
-         <div class="unit_property score" title="This model's unit can perform the &quot;Score objective&quot; action.
-Furthermore, this unit can be attached to another friendly unit at deployment. While this unit is attached to another unit, it cannot be selected as a target unit.">
-          <span>
-           score
-          </span>
-         </div>
-         <br/>
-         <div class="unit_property fly" title='This model can perform the "Fly" action up to the given distance.'>
-          <span>
-           fly
-          </span>
-          25
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           ranged
-          </span>
-          2x 💥6
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           melee
-          </span>
-          2x 💥7
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="unit" style="background-image: url('resources/background.png')" title="100 points per model.">
-       <div class="image_unit" style="background-image: url('resources/factions/Imperium/units/Captain in gravis armour.png')">
-        <div class="header_unit">
-         <h3 class="name_unit">
-          Captain in gravis armour
-         </h3>
-        </div>
-        <div class="model_properties">
-         <div class="unit_property">
-          <span>
-           armor
-          </span>
-          6
-         </div>
-         <br/>
-         <div class="unit_property score" title="This model's unit can perform the &quot;Score objective&quot; action.
-Furthermore, this unit can be attached to another friendly unit at deployment. While this unit is attached to another unit, it cannot be selected as a target unit.">
-          <span>
-           score
-          </span>
-         </div>
-         <br/>
-         <div class="unit_property move" title='This model can perform the "Move" action up to the given distance.'>
-          <span>
-           move
-          </span>
-          10
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           ranged
-          </span>
-          4x 💥6
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           melee
-          </span>
-          2x 💥6 - 8
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="unit" style="background-image: url('resources/background.png')" title="50 points per model.">
-       <div class="image_unit" style="background-image: url('resources/factions/Imperium/units/Heavy intercessors.png')">
-        <div class="header_unit">
-         <h3 class="name_unit">
-          Heavy intercessors
-         </h3>
-        </div>
-        <div class="model_properties">
-         <div class="unit_property">
-          <span>
-           armor
-          </span>
-          5
-         </div>
-         <br/>
-         <div class="unit_property move" title='This model can perform the "Move" action up to the given distance.'>
-          <span>
-           move
-          </span>
-          10
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           ranged
-          </span>
-          2x 💥6
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="unit" style="background-image: url('resources/background.png')" title="50 points per model.">
-       <div class="image_unit" style="background-image: url('resources/factions/Imperium/units/Eradicators.png')">
-        <div class="header_unit">
-         <h3 class="name_unit">
-          Eradicators
-         </h3>
-        </div>
-        <div class="model_properties">
-         <div class="unit_property">
-          <span>
-           armor
-          </span>
-          5
-         </div>
-         <br/>
-         <div class="unit_property move" title='This model can perform the "Move" action up to the given distance.'>
-          <span>
-           move
-          </span>
-          10
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           ranged
-          </span>
-          1x 💥6
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           20 cm
-          </span>
-          1x 💥8 - 12
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="unit" style="background-image: url('resources/background.png')" title="50 points per model.">
-       <div class="image_unit" style="background-image: url('resources/factions/Imperium/units/Jump pack intercessors.png')">
-        <div class="header_unit">
-         <h3 class="name_unit">
-          Jump pack intercessors
-         </h3>
-        </div>
-        <div class="model_properties">
-         <div class="unit_property">
-          <span>
-           armor
-          </span>
-          4
-         </div>
-         <br/>
-         <div class="unit_property fly" title='This model can perform the "Fly" action up to the given distance.'>
-          <span>
-           fly
-          </span>
-          25
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           ranged
-          </span>
-          1x 💥6
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           melee
-          </span>
-          1x 💥7
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="unit" style="background-image: url('resources/background.png')" title="400 points per model.">
-       <div class="image_unit" style="background-image: url('resources/factions/Imperium/units/Gladiator lancer.png')">
-        <div class="header_unit">
-         <h3 class="name_unit">
-          Gladiator lancer
-         </h3>
-        </div>
-        <div class="model_properties">
-         <div class="unit_property">
-          <span>
-           armor
-          </span>
-          10
-         </div>
-         <br/>
-         <div class="unit_property large" title="This unit is never considered to be in cover and units cannot attach to this unit.">
-          <span>
-           large
-          </span>
-         </div>
-         <br/>
-         <div class="unit_property move" title='This model can perform the "Move" action up to the given distance.'>
-          <span>
-           move
-          </span>
-          25
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           20 cm
-          </span>
-          2x 💥5
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           ranged
-          </span>
-          heavy 1x 💥12 - 14
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="unit" style="background-image: url('resources/background.png')" title="100 points per model.">
-       <div class="image_unit" style="background-image: url('resources/factions/Imperium/units/Castellan.png')">
-        <div class="header_unit">
-         <h3 class="name_unit">
-          Castellan
-         </h3>
-        </div>
-        <div class="model_properties">
-         <div class="unit_property">
-          <span>
-           armor
-          </span>
-          5
-         </div>
-         <br/>
-         <div class="unit_property score" title="This model's unit can perform the &quot;Score objective&quot; action.
-Furthermore, this unit can be attached to another friendly unit at deployment. While this unit is attached to another unit, it cannot be selected as a target unit.">
-          <span>
-           score
-          </span>
-         </div>
-         <br/>
-         <div class="unit_property move" title='This model can perform the "Move" action up to the given distance.'>
-          <span>
-           move
-          </span>
-          15
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           ranged
-          </span>
-          2x 💥6
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           melee
-          </span>
-          2x 💥7 - 9
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="unit" style="background-image: url('resources/background.png')" title="50 points per model.">
-       <div class="image_unit" style="background-image: url('resources/factions/Imperium/units/Sword brethren.png')">
-        <div class="header_unit">
-         <h3 class="name_unit">
-          Sword brethren
-         </h3>
-        </div>
-        <div class="model_properties">
-         <div class="unit_property">
-          <span>
-           armor
-          </span>
-          4
-         </div>
-         <br/>
-         <div class="unit_property move" title='This model can perform the "Move" action up to the given distance.'>
-          <span>
-           move
-          </span>
-          15
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           ranged
-          </span>
-          1x 💥6
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           melee
-          </span>
-          1x 💥6 - 8
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="unit" style="background-image: url('resources/background.png')" title="50 points per model.">
-       <div class="image_unit" style="background-image: url('resources/factions/Imperium/units/Crusader squad.png')">
-        <div class="header_unit">
-         <h3 class="name_unit">
-          Crusader squad
-         </h3>
-        </div>
-        <div class="model_properties">
-         <div class="unit_property">
-          <span>
-           armor
-          </span>
-          4
-         </div>
-         <br/>
-         <div class="unit_property move" title='This model can perform the "Move" action up to the given distance.'>
-          <span>
-           move
-          </span>
-          15
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           ranged
-          </span>
-          2x 💥5
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           melee
-          </span>
-          1x 💥7
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="unit" style="background-image: url('resources/background.png')" title="200 points per model.">
-       <div class="image_unit" style="background-image: url('resources/factions/Imperium/units/Deathwing strikemaster.png')">
-        <div class="header_unit">
-         <h3 class="name_unit">
-          Deathwing strikemaster
-         </h3>
-        </div>
-        <div class="model_properties">
-         <div class="unit_property">
-          <span>
-           armor
-          </span>
-          7
-         </div>
-         <br/>
-         <div class="unit_property score" title="This model's unit can perform the &quot;Score objective&quot; action.
-Furthermore, this unit can be attached to another friendly unit at deployment. While this unit is attached to another unit, it cannot be selected as a target unit.">
-          <span>
-           score
-          </span>
-         </div>
-         <br/>
-         <div class="unit_property move" title='This model can perform the "Move" action up to the given distance.'>
-          <span>
-           move
-          </span>
-          10
-         </div>
-         <br/>
-         <div class="unit_property teleportation" title="This model's unit can perform the &quot;Setup teleportation&quot; and &quot;Recall&quot; actions.">
-          <span>
-           teleportation
-          </span>
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           melee
-          </span>
-          2x 💥6 - 8
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="unit" style="background-image: url('resources/background.png')" title="100 points per model.">
-       <div class="image_unit" style="background-image: url('resources/factions/Imperium/units/Deathwing knights.png')">
-        <div class="header_unit">
-         <h3 class="name_unit">
-          Deathwing knights
-         </h3>
-        </div>
-        <div class="model_properties">
-         <div class="unit_property">
-          <span>
-           armor
-          </span>
-          6
-         </div>
-         <br/>
-         <div class="unit_property move" title='This model can perform the "Move" action up to the given distance.'>
-          <span>
-           move
-          </span>
-          10
-         </div>
-         <br/>
-         <div class="unit_property teleportation" title="This model's unit can perform the &quot;Setup teleportation&quot; and &quot;Recall&quot; actions.">
-          <span>
-           teleportation
-          </span>
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           melee
-          </span>
-          1x 💥6 - 8
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="unit" style="background-image: url('resources/background.png')" title="100 points per model.">
-       <div class="image_unit" style="background-image: url('resources/factions/Imperium/units/Inner circle companions.png')">
-        <div class="header_unit">
-         <h3 class="name_unit">
-          Inner circle companions
-         </h3>
-        </div>
-        <div class="model_properties">
-         <div class="unit_property">
-          <span>
-           armor
-          </span>
-          4
-         </div>
-         <br/>
-         <div class="unit_property move" title='This model can perform the "Move" action up to the given distance.'>
-          <span>
-           move
-          </span>
-          15
-         </div>
-         <br/>
-         <div class="unit_property teleportation" title="This model's unit can perform the &quot;Setup teleportation&quot; and &quot;Recall&quot; actions.">
-          <span>
-           teleportation
-          </span>
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           ranged
-          </span>
-          1x 💥6
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           melee
-          </span>
-          1x 💥7 - 9
-         </div>
-        </div>
-       </div>
-      </div>
-     </div>
-     <div class="faction_rules Chaos" style="display: none;">
-      <div class="unit" style="background-image: url('resources/background.png')" title="800 points per model.">
-       <div class="image_unit" style="background-image: url('resources/factions/Chaos/units/Magnus the red.png')">
-        <div class="header_unit">
-         <h3 class="name_unit">
-          Magnus the red
-         </h3>
-        </div>
-        <div class="model_properties">
-         <div class="unit_property">
-          <span>
-           armor
-          </span>
-          8
-         </div>
-         <br/>
-         <div class="unit_property score" title="This model's unit can perform the &quot;Score objective&quot; action.
-Furthermore, this unit can be attached to another friendly unit at deployment. While this unit is attached to another unit, it cannot be selected as a target unit.">
-          <span>
-           score
-          </span>
-         </div>
-         <br/>
-         <div class="unit_property move" title='This model can perform the "Move" action up to the given distance.'>
-          <span>
-           move
-          </span>
-          20
-         </div>
-         <br/>
-         <div class="unit_property teleportation" title="This model's unit can perform the &quot;Setup teleportation&quot; and &quot;Recall&quot; actions.">
-          <span>
-           teleportation
-          </span>
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           20 cm
-          </span>
-          1x 💥10
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           20 cm
-          </span>
-          2x 💥8 - 10
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="unit" style="background-image: url('resources/background.png')" title="150 points per model.">
-       <div class="image_unit" style="background-image: url('resources/factions/Chaos/units/Librarian consul.png')">
-        <div class="header_unit">
-         <h3 class="name_unit">
-          Librarian consul
-         </h3>
-        </div>
-        <div class="model_properties">
-         <div class="unit_property">
-          <span>
-           armor
-          </span>
-          5
-         </div>
-         <br/>
-         <div class="unit_property score" title="This model's unit can perform the &quot;Score objective&quot; action.
-Furthermore, this unit can be attached to another friendly unit at deployment. While this unit is attached to another unit, it cannot be selected as a target unit.">
-          <span>
-           score
-          </span>
-         </div>
-         <br/>
-         <div class="unit_property move" title='This model can perform the "Move" action up to the given distance.'>
-          <span>
-           move
-          </span>
-          15
-         </div>
-         <br/>
-         <div class="unit_property teleportation" title="This model's unit can perform the &quot;Setup teleportation&quot; and &quot;Recall&quot; actions.">
-          <span>
-           teleportation
-          </span>
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           20 cm
-          </span>
-          2x 💥6
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           melee
-          </span>
-          1x 💥8
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="unit" style="background-image: url('resources/background.png')" title="200 points per model.">
-       <div class="image_unit" style="background-image: url('resources/factions/Chaos/units/Exodus.png')">
-        <div class="header_unit">
-         <h3 class="name_unit">
-          Exodus
-         </h3>
-        </div>
-        <div class="model_properties">
-         <div class="unit_property">
-          <span>
-           armor
-          </span>
-          5
-         </div>
-         <br/>
-         <div class="unit_property score" title="This model's unit can perform the &quot;Score objective&quot; action.
-Furthermore, this unit can be attached to another friendly unit at deployment. While this unit is attached to another unit, it cannot be selected as a target unit.">
-          <span>
-           score
-          </span>
-         </div>
-         <br/>
-         <div class="unit_property move" title='This model can perform the "Move" action up to the given distance.'>
-          <span>
-           move
-          </span>
-          15
-         </div>
-         <br/>
-         <div class="unit_property teleportation" title="This model's unit can perform the &quot;Setup teleportation&quot; and &quot;Recall&quot; actions.">
-          <span>
-           teleportation
-          </span>
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           ranged
-          </span>
-          heavy 2x 💥8
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="unit" style="background-image: url('resources/background.png')" title="250 points per model.">
-       <div class="image_unit" style="background-image: url('resources/factions/Chaos/units/Lord Invocatus.png')">
-        <div class="header_unit">
-         <h3 class="name_unit">
-          Lord Invocatus
-         </h3>
-        </div>
-        <div class="model_properties">
-         <div class="unit_property">
-          <span>
-           armor
-          </span>
-          6
-         </div>
-         <br/>
-         <div class="unit_property score" title="This model's unit can perform the &quot;Score objective&quot; action.
-Furthermore, this unit can be attached to another friendly unit at deployment. While this unit is attached to another unit, it cannot be selected as a target unit.">
-          <span>
-           score
-          </span>
-         </div>
-         <br/>
-         <div class="unit_property move" title='This model can perform the "Move" action up to the given distance.'>
-          <span>
-           move
-          </span>
-          25
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           melee
-          </span>
-          1x 💥8 - 10
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           melee
-          </span>
-          heavy 4x 💥7
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="unit" style="background-image: url('resources/background.png')" title="150 points per model.">
-       <div class="image_unit" style="background-image: url('resources/factions/Chaos/units/Slaughterbound.png')">
-        <div class="header_unit">
-         <h3 class="name_unit">
-          Slaughterbound
-         </h3>
-        </div>
-        <div class="model_properties">
-         <div class="unit_property">
-          <span>
-           armor
-          </span>
-          5
-         </div>
-         <br/>
-         <div class="unit_property score" title="This model's unit can perform the &quot;Score objective&quot; action.
-Furthermore, this unit can be attached to another friendly unit at deployment. While this unit is attached to another unit, it cannot be selected as a target unit.">
-          <span>
-           score
-          </span>
-         </div>
-         <br/>
-         <div class="unit_property move" title='This model can perform the "Move" action up to the given distance.'>
-          <span>
-           move
-          </span>
-          20
-         </div>
-         <br/>
-         <div class="unit_property teleportation" title="This model's unit can perform the &quot;Setup teleportation&quot; and &quot;Recall&quot; actions.">
-          <span>
-           teleportation
-          </span>
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           melee
-          </span>
-          2x 💥8
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="unit" style="background-image: url('resources/background.png')" title="100 points per model.">
-       <div class="image_unit" style="background-image: url('resources/factions/Chaos/units/Exalted Eightbound.png')">
-        <div class="header_unit">
-         <h3 class="name_unit">
-          Exalted Eightbound
-         </h3>
-        </div>
-        <div class="model_properties">
-         <div class="unit_property">
-          <span>
-           armor
-          </span>
-          4
-         </div>
-         <br/>
-         <div class="unit_property move" title='This model can perform the "Move" action up to the given distance.'>
-          <span>
-           move
-          </span>
-          20
-         </div>
-         <br/>
-         <div class="unit_property teleportation" title="This model's unit can perform the &quot;Setup teleportation&quot; and &quot;Recall&quot; actions.">
-          <span>
-           teleportation
-          </span>
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           melee
-          </span>
-          1x 💥7
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           melee
-          </span>
-          heavy 1x 💥8 - 10
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="unit" style="background-image: url('resources/background.png')" title="50 points per model.">
-       <div class="image_unit" style="background-image: url('resources/factions/Chaos/units/Eightbound.png')">
-        <div class="header_unit">
-         <h3 class="name_unit">
-          Eightbound
-         </h3>
-        </div>
-        <div class="model_properties">
-         <div class="unit_property">
-          <span>
-           armor
-          </span>
-          4
-         </div>
-         <br/>
-         <div class="unit_property move" title='This model can perform the "Move" action up to the given distance.'>
-          <span>
-           move
-          </span>
-          20
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           melee
-          </span>
-          2x 💥7
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="unit" style="background-image: url('resources/background.png')" title="50 points per model.">
-       <div class="image_unit" style="background-image: url('resources/factions/Chaos/units/Khorne Berzerkers.png')">
-        <div class="header_unit">
-         <h3 class="name_unit">
-          Khorne Berzerkers
-         </h3>
-        </div>
-        <div class="model_properties">
-         <div class="unit_property">
-          <span>
-           armor
-          </span>
-          4
-         </div>
-         <br/>
-         <div class="unit_property move" title='This model can perform the "Move" action up to the given distance.'>
-          <span>
-           move
-          </span>
-          20
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           ranged
-          </span>
-          1x 💥6
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           melee
-          </span>
-          1x 💥7
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="unit" style="background-image: url('resources/background.png')" title="150 points per model.">
-       <div class="image_unit" style="background-image: url('resources/factions/Chaos/units/Warsmith.png')">
-        <div class="header_unit">
-         <h3 class="name_unit">
-          Warsmith
-         </h3>
-        </div>
-        <div class="model_properties">
-         <div class="unit_property">
-          <span>
-           armor
-          </span>
-          6
-         </div>
-         <br/>
-         <div class="unit_property score" title="This model's unit can perform the &quot;Score objective&quot; action.
-Furthermore, this unit can be attached to another friendly unit at deployment. While this unit is attached to another unit, it cannot be selected as a target unit.">
-          <span>
-           score
-          </span>
-         </div>
-         <br/>
-         <div class="unit_property move" title='This model can perform the "Move" action up to the given distance.'>
-          <span>
-           move
-          </span>
-          10
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           ranged
-          </span>
-          heavy 1x 💥4 - 6
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           melee
-          </span>
-          heavy 1x 💥9 - 11
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="unit" style="background-image: url('resources/background.png')" title="50 points per model.">
-       <div class="image_unit" style="background-image: url('resources/factions/Chaos/units/MkII Marines.png')">
-        <div class="header_unit">
-         <h3 class="name_unit">
-          MkII Marines
-         </h3>
-        </div>
-        <div class="model_properties">
-         <div class="unit_property">
-          <span>
-           armor
-          </span>
-          4
-         </div>
-         <br/>
-         <div class="unit_property move" title='This model can perform the "Move" action up to the given distance.'>
-          <span>
-           move
-          </span>
-          15
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           ranged
-          </span>
-          1x 💥6
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           20 cm
-          </span>
-          1x 💥7
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="unit" style="background-image: url('resources/background.png')" title="50 points per model.">
-       <div class="image_unit" style="background-image: url('resources/factions/Chaos/units/MkII Marines with disintegrator weapons.png')">
-        <div class="header_unit">
-         <h3 class="name_unit">
-          MkII Marines with disintegrator weapons
-         </h3>
-        </div>
-        <div class="model_properties">
-         <div class="unit_property">
-          <span>
-           armor
-          </span>
-          4
-         </div>
-         <br/>
-         <div class="unit_property move" title='This model can perform the "Move" action up to the given distance.'>
-          <span>
-           move
-          </span>
-          15
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           ranged
-          </span>
-          heavy 1x 💥8
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="unit" style="background-image: url('resources/background.png')" title="50 points per model.">
-       <div class="image_unit" style="background-image: url('resources/factions/Chaos/units/MkII Assault Squad.png')">
-        <div class="header_unit">
-         <h3 class="name_unit">
-          MkII Assault Squad
-         </h3>
-        </div>
-        <div class="model_properties">
-         <div class="unit_property">
-          <span>
-           armor
-          </span>
-          4
-         </div>
-         <br/>
-         <div class="unit_property fly" title='This model can perform the "Fly" action up to the given distance.'>
-          <span>
-           fly
-          </span>
-          25
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           ranged
-          </span>
-          1x 💥6
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           melee
-          </span>
-          1x 💥7
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="unit" style="background-image: url('resources/background.png')" title="200 points per model.">
-       <div class="image_unit" style="background-image: url('resources/factions/Chaos/units/Araknae accelerator platform.png')">
-        <div class="header_unit">
-         <h3 class="name_unit">
-          Araknae accelerator platform
-         </h3>
-        </div>
-        <div class="model_properties">
-         <div class="unit_property">
-          <span>
-           armor
-          </span>
-          11
-         </div>
-         <br/>
-         <div class="unit_property large" title="This unit is never considered to be in cover and units cannot attach to this unit.">
-          <span>
-           large
-          </span>
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           ranged
-          </span>
-          heavy 2x 💥10 - 12
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="unit" style="background-image: url('resources/background.png')" title="600 points per model.">
-       <div class="image_unit" style="background-image: url('resources/factions/Chaos/units/Fellblade super-heavy tank.png')">
-        <div class="header_unit">
-         <h3 class="name_unit">
-          Fellblade super-heavy tank
-         </h3>
-        </div>
-        <div class="model_properties">
-         <div class="unit_property">
-          <span>
-           armor
-          </span>
-          12
-         </div>
-         <br/>
-         <div class="unit_property large" title="This unit is never considered to be in cover and units cannot attach to this unit.">
-          <span>
-           large
-          </span>
-         </div>
-         <br/>
-         <div class="unit_property move" title='This model can perform the "Move" action up to the given distance.'>
-          <span>
-           move
-          </span>
-          25
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           ranged
-          </span>
-          4x 💥7
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           ranged
-          </span>
-          heavy 4x 💥10
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           ranged
-          </span>
-          heavy 2x 💥12 - 14
-         </div>
-        </div>
-       </div>
-      </div>
-     </div>
-     <div class="faction_rules Necrons" style="display: none;">
-      <div class="unit" style="background-image: url('resources/background.png')" title="50 points per model.">
-       <div class="image_unit" style="background-image: url('resources/factions/Necrons/units/Warrior.png')">
-        <div class="header_unit">
-         <h3 class="name_unit">
-          Warrior
-         </h3>
-        </div>
-        <div class="model_properties">
-         <div class="unit_property">
-          <span>
-           armor
-          </span>
-          4
-         </div>
-         <br/>
-         <div class="unit_property score" title="This model's unit can perform the &quot;Score objective&quot; action.
-Furthermore, this unit can be attached to another friendly unit at deployment. While this unit is attached to another unit, it cannot be selected as a target unit.">
-          <span>
-           score
-          </span>
-         </div>
-         <br/>
-         <div class="unit_property move" title='This model can perform the "Move" action up to the given distance.'>
-          <span>
-           move
-          </span>
-          15
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           ranged
-          </span>
-          heavy 1x 💥5 - 8
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="unit" style="background-image: url('resources/background.png')" title="250 points per model.">
-       <div class="image_unit" style="background-image: url('resources/factions/Necrons/units/Hexmark destroyer.png')">
-        <div class="header_unit">
-         <h3 class="name_unit">
-          Hexmark destroyer
-         </h3>
-        </div>
-        <div class="model_properties">
-         <div class="unit_property">
-          <span>
-           armor
-          </span>
-          6
-         </div>
-         <br/>
-         <div class="unit_property score" title="This model's unit can perform the &quot;Score objective&quot; action.
-Furthermore, this unit can be attached to another friendly unit at deployment. While this unit is attached to another unit, it cannot be selected as a target unit.">
-          <span>
-           score
-          </span>
-         </div>
-         <br/>
-         <div class="unit_property move" title='This model can perform the "Move" action up to the given distance.'>
-          <span>
-           move
-          </span>
-          15
-         </div>
-         <br/>
-         <div class="unit_property teleportation" title="This model's unit can perform the &quot;Setup teleportation&quot; and &quot;Recall&quot; actions.">
-          <span>
-           teleportation
-          </span>
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           ranged
-          </span>
-          4x 💥7
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="unit" style="background-image: url('resources/background.png')" title="100 points per model.">
-       <div class="image_unit" style="background-image: url('resources/factions/Necrons/units/Skorpekh destroyer.png')">
-        <div class="header_unit">
-         <h3 class="name_unit">
-          Skorpekh destroyer
-         </h3>
-        </div>
-        <div class="model_properties">
-         <div class="unit_property">
-          <span>
-           armor
-          </span>
-          6
-         </div>
-         <br/>
-         <div class="unit_property score" title="This model's unit can perform the &quot;Score objective&quot; action.
-Furthermore, this unit can be attached to another friendly unit at deployment. While this unit is attached to another unit, it cannot be selected as a target unit.">
-          <span>
-           score
-          </span>
-         </div>
-         <br/>
-         <div class="unit_property move" title='This model can perform the "Move" action up to the given distance.'>
-          <span>
-           move
-          </span>
-          15
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           melee
-          </span>
-          1x 💥8 - 10
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="unit" style="background-image: url('resources/background.png')" title="150 points per model.">
-       <div class="image_unit" style="background-image: url('resources/factions/Necrons/units/Lokhust destroyer - Gauss.png')">
-        <div class="header_unit">
-         <h3 class="name_unit">
-          Lokhust destroyer - Gauss
-         </h3>
-        </div>
-        <div class="model_properties">
-         <div class="unit_property">
-          <span>
-           armor
-          </span>
-          7
-         </div>
-         <br/>
-         <div class="unit_property score" title="This model's unit can perform the &quot;Score objective&quot; action.
-Furthermore, this unit can be attached to another friendly unit at deployment. While this unit is attached to another unit, it cannot be selected as a target unit.">
-          <span>
-           score
-          </span>
-         </div>
-         <br/>
-         <div class="unit_property fly" title='This model can perform the "Fly" action up to the given distance.'>
-          <span>
-           fly
-          </span>
-          15
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           ranged
-          </span>
-          heavy 1x 💥12 - 14
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="unit" style="background-image: url('resources/background.png')" title="150 points per model.">
-       <div class="image_unit" style="background-image: url('resources/factions/Necrons/units/Lokhust destroyer - Enmitic.png')">
-        <div class="header_unit">
-         <h3 class="name_unit">
-          Lokhust destroyer - Enmitic
-         </h3>
-        </div>
-        <div class="model_properties">
-         <div class="unit_property">
-          <span>
-           armor
-          </span>
-          7
-         </div>
-         <br/>
-         <div class="unit_property score" title="This model's unit can perform the &quot;Score objective&quot; action.
-Furthermore, this unit can be attached to another friendly unit at deployment. While this unit is attached to another unit, it cannot be selected as a target unit.">
-          <span>
-           score
-          </span>
-         </div>
-         <br/>
-         <div class="unit_property fly" title='This model can perform the "Fly" action up to the given distance.'>
-          <span>
-           fly
-          </span>
-          15
-         </div>
-         <br/>
-         <div class="unit_property attack">
-          <span>
-           ranged
-          </span>
-          heavy 6x 💥7
-         </div>
-        </div>
-       </div>
-      </div>
+     <div class="container_faction_button Tau">
+      <a class="preview_faction_button" href="index_Tau.html" style="background-image: url('resources/factions/Tau/faction.png')">
+       Tau
+      </a>
      </div>
     </div>
    </div>
@@ -2064,26 +304,30 @@ Furthermore, this unit can be attached to another friendly unit at deployment. W
     </button>
    </h1>
    <div id="army_lists">
-    <div class="left">
+    <div id="left">
      <div class="victory_state">
       <div class="victory_points">
-       <span onclick="increase_victory_points('left')">
+       <span class="value" onclick="update_victory_points('left', 1)">
         0
        </span>
-       <span onclick="decrease_victory_points('left')">
-        VP
+       <span onclick="update_victory_points('left', -1)">
+        VP,
        </span>
       </div>
-      ,
-      <span class="points_total">
-       ? points remaining.
+      <div class="model_points">
+       <span class="value">
+        ?
+       </span>
+       points remaining. -&gt;
+      </div>
+      <span class="outcome">
       </span>
      </div>
      <div class="army_list">
-      <div class="unit_army_list" points_per_model="100">
+      <div class="unit_army_list" points_per_model="200">
        <div class="unit_state">
-        <div class="health_bar" onclick="reduce_health('left', 0)">
-         <div class="token next">
+        <div class="health_bar">
+         <div class="token">
          </div>
          <div class="token">
          </div>
@@ -2100,62 +344,51 @@ Furthermore, this unit can be attached to another friendly unit at deployment. W
          <div class="token">
          </div>
         </div>
-        <div class="count_models" initial="1" onclick="increase_number_models('left', 0)">
-         1
+        <div class="count_models">
+         <div class="increase" onclick="update_count_models('left', 0, true)">
+          ▲
+         </div>
+         <div class="count_current" initial="1">
+          1
+         </div>
+         <div class="decrease" onclick="update_count_models('left', 0, false)">
+          ▼
+         </div>
         </div>
        </div>
        <div onclick="toggle_inactive('left', 0)">
-        <div class="unit" style="background-image: url('resources/background.png')" title="100 points per model.">
-         <div class="image_unit" style="background-image: url('resources/factions/Imperium/units/Captain in gravis armour.png')">
-          <div class="header_unit">
-           <h3 class="name_unit">
-            Captain in gravis armour
-           </h3>
-          </div>
-          <div class="model_properties">
-           <div class="unit_property">
-            <span>
-             armor
-            </span>
-            6
+        <div class="model" title="200 points per model.">
+         <div class="image_unit" style="background-image: url('resources/factions/Tau/units/Scatterflare.png')">
+          <div class="data_unit">
+           <div class="name_unit">
+            Scatterflare
            </div>
-           <br/>
-           <div class="unit_property score" title="This model's unit can perform the &quot;Score objective&quot; action.
-Furthermore, this unit can be attached to another friendly unit at deployment. While this unit is attached to another unit, it cannot be selected as a target unit.">
+           <div class="model_property">
             <span>
-             score
+             ⛊
             </span>
+            8 vehicle
            </div>
-           <br/>
-           <div class="unit_property move" title='This model can perform the "Move" action up to the given distance.'>
+           <div class="model_property">
             <span>
-             move
+             🡆
             </span>
-            10
+            25 fly
            </div>
-           <br/>
-           <div class="unit_property attack">
-            <span>
-             ranged
-            </span>
-            4x 💥6
-           </div>
-           <br/>
-           <div class="unit_property attack">
-            <span>
-             melee
-            </span>
-            2x 💥6 - 8
+           <div class="model_attacks">
+            <div class="model_property">
+             💥9 ap
+            </div>
            </div>
           </div>
          </div>
         </div>
        </div>
       </div>
-      <div class="unit_army_list" points_per_model="50">
+      <div class="unit_army_list" points_per_model="200">
        <div class="unit_state">
-        <div class="health_bar" onclick="reduce_health('left', 1)">
-         <div class="token next">
+        <div class="health_bar">
+         <div class="token">
          </div>
          <div class="token">
          </div>
@@ -2172,48 +405,54 @@ Furthermore, this unit can be attached to another friendly unit at deployment. W
          <div class="token">
          </div>
         </div>
-        <div class="count_models" initial="5" onclick="increase_number_models('left', 1)">
-         5
+        <div class="count_models">
+         <div class="increase" onclick="update_count_models('left', 1, true)">
+          ▲
+         </div>
+         <div class="count_current" initial="1">
+          1
+         </div>
+         <div class="decrease" onclick="update_count_models('left', 1, false)">
+          ▼
+         </div>
         </div>
        </div>
        <div onclick="toggle_inactive('left', 1)">
-        <div class="unit" style="background-image: url('resources/background.png')" title="50 points per model.">
-         <div class="image_unit" style="background-image: url('resources/factions/Imperium/units/Heavy intercessors.png')">
-          <div class="header_unit">
-           <h3 class="name_unit">
-            Heavy intercessors
-           </h3>
-          </div>
-          <div class="model_properties">
-           <div class="unit_property">
-            <span>
-             armor
-            </span>
-            5
+        <div class="model" title="200 points per model.">
+         <div class="image_unit" style="background-image: url('resources/factions/Tau/units/Sunsear.png')">
+          <div class="data_unit">
+           <div class="name_unit">
+            Sunsear
            </div>
-           <br/>
-           <div class="unit_property move" title='This model can perform the "Move" action up to the given distance.'>
+           <div class="model_property">
             <span>
-             move
+             ⛊
             </span>
-            10
+            8 vehicle
            </div>
-           <br/>
-           <div class="unit_property attack">
+           <div class="model_property">
             <span>
-             ranged
+             🡆
             </span>
-            2x 💥6
+            25 fly
+           </div>
+           <div class="model_attacks">
+            <div class="model_property">
+             💥7
+            </div>
+            <div class="model_property">
+             💥10 ap, 20 cm, single
+            </div>
            </div>
           </div>
          </div>
         </div>
        </div>
       </div>
-      <div class="unit_army_list" points_per_model="50">
+      <div class="unit_army_list" points_per_model="25">
        <div class="unit_state">
-        <div class="health_bar" onclick="reduce_health('left', 2)">
-         <div class="token next">
+        <div class="health_bar">
+         <div class="token">
          </div>
          <div class="token">
          </div>
@@ -2230,116 +469,44 @@ Furthermore, this unit can be attached to another friendly unit at deployment. W
          <div class="token">
          </div>
         </div>
-        <div class="count_models" initial="5" onclick="increase_number_models('left', 2)">
-         5
+        <div class="count_models">
+         <div class="increase" onclick="update_count_models('left', 2, true)">
+          ▲
+         </div>
+         <div class="count_current" initial="5">
+          5
+         </div>
+         <div class="decrease" onclick="update_count_models('left', 2, false)">
+          ▼
+         </div>
         </div>
        </div>
        <div onclick="toggle_inactive('left', 2)">
-        <div class="unit" style="background-image: url('resources/background.png')" title="50 points per model.">
-         <div class="image_unit" style="background-image: url('resources/factions/Imperium/units/Eradicators.png')">
-          <div class="header_unit">
-           <h3 class="name_unit">
-            Eradicators
-           </h3>
-          </div>
-          <div class="model_properties">
-           <div class="unit_property">
-            <span>
-             armor
-            </span>
-            5
+        <div class="model" title="25 points per model.">
+         <div class="image_unit" style="background-image: url('resources/factions/Tau/units/Stealth suit [burst cannon].png')">
+          <div class="data_unit">
+           <div class="name_unit">
+            Stealth suit [burst cannon]
            </div>
-           <br/>
-           <div class="unit_property move" title='This model can perform the "Move" action up to the given distance.'>
+           <div class="model_property">
             <span>
-             move
+             ⛊
+            </span>
+            4 stealth
+           </div>
+           <div class="model_property">
+            <span>
+             🡆
             </span>
             10
            </div>
-           <br/>
-           <div class="unit_property attack">
-            <span>
-             ranged
-            </span>
-            1x 💥6
-           </div>
-           <br/>
-           <div class="unit_property attack">
-            <span>
-             20 cm
-            </span>
-            1x 💥8 - 12
-           </div>
-          </div>
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="unit_army_list" points_per_model="400">
-       <div class="unit_state">
-        <div class="health_bar" onclick="reduce_health('left', 3)">
-         <div class="token next">
-         </div>
-         <div class="token">
-         </div>
-         <div class="token">
-         </div>
-         <div class="token">
-         </div>
-         <div class="token">
-         </div>
-         <div class="token">
-         </div>
-         <div class="token">
-         </div>
-         <div class="token">
-         </div>
-        </div>
-        <div class="count_models" initial="1" onclick="increase_number_models('left', 3)">
-         1
-        </div>
-       </div>
-       <div onclick="toggle_inactive('left', 3)">
-        <div class="unit" style="background-image: url('resources/background.png')" title="400 points per model.">
-         <div class="image_unit" style="background-image: url('resources/factions/Imperium/units/Gladiator lancer.png')">
-          <div class="header_unit">
-           <h3 class="name_unit">
-            Gladiator lancer
-           </h3>
-          </div>
-          <div class="model_properties">
-           <div class="unit_property">
-            <span>
-             armor
-            </span>
-            10
-           </div>
-           <br/>
-           <div class="unit_property large" title="This unit is never considered to be in cover and units cannot attach to this unit.">
-            <span>
-             large
-            </span>
-           </div>
-           <br/>
-           <div class="unit_property move" title='This model can perform the "Move" action up to the given distance.'>
-            <span>
-             move
-            </span>
-            25
-           </div>
-           <br/>
-           <div class="unit_property attack">
-            <span>
-             20 cm
-            </span>
-            2x 💥5
-           </div>
-           <br/>
-           <div class="unit_property attack">
-            <span>
-             ranged
-            </span>
-            heavy 1x 💥12 - 14
+           <div class="model_attacks">
+            <div class="model_property">
+             💥5
+            </div>
+            <div class="model_property">
+             💥6 heavy
+            </div>
            </div>
           </div>
          </div>
@@ -2348,26 +515,30 @@ Furthermore, this unit can be attached to another friendly unit at deployment. W
       </div>
      </div>
     </div>
-    <div class="right">
+    <div id="right">
      <div class="victory_state">
       <div class="victory_points">
-       <span onclick="increase_victory_points('right')">
+       <span class="value" onclick="update_victory_points('right', 1)">
         0
        </span>
-       <span onclick="decrease_victory_points('right')">
-        VP
+       <span onclick="update_victory_points('right', -1)">
+        VP,
        </span>
       </div>
-      ,
-      <span class="points_total">
-       ? points remaining.
+      <div class="model_points">
+       <span class="value">
+        ?
+       </span>
+       points remaining. -&gt;
+      </div>
+      <span class="outcome">
       </span>
      </div>
      <div class="army_list">
       <div class="unit_army_list" points_per_model="250">
        <div class="unit_state">
-        <div class="health_bar" onclick="reduce_health('right', 0)">
-         <div class="token next">
+        <div class="health_bar">
+         <div class="token">
          </div>
          <div class="token">
          </div>
@@ -2384,62 +555,54 @@ Furthermore, this unit can be attached to another friendly unit at deployment. W
          <div class="token">
          </div>
         </div>
-        <div class="count_models" initial="1" onclick="increase_number_models('right', 0)">
-         1
+        <div class="count_models">
+         <div class="increase" onclick="update_count_models('right', 0, true)">
+          ▲
+         </div>
+         <div class="count_current" initial="1">
+          1
+         </div>
+         <div class="decrease" onclick="update_count_models('right', 0, false)">
+          ▼
+         </div>
         </div>
        </div>
        <div onclick="toggle_inactive('right', 0)">
-        <div class="unit" style="background-image: url('resources/background.png')" title="250 points per model.">
-         <div class="image_unit" style="background-image: url('resources/factions/Chaos/units/Lord Invocatus.png')">
-          <div class="header_unit">
-           <h3 class="name_unit">
-            Lord Invocatus
-           </h3>
-          </div>
-          <div class="model_properties">
-           <div class="unit_property">
-            <span>
-             armor
-            </span>
-            6
+        <div class="model" title="250 points per model.">
+         <div class="image_unit" style="background-image: url('resources/factions/Necrons/units/Nekrosor Ammentar.png')">
+          <div class="data_unit">
+           <div class="name_unit">
+            Nekrosor Ammentar
            </div>
-           <br/>
-           <div class="unit_property score" title="This model's unit can perform the &quot;Score objective&quot; action.
-Furthermore, this unit can be attached to another friendly unit at deployment. While this unit is attached to another unit, it cannot be selected as a target unit.">
+           <div class="model_property">
             <span>
-             score
+             ⛊
             </span>
+            8
            </div>
-           <br/>
-           <div class="unit_property move" title='This model can perform the "Move" action up to the given distance.'>
+           <div class="model_property">
             <span>
-             move
+             🡆
             </span>
-            25
+            25 teleportation
            </div>
-           <br/>
-           <div class="unit_property attack">
-            <span>
-             melee
-            </span>
-            1x 💥8 - 10
-           </div>
-           <br/>
-           <div class="unit_property attack">
-            <span>
-             melee
-            </span>
-            heavy 4x 💥7
+           <div class="model_attacks">
+            <div class="model_property">
+             💥7
+            </div>
+            <div class="model_property">
+             💥11 melee
+            </div>
            </div>
           </div>
          </div>
         </div>
        </div>
       </div>
-      <div class="unit_army_list" points_per_model="50">
+      <div class="unit_army_list" points_per_model="125">
        <div class="unit_state">
-        <div class="health_bar" onclick="reduce_health('right', 1)">
-         <div class="token next">
+        <div class="health_bar">
+         <div class="token">
          </div>
          <div class="token">
          </div>
@@ -2456,48 +619,54 @@ Furthermore, this unit can be attached to another friendly unit at deployment. W
          <div class="token">
          </div>
         </div>
-        <div class="count_models" initial="8" onclick="increase_number_models('right', 1)">
-         8
+        <div class="count_models">
+         <div class="increase" onclick="update_count_models('right', 1, true)">
+          ▲
+         </div>
+         <div class="count_current" initial="1">
+          1
+         </div>
+         <div class="decrease" onclick="update_count_models('right', 1, false)">
+          ▼
+         </div>
         </div>
        </div>
        <div onclick="toggle_inactive('right', 1)">
-        <div class="unit" style="background-image: url('resources/background.png')" title="50 points per model.">
-         <div class="image_unit" style="background-image: url('resources/factions/Chaos/units/Eightbound.png')">
-          <div class="header_unit">
-           <h3 class="name_unit">
-            Eightbound
-           </h3>
-          </div>
-          <div class="model_properties">
-           <div class="unit_property">
-            <span>
-             armor
-            </span>
-            4
+        <div class="model" title="125 points per model.">
+         <div class="image_unit" style="background-image: url('resources/factions/Necrons/units/Hexmark destroyer.png')">
+          <div class="data_unit">
+           <div class="name_unit">
+            Hexmark destroyer
            </div>
-           <br/>
-           <div class="unit_property move" title='This model can perform the "Move" action up to the given distance.'>
+           <div class="model_property">
             <span>
-             move
+             ⛊
             </span>
-            20
+            5 stealth
            </div>
-           <br/>
-           <div class="unit_property attack">
+           <div class="model_property">
             <span>
-             melee
+             🡆
             </span>
-            2x 💥7
+            15 teleportation
+           </div>
+           <div class="model_attacks">
+            <div class="model_property">
+             💥7
+            </div>
+            <div class="model_property">
+             💥5 volume
+            </div>
            </div>
           </div>
          </div>
         </div>
        </div>
       </div>
-      <div class="unit_army_list" points_per_model="50">
+      <div class="unit_army_list" points_per_model="75">
        <div class="unit_state">
-        <div class="health_bar" onclick="reduce_health('right', 2)">
-         <div class="token next">
+        <div class="health_bar">
+         <div class="token">
          </div>
          <div class="token">
          </div>
@@ -2514,45 +683,41 @@ Furthermore, this unit can be attached to another friendly unit at deployment. W
          <div class="token">
          </div>
         </div>
-        <div class="count_models" initial="8" onclick="increase_number_models('right', 2)">
-         8
+        <div class="count_models">
+         <div class="increase" onclick="update_count_models('right', 2, true)">
+          ▲
+         </div>
+         <div class="count_current" initial="2">
+          2
+         </div>
+         <div class="decrease" onclick="update_count_models('right', 2, false)">
+          ▼
+         </div>
         </div>
        </div>
        <div onclick="toggle_inactive('right', 2)">
-        <div class="unit" style="background-image: url('resources/background.png')" title="50 points per model.">
-         <div class="image_unit" style="background-image: url('resources/factions/Chaos/units/Khorne Berzerkers.png')">
-          <div class="header_unit">
-           <h3 class="name_unit">
-            Khorne Berzerkers
-           </h3>
-          </div>
-          <div class="model_properties">
-           <div class="unit_property">
-            <span>
-             armor
-            </span>
-            4
+        <div class="model" title="75 points per model.">
+         <div class="image_unit" style="background-image: url('resources/factions/Necrons/units/Heavy lokhust destroyer [gauss].png')">
+          <div class="data_unit">
+           <div class="name_unit">
+            Heavy lokhust destroyer [gauss]
            </div>
-           <br/>
-           <div class="unit_property move" title='This model can perform the "Move" action up to the given distance.'>
+           <div class="model_property">
             <span>
-             move
+             ⛊
             </span>
-            20
+            6
            </div>
-           <br/>
-           <div class="unit_property attack">
+           <div class="model_property">
             <span>
-             ranged
+             🡆
             </span>
-            1x 💥6
+            15
            </div>
-           <br/>
-           <div class="unit_property attack">
-            <span>
-             melee
-            </span>
-            1x 💥7
+           <div class="model_attacks">
+            <div class="model_property">
+             💥10 ap, heavy, single
+            </div>
            </div>
           </div>
          </div>
