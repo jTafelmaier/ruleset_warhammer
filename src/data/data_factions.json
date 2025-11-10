@@ -5,7 +5,7 @@
             "units": [
                 {
                     "name": "Captain with jump pack",
-                    "points_per_model": 100,
+                    "points_per_model": 50,
                     "armor": 4,
                     "move": 25,
                     "keywords_armor": [
@@ -30,7 +30,7 @@
                 },
                 {
                     "name": "Jump pack intercessors",
-                    "points_per_model": 50,
+                    "points_per_model": 25,
                     "armor": 4,
                     "move": 25,
                     "keywords_armor": [],
@@ -52,7 +52,7 @@
                 },
                 {
                     "name": "Captain in gravis armour",
-                    "points_per_model": 100,
+                    "points_per_model": 50,
                     "armor": 4,
                     "move": 10,
                     "keywords_armor": [
@@ -76,7 +76,7 @@
                 },
                 {
                     "name": "Heavy intercessors",
-                    "points_per_model": 50,
+                    "points_per_model": 25,
                     "armor": 4,
                     "move": 10,
                     "keywords_armor": [
@@ -101,7 +101,7 @@
                 },
                 {
                     "name": "Eradicators",
-                    "points_per_model": 50,
+                    "points_per_model": 25,
                     "armor": 4,
                     "move": 10,
                     "keywords_armor": [
@@ -125,7 +125,7 @@
                 },
                 {
                     "name": "Gladiator lancer",
-                    "points_per_model": 400,
+                    "points_per_model": 200,
                     "armor": 8,
                     "move": 25,
                     "keywords_armor": [
@@ -149,7 +149,7 @@
                 },
                 {
                     "name": "Castellan",
-                    "points_per_model": 100,
+                    "points_per_model": 50,
                     "armor": 4,
                     "move": 15,
                     "keywords_armor": [
@@ -172,7 +172,7 @@
                 },
                 {
                     "name": "Sword brethren",
-                    "points_per_model": 50,
+                    "points_per_model": 25,
                     "armor": 4,
                     "move": 15,
                     "keywords_armor": [],
@@ -193,7 +193,7 @@
                 },
                 {
                     "name": "Crusader squad",
-                    "points_per_model": 50,
+                    "points_per_model": 25,
                     "armor": 4,
                     "move": 15,
                     "keywords_armor": [],
@@ -216,7 +216,7 @@
                 },
                 {
                     "name": "Belial",
-                    "points_per_model": 200,
+                    "points_per_model": 100,
                     "armor": 5,
                     "move": 10,
                     "keywords_armor": [
@@ -244,7 +244,7 @@
                 },
                 {
                     "name": "Deathwing strikemaster",
-                    "points_per_model": 200,
+                    "points_per_model": 100,
                     "armor": 6,
                     "move": 10,
                     "keywords_armor": [
@@ -266,7 +266,7 @@
                 },
                 {
                     "name": "Deathwing knights",
-                    "points_per_model": 100,
+                    "points_per_model": 50,
                     "armor": 6,
                     "move": 10,
                     "keywords_armor": [
@@ -287,7 +287,7 @@
                 },
                 {
                     "name": "Aethon Shaan",
-                    "points_per_model": 200,
+                    "points_per_model": 100,
                     "armor": 4,
                     "move": 25,
                     "keywords_armor": [
@@ -314,7 +314,7 @@
                 },
                 {
                     "name": "Darnath Lysander",
-                    "points_per_model": 200,
+                    "points_per_model": 100,
                     "armor": 6,
                     "move": 10,
                     "keywords_armor": [
@@ -335,7 +335,7 @@
                 },
                 {
                     "name": "Suboden Khan",
-                    "points_per_model": 200,
+                    "points_per_model": 100,
                     "armor": 5,
                     "move": 40,
                     "keywords_armor": [
@@ -363,7 +363,7 @@
                 },
                 {
                     "name": "Castellan Crowe",
-                    "points_per_model": 200,
+                    "points_per_model": 100,
                     "armor": 4,
                     "move": 15,
                     "keywords_armor": [
@@ -394,7 +394,7 @@
             "units": [
                 {
                     "name": "Lord Invocatus",
-                    "points_per_model": 250,
+                    "points_per_model": 125,
                     "armor": 5,
                     "move": 25,
                     "keywords_armor": [
@@ -420,7 +420,7 @@
                 },
                 {
                     "name": "Slaughterbound",
-                    "points_per_model": 150,
+                    "points_per_model": 75,
                     "armor": 5,
                     "move": 20,
                     "keywords_armor": [
@@ -440,7 +440,7 @@
                 },
                 {
                     "name": "Exalted Eightbound",
-                    "points_per_model": 100,
+                    "points_per_model": 50,
                     "armor": 5,
                     "move": 20,
                     "keywords_armor": [],
@@ -467,7 +467,7 @@
                 },
                 {
                     "name": "Eightbound",
-                    "points_per_model": 75,
+                    "points_per_model": 25,
                     "armor": 5,
                     "move": 20,
                     "keywords_armor": [],
@@ -483,7 +483,7 @@
                 },
                 {
                     "name": "Khorne Berzerkers",
-                    "points_per_model": 50,
+                    "points_per_model": 25,
                     "armor": 4,
                     "move": 20,
                     "keywords_armor": [],
@@ -503,7 +503,7 @@
                 },
                 {
                     "name": "Jakhals",
-                    "points_per_model": 10,
+                    "points_per_model": 5,
                     "armor": 1,
                     "move": 10,
                     "keywords_armor": [],
@@ -519,7 +519,7 @@
                 },
                 {
                     "name": "Warsmith",
-                    "points_per_model": 150,
+                    "points_per_model": 75,
                     "armor": 5,
                     "move": 10,
                     "keywords_armor": [
@@ -549,7 +549,7 @@
                 },
                 {
                     "name": "Cataphractii terminators",
-                    "points_per_model": 100,
+                    "points_per_model": 50,
                     "armor": 5,
                     "move": 10,
                     "keywords_armor": [
@@ -576,7 +576,7 @@
                 },
                 {
                     "name": "MkII Marines",
-                    "points_per_model": 50,
+                    "points_per_model": 25,
                     "armor": 4,
                     "move": 15,
                     "keywords_armor": [],
@@ -599,7 +599,7 @@
                 },
                 {
                     "name": "MkII Assault Squad",
-                    "points_per_model": 50,
+                    "points_per_model": 25,
                     "armor": 4,
                     "move": 25,
                     "keywords_armor": [],
@@ -621,7 +621,7 @@
                 },
                 {
                     "name": "MkIII Breacher Squad",
-                    "points_per_model": 50,
+                    "points_per_model": 25,
                     "armor": 5,
                     "move": 15,
                     "keywords_armor": [],
@@ -637,7 +637,7 @@
                 },
                 {
                     "name": "Araknae accelerator platform",
-                    "points_per_model": 200,
+                    "points_per_model": 100,
                     "armor": 8,
                     "move": 0,
                     "keywords_armor": [
@@ -656,7 +656,7 @@
                 },
                 {
                     "name": "Fellblade super-heavy tank",
-                    "points_per_model": 600,
+                    "points_per_model": 400,
                     "armor": 9,
                     "move": 25,
                     "keywords_armor": [
@@ -686,7 +686,7 @@
                 },
                 {
                     "name": "Exodus",
-                    "points_per_model": 200,
+                    "points_per_model": 100,
                     "armor": 4,
                     "move": 15,
                     "keywords_armor": [
@@ -713,7 +713,7 @@
             "units": [
                 {
                     "name": "Nekrosor Ammentar",
-                    "points_per_model": 500,
+                    "points_per_model": 250,
                     "armor": 8,
                     "move": 25,
                     "keywords_armor": [],
@@ -735,7 +735,7 @@
                 },
                 {
                     "name": "Skorpekh lord",
-                    "points_per_model": 250,
+                    "points_per_model": 125,
                     "armor": 7,
                     "move": 15,
                     "keywords_armor": [],
@@ -758,7 +758,7 @@
                 },
                 {
                     "name": "Hexmark destroyer",
-                    "points_per_model": 250,
+                    "points_per_model": 125,
                     "armor": 5,
                     "move": 15,
                     "keywords_armor": [
@@ -782,7 +782,7 @@
                 },
                 {
                     "name": "Skorpekh destroyer",
-                    "points_per_model": 100,
+                    "points_per_model": 50,
                     "armor": 5,
                     "move": 15,
                     "keywords_armor": [],
@@ -799,7 +799,7 @@
                 },
                 {
                     "name": "Lokhust destroyer - Gauss",
-                    "points_per_model": 150,
+                    "points_per_model": 75,
                     "armor": 6,
                     "move": 15,
                     "keywords_armor": [],
@@ -817,7 +817,7 @@
                 },
                 {
                     "name": "Lokhust destroyer - Enmitic",
-                    "points_per_model": 150,
+                    "points_per_model": 75,
                     "armor": 6,
                     "move": 15,
                     "keywords_armor": [],
@@ -838,7 +838,7 @@
             "units": [
                 {
                     "name": "Commander Farsight",
-                    "points_per_model": 250,
+                    "points_per_model": 125,
                     "armor": 7,
                     "move": 25,
                     "keywords_armor": [
@@ -864,7 +864,7 @@
                 },
                 {
                     "name": "Scatterflare",
-                    "points_per_model": 400,
+                    "points_per_model": 200,
                     "armor": 8,
                     "move": 25,
                     "keywords_armor": [
@@ -885,7 +885,7 @@
                 },
                 {
                     "name": "Sunsear",
-                    "points_per_model": 400,
+                    "points_per_model": 200,
                     "armor": 8,
                     "move": 25,
                     "keywords_armor": [
@@ -911,7 +911,7 @@
                 },
                 {
                     "name": "Stealth suit [burst cannon]",
-                    "points_per_model": 50,
+                    "points_per_model": 25,
                     "armor": 4,
                     "move": 10,
                     "keywords_armor": [
@@ -933,7 +933,7 @@
                 },
                 {
                     "name": "Stealth suit [fusion blaster]",
-                    "points_per_model": 50,
+                    "points_per_model": 25,
                     "armor": 4,
                     "move": 10,
                     "keywords_armor": [
