@@ -223,9 +223,14 @@
                                 <br/>
                                 damage = 2^(weapon: <span class="icon">💥</span><b>strength</b> - target model: <b><span class="icon">⛊</span>armor</b>)
                                 <br/>
+                                <br/>
                                 If the weapon has <b>volume</b>:
                                 <div class="indented">
                                     damage = damage * min(10, # models in the target unit, at the start of this attack)
+                                </div>
+                                If the weapon has <b>single</b>:
+                                <div class="indented">
+                                    damage = min(damage, target unit: remaining health points)
                                 </div>
                                 <br/>
                                 damage = remaining damage + damage
@@ -242,8 +247,6 @@
                                         The enemy player must choose to destroy one model in the target unit.
                                         <br/>
                                         Then, the target unit health points are fully restored.
-                                        <br/>
-                                        If the weapon has <b>single</b>: end the attack sequence for this model.
                                     </div>
                                 </div>
                             </div>
