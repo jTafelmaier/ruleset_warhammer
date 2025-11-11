@@ -228,7 +228,7 @@
                     ],
                     "attacks": [
                         {
-                            "strength": 5,
+                            "strength": 6,
                             "keywords": [
                                 "20 cm"
                             ]
@@ -374,7 +374,7 @@
                     ],
                     "attacks": [
                         {
-                            "strength": 5,
+                            "strength": 6,
                             "keywords": [
                                 "20 cm"
                             ]
@@ -665,15 +665,15 @@
                     "keywords_movement": [],
                     "attacks": [
                         {
-                            "strength": 8,
-                            "keywords": []
-                        },
-                        {
                             "strength": 7,
                             "keywords": [
                                 "heavy",
                                 "volume"
                             ]
+                        },
+                        {
+                            "strength": 8,
+                            "keywords": []
                         },
                         {
                             "strength": 12,
