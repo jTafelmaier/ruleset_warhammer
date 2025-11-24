@@ -215,27 +215,35 @@ body {
 
 .data_unit {
     width: 200px;
+    border-collapse: separate;
+    border-spacing: 0px 1.5px;
 }
 
 .name_unit {
     color: #2e3544;
-    background: linear-gradient(0.25turn, #9fa7ba, #6b7384a6);
+    background: linear-gradient(0.25turn, #9fa7ba, #6b738400 50%);
     padding: 1px 5px;
 }
 
 .model_property {
     color: #2e3544;
     background: linear-gradient(0.25turn, #80899c9d, #555c6c00);
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
-    padding: 1px 5px;
-    margin-bottom: 2px;
 }
 
-.model_property span {
-    display: inline-block;
-    color: white;
+.model_property .icon {
+    text-align: center;
     font-weight: bold;
+    color: white;
+    width: 2em;
+}
+
+.model_property .property {
+    width: 1.5em;
+}
+
+.keyword {
+    border-radius: 2px;
+    margin-right: 2px;
 }
 
 #army_lists {

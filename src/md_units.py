@@ -17,21 +17,24 @@ def get_text_html_data_unit(
         if len(list_texts_keywords) == 0:
             return ""
 
-        return " " \
-            + ", " \
-                .join(list_texts_keywords)
+        return "" \
+            .join(
+                map(
+                    lambda text_keyword:  "<span class=\"keyword\">" + text_keyword + "</span>",
+                    list_texts_keywords))
 
     def get_text_html_attack(
         dict_attack:typing.Dict):
 
-        return "<div class=\"model_property\">💥" \
+        return "<tr class=\"model_property\"><td>💥</td><td class=\"property\">" \
             + dict_attack \
                 ["strength"] \
                 .__str__() \
+            + "</td><td>" \
             + get_text_keywords(
                 dict_attack \
                     ["keywords"]) \
-            + "</div>"
+            + "</td></tr>"
 
     path_image_unit = "/" \
         .join(
@@ -55,24 +58,26 @@ def get_text_html_data_unit(
                 ["points_per_model"]) \
         + " points per model.\"><div class=\"image_unit\" style=\"background-image: url('" \
         + path_image_unit \
-        + "')\"><div class=\"data_unit\"><div class=\"name_unit\">" \
+        + "')\"><div class=\"name_unit\">" \
         + dict_unit \
             ["name"] \
-        + "</div><div class=\"model_property\"><span>⛊</span>" \
+        + "</div><table class=\"data_unit\"><tbody><tr class=\"model_property\"><td class=\"icon\">⛊</td><td class=\"property\">" \
         + str(
             dict_unit \
                 ["armor"]) \
+        + "</td><td>" \
         + get_text_keywords( \
             dict_unit \
                 ["keywords_armor"]) \
-        + "</div><div class=\"model_property\"><span>🡆</span>" \
+        + "</td></tr><tr class=\"model_property\"><td class=\"icon\">🡆</td><td class=\"property\">" \
         + str(
             dict_unit \
                 ["move"]) \
+        + "</td><td>" \
         + get_text_keywords( \
             dict_unit \
                 ["keywords_movement"]) \
-        + "</div><div class=\"model_attacks\">" \
+        + "</td></tr>" \
         + text_html_rows_attacks \
-        + "</div></div></div></div>"
+        + "</tbody></table></div></div>"
 
