@@ -30,7 +30,7 @@ def get_text_html_data_unit(
             + dict_attack \
                 ["strength"] \
                 .__str__() \
-            + "</td><td>" \
+            + " " \
             + get_text_keywords(
                 dict_attack \
                     ["keywords"]) \
@@ -65,7 +65,7 @@ def get_text_html_data_unit(
         + str(
             dict_unit \
                 ["armor"]) \
-        + "</td><td>" \
+        + " " \
         + get_text_keywords( \
             dict_unit \
                 ["keywords_armor"]) \
@@ -73,7 +73,7 @@ def get_text_html_data_unit(
         + str(
             dict_unit \
                 ["move"]) \
-        + "</td><td>" \
+        + " " \
         + get_text_keywords( \
             dict_unit \
                 ["keywords_movement"]) \

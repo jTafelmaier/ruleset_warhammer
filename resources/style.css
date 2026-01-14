@@ -237,10 +237,6 @@ body {
     width: 2em;
 }
 
-.model_property .property {
-    width: 1.5em;
-}
-
 .keyword {
     border-radius: 2px;
     margin-right: 2px;
