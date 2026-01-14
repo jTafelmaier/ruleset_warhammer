@@ -685,9 +685,7 @@
                     "armor": 8,
                     "move": 25,
                     "keywords_armor": [],
-                    "keywords_movement": [
-                        "teleportation"
-                    ],
+                    "keywords_movement": [],
                     "attacks": [
                         {
                             "strength": 7,
