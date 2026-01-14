@@ -214,19 +214,17 @@
                                     - The weapon has <b>heavy</b> and this is not the first action for this unit this turn.
                                 </div>
                                 <br/>
-                                During this attack, increase the armor value of target models by 1 for each true condition:
+                                If the target unit is not in cover and does not have <b>vehicle</b>, and the weapon does not have <b>melee</b>:
                                 <div class="indented">
-                                    - the model does not have <b>vehicle</b> and is in cover.
-                                    <br/>
-                                    - the model has <b>sealed</b> and the weapon does not have <b>ap</b>.
+                                    During this attack, increase the weapon: <span class="icon">💥</span><b>strength</b> by 1.
                                 </div>
                                 <br/>
-                                damage = 2^(weapon: <span class="icon">💥</span><b>strength</b> - target model: <b><span class="icon">⛊</span>armor</b>)
+                                damage = 2^(weapon: <span class="icon">💥</span><b>strength</b> - target unit: <b><span class="icon">⛊</span>armor</b>)
                                 <br/>
                                 <br/>
                                 If the weapon has <b>volume</b>:
                                 <div class="indented">
-                                    damage = damage * min(10, # models in the target unit, at the start of this attack)
+                                    damage = damage * min(10, # models in the target unit, at the start of this action)
                                 </div>
                                 If the weapon has <b>single</b>:
                                 <div class="indented">

@@ -32,14 +32,14 @@ def main():
 
                     dict_unit[name_property] = t
 
-                def modify_action(
-                    dict_action:typing.Dict):
+                def modify_attack(
+                    dict_attack:typing.Dict):
 
                     return None
 
                 list(
                     map(
-                        modify_action,
+                        modify_attack,
                         dict_unit \
                             ["attacks"]))
 

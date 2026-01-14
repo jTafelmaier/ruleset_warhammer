@@ -20,9 +20,8 @@
                             "keywords": []
                         },
                         {
-                            "strength": 7,
+                            "strength": 8,
                             "keywords": [
-                                "ap",
                                 "melee"
                             ]
                         }
@@ -43,7 +42,7 @@
                             "keywords": []
                         },
                         {
-                            "strength": 6,
+                            "strength": 7,
                             "keywords": [
                                 "melee"
                             ]
@@ -53,10 +52,9 @@
                 {
                     "name": "Captain in gravis armour",
                     "points_per_model": 50,
-                    "armor": 4,
+                    "armor": 5,
                     "move": 10,
                     "keywords_armor": [
-                        "sealed",
                         "leader"
                     ],
                     "keywords_movement": [],
@@ -66,9 +64,8 @@
                             "keywords": []
                         },
                         {
-                            "strength": 7,
+                            "strength": 8,
                             "keywords": [
-                                "ap",
                                 "melee"
                             ]
                         }
@@ -77,11 +74,9 @@
                 {
                     "name": "Heavy intercessors",
                     "points_per_model": 25,
-                    "armor": 4,
+                    "armor": 5,
                     "move": 10,
-                    "keywords_armor": [
-                        "sealed"
-                    ],
+                    "keywords_armor": [],
                     "keywords_movement": [],
                     "attacks": [
                         {
@@ -91,7 +86,6 @@
                         {
                             "strength": 6,
                             "keywords": [
-                                "ap",
                                 "20 cm",
                                 "heavy",
                                 "single"
@@ -102,11 +96,9 @@
                 {
                     "name": "Eradicators",
                     "points_per_model": 25,
-                    "armor": 4,
+                    "armor": 5,
                     "move": 10,
-                    "keywords_armor": [
-                        "sealed"
-                    ],
+                    "keywords_armor": [],
                     "keywords_movement": [],
                     "attacks": [
                         {
@@ -116,7 +108,6 @@
                         {
                             "strength": 9,
                             "keywords": [
-                                "ap",
                                 "20 cm",
                                 "single"
                             ]
@@ -140,7 +131,6 @@
                         {
                             "strength": 10,
                             "keywords": [
-                                "ap",
                                 "heavy",
                                 "single"
                             ]
@@ -162,9 +152,8 @@
                             "keywords": []
                         },
                         {
-                            "strength": 7,
+                            "strength": 8,
                             "keywords": [
-                                "ap",
                                 "melee"
                             ]
                         }
@@ -183,9 +172,8 @@
                             "keywords": []
                         },
                         {
-                            "strength": 6,
+                            "strength": 7,
                             "keywords": [
-                                "ap",
                                 "melee"
                             ]
                         }
@@ -206,7 +194,6 @@
                         {
                             "strength": 6,
                             "keywords": [
-                                "ap",
                                 "20 cm",
                                 "heavy",
                                 "single"
@@ -220,7 +207,6 @@
                     "armor": 5,
                     "move": 10,
                     "keywords_armor": [
-                        "sealed",
                         "leader"
                     ],
                     "keywords_movement": [
@@ -234,9 +220,8 @@
                             ]
                         },
                         {
-                            "strength": 8,
+                            "strength": 9,
                             "keywords": [
-                                "ap",
                                 "melee"
                             ]
                         }
@@ -248,7 +233,6 @@
                     "armor": 6,
                     "move": 10,
                     "keywords_armor": [
-                        "sealed",
                         "leader"
                     ],
                     "keywords_movement": [
@@ -256,9 +240,8 @@
                     ],
                     "attacks": [
                         {
-                            "strength": 8,
+                            "strength": 9,
                             "keywords": [
-                                "ap",
                                 "melee"
                             ]
                         }
@@ -269,17 +252,14 @@
                     "points_per_model": 50,
                     "armor": 6,
                     "move": 10,
-                    "keywords_armor": [
-                        "sealed"
-                    ],
+                    "keywords_armor": [],
                     "keywords_movement": [
                         "teleportation"
                     ],
                     "attacks": [
                         {
-                            "strength": 7,
+                            "strength": 8,
                             "keywords": [
-                                "ap",
                                 "melee"
                             ]
                         }
@@ -304,9 +284,8 @@
                             "keywords": []
                         },
                         {
-                            "strength": 7,
+                            "strength": 8,
                             "keywords": [
-                                "ap",
                                 "melee"
                             ]
                         }
@@ -318,7 +297,6 @@
                     "armor": 6,
                     "move": 10,
                     "keywords_armor": [
-                        "sealed",
                         "leader"
                     ],
                     "keywords_movement": [
@@ -326,7 +304,7 @@
                     ],
                     "attacks": [
                         {
-                            "strength": 8,
+                            "strength": 9,
                             "keywords": [
                                 "melee"
                             ]
@@ -353,9 +331,8 @@
                             ]
                         },
                         {
-                            "strength": 7,
+                            "strength": 8,
                             "keywords": [
-                                "ap",
                                 "melee"
                             ]
                         }
@@ -380,7 +357,7 @@
                             ]
                         },
                         {
-                            "strength": 8,
+                            "strength": 9,
                             "keywords": [
                                 "melee"
                             ]
@@ -403,14 +380,14 @@
                     "keywords_movement": [],
                     "attacks": [
                         {
-                            "strength": 8,
+                            "strength": 9,
                             "keywords": [
                                 "melee",
                                 "single"
                             ]
                         },
                         {
-                            "strength": 8,
+                            "strength": 9,
                             "keywords": [
                                 "melee",
                                 "heavy"
@@ -431,7 +408,7 @@
                     ],
                     "attacks": [
                         {
-                            "strength": 8,
+                            "strength": 9,
                             "keywords": [
                                 "melee"
                             ]
@@ -449,15 +426,14 @@
                     ],
                     "attacks": [
                         {
-                            "strength": 7,
+                            "strength": 8,
                             "keywords": [
                                 "melee"
                             ]
                         },
                         {
-                            "strength": 9,
+                            "strength": 10,
                             "keywords": [
-                                "ap",
                                 "melee",
                                 "heavy",
                                 "single"
@@ -474,7 +450,7 @@
                     "keywords_movement": [],
                     "attacks": [
                         {
-                            "strength": 7,
+                            "strength": 8,
                             "keywords": [
                                 "melee"
                             ]
@@ -494,7 +470,7 @@
                             "keywords": []
                         },
                         {
-                            "strength": 6,
+                            "strength": 7,
                             "keywords": [
                                 "melee"
                             ]
@@ -510,7 +486,7 @@
                     "keywords_movement": [],
                     "attacks": [
                         {
-                            "strength": 4,
+                            "strength": 5,
                             "keywords": [
                                 "melee"
                             ]
@@ -523,7 +499,6 @@
                     "armor": 5,
                     "move": 10,
                     "keywords_armor": [
-                        "sealed",
                         "leader"
                     ],
                     "keywords_movement": [
@@ -538,7 +513,7 @@
                             ]
                         },
                         {
-                            "strength": 9,
+                            "strength": 10,
                             "keywords": [
                                 "melee",
                                 "heavy",
@@ -552,23 +527,18 @@
                     "points_per_model": 50,
                     "armor": 5,
                     "move": 10,
-                    "keywords_armor": [
-                        "sealed"
-                    ],
+                    "keywords_armor": [],
                     "keywords_movement": [
                         "teleportation"
                     ],
                     "attacks": [
                         {
                             "strength": 5,
-                            "keywords": [
-                                "ap"
-                            ]
+                            "keywords": []
                         },
                         {
-                            "strength": 7,
+                            "strength": 8,
                             "keywords": [
-                                "ap",
                                 "melee"
                             ]
                         }
@@ -589,7 +559,6 @@
                         {
                             "strength": 6,
                             "keywords": [
-                                "ap",
                                 "20 cm",
                                 "heavy",
                                 "single"
@@ -612,7 +581,7 @@
                             "keywords": []
                         },
                         {
-                            "strength": 6,
+                            "strength": 7,
                             "keywords": [
                                 "melee"
                             ]
@@ -648,7 +617,6 @@
                         {
                             "strength": 10,
                             "keywords": [
-                                "ap",
                                 "heavy"
                             ]
                         }
@@ -726,7 +694,7 @@
                             "keywords": []
                         },
                         {
-                            "strength": 11,
+                            "strength": 12,
                             "keywords": [
                                 "melee"
                             ]
@@ -748,9 +716,8 @@
                             ]
                         },
                         {
-                            "strength": 10,
+                            "strength": 11,
                             "keywords": [
-                                "ap",
                                 "melee"
                             ]
                         }
@@ -789,9 +756,8 @@
                     "keywords_movement": [],
                     "attacks": [
                         {
-                            "strength": 8,
+                            "strength": 9,
                             "keywords": [
-                                "ap",
                                 "melee"
                             ]
                         }
@@ -808,7 +774,6 @@
                         {
                             "strength": 10,
                             "keywords": [
-                                "ap",
                                 "heavy",
                                 "single"
                             ]
@@ -854,9 +819,8 @@
                             "keywords": []
                         },
                         {
-                            "strength": 8,
+                            "strength": 9,
                             "keywords": [
-                                "ap",
                                 "melee"
                             ]
                         }
@@ -876,9 +840,7 @@
                     "attacks": [
                         {
                             "strength": 9,
-                            "keywords": [
-                                "ap"
-                            ]
+                            "keywords": []
                         }
                     ]
                 },
@@ -901,7 +863,6 @@
                         {
                             "strength": 10,
                             "keywords": [
-                                "ap",
                                 "20 cm",
                                 "single"
                             ]
@@ -947,7 +908,6 @@
                         {
                             "strength": 9,
                             "keywords": [
-                                "ap",
                                 "20 cm",
                                 "heavy",
                                 "single"
