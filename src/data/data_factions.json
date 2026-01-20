@@ -778,8 +778,7 @@
                     "armor": 4,
                     "move": 15,
                     "keywords_armor": [
-                        "stealth",
-                        "leader"
+                        "stealth"
                     ],
                     "keywords_movement": [
                         "teleportation"
