@@ -432,7 +432,7 @@
                 },
                 {
                     "name": "Achillus dreadnought",
-                    "points_per_model": 200,
+                    "points_per_model": 300,
                     "armor": 8,
                     "move": 25,
                     "keywords_armor": [],
@@ -454,7 +454,7 @@
                 },
                 {
                     "name": "Caladius-Annihilator",
-                    "points_per_model": 200,
+                    "points_per_model": 400,
                     "armor": 9,
                     "move": 40,
                     "keywords_armor": [],
@@ -471,7 +471,7 @@
                 },
                 {
                     "name": "Coronus heavy transport",
-                    "points_per_model": 200,
+                    "points_per_model": 400,
                     "armor": 10,
                     "move": 40,
                     "keywords_armor": [],
