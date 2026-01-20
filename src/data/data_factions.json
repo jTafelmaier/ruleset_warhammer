@@ -726,7 +726,7 @@
                 },
                 {
                     "name": "Araknae accelerator platform",
-                    "points_per_model": 100,
+                    "points_per_model": 200,
                     "armor": 8,
                     "move": 0,
                     "keywords_armor": [],
