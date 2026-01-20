@@ -28,10 +28,12 @@ def get_text_html_data_unit(
 
         def get_text_icon_attack():
 
-            if "melee" in dict_attack["keywords"]:
-                return "⚔"
-            else:
+            if dict_attack["range"] == 1000:
                 return "⊹"
+            elif dict_attack["range"] == 20:
+                return "⛶"
+            else:
+                return "⚔"
 
         return "<tr class=\"model_property\"><td class=\"attack\">" \
             + get_text_icon_attack() \
