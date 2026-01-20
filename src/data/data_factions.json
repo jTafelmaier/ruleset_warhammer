@@ -359,6 +359,150 @@
             ]
         },
         {
+            "name": "Adeptus Custodes",
+            "units": [
+                {
+                    "name": "Shield-captain",
+                    "points_per_model": 150,
+                    "armor": 6,
+                    "move": 20,
+                    "keywords_armor": [
+                        "leader"
+                    ],
+                    "keywords_movement": [],
+                    "attacks": [
+                        {
+                            "strength": 9,
+                            "keywords": [
+                                "melee"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Custodian sentinels",
+                    "points_per_model": 75,
+                    "armor": 6,
+                    "move": 20,
+                    "keywords_armor": [],
+                    "keywords_movement": [],
+                    "attacks": [
+                        {
+                            "strength": 9,
+                            "keywords": [
+                                "melee"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Custodian guard",
+                    "points_per_model": 75,
+                    "armor": 5,
+                    "move": 20,
+                    "keywords_armor": [],
+                    "keywords_movement": [],
+                    "attacks": [
+                        {
+                            "strength": 6,
+                            "keywords": []
+                        },
+                        {
+                            "strength": 9,
+                            "keywords": [
+                                "melee"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Venatari",
+                    "points_per_model": 75,
+                    "armor": 5,
+                    "move": 40,
+                    "keywords_armor": [],
+                    "keywords_movement": [
+                        "fly"
+                    ],
+                    "attacks": [
+                        {
+                            "strength": 7,
+                            "keywords": [
+                                "20cm"
+                            ]
+                        },
+                        {
+                            "strength": 8,
+                            "keywords": [
+                                "melee"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Achillus dreadnought",
+                    "points_per_model": 200,
+                    "armor": 8,
+                    "move": 25,
+                    "keywords_armor": [
+                        "vehicle"
+                    ],
+                    "keywords_movement": [],
+                    "attacks": [
+                        {
+                            "strength": 9,
+                            "keywords": [
+                                "single"
+                            ]
+                        },
+                        {
+                            "strength": 10,
+                            "keywords": [
+                                "melee"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Caladius-Annihilator",
+                    "points_per_model": 200,
+                    "armor": 9,
+                    "move": 40,
+                    "keywords_armor": [
+                        "vehicle"
+                    ],
+                    "keywords_movement": [
+                        "fly"
+                    ],
+                    "attacks": [
+                        {
+                            "strength": 10,
+                            "keywords": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Coronus heavy transport",
+                    "points_per_model": 200,
+                    "armor": 10,
+                    "move": 40,
+                    "keywords_armor": [
+                        "vehicle"
+                    ],
+                    "keywords_movement": [
+                        "fly",
+                        "transport"
+                    ],
+                    "attacks": [
+                        {
+                            "strength": 9,
+                            "keywords": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "name": "Chaos",
             "units": [
                 {
@@ -617,7 +761,7 @@
                 {
                     "name": "Fellblade super-heavy tank",
                     "points_per_model": 400,
-                    "armor": 9,
+                    "armor": 10,
                     "move": 25,
                     "keywords_armor": [
                         "vehicle"
