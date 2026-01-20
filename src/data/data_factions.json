@@ -113,9 +113,7 @@
                     "points_per_model": 200,
                     "armor": 8,
                     "move": 25,
-                    "keywords_armor": [
-                        "vehicle"
-                    ],
+                    "keywords_armor": [],
                     "keywords_movement": [],
                     "attacks": [
                         {
@@ -309,7 +307,6 @@
                     "armor": 5,
                     "move": 40,
                     "keywords_armor": [
-                        "vehicle",
                         "leader"
                     ],
                     "keywords_movement": [
@@ -438,9 +435,7 @@
                     "points_per_model": 200,
                     "armor": 8,
                     "move": 25,
-                    "keywords_armor": [
-                        "vehicle"
-                    ],
+                    "keywords_armor": [],
                     "keywords_movement": [],
                     "attacks": [
                         {
@@ -462,9 +457,7 @@
                     "points_per_model": 200,
                     "armor": 9,
                     "move": 40,
-                    "keywords_armor": [
-                        "vehicle"
-                    ],
+                    "keywords_armor": [],
                     "keywords_movement": [
                         "fly"
                     ],
@@ -481,9 +474,7 @@
                     "points_per_model": 200,
                     "armor": 10,
                     "move": 40,
-                    "keywords_armor": [
-                        "vehicle"
-                    ],
+                    "keywords_armor": [],
                     "keywords_movement": [
                         "fly",
                         "transport"
@@ -506,9 +497,7 @@
                     "points_per_model": 125,
                     "armor": 5,
                     "move": 25,
-                    "keywords_armor": [
-                        "vehicle"
-                    ],
+                    "keywords_armor": [],
                     "keywords_movement": [],
                     "attacks": [
                         {
@@ -740,9 +729,7 @@
                     "points_per_model": 100,
                     "armor": 8,
                     "move": 0,
-                    "keywords_armor": [
-                        "vehicle"
-                    ],
+                    "keywords_armor": [],
                     "keywords_movement": [],
                     "attacks": [
                         {
@@ -759,9 +746,7 @@
                     "points_per_model": 400,
                     "armor": 10,
                     "move": 25,
-                    "keywords_armor": [
-                        "vehicle"
-                    ],
+                    "keywords_armor": [],
                     "keywords_movement": [],
                     "attacks": [
                         {
