@@ -820,28 +820,6 @@
                     ]
                 },
                 {
-                    "name": "Skorpekh lord",
-                    "points_per_model": 125,
-                    "armor": 7,
-                    "move": 15,
-                    "keywords_armor": [],
-                    "keywords_movement": [],
-                    "attacks": [
-                        {
-                            "range": 1000,
-                            "strength": 7,
-                            "keywords": [
-                                "heavy"
-                            ]
-                        },
-                        {
-                            "range": 0,
-                            "strength": 11,
-                            "keywords": []
-                        }
-                    ]
-                },
-                {
                     "name": "Hexmark destroyer",
                     "points_per_model": 125,
                     "armor": 5,
