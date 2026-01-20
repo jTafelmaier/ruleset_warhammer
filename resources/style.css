@@ -193,7 +193,7 @@ body {
     border: 2px solid #9fa7ba;
     border-left: 5px solid #9fa7ba;
     border-radius: 2px;
-    font-size: 15px;
+    font-size: 18px;
     clip-path: polygon(
         0 0,
         calc(100% - 15px) 0,
