@@ -149,9 +149,7 @@ body {
 
 .preview_faction_button {
     display: block;
-    width: 100px;
-    height: 20px;
-    padding: 90px;
+    width: 280px;
     padding-top: 160px;
     padding-bottom: 10px;
     color: white;
