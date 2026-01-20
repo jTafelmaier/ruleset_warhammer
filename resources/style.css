@@ -235,6 +235,10 @@ body {
     width: 2em;
 }
 
+.model_property .attack {
+    text-align: center;
+}
+
 .keyword {
     border-radius: 2px;
     margin-right: 2px;

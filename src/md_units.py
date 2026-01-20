@@ -26,7 +26,16 @@ def get_text_html_data_unit(
     def get_text_html_attack(
         dict_attack:typing.Dict):
 
-        return "<tr class=\"model_property\"><td>💥</td><td class=\"property\">" \
+        def get_text_icon_attack():
+
+            if "melee" in dict_attack["keywords"]:
+                return "⚔"
+            else:
+                return "⊹"
+
+        return "<tr class=\"model_property\"><td class=\"attack\">" \
+            + get_text_icon_attack() \
+            + "</td><td class=\"property\">" \
             + dict_attack \
                 ["strength"] \
                 .__str__() \
