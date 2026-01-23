@@ -4,6 +4,14 @@
 
 function set_classes_victory_state() {
 
+    function get_int_points(text_side) {
+
+        return parseInt(document
+            .getElementById(text_side)
+            .getElementsByClassName("victory_state")[0]
+            .textContent)
+    }
+
     function set_classes(array_classes) {
 
         function set_class(
@@ -21,14 +29,6 @@ function set_classes_victory_state() {
             "right"]
             .forEach(set_class)
         }
-
-    function get_int_points(text_side) {
-
-        return parseInt(document
-            .getElementById(text_side)
-            .getElementsByClassName("victory_state")[0]
-            .textContent)
-    }
 
     let int_difference = get_int_points("left") - get_int_points("right")
 
