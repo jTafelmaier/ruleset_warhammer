@@ -336,22 +336,8 @@ body {
     color: red;
 }
 
-td.points_cost {
-    color: #c2cce0;
-}
-
 .victory_state {
-    display: flex;
     font-size: medium;
-    color: #535f79;
-}
-
-
-.model_points {
-    padding: 2px;
-}
-
-.outcome {
     font-weight: bold;
     text-align: center;
     width: 70px;
@@ -361,15 +347,15 @@ td.points_cost {
     margin-right: 5px;
 }
 
-.outcome.winning {
+.victory_state.winning {
     background: linear-gradient(#4e6bfb 0px, #626d84 50px);
 }
 
-.outcome.losing {
+.victory_state.losing {
     background: linear-gradient(red 0px, #626d84 50px);
 }
 
-.outcome.draw {
+.victory_state.draw {
     background: linear-gradient(#919eba 0px, #626d84 50px);
 }
 

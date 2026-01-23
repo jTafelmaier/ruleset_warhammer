@@ -2,66 +2,64 @@
 
 
 
-function calculate_winning_state() {
+function set_classes_victory_state() {
 
-    function set_texts(function_get_text) {
+    function set_classes(array_classes) {
 
-        function set_text(
+        function set_class(
             text_side,
             index) {
 
-            element = document
+            document
                 .getElementById(text_side)
-                .getElementsByClassName("outcome")[0]
-
-            text = function_get_text(index)
-
-            element.textContent = text
-            element.classList = "outcome " + text
+                .getElementsByClassName("victory_state")[0]
+                .classList = "victory_state " + array_classes[index]
         }
 
         [
             "left",
             "right"]
-            .forEach(set_text)
+            .forEach(set_class)
         }
 
-    function get_int_value(text_side) {
+    function get_int_points(text_side) {
 
         return parseInt(document
             .getElementById(text_side)
-            .getElementsByClassName("model_points")[0]
-            .getElementsByClassName("value")[0]
+            .getElementsByClassName("victory_state")[0]
             .textContent)
     }
 
-    let int_difference = get_int_value("left") - get_int_value("right")
+    let int_difference = get_int_points("left") - get_int_points("right")
 
     if (int_difference == 0) {
 
-        set_texts(index => "draw")
+        set_classes(
+            [
+                "draw",
+                "draw"])
 
         return
     }
 
-    let array_winning = [
+    let array_classes = [
         "winning",
         "losing"]
 
     if (int_difference < 0) {
-        array_winning.reverse()
+        array_classes.reverse()
     }
 
-    set_texts(index => array_winning[index])
+    set_classes(array_classes)
 
     return
 }
 
 
-function calculate_points_total(
+function update_points_total(
     text_side) {
 
-    let int_points_cost_total = Array.from(document
+    let int_points_total = Array.from(document
         .getElementById(text_side)
         .getElementsByClassName("unit_army_list"))
         .map(element => parseInt(element.getElementsByClassName("count_current")[0].textContent) * parseInt(element.getAttribute("points_per_model")))
@@ -69,11 +67,10 @@ function calculate_points_total(
 
     document
         .getElementById(text_side)
-        .getElementsByClassName("model_points")[0]
-        .getElementsByClassName("value")[0]
-        .textContent = int_points_cost_total.toString()
+        .getElementsByClassName("victory_state")[0]
+        .textContent = int_points_total.toString()
 
-    calculate_winning_state()
+    set_classes_victory_state()
 }
 
 
@@ -179,7 +176,7 @@ function update_count_models(
             0,
             "used")
 
-    calculate_points_total(text_side)
+    update_points_total(text_side)
 }
 
 
@@ -206,7 +203,7 @@ function next_turn() {
 function initialise() {
 
     setup_health_bars()
-    calculate_points_total("left")
-    calculate_points_total("right")
+    update_points_total("left")
+    update_points_total("right")
 }
 
