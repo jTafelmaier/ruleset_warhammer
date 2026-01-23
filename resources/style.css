@@ -344,7 +344,6 @@ body {
     color: white;
     border-radius: 2px;
     padding: 2px 4px 2px 4px;
-    margin-right: 5px;
 }
 
 .left_winning #left .victory_state, .right_winning #right .victory_state {
