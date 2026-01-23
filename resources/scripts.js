@@ -26,41 +26,35 @@ function calculate_winning_state() {
             .forEach(set_text)
         }
 
-    function determine_winning(property) {
+    function get_int_value(text_side) {
 
-        function get_int_value(text_side) {
-
-            return parseInt(document
-                .getElementById(text_side)
-                .getElementsByClassName(property)[0]
-                .getElementsByClassName("value")[0]
-                .textContent)
-        }
-
-        let int_difference = get_int_value("left") - get_int_value("right")
-
-        if (int_difference == 0) {
-            return false
-        }
-
-        let array_winning = [
-            "winning",
-            "losing"]
-
-        if (int_difference < 0) {
-            array_winning.reverse()
-        }
-
-        set_texts(index => array_winning[index])
-
-        return true
+        return parseInt(document
+            .getElementById(text_side)
+            .getElementsByClassName("model_points")[0]
+            .getElementsByClassName("value")[0]
+            .textContent)
     }
 
-    if (determine_winning("model_points")) {
+    let int_difference = get_int_value("left") - get_int_value("right")
+
+    if (int_difference == 0) {
+
+        set_texts(index => "draw")
+
         return
     }
 
-    set_texts(index => "draw")
+    let array_winning = [
+        "winning",
+        "losing"]
+
+    if (int_difference < 0) {
+        array_winning.reverse()
+    }
+
+    set_texts(index => array_winning[index])
+
+    return
 }
 
 
