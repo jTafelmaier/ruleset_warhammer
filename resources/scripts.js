@@ -33,14 +33,15 @@ function set_class_victory_state() {
 function update_points_total(
     text_side) {
 
-    let int_points_total = Array.from(document
+    let element_side = document
         .getElementById(text_side)
+
+    let int_points_total = Array.from(element_side
         .getElementsByClassName("unit_army_list"))
         .map(element => parseInt(element.getElementsByClassName("count_current")[0].textContent) * parseInt(element.getAttribute("points_per_model")))
         .reduce((a, b) => a + b)
 
-    document
-        .getElementById(text_side)
+    element_side
         .getElementsByClassName("victory_state")[0]
         .textContent = int_points_total.toString()
 
