@@ -100,7 +100,7 @@
                     Agree on:
                     <ul>
                         <li>
-                            board space (including cover, special zones, objective markers)
+                            board space (including cover and special zones)
                         </li>
                         <li>
                             a starting player & deployment zone allocation
@@ -131,15 +131,7 @@
                     <h2 class="section">
                         Game end
                     </h2>
-                    In order, a winning player is determined by:
-                    <ol>
-                        <li>
-                            victory points
-                        </li>
-                        <li>
-                            points cost of non-destroyed models
-                        </li>
-                    </ol>
+                    A winning player is determined by the points cost of non-destroyed models.
                 </div>
                 <div class="turn_structure">
                     <h2 class="section">
@@ -179,19 +171,6 @@
                     </div>
                     <div class="action">
                         <h4>
-                            Score objective
-                        </h4>
-                        <div>
-                            Cannot perform this action if another action has already been performed by this unit this turn.
-                            <br/>
-                            If within 5 cm of an objective marker, and no enemy unit is within 5 cm of that objective marker:
-                            Gain 1 victory point and remove the objective marker.
-                            <br/>
-                            If the unit has <b>leader</b>: Gain 1 additional victory point.
-                        </div>
-                    </div>
-                    <div class="action">
-                        <h4>
                             Attack
                         </h4>
                         <div>
@@ -226,6 +205,7 @@
                                 <div class="indented">
                                     damage = damage * min(10, # models in the target unit, at the start of this action)
                                 </div>
+                                <br/>
                                 If the weapon has <b>single</b>:
                                 <div class="indented">
                                     damage = min(damage, target unit: remaining health points)

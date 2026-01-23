@@ -346,13 +346,6 @@ td.points_cost {
     color: #535f79;
 }
 
-.victory_points {
-    padding: 2px;
-}
-
-.victory_points:hover {
-    color: #8bc5ff;
-}
 
 .model_points {
     padding: 2px;

@@ -56,29 +56,11 @@ function calculate_winning_state() {
         return true
     }
 
-    if (determine_winning("victory_points")) {
-        return
-    }
     if (determine_winning("model_points")) {
         return
     }
 
     set_texts(index => "draw")
-}
-
-
-function update_victory_points(
-    text_side,
-    int_change) {
-
-    let element_victory_points = document
-        .getElementById(text_side)
-        .getElementsByClassName("victory_state")[0]
-        .getElementsByClassName("value")[0]
-
-    element_victory_points.textContent = Math.max(0, parseInt(element_victory_points.textContent) + int_change).toString()
-
-    calculate_winning_state()
 }
 
 
