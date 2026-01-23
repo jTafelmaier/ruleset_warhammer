@@ -141,14 +141,6 @@ function setup_health_bars() {
 }
 
 
-function initialise() {
-
-    setup_health_bars()
-    calculate_points_total("left")
-    calculate_points_total("right")
-}
-
-
 function update_count_models(
     text_side,
     index_row,
@@ -214,5 +206,13 @@ function next_turn() {
     Array.from(document
         .getElementsByClassName("unit_army_list"))
         .forEach(element => element.classList.remove("inactive"))
+}
+
+
+function initialise() {
+
+    setup_health_bars()
+    calculate_points_total("left")
+    calculate_points_total("right")
 }
 
