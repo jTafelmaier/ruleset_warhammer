@@ -2,57 +2,31 @@
 
 
 
-function set_classes_victory_state() {
+function set_class_victory_state() {
 
-    function get_int_points(text_side) {
+    function get_int_points_remaining(text_side) {
 
-        return parseInt(document
-            .getElementById(text_side)
-            .getElementsByClassName("victory_state")[0]
-            .textContent)
-    }
-
-    function set_classes(array_classes) {
-
-        function set_class(
-            text_side,
-            index) {
-
+        return parseInt(
             document
                 .getElementById(text_side)
                 .getElementsByClassName("victory_state")[0]
-                .classList = "victory_state " + array_classes[index]
-        }
-
-        [
-            "left",
-            "right"]
-            .forEach(set_class)
-        }
-
-    let int_difference = get_int_points("left") - get_int_points("right")
-
-    if (int_difference == 0) {
-
-        set_classes(
-            [
-                "draw",
-                "draw"])
-
-        return
+                .textContent)
     }
 
-    let array_classes = [
-        "winning",
-        "losing"]
+    let int_points_difference = get_int_points_remaining("left") - get_int_points_remaining("right")
 
-    if (int_difference < 0) {
-        array_classes.reverse()
+    function get_name_class() {
+        if (int_points_difference > 0)
+            return "left_winning"
+        else if (int_points_difference < 0)
+            return "right_winning"
+        else
+            return "draw"
     }
 
-    set_classes(array_classes)
-
-    return
+    document
+        .getElementById("army_lists")
+        .classList = [get_name_class()]
 }
 
 
@@ -70,7 +44,7 @@ function update_points_total(
         .getElementsByClassName("victory_state")[0]
         .textContent = int_points_total.toString()
 
-    set_classes_victory_state()
+    set_class_victory_state()
 }
 
 

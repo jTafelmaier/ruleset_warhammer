@@ -347,15 +347,15 @@ body {
     margin-right: 5px;
 }
 
-.victory_state.winning {
+.left_winning #left .victory_state, .right_winning #right .victory_state {
     background: linear-gradient(#4e6bfb 0px, #626d84 50px);
 }
 
-.victory_state.losing {
+.left_winning #right .victory_state, .right_winning #left .victory_state {
     background: linear-gradient(red 0px, #626d84 50px);
 }
 
-.victory_state.draw {
+.draw .victory_state {
     background: linear-gradient(#919eba 0px, #626d84 50px);
 }
 
