@@ -186,9 +186,9 @@
                         },
                         {
                             "range": 20,
-                            "strength": 7,
+                            "strength": 4,
                             "keywords": [
-                                "single"
+                                "volume"
                             ]
                         }
                     ]
@@ -609,9 +609,9 @@
                         },
                         {
                             "range": 20,
-                            "strength": 7,
+                            "strength": 4,
                             "keywords": [
-                                "single"
+                                "volume"
                             ]
                         }
                     ]
@@ -830,6 +830,13 @@
                             "range": 1000,
                             "strength": 8,
                             "keywords": []
+                        },
+                        {
+                            "range": 1000,
+                            "strength": 6,
+                            "keywords": [
+                                "volume"
+                            ]
                         }
                     ]
                 }
