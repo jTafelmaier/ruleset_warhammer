@@ -787,6 +787,21 @@
                     ]
                 },
                 {
+                    "name": "Ophydian destroyer",
+                    "points_per_model": 50,
+                    "armor": 4,
+                    "move": 25,
+                    "keywords_armor": [],
+                    "keywords_movement": [],
+                    "attacks": [
+                        {
+                            "range": 0,
+                            "strength": 8,
+                            "keywords": []
+                        }
+                    ]
+                },
+                {
                     "name": "Heavy lokhust destroyer [gauss]",
                     "points_per_model": 75,
                     "armor": 6,
