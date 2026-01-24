@@ -267,47 +267,6 @@
                     ]
                 },
                 {
-                    "name": "Darnath Lysander",
-                    "points_per_model": 100,
-                    "armor": 6,
-                    "move": 10,
-                    "keywords_armor": [],
-                    "keywords_movement": [
-                        "teleportation"
-                    ],
-                    "attacks": [
-                        {
-                            "range": 0,
-                            "strength": 9,
-                            "keywords": []
-                        }
-                    ]
-                },
-                {
-                    "name": "Suboden Khan",
-                    "points_per_model": 100,
-                    "armor": 5,
-                    "move": 40,
-                    "keywords_armor": [],
-                    "keywords_movement": [
-                        "fly"
-                    ],
-                    "attacks": [
-                        {
-                            "range": 1000,
-                            "strength": 6,
-                            "keywords": [
-                                "heavy"
-                            ]
-                        },
-                        {
-                            "range": 0,
-                            "strength": 8,
-                            "keywords": []
-                        }
-                    ]
-                },
-                {
                     "name": "Castellan Crowe",
                     "points_per_model": 100,
                     "armor": 4,
