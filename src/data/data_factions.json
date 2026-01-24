@@ -10,6 +10,7 @@
                     "move": 25,
                     "keywords_armor": [],
                     "keywords_movement": [
+                        "commander",
                         "fly"
                     ],
                     "attacks": [
@@ -20,7 +21,7 @@
                         },
                         {
                             "range": 0,
-                            "strength": 8,
+                            "strength": 7,
                             "keywords": []
                         }
                     ]
@@ -53,11 +54,18 @@
                     "armor": 5,
                     "move": 10,
                     "keywords_armor": [],
-                    "keywords_movement": [],
+                    "keywords_movement": [
+                        "commander"
+                    ],
                     "attacks": [
                         {
                             "range": 1000,
-                            "strength": 7,
+                            "strength": 6,
+                            "keywords": []
+                        },
+                        {
+                            "range": 0,
+                            "strength": 8,
                             "keywords": []
                         }
                     ]
@@ -116,7 +124,6 @@
                             "range": 1000,
                             "strength": 10,
                             "keywords": [
-                                "heavy",
                                 "single"
                             ]
                         }
@@ -128,7 +135,9 @@
                     "armor": 4,
                     "move": 15,
                     "keywords_armor": [],
-                    "keywords_movement": [],
+                    "keywords_movement": [
+                        "commander"
+                    ],
                     "attacks": [
                         {
                             "range": 1000,
@@ -137,7 +146,7 @@
                         },
                         {
                             "range": 0,
-                            "strength": 8,
+                            "strength": 7,
                             "keywords": []
                         }
                     ]
@@ -177,9 +186,8 @@
                         },
                         {
                             "range": 20,
-                            "strength": 6,
+                            "strength": 7,
                             "keywords": [
-                                "heavy",
                                 "single"
                             ]
                         }
@@ -192,6 +200,7 @@
                     "move": 10,
                     "keywords_armor": [],
                     "keywords_movement": [
+                        "commander",
                         "teleportation"
                     ],
                     "attacks": [
@@ -202,7 +211,7 @@
                         },
                         {
                             "range": 0,
-                            "strength": 9,
+                            "strength": 8,
                             "keywords": []
                         }
                     ]
@@ -214,12 +223,13 @@
                     "move": 10,
                     "keywords_armor": [],
                     "keywords_movement": [
+                        "commander",
                         "teleportation"
                     ],
                     "attacks": [
                         {
                             "range": 0,
-                            "strength": 9,
+                            "strength": 8,
                             "keywords": []
                         }
                     ]
@@ -247,6 +257,7 @@
                     "armor": 4,
                     "move": 25,
                     "keywords_armor": [
+                        "commander",
                         "stealth"
                     ],
                     "keywords_movement": [
@@ -261,7 +272,7 @@
                         },
                         {
                             "range": 0,
-                            "strength": 8,
+                            "strength": 7,
                             "keywords": []
                         }
                     ]
@@ -273,6 +284,7 @@
                     "move": 15,
                     "keywords_armor": [],
                     "keywords_movement": [
+                        "commander",
                         "teleportation"
                     ],
                     "attacks": [
@@ -283,7 +295,7 @@
                         },
                         {
                             "range": 0,
-                            "strength": 9,
+                            "strength": 8,
                             "keywords": []
                         }
                     ]
@@ -299,11 +311,13 @@
                     "armor": 6,
                     "move": 20,
                     "keywords_armor": [],
-                    "keywords_movement": [],
+                    "keywords_movement": [
+                        "commander"
+                    ],
                     "attacks": [
                         {
                             "range": 0,
-                            "strength": 9,
+                            "strength": 8,
                             "keywords": []
                         }
                     ]
@@ -428,21 +442,14 @@
                     "armor": 5,
                     "move": 25,
                     "keywords_armor": [],
-                    "keywords_movement": [],
+                    "keywords_movement": [
+                        "commander"
+                    ],
                     "attacks": [
                         {
                             "range": 0,
-                            "strength": 9,
-                            "keywords": [
-                                "single"
-                            ]
-                        },
-                        {
-                            "range": 0,
-                            "strength": 9,
-                            "keywords": [
-                                "heavy"
-                            ]
+                            "strength": 8,
+                            "keywords": []
                         }
                     ]
                 },
@@ -453,12 +460,13 @@
                     "move": 20,
                     "keywords_armor": [],
                     "keywords_movement": [
+                        "commander",
                         "teleportation"
                     ],
                     "attacks": [
                         {
                             "range": 0,
-                            "strength": 9,
+                            "strength": 8,
                             "keywords": []
                         }
                     ]
@@ -482,7 +490,6 @@
                             "range": 0,
                             "strength": 10,
                             "keywords": [
-                                "heavy",
                                 "single"
                             ]
                         }
@@ -545,6 +552,7 @@
                     "move": 10,
                     "keywords_armor": [],
                     "keywords_movement": [
+                        "commander",
                         "teleportation"
                     ],
                     "attacks": [
@@ -552,7 +560,6 @@
                             "range": 1000,
                             "strength": 6,
                             "keywords": [
-                                "heavy",
                                 "single"
                             ]
                         },
@@ -560,7 +567,6 @@
                             "range": 0,
                             "strength": 10,
                             "keywords": [
-                                "heavy",
                                 "single"
                             ]
                         }
@@ -603,9 +609,8 @@
                         },
                         {
                             "range": 20,
-                            "strength": 6,
+                            "strength": 7,
                             "keywords": [
-                                "heavy",
                                 "single"
                             ]
                         }
@@ -622,9 +627,7 @@
                         {
                             "range": 1000,
                             "strength": 6,
-                            "keywords": [
-                                "heavy"
-                            ]
+                            "keywords": []
                         }
                     ]
                 },
@@ -661,9 +664,7 @@
                         {
                             "range": 1000,
                             "strength": 10,
-                            "keywords": [
-                                "heavy"
-                            ]
+                            "keywords": []
                         }
                     ]
                 },
@@ -679,7 +680,6 @@
                             "range": 1000,
                             "strength": 7,
                             "keywords": [
-                                "heavy",
                                 "volume"
                             ]
                         },
@@ -692,7 +692,6 @@
                             "range": 1000,
                             "strength": 11,
                             "keywords": [
-                                "heavy",
                                 "single"
                             ]
                         }
@@ -714,7 +713,6 @@
                             "range": 1000,
                             "strength": 7,
                             "keywords": [
-                                "heavy",
                                 "single"
                             ]
                         }
@@ -731,7 +729,9 @@
                     "armor": 8,
                     "move": 25,
                     "keywords_armor": [],
-                    "keywords_movement": [],
+                    "keywords_movement": [
+                        "commander"
+                    ],
                     "attacks": [
                         {
                             "range": 1000,
@@ -813,7 +813,6 @@
                             "range": 1000,
                             "strength": 10,
                             "keywords": [
-                                "heavy",
                                 "single"
                             ]
                         }
@@ -830,9 +829,7 @@
                         {
                             "range": 1000,
                             "strength": 8,
-                            "keywords": [
-                                "heavy"
-                            ]
+                            "keywords": []
                         }
                     ]
                 }
