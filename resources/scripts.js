@@ -146,11 +146,11 @@ function update_count_models(
     element_count_models.textContent = int_count_models_new
         .toString()
 
-    set_health_bar(element_unit
-        .getElementsByClassName(
-            "health_bar")[0],
-            0,
-            "used")
+    set_health_bar(
+        element_unit
+            .getElementsByClassName("health_bar")[0],
+        0,
+        "used")
 
     update_points_total(text_side)
 }
