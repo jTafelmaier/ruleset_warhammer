@@ -8,9 +8,7 @@
                     "points_per_model": 50,
                     "armor": 4,
                     "move": 25,
-                    "keywords_armor": [
-                        "leader"
-                    ],
+                    "keywords_armor": [],
                     "keywords_movement": [
                         "fly"
                     ],
@@ -54,9 +52,7 @@
                     "points_per_model": 50,
                     "armor": 5,
                     "move": 10,
-                    "keywords_armor": [
-                        "leader"
-                    ],
+                    "keywords_armor": [],
                     "keywords_movement": [],
                     "attacks": [
                         {
@@ -136,9 +132,7 @@
                     "points_per_model": 50,
                     "armor": 4,
                     "move": 15,
-                    "keywords_armor": [
-                        "leader"
-                    ],
+                    "keywords_armor": [],
                     "keywords_movement": [],
                     "attacks": [
                         {
@@ -201,9 +195,7 @@
                     "points_per_model": 100,
                     "armor": 5,
                     "move": 10,
-                    "keywords_armor": [
-                        "leader"
-                    ],
+                    "keywords_armor": [],
                     "keywords_movement": [
                         "teleportation"
                     ],
@@ -225,9 +217,7 @@
                     "points_per_model": 100,
                     "armor": 6,
                     "move": 10,
-                    "keywords_armor": [
-                        "leader"
-                    ],
+                    "keywords_armor": [],
                     "keywords_movement": [
                         "teleportation"
                     ],
@@ -262,8 +252,7 @@
                     "armor": 4,
                     "move": 25,
                     "keywords_armor": [
-                        "stealth",
-                        "leader"
+                        "stealth"
                     ],
                     "keywords_movement": [
                         "fly",
@@ -287,9 +276,7 @@
                     "points_per_model": 100,
                     "armor": 6,
                     "move": 10,
-                    "keywords_armor": [
-                        "leader"
-                    ],
+                    "keywords_armor": [],
                     "keywords_movement": [
                         "teleportation"
                     ],
@@ -306,9 +293,7 @@
                     "points_per_model": 100,
                     "armor": 5,
                     "move": 40,
-                    "keywords_armor": [
-                        "leader"
-                    ],
+                    "keywords_armor": [],
                     "keywords_movement": [
                         "fly"
                     ],
@@ -332,9 +317,7 @@
                     "points_per_model": 100,
                     "armor": 4,
                     "move": 15,
-                    "keywords_armor": [
-                        "leader"
-                    ],
+                    "keywords_armor": [],
                     "keywords_movement": [
                         "teleportation"
                     ],
@@ -361,9 +344,7 @@
                     "points_per_model": 150,
                     "armor": 6,
                     "move": 20,
-                    "keywords_armor": [
-                        "leader"
-                    ],
+                    "keywords_armor": [],
                     "keywords_movement": [],
                     "attacks": [
                         {
@@ -521,9 +502,7 @@
                     "points_per_model": 75,
                     "armor": 5,
                     "move": 20,
-                    "keywords_armor": [
-                        "leader"
-                    ],
+                    "keywords_armor": [],
                     "keywords_movement": [
                         "teleportation"
                     ],
@@ -615,9 +594,7 @@
                     "points_per_model": 75,
                     "armor": 5,
                     "move": 10,
-                    "keywords_armor": [
-                        "leader"
-                    ],
+                    "keywords_armor": [],
                     "keywords_movement": [
                         "teleportation"
                     ],
