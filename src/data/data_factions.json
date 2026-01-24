@@ -257,10 +257,10 @@
                     "armor": 4,
                     "move": 25,
                     "keywords_armor": [
-                        "commander",
                         "stealth"
                     ],
                     "keywords_movement": [
+                        "commander",
                         "fly",
                         "teleportation"
                     ],
