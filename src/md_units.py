@@ -26,7 +26,7 @@ def get_text_html_data_unit(
     def get_text_html_attack(
         dict_attack:typing.Dict):
 
-        def get_text_icon_attack():
+        def get_text_icon_range():
 
             if dict_attack["range"] == 5:
                 return "⚔"
@@ -35,16 +35,23 @@ def get_text_html_data_unit(
             else:
                 return "⊹"
 
+        def get_text_type():
+
+            if dict_attack["type"] == "single":
+                return "single"
+            elif dict_attack["type"] == "volume":
+                return "✸"
+            else:
+                return ""
+
         return "<tr class=\"model_property\"><td class=\"attack\">" \
-            + get_text_icon_attack() \
+            + get_text_icon_range() \
             + "</td><td class=\"property\">" \
             + dict_attack \
                 ["strength"] \
                 .__str__() \
             + " " \
-            + get_text_keywords(
-                dict_attack \
-                    ["keywords"]) \
+            + get_text_type() \
             + "</td></tr>"
 
     path_image_unit = "/" \
