@@ -320,14 +320,6 @@ body {
     margin-top: 5px;
 }
 
-.increase, .decrease {
-    font-size: x-small;
-}
-
-.decrease {
-    line-height: 10px;
-}
-
 .increase:hover {
     color: #8bc5ff;
 }
