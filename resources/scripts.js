@@ -13,7 +13,8 @@ function set_class_victory_state() {
                 .textContent)
     }
 
-    let int_points_difference = get_int_points_remaining("left") - get_int_points_remaining("right")
+    let int_points_difference = get_int_points_remaining("left")
+        - get_int_points_remaining("right")
 
     function get_name_class() {
         if (int_points_difference > 0)
