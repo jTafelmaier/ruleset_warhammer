@@ -57,12 +57,7 @@
                     "attacks": [
                         {
                             "range": 1000,
-                            "strength": 6,
-                            "keywords": []
-                        },
-                        {
-                            "range": 0,
-                            "strength": 8,
+                            "strength": 7,
                             "keywords": []
                         }
                     ]
@@ -364,7 +359,7 @@
                     "attacks": [
                         {
                             "range": 0,
-                            "strength": 9,
+                            "strength": 8,
                             "keywords": []
                         }
                     ]
@@ -384,7 +379,7 @@
                         },
                         {
                             "range": 0,
-                            "strength": 9,
+                            "strength": 8,
                             "keywords": []
                         }
                     ]
@@ -402,11 +397,6 @@
                         {
                             "range": 20,
                             "strength": 7,
-                            "keywords": []
-                        },
-                        {
-                            "range": 0,
-                            "strength": 8,
                             "keywords": []
                         }
                     ]
