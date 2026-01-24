@@ -20,7 +20,7 @@
                             "keywords": []
                         },
                         {
-                            "range": 0,
+                            "range": 5,
                             "strength": 7,
                             "keywords": []
                         }
@@ -42,7 +42,7 @@
                             "keywords": []
                         },
                         {
-                            "range": 0,
+                            "range": 5,
                             "strength": 7,
                             "keywords": []
                         }
@@ -64,7 +64,7 @@
                             "keywords": []
                         },
                         {
-                            "range": 0,
+                            "range": 5,
                             "strength": 8,
                             "keywords": []
                         }
@@ -145,7 +145,7 @@
                             "keywords": []
                         },
                         {
-                            "range": 0,
+                            "range": 5,
                             "strength": 7,
                             "keywords": []
                         }
@@ -165,7 +165,7 @@
                             "keywords": []
                         },
                         {
-                            "range": 0,
+                            "range": 5,
                             "strength": 7,
                             "keywords": []
                         }
@@ -210,7 +210,7 @@
                             "keywords": []
                         },
                         {
-                            "range": 0,
+                            "range": 5,
                             "strength": 8,
                             "keywords": []
                         }
@@ -228,7 +228,7 @@
                     ],
                     "attacks": [
                         {
-                            "range": 0,
+                            "range": 5,
                             "strength": 8,
                             "keywords": []
                         }
@@ -245,7 +245,7 @@
                     ],
                     "attacks": [
                         {
-                            "range": 0,
+                            "range": 5,
                             "strength": 8,
                             "keywords": []
                         }
@@ -271,7 +271,7 @@
                             "keywords": []
                         },
                         {
-                            "range": 0,
+                            "range": 5,
                             "strength": 7,
                             "keywords": []
                         }
@@ -294,7 +294,7 @@
                             "keywords": []
                         },
                         {
-                            "range": 0,
+                            "range": 5,
                             "strength": 8,
                             "keywords": []
                         }
@@ -316,7 +316,7 @@
                     ],
                     "attacks": [
                         {
-                            "range": 0,
+                            "range": 5,
                             "strength": 8,
                             "keywords": []
                         }
@@ -331,7 +331,7 @@
                     "keywords_movement": [],
                     "attacks": [
                         {
-                            "range": 0,
+                            "range": 5,
                             "strength": 8,
                             "keywords": []
                         }
@@ -351,7 +351,7 @@
                             "keywords": []
                         },
                         {
-                            "range": 0,
+                            "range": 5,
                             "strength": 8,
                             "keywords": []
                         }
@@ -390,7 +390,7 @@
                             ]
                         },
                         {
-                            "range": 0,
+                            "range": 5,
                             "strength": 10,
                             "keywords": []
                         }
@@ -447,7 +447,7 @@
                     ],
                     "attacks": [
                         {
-                            "range": 0,
+                            "range": 5,
                             "strength": 8,
                             "keywords": []
                         }
@@ -465,7 +465,7 @@
                     ],
                     "attacks": [
                         {
-                            "range": 0,
+                            "range": 5,
                             "strength": 8,
                             "keywords": []
                         }
@@ -482,12 +482,12 @@
                     ],
                     "attacks": [
                         {
-                            "range": 0,
+                            "range": 5,
                             "strength": 8,
                             "keywords": []
                         },
                         {
-                            "range": 0,
+                            "range": 5,
                             "strength": 10,
                             "keywords": [
                                 "single"
@@ -504,7 +504,7 @@
                     "keywords_movement": [],
                     "attacks": [
                         {
-                            "range": 0,
+                            "range": 5,
                             "strength": 8,
                             "keywords": []
                         }
@@ -524,7 +524,7 @@
                             "keywords": []
                         },
                         {
-                            "range": 0,
+                            "range": 5,
                             "strength": 7,
                             "keywords": []
                         }
@@ -539,7 +539,7 @@
                     "keywords_movement": [],
                     "attacks": [
                         {
-                            "range": 0,
+                            "range": 5,
                             "strength": 5,
                             "keywords": []
                         }
@@ -564,7 +564,7 @@
                             ]
                         },
                         {
-                            "range": 0,
+                            "range": 5,
                             "strength": 10,
                             "keywords": [
                                 "single"
@@ -588,7 +588,7 @@
                             "keywords": []
                         },
                         {
-                            "range": 0,
+                            "range": 5,
                             "strength": 8,
                             "keywords": []
                         }
@@ -647,7 +647,7 @@
                             "keywords": []
                         },
                         {
-                            "range": 0,
+                            "range": 5,
                             "strength": 7,
                             "keywords": []
                         }
@@ -739,7 +739,7 @@
                             "keywords": []
                         },
                         {
-                            "range": 0,
+                            "range": 5,
                             "strength": 11,
                             "keywords": []
                         }
@@ -780,7 +780,7 @@
                     "keywords_movement": [],
                     "attacks": [
                         {
-                            "range": 0,
+                            "range": 5,
                             "strength": 9,
                             "keywords": []
                         }
@@ -795,7 +795,7 @@
                     "keywords_movement": [],
                     "attacks": [
                         {
-                            "range": 0,
+                            "range": 5,
                             "strength": 8,
                             "keywords": []
                         }
