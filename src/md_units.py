@@ -39,8 +39,6 @@ def get_text_html_data_unit(
 
             if dict_attack["type"] == "single":
                 return "single"
-            elif dict_attack["type"] == "volume":
-                return "✸"
             else:
                 return ""
 

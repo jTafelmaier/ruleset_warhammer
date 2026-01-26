@@ -179,11 +179,6 @@
                             "range": 1000,
                             "strength": 6,
                             "type": "rapid fire"
-                        },
-                        {
-                            "range": 20,
-                            "strength": 4,
-                            "type": "volume"
                         }
                     ]
                 },
@@ -592,11 +587,6 @@
                             "range": 1000,
                             "strength": 6,
                             "type": "rapid fire"
-                        },
-                        {
-                            "range": 20,
-                            "strength": 4,
-                            "type": "volume"
                         }
                     ]
                 },
@@ -660,11 +650,6 @@
                     "keywords_armor": [],
                     "keywords_movement": [],
                     "attacks": [
-                        {
-                            "range": 1000,
-                            "strength": 7,
-                            "type": "volume"
-                        },
                         {
                             "range": 1000,
                             "strength": 8,
@@ -739,11 +724,6 @@
                             "range": 1000,
                             "strength": 7,
                             "type": "rapid fire"
-                        },
-                        {
-                            "range": 1000,
-                            "strength": 5,
-                            "type": "volume"
                         }
                     ]
                 },
@@ -804,11 +784,6 @@
                             "range": 1000,
                             "strength": 8,
                             "type": "rapid fire"
-                        },
-                        {
-                            "range": 1000,
-                            "strength": 6,
-                            "type": "volume"
                         }
                     ]
                 }
