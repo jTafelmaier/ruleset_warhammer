@@ -10,7 +10,7 @@
                     "move": 25,
                     "keywords_armor": [],
                     "keywords_movement": [
-                        "commander",
+                        "tactics",
                         "fly"
                     ],
                     "attacks": [
@@ -55,7 +55,7 @@
                     "move": 10,
                     "keywords_armor": [],
                     "keywords_movement": [
-                        "commander"
+                        "tactics"
                     ],
                     "attacks": [
                         {
@@ -127,7 +127,7 @@
                     "move": 15,
                     "keywords_armor": [],
                     "keywords_movement": [
-                        "commander"
+                        "tactics"
                     ],
                     "attacks": [
                         {
@@ -184,7 +184,7 @@
                     "move": 10,
                     "keywords_armor": [],
                     "keywords_movement": [
-                        "commander",
+                        "tactics",
                         "teleportation"
                     ],
                     "attacks": [
@@ -207,7 +207,7 @@
                     "move": 10,
                     "keywords_armor": [],
                     "keywords_movement": [
-                        "commander",
+                        "tactics",
                         "teleportation"
                     ],
                     "attacks": [
@@ -244,7 +244,7 @@
                         "stealth"
                     ],
                     "keywords_movement": [
-                        "commander",
+                        "tactics",
                         "fly",
                         "teleportation"
                     ],
@@ -268,7 +268,7 @@
                     "move": 15,
                     "keywords_armor": [],
                     "keywords_movement": [
-                        "commander",
+                        "tactics",
                         "teleportation"
                     ],
                     "attacks": [
@@ -296,7 +296,7 @@
                     "move": 20,
                     "keywords_armor": [],
                     "keywords_movement": [
-                        "commander"
+                        "tactics"
                     ],
                     "attacks": [
                         {
@@ -425,7 +425,7 @@
                     "move": 25,
                     "keywords_armor": [],
                     "keywords_movement": [
-                        "commander"
+                        "tactics"
                     ],
                     "attacks": [
                         {
@@ -442,7 +442,7 @@
                     "move": 20,
                     "keywords_armor": [],
                     "keywords_movement": [
-                        "commander",
+                        "tactics",
                         "teleportation"
                     ],
                     "attacks": [
@@ -532,7 +532,7 @@
                     "move": 10,
                     "keywords_armor": [],
                     "keywords_movement": [
-                        "commander",
+                        "tactics",
                         "teleportation"
                     ],
                     "attacks": [
@@ -688,7 +688,7 @@
                     "move": 25,
                     "keywords_armor": [],
                     "keywords_movement": [
-                        "commander"
+                        "tactics"
                     ],
                     "attacks": [
                         {
@@ -712,7 +712,7 @@
                         "stealth"
                     ],
                     "keywords_movement": [
-                        "commander",
+                        "tactics",
                         "teleportation"
                     ],
                     "attacks": [
