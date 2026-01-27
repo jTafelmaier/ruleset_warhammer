@@ -41,7 +41,7 @@ def get_text_html_data_unit(
             + str(
                 dict_attack \
                     ["hits"]) \
-            + " x " \
+            + "x " \
             + dict_attack \
                 ["strength"] \
                 .__str__() \
