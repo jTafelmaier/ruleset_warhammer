@@ -202,31 +202,29 @@
                                 <br/>
                                 If the target unit is not in cover and the weapon is not of range ⚔:
                                 <div class="indented">
-                                    During this attack, increase the weapon: <span class="icon">💥</span><b>strength</b> by 1.
+                                    During this attack, increase the weapon: <b>strength</b> by 1.
                                 </div>
                                 <br/>
-                                damage = 2^(weapon: <span class="icon">💥</span><b>strength</b> - target unit: <b><span class="icon">⛊</span>armor</b>)
+                                damage = 2^(weapon: <b>strength</b> - target unit: <b><span class="icon">⛊</span>armor</b>)
                                 <br/>
                                 <br/>
-                                If the weapon has <b>single</b>:
+                                Repeat for weapon: <b>hits</b>:
                                 <div class="indented">
-                                    damage = min(damage, target unit: remaining health points)
-                                </div>
-                                <br/>
-                                damage = remaining damage + damage
-                                <br/>
-                                remaining damage = damage - floor(damage)
-                                <br/>
-                                <br/>
-                                Repeat for floor(damage):
-                                <div class="indented">
-                                    Reduce unit: health by 1.
+                                    damage = remaining damage + damage
                                     <br/>
-                                    If target unit: <b>health</b> &le; 0:
+                                    remaining damage = damage - floor(damage)
+                                    <br/>
+                                    <br/>
+                                    Repeat for floor(damage):
                                     <div class="indented">
-                                        The enemy player must choose to destroy one model in the target unit.
+                                        Reduce unit: health by 1.
                                         <br/>
-                                        Then, the target unit health points are fully restored.
+                                        If target unit: <b>health</b> &le; 0:
+                                        <div class="indented">
+                                            The enemy player must choose to destroy one model in the target unit.
+                                            <br/>
+                                            Then, the target unit health points are fully restored.
+                                        </div>
                                     </div>
                                 </div>
                             </div>

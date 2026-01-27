@@ -35,21 +35,16 @@ def get_text_html_data_unit(
             else:
                 return "⊹"
 
-        def get_text_type():
-
-            if dict_attack["type"] == "single":
-                return "single"
-            else:
-                return ""
-
         return "<tr class=\"model_property\"><td class=\"attack\">" \
             + get_text_icon_range() \
             + "</td><td class=\"property\">" \
+            + str(
+                dict_attack \
+                    ["hits"]) \
+            + " x " \
             + dict_attack \
                 ["strength"] \
                 .__str__() \
-            + " " \
-            + get_text_type() \
             + "</td></tr>"
 
     path_image_unit = "/" \

@@ -16,13 +16,13 @@
                     "attacks": [
                         {
                             "range": 1000,
-                            "strength": 5,
-                            "type": "rapid fire"
+                            "hits": 2,
+                            "strength": 4
                         },
                         {
                             "range": 5,
-                            "strength": 7,
-                            "type": "rapid fire"
+                            "hits": 2,
+                            "strength": 6
                         }
                     ]
                 },
@@ -38,13 +38,13 @@
                     "attacks": [
                         {
                             "range": 1000,
-                            "strength": 5,
-                            "type": "rapid fire"
+                            "hits": 2,
+                            "strength": 4
                         },
                         {
                             "range": 5,
-                            "strength": 7,
-                            "type": "rapid fire"
+                            "hits": 2,
+                            "strength": 6
                         }
                     ]
                 },
@@ -60,13 +60,8 @@
                     "attacks": [
                         {
                             "range": 1000,
-                            "strength": 6,
-                            "type": "rapid fire"
-                        },
-                        {
-                            "range": 5,
-                            "strength": 8,
-                            "type": "rapid fire"
+                            "hits": 4,
+                            "strength": 4
                         }
                     ]
                 },
@@ -80,8 +75,8 @@
                     "attacks": [
                         {
                             "range": 1000,
-                            "strength": 6,
-                            "type": "rapid fire"
+                            "hits": 4,
+                            "strength": 4
                         }
                     ]
                 },
@@ -95,13 +90,13 @@
                     "attacks": [
                         {
                             "range": 1000,
-                            "strength": 5,
-                            "type": "rapid fire"
+                            "hits": 2,
+                            "strength": 4
                         },
                         {
                             "range": 20,
-                            "strength": 9,
-                            "type": "single"
+                            "hits": 1,
+                            "strength": 9
                         }
                     ]
                 },
@@ -115,13 +110,13 @@
                     "attacks": [
                         {
                             "range": 1000,
-                            "strength": 6,
-                            "type": "rapid fire"
+                            "hits": 4,
+                            "strength": 4
                         },
                         {
                             "range": 1000,
-                            "strength": 10,
-                            "type": "single"
+                            "hits": 1,
+                            "strength": 10
                         }
                     ]
                 },
@@ -137,13 +132,13 @@
                     "attacks": [
                         {
                             "range": 1000,
-                            "strength": 5,
-                            "type": "rapid fire"
+                            "hits": 2,
+                            "strength": 4
                         },
                         {
                             "range": 5,
-                            "strength": 7,
-                            "type": "rapid fire"
+                            "hits": 2,
+                            "strength": 6
                         }
                     ]
                 },
@@ -157,13 +152,13 @@
                     "attacks": [
                         {
                             "range": 1000,
-                            "strength": 5,
-                            "type": "rapid fire"
+                            "hits": 2,
+                            "strength": 4
                         },
                         {
                             "range": 5,
-                            "strength": 7,
-                            "type": "rapid fire"
+                            "hits": 2,
+                            "strength": 6
                         }
                     ]
                 },
@@ -177,8 +172,8 @@
                     "attacks": [
                         {
                             "range": 1000,
-                            "strength": 6,
-                            "type": "rapid fire"
+                            "hits": 4,
+                            "strength": 4
                         }
                     ]
                 },
@@ -195,13 +190,13 @@
                     "attacks": [
                         {
                             "range": 20,
-                            "strength": 6,
-                            "type": "rapid fire"
+                            "hits": 4,
+                            "strength": 4
                         },
                         {
                             "range": 5,
-                            "strength": 8,
-                            "type": "rapid fire"
+                            "hits": 2,
+                            "strength": 7
                         }
                     ]
                 },
@@ -218,8 +213,8 @@
                     "attacks": [
                         {
                             "range": 5,
-                            "strength": 8,
-                            "type": "rapid fire"
+                            "hits": 2,
+                            "strength": 7
                         }
                     ]
                 },
@@ -235,8 +230,8 @@
                     "attacks": [
                         {
                             "range": 5,
-                            "strength": 8,
-                            "type": "rapid fire"
+                            "hits": 2,
+                            "strength": 7
                         }
                     ]
                 },
@@ -256,13 +251,13 @@
                     "attacks": [
                         {
                             "range": 1000,
-                            "strength": 5,
-                            "type": "rapid fire"
+                            "hits": 2,
+                            "strength": 4
                         },
                         {
                             "range": 5,
-                            "strength": 7,
-                            "type": "rapid fire"
+                            "hits": 4,
+                            "strength": 5
                         }
                     ]
                 },
@@ -279,13 +274,13 @@
                     "attacks": [
                         {
                             "range": 20,
-                            "strength": 6,
-                            "type": "rapid fire"
+                            "hits": 4,
+                            "strength": 4
                         },
                         {
                             "range": 5,
-                            "strength": 8,
-                            "type": "rapid fire"
+                            "hits": 4,
+                            "strength": 6
                         }
                     ]
                 }
@@ -306,8 +301,8 @@
                     "attacks": [
                         {
                             "range": 5,
-                            "strength": 8,
-                            "type": "rapid fire"
+                            "hits": 4,
+                            "strength": 6
                         }
                     ]
                 },
@@ -321,8 +316,8 @@
                     "attacks": [
                         {
                             "range": 5,
-                            "strength": 8,
-                            "type": "rapid fire"
+                            "hits": 4,
+                            "strength": 6
                         }
                     ]
                 },
@@ -336,13 +331,13 @@
                     "attacks": [
                         {
                             "range": 1000,
-                            "strength": 6,
-                            "type": "rapid fire"
+                            "hits": 4,
+                            "strength": 4
                         },
                         {
                             "range": 5,
-                            "strength": 8,
-                            "type": "rapid fire"
+                            "hits": 4,
+                            "strength": 6
                         }
                     ]
                 },
@@ -358,8 +353,8 @@
                     "attacks": [
                         {
                             "range": 20,
-                            "strength": 7,
-                            "type": "rapid fire"
+                            "hits": 2,
+                            "strength": 6
                         }
                     ]
                 },
@@ -373,13 +368,13 @@
                     "attacks": [
                         {
                             "range": 1000,
-                            "strength": 9,
-                            "type": "single"
+                            "hits": 1,
+                            "strength": 9
                         },
                         {
                             "range": 5,
-                            "strength": 10,
-                            "type": "rapid fire"
+                            "hits": 8,
+                            "strength": 7
                         }
                     ]
                 },
@@ -395,8 +390,8 @@
                     "attacks": [
                         {
                             "range": 1000,
-                            "strength": 10,
-                            "type": "rapid fire"
+                            "hits": 8,
+                            "strength": 7
                         }
                     ]
                 },
@@ -413,8 +408,8 @@
                     "attacks": [
                         {
                             "range": 1000,
-                            "strength": 9,
-                            "type": "rapid fire"
+                            "hits": 8,
+                            "strength": 6
                         }
                     ]
                 }
@@ -435,8 +430,8 @@
                     "attacks": [
                         {
                             "range": 5,
-                            "strength": 8,
-                            "type": "rapid fire"
+                            "hits": 4,
+                            "strength": 6
                         }
                     ]
                 },
@@ -453,8 +448,8 @@
                     "attacks": [
                         {
                             "range": 5,
-                            "strength": 8,
-                            "type": "rapid fire"
+                            "hits": 4,
+                            "strength": 6
                         }
                     ]
                 },
@@ -470,13 +465,13 @@
                     "attacks": [
                         {
                             "range": 5,
-                            "strength": 8,
-                            "type": "rapid fire"
+                            "hits": 4,
+                            "strength": 6
                         },
                         {
                             "range": 5,
-                            "strength": 10,
-                            "type": "single"
+                            "hits": 1,
+                            "strength": 10
                         }
                     ]
                 },
@@ -490,8 +485,8 @@
                     "attacks": [
                         {
                             "range": 5,
-                            "strength": 8,
-                            "type": "rapid fire"
+                            "hits": 4,
+                            "strength": 6
                         }
                     ]
                 },
@@ -505,13 +500,13 @@
                     "attacks": [
                         {
                             "range": 1000,
-                            "strength": 5,
-                            "type": "rapid fire"
+                            "hits": 2,
+                            "strength": 4
                         },
                         {
                             "range": 5,
-                            "strength": 7,
-                            "type": "rapid fire"
+                            "hits": 2,
+                            "strength": 6
                         }
                     ]
                 },
@@ -525,8 +520,8 @@
                     "attacks": [
                         {
                             "range": 5,
-                            "strength": 5,
-                            "type": "rapid fire"
+                            "hits": 2,
+                            "strength": 4
                         }
                     ]
                 },
@@ -543,13 +538,13 @@
                     "attacks": [
                         {
                             "range": 1000,
-                            "strength": 6,
-                            "type": "single"
+                            "hits": 2,
+                            "strength": 5
                         },
                         {
                             "range": 5,
-                            "strength": 10,
-                            "type": "single"
+                            "hits": 1,
+                            "strength": 10
                         }
                     ]
                 },
@@ -565,13 +560,13 @@
                     "attacks": [
                         {
                             "range": 1000,
-                            "strength": 5,
-                            "type": "rapid fire"
+                            "hits": 2,
+                            "strength": 4
                         },
                         {
                             "range": 5,
-                            "strength": 8,
-                            "type": "rapid fire"
+                            "hits": 2,
+                            "strength": 7
                         }
                     ]
                 },
@@ -585,8 +580,8 @@
                     "attacks": [
                         {
                             "range": 1000,
-                            "strength": 6,
-                            "type": "rapid fire"
+                            "hits": 4,
+                            "strength": 4
                         }
                     ]
                 },
@@ -600,8 +595,8 @@
                     "attacks": [
                         {
                             "range": 1000,
-                            "strength": 6,
-                            "type": "rapid fire"
+                            "hits": 2,
+                            "strength": 5
                         }
                     ]
                 },
@@ -617,13 +612,13 @@
                     "attacks": [
                         {
                             "range": 1000,
-                            "strength": 5,
-                            "type": "rapid fire"
+                            "hits": 2,
+                            "strength": 4
                         },
                         {
                             "range": 5,
-                            "strength": 7,
-                            "type": "rapid fire"
+                            "hits": 2,
+                            "strength": 6
                         }
                     ]
                 },
@@ -637,8 +632,8 @@
                     "attacks": [
                         {
                             "range": 1000,
-                            "strength": 10,
-                            "type": "rapid fire"
+                            "hits": 8,
+                            "strength": 7
                         }
                     ]
                 },
@@ -652,13 +647,13 @@
                     "attacks": [
                         {
                             "range": 1000,
-                            "strength": 8,
-                            "type": "rapid fire"
+                            "hits": 12,
+                            "strength": 5
                         },
                         {
                             "range": 1000,
-                            "strength": 11,
-                            "type": "single"
+                            "hits": 1,
+                            "strength": 11
                         }
                     ]
                 },
@@ -676,8 +671,8 @@
                     "attacks": [
                         {
                             "range": 1000,
-                            "strength": 7,
-                            "type": "single"
+                            "hits": 1,
+                            "strength": 7
                         }
                     ]
                 }
@@ -698,13 +693,13 @@
                     "attacks": [
                         {
                             "range": 1000,
-                            "strength": 7,
-                            "type": "rapid fire"
+                            "hits": 2,
+                            "strength": 6
                         },
                         {
                             "range": 5,
-                            "strength": 11,
-                            "type": "rapid fire"
+                            "hits": 8,
+                            "strength": 8
                         }
                     ]
                 },
@@ -717,13 +712,14 @@
                         "stealth"
                     ],
                     "keywords_movement": [
+                        "commander",
                         "teleportation"
                     ],
                     "attacks": [
                         {
                             "range": 1000,
-                            "strength": 7,
-                            "type": "rapid fire"
+                            "hits": 6,
+                            "strength": 5
                         }
                     ]
                 },
@@ -737,8 +733,8 @@
                     "attacks": [
                         {
                             "range": 5,
-                            "strength": 9,
-                            "type": "rapid fire"
+                            "hits": 2,
+                            "strength": 8
                         }
                     ]
                 },
@@ -752,8 +748,8 @@
                     "attacks": [
                         {
                             "range": 5,
-                            "strength": 8,
-                            "type": "rapid fire"
+                            "hits": 4,
+                            "strength": 6
                         }
                     ]
                 },
@@ -767,8 +763,8 @@
                     "attacks": [
                         {
                             "range": 1000,
-                            "strength": 10,
-                            "type": "single"
+                            "hits": 1,
+                            "strength": 10
                         }
                     ]
                 },
@@ -782,8 +778,8 @@
                     "attacks": [
                         {
                             "range": 1000,
-                            "strength": 8,
-                            "type": "rapid fire"
+                            "hits": 6,
+                            "strength": 6
                         }
                     ]
                 }
