@@ -594,7 +594,7 @@
                     "keywords_movement": [],
                     "attacks": [
                         {
-                            "range": 1000,
+                            "range": 20,
                             "hits": 2,
                             "strength": 5
                         }
