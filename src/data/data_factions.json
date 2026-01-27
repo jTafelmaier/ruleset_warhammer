@@ -571,7 +571,7 @@
                     ]
                 },
                 {
-                    "name": "MkII Marines",
+                    "name": "Tactical squad",
                     "points_per_model": 25,
                     "armor": 4,
                     "move": 15,
@@ -586,7 +586,7 @@
                     ]
                 },
                 {
-                    "name": "MkIII Breacher Squad",
+                    "name": "Breacher Squad",
                     "points_per_model": 25,
                     "armor": 5,
                     "move": 15,
@@ -601,7 +601,7 @@
                     ]
                 },
                 {
-                    "name": "MkII Assault Squad",
+                    "name": "Assault Squad",
                     "points_per_model": 25,
                     "armor": 4,
                     "move": 25,
