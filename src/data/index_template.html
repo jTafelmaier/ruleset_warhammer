@@ -205,27 +205,20 @@
                                     During this attack, increase the weapon: <b>strength</b> by 1.
                                 </div>
                                 <br/>
-                                damage = 2^(weapon: <b>strength</b> - target unit: <b><span class="icon">⛊</span>armor</b>)
-                                <br/>
-                                <br/>
                                 Repeat for weapon: <b>hits</b>:
                                 <div class="indented">
-                                    damage = remaining damage + damage
+                                    damage = 2^(weapon: <b>strength</b> - target unit: <b><span class="icon">⛊</span>armor</b>) + remaining damage
                                     <br/>
-                                    remaining damage = damage - floor(damage)
+                                    Reduce unit: health by floor(damage).
                                     <br/>
                                     <br/>
-                                    Repeat for floor(damage):
+                                    If target unit: <b>health</b> &le; 0:
                                     <div class="indented">
-                                        Reduce unit: health by 1.
+                                        The enemy player must choose to destroy one model in the target unit.
                                         <br/>
-                                        If target unit: <b>health</b> &le; 0:
-                                        <div class="indented">
-                                            The enemy player must choose to destroy one model in the target unit.
-                                            <br/>
-                                            Then, the target unit health points are fully restored.
-                                        </div>
+                                        Then, the target unit health points are fully restored.
                                     </div>
+                                    remaining damage = damage - floor(damage)
                                 </div>
                             </div>
                         </div>
