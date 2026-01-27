@@ -26,21 +26,13 @@ def get_text_html_data_unit(
     def get_text_html_attack(
         dict_attack:typing.Dict):
 
-        def get_text_icon_range():
-
-            if dict_attack["range"] == 5:
-                return "⚔"
-            elif dict_attack["range"] == 20:
-                return "⛶"
-            else:
-                return "⊹"
-
         return "<tr class=\"model_property\"><td class=\"attack\">" \
-            + get_text_icon_range() \
+            + dict_attack \
+                ["range"] \
             + "</td><td class=\"property\">" \
-            + str(
-                dict_attack \
-                    ["hits"]) \
+            + dict_attack \
+                ["hits"] \
+                .__str__() \
             + "x " \
             + dict_attack \
                 ["strength"] \
