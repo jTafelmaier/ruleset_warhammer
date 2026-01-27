@@ -185,7 +185,7 @@
                     "keywords_armor": [],
                     "keywords_movement": [
                         "breach",
-                        "teleportation"
+                        "deepstrike"
                     ],
                     "attacks": [
                         {
@@ -208,7 +208,7 @@
                     "keywords_armor": [],
                     "keywords_movement": [
                         "breach",
-                        "teleportation"
+                        "deepstrike"
                     ],
                     "attacks": [
                         {
@@ -225,7 +225,7 @@
                     "move": 10,
                     "keywords_armor": [],
                     "keywords_movement": [
-                        "teleportation"
+                        "deepstrike"
                     ],
                     "attacks": [
                         {
@@ -246,7 +246,7 @@
                     "keywords_movement": [
                         "breach",
                         "fly",
-                        "teleportation"
+                        "deepstrike"
                     ],
                     "attacks": [
                         {
@@ -269,7 +269,7 @@
                     "keywords_armor": [],
                     "keywords_movement": [
                         "breach",
-                        "teleportation"
+                        "deepstrike"
                     ],
                     "attacks": [
                         {
@@ -443,7 +443,7 @@
                     "keywords_armor": [],
                     "keywords_movement": [
                         "breach",
-                        "teleportation"
+                        "deepstrike"
                     ],
                     "attacks": [
                         {
@@ -460,7 +460,7 @@
                     "move": 20,
                     "keywords_armor": [],
                     "keywords_movement": [
-                        "teleportation"
+                        "deepstrike"
                     ],
                     "attacks": [
                         {
@@ -533,7 +533,7 @@
                     "keywords_armor": [],
                     "keywords_movement": [
                         "breach",
-                        "teleportation"
+                        "deepstrike"
                     ],
                     "attacks": [
                         {
@@ -555,7 +555,7 @@
                     "move": 10,
                     "keywords_armor": [],
                     "keywords_movement": [
-                        "teleportation"
+                        "deepstrike"
                     ],
                     "attacks": [
                         {
@@ -666,7 +666,7 @@
                         "stealth"
                     ],
                     "keywords_movement": [
-                        "teleportation"
+                        "deepstrike"
                     ],
                     "attacks": [
                         {
@@ -713,7 +713,7 @@
                     ],
                     "keywords_movement": [
                         "breach",
-                        "teleportation"
+                        "deepstrike"
                     ],
                     "attacks": [
                         {

@@ -212,7 +212,7 @@ body {
 }
 
 .data_unit {
-    width: 200px;
+    width: 250px;
     border-collapse: separate;
     border-spacing: 0px 1.5px;
 }
@@ -232,7 +232,7 @@ body {
     text-align: center;
     font-weight: bold;
     color: white;
-    width: 2em;
+    width: 1.5em;
 }
 
 .model_property .attack {
