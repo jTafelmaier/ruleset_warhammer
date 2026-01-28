@@ -512,7 +512,7 @@
                 },
                 {
                     "name": "Jakhals",
-                    "points_per_model": 5,
+                    "points_per_model": 10,
                     "armor": 1,
                     "move": 10,
                     "keywords_armor": [],
