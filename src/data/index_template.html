@@ -109,13 +109,15 @@
                     <br/>
                     Every unit starts the game in reserves (outside of the board space).
                     <br/>
-                    Models with <b>breach</b> can be included in another friendly unit with equal armor and movement values.
+                    Models with <b>commander</b> can be included in another friendly unit with equal armor and movement values.
                     <br/>
                     <br/>
                     <h2 class="section">
                         Turns
                     </h2>
-                    Every turn, each unit can once sequentially perform 2 different actions, alternating between sides.
+                    Every turn, each unit can once sequentially perform 2 actions, alternating between sides.
+                    <br/>
+                    If no model in the unit has <b>commander</b>, the unit may not perform any one action twice per turn.
                     <br/>
                     At the end of all turns, a winning player is determined by the points cost of non-destroyed models.
                 </div>
@@ -160,11 +162,6 @@
                             Attack
                         </h4>
                         <div>
-                            If no model in the unit has <b>breach</b>:
-                            <div class="indented">
-                                Can only perform this action if this is the first action for this unit, this turn.
-                            </div>
-                            <br/>
                             remaining damage = 0.0
                             <br/>
                             For every model in the attacking unit:
@@ -182,16 +179,9 @@
                                     - The weapon is of range ⚔ and the target unit is not within 5 cm.
                                 </div>
                                 <br/>
-                                If the weapon is of range ⊹ or ⛶:
+                                If target unit is in cover:
                                 <div class="indented">
-                                    If the target unit is within 5 cm:
-                                    <div class="indented">
-                                        During this attack, decrease the weapon: <b>strength</b> by 1.
-                                    </div>
-                                    Else, if the target unit is not in cover:
-                                    <div class="indented">
-                                        During this attack, increase the weapon: <b>strength</b> by 1.
-                                    </div>
+                                    During this attack, increase the target unit: <b><span class="icon">⛊</span>armor</b> by 1.
                                 </div>
                                 <br/>
                                 Repeat for weapon: <b>hits</b>:
