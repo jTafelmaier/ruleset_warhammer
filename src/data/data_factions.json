@@ -16,7 +16,7 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "strength": 5,
+                            "strength": 6,
                             "single": false
                         },
                         {
@@ -38,7 +38,7 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "strength": 5,
+                            "strength": 6,
                             "single": false
                         },
                         {
@@ -60,7 +60,7 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "strength": 6,
+                            "strength": 7,
                             "single": false
                         }
                     ]
@@ -75,7 +75,7 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "strength": 6,
+                            "strength": 7,
                             "single": false
                         }
                     ]
@@ -90,12 +90,12 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "strength": 5,
+                            "strength": 6,
                             "single": false
                         },
                         {
                             "range": "⛶",
-                            "strength": 9,
+                            "strength": 10,
                             "single": true
                         }
                     ]
@@ -110,12 +110,12 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "strength": 6,
+                            "strength": 7,
                             "single": false
                         },
                         {
                             "range": "⊹",
-                            "strength": 10,
+                            "strength": 11,
                             "single": true
                         }
                     ]
@@ -132,7 +132,7 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "strength": 5,
+                            "strength": 6,
                             "single": false
                         },
                         {
@@ -152,7 +152,7 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "strength": 5,
+                            "strength": 6,
                             "single": false
                         },
                         {
@@ -172,7 +172,7 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "strength": 6,
+                            "strength": 7,
                             "single": false
                         }
                     ]
@@ -190,7 +190,7 @@
                     "attacks": [
                         {
                             "range": "⛶",
-                            "strength": 6,
+                            "strength": 7,
                             "single": false
                         },
                         {
@@ -251,7 +251,7 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "strength": 5,
+                            "strength": 6,
                             "single": false
                         },
                         {
@@ -274,7 +274,7 @@
                     "attacks": [
                         {
                             "range": "⛶",
-                            "strength": 6,
+                            "strength": 7,
                             "single": false
                         },
                         {
@@ -331,7 +331,7 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "strength": 6,
+                            "strength": 7,
                             "single": false
                         },
                         {
@@ -353,7 +353,7 @@
                     "attacks": [
                         {
                             "range": "⛶",
-                            "strength": 7,
+                            "strength": 8,
                             "single": false
                         }
                     ]
@@ -368,7 +368,7 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "strength": 9,
+                            "strength": 10,
                             "single": true
                         },
                         {
@@ -390,7 +390,7 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "strength": 10,
+                            "strength": 11,
                             "single": false
                         }
                     ]
@@ -408,7 +408,7 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "strength": 9,
+                            "strength": 10,
                             "single": false
                         }
                     ]
@@ -500,7 +500,7 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "strength": 5,
+                            "strength": 6,
                             "single": false
                         },
                         {
@@ -538,7 +538,7 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "strength": 6,
+                            "strength": 7,
                             "single": false
                         },
                         {
@@ -560,7 +560,7 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "strength": 5,
+                            "strength": 6,
                             "single": false
                         },
                         {
@@ -580,7 +580,7 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "strength": 6,
+                            "strength": 7,
                             "single": false
                         }
                     ]
@@ -595,7 +595,7 @@
                     "attacks": [
                         {
                             "range": "⛶",
-                            "strength": 6,
+                            "strength": 7,
                             "single": false
                         }
                     ]
@@ -612,7 +612,7 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "strength": 5,
+                            "strength": 6,
                             "single": false
                         },
                         {
@@ -632,7 +632,7 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "strength": 10,
+                            "strength": 11,
                             "single": false
                         }
                     ]
@@ -647,12 +647,12 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "strength": 9,
+                            "strength": 10,
                             "single": false
                         },
                         {
                             "range": "⊹",
-                            "strength": 11,
+                            "strength": 12,
                             "single": true
                         }
                     ]
@@ -671,7 +671,7 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "strength": 7,
+                            "strength": 8,
                             "single": true
                         }
                     ]
@@ -693,7 +693,7 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "strength": 7,
+                            "strength": 8,
                             "single": false
                         },
                         {
@@ -718,7 +718,7 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "strength": 8,
+                            "strength": 9,
                             "single": false
                         }
                     ]
@@ -763,7 +763,7 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "strength": 10,
+                            "strength": 11,
                             "single": true
                         }
                     ]
@@ -778,7 +778,7 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "strength": 9,
+                            "strength": 10,
                             "single": false
                         }
                     ]
