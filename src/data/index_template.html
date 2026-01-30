@@ -184,21 +184,19 @@
                                     During this attack, increase the target unit: <b><span class="icon">⛊</span>armor</b> by 1.
                                 </div>
                                 <br/>
-                                Repeat for weapon: <b>hits</b>:
+                                damage = 2^(weapon: <b>strength</b> - target unit: <b><span class="icon">⛊</span>armor</b>) + remaining damage
+                                <br/>
+                                Reduce unit: health by floor(damage).
+                                <br/>
+                                <br/>
+                                If target unit: <b>health</b> &le; 0:
                                 <div class="indented">
-                                    damage = 2^(weapon: <b>strength</b> - target unit: <b><span class="icon">⛊</span>armor</b>) + remaining damage
+                                    The enemy player must choose to destroy one model in the target unit.
                                     <br/>
-                                    Reduce unit: health by floor(damage).
-                                    <br/>
-                                    <br/>
-                                    If target unit: <b>health</b> &le; 0:
-                                    <div class="indented">
-                                        The enemy player must choose to destroy one model in the target unit.
-                                        <br/>
-                                        Then, the target unit health points are fully restored.
-                                    </div>
-                                    remaining damage = damage - floor(damage)
+                                    Then, the target unit health points are fully restored.
                                 </div>
+                                <br/>
+                                remaining damage = damage - floor(damage)
                             </div>
                         </div>
                     </div>

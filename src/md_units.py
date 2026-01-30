@@ -31,10 +31,6 @@ def get_text_html_data_unit(
                 ["range"] \
             + "</td><td class=\"property\">" \
             + dict_attack \
-                ["hits"] \
-                .__str__() \
-            + "x " \
-            + dict_attack \
                 ["strength"] \
                 .__str__() \
             + "</td></tr>"
