@@ -33,6 +33,7 @@ def get_text_html_data_unit(
             + dict_attack \
                 ["strength"] \
                 .__str__() \
+            + (" single" if dict_attack["single"] else "") \
             + "</td></tr>"
 
     path_image_unit = "/" \
