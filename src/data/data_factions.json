@@ -16,7 +16,7 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "strength": 6,
+                            "strength": 5,
                             "single": false
                         },
                         {
@@ -38,7 +38,7 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "strength": 6,
+                            "strength": 5,
                             "single": false
                         },
                         {
@@ -51,8 +51,8 @@
                 {
                     "name": "Captain in gravis armour",
                     "points_per_model": 50,
-                    "armor": 5,
-                    "move": 10,
+                    "armor": 4,
+                    "move": 15,
                     "keywords_armor": [],
                     "keywords_movement": [
                         "commander"
@@ -60,7 +60,7 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "strength": 7,
+                            "strength": 6,
                             "single": false
                         }
                     ]
@@ -68,14 +68,14 @@
                 {
                     "name": "Heavy intercessors",
                     "points_per_model": 25,
-                    "armor": 5,
-                    "move": 10,
+                    "armor": 4,
+                    "move": 15,
                     "keywords_armor": [],
                     "keywords_movement": [],
                     "attacks": [
                         {
                             "range": "⊹",
-                            "strength": 7,
+                            "strength": 6,
                             "single": false
                         }
                     ]
@@ -83,14 +83,14 @@
                 {
                     "name": "Eradicators",
                     "points_per_model": 25,
-                    "armor": 5,
-                    "move": 10,
+                    "armor": 4,
+                    "move": 15,
                     "keywords_armor": [],
                     "keywords_movement": [],
                     "attacks": [
                         {
                             "range": "⊹",
-                            "strength": 6,
+                            "strength": 5,
                             "single": false
                         },
                         {
@@ -132,7 +132,7 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "strength": 6,
+                            "strength": 5,
                             "single": false
                         },
                         {
@@ -152,7 +152,7 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "strength": 6,
+                            "strength": 5,
                             "single": false
                         },
                         {
@@ -172,14 +172,14 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "strength": 7,
+                            "strength": 6,
                             "single": false
                         }
                     ]
                 },
                 {
                     "name": "Belial",
-                    "points_per_model": 100,
+                    "points_per_model": 125,
                     "armor": 5,
                     "move": 10,
                     "keywords_armor": [],
@@ -190,7 +190,7 @@
                     "attacks": [
                         {
                             "range": "⛶",
-                            "strength": 7,
+                            "strength": 6,
                             "single": false
                         },
                         {
@@ -203,7 +203,7 @@
                 {
                     "name": "Deathwing strikemaster",
                     "points_per_model": 100,
-                    "armor": 6,
+                    "armor": 5,
                     "move": 10,
                     "keywords_armor": [],
                     "keywords_movement": [
@@ -221,7 +221,7 @@
                 {
                     "name": "Deathwing knights",
                     "points_per_model": 50,
-                    "armor": 6,
+                    "armor": 5,
                     "move": 10,
                     "keywords_armor": [],
                     "keywords_movement": [
@@ -237,7 +237,7 @@
                 },
                 {
                     "name": "Aethon Shaan",
-                    "points_per_model": 100,
+                    "points_per_model": 125,
                     "armor": 4,
                     "move": 25,
                     "keywords_armor": [
@@ -251,12 +251,12 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "strength": 6,
+                            "strength": 5,
                             "single": false
                         },
                         {
                             "range": "⚔",
-                            "strength": 7,
+                            "strength": 8,
                             "single": false
                         }
                     ]
@@ -274,7 +274,7 @@
                     "attacks": [
                         {
                             "range": "⛶",
-                            "strength": 7,
+                            "strength": 6,
                             "single": false
                         },
                         {
@@ -292,7 +292,7 @@
                 {
                     "name": "Shield-captain",
                     "points_per_model": 150,
-                    "armor": 6,
+                    "armor": 5,
                     "move": 20,
                     "keywords_armor": [],
                     "keywords_movement": [
@@ -309,7 +309,7 @@
                 {
                     "name": "Custodian sentinels",
                     "points_per_model": 75,
-                    "armor": 6,
+                    "armor": 5,
                     "move": 20,
                     "keywords_armor": [],
                     "keywords_movement": [],
@@ -331,7 +331,7 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "strength": 7,
+                            "strength": 6,
                             "single": false
                         },
                         {
@@ -353,7 +353,7 @@
                     "attacks": [
                         {
                             "range": "⛶",
-                            "strength": 8,
+                            "strength": 7,
                             "single": false
                         }
                     ]
@@ -500,7 +500,7 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "strength": 6,
+                            "strength": 5,
                             "single": false
                         },
                         {
@@ -538,7 +538,7 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "strength": 7,
+                            "strength": 6,
                             "single": false
                         },
                         {
@@ -560,7 +560,7 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "strength": 6,
+                            "strength": 5,
                             "single": false
                         },
                         {
@@ -580,22 +580,7 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "strength": 7,
-                            "single": false
-                        }
-                    ]
-                },
-                {
-                    "name": "Breacher Squad",
-                    "points_per_model": 25,
-                    "armor": 5,
-                    "move": 15,
-                    "keywords_armor": [],
-                    "keywords_movement": [],
-                    "attacks": [
-                        {
-                            "range": "⛶",
-                            "strength": 7,
+                            "strength": 6,
                             "single": false
                         }
                     ]
@@ -612,7 +597,7 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "strength": 6,
+                            "strength": 5,
                             "single": false
                         },
                         {
@@ -671,7 +656,7 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "strength": 8,
+                            "strength": 7,
                             "single": true
                         }
                     ]
@@ -718,7 +703,7 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "strength": 9,
+                            "strength": 8,
                             "single": false
                         }
                     ]
@@ -778,7 +763,7 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "strength": 10,
+                            "strength": 9,
                             "single": false
                         }
                     ]
