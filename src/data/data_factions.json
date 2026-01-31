@@ -230,7 +230,7 @@
                     "attacks": [
                         {
                             "range": "⚔",
-                            "strength": 8,
+                            "strength": 7,
                             "single": false
                         }
                     ]
@@ -301,7 +301,7 @@
                     "attacks": [
                         {
                             "range": "⚔",
-                            "strength": 8,
+                            "strength": 9,
                             "single": false
                         }
                     ]
@@ -465,7 +465,7 @@
                     "attacks": [
                         {
                             "range": "⚔",
-                            "strength": 8,
+                            "strength": 7,
                             "single": false
                         },
                         {
@@ -485,7 +485,7 @@
                     "attacks": [
                         {
                             "range": "⚔",
-                            "strength": 8,
+                            "strength": 7,
                             "single": false
                         }
                     ]
@@ -565,7 +565,7 @@
                         },
                         {
                             "range": "⚔",
-                            "strength": 8,
+                            "strength": 7,
                             "single": false
                         }
                     ]
