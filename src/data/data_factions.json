@@ -8,7 +8,9 @@
                     "points_per_model": 50,
                     "armor": 4,
                     "move": 25,
-                    "keywords_armor": [],
+                    "keywords_armor": [
+                        "agile"
+                    ],
                     "keywords_movement": [
                         "commander",
                         "fly"
@@ -17,12 +19,12 @@
                         {
                             "range": "⊹",
                             "strength": 5,
-                            "single": false
+                            "type": ""
                         },
                         {
                             "range": "⚔",
                             "strength": 7,
-                            "single": false
+                            "type": ""
                         }
                     ]
                 },
@@ -31,7 +33,9 @@
                     "points_per_model": 25,
                     "armor": 4,
                     "move": 25,
-                    "keywords_armor": [],
+                    "keywords_armor": [
+                        "agile"
+                    ],
                     "keywords_movement": [
                         "fly"
                     ],
@@ -39,12 +43,12 @@
                         {
                             "range": "⊹",
                             "strength": 5,
-                            "single": false
+                            "type": ""
                         },
                         {
                             "range": "⚔",
                             "strength": 7,
-                            "single": false
+                            "type": ""
                         }
                     ]
                 },
@@ -53,7 +57,9 @@
                     "points_per_model": 50,
                     "armor": 4,
                     "move": 15,
-                    "keywords_armor": [],
+                    "keywords_armor": [
+                        "armored"
+                    ],
                     "keywords_movement": [
                         "commander"
                     ],
@@ -61,7 +67,7 @@
                         {
                             "range": "⊹",
                             "strength": 6,
-                            "single": false
+                            "type": ""
                         }
                     ]
                 },
@@ -70,13 +76,15 @@
                     "points_per_model": 25,
                     "armor": 4,
                     "move": 15,
-                    "keywords_armor": [],
+                    "keywords_armor": [
+                        "armored"
+                    ],
                     "keywords_movement": [],
                     "attacks": [
                         {
                             "range": "⊹",
                             "strength": 6,
-                            "single": false
+                            "type": ""
                         }
                     ]
                 },
@@ -85,18 +93,20 @@
                     "points_per_model": 25,
                     "armor": 4,
                     "move": 15,
-                    "keywords_armor": [],
+                    "keywords_armor": [
+                        "armored"
+                    ],
                     "keywords_movement": [],
                     "attacks": [
                         {
                             "range": "⊹",
                             "strength": 5,
-                            "single": false
+                            "type": ""
                         },
                         {
                             "range": "⛶",
                             "strength": 10,
-                            "single": true
+                            "type": "single"
                         }
                     ]
                 },
@@ -105,18 +115,20 @@
                     "points_per_model": 200,
                     "armor": 8,
                     "move": 25,
-                    "keywords_armor": [],
+                    "keywords_armor": [
+                        "armored"
+                    ],
                     "keywords_movement": [],
                     "attacks": [
                         {
                             "range": "⊹",
                             "strength": 7,
-                            "single": false
+                            "type": ""
                         },
                         {
                             "range": "⊹",
                             "strength": 11,
-                            "single": true
+                            "type": "single"
                         }
                     ]
                 },
@@ -133,12 +145,12 @@
                         {
                             "range": "⊹",
                             "strength": 5,
-                            "single": false
+                            "type": ""
                         },
                         {
                             "range": "⚔",
-                            "strength": 7,
-                            "single": false
+                            "strength": 8,
+                            "type": ""
                         }
                     ]
                 },
@@ -153,12 +165,12 @@
                         {
                             "range": "⊹",
                             "strength": 5,
-                            "single": false
+                            "type": ""
                         },
                         {
                             "range": "⚔",
-                            "strength": 7,
-                            "single": false
+                            "strength": 8,
+                            "type": ""
                         }
                     ]
                 },
@@ -173,7 +185,7 @@
                         {
                             "range": "⊹",
                             "strength": 6,
-                            "single": false
+                            "type": ""
                         }
                     ]
                 },
@@ -182,7 +194,9 @@
                     "points_per_model": 125,
                     "armor": 5,
                     "move": 10,
-                    "keywords_armor": [],
+                    "keywords_armor": [
+                        "armored"
+                    ],
                     "keywords_movement": [
                         "commander",
                         "deepstrike"
@@ -191,12 +205,12 @@
                         {
                             "range": "⛶",
                             "strength": 6,
-                            "single": false
+                            "type": ""
                         },
                         {
                             "range": "⚔",
                             "strength": 8,
-                            "single": false
+                            "type": ""
                         }
                     ]
                 },
@@ -205,7 +219,9 @@
                     "points_per_model": 100,
                     "armor": 5,
                     "move": 10,
-                    "keywords_armor": [],
+                    "keywords_armor": [
+                        "armored"
+                    ],
                     "keywords_movement": [
                         "commander",
                         "deepstrike"
@@ -214,7 +230,7 @@
                         {
                             "range": "⚔",
                             "strength": 8,
-                            "single": false
+                            "type": ""
                         }
                     ]
                 },
@@ -223,7 +239,9 @@
                     "points_per_model": 50,
                     "armor": 5,
                     "move": 10,
-                    "keywords_armor": [],
+                    "keywords_armor": [
+                        "armored"
+                    ],
                     "keywords_movement": [
                         "deepstrike"
                     ],
@@ -231,7 +249,7 @@
                         {
                             "range": "⚔",
                             "strength": 7,
-                            "single": false
+                            "type": ""
                         }
                     ]
                 },
@@ -241,7 +259,7 @@
                     "armor": 4,
                     "move": 25,
                     "keywords_armor": [
-                        "stealth"
+                        "agile"
                     ],
                     "keywords_movement": [
                         "commander",
@@ -252,12 +270,12 @@
                         {
                             "range": "⊹",
                             "strength": 5,
-                            "single": false
+                            "type": ""
                         },
                         {
                             "range": "⚔",
                             "strength": 8,
-                            "single": false
+                            "type": ""
                         }
                     ]
                 },
@@ -275,12 +293,12 @@
                         {
                             "range": "⛶",
                             "strength": 6,
-                            "single": false
+                            "type": ""
                         },
                         {
                             "range": "⚔",
                             "strength": 8,
-                            "single": false
+                            "type": ""
                         }
                     ]
                 }
@@ -302,7 +320,7 @@
                         {
                             "range": "⚔",
                             "strength": 9,
-                            "single": false
+                            "type": ""
                         }
                     ]
                 },
@@ -317,7 +335,7 @@
                         {
                             "range": "⚔",
                             "strength": 8,
-                            "single": false
+                            "type": ""
                         }
                     ]
                 },
@@ -332,12 +350,12 @@
                         {
                             "range": "⊹",
                             "strength": 6,
-                            "single": false
+                            "type": ""
                         },
                         {
                             "range": "⚔",
                             "strength": 8,
-                            "single": false
+                            "type": ""
                         }
                     ]
                 },
@@ -346,7 +364,9 @@
                     "points_per_model": 75,
                     "armor": 5,
                     "move": 40,
-                    "keywords_armor": [],
+                    "keywords_armor": [
+                        "agile"
+                    ],
                     "keywords_movement": [
                         "fly"
                     ],
@@ -354,7 +374,7 @@
                         {
                             "range": "⛶",
                             "strength": 7,
-                            "single": false
+                            "type": ""
                         }
                     ]
                 },
@@ -363,18 +383,20 @@
                     "points_per_model": 300,
                     "armor": 8,
                     "move": 25,
-                    "keywords_armor": [],
+                    "keywords_armor": [
+                        "armored"
+                    ],
                     "keywords_movement": [],
                     "attacks": [
                         {
                             "range": "⊹",
                             "strength": 10,
-                            "single": true
+                            "type": "single"
                         },
                         {
                             "range": "⚔",
                             "strength": 10,
-                            "single": false
+                            "type": ""
                         }
                     ]
                 },
@@ -383,7 +405,9 @@
                     "points_per_model": 400,
                     "armor": 9,
                     "move": 40,
-                    "keywords_armor": [],
+                    "keywords_armor": [
+                        "armored"
+                    ],
                     "keywords_movement": [
                         "fly"
                     ],
@@ -391,7 +415,7 @@
                         {
                             "range": "⊹",
                             "strength": 11,
-                            "single": false
+                            "type": ""
                         }
                     ]
                 },
@@ -400,7 +424,9 @@
                     "points_per_model": 400,
                     "armor": 10,
                     "move": 40,
-                    "keywords_armor": [],
+                    "keywords_armor": [
+                        "armored"
+                    ],
                     "keywords_movement": [
                         "fly",
                         "transport"
@@ -409,7 +435,7 @@
                         {
                             "range": "⊹",
                             "strength": 10,
-                            "single": false
+                            "type": ""
                         }
                     ]
                 }
@@ -423,7 +449,9 @@
                     "points_per_model": 125,
                     "armor": 5,
                     "move": 25,
-                    "keywords_armor": [],
+                    "keywords_armor": [
+                        "armored"
+                    ],
                     "keywords_movement": [
                         "commander"
                     ],
@@ -431,7 +459,7 @@
                         {
                             "range": "⚔",
                             "strength": 8,
-                            "single": false
+                            "type": ""
                         }
                     ]
                 },
@@ -449,7 +477,7 @@
                         {
                             "range": "⚔",
                             "strength": 8,
-                            "single": false
+                            "type": ""
                         }
                     ]
                 },
@@ -466,12 +494,12 @@
                         {
                             "range": "⚔",
                             "strength": 7,
-                            "single": false
+                            "type": ""
                         },
                         {
                             "range": "⚔",
                             "strength": 10,
-                            "single": true
+                            "type": "single"
                         }
                     ]
                 },
@@ -486,7 +514,7 @@
                         {
                             "range": "⚔",
                             "strength": 7,
-                            "single": false
+                            "type": ""
                         }
                     ]
                 },
@@ -501,12 +529,12 @@
                         {
                             "range": "⊹",
                             "strength": 5,
-                            "single": false
+                            "type": ""
                         },
                         {
                             "range": "⚔",
                             "strength": 7,
-                            "single": false
+                            "type": ""
                         }
                     ]
                 },
@@ -521,7 +549,7 @@
                         {
                             "range": "⚔",
                             "strength": 5,
-                            "single": false
+                            "type": ""
                         }
                     ]
                 },
@@ -530,7 +558,9 @@
                     "points_per_model": 75,
                     "armor": 5,
                     "move": 10,
-                    "keywords_armor": [],
+                    "keywords_armor": [
+                        "armored"
+                    ],
                     "keywords_movement": [
                         "commander",
                         "deepstrike"
@@ -539,12 +569,12 @@
                         {
                             "range": "⊹",
                             "strength": 6,
-                            "single": false
+                            "type": ""
                         },
                         {
                             "range": "⚔",
                             "strength": 10,
-                            "single": true
+                            "type": "single"
                         }
                     ]
                 },
@@ -553,7 +583,9 @@
                     "points_per_model": 50,
                     "armor": 5,
                     "move": 10,
-                    "keywords_armor": [],
+                    "keywords_armor": [
+                        "armored"
+                    ],
                     "keywords_movement": [
                         "deepstrike"
                     ],
@@ -561,12 +593,12 @@
                         {
                             "range": "⊹",
                             "strength": 5,
-                            "single": false
+                            "type": ""
                         },
                         {
                             "range": "⚔",
                             "strength": 7,
-                            "single": false
+                            "type": ""
                         }
                     ]
                 },
@@ -581,7 +613,7 @@
                         {
                             "range": "⊹",
                             "strength": 6,
-                            "single": false
+                            "type": ""
                         }
                     ]
                 },
@@ -590,7 +622,9 @@
                     "points_per_model": 25,
                     "armor": 4,
                     "move": 25,
-                    "keywords_armor": [],
+                    "keywords_armor": [
+                        "agile"
+                    ],
                     "keywords_movement": [
                         "fly"
                     ],
@@ -598,12 +632,12 @@
                         {
                             "range": "⊹",
                             "strength": 5,
-                            "single": false
+                            "type": ""
                         },
                         {
                             "range": "⚔",
                             "strength": 7,
-                            "single": false
+                            "type": ""
                         }
                     ]
                 },
@@ -612,13 +646,15 @@
                     "points_per_model": 200,
                     "armor": 8,
                     "move": 0,
-                    "keywords_armor": [],
+                    "keywords_armor": [
+                        "armored"
+                    ],
                     "keywords_movement": [],
                     "attacks": [
                         {
                             "range": "⊹",
                             "strength": 11,
-                            "single": false
+                            "type": ""
                         }
                     ]
                 },
@@ -627,18 +663,20 @@
                     "points_per_model": 400,
                     "armor": 10,
                     "move": 25,
-                    "keywords_armor": [],
+                    "keywords_armor": [
+                        "armored"
+                    ],
                     "keywords_movement": [],
                     "attacks": [
                         {
                             "range": "⊹",
-                            "strength": 10,
-                            "single": false
+                            "strength": 9,
+                            "type": "volume"
                         },
                         {
                             "range": "⊹",
                             "strength": 12,
-                            "single": true
+                            "type": "single"
                         }
                     ]
                 },
@@ -657,7 +695,7 @@
                         {
                             "range": "⊹",
                             "strength": 7,
-                            "single": true
+                            "type": "single"
                         }
                     ]
                 }
@@ -679,12 +717,12 @@
                         {
                             "range": "⊹",
                             "strength": 8,
-                            "single": false
+                            "type": ""
                         },
                         {
                             "range": "⚔",
                             "strength": 11,
-                            "single": false
+                            "type": ""
                         }
                     ]
                 },
@@ -704,7 +742,7 @@
                         {
                             "range": "⊹",
                             "strength": 8,
-                            "single": false
+                            "type": ""
                         }
                     ]
                 },
@@ -719,7 +757,7 @@
                         {
                             "range": "⚔",
                             "strength": 9,
-                            "single": false
+                            "type": ""
                         }
                     ]
                 },
@@ -728,13 +766,15 @@
                     "points_per_model": 50,
                     "armor": 4,
                     "move": 25,
-                    "keywords_armor": [],
+                    "keywords_armor": [
+                        "agile"
+                    ],
                     "keywords_movement": [],
                     "attacks": [
                         {
                             "range": "⚔",
                             "strength": 8,
-                            "single": false
+                            "type": ""
                         }
                     ]
                 },
@@ -749,7 +789,7 @@
                         {
                             "range": "⊹",
                             "strength": 11,
-                            "single": true
+                            "type": "single"
                         }
                     ]
                 },
@@ -763,8 +803,8 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "strength": 9,
-                            "single": false
+                            "strength": 8,
+                            "type": "volume"
                         }
                     ]
                 }

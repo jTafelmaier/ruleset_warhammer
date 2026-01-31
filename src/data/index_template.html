@@ -43,6 +43,8 @@
                                     </td>
                                     <td>
                                         Removed from the board space.
+                                        <br/>
+                                        Whenever a model is destroyed, its unit's health points are fully restored.
                                     </td>
                                 </tr>
                                 <tr>
@@ -174,29 +176,51 @@
                                     <br/>
                                     - All models in the target unit have <b>stealth</b> and are in cover.
                                     <br/>
+                                    - All models in the target unit have <b>agile</b> and the weapon has <b>single</b>.
+                                    <br/>
                                     - The weapon is of range ⛶ and the target unit is not within 20 cm.
                                     <br/>
                                     - The weapon is of range ⚔ and the target unit is not within 5 cm.
                                 </div>
                                 <br/>
+                                If the weapon has <b>single</b>:
+                                <div class="indented">
+                                    This model's attack ends when one model in the target unit is destroyed.
+                                </div>
                                 If all models in the target unit are in cover:
                                 <div class="indented">
-                                    During this attack, increase the target unit: <b><span class="icon">⛊</span>armor</b> by 1.
+                                    During this model's attack, increase the target unit: <b><span class="icon">⛊</span>armor</b> by 1.
                                 </div>
-                                <br/>
-                                damage = 2^(weapon: <b>strength</b> - target unit: <b><span class="icon">⛊</span>armor</b>) + remaining damage
-                                <br/>
-                                Reduce unit: health by floor(damage).
-                                <br/>
-                                <br/>
-                                If target unit: <b>health</b> &le; 0:
+                                If all models in the target unit have <b>armored</b> and the weapon has <b>volume</b>:
                                 <div class="indented">
-                                    The enemy player must choose to destroy one model in the target unit.
-                                    <br/>
-                                    Then, the target unit health points are fully restored.
+                                    During this model's attack, increase the target unit: <b><span class="icon">⛊</span>armor</b> by 1.
                                 </div>
                                 <br/>
-                                remaining damage = damage - floor(damage)
+                                <r>damage</r> = 2^(weapon: <b>strength</b> - target unit: <b><span class="icon">⛊</span>armor</b>) + remaining damage
+                                <br/>
+                                <br/>
+                                If the weapon has <b>volume</b>:
+                                <div class="indented">
+                                    <r>damage</r> = <r>damage</r> * (number of models in the target unit).
+                                </div>
+                                <br/>
+                                If <r>damage</r> >= 8:
+                                <div class="indented">
+                                    The enemy player must select to destroy <r>damage</r> / 8 models in the target unit.
+                                </div>
+                                If 8 > <r>damage</r> >= 1:
+                                <div class="indented">
+                                    Reduce unit: health by <r>damage</r>.
+                                    <br/>
+                                    If target unit: <b>health</b> &le; 0:
+                                    <div class="indented">
+                                        The enemy player must choose to destroy one model in the target unit.
+                                    </div>
+                                </div>
+                                If <r>damage</r> < 1:
+                                <div class="indented">
+                                    remaining damage = remaining damage + <r>damage</r>
+                                </div>
                             </div>
                         </div>
                     </div>

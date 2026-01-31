@@ -69,6 +69,11 @@ body {
     padding-left: 10px;
 }
 
+r {
+    color: rgb(210, 45, 45);
+    font-weight: bold;
+}
+
 .table_default {
     border-collapse: collapse;
     border: 2px solid #2e3544;
