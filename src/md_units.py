@@ -17,11 +17,8 @@ def get_text_html_data_unit(
         if len(list_texts_keywords) == 0:
             return ""
 
-        return "" \
-            .join(
-                map(
-                    lambda text_keyword:  "<span class=\"keyword\">" + text_keyword + "</span>",
-                    list_texts_keywords))
+        return ", " \
+            .join(list_texts_keywords)
 
     def get_text_html_attack(
         dict_attack:typing.Dict):
@@ -68,17 +65,19 @@ def get_text_html_data_unit(
             dict_unit \
                 ["armor"]) \
         + " " \
-        + get_text_keywords( \
-            dict_unit \
-                ["keywords_armor"]) \
+        + dict_unit \
+            ["type_armor"] \
         + "</td></tr><tr class=\"model_property\"><td class=\"icon\">🡆</td><td class=\"property\">" \
         + str(
             dict_unit \
                 ["move"]) \
         + " " \
-        + get_text_keywords( \
+        + dict_unit \
+            ["type_movement"] \
+        + "</td></tr><tr class=\"model_property\"><td class=\"icon\">✧</td><td class=\"property\">" \
+        + get_text_keywords(
             dict_unit \
-                ["keywords_movement"]) \
+                ["keywords"]) \
         + "</td></tr>" \
         + text_html_rows_attacks \
         + "</tbody></table></div></div>"

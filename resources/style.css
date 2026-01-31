@@ -231,6 +231,7 @@ r {
 .model_property {
     color: #2e3544;
     background: linear-gradient(0.25turn, #80899c9d, #555c6c00);
+    height: 28px;
 }
 
 .model_property .icon {
@@ -242,7 +243,7 @@ r {
 
 .model_property .attack {
     text-align: center;
-    color: #2e3544;
+    color: #ff0000;
 }
 
 .keyword {
