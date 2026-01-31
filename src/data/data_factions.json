@@ -11,8 +11,7 @@
                     "type_armor": "agile",
                     "type_movement": "fly",
                     "keywords": [
-                        "commander",
-                        "fly"
+                        "commander"
                     ],
                     "attacks": [
                         {
@@ -34,9 +33,7 @@
                     "move": 25,
                     "type_armor": "agile",
                     "type_movement": "fly",
-                    "keywords": [
-                        "fly"
-                    ],
+                    "keywords": [],
                     "attacks": [
                         {
                             "range": "⊹",
@@ -362,9 +359,7 @@
                     "move": 40,
                     "type_armor": "agile",
                     "type_movement": "fly",
-                    "keywords": [
-                        "fly"
-                    ],
+                    "keywords": [],
                     "attacks": [
                         {
                             "range": "⛶",
@@ -401,9 +396,7 @@
                     "move": 40,
                     "type_armor": "armored",
                     "type_movement": "fly",
-                    "keywords": [
-                        "fly"
-                    ],
+                    "keywords": [],
                     "attacks": [
                         {
                             "range": "⊹",
@@ -420,7 +413,6 @@
                     "type_armor": "armored",
                     "type_movement": "fly",
                     "keywords": [
-                        "fly",
                         "transport"
                     ],
                     "attacks": [
@@ -619,9 +611,7 @@
                     "move": 25,
                     "type_armor": "agile",
                     "type_movement": "fly",
-                    "keywords": [
-                        "fly"
-                    ],
+                    "keywords": [],
                     "attacks": [
                         {
                             "range": "⊹",
