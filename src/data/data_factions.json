@@ -413,7 +413,8 @@
                     "type_armor": "armored",
                     "type_movement": "fly",
                     "keywords": [
-                        "transport"
+                        "transport",
+                        "deepstrike"
                     ],
                     "attacks": [
                         {
