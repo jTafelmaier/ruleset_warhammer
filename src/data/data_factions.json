@@ -8,7 +8,7 @@
                     "points_per_model": 50,
                     "armor": 4,
                     "move": 25,
-                    "type_armor": "agile",
+                    "type_armor": "",
                     "type_movement": "fly",
                     "keywords": [
                         "commander"
@@ -31,7 +31,7 @@
                     "points_per_model": 25,
                     "armor": 4,
                     "move": 25,
-                    "type_armor": "agile",
+                    "type_armor": "",
                     "type_movement": "fly",
                     "keywords": [],
                     "attacks": [
@@ -52,7 +52,7 @@
                     "points_per_model": 50,
                     "armor": 4,
                     "move": 15,
-                    "type_armor": "armored",
+                    "type_armor": "",
                     "type_movement": "",
                     "keywords": [
                         "commander"
@@ -70,7 +70,7 @@
                     "points_per_model": 25,
                     "armor": 4,
                     "move": 15,
-                    "type_armor": "armored",
+                    "type_armor": "",
                     "type_movement": "",
                     "keywords": [],
                     "attacks": [
@@ -86,7 +86,7 @@
                     "points_per_model": 25,
                     "armor": 4,
                     "move": 15,
-                    "type_armor": "armored",
+                    "type_armor": "",
                     "type_movement": "",
                     "keywords": [],
                     "attacks": [
@@ -107,7 +107,7 @@
                     "points_per_model": 200,
                     "armor": 8,
                     "move": 25,
-                    "type_armor": "armored",
+                    "type_armor": "",
                     "type_movement": "",
                     "keywords": [],
                     "attacks": [
@@ -188,7 +188,7 @@
                     "points_per_model": 125,
                     "armor": 5,
                     "move": 10,
-                    "type_armor": "armored",
+                    "type_armor": "",
                     "type_movement": "",
                     "keywords": [
                         "commander",
@@ -212,7 +212,7 @@
                     "points_per_model": 100,
                     "armor": 5,
                     "move": 10,
-                    "type_armor": "armored",
+                    "type_armor": "",
                     "type_movement": "",
                     "keywords": [
                         "commander",
@@ -231,7 +231,7 @@
                     "points_per_model": 50,
                     "armor": 5,
                     "move": 10,
-                    "type_armor": "armored",
+                    "type_armor": "",
                     "type_movement": "",
                     "keywords": [
                         "deepstrike"
@@ -249,7 +249,7 @@
                     "points_per_model": 125,
                     "armor": 4,
                     "move": 25,
-                    "type_armor": "agile",
+                    "type_armor": "stealth",
                     "type_movement": "fly",
                     "keywords": [
                         "commander",
@@ -357,7 +357,7 @@
                     "points_per_model": 75,
                     "armor": 5,
                     "move": 40,
-                    "type_armor": "agile",
+                    "type_armor": "",
                     "type_movement": "fly",
                     "keywords": [],
                     "attacks": [
@@ -373,7 +373,7 @@
                     "points_per_model": 300,
                     "armor": 8,
                     "move": 25,
-                    "type_armor": "armored",
+                    "type_armor": "",
                     "type_movement": "",
                     "keywords": [],
                     "attacks": [
@@ -394,7 +394,7 @@
                     "points_per_model": 400,
                     "armor": 9,
                     "move": 40,
-                    "type_armor": "armored",
+                    "type_armor": "",
                     "type_movement": "fly",
                     "keywords": [],
                     "attacks": [
@@ -410,7 +410,7 @@
                     "points_per_model": 400,
                     "armor": 10,
                     "move": 40,
-                    "type_armor": "armored",
+                    "type_armor": "",
                     "type_movement": "fly",
                     "keywords": [
                         "transport",
@@ -434,7 +434,7 @@
                     "points_per_model": 125,
                     "armor": 5,
                     "move": 25,
-                    "type_armor": "armored",
+                    "type_armor": "",
                     "type_movement": "",
                     "keywords": [
                         "commander"
@@ -547,7 +547,7 @@
                     "points_per_model": 75,
                     "armor": 5,
                     "move": 10,
-                    "type_armor": "armored",
+                    "type_armor": "",
                     "type_movement": "",
                     "keywords": [
                         "commander",
@@ -571,7 +571,7 @@
                     "points_per_model": 50,
                     "armor": 5,
                     "move": 10,
-                    "type_armor": "armored",
+                    "type_armor": "",
                     "type_movement": "",
                     "keywords": [
                         "deepstrike"
@@ -610,7 +610,7 @@
                     "points_per_model": 25,
                     "armor": 4,
                     "move": 25,
-                    "type_armor": "agile",
+                    "type_armor": "",
                     "type_movement": "fly",
                     "keywords": [],
                     "attacks": [
@@ -631,7 +631,7 @@
                     "points_per_model": 200,
                     "armor": 8,
                     "move": 0,
-                    "type_armor": "armored",
+                    "type_armor": "",
                     "type_movement": "",
                     "keywords": [],
                     "attacks": [
@@ -647,7 +647,7 @@
                     "points_per_model": 400,
                     "armor": 10,
                     "move": 25,
-                    "type_armor": "armored",
+                    "type_armor": "",
                     "type_movement": "",
                     "keywords": [],
                     "attacks": [
@@ -749,7 +749,7 @@
                     "points_per_model": 50,
                     "armor": 4,
                     "move": 25,
-                    "type_armor": "agile",
+                    "type_armor": "",
                     "type_movement": "",
                     "keywords": [],
                     "attacks": [
