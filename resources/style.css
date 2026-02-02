@@ -108,6 +108,10 @@ r {
     font-size: small;
 }
 
+.term {
+    width: 120px;
+}
+
 .action {
     display: flex;
     width: 600px;

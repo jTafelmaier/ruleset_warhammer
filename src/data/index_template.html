@@ -22,7 +22,7 @@
                         <table class="table_default fullwidth">
                             <tbody>
                                 <tr>
-                                    <th>
+                                    <th class="term">
                                         Term
                                     </th>
                                     <th>
@@ -34,35 +34,7 @@
                                         Distance
                                     </td>
                                     <td>
-                                        Shortest distance between any model surface points of two models.
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Destroyed
-                                    </td>
-                                    <td>
-                                        Removed from the board space.
-                                        <br/>
-                                        Whenever a model is destroyed, its unit's health points are fully restored.
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Visibility
-                                    </td>
-                                    <td>
-                                        A model is visible when any of its surface points is visible.
-                                        <br/>
-                                        A unit is visible if any of its models are visible.
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        In cover
-                                    </td>
-                                    <td>
-                                        Drawing a line between the base centers of two models passes through a cover object, and the attacking model is not within 5 cm of all passed cover objects.
+                                        Shortest distance between any base points of two models.
                                     </td>
                                 </tr>
                                 <tr>
@@ -75,7 +47,35 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        Unit coherency
+                                        Unit: Visibility
+                                    </td>
+                                    <td>
+                                        A unit is visible when any of the surface points of its models are visible.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Unit: In cover
+                                    </td>
+                                    <td>
+                                        A model is in cover if drawing a line between the base centers of it and the attacking model passes through a cover object, and the attacking model is not within 5 cm of all passed cover objects.
+                                        <br/>
+                                        A unit is in cover if all its models are in cover.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Unit: Destroy model
+                                    </td>
+                                    <td>
+                                        The controlling player must remove one model from the board space.
+                                        <br/>
+                                        Whenever a model is destroyed, its unit's health points are fully restored.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Unit: Unit coherency
                                     </td>
                                     <td>
                                         When every model is within 5 cm of another model in the unit.
@@ -164,56 +164,55 @@
                             Attack
                         </h4>
                         <div>
-                            remaining damage = 0.0
-                            <br/>
                             For every model in the attacking unit:
                             <div class="indented">
                                 Select one weapon and one visible enemy unit as "target unit".
                                 <br/>
                                 End the attack sequence for this model if any of the following are true:
                                 <div class="indented">
-                                    - No target unit can be selected.
-                                    <br/>
                                     - The weapon is of range ⛶ and the target unit is not within 20 cm.
                                     <br/>
                                     - The weapon is of range ⚔ and the target unit is not within 5 cm.
                                     <br/>
-                                    - All models in the target unit have <b>stealth</b> and are in cover.
+                                    - The target unit is in cover and all its models have <b>stealth</b>.
+                                    <br/>
+                                    - There is no visible enemy unit to be selected.
                                 </div>
                                 <br/>
+                                If the target unit was not selected by the previous model in this attack:
+                                <div class="indented">
+                                    fractional damage = 0.0
+                                </div>
+                                <br/>
+                                If the target unit is in cover:
+                                <div class="indented">
+                                    Weapon: <b>strength</b> -= 1.
+                                </div>
+                                If the target unit contains more than 1 model and the weapon has <b>volume</b>:
+                                <div class="indented">
+                                    Weapon: <b>strength</b> += 1.
+                                </div>
                                 If the weapon has <b>single</b>:
                                 <div class="indented">
                                     This model's attack ends when one model in the target unit is destroyed.
                                 </div>
-                                If all models in the target unit are in cover:
+                                <br/>
+                                <r>damage</r> = 2^(weapon: <b>strength</b> - target unit: <b><span class="icon">⛊</span>armor</b>) + fractional damage
+                                <br/>
+                                <br/>
+                                If <r>damage</r> < 1:
                                 <div class="indented">
-                                    During this model's attack, increase the target unit: <b><span class="icon">⛊</span>armor</b> by 1.
+                                    fractional damage = <r>damage</r>
                                 </div>
-                                <br/>
-                                <r>damage</r> = 2^(weapon: <b>strength</b> - target unit: <b><span class="icon">⛊</span>armor</b>) + remaining damage
-                                <br/>
-                                <br/>
-                                If the weapon has <b>volume</b>:
+                                Else:
                                 <div class="indented">
-                                    <r>damage</r> = <r>damage</r> * (number of models in the target unit).
-                                </div>
-                                <br/>
-                                If <r>damage</r> >= 8:
-                                <div class="indented">
-                                    The enemy player must select to destroy <r>damage</r> / 8 models in the target unit.
-                                </div>
-                                If 8 > <r>damage</r> >= 1:
-                                <div class="indented">
-                                    Reduce unit: health by <r>damage</r>.
+                                    Reduce target unit: <b>health</b> by <r>damage</r> mod 8.
                                     <br/>
                                     If target unit: <b>health</b> &le; 0:
                                     <div class="indented">
-                                        The enemy player must choose to destroy one model in the target unit.
+                                        Destroy 1 model in the target unit.
                                     </div>
-                                </div>
-                                If <r>damage</r> < 1:
-                                <div class="indented">
-                                    remaining damage = <r>damage</r>
+                                    Destroy <r>damage</r> / 8 models in the target unit.
                                 </div>
                             </div>
                         </div>
