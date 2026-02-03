@@ -11,7 +11,7 @@
                     "type_armor": "",
                     "type_movement": "fly",
                     "keywords": [
-                        "commander"
+                        "initiative"
                     ],
                     "attacks": [
                         {
@@ -55,7 +55,7 @@
                     "type_armor": "",
                     "type_movement": "",
                     "keywords": [
-                        "commander"
+                        "initiative"
                     ],
                     "attacks": [
                         {
@@ -136,7 +136,7 @@
                     "type_armor": "",
                     "type_movement": "",
                     "keywords": [
-                        "commander"
+                        "initiative"
                     ],
                     "attacks": [
                         {
@@ -196,7 +196,7 @@
                     "type_armor": "",
                     "type_movement": "",
                     "keywords": [
-                        "commander",
+                        "initiative",
                         "deepstrike"
                     ],
                     "attacks": [
@@ -220,7 +220,7 @@
                     "type_armor": "shielded",
                     "type_movement": "",
                     "keywords": [
-                        "commander",
+                        "initiative",
                         "deepstrike"
                     ],
                     "attacks": [
@@ -257,7 +257,7 @@
                     "type_armor": "stealth",
                     "type_movement": "fly",
                     "keywords": [
-                        "commander",
+                        "initiative",
                         "deepstrike"
                     ],
                     "attacks": [
@@ -281,7 +281,7 @@
                     "type_armor": "",
                     "type_movement": "",
                     "keywords": [
-                        "commander",
+                        "initiative",
                         "deepstrike"
                     ],
                     "attacks": [
@@ -310,7 +310,7 @@
                     "type_armor": "shielded",
                     "type_movement": "",
                     "keywords": [
-                        "commander"
+                        "initiative"
                     ],
                     "attacks": [
                         {
@@ -442,7 +442,7 @@
                     "type_armor": "",
                     "type_movement": "",
                     "keywords": [
-                        "commander"
+                        "initiative"
                     ],
                     "attacks": [
                         {
@@ -460,7 +460,7 @@
                     "type_armor": "",
                     "type_movement": "",
                     "keywords": [
-                        "commander",
+                        "initiative",
                         "deepstrike"
                     ],
                     "attacks": [
@@ -555,7 +555,7 @@
                     "type_armor": "",
                     "type_movement": "",
                     "keywords": [
-                        "commander",
+                        "initiative",
                         "deepstrike"
                     ],
                     "attacks": [
@@ -699,7 +699,7 @@
                     "type_armor": "",
                     "type_movement": "",
                     "keywords": [
-                        "commander"
+                        "initiative"
                     ],
                     "attacks": [
                         {
@@ -722,7 +722,7 @@
                     "type_armor": "stealth",
                     "type_movement": "",
                     "keywords": [
-                        "commander",
+                        "initiative",
                         "deepstrike"
                     ],
                     "attacks": [
