@@ -327,7 +327,9 @@
                     "move": 20,
                     "type_armor": "shielded",
                     "type_movement": "",
-                    "keywords": [],
+                    "keywords": [
+                        "initiative"
+                    ],
                     "attacks": [
                         {
                             "range": "⚔",
@@ -343,7 +345,9 @@
                     "move": 20,
                     "type_armor": "",
                     "type_movement": "",
-                    "keywords": [],
+                    "keywords": [
+                        "initiative"
+                    ],
                     "attacks": [
                         {
                             "range": "⊹",
@@ -364,7 +368,9 @@
                     "move": 40,
                     "type_armor": "",
                     "type_movement": "fly",
-                    "keywords": [],
+                    "keywords": [
+                        "initiative"
+                    ],
                     "attacks": [
                         {
                             "range": "⛶",
@@ -756,7 +762,9 @@
                     "move": 25,
                     "type_armor": "",
                     "type_movement": "",
-                    "keywords": [],
+                    "keywords": [
+                        "initiative"
+                    ],
                     "attacks": [
                         {
                             "range": "⚔",
