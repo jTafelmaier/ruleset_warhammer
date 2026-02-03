@@ -217,7 +217,7 @@
                     "points_per_model": 100,
                     "armor": 5,
                     "move": 10,
-                    "type_armor": "",
+                    "type_armor": "shielded",
                     "type_movement": "",
                     "keywords": [
                         "commander",
@@ -236,7 +236,7 @@
                     "points_per_model": 50,
                     "armor": 5,
                     "move": 10,
-                    "type_armor": "",
+                    "type_armor": "shielded",
                     "type_movement": "",
                     "keywords": [
                         "deepstrike"
@@ -307,7 +307,7 @@
                     "points_per_model": 150,
                     "armor": 5,
                     "move": 20,
-                    "type_armor": "",
+                    "type_armor": "shielded",
                     "type_movement": "",
                     "keywords": [
                         "commander"
@@ -325,7 +325,7 @@
                     "points_per_model": 75,
                     "armor": 5,
                     "move": 20,
-                    "type_armor": "",
+                    "type_armor": "shielded",
                     "type_movement": "",
                     "keywords": [],
                     "attacks": [
@@ -738,7 +738,7 @@
                     "points_per_model": 50,
                     "armor": 5,
                     "move": 15,
-                    "type_armor": "",
+                    "type_armor": "shielded",
                     "type_movement": "",
                     "keywords": [],
                     "attacks": [
