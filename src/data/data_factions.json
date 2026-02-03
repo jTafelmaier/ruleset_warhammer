@@ -21,7 +21,7 @@
                         },
                         {
                             "range": "⚔",
-                            "strength": 7,
+                            "strength": 8,
                             "type": ""
                         }
                     ]
@@ -244,7 +244,7 @@
                     "attacks": [
                         {
                             "range": "⚔",
-                            "strength": 7,
+                            "strength": 8,
                             "type": ""
                         }
                     ]
@@ -467,7 +467,7 @@
                         {
                             "range": "⚔",
                             "strength": 8,
-                            "type": ""
+                            "type": "volume"
                         }
                     ]
                 },
@@ -506,7 +506,7 @@
                         {
                             "range": "⚔",
                             "strength": 7,
-                            "type": ""
+                            "type": "volume"
                         }
                     ]
                 },
