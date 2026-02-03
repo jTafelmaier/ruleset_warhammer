@@ -190,7 +190,7 @@
                 },
                 {
                     "name": "Belial",
-                    "points_per_model": 125,
+                    "points_per_model": 100,
                     "armor": 5,
                     "move": 10,
                     "type_armor": "",
