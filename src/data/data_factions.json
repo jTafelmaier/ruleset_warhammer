@@ -129,66 +129,6 @@
                     ]
                 },
                 {
-                    "name": "Castellan",
-                    "points_per_model": 50,
-                    "armor": 4,
-                    "move": 15,
-                    "type_armor": "",
-                    "type_movement": "",
-                    "keywords": [
-                        "initiative"
-                    ],
-                    "attacks": [
-                        {
-                            "range": "⊹",
-                            "strength": 5,
-                            "type": ""
-                        },
-                        {
-                            "range": "⚔",
-                            "strength": 8,
-                            "type": ""
-                        }
-                    ]
-                },
-                {
-                    "name": "Sword brethren",
-                    "points_per_model": 25,
-                    "armor": 4,
-                    "move": 15,
-                    "type_armor": "",
-                    "type_movement": "",
-                    "keywords": [],
-                    "attacks": [
-                        {
-                            "range": "⊹",
-                            "strength": 5,
-                            "type": ""
-                        },
-                        {
-                            "range": "⚔",
-                            "strength": 8,
-                            "type": ""
-                        }
-                    ]
-                },
-                {
-                    "name": "Crusader squad",
-                    "points_per_model": 25,
-                    "armor": 4,
-                    "move": 15,
-                    "type_armor": "",
-                    "type_movement": "",
-                    "keywords": [],
-                    "attacks": [
-                        {
-                            "range": "⊹",
-                            "strength": 6,
-                            "type": ""
-                        }
-                    ]
-                },
-                {
                     "name": "Belial",
                     "points_per_model": 100,
                     "armor": 5,
@@ -245,6 +185,66 @@
                         {
                             "range": "⚔",
                             "strength": 8,
+                            "type": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Castellan",
+                    "points_per_model": 50,
+                    "armor": 4,
+                    "move": 15,
+                    "type_armor": "",
+                    "type_movement": "",
+                    "keywords": [
+                        "initiative"
+                    ],
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "strength": 5,
+                            "type": ""
+                        },
+                        {
+                            "range": "⚔",
+                            "strength": 8,
+                            "type": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Sword brethren",
+                    "points_per_model": 25,
+                    "armor": 4,
+                    "move": 15,
+                    "type_armor": "",
+                    "type_movement": "",
+                    "keywords": [],
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "strength": 5,
+                            "type": ""
+                        },
+                        {
+                            "range": "⚔",
+                            "strength": 8,
+                            "type": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Crusader squad",
+                    "points_per_model": 25,
+                    "armor": 4,
+                    "move": 15,
+                    "type_armor": "",
+                    "type_movement": "",
+                    "keywords": [],
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "strength": 6,
                             "type": ""
                         }
                     ]
