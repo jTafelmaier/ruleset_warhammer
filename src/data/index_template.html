@@ -230,7 +230,11 @@
             </div>
             <h1 class="chapter">
                 Army lists
-                <button id="button_next_turn" onclick="next_turn()">next turn</button>
+                <div id="turn_information">
+                    turn
+                    <span id="turn_counter">0</span>
+                    <button id="button_next_turn" onclick="next_turn()">+</button>
+                </div>
             </h1>
             <div id="army_lists">
                 <placeholder id="id_army_lists"/>

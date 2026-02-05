@@ -347,13 +347,24 @@ r {
     background: linear-gradient(#919eba 0px, #626d84 50px);
 }
 
-#button_next_turn {
-    margin: 6px;
-    margin-right: 10px;
+#turn_information {
     float: right;
-    padding: 4px;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin: 4px;
+    margin-right: 10px;
+    padding: 2px;
+    padding-left: 8px;
+    font-size: medium;
+    background-color: #282d3a;
+    border-radius: 2px;
+}
+
+#turn_counter {
+    display: inline-block;
+    border-radius: 2px;
+}
+
+#button_next_turn {
+    padding: 4px 10px;
     color: white;
     background-color: #535f79;
     border: 0px;
@@ -361,6 +372,6 @@ r {
 }
 
 #button_next_turn:hover {
-    background-color: #626d84;
+    background-color: #9e59ff;
 }
 

@@ -173,6 +173,15 @@ function next_turn() {
     Array.from(document
         .getElementsByClassName("unit_army_list"))
         .forEach(element => element.classList.remove("inactive"))
+
+    element_turn_counter = document
+        .getElementById("turn_counter")
+
+    element_turn_counter
+        .textContent = (parseInt(element_turn_counter
+            .textContent)
+            + 1)
+            .toString()
 }
 
 
