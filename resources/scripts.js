@@ -139,6 +139,8 @@ function update_count_models(
             element_unit
                 .classList
                 .add("destroyed")
+
+            test_next_turn()
         }
         var int_count_models_new = int_count_models_current - 1
     }
@@ -165,6 +167,12 @@ function set_inactive(
         .getElementsByClassName("unit_army_list")[index_row]
         .classList
         .add("inactive")
+
+    test_next_turn()
+}
+
+
+function test_next_turn() {
 
     array_units = Array.from(document
         .getElementsByClassName("unit_army_list"))
