@@ -169,7 +169,7 @@ function set_inactive(
     array_units = Array.from(document
         .getElementsByClassName("unit_army_list"))
 
-    if (!array_units.every(element => element.classList.contains("inactive")))
+    if (!array_units.every(element => element.classList.contains("inactive") || element.classList.contains("destroyed")))
         return;
 
     array_units
