@@ -64,7 +64,7 @@ def get_text_html_army_lists(
                 + ", false)\">-</div></div><div class=\"health_bar\">" \
                 + ("<div class=\"token\" />" \
                     * 8) \
-                + "</div></div><div onclick=\"toggle_inactive(" \
+                + "</div></div><div onclick=\"set_inactive(" \
                 + text_parameters_functions \
                 + ")\">" \
                 + md_units.get_text_html_data_unit(

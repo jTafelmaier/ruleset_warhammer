@@ -156,7 +156,7 @@ function update_count_models(
 }
 
 
-function toggle_inactive(
+function set_inactive(
     text_side,
     index_row) {
 
@@ -164,7 +164,7 @@ function toggle_inactive(
         .getElementById(text_side)
         .getElementsByClassName("unit_army_list")[index_row]
         .classList
-        .toggle("inactive")
+        .add("inactive")
 }
 
 
