@@ -108,10 +108,9 @@ function setup_health_bars() {
 }
 
 
-function update_count_models(
+function decrease_count_models(
     text_side,
-    index_row,
-    bool_increase) {
+    index_row) {
 
     let element_unit = document
         .getElementById(text_side)
@@ -120,29 +119,14 @@ function update_count_models(
     let element_count_models = element_unit
         .getElementsByClassName("count_current")[0]
 
-    var int_count_models_current = parseInt(element_count_models.textContent)
-    let int_count_models_initial = parseInt(element_count_models.getAttribute("initial"))
+    var int_count_models_new = parseInt(element_count_models.textContent) - 1
 
-    if (bool_increase) {
-        if (int_count_models_current >= int_count_models_initial) {
-            return
-        }
-        var int_count_models_new = int_count_models_current + 1
-
+    if (int_count_models_new <= 0) {
         element_unit
             .classList
-            .remove("destroyed")
-    } else {
-        if (int_count_models_current <= 0) {
-            return
-        } else if (int_count_models_current == 1) {
-            element_unit
-                .classList
-                .add("destroyed")
+            .add("destroyed")
 
-            test_next_turn()
-        }
-        var int_count_models_new = int_count_models_current - 1
+        test_next_turn()
     }
 
     element_count_models.textContent = int_count_models_new
