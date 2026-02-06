@@ -165,13 +165,14 @@ function set_inactive(
         .getElementsByClassName("unit_army_list")[index_row]
         .classList
         .add("inactive")
-}
 
-
-function next_turn() {
-
-    Array.from(document
+    array_units = Array.from(document
         .getElementsByClassName("unit_army_list"))
+
+    if (!array_units.every(element => element.classList.contains("inactive")))
+        return;
+
+    array_units
         .forEach(element => element.classList.remove("inactive"))
 
     element_turn_counter = document
