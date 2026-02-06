@@ -267,6 +267,10 @@ r {
     margin-top: 10px;
 }
 
+.unit_army_list .model:hover {
+    box-shadow: inset 0 -50px 50px -20px #9e59ff;
+}
+
 .unit_army_list.destroyed {
     display: none;
 }
