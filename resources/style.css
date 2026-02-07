@@ -199,17 +199,8 @@ r {
     background-image: url("background.png");
     background-size: cover;
     box-shadow: inset 300px 0px 400px -100px #2e3544;
-    border: 2px solid #9fa7ba;
-    border-left: 5px solid #9fa7ba;
-    border-radius: 2px;
-    font-size: 18px;
-    clip-path: polygon(
-        0 0,
-        calc(100% - 15px) 0,
-        100% 15px,
-        100% 100%,
-        0 100%,
-        0 0);
+    border-left: 4px solid #9fa7ba;
+    font-size: large;
 }
 
 .image_unit {
@@ -229,7 +220,7 @@ r {
 .name_unit {
     color: #2e3544;
     background: linear-gradient(0.25turn, #9fa7ba, #6b738400 50%);
-    padding: 1px 5px;
+    padding: 2px 5px;
 }
 
 .model_property {
@@ -257,14 +248,22 @@ r {
 
 #army_lists {
     display: grid;
-    grid-template-columns: 550px 550px;
+    grid-template-columns: 540px 540px;
     gap: 0px 100px;
 }
 
 .unit_army_list {
     display: flex;
-    border-radius: 5px;
+    border-radius: 2px;
     margin-top: 10px;
+    background-color: #2e3544;
+    clip-path: polygon(
+        0 0,
+        calc(100% - 15px) 0,
+        100% 15px,
+        100% 100%,
+        0 100%,
+        0 0);
 }
 
 .unit_army_list .model:hover {
@@ -280,20 +279,15 @@ r {
 }
 
 .unit_state {
-    width: 25px;
+    width: 40px;
     padding: 2px;
-    background-color: #2e3544;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
     user-select: none;
 }
 
 .count_models {
     font-size: large;
-    color: #4a5266;
+    color: #626d84;
     text-align: center;
-    margin-bottom: 15px;
-    padding: 1px;
 }
 
 .count_models:hover {
@@ -306,18 +300,17 @@ r {
     display: flex;
     flex-direction: column;
     padding: 2px;
-    height: 159px;
+    height: 165px;
     border-radius: 2px;
     background-color: #2e3544;
     border: 2px solid #626d84;
-    margin-left: 2px;
-    margin-right: 2px;
+    margin: 5px;
 }
 
 .health_bar .token {
     flex: 1;
     margin-top: 1px;
-    margin-bottom: 1px;
+    margin-bottom: 2px;
     border-radius: 1px;
     background: linear-gradient(0.25turn, #c8e2fc, #8bc5ff 25%, #8bc5ff 75%, #c8e2fc);
     box-shadow: 0 0 5px 2px #5374b7;
