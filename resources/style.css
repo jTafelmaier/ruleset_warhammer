@@ -280,12 +280,26 @@ r {
 }
 
 .unit_state {
-    width: 22px;
+    width: 25px;
     padding: 2px;
     background-color: #2e3544;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
     user-select: none;
+}
+
+.count_models {
+    font-size: large;
+    color: #4a5266;
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 1px;
+}
+
+.count_models:hover {
+    color: white;
+    background-color: red;
+    border-radius: 2px;
 }
 
 .health_bar {
@@ -319,14 +333,6 @@ r {
     box-shadow: none;
 }
 
-.count_models {
-    color: #4a5266;
-    text-align: center;
-    border-radius: 2px;
-    padding: 2px;
-    background-color: #282d3a;
-}
-
 .victory_state {
     font-size: medium;
     font-weight: bold;
@@ -350,24 +356,9 @@ r {
     margin: 4px;
     margin-right: 10px;
     padding: 2px 8px;
-    font-size: medium;
-    background-color: #282d3a;
+    font-size: large;
+    background-color: #2e3544;
+    color: #4a5266;
     border-radius: 2px;
-}
-
-#turn_counter {
-    display: inline-block;
-    border-radius: 2px;
-}
-
-.button_change {
-    color: white;
-    background-color: #535f79;
-    border: 0px;
-    border-radius: 2px;
-}
-
-.button_change:hover {
-    background-color: #9e59ff;
 }
 

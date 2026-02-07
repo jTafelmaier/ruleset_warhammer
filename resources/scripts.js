@@ -39,7 +39,7 @@ function update_points_total(
 
     let int_points_total = Array.from(element_side
         .getElementsByClassName("unit_army_list"))
-        .map(element => parseInt(element.getElementsByClassName("count_current")[0].textContent) * parseInt(element.getAttribute("points_per_model")))
+        .map(element => parseInt(element.getElementsByClassName("count_models")[0].textContent.slice(0,-1)) * parseInt(element.getAttribute("points_per_model")))
         .reduce((a, b) => a + b)
 
     element_side
@@ -117,9 +117,9 @@ function decrease_count_models(
         .getElementsByClassName("unit_army_list")[index_row]
 
     let element_count_models = element_unit
-        .getElementsByClassName("count_current")[0]
+        .getElementsByClassName("count_models")[0]
 
-    var int_count_models_new = parseInt(element_count_models.textContent) - 1
+    var int_count_models_new = parseInt(element_count_models.textContent.slice(0,-1)) - 1
 
     if (int_count_models_new <= 0) {
         element_unit
@@ -130,7 +130,7 @@ function decrease_count_models(
     }
 
     element_count_models.textContent = int_count_models_new
-        .toString()
+        .toString() + "x"
 
     set_health_bar(
         element_unit
