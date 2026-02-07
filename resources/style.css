@@ -274,7 +274,7 @@ r {
     display: none;
 }
 
-.inactive .model{
+.inactive .model {
     filter: opacity(0.4);
 }
 
