@@ -56,11 +56,11 @@ def get_text_html_faction_rules(
                     dict_faction \
                         ["units"]))
 
-        text_html = "<!DOCTYPE html><html><body><div class=\"faction_rules " \
+        text_html = "<div class=\"faction_rules " \
             + name_faction \
             + "\">" \
             + text_html_faction \
-            + "</div></body></html>"
+            + "</div>"
 
         # TODO refactor: duplicate
         soup_faction = bs4.BeautifulSoup(
