@@ -1,7 +1,7 @@
 
 
-from src import md_army_list
-from src import md_faction_rules
+import typing
+
 from src import md_shared
 
 
@@ -9,24 +9,254 @@ from src import md_shared
 
 def generate_htmls():
 
+    list_dicts_factions = md_shared.get_dict_setting("data_factions.json") \
+        ["data"]
+
+    def get_text_html_data_unit(
+        dict_unit:typing.Dict,
+        name_faction:str):
+
+        def get_text_html_attack(
+            dict_attack:typing.Dict):
+
+            return "<tr class=\"model_property\"><td class=\"attack\">" \
+                + dict_attack \
+                    ["range"] \
+                + "</td><td class=\"property\">" \
+                + dict_attack \
+                    ["strength"] \
+                    .__str__() \
+                + " " \
+                + dict_attack \
+                    ["type"] \
+                + "</td></tr>"
+
+        path_image_unit = "/" \
+            .join(
+                [
+                    md_shared.get_text_path_images_faction(name_faction),
+                    "units",
+                    dict_unit \
+                        ["name"] \
+                        + ".png"])
+
+        text_html_rows_attacks = "" \
+            .join(
+                map(
+                    get_text_html_attack,
+                    dict_unit
+                        ["attacks"]))
+
+        return "<div class=\"model\" title=\"" \
+            + str(
+                dict_unit \
+                    ["points_per_model"]) \
+            + " points per model.\"><div class=\"image_unit\" style=\"background-image: url('" \
+            + path_image_unit \
+            + "')\"><div class=\"name_unit\">" \
+            + dict_unit \
+                ["name"] \
+            + "</div><table class=\"data_unit\"><tbody><tr class=\"model_property\"><td class=\"icon\">⛊</td><td class=\"property\">" \
+            + str(
+                dict_unit \
+                    ["armor"]) \
+            + " " \
+            + dict_unit \
+                ["type_armor"] \
+            + "</td></tr><tr class=\"model_property\"><td class=\"icon\">🡆</td><td class=\"property\">" \
+            + str(
+                dict_unit \
+                    ["move"]) \
+            + " " \
+            + dict_unit \
+                ["type_movement"] \
+            + "</td></tr><tr class=\"model_property\"><td class=\"icon\">✧</td><td class=\"property\">" \
+            + ", " \
+                .join(
+                    dict_unit \
+                        ["keywords"]) \
+            + "</td></tr>" \
+            + text_html_rows_attacks \
+            + "</tbody></table></div></div>"
+
+    def get_text_html_faction_rules():
+
+        def get_text_html_button_show_faction(
+            dict_faction:typing.Dict):
+
+            name_faction = dict_faction \
+                ["name"]
+
+            path_image_faction = "/" \
+                .join(
+                    [
+                        md_shared.get_text_path_images_faction(name_faction),
+                        "faction.png"])
+
+            return "<div class=\"container_faction_button " \
+                + name_faction \
+                + "\"><a class=\"preview_faction_button\" href=\"index_" \
+                + name_faction \
+                + ".html\" style=\"background-image: url('" \
+                + path_image_faction \
+                + "')\">" \
+                + name_faction \
+                + "</a></div>"
+
+        def create_html_faction(
+            dict_faction:typing.Dict):
+
+            name_faction = dict_faction \
+                ["name"]
+
+            def get_text_html_unit(
+                dict_unit:typing.Dict):
+
+                return get_text_html_data_unit(
+                        dict_unit=dict_unit,
+                        name_faction=name_faction)
+
+            text_html_faction = "" \
+                .join(
+                    map(
+                        get_text_html_unit,
+                        dict_faction \
+                            ["units"]))
+
+            text_html = "<div class=\"faction_rules " \
+                + name_faction \
+                + "\">" \
+                + text_html_faction \
+                + "</div>"
+
+            soup_faction = md_shared.get_soup(text_html)
+
+            text_html_template = md_shared.get_text_file(
+                [
+                    "src",
+                    "data",
+                    "template_faction.html"])
+
+            soup_full = md_shared.get_soup(text_html_template)
+
+            soup_full \
+                .find(
+                    name="placeholder",
+                    id="id_faction") \
+                .replace_with(soup_faction)
+
+            with open("index_" + name_faction + ".html", mode="w", encoding="utf-8") as file_html:
+                file_html \
+                    .write(
+                        soup_full \
+                            .prettify())
+
+            return
+
+        # TODO refactor
+        list(
+            map(
+                create_html_faction,
+                list_dicts_factions))
+
+        return "<div class=\"selection_factions\">" \
+            + "" \
+                .join(
+                    map(
+                        get_text_html_button_show_faction,
+                        list_dicts_factions)) \
+            + "</div>"
+
+    def get_text_html_army_lists():
+
+        dict_army_lists = md_shared.get_dict_setting("army_lists.json")
+
+        def get_html_army_list(
+            text_side:str):
+
+            dict_army_list = dict_army_lists \
+                [text_side]
+
+            name_faction = dict_army_list \
+                ["faction"]
+
+            dict_faction = next(
+                    filter(
+                        lambda dict_faction: dict_faction["name"] == name_faction,
+                        list_dicts_factions))
+
+            dict_units = dict(
+                    map(
+                        lambda dict_unit: (
+                            dict_unit \
+                                ["name"],
+                            dict_unit),
+                        dict_faction \
+                            ["units"]))
+
+            def get_text_html_unit(
+                pair_dict_unit_army_list:typing.Tuple[int, typing.Dict]):
+
+                int_index_unit, \
+                dict_unit_army_list = pair_dict_unit_army_list
+
+                dict_unit = dict_units \
+                    [
+                        dict_unit_army_list \
+                            ["name"]]
+
+                text_parameters_functions = "'" \
+                    + text_side \
+                    + "', " \
+                    + str(int_index_unit)
+
+                text_count_models = str(
+                    dict_unit_army_list \
+                        ["count_models"])
+
+                return "<div class=\"unit_army_list\" points_per_model=\"" \
+                    + str(dict_unit["points_per_model"]) \
+                    + "\"><div class=\"unit_state\"><div class=\"count_models\" onclick=\"decrease_count_models(" \
+                    + text_parameters_functions \
+                    + ")\">" \
+                    + text_count_models \
+                    + "x</div><div class=\"health_bar\">" \
+                    + ("<div class=\"token\" />" \
+                        * 8) \
+                    + "</div></div><div onclick=\"set_inactive(" \
+                    + text_parameters_functions \
+                    + ")\">" \
+                    + get_text_html_data_unit(
+                        dict_unit=dict_unit,
+                        name_faction=name_faction) \
+                    + "</div></div>"
+
+            return "<div id=\"" \
+                + text_side \
+                + "\"><div class=\"victory_state\"></div><div class=\"army_list\">" \
+                + "" \
+                    .join(
+                        map(
+                            get_text_html_unit,
+                            enumerate(
+                                dict_army_list \
+                                    ["units"]))) \
+                + "</div></div>"
+
+        return get_html_army_list("left") \
+            + get_html_army_list("right")
+
     text_html_template = md_shared.get_text_file(
         [
             "src",
             "data",
             "template_index.html"])
 
-    list_dicts_factions = md_shared.get_dict_setting("data_factions.json") \
-        ["data"]
-
     soup_full = md_shared.get_soup(text_html_template)
 
-    soup_factions = md_shared.get_soup(md_faction_rules.get_text_html_faction_rules(list_dicts_factions))
-
-    soup_army_list = md_shared.get_soup(md_army_list.get_text_html_army_lists(list_dicts_factions))
-
     dict_replacements = {
-        "id_factions": soup_factions,
-        "id_army_lists": soup_army_list}
+        "id_factions": md_shared.get_soup(get_text_html_faction_rules()),
+        "id_army_lists": md_shared.get_soup(get_text_html_army_lists())}
 
     for id_placeholder, soup_replacement in dict_replacements.items():
         soup_full \
@@ -35,12 +265,11 @@ def generate_htmls():
                 id=id_placeholder) \
             .replace_with(soup_replacement)
 
-    text_html_full = soup_full \
-        .prettify()
-
     with open("index.html", mode="w", encoding="utf-8") as file_html:
         file_html \
-            .write(text_html_full)
+            .write(
+                soup_full \
+                    .prettify())
 
     return None
 
