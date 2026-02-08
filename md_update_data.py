@@ -8,6 +8,8 @@ from lib.unary import _dicts
 from lib.unary import _iters
 from lib.unary.main import unary
 
+from src import md_shared
+
 
 
 
@@ -61,15 +63,14 @@ def main():
 
         return None
 
+    dict_factions = md_shared.get_dict_setting("data_factions.json")
+
+    modify_data(dict_factions)
+
     path_data = os.path.join(
             "src",
             "data",
             "data_factions.json")
-
-    with open(path_data, mode="r", encoding="utf-8") as file:
-        dict_factions = json.load(file)
-
-    modify_data(dict_factions)
 
     text_json = json.dumps(
             obj=dict_factions,
