@@ -24,13 +24,14 @@ def main():
                 dict_unit:typing.Dict):
 
                 def re_add_property(
+                    dictionary:typing.Dict,
                     name_property:str):
 
-                    t = dict_unit[name_property]
+                    t = dictionary[name_property]
 
-                    del dict_unit[name_property]
+                    del dictionary[name_property]
 
-                    dict_unit[name_property] = t
+                    dictionary[name_property] = t
 
                 def modify_attack(
                     dict_attack:typing.Dict):
