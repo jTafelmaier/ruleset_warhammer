@@ -39,10 +39,10 @@ def main():
                     return None
 
                 list(
-                    map(
-                        modify_attack,
-                        dict_unit \
-                            ["attacks"]))
+                        map(
+                            modify_attack,
+                            dict_unit \
+                                ["attacks"]))
 
                 return None
 
