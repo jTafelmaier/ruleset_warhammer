@@ -15,7 +15,7 @@ def generate_htmls():
         [
             "src",
             "data",
-            "index_template.html"])
+            "template_index.html"])
 
     list_dicts_factions = md_shared.get_dict_setting("data_factions.json") \
         ["data"]
