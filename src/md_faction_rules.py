@@ -62,10 +62,7 @@ def get_text_html_faction_rules(
             + text_html_faction \
             + "</div>"
 
-        # TODO refactor: duplicate
-        soup_faction = bs4.BeautifulSoup(
-                markup=text_html,
-                features="html.parser")
+        soup_faction = md_shared.get_soup(text_html)
 
         text_html_template = md_shared.get_text_file(
             [
@@ -73,9 +70,7 @@ def get_text_html_faction_rules(
                 "data",
                 "template_faction.html"])
 
-        soup_full = bs4.BeautifulSoup(
-                markup=text_html_template,
-                features="html.parser")
+        soup_full = md_shared.get_soup(text_html_template)
 
         soup_full \
             .find(

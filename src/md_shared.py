@@ -4,6 +4,8 @@ import json
 import os
 import typing
 
+import bs4
+
 
 
 
@@ -42,4 +44,12 @@ def get_text_path_images_faction(
                 "resources",
                 "factions",
                 name_faction])
+
+
+def get_soup(
+    text_html:str):
+
+    return bs4.BeautifulSoup(
+            markup=text_html,
+            features="html.parser")
 
