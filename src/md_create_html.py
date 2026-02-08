@@ -1,7 +1,5 @@
 
 
-import bs4
-
 from src import md_army_list
 from src import md_faction_rules
 from src import md_shared
