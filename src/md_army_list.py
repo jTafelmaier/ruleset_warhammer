@@ -11,10 +11,13 @@ from src import md_shared
 def get_text_html_army_lists(
     list_dicts_factions:typing.List[typing.Dict]):
 
+    dict_army_lists = md_shared.get_dict_setting("army_lists.json")
+
     def get_html_army_list(
         text_side:str):
 
-        dict_army_list = md_shared.get_dict_setting("army_list_" + text_side + ".json")
+        dict_army_list = dict_army_lists \
+            [text_side]
 
         name_faction = dict_army_list \
             ["faction"]
