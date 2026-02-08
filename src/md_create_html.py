@@ -20,17 +20,11 @@ def generate_htmls():
     list_dicts_factions = md_shared.get_dict_setting("data_factions.json") \
         ["data"]
 
-    soup_full = bs4.BeautifulSoup(
-            markup=text_html_template,
-            features="html.parser")
+    soup_full = md_shared.get_soup(text_html_template)
 
-    soup_factions = bs4.BeautifulSoup(
-            markup=md_faction_rules.get_text_html_faction_rules(list_dicts_factions),
-            features="html.parser")
+    soup_factions = md_shared.get_soup(md_faction_rules.get_text_html_faction_rules(list_dicts_factions))
 
-    soup_army_list = bs4.BeautifulSoup(
-            markup=md_army_list.get_text_html_army_lists(list_dicts_factions),
-            features="html.parser")
+    soup_army_list = md_shared.get_soup(md_army_list.get_text_html_army_lists(list_dicts_factions))
 
     dict_replacements = {
         "id_factions": soup_factions,
