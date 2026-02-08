@@ -1,9 +1,6 @@
 
 
-import copy
 import typing
-
-import bs4
 
 from src import md_shared
 from src import md_units
@@ -46,8 +43,8 @@ def get_text_html_faction_rules(
             dict_unit:typing.Dict):
 
             return md_units.get_text_html_data_unit(
-                dict_unit=dict_unit,
-                name_faction=name_faction)
+                    dict_unit=dict_unit,
+                    name_faction=name_faction)
 
         text_html_faction = "" \
             .join(
