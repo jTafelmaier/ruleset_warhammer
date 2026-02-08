@@ -13,6 +13,16 @@ from lib.unary.main import unary
 
 def main():
 
+    def re_add_property(
+        dictionary:typing.Dict,
+        name_property:str):
+
+        t = dictionary[name_property]
+
+        del dictionary[name_property]
+
+        dictionary[name_property] = t
+
     def modify_data(
         dict_factions:typing.Dict):
 
@@ -22,16 +32,6 @@ def main():
 
             def modify_unit(
                 dict_unit:typing.Dict):
-
-                def re_add_property(
-                    dictionary:typing.Dict,
-                    name_property:str):
-
-                    t = dictionary[name_property]
-
-                    del dictionary[name_property]
-
-                    dictionary[name_property] = t
 
                 def modify_attack(
                     dict_attack:typing.Dict):
