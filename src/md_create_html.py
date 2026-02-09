@@ -31,8 +31,10 @@ def generate_htmls():
                     ["strength"] \
                     .__str__() \
                 + " " \
-                + dict_attack \
-                    ["type"] \
+                + " " \
+                    .join(
+                        dict_attack \
+                            ["keywords"]) \
                 + "</div>"
 
         def get_text_html_keywords():

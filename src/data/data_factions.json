@@ -17,13 +17,13 @@
                             "range": "⊹",
                             "hits": 2,
                             "strength": 4,
-                            "type": ""
+                            "keywords": []
                         },
                         {
                             "range": "⚔",
                             "hits": 4,
                             "strength": 6,
-                            "type": ""
+                            "keywords": []
                         }
                     ]
                 },
@@ -39,13 +39,13 @@
                             "range": "⊹",
                             "hits": 2,
                             "strength": 4,
-                            "type": ""
+                            "keywords": []
                         },
                         {
                             "range": "⚔",
                             "hits": 2,
                             "strength": 6,
-                            "type": ""
+                            "keywords": []
                         }
                     ]
                 },
@@ -63,13 +63,13 @@
                             "range": "⊹",
                             "hits": 4,
                             "strength": 4,
-                            "type": ""
+                            "keywords": []
                         },
                         {
                             "range": "⚔",
                             "hits": 4,
                             "strength": 6,
-                            "type": ""
+                            "keywords": []
                         }
                     ]
                 },
@@ -85,7 +85,7 @@
                             "range": "⊹",
                             "hits": 4,
                             "strength": 4,
-                            "type": ""
+                            "keywords": []
                         }
                     ]
                 },
@@ -101,13 +101,13 @@
                             "range": "⊹",
                             "hits": 2,
                             "strength": 4,
-                            "type": ""
+                            "keywords": []
                         },
                         {
                             "range": "⛶",
                             "hits": 1,
                             "strength": 10,
-                            "type": ""
+                            "keywords": []
                         }
                     ]
                 },
@@ -123,13 +123,13 @@
                             "range": "⊹",
                             "hits": 8,
                             "strength": 4,
-                            "type": ""
+                            "keywords": []
                         },
                         {
                             "range": "⊹",
                             "hits": 1,
                             "strength": 11,
-                            "type": ""
+                            "keywords": []
                         }
                     ]
                 },
@@ -148,13 +148,13 @@
                             "range": "⛶",
                             "hits": 4,
                             "strength": 4,
-                            "type": ""
+                            "keywords": []
                         },
                         {
                             "range": "⚔",
                             "hits": 4,
                             "strength": 6,
-                            "type": ""
+                            "keywords": []
                         }
                     ]
                 },
@@ -174,7 +174,7 @@
                             "range": "⚔",
                             "hits": 4,
                             "strength": 6,
-                            "type": ""
+                            "keywords": []
                         }
                     ]
                 },
@@ -193,7 +193,7 @@
                             "range": "⚔",
                             "hits": 4,
                             "strength": 6,
-                            "type": ""
+                            "keywords": []
                         }
                     ]
                 },
@@ -211,13 +211,13 @@
                             "range": "⊹",
                             "hits": 2,
                             "strength": 4,
-                            "type": ""
+                            "keywords": []
                         },
                         {
                             "range": "⚔",
                             "hits": 4,
                             "strength": 6,
-                            "type": ""
+                            "keywords": []
                         }
                     ]
                 },
@@ -233,13 +233,13 @@
                             "range": "⊹",
                             "hits": 2,
                             "strength": 4,
-                            "type": ""
+                            "keywords": []
                         },
                         {
                             "range": "⚔",
                             "hits": 4,
                             "strength": 6,
-                            "type": ""
+                            "keywords": []
                         }
                     ]
                 },
@@ -255,7 +255,7 @@
                             "range": "⊹",
                             "hits": 4,
                             "strength": 4,
-                            "type": ""
+                            "keywords": []
                         }
                     ]
                 },
@@ -275,13 +275,13 @@
                             "range": "⊹",
                             "hits": 2,
                             "strength": 4,
-                            "type": ""
+                            "keywords": []
                         },
                         {
                             "range": "⚔",
                             "hits": 4,
                             "strength": 6,
-                            "type": ""
+                            "keywords": []
                         }
                     ]
                 },
@@ -300,13 +300,13 @@
                             "range": "⛶",
                             "hits": 4,
                             "strength": 4,
-                            "type": ""
+                            "keywords": []
                         },
                         {
                             "range": "⚔",
                             "hits": 4,
                             "strength": 6,
-                            "type": ""
+                            "keywords": []
                         }
                     ]
                 }
@@ -329,7 +329,7 @@
                             "range": "⚔",
                             "hits": 4,
                             "strength": 6,
-                            "type": ""
+                            "keywords": []
                         }
                     ]
                 },
@@ -348,7 +348,9 @@
                             "range": "⚔",
                             "hits": 4,
                             "strength": 6,
-                            "type": "volume"
+                            "keywords": [
+                                "volume"
+                            ]
                         }
                     ]
                 },
@@ -366,13 +368,13 @@
                             "range": "⚔",
                             "hits": 4,
                             "strength": 5,
-                            "type": ""
+                            "keywords": []
                         },
                         {
                             "range": "⚔",
                             "hits": 1,
                             "strength": 10,
-                            "type": ""
+                            "keywords": []
                         }
                     ]
                 },
@@ -388,7 +390,9 @@
                             "range": "⚔",
                             "hits": 4,
                             "strength": 5,
-                            "type": "volume"
+                            "keywords": [
+                                "volume"
+                            ]
                         }
                     ]
                 },
@@ -404,13 +408,13 @@
                             "range": "⊹",
                             "hits": 2,
                             "strength": 4,
-                            "type": ""
+                            "keywords": []
                         },
                         {
                             "range": "⚔",
                             "hits": 4,
                             "strength": 5,
-                            "type": ""
+                            "keywords": []
                         }
                     ]
                 },
@@ -426,7 +430,7 @@
                             "range": "⚔",
                             "hits": 4,
                             "strength": 2,
-                            "type": ""
+                            "keywords": []
                         }
                     ]
                 },
@@ -445,13 +449,13 @@
                             "range": "⊹",
                             "hits": 4,
                             "strength": 4,
-                            "type": ""
+                            "keywords": []
                         },
                         {
                             "range": "⚔",
                             "hits": 1,
                             "strength": 10,
-                            "type": ""
+                            "keywords": []
                         }
                     ]
                 },
@@ -469,13 +473,13 @@
                             "range": "⊹",
                             "hits": 2,
                             "strength": 4,
-                            "type": ""
+                            "keywords": []
                         },
                         {
                             "range": "⚔",
                             "hits": 4,
                             "strength": 6,
-                            "type": ""
+                            "keywords": []
                         }
                     ]
                 },
@@ -491,7 +495,7 @@
                             "range": "⊹",
                             "hits": 4,
                             "strength": 4,
-                            "type": ""
+                            "keywords": []
                         }
                     ]
                 },
@@ -507,13 +511,13 @@
                             "range": "⊹",
                             "hits": 2,
                             "strength": 4,
-                            "type": ""
+                            "keywords": []
                         },
                         {
                             "range": "⚔",
                             "hits": 2,
                             "strength": 6,
-                            "type": ""
+                            "keywords": []
                         }
                     ]
                 },
@@ -529,7 +533,7 @@
                             "range": "⊹",
                             "hits": 8,
                             "strength": 8,
-                            "type": ""
+                            "keywords": []
                         }
                     ]
                 },
@@ -545,13 +549,15 @@
                             "range": "⊹",
                             "hits": 8,
                             "strength": 6,
-                            "type": "volume"
+                            "keywords": [
+                                "volume"
+                            ]
                         },
                         {
                             "range": "⊹",
                             "hits": 2,
                             "strength": 11,
-                            "type": ""
+                            "keywords": []
                         }
                     ]
                 },
@@ -570,13 +576,13 @@
                             "range": "⊹",
                             "hits": 2,
                             "strength": 4,
-                            "type": ""
+                            "keywords": []
                         },
                         {
                             "range": "⊹",
                             "hits": 1,
                             "strength": 7,
-                            "type": ""
+                            "keywords": []
                         }
                     ]
                 }
@@ -600,13 +606,13 @@
                             "range": "⊹",
                             "hits": 2,
                             "strength": 7,
-                            "type": ""
+                            "keywords": []
                         },
                         {
                             "range": "⚔",
                             "hits": 8,
                             "strength": 7,
-                            "type": ""
+                            "keywords": []
                         }
                     ]
                 },
@@ -626,7 +632,7 @@
                             "range": "⊹",
                             "hits": 6,
                             "strength": 5,
-                            "type": ""
+                            "keywords": []
                         }
                     ]
                 },
@@ -644,7 +650,7 @@
                             "range": "⚔",
                             "hits": 2,
                             "strength": 8,
-                            "type": ""
+                            "keywords": []
                         }
                     ]
                 },
@@ -662,7 +668,7 @@
                             "range": "⚔",
                             "hits": 4,
                             "strength": 6,
-                            "type": ""
+                            "keywords": []
                         }
                     ]
                 },
@@ -678,7 +684,7 @@
                             "range": "⊹",
                             "hits": 1,
                             "strength": 11,
-                            "type": ""
+                            "keywords": []
                         }
                     ]
                 },
@@ -694,7 +700,9 @@
                             "range": "⊹",
                             "hits": 4,
                             "strength": 6,
-                            "type": "volume"
+                            "keywords": [
+                                "volume"
+                            ]
                         }
                     ]
                 }
