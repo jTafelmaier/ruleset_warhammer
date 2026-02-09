@@ -730,7 +730,7 @@
                 {
                     "name": "Nekrosor Ammentar",
                     "points_per_model": 250,
-                    "armor": 8,
+                    "armor": 7,
                     "move": 25,
                     "type_movement": "",
                     "keywords": [
