@@ -121,8 +121,8 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "hits": 4,
-                            "strength": 5,
+                            "hits": 8,
+                            "strength": 4,
                             "type": ""
                         },
                         {
