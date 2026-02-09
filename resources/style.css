@@ -212,16 +212,15 @@ r {
 
 .name_unit {
     color: rgb(205, 204, 216);
-    padding: 2px;
 }
 
 .armor {
-    color: #91b2f3;
-    background: #4a5266;
+    display: inline-block;
+    color: #d2def6;
+    background: #626d84;
     text-align: center;
-    border-radius: 2px;
-    padding: 0px 2px;
-    margin-right: 4px;
+    border-bottom-right-radius: 2px;
+    padding: 0px 5px;
 }
 
 .data_unit {

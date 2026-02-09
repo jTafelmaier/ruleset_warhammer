@@ -24,6 +24,10 @@ def generate_htmls():
                     ["range"] \
                 + "</td><td class=\"property\">" \
                 + dict_attack \
+                    ["hits"] \
+                    .__str__() \
+                + "x " \
+                + dict_attack \
                     ["strength"] \
                     .__str__() \
                 + " " \

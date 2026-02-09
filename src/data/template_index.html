@@ -192,30 +192,28 @@
                                 <div class="indented">
                                     Weapon: <b>strength</b> += 1.
                                 </div>
-                                If the weapon has <b>single</b>:
-                                <div class="indented">
-                                    This model's attack ends when one model in the target unit is destroyed.
-                                </div>
                                 <br/>
-                                <r>damage</r> = 2^(weapon: <b>strength</b> - target unit: <b><span class="icon">⛊</span>armor</b>) + fractional damage
-                                <br/>
-                                <br/>
-                                If <r>damage</r> < 1:
+                                Repeat for weapon: <b>hits</b>:
                                 <div class="indented">
-                                    If the unit does not have <b>shielded</b>:
-                                    <div class="indented">
-                                        fractional damage = <r>damage</r>
-                                    </div>
-                                </div>
-                                Else:
-                                <div class="indented">
-                                    Reduce target unit: <b>health</b> by <r>damage</r> mod 8.
+                                    <r>damage</r> = 2^(weapon: <b>strength</b> - target unit: <b><span class="icon">⛊</span>armor</b>) + fractional damage
                                     <br/>
-                                    If target unit: <b>health</b> &le; 0:
+                                    <br/>
+                                    If <r>damage</r> < 1:
                                     <div class="indented">
-                                        Destroy 1 model in the target unit.
+                                        If the unit does not have <b>shielded</b>:
+                                        <div class="indented">
+                                            fractional damage = <r>damage</r>
+                                        </div>
                                     </div>
-                                    Destroy <r>damage</r> / 8 models in the target unit.
+                                    Else:
+                                    <div class="indented">
+                                        Reduce target unit: <b>health</b> by <r>damage</r> mod 8.
+                                        <br/>
+                                        If target unit: <b>health</b> &le; 0:
+                                        <div class="indented">
+                                            Destroy 1 model in the target unit.
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
