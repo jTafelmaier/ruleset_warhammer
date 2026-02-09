@@ -31,6 +31,18 @@ def generate_htmls():
                     ["type"] \
                 + "</td></tr>"
 
+        def get_text_html_keywords():
+
+            if len(dict_unit["keywords"]) == 0:
+                return ""
+
+            return "<tr class=\"model_property\"><td/><td class=\"property\">" \
+                + "<br/>" \
+                    .join(
+                        dict_unit \
+                            ["keywords"]) \
+                + "</td></tr>"
+
         path_image_unit = "/" \
             .join(
                 [
@@ -53,28 +65,22 @@ def generate_htmls():
                     ["points_per_model"]) \
             + " points per model.\"><div class=\"image_unit\" style=\"background-image: url('" \
             + path_image_unit \
-            + "')\"><div class=\"name_unit\">" \
-            + dict_unit \
-                ["name"] \
-            + "</div><table class=\"data_unit\"><tbody><tr class=\"model_property\"><td class=\"icon\">⛊</td><td class=\"property\">" \
+            + "')\"><div class=\"name_unit\"><span class=\"armor\">⛊" \
             + str(
                 dict_unit \
                     ["armor"]) \
-            + " " \
+            + "</span>" \
             + dict_unit \
-                ["type_armor"] \
-            + "</td></tr><tr class=\"model_property\"><td class=\"icon\">🡆</td><td class=\"property\">" \
+                ["name"] \
+            + "</div><table class=\"data_unit\"><tbody>" \
+            + get_text_html_keywords() \
+            + "<tr class=\"model_property\"><td class=\"icon\">🡆</td><td class=\"property\">" \
             + str(
                 dict_unit \
                     ["move"]) \
             + " " \
             + dict_unit \
                 ["type_movement"] \
-            + "</td></tr><tr class=\"model_property\"><td class=\"icon\">✧</td><td class=\"property\">" \
-            + ", " \
-                .join(
-                    dict_unit \
-                        ["keywords"]) \
             + "</td></tr>" \
             + text_html_rows_attacks \
             + "</tbody></table></div></div>"
@@ -216,13 +222,13 @@ def generate_htmls():
 
                 return "<div class=\"unit_army_list\" points_per_model=\"" \
                     + str(dict_unit["points_per_model"]) \
-                    + "\"><div class=\"unit_state\"><div class=\"count_models\" onclick=\"decrease_count_models(" \
+                    + "\"><div class=\"unit_state\"><div class=\"health_bar\">" \
+                    + ("<div class=\"token\" />" \
+                        * 8) \
+                    + "</div><div class=\"count_models\" onclick=\"decrease_count_models(" \
                     + text_parameters_functions \
                     + ")\">" \
                     + text_count_models \
-                    + "x</div><div class=\"health_bar\">" \
-                    + ("<div class=\"token\" />" \
-                        * 8) \
                     + "</div></div><div onclick=\"set_inactive(" \
                     + text_parameters_functions \
                     + ")\">" \

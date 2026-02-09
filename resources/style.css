@@ -194,12 +194,11 @@ r {
 }
 
 .model {
-    width: 500px;
+    width: 510px;
     height: 210px;
     background-image: url("background.png");
     background-size: cover;
     box-shadow: inset 300px 0px 400px -100px #2e3544;
-    border-left: 4px solid #9fa7ba;
     font-size: large;
 }
 
@@ -211,21 +210,30 @@ r {
     background-position: 100%;
 }
 
-.data_unit {
-    width: 250px;
-    border-collapse: separate;
-    border-spacing: 0px 1.5px;
+.name_unit {
+    color: rgb(205, 204, 216);
+    padding: 2px;
 }
 
-.name_unit {
-    color: #2e3544;
-    background: linear-gradient(0.25turn, #9fa7ba, #6b738400 50%);
-    padding: 2px 5px;
+.armor {
+    color: #91b2f3;
+    background: #4a5266;
+    text-align: center;
+    border-radius: 2px;
+    padding: 0px 2px;
+    margin-right: 4px;
+}
+
+.data_unit {
+    width: 150px;
+    border-collapse: separate;
+    border-spacing: 0px 1.5px;
+    padding: 4px;
 }
 
 .model_property {
     color: #2e3544;
-    background: linear-gradient(0.25turn, #80899c9d, #555c6c00);
+    background: linear-gradient(0.25turn, #555c6c00,  #80899c9d 15px, #555c6c00);
     height: 28px;
 }
 
@@ -238,7 +246,7 @@ r {
 
 .model_property .attack {
     text-align: center;
-    color: #282d3a;
+    color: white;
 }
 
 .keyword {
@@ -252,11 +260,39 @@ r {
     gap: 0px 100px;
 }
 
+#turn_information {
+    float: right;
+    margin: 4px;
+    margin-right: 10px;
+    padding: 2px 8px;
+    font-size: large;
+    background-color: #2e3544;
+    color: #4a5266;
+    border-radius: 2px;
+}
+
+.victory_state {
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    width: 70px;
+    color: white;
+    border-radius: 2px;
+    padding: 2px 4px 2px 4px;
+}
+
+.left_winning #left .victory_state, .right_winning #right .victory_state {
+    background: linear-gradient(#4e6bfb 0px, #626d84 50px);
+}
+
+.draw .victory_state, .left_winning #right .victory_state, .right_winning #left .victory_state {
+    background: linear-gradient(#919eba 0px, #626d84 50px);
+}
+
 .unit_army_list {
     display: flex;
     border-radius: 2px;
     margin-top: 10px;
-    background-color: #2e3544;
     clip-path: polygon(
         0 0,
         calc(100% - 15px) 0,
@@ -279,32 +315,21 @@ r {
 }
 
 .unit_state {
-    width: 40px;
-    padding: 2px;
+    width: 24px;
     user-select: none;
-}
-
-.count_models {
-    font-size: large;
-    color: #626d84;
-    text-align: center;
-}
-
-.count_models:hover {
-    color: white;
-    background-color: red;
-    border-radius: 2px;
+    background-color: #626d84;
+    border-radius: 4px;
 }
 
 .health_bar {
     display: flex;
     flex-direction: column;
     padding: 2px;
-    height: 165px;
-    border-radius: 2px;
+    height: 178px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
     background-color: #2e3544;
     border: 2px solid #626d84;
-    margin: 5px;
 }
 
 .health_bar .token {
@@ -326,32 +351,19 @@ r {
     box-shadow: none;
 }
 
-.victory_state {
-    font-size: medium;
-    font-weight: bold;
-    text-align: center;
-    width: 70px;
-    color: white;
-    border-radius: 2px;
-    padding: 2px 4px 2px 4px;
-}
-
-.left_winning #left .victory_state, .right_winning #right .victory_state {
-    background: linear-gradient(#4e6bfb 0px, #626d84 50px);
-}
-
-.draw .victory_state, .left_winning #right .victory_state, .right_winning #left .victory_state {
-    background: linear-gradient(#919eba 0px, #626d84 50px);
-}
-
-#turn_information {
-    float: right;
-    margin: 4px;
-    margin-right: 10px;
-    padding: 2px 8px;
+.count_models {
     font-size: large;
-    background-color: #2e3544;
-    color: #4a5266;
-    border-radius: 2px;
+    font-weight: bold;
+    color: #3b404e50;
+    background-color: #626d84;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    text-align: center;
+}
+
+.count_models:hover {
+    color: white;
+    background: linear-gradient(0.25turn, #fcc8c8, #ff4646 25%, #ff4646 75%, #fcc8c8);
+    box-shadow: 0 0 5px 2px #ff4646;
 }
 

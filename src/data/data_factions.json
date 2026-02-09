@@ -8,7 +8,6 @@
                     "points_per_model": 50,
                     "armor": 4,
                     "move": 25,
-                    "type_armor": "",
                     "type_movement": "fly",
                     "keywords": [
                         "initiative"
@@ -31,7 +30,6 @@
                     "points_per_model": 25,
                     "armor": 4,
                     "move": 25,
-                    "type_armor": "",
                     "type_movement": "fly",
                     "keywords": [],
                     "attacks": [
@@ -52,7 +50,6 @@
                     "points_per_model": 50,
                     "armor": 4,
                     "move": 15,
-                    "type_armor": "",
                     "type_movement": "",
                     "keywords": [
                         "initiative"
@@ -75,7 +72,6 @@
                     "points_per_model": 25,
                     "armor": 4,
                     "move": 15,
-                    "type_armor": "",
                     "type_movement": "",
                     "keywords": [],
                     "attacks": [
@@ -91,7 +87,6 @@
                     "points_per_model": 25,
                     "armor": 4,
                     "move": 15,
-                    "type_armor": "",
                     "type_movement": "",
                     "keywords": [],
                     "attacks": [
@@ -112,7 +107,6 @@
                     "points_per_model": 200,
                     "armor": 8,
                     "move": 25,
-                    "type_armor": "",
                     "type_movement": "",
                     "keywords": [],
                     "attacks": [
@@ -133,7 +127,6 @@
                     "points_per_model": 100,
                     "armor": 5,
                     "move": 10,
-                    "type_armor": "",
                     "type_movement": "",
                     "keywords": [
                         "initiative",
@@ -157,11 +150,11 @@
                     "points_per_model": 100,
                     "armor": 5,
                     "move": 10,
-                    "type_armor": "shielded",
                     "type_movement": "",
                     "keywords": [
                         "initiative",
-                        "deepstrike"
+                        "deepstrike",
+                        "shielded"
                     ],
                     "attacks": [
                         {
@@ -176,10 +169,10 @@
                     "points_per_model": 50,
                     "armor": 5,
                     "move": 10,
-                    "type_armor": "shielded",
                     "type_movement": "",
                     "keywords": [
-                        "deepstrike"
+                        "deepstrike",
+                        "shielded"
                     ],
                     "attacks": [
                         {
@@ -194,7 +187,6 @@
                     "points_per_model": 50,
                     "armor": 4,
                     "move": 15,
-                    "type_armor": "",
                     "type_movement": "",
                     "keywords": [
                         "initiative"
@@ -217,7 +209,6 @@
                     "points_per_model": 25,
                     "armor": 4,
                     "move": 15,
-                    "type_armor": "",
                     "type_movement": "",
                     "keywords": [],
                     "attacks": [
@@ -238,7 +229,6 @@
                     "points_per_model": 25,
                     "armor": 4,
                     "move": 15,
-                    "type_armor": "",
                     "type_movement": "",
                     "keywords": [],
                     "attacks": [
@@ -254,11 +244,11 @@
                     "points_per_model": 125,
                     "armor": 4,
                     "move": 25,
-                    "type_armor": "stealth",
                     "type_movement": "fly",
                     "keywords": [
                         "initiative",
-                        "deepstrike"
+                        "deepstrike",
+                        "stealth"
                     ],
                     "attacks": [
                         {
@@ -278,7 +268,6 @@
                     "points_per_model": 100,
                     "armor": 4,
                     "move": 15,
-                    "type_armor": "",
                     "type_movement": "",
                     "keywords": [
                         "initiative",
@@ -307,10 +296,10 @@
                     "points_per_model": 150,
                     "armor": 5,
                     "move": 20,
-                    "type_armor": "shielded",
                     "type_movement": "",
                     "keywords": [
-                        "initiative"
+                        "initiative",
+                        "shielded"
                     ],
                     "attacks": [
                         {
@@ -325,10 +314,10 @@
                     "points_per_model": 75,
                     "armor": 5,
                     "move": 20,
-                    "type_armor": "shielded",
                     "type_movement": "",
                     "keywords": [
-                        "initiative"
+                        "initiative",
+                        "shielded"
                     ],
                     "attacks": [
                         {
@@ -343,7 +332,6 @@
                     "points_per_model": 75,
                     "armor": 5,
                     "move": 20,
-                    "type_armor": "",
                     "type_movement": "",
                     "keywords": [
                         "initiative"
@@ -366,7 +354,6 @@
                     "points_per_model": 75,
                     "armor": 5,
                     "move": 40,
-                    "type_armor": "",
                     "type_movement": "fly",
                     "keywords": [
                         "initiative"
@@ -384,7 +371,6 @@
                     "points_per_model": 300,
                     "armor": 8,
                     "move": 25,
-                    "type_armor": "",
                     "type_movement": "",
                     "keywords": [],
                     "attacks": [
@@ -405,7 +391,6 @@
                     "points_per_model": 400,
                     "armor": 9,
                     "move": 40,
-                    "type_armor": "",
                     "type_movement": "fly",
                     "keywords": [],
                     "attacks": [
@@ -421,7 +406,6 @@
                     "points_per_model": 400,
                     "armor": 10,
                     "move": 40,
-                    "type_armor": "",
                     "type_movement": "fly",
                     "keywords": [
                         "transport",
@@ -445,7 +429,6 @@
                     "points_per_model": 125,
                     "armor": 5,
                     "move": 25,
-                    "type_armor": "",
                     "type_movement": "",
                     "keywords": [
                         "initiative"
@@ -463,7 +446,6 @@
                     "points_per_model": 75,
                     "armor": 5,
                     "move": 20,
-                    "type_armor": "",
                     "type_movement": "",
                     "keywords": [
                         "initiative",
@@ -482,7 +464,6 @@
                     "points_per_model": 50,
                     "armor": 5,
                     "move": 20,
-                    "type_armor": "",
                     "type_movement": "",
                     "keywords": [
                         "deepstrike"
@@ -505,7 +486,6 @@
                     "points_per_model": 25,
                     "armor": 5,
                     "move": 20,
-                    "type_armor": "",
                     "type_movement": "",
                     "keywords": [],
                     "attacks": [
@@ -521,7 +501,6 @@
                     "points_per_model": 25,
                     "armor": 4,
                     "move": 20,
-                    "type_armor": "",
                     "type_movement": "",
                     "keywords": [],
                     "attacks": [
@@ -542,7 +521,6 @@
                     "points_per_model": 10,
                     "armor": 1,
                     "move": 10,
-                    "type_armor": "",
                     "type_movement": "",
                     "keywords": [],
                     "attacks": [
@@ -558,7 +536,6 @@
                     "points_per_model": 75,
                     "armor": 5,
                     "move": 10,
-                    "type_armor": "",
                     "type_movement": "",
                     "keywords": [
                         "initiative",
@@ -582,7 +559,6 @@
                     "points_per_model": 50,
                     "armor": 5,
                     "move": 10,
-                    "type_armor": "",
                     "type_movement": "",
                     "keywords": [
                         "deepstrike"
@@ -605,7 +581,6 @@
                     "points_per_model": 25,
                     "armor": 4,
                     "move": 15,
-                    "type_armor": "",
                     "type_movement": "",
                     "keywords": [],
                     "attacks": [
@@ -621,7 +596,6 @@
                     "points_per_model": 25,
                     "armor": 4,
                     "move": 25,
-                    "type_armor": "",
                     "type_movement": "fly",
                     "keywords": [],
                     "attacks": [
@@ -642,7 +616,6 @@
                     "points_per_model": 200,
                     "armor": 8,
                     "move": 0,
-                    "type_armor": "",
                     "type_movement": "",
                     "keywords": [],
                     "attacks": [
@@ -658,7 +631,6 @@
                     "points_per_model": 400,
                     "armor": 10,
                     "move": 25,
-                    "type_armor": "",
                     "type_movement": "",
                     "keywords": [],
                     "attacks": [
@@ -679,10 +651,10 @@
                     "points_per_model": 100,
                     "armor": 4,
                     "move": 15,
-                    "type_armor": "stealth",
                     "type_movement": "",
                     "keywords": [
-                        "deepstrike"
+                        "deepstrike",
+                        "stealth"
                     ],
                     "attacks": [
                         {
@@ -702,10 +674,10 @@
                     "points_per_model": 250,
                     "armor": 8,
                     "move": 25,
-                    "type_armor": "stealth",
                     "type_movement": "",
                     "keywords": [
-                        "initiative"
+                        "initiative",
+                        "stealth"
                     ],
                     "attacks": [
                         {
@@ -725,11 +697,11 @@
                     "points_per_model": 125,
                     "armor": 5,
                     "move": 15,
-                    "type_armor": "stealth",
                     "type_movement": "",
                     "keywords": [
                         "initiative",
-                        "deepstrike"
+                        "deepstrike",
+                        "stealth"
                     ],
                     "attacks": [
                         {
@@ -744,9 +716,10 @@
                     "points_per_model": 50,
                     "armor": 5,
                     "move": 15,
-                    "type_armor": "shielded",
                     "type_movement": "",
-                    "keywords": [],
+                    "keywords": [
+                        "shielded"
+                    ],
                     "attacks": [
                         {
                             "range": "⚔",
@@ -760,7 +733,6 @@
                     "points_per_model": 50,
                     "armor": 4,
                     "move": 25,
-                    "type_armor": "",
                     "type_movement": "",
                     "keywords": [
                         "initiative"
@@ -778,7 +750,6 @@
                     "points_per_model": 75,
                     "armor": 6,
                     "move": 15,
-                    "type_armor": "",
                     "type_movement": "",
                     "keywords": [],
                     "attacks": [
@@ -794,7 +765,6 @@
                     "points_per_model": 75,
                     "armor": 6,
                     "move": 15,
-                    "type_armor": "",
                     "type_movement": "",
                     "keywords": [],
                     "attacks": [
