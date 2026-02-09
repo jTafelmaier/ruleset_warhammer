@@ -702,7 +702,7 @@
                     "points_per_model": 250,
                     "armor": 8,
                     "move": 25,
-                    "type_armor": "",
+                    "type_armor": "stealth",
                     "type_movement": "",
                     "keywords": [
                         "initiative"
@@ -715,7 +715,7 @@
                         },
                         {
                             "range": "⚔",
-                            "strength": 11,
+                            "strength": 10,
                             "type": ""
                         }
                     ]
