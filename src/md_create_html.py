@@ -19,10 +19,10 @@ def generate_htmls():
         def get_text_html_attack(
             dict_attack:typing.Dict):
 
-            return "<tr class=\"model_property\"><td class=\"attack\">" \
+            return "<div class=\"model_property\"><span class=\"icon\">" \
                 + dict_attack \
                     ["range"] \
-                + "</td><td class=\"property\">" \
+                + "</span>" \
                 + dict_attack \
                     ["hits"] \
                     .__str__() \
@@ -33,19 +33,19 @@ def generate_htmls():
                 + " " \
                 + dict_attack \
                     ["type"] \
-                + "</td></tr>"
+                + "</div>"
 
         def get_text_html_keywords():
 
             if len(dict_unit["keywords"]) == 0:
                 return ""
 
-            return "<tr class=\"model_property\"><td/><td class=\"property\">" \
+            return "<div class=\"model_property\">" \
                 + "<br/>" \
                     .join(
                         dict_unit \
                             ["keywords"]) \
-                + "</td></tr>"
+                + "</div>"
 
         path_image_unit = "/" \
             .join(
@@ -69,25 +69,25 @@ def generate_htmls():
                     ["points_per_model"]) \
             + " points per model.\"><div class=\"image_unit\" style=\"background-image: url('" \
             + path_image_unit \
-            + "')\"><div class=\"name_unit\"><span class=\"armor\">⛊" \
+            + "')\"><div class=\"name_unit\"><span class=\"armor\">[" \
             + str(
                 dict_unit \
                     ["armor"]) \
-            + "</span>" \
+            + "]</span>" \
             + dict_unit \
                 ["name"] \
-            + "</div><table class=\"data_unit\"><tbody>" \
+            + "</div><div class=\"data_unit\">" \
             + get_text_html_keywords() \
-            + "<tr class=\"model_property\"><td class=\"icon\">🡆</td><td class=\"property\">" \
+            + "<div class=\"model_property\"><span class=\"icon\">🡆</span>" \
             + str(
                 dict_unit \
                     ["move"]) \
             + " " \
             + dict_unit \
                 ["type_movement"] \
-            + "</td></tr>" \
+            + "</div>" \
             + text_html_rows_attacks \
-            + "</tbody></table></div></div>"
+            + "</div></div></div>"
 
     def get_text_html_faction_rules():
 

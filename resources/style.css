@@ -233,19 +233,15 @@ r {
 .model_property {
     color: #2e3544;
     background: linear-gradient(0.25turn, #555c6c00,  #80899c9d 15px, #555c6c00);
-    height: 28px;
+    padding-left: 10px;
+    margin-top: 2px;
 }
 
 .model_property .icon {
+    display: inline-block;
     text-align: center;
-    font-weight: bold;
     color: white;
     width: 1.5em;
-}
-
-.model_property .attack {
-    text-align: center;
-    color: white;
 }
 
 .keyword {
