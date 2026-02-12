@@ -210,43 +210,22 @@ r {
     background-position: 100%;
 }
 
-.name_unit {
-    color: rgb(205, 204, 216);
-}
-
-.armor {
-    display: inline-block;
-    color: #d2def6;
-    background: #626d84;
-    text-align: center;
-    border-bottom-right-radius: 2px;
-    padding: 0px 5px;
-}
-
 .data_unit {
-    width: 150px;
-    border-collapse: separate;
-    border-spacing: 0px 1.5px;
+    width: 280px;
     padding: 4px;
 }
 
 .model_property {
     color: #2e3544;
-    background: linear-gradient(0.25turn, #555c6c00,  #80899c9d 15px, #555c6c00);
+    background: linear-gradient(0.25turn, #80899c9d 15px, #555c6c00);
     padding-left: 10px;
-    margin-top: 2px;
 }
 
 .model_property .icon {
     display: inline-block;
     text-align: center;
     color: white;
-    width: 1.5em;
-}
-
-.keyword {
-    border-radius: 2px;
-    margin-right: 2px;
+    width: 1em;
 }
 
 #army_lists {
@@ -315,7 +294,8 @@ r {
     user-select: none;
     color: #3b404e50;
     background-color: #2e3544;
-    border-radius: 4px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
 }
 
 .unit_state.hover_destroy {
@@ -327,10 +307,10 @@ r {
     display: flex;
     flex-direction: column;
     padding: 2px;
-    height: 175px;
+    height: 172px;
     border-radius: 2px;
     background-color: #2e3544;
-    border: 2px solid #535f79;
+    border: 2px solid #626d84;
     margin: 2px;
 }
 

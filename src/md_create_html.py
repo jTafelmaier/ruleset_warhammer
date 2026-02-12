@@ -71,15 +71,14 @@ def generate_htmls():
                     ["points_per_model"]) \
             + " points per model.\"><div class=\"image_unit\" style=\"background-image: url('" \
             + path_image_unit \
-            + "')\"><div class=\"name_unit\"><span class=\"armor\">[" \
+            + "')\"><div class=\"data_unit\"><div class=\"model_property\">" \
+            + dict_unit \
+                ["name"] \
+            + "</div><div class=\"model_property\"><span class=\"icon\">⛊</span>" \
             + str(
                 dict_unit \
                     ["armor"]) \
-            + "]</span>" \
-            + dict_unit \
-                ["name"] \
-            + "</div><div class=\"data_unit\">" \
-            + get_text_html_keywords() \
+            + "</div>" \
             + "<div class=\"model_property\"><span class=\"icon\">🡆</span>" \
             + str(
                 dict_unit \
@@ -89,6 +88,7 @@ def generate_htmls():
                 ["type_movement"] \
             + "</div>" \
             + text_html_rows_attacks \
+            + get_text_html_keywords() \
             + "</div></div></div>"
 
     def get_text_html_faction_rules():
