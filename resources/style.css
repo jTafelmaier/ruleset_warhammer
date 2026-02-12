@@ -310,27 +310,27 @@ r {
 }
 
 .unit_state {
-    width: 24px;
+    width: 26px;
     font-size: large;
     user-select: none;
     color: #3b404e50;
-    background-color: #626d84;
+    background-color: #2e3544;
     border-radius: 4px;
 }
 
 .unit_state.hover_destroy {
     color: white;
-    background: linear-gradient(0.25turn, #fcc8c8, #ff4646 25%, #ff4646 75%, #fcc8c8);
+    background: linear-gradient(0.25turn, #ff7777, #ff4646 25%, #ff4646 75%, #ff7777);
 }
 
 .health_bar {
     display: flex;
     flex-direction: column;
     padding: 2px;
-    height: 178px;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
+    height: 175px;
+    border-radius: 2px;
     background-color: #2e3544;
+    border: 2px solid #535f79;
     margin: 2px;
 }
 
@@ -343,7 +343,7 @@ r {
     box-shadow: 0 0 5px 2px #5374b7;
 }
 
-.health_bar.red .token {
+.health_bar.red_used .token, .health_bar.red_preview_used .token {
     background: linear-gradient(0.25turn, #fcc8c8, #ff4646 25%, #ff4646 75%, #fcc8c8);
     box-shadow: 0 0 5px 2px #ff4646;
 }

@@ -66,12 +66,10 @@ function set_health_bar(
         .slice(index_token, array_tokens.length)
         .forEach(element => element.classList.remove(text_class))
 
-    if (text_class == "used") {
-        if (index_token == array_tokens.length - 1) {
-            element_health_bar.classList.add("red")
-        } else {
-            element_health_bar.classList.remove("red")
-        }
+    if (index_token == array_tokens.length - 1) {
+        element_health_bar.classList.add("red_" + text_class)
+    } else {
+        element_health_bar.classList.remove("red_" + text_class)
     }
 }
 
