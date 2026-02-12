@@ -8,11 +8,15 @@
             },
             {
                 "name": "Heavy intercessors",
-                "count_models": 4
+                "count_models": 10
             },
             {
                 "name": "Eradicators",
-                "count_models": 7
+                "count_models": 8
+            },
+            {
+                "name": "Gladiator lancer",
+                "count_models": 1
             },
             {
                 "name": "Gladiator lancer",
@@ -32,8 +36,12 @@
                 "count_models": 1
             },
             {
+                "name": "Skorpekh destroyer",
+                "count_models": 4
+            },
+            {
                 "name": "Heavy lokhust destroyer [gauss]",
-                "count_models": 2
+                "count_models": 4
             }
         ]
     }

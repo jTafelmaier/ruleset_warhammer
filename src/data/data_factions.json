@@ -113,7 +113,7 @@
                 },
                 {
                     "name": "Gladiator lancer",
-                    "points_per_model": 200,
+                    "points_per_model": 250,
                     "armor": 8,
                     "move": 25,
                     "type_movement": "",
@@ -464,7 +464,7 @@
                 },
                 {
                     "name": "Hexmark destroyer",
-                    "points_per_model": 125,
+                    "points_per_model": 150,
                     "armor": 5,
                     "move": 15,
                     "type_movement": "",
@@ -520,7 +520,7 @@
                 },
                 {
                     "name": "Heavy lokhust destroyer [gauss]",
-                    "points_per_model": 75,
+                    "points_per_model": 100,
                     "armor": 6,
                     "move": 15,
                     "type_movement": "",
@@ -538,7 +538,7 @@
                 },
                 {
                     "name": "Heavy lokhust destroyer [enmitic]",
-                    "points_per_model": 75,
+                    "points_per_model": 100,
                     "armor": 6,
                     "move": 15,
                     "type_movement": "",
