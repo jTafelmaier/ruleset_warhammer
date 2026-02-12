@@ -320,7 +320,7 @@
                 {
                     "name": "Lord Invocatus",
                     "points_per_model": 125,
-                    "armor": 5,
+                    "armor": 6,
                     "move": 25,
                     "type_movement": "",
                     "keywords": [
@@ -350,9 +350,7 @@
                             "range": "⚔",
                             "hits": 4,
                             "strength": 6,
-                            "keywords": [
-                                "volume"
-                            ]
+                            "keywords": []
                         }
                     ]
                 },
@@ -362,9 +360,7 @@
                     "armor": 5,
                     "move": 20,
                     "type_movement": "",
-                    "keywords": [
-                        "deepstrike"
-                    ],
+                    "keywords": [],
                     "attacks": [
                         {
                             "range": "⚔",
@@ -384,7 +380,7 @@
                 },
                 {
                     "name": "Eightbound",
-                    "points_per_model": 25,
+                    "points_per_model": 50,
                     "armor": 5,
                     "move": 20,
                     "type_movement": "",
@@ -393,10 +389,8 @@
                         {
                             "range": "⚔",
                             "hits": 4,
-                            "strength": 5,
-                            "keywords": [
-                                "volume"
-                            ]
+                            "strength": 6,
+                            "keywords": []
                         }
                     ]
                 },
@@ -556,8 +550,7 @@
                             "hits": 8,
                             "strength": 6,
                             "keywords": [
-                                "heavy",
-                                "volume"
+                                "heavy"
                             ]
                         },
                         {
@@ -711,11 +704,10 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "hits": 4,
+                            "hits": 8,
                             "strength": 6,
                             "keywords": [
-                                "heavy",
-                                "volume"
+                                "heavy"
                             ]
                         }
                     ]
