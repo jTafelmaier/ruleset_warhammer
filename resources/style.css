@@ -212,12 +212,18 @@ r {
 
 .data_unit {
     width: 280px;
-    padding: 4px;
+    border-left: 4px solid #969eb0;
+}
+
+.name_unit {
+    color: #2e3544;
+    background: linear-gradient(0.25turn, #969eb0, #b0969600);
+    padding-left: 10px;
 }
 
 .model_property {
     color: #2e3544;
-    background: linear-gradient(0.25turn, #80899c9d 15px, #555c6c00);
+    background: linear-gradient(0.25turn, #80899c9d, #555c6c00);
     padding-left: 10px;
 }
 
@@ -289,14 +295,14 @@ r {
 }
 
 .unit_state {
-    width: 20px;
+    width: 40px;
     font-size: large;
     user-select: none;
-    color: #3b404e50;
-    background-color: #485265;
+    color: #535f79;
+    background-color: #2e3544;
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
-    padding: 2px;
+    padding: 0px 6px;
 }
 
 .unit_state.hover_destroy {
@@ -309,6 +315,7 @@ r {
     flex-direction: column;
     padding: 2px;
     height: 175px;
+    border: 2px solid #535f79;
     border-radius: 2px;
     background-color: #2e3544;
 }
