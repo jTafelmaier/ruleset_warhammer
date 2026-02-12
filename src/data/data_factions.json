@@ -106,7 +106,7 @@
                         {
                             "range": "⛶",
                             "hits": 1,
-                            "strength": 10,
+                            "strength": 9,
                             "keywords": []
                         }
                     ]
@@ -371,7 +371,7 @@
                         {
                             "range": "⚔",
                             "hits": 1,
-                            "strength": 10,
+                            "strength": 9,
                             "keywords": [
                                 "heavy"
                             ]
