@@ -331,7 +331,7 @@ r {
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
     background-color: #2e3544;
-    border: 2px solid #626d84;
+    margin: 2px;
 }
 
 .health_bar .token {
@@ -355,7 +355,5 @@ r {
 
 .count_models {
     text-align: center;
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
 }
 
