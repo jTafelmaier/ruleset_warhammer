@@ -289,13 +289,14 @@ r {
 }
 
 .unit_state {
-    width: 26px;
+    width: 20px;
     font-size: large;
     user-select: none;
     color: #3b404e50;
-    background-color: #2e3544;
+    background-color: #485265;
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
+    padding: 2px;
 }
 
 .unit_state.hover_destroy {
@@ -307,17 +308,15 @@ r {
     display: flex;
     flex-direction: column;
     padding: 2px;
-    height: 172px;
+    height: 175px;
     border-radius: 2px;
     background-color: #2e3544;
-    border: 2px solid #626d84;
-    margin: 2px;
 }
 
 .health_bar .token {
     flex: 1;
     margin-top: 1px;
-    margin-bottom: 2px;
+    margin-bottom: 1px;
     border-radius: 1px;
     background: linear-gradient(0.25turn, #c8e2fc, #8bc5ff 25%, #8bc5ff 75%, #c8e2fc);
     box-shadow: 0 0 5px 2px #5374b7;
