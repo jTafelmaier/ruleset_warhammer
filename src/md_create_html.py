@@ -228,7 +228,10 @@ def generate_htmls():
 
                 return "<div class=\"unit_army_list\" points_per_model=\"" \
                     + str(dict_unit["points_per_model"]) \
-                    + "\"><div class=\"unit_state\"><div class=\"count_models\" onclick=\"decrease_count_models(" \
+                    + "\"><div class=\"unit_state\"><div class=\"health_bar\">" \
+                    + ("<div class=\"token\" />" \
+                        * 8) \
+                    + "</div><div class=\"count_models\" onclick=\"decrease_count_models(" \
                     + text_parameters_functions \
                     + ")\" onmouseover=\"highlight_destroy(" \
                     + text_parameters_functions \
@@ -236,9 +239,6 @@ def generate_htmls():
                     + text_parameters_functions \
                     + ")\">" \
                     + text_count_models \
-                    + "</div><div class=\"health_bar\">" \
-                    + ("<div class=\"token\" />" \
-                        * 8) \
                     + "</div></div><div onclick=\"set_inactive(" \
                     + text_parameters_functions \
                     + ")\">" \

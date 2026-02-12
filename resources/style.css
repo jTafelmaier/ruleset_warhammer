@@ -218,6 +218,7 @@ r {
 }
 
 .name_unit {
+    color: #4a5266;
     background: linear-gradient(0.25turn, #969eb0, #b0969600);
     padding-left: 5px;
 }
@@ -301,18 +302,18 @@ r {
     width: 40px;
     font-size: large;
     user-select: none;
-    color: #535f79;
+    color: #3b4457;
     background-color: #2e3544;
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
-    padding: 0px 6px;
+    padding: 4px 6px;
 }
 
 .health_bar {
     display: flex;
     flex-direction: column;
     padding: 2px;
-    height: 175px;
+    height: 170px;
     border: 2px solid #535f79;
     border-radius: 2px;
     background-color: #2e3544;
@@ -344,5 +345,9 @@ r {
 
 .count_models {
     text-align: center;
+}
+
+.hover_destroy .count_models {
+    color: #ff4646;
 }
 
