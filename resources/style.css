@@ -212,26 +212,29 @@ r {
 
 .data_unit {
     width: 280px;
+    color: #2e3544;
+    background: linear-gradient(0.25turn, #80899c9d, #555c6c00);
     border-left: 4px solid #969eb0;
 }
 
 .name_unit {
-    color: #2e3544;
     background: linear-gradient(0.25turn, #969eb0, #b0969600);
-    padding-left: 10px;
+    padding-left: 5px;
 }
 
 .model_property {
-    color: #2e3544;
-    background: linear-gradient(0.25turn, #80899c9d, #555c6c00);
-    padding-left: 10px;
+    padding-left: 5px;
 }
 
 .model_property .icon {
     display: inline-block;
     text-align: center;
     color: white;
-    width: 1em;
+    width: 20px;
+}
+
+.model_property .attack {
+    font-size: large;
 }
 
 #army_lists {

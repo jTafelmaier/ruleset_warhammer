@@ -19,7 +19,7 @@ def generate_htmls():
         def get_text_html_attack(
             dict_attack:typing.Dict):
 
-            return "<div class=\"model_property\"><span class=\"icon\">" \
+            return "<div class=\"model_property\"><span class=\"icon attack\">" \
                 + dict_attack \
                     ["range"] \
                 + "</span>" \
