@@ -76,6 +76,38 @@ function set_health_bar(
 }
 
 
+function get_element_unit_army_list(
+    text_side,
+    index_row) {
+
+    return document
+        .getElementById(text_side)
+        .getElementsByClassName("unit_army_list")[index_row]
+}
+
+
+function highlight_destroy(
+    text_side,
+    index_row) {
+
+    get_element_unit_army_list(text_side, index_row)
+        .getElementsByClassName("unit_state")[0]
+        .classList
+        .add("hover_destroy")
+}
+
+
+function undo_highlight_destroy(
+    text_side,
+    index_row) {
+
+    get_element_unit_army_list(text_side, index_row)
+        .getElementsByClassName("unit_state")[0]
+        .classList
+        .remove("hover_destroy")
+}
+
+
 function setup_health_bars() {
 
     function setup_health_bar(
@@ -112,9 +144,7 @@ function decrease_count_models(
     text_side,
     index_row) {
 
-    let element_unit = document
-        .getElementById(text_side)
-        .getElementsByClassName("unit_army_list")[index_row]
+    let element_unit = get_element_unit_army_list(text_side, index_row)
 
     let element_count_models = element_unit
         .getElementsByClassName("count_models")[0]
@@ -146,9 +176,7 @@ function set_inactive(
     text_side,
     index_row) {
 
-    document
-        .getElementById(text_side)
-        .getElementsByClassName("unit_army_list")[index_row]
+    get_element_unit_army_list(text_side, index_row)
         .classList
         .add("inactive")
 

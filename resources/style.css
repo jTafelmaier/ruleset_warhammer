@@ -311,9 +311,16 @@ r {
 
 .unit_state {
     width: 24px;
+    font-size: large;
     user-select: none;
+    color: #3b404e50;
     background-color: #626d84;
     border-radius: 4px;
+}
+
+.unit_state.hover_destroy {
+    color: white;
+    background: linear-gradient(0.25turn, #fcc8c8, #ff4646 25%, #ff4646 75%, #fcc8c8);
 }
 
 .health_bar {
@@ -341,24 +348,14 @@ r {
     box-shadow: 0 0 5px 2px #ff4646;
 }
 
-.health_bar .token.used, .health_bar .token.preview_used, .destroyed .health_bar .token  {
+.health_bar .token.used, .health_bar .token.preview_used, .unit_state.hover_destroy .token {
     background: linear-gradient(0.25turn, #535f79, #2e3544 25%, #2e3544 75%, #535f79);
     box-shadow: none;
 }
 
 .count_models {
-    font-size: large;
-    font-weight: bold;
-    color: #3b404e50;
-    background-color: #626d84;
+    text-align: center;
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
-    text-align: center;
-}
-
-.count_models:hover {
-    color: white;
-    background: linear-gradient(0.25turn, #fcc8c8, #ff4646 25%, #ff4646 75%, #fcc8c8);
-    box-shadow: 0 0 5px 2px #ff4646;
 }
 

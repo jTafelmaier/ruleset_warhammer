@@ -233,6 +233,10 @@ def generate_htmls():
                         * 8) \
                     + "</div><div class=\"count_models\" onclick=\"decrease_count_models(" \
                     + text_parameters_functions \
+                    + ")\" onmouseover=\"highlight_destroy(" \
+                    + text_parameters_functions \
+                    + ")\" onmouseout=\"undo_highlight_destroy(" \
+                    + text_parameters_functions \
                     + ")\">" \
                     + text_count_models \
                     + "</div></div><div onclick=\"set_inactive(" \
