@@ -308,11 +308,6 @@ r {
     padding: 0px 6px;
 }
 
-.unit_state.hover_destroy {
-    color: white;
-    background: linear-gradient(0.25turn, #ff7777, #ff4646 25%, #ff4646 75%, #ff7777);
-}
-
 .health_bar {
     display: flex;
     flex-direction: column;
@@ -321,6 +316,11 @@ r {
     border: 2px solid #535f79;
     border-radius: 2px;
     background-color: #2e3544;
+}
+
+.hover_destroy .health_bar {
+    border: 2px solid #ff4646;
+    box-shadow: 0 0 4px 1px #ff4646;
 }
 
 .health_bar .token {
