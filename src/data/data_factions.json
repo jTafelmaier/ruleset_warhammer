@@ -506,9 +506,7 @@
                     "armor": 4,
                     "move": 25,
                     "type_movement": "",
-                    "keywords": [
-                        "initiative"
-                    ],
+                    "keywords": [],
                     "attacks": [
                         {
                             "range": "⚔",
