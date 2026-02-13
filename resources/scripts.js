@@ -170,13 +170,13 @@ function decrease_count_models(
 }
 
 
-function set_inactive(
+function toggle_inactive(
     text_side,
     index_row) {
 
     get_element_unit_army_list(text_side, index_row)
         .classList
-        .add("inactive")
+        .toggle("inactive")
 
     test_next_turn()
 }

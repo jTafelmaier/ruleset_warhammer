@@ -239,7 +239,7 @@ def generate_htmls():
                     + text_parameters_functions \
                     + ")\">" \
                     + text_count_models \
-                    + "</div></div><div onclick=\"set_inactive(" \
+                    + "</div></div><div onclick=\"toggle_inactive(" \
                     + text_parameters_functions \
                     + ")\">" \
                     + get_text_html_data_unit(
