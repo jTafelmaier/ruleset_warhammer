@@ -224,14 +224,14 @@ r {
 }
 
 .model_property {
-    padding-left: 5px;
+    padding-left: 8px;
 }
 
 .model_property .icon {
     display: inline-block;
     text-align: center;
     color: white;
-    width: 20px;
+    width: 15px;
 }
 
 .model_property .attack {
